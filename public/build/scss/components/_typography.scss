@@ -1,0 +1,541 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: variables.$gray-900;
+  font-family: variables.$font-family-primary;
+  font-weight: variables.$font-weight-bold;
+  margin-bottom: 0;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+}
+p{
+  color: variables.$gray-500;
+}
+h1,
+.h1 {
+  font-size: variables.$font-size-50;
+  font-weight: variables.$font-weight-bold;
+  @include mixins.respond-below(lg) {
+    font-size: variables.$font-size-32;
+  }
+  @include mixins.respond-below(md) {
+    font-size: variables.$font-size-26;
+  }
+}
+h2,
+.h2 {
+  font-size: variables.$font-size-36;
+  font-weight: variables.$font-weight-bold;
+  @include mixins.respond-below(lg) {
+    font-size: variables.$font-size-28;
+  }
+  @include mixins.respond-below(md) {
+    font-size: variables.$font-size-24;
+  }
+}
+h3,
+.h3 {
+  font-size: variables.$font-size-28;
+  font-weight: variables.$font-weight-bold;
+  @include mixins.respond-below(lg) {
+    font-size: variables.$font-size-24;
+  }
+  @include mixins.respond-below(md) {
+    font-size: variables.$font-size-22;
+  }
+}
+h4,
+.h4 {
+  font-size: variables.$font-size-24;
+  @include mixins.respond-below(md) {
+    font-size: variables.$font-size-22;
+  }
+}
+h5,
+.h5 {
+  font-size: variables.$font-size-20;
+  @include mixins.respond-below(md) {
+    font-size: variables.$font-size-18;
+  }
+}
+h6,
+.h6 {
+  font-size: variables.$font-size-16;
+  font-weight: variables.$font-weight-semibold;
+  @include mixins.respond-below(md) {
+    font-size: variables.$font-size-16;
+  }
+}
+.display-1 {
+  font-size: 40px;
+  font-weight: variables.$font-weight-bold;
+  @include mixins.respond-below(xxl) {
+    font-size: 36px;
+  }
+  @include mixins.respond-below(xl) {
+    font-size: 36px;
+  }
+  @include mixins.respond-below(lg) {
+    font-size: 32px;
+  }
+  @include mixins.respond-below(md) {
+    font-size: 26px;
+  }
+}
+.display-4 {
+  font-size: 20px;
+  font-weight: variables.$font-weight-bold;
+  @include mixins.respond-below(lg) {
+    font-size: 18px;
+  }
+  @include mixins.respond-below(md) {
+    font-size: 16px;
+  }
+}
+.fs-sm {
+  font-size: 0.6875rem; //11px
+}
+.fs-base {
+  font-size: 0.875rem; //14px
+}
+.fs-lg {
+  font-size: 1.125rem; //18px
+}
+.text-xl {
+  font-size: variables.$font-size-16;
+}
+// (1px-30px are linear, above 30px are step increment of 1)
+.fs-1 {
+  font-size: 0.0625rem; //1px
+}
+.fs-2 {
+  font-size: 0.125rem; //2px
+}
+.fs-3 {
+  font-size: 0.1875rem; //3px
+}
+.fs-4 {
+  font-size: 0.25rem !important; //4px
+}
+.fs-5 {
+  font-size: 0.3125rem !important; //5px
+}
+.fs-6 {
+  font-size: 0.375rem  !important; //6px
+}
+.fs-7 {
+  font-size: 0.4375rem; //7px
+}
+.fs-8 {
+  font-size: 0.5rem  !important; //8px
+}
+.fs-9 {
+  font-size: 0.5625rem; //9px
+}
+.fs-10 {
+  font-size: 0.75em !important;
+}
+.fs-11 {
+  font-size: 0.6875rem; //11px
+}
+.fs-12 {
+  font-size: 0.75rem; //12px
+}
+.fs-13 {
+  font-size: 0.8125rem; //13px
+}
+.fs-14 {
+  font-size: 0.875rem !important; //14px
+}
+.fs-15 {
+  font-size: 0.9375rem; //15px
+}
+.fs-16 {
+  font-size: 1rem; //16px
+}
+.fs-17 {
+  font-size: 1.0625rem; //17px
+}
+.fs-18 {
+  font-size: 1.125rem; //18px
+}
+.fs-19 {
+  font-size: 1.1875rem; //19px
+}
+.fs-20 {
+  font-size: 1.25rem; //20px
+}
+.fs-21 {
+  font-size: 1.3125rem; //21px
+}
+.fs-22 {
+  font-size: 1.375rem; //22px
+}
+.fs-23 {
+  font-size: 1.4375rem; //23px
+}
+.fs-24 {
+  font-size: 1.5rem; //24px
+}
+.fs-25 {
+  font-size: 1.5625rem; //25px
+}
+.fs-26 {
+  font-size: 1.625rem; //26px
+}
+.fs-27 {
+  font-size: 1.6875rem; //27px
+}
+.fs-28 {
+  font-size: 1.75rem; //28px
+}
+.fs-29 {
+  font-size: 1.8125rem; //29px
+}
+.fs-30 {
+  font-size: 1.875rem; //30px
+}
+.fs-32 {
+  font-size: 2rem; //32px
+}
+.fs-34 {
+  font-size: 2.125rem; //34px
+}
+.fs-36 {
+  font-size: 2.25rem; //36px
+}
+.fs-38 {
+  font-size: 2.375rem; //38px
+}
+.fs-40 {
+  font-size: 2.5rem; //40px
+}
+.fs-42 {
+  font-size: 2.625rem; //42px
+}
+.fs-44 {
+  font-size: 2.75rem; //44px
+}
+.fs-46 {
+  font-size: 2.875rem; //46px
+}
+.fs-48 {
+  font-size: 3rem; //48px
+}
+.fs-50 {
+  font-size: 3.125; //50px
+}
+
+.text-default {
+  color: variables.$text-color !important;
+}
+.heading-color {
+  color: variables.$title-color !important;
+}
+.text-muted {
+  color: variables.$text-muted !important;
+}
+.text-primary {
+  color: variables.$primary !important;
+  opacity: 1;
+  &.text-opacity-75 {
+    color: rgba(variables.$primary, 0.75) !important;
+  }
+  &.text-opacity-25 {
+    color: rgba(variables.$primary, 0.25) !important;
+  }
+  &.text-opacity-50 {
+    color: rgba(variables.$primary, 0.50) !important;
+  }
+}
+.text-secondary {
+  color: variables.$secondary !important;
+  opacity: 1;
+}
+.text-info {
+  color: variables.$info !important;
+  opacity: 1;
+}
+.text-success {
+  color: variables.$success !important;
+  opacity: 1;
+}
+.text-warning {
+  color: variables.$warning !important;
+  opacity: 1;
+}
+.text-danger {
+  color: variables.$danger !important;
+  opacity: 1;
+}
+.text-skyblue {
+  color: variables.$skyblue !important;
+  opacity: 1;
+}
+.text-pink {
+  color: variables.$pink !important;
+}
+.text-purple {
+  color: variables.$purple !important;
+}
+.text-dark {
+  color: variables.$dark !important;
+}
+.text-light {
+  color: variables.$light !important;
+}
+.text-gray {
+  color: variables.$gray-500 !important;
+}
+.text-black {
+  color: variables.$black !important;
+}
+.text-white {
+  color: variables.$white !important;
+}
+.text-purple {
+  color: variables.$purple !important;
+}
+.text-primary-soft {
+  color: variables.$primary-300;
+}
+.text-secondary-soft {
+  color: variables.$secondary-300;
+}
+.text-gray-1 {
+  color: variables.$gray-100;
+}
+.text-gray-2 {
+  color: variables.$gray-200;
+}
+.text-gray-3 {
+  color: variables.$gray-300;
+}
+.text-gray-4 {
+  color: variables.$gray-400;
+}
+.text-gray-5 {
+  color: variables.$gray-500;
+}
+.text-gray-6 {
+  color: variables.$gray-600;
+}
+.text-gray-7 {
+  color: variables.$gray-700;
+}
+.text-gray-8 {
+  color: variables.$gray-800;
+}
+.text-gray-9 {
+  color: variables.$gray-900 !important;
+}
+.text-title {
+  color: variables.$gray-900 !important;
+}
+.text-dark-transparent {
+  color: variables.$dark-transparent;
+}
+.text-chromeyellow{
+  color: variables.$chromeyellow;
+}
+.text-lightgreen{
+  color: variables.$ligh-green;
+}
+.text-purple {
+  color: variables.$purple !important;
+}
+a {
+  color: variables.$gray-900;
+  cursor: pointer;
+  text-decoration: none;
+  @include mixins.transition(all 0.5s ease);
+  &:hover {
+    color: variables.$secondary;
+    @include mixins.transition(all 0.5s ease);
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+.link-primary {
+  color: variables.$primary !important;
+  &:hover,
+  &:focus,
+  &:active {
+    color: variables.$primary-hover !important;
+  }
+}
+.link-secondary {
+  color: variables.$secondary !important;
+  &:hover,
+  &:focus,
+  &:active {
+    color: variables.$secondary !important;
+  }
+}
+.link-success {
+  color: variables.$success !important;
+  &:hover,
+  &:focus,
+  &:active {
+    color: variables.$success !important;
+  }
+}
+.link-danger {
+  color: variables.$danger !important;
+  &:hover,
+  &:focus,
+  &:active {
+    color: variables.$danger !important;
+  }
+}
+.link-warning {
+  color: variables.$warning !important;
+  &:hover,
+  &:focus,
+  &:active {
+    color: variables.$warning !important;
+  }
+}
+.link-info {
+  color: variables.$info !important;
+  &:hover,
+  &:focus,
+  &:active {
+    color: variables.$info !important;
+  }
+}
+.link-light {
+  color: variables.$light !important;
+  &:hover,
+  &:focus,
+  &:active {
+    color: variables.$light !important;
+  }
+}
+.link-dark {
+  color: variables.$dark !important;
+  &:hover,
+  &:focus,
+  &:active {
+    color: variables.$dark !important;
+  }
+}
+hr {
+  &.text-danger {
+    border-color: variables.$danger !important;
+  }
+}
+
+.blockquote-container {
+  padding: 1.25rem;
+  border-left: 4px solid variables.$default-border;
+  position: relative;
+  &.text-end {
+    border-right: 4px solid variables.$default-border;
+    border-left: 0;
+  }
+}
+.blockquote.custom-blockquote {
+  font-size: 0.85rem;
+  font-weight: variables.$font-weight-semibold;
+  padding: 1rem;
+  border-radius: variables.$border-radius;
+  position: relative;
+  &:before {
+    content: "\f10d";
+    font-family: variables.$font-awesome;
+    z-index: 0;
+    font-size: 2rem;
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0.5rem;
+  }
+  &.primary {
+    background-color: rgba(variables.$primary, 0.1);
+    border-inline-start: 2px solid variables.$primary;
+    &:before {
+      color: rgba(variables.$primary, 0.1);
+    }
+  }
+  &.secondary {
+    background-color: rgba(variables.$secondary, 0.1);
+    border-inline-start: 2px solid variables.$secondary;
+    &:before {
+      color: rgba(variables.$secondary, 0.1);
+    }
+  }
+  &.info {
+    background-color: rgba(variables.$info, 0.1);
+    border-inline-start: 2px solid variables.$info;
+    &:before {
+      color: rgba(variables.$info, 0.1);
+    }
+  }
+  &.warning {
+    background-color: rgba(variables.$warning, 0.1);
+    border-inline-start: 2px solid variables.$warning;
+    &:before {
+      color: rgba(variables.$warning, 0.1);
+    }
+  }
+  &.success {
+    background-color: rgba(variables.$success, 0.1);
+    border-inline-start: 2px solid variables.$success;
+    &:before {
+      color: rgba(variables.$success, 0.1);
+    }
+  }
+  &.danger {
+    background-color: rgba(variables.$danger, 0.1);
+    border-inline-start: 2px solid variables.$danger;
+    &:before {
+      color: rgba(variables.$danger, 0.1);
+    }
+  }
+}
+
+[data-theme-mode="dark"] {
+  .shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(33, 37, 41, 0.3) !important;
+  }
+  .shadow {
+    box-shadow: 0 0.5rem 1rem rgba(33, 37, 41, 0.3) !important;
+  }
+  .shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(33, 37, 41, 0.3) !important;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .w-sm-auto {
+    width: auto;
+  }
+}
+
+[dir="rtl"] {
+  .text-break {
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+  }
+}
+.transform-none {
+  transform: none !important;
+}
+.list-circle {
+    list-style: circle;
+    padding-left: 2rem;
+}

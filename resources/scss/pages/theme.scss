@@ -1,0 +1,618 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.dark-mode {
+    .logo-white {
+        display: none;
+    }
+    .logo-dark  {
+        display: block !important;
+    }
+    .course-item { 
+        box-shadow: none;
+    }
+    .latest-blog-five.latest-blog-three {
+        .category {
+            color: variables.$darkmode-dark;
+            border-color: variables.$darkmode-dark;
+        }
+        .blog-date {
+            color: variables.$darkmode-dark;
+        }
+    } 
+    .event-three-title h5 {
+        color: variables.$darkmode-dark;
+    }
+    .testimonials-section {
+        .section-header {
+            h2 {
+                color: variables.$darkmode-white;
+            }
+        }
+    }
+    .home-4 {
+        .blog-content {
+            .title {
+                color: variables.$darkmode-dark;
+            }
+            .blog-date {
+                color: variables.$darkmode-dark;
+            }
+        }
+    }
+    .award-one, .learn-anything, .development-carrer {
+        .text-white {
+            color: variables.$darkmode-dark !important;
+        }
+    }
+    .trending-three-text  {
+        h3 {
+            a {
+                color: variables.$darkmode-white;
+                &:hover {
+                    color: variables.$secondary;
+                }
+            }
+        }
+    }
+    header {
+        &.header-five .header-logo.logo-white {
+            display: none;
+        }
+        &.header-two.fixed .header-logo.logo-white {
+            display: none;
+        }
+        
+        &.header-three .header-logo.logo-white {
+            display: none;
+        }
+        &.header-four {
+            background: variables.$darkmode-white;
+            .header-logo.logo-white {
+                display: none;
+            }
+        }
+        &.header-one .header-nav .main-menu-wrapper .main-nav > li > a {
+            @include mixins.respond-above(lg) {
+                color: variables.$darkmode-dark;
+            }
+        }
+    }
+    .home-five {
+        .become-content {
+            h2, h4 {
+                color: variables.$darkmode-dark;
+            }
+        }
+    }
+    .home-six {
+        .header-three {
+            .main-menu-wrapper {
+                .main-nav > li {
+                    > a {
+                        color: variables.$darkmode-dark;
+                    }
+                    &.active, &:hover {
+                        > a {
+                            color: variables.$secondary;
+                        }
+                    }
+                }
+            }
+            .navbar-header #mobile_btn .bar-icon span {
+                background: variables.$darkmode-dark;
+            }
+            &.fixed {
+                .logo-white {
+                    display: none !important;
+                }
+                .logo-dark {
+                    display: block !important;
+                }
+            }
+        }
+    }
+    .banner-section-three {
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            color: variables.$darkmode-white !important;
+        }
+    }
+    .home-3 {
+        .new-course {
+            .home-three-sec-bg .sec-bg-01 {
+                display: none;
+            }
+        }        
+        .career-img .master-bg {
+            display: none;
+        }
+        .testimonial-user span {
+            color: variables.$darkmode-dark;
+        }
+    }
+    .footer-three-about p {
+        color: variables.$darkmode-dark;
+    }
+    .footer-five {
+        background: variables.$darkmode-white;
+        .newsletter-title {
+            h6 {
+                color: variables.$darkmode-dark;
+            }
+        }
+        .footer-bottom-five {
+            border-top: 1px solid variables.$border-color;
+            .copyright-text {
+                p {
+                    color: variables.$darkmode-dark;
+                    a {
+                        color: variables.$secondary;
+                    }
+                }
+            }
+            .privacy-link {
+                a {
+                    color: variables.$darkmode-dark;
+                    &:hover{
+                        color: variables.$secondary;
+                    }
+                    & + a {
+                        &::before {
+                            color: variables.$gray-700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-menu-three {
+        ul {
+            li {
+                a {
+                    color: variables.$darkmode-dark;
+                }
+            }
+        }
+    }
+    .footer-three-title {
+        color: variables.$darkmode-dark;
+    }
+    .footer {
+        &.footer-one {
+            background:  variables.$darkmode-white;
+            .footer-about {
+                p {
+                    color:  variables.$darkmode-dark;
+                }
+            }
+            .footer-widget {
+                .footer-title {
+                    color:  variables.$darkmode-dark;
+                }
+                ul {
+                    li {
+                        a {
+                            color:  variables.$darkmode-dark;
+                            &:hover {
+                                color: variables.$secondary;
+                            }
+                        }
+                    }
+                }
+            }
+            .subscribe-form {
+                span {
+                    color: variables.$gray-500;
+                }
+                .form-control {
+                    &::placeholder {
+                        color: variables.$gray-500;
+                    }
+                }
+            }
+            .footer-newsletter {
+                p {
+                    color:  variables.$darkmode-dark;
+                }
+            }
+            .footer-bottom {
+                background:  variables.$darkmode-white;
+                border-top: 1px solid variables.$border-color;
+                p {
+                    color:  variables.$darkmode-dark;
+                }
+                .footer-link {
+                    li {
+                        a {
+                            color: variables.$darkmode-dark;
+                            &:hover {
+                                color: variables.$secondary;
+                            }
+                        }
+                        & + li {
+                            &::before {
+                                background: variables.$border-color;
+                            }
+                        }
+                    }
+                }                
+                .social-icon {
+                    a {
+                        background: variables.$light;
+                        color: variables.$dark;
+                        &:hover {
+                            background: variables.$secondary;
+                            color: variables.$white;
+                        }
+                    }
+                }
+            }
+        }
+        &.footer-six {
+            background:  variables.$darkmode-white;
+            .footer-top-five {
+                .footer-contact {
+                    .footer-title-five {
+                        color: variables.$darkmode-dark;                        
+                    }
+                    color: variables.$darkmode-dark;
+                    .footer-address {
+                        h6,p {
+                            color: variables.$darkmode-dark;
+                        }
+                    }
+                }
+                .footer-menu {
+                    .footer-title-five {
+                        color: variables.$darkmode-dark;
+                    }
+                    ul {
+                        li {
+                            a {
+                                color: variables.$darkmode-dark;
+                            }
+                        }
+                    }
+                }
+            }
+            .box-form-newsletter {
+                border: 1px solid variables.$border-color;
+            }
+           .footer-bottom-six {            
+            background:  variables.$darkmode-white;
+            .copyright-text {
+                p {
+                    color: variables.$darkmode-dark;
+                }
+            }
+           }
+        }
+    }
+    .breadcrumb-bar {
+        .breadcrumb-title {
+            color: variables.$darkmode-light;
+        }
+    }
+    .breadcrumb {
+        .breadcrumb-item {
+            a {
+                color: variables.$darkmode-light;
+                &:hover {
+                    color: variables.$secondary;
+                }
+            }
+        }
+    }
+    .btn {
+        &.btn-primary, &.btn-secondary {
+            color: variables.$darkmode-dark;
+        }
+    }
+}
+[dir="rtl"] {
+    body {
+        direction: rtl;
+        header .main-menu-wrapper {
+            .main-nav > li .submenu > li.has-submenu > a::after {
+                left: 15px;
+                right: unset;
+            }
+            .main-nav li.has-submenu:hover > .submenu > .has-submenu .submenu {
+                right: 100%;
+                left: unset;
+            }
+        } 
+        header.header-one .main-menu-wrapper .main-nav > li i {
+            margin-right: 2px;
+            margin-left: 0;
+        }
+        .home-banner .banner-content .banner-bg5 {
+            left: 10%;
+            right: unset;
+        }
+        .home-banner .banner-content .banner-search .dropdown {
+            margin-left: 20px;
+            margin-right: 0;
+        }
+        .home-banner .banner-content .counter-item .counter-icon {
+            margin-left: 8px;
+            margin-right: 0;
+        }
+        .top-courses-slider-rtl {
+            margin-bottom: 40px;
+            .categories-item-three {
+                padding: 20px;
+                border: 1px solid variables.$gray-100;
+                box-shadow: 0px 4px 4px 0px #D4D4D440;
+                border-radius: 10px;
+                background: variables.$white;
+                margin: 0 12px;
+                img {
+                    margin-bottom: 20px;
+                }
+                h6 {
+                    font-size: variables.$font-size-16;
+                    font-weight: variables.$font-weight-medium;
+                    text-align: center;
+                    a {
+                        &:hover {
+                            color: variables.$secondary;
+                        }
+                    }
+                }
+                &:hover {
+                    img {
+                        animation: verticalRotate 0.5s linear 1;
+                    }
+                }
+             }
+        }
+        .slick-next {
+            right: auto !important;
+        }
+        .slick-prev {
+            left: auto !important;
+        }
+        .feature-course-slider-2-rtl {
+            margin-bottom: 44px;
+            .feature-course-item {
+                padding: 20px;
+                border: 1px solid variables.$gray-100; 
+                box-shadow: variables.$box-shadow-xs-2;
+                border-radius: 10px;
+                margin: 0 12px;
+        
+                .feature-course-img {
+                    margin-bottom: 24px;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                    .price-badge {
+                        font-size: variables.$font-size-14;
+                        font-weight: variables.$font-weight-medium;
+                        color: variables.$gray-900;
+                        background: variables.$white;
+                        border: 1px solid variables.$gray-900;
+                        padding: 4px 10px;
+                        border-radius: 20px;
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                    }
+                }
+                .badge {
+                    margin-bottom: 10px;
+                }
+                
+                .fav-icon {
+                    padding: 5px;
+                    border-radius: 30px;
+                    background: variables.$light-500;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                }
+                h5 {
+                    font-size: variables.$font-size-18;
+                }
+                .feature-course-rating {
+                    display: flex;
+                    align-items: center;
+                    .feature-course-person {
+                        height: 24px;
+                        width: 24px;
+                        border-radius: 50px;
+                        margin-left: 8px;
+                        img {
+                            border-radius: 50px;
+                        }
+                    }
+                    a {
+                        color: variables.$info;
+                        text-decoration: underline;
+                        &:hover {
+                            color: variables.$secondary;
+                        }
+                    }
+                }
+                .buy-course-btn {
+                    font-size: variables.$font-size-14;
+                    color: variables.$gray-900;
+                    font-weight: variables.$font-weight-medium;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: variables.$light;
+                }
+                &:hover {
+                    border: 1px solid #392C7D4D;
+                    .buy-course-btn {
+                        background: variables.$secondary;
+                        color: variables.$white;
+                    }
+                }
+            }
+        }
+        .community-to-learn .community-img .community-count {
+            left: 0;
+            right: unset;
+        }
+        .community-to-learn .community-img .community-img-05 {
+            left: 130px;
+            right: unset;
+        }
+        .community-to-learn .community-item {
+            .community-icon-1 {
+                margin-left: 16px;
+                margin-right: 0;
+            }
+            .community-icon-2 {
+                margin-left: 16px;
+                margin-right: 0;
+            }
+            .community-icon-3 {
+                margin-left: 16px;
+                margin-right: 0;
+            }
+        } 
+        .how-it-works-sec-two .works-items .count {
+            margin-left: 36px;
+            margin-right: 0;
+        }
+        .faq-home-sec .faq-img {
+            margin-left: 40px;
+            margin-right: 0;
+        }
+        .faq-home-sec::before {
+            right: 0;
+            left: unset;
+        }
+        .blog-user-top img {
+            margin-left: 8px;
+            margin-right: 0;
+        }
+        .span-name-three {
+            margin-left: 15px;
+            margin-right: 0;
+        }
+        .footer.footer-one .subscribe-form .form-control {
+            padding-right: 56px;
+            padding-left: 0;
+        }
+        .footer.footer-one .subscribe-form span {
+            right: 32px;
+            left: 0;
+        }
+        header .navbar-header #mobile_btn {
+            margin-left: 30px;
+            margin-right: 0;
+        }
+        .community-to-learn .community-img {
+            padding-left: 0;
+            padding-right: 16px;
+        }
+        @include mixins.respond-below (lg) {
+            header .header-nav .main-menu-wrapper {
+                right: 0;
+                left: unset;
+                transform: translateX(260px);
+                -webkit-transform: translateX(260px);
+                -ms-transform: translateX(260px);
+                -webkit-transition: all 0.4s;
+            }
+            header .main-menu-wrapper .main-nav > li a i {
+                float: left;
+            }
+        }
+    }
+    .footer.footer-one .footer-bottom .footer-link li + li {
+        padding-right: 15px;
+        margin-right: 15px;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .footer.footer-one .footer-bottom .footer-link li + li::before {
+        right: 0;
+        left: unset;
+    }
+    .latest-blog-five.latest-blog-three .category {
+        margin-left: 15px;
+        margin-right: 0;
+    }
+    .latest-blog-five.latest-blog-three .blog-date i {
+        margin-left: 5px;
+        margin-right: 0;
+    }
+    .blog-user-top {
+        right: 20px;
+        left: unset;
+    }
+    .home-banner .banner-content .banner-search .hero-dropdown i {
+        margin-right: 29px;
+        margin-left: 0;
+    }
+    .feature-course-slider-2-rtl {
+        .slick-list {
+            margin: 0 -12px;
+        }
+        .slick-slide {
+            margin: 0 12px;
+        }
+    }
+    .faq-banner-bg::before {
+        left: unset;
+        right: 0;
+    }
+    .banner-section .banner-content .counter-item .counter-icon {
+        margin-right: 0;
+        margin-left: 5px;
+    }
+    .benefit-section {
+        .card {
+            z-index: 1;
+            .end-0 {
+                right: 0 !important;
+                z-index: -1;
+            }
+        }
+    }
+    .trust-sec .user-goal .avatar.avatar-lg {
+        margin-right: 0;
+        margin-left: 5px;
+    }
+    .course-item .course-rating .course-user {
+        margin-right: 0;
+        margin-left: 8px;
+    }
+    .banner-section .banner-content .banner-search .dropdown {
+        margin-right: 0;
+        margin-left: 20px;
+    }
+    .banner-section .banner-content .banner-search .hero-dropdown i {
+        margin-right: 29px;
+        margin-left: 0;
+    }
+    header .navbar-header #mobile_btn {
+        @include mixins.respond-below(sm) {
+            right: unset;
+            left: 0;
+        }
+    }
+}
+
+
+.dark-mode {
+    .inner-banner {
+        .text-white {
+            color: variables.$gray-900 !important;
+        }
+    }
+    .course-sidebar-sec {
+        .play-icon {
+            color: variables.$dark !important;
+        }
+    }
+}

@@ -1,0 +1,662 @@
+@use "sass:color";
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.btn-primary {
+    color: variables.$white;
+    background-color: variables.$primary;
+    border-color: variables.$primary;
+    font-size: variables.$font-size-14;
+    font-size: variables.$font-size-14;
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn.show:hover, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color: variables.$primary;
+    border-color: variables.$primary;
+    color: variables.$white;
+}
+button {
+    cursor: pointer;
+    &:focus{
+        outline: 0;
+        box-shadow: none;
+    }
+}
+.btn {
+    border-radius: variables.$rounded-pill;
+    padding: 0.4rem 0.85rem;
+    font-size: variables.$font-size-14;
+    transition: all 0.5s;
+    font-weight: variables.$font-weight-medium;
+    &:focus {
+        box-shadow: none !important;
+    }
+    &:hover {
+        transition: all 0.5s;
+    }
+    &.btn-xl {
+        padding: 9px 16px;
+        font-size: 16px;
+        @include mixins.respond-below(md) {
+          padding: 8px 12px;
+          font-size: variables.$font-size-14;
+        }
+    }
+    &.btn-lg {
+        padding: 0.65rem 1rem;
+        font-size: 0.95rem;
+    }
+    &.btn-sm {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+    }
+    &.btn-xs {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.6rem;
+    }
+    &.btn-md {
+        padding: 6px 16px;
+        font-size: 14px;
+    }
+    @each $color,
+    $value in variables.$theme-colors {
+        &.btn-#{$color} {
+            background-color: #{$value};
+            border: 1px solid #{$value};
+            color: variables.$white;
+            &:hover,
+            &:focus,
+            &.focus,
+            &:active,
+            &.active {
+                background-color: #{color.adjust($value, $lightness: -8%)};
+                border:1px solid #{color.adjust($value, $lightness: -8%)};
+                color: variables.$white;
+            }
+        }
+    }
+    &.btn-primary {
+        background-color: variables.$primary-900;
+        border: 1px solid variables.$primary-900;
+        color: variables.$white;
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+            background-color: variables.$primary-hover;
+            border: 1px solid variables.$primary-hover;
+            color: variables.$white;
+        }
+    }
+    &.btn-light {
+        background-color: variables.$light;
+        border: 1px solid variables.$light;
+        color: variables.$gray-900;
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+            background-color: variables.$light-hover;
+            border: 1px solid variables.$light-hover;
+            color: variables.$gray-900;
+        }
+    }
+    &.btn-white {
+      background-color: variables.$white;
+      border-color: variables.$white;
+      color: variables.$gray-900;
+      &.show, &:hover {
+        background-color: variables.$primary;
+        border-color: variables.$primary;
+        color: variables.$white;
+      }
+    }
+    &.btn-gray {
+      background-color: variables.$gray-200;
+      border-color: variables.$gray-200;
+      color: variables.$gray-900;
+      &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+        background-color: variables.$primary;
+        border-color: variables.$primary;
+        color: variables.$white;
+      }
+    }
+    &.btn-linear-primary {
+        background-image: variables.$primary-gradient;
+        border: 1px solid variables.$primary-900;
+        color: variables.$white;
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+            background-color: color.adjust(variables.$primary-900, $lightness: -7%);
+            border: 1px solid color.adjust(variables.$primary-900, $lightness: -7%);
+            color: variables.$white;
+        }
+    }
+}
+
+.btn-group {
+    .btn {
+      padding: 0.45rem 0.75rem;
+    }
+  }
+  .btn-group-lg {
+    .btn {
+      padding: 0.65rem 1rem;
+    }
+  }
+  .btn-group-sm {
+    .btn {
+      padding: 0.25rem 0.5rem;
+    }
+  }
+.btn {
+    &.btn-w-xs {
+      min-width: 5.625rem;
+    }
+    &.btn-w-sm {
+      min-width: 6.975rem;
+    }
+    &.btn-w-md {
+      min-width: 8.125rem;
+    }
+    &.btn-w-lg {
+      min-width: 9.375rem;
+    }
+  }
+  .btn-icon {
+    i {
+      padding: 0rem;
+      margin: -0.5rem;
+    }
+    &.btn-xs {
+      width: 24px;
+      height: 24px;
+      font-size: 0.8rem;
+    }
+    &.btn-sm {
+      width: 1.75rem;
+      height: 1.75rem;
+      font-size: 0.8rem;
+    }
+    &.btn-lg {
+      width: 2.75rem;
+      height: 2.75rem;
+      font-size: 1.2rem;
+    }
+  }
+  .btn-list {
+    > button, > a {
+      margin: 0 0.375rem 0.375rem 0;
+    }
+  }
+  [dir="rtl"] {
+    .btn-list {
+      button,
+      div,
+      a,
+      input {
+        margin: 0 0 0.375rem 0.375rem;
+      }
+    }
+  }
+  
+  .btn-list {
+    margin-block-end: -0.5rem;
+  }
+  .btn-square {
+    border-radius: 0;
+}
+.btn-group-pill .btn:first-child {
+    border-radius: 60px 0 0 60px;
+  }
+  .btn-group-pill .btn:last-child {
+    border-radius: 0 60px 60px 0;
+  }
+  
+  .btn-group-square .btn:first-child {
+    border-radius: 0px 0 0 0px;
+  }
+  .btn-group-square .btn:last-child {
+    border-radius: 0 0px 0px 0;
+  }
+.btn {
+  &.btn-primary-light {
+    background-color: rgba(variables.$primary, 0.1);
+    color: variables.$primary;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: variables.$primary;
+      color: variables.$white;
+      border-color: variables.$primary;
+    }
+  }
+ 
+  &.btn-secondary-light {
+    background-color: rgba(variables.$secondary, 0.1);
+    color: variables.$secondary;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: variables.$secondary;
+      color: variables.$white;
+      border-color: variables.$secondary;
+    }
+  }
+  &.btn-warning-light {
+    background-color: rgba(variables.$warning, 0.1);
+    color: variables.$warning;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: variables.$warning;
+      color: variables.$white;
+      border-color: variables.$warning;
+    }
+  }
+  &.btn-info-light {
+    background-color: rgba(variables.$info, 0.1);
+    color: variables.$info;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: variables.$info;
+      color: variables.$white;
+      border-color: variables.$info;
+    }
+  }
+  &.btn-success-light {
+    background-color: rgba(variables.$success, 0.1);
+    color: variables.$success;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: variables.$success;
+      color: variables.$white;
+      border-color: variables.$success;
+    }
+  }
+  &.btn-danger-light {
+    background-color: rgba(variables.$danger, 0.1);
+    color: variables.$danger;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: variables.$danger;
+      color: variables.$white;
+      border-color: variables.$danger;
+    }
+  }
+}
+.btn {
+  &.btn-primary-ghost {
+    background-color: transparent;
+    color: variables.$primary;
+    border: 1px solid variables.$primary;
+    &:active {
+      color: variables.$primary;
+      border: 1px solid variables.$primary;
+      background-color: transparent;
+    }
+  }
+  &.btn-dark{
+    background: variables.$gray-900 !important;
+    border-color: variables.$gray-900 !important;
+    box-shadow: none;
+    color: variables.$white;
+    &:hover{
+      background: #252a30 !important ;
+    }
+  }
+  &.btn-secondary-ghost {
+    background-color: transparent;
+    color: variables.$secondary;
+    border: 1px solid variables.$secondary;
+    &:active {
+      color: variables.$secondary;
+      border: 1px solid variables.$secondary;
+      background-color: transparent;
+    }
+  }
+  &.btn-warning-ghost {
+    background-color: transparent;
+    color: variables.$warning;
+    border: 1px solid variables.$warning;
+    &:active {
+      color: variables.$warning;
+      border: 1px solid variables.$warning;
+      background-color: transparent;
+    }
+  }
+  &.btn-info-ghost {
+    background-color: transparent;
+    color: variables.$info;
+    border: 1px solid variables.$info;
+    &:active {
+      color: variables.$info;
+      border: 1px solid variables.$info;
+      background-color: transparent;
+    }
+  }
+  &.btn-success-ghost {
+    background-color: transparent;
+    color: variables.$success;
+    border: 1px solid variables.$success;
+    &:active {
+      color: variables.$success;
+      border: 1px solid variables.$success;
+      background-color: transparent;
+    }
+  }
+  &.btn-danger-ghost {
+    background-color: transparent;
+    color: variables.$danger;
+    border: 1px solid variables.$danger;
+    &:active {
+      color: variables.$danger;
+      border: 1px solid variables.$danger;
+      background-color: transparent;
+    }
+  }
+}
+.btn-list {
+  button {
+    margin: 0 0.375rem 0.375rem 0;
+  }
+}
+.btn-group-vertical {
+  .btn-check:checked + .btn {
+    color: variables.$white !important;
+  }
+}
+.btn-outline-primary {
+    border: 1px solid variables.$primary !important;
+    color: variables.$primary !important;
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+        background-color: variables.$primary !important;
+        border:1px solid variables.$primary !important;
+        box-shadow: 0 3px 10px rgba(variables.$primary, 0.5);
+        color: variables.$white !important;
+    }
+}
+.btn-outline-secondary {
+    border: 1px solid variables.$secondary !important;
+    color: variables.$secondary !important;
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+        background-color: variables.$secondary !important;
+        border:1px solid variables.$secondary !important;
+        box-shadow: 0 3px 10px rgba(variables.$secondary, 0.5);
+        color: variables.$white !important;
+    }
+}
+.btn-outline-success {
+    border: 1px solid variables.$success !important;
+    color: variables.$success !important;
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+        background-color: variables.$success !important;
+        border:1px solid variables.$success !important;
+        box-shadow: 0 3px 10px rgba(variables.$success, 0.5);
+        color: variables.$white !important;
+    }
+}
+.btn-outline-danger {
+    border: 1px solid variables.$danger !important;
+    color: variables.$danger !important;
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+        background-color: variables.$danger !important;
+        border:1px solid variables.$danger !important;
+        box-shadow: 0 3px 10px rgba(variables.$danger, 0.5);
+        color: variables.$white !important;
+    }
+}
+.btn-outline-warning {
+    border: 1px solid variables.$warning !important;
+    color: variables.$warning !important;
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+        background-color: variables.$warning !important;
+        border:1px solid variables.$warning !important;
+        box-shadow: 0 3px 10px rgba(variables.$warning, 0.5);
+        color: variables.$white !important;
+    }
+}
+.btn-outline-info {
+    border: 1px solid variables.$info !important;
+    color: variables.$info !important;
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+        background-color: variables.$info !important;
+        border:1px solid variables.$info !important;
+        box-shadow: 0 3px 10px rgba(variables.$info, 0.5);
+        color: variables.$white !important;
+    }
+}
+.btn-outline-light {
+    border: 1px solid variables.$light !important;
+    color: variables.$gray-700 !important;
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+        background-color: variables.$light !important;
+        border: 1px solid variables.$light !important;
+        color: variables.$gray-700 !important;
+    }
+}
+.btn-outline-dark {
+    border: 1px solid variables.$dark !important;
+    color: variables.$dark !important;
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+        background-color: variables.$dark !important;
+        border:1px solid variables.$dark !important;
+        box-shadow: 0 3px 10px rgba(variables.$dark, 0.5);
+        color: variables.$white !important;
+    }
+}
+.btn-soft-primary {
+    background-color: variables.$primary-300 !important;
+    color: variables.$primary !important;
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+       box-shadow: 0 3px 12px rgba(variables.$primary, .2);
+       border-color: variables.$primary;
+    }    
+}
+.btn-soft-secondary {
+    background-color: variables.$secondary-300 !important;
+    color: variables.$secondary !important;
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+       box-shadow: 0 3px 12px rgba(variables.$secondary, .2);
+       border-color: variables.$secondary;
+    }    
+}
+.btn-soft-success {
+    background-color: variables.$success-300 !important;
+    color: variables.$success !important;
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+       box-shadow: 0 3px 12px rgba(variables.$success, .2);
+       border-color: variables.$success;
+    }    
+}
+.btn-soft-danger {
+    background-color: variables.$danger-300 !important;
+    color: variables.$danger !important;
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+       box-shadow: 0 3px 12px rgba(variables.$danger, .2);
+       border-color: variables.$danger;
+    }    
+}
+.btn-soft-warning {
+    background-color: variables.$warning-300 !important;
+    color: variables.$warning !important;
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+       box-shadow: 0 3px 12px rgba(variables.$warning, .2);
+       border-color: variables.$warning;
+    }    
+}
+.btn-soft-info {
+    background-color: rgba(variables.$info, 0.3) !important;
+    color: variables.$info !important;
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+       box-shadow: 0 3px 12px rgba(variables.$info, .2);
+       border-color: variables.$info;
+    }    
+}
+.btn-soft-light {
+    background-color: rgba(variables.$light, .9) !important;
+    color: variables.$text-color !important;
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+       box-shadow: 0 3px 12px rgba(variables.$light, .2);
+       border-color: variables.$light;
+       border-color: variables.$text-color;
+    }    
+}
+.btn-soft-dark {
+    background-color: rgba(variables.$dark, 0.3) !important;
+    color: variables.$white !important;
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+       box-shadow: 0 3px 12px rgba(variables.$dark, .2);
+       border-color: variables.$dark;
+    }    
+}
+.primary-hover {
+  &:hover {
+    background: variables.$primary !important;
+    color: variables.$white;
+  }
+}
+.warning-btn-hover {
+    &:hover {
+        background: variables.$warning !important;
+        border-color: variables.$warning !important;
+        color: variables.$white;
+    }
+}
+.success-btn-hover {
+    &:hover {
+        background: variables.$success !important;
+        border-color: variables.$success !important;
+        color: variables.$white;
+    }
+}
+.danger-btn-hover {
+    &:hover {
+        background: variables.$danger !important;
+        border-color: variables.$danger !important;
+        color: variables.$white !important;
+    }
+}
+.secondary-btn-hover {
+    &:hover {
+        background: variables.$secondary !important;
+        border-color: variables.$secondary !important;
+        color: variables.$white;
+    }
+}
+.primary-btn-hover {
+    &:hover {
+        background: variables.$primary !important;
+        border-color: variables.$primary !important;
+        color: variables.$white !important;
+    }
+}
+.btn {
+  @include mixins.respond-below(sm) {
+      padding: 5px 12px;
+  }
+}
+.bn-close {
+  &.custom-btn-close {
+    background-image: none;
+  }
+}
+.btn {
+  &.btn-icon {
+    &:hover {
+      background: variables.$dark-transparent;
+      color: variables.$dark;
+    }
+    &.active.bg-white {
+      border-color: variables.$white;
+      color: variables.$dark;
+    }
+    &:active {
+      color: variables.$white;
+    }
+  }
+}
+.border-purple {
+  border-color: variables.$purple !important;
+}
+.btn-light.btn-icon {
+  &:hover {
+    background: variables.$primary !important;
+    color: variables.$white !important;
+  }
+}

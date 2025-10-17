@@ -1,0 +1,96 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+/*============================
+  23.content
+============================*/
+.content {
+    padding: 60px 0;
+    @include mixins.respond-below(lg) {
+        padding: 40px 0;
+    }
+    &.content-two {
+        padding-bottom: 36px;
+        @include mixins.respond-below(md) {
+            padding-bottom: 16px;
+        }
+    }
+}
+.page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    .breadcrumb {
+        margin-bottom: 0;
+    }
+    @include mixins.respond-below(sm) {
+        flex-direction: column;
+        align-items: self-start;
+    }
+    .page-title {
+        margin-bottom: 10px;
+    }
+    h3{
+        font-weight: variables.$font-weight-bold;
+        color: variables.$gray-900;
+        font-size: variables.$font-size-18;
+        @include mixins.respond-below(lg) {
+            font-size: variables.$font-size-base;
+        }
+    }
+    h4 {
+        font-weight: variables.$font-weight-semibold;
+        color: variables.$gray-900;
+        font-size: variables.$font-size-18;
+        margin-bottom: 5px;
+        @include mixins.respond-below(lg) {
+            font-size: variables.$font-size-18;
+        }
+    }
+    h6 {
+        font-size: variables.$font-size-base;
+        color: variables.$gray-700;
+        font-weight: variables.$font-weight-normal;
+        @include mixins.respond-below(lg) {
+            font-size: variables.$font-size-12;
+        }
+        @include mixins.respond-below(sm) {
+            font-size: variables.$font-size-12;
+            margin-bottom: 20px;
+        }
+    }
+}
+.back-to-top-icon {
+    position: fixed;
+    right: 15px;
+    bottom: 30px;
+    z-index: 9999;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+	border-radius: 0 10px 0 10px;
+	background: variables.$primary;
+    color: variables.$white;
+    cursor: pointer;
+    border: 0;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+    @include mixins.transition(all 0.5s ease);
+    &:hover {
+        color: variables.$white;
+        background: variables.$primary;
+    }
+    &.show {
+        opacity: 1;
+        @include mixins.transition(all 0.5s ease);
+    }
+}

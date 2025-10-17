@@ -1,0 +1,151 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+h2.main-title{
+    font-size: variables.$font-size-32;
+    @include mixins.respond-below(lg){
+    font-size: variables.$font-size-28;
+    }
+    @include mixins.respond-below(md){
+        font-size: variables.$font-size-26;
+    }
+}
+.share-your-knowledge {
+    position: relative;
+    padding: 80px 0;
+    @include mixins.respond-below(lg) {
+        padding: 50px 0;
+    }
+    .share-knowledge-content {
+        padding: 133px 0 100px;
+        @include mixins.respond-below(lg) {
+            padding: 0;
+        }
+        .register-btn-1 {
+            padding: 6px 16px;
+            background: variables.$secondary;
+            color: variables.$white;
+            &:hover {
+                background: variables.$primary;
+                color: variables.$white;
+            }
+        }
+    }
+    .btn-register {
+        background-color: variables.$secondary;
+        color: variables.$white;
+        padding: 8px 16px;
+        &:hover{
+            background-color: variables.$primary;
+        }
+    }
+}
+.share-your-knowledge-img {
+    position: relative;
+    .become-instructor-bg-01 {
+        position: absolute;
+        top: 218px;
+        left: 20px;
+    }
+    .become-instructor-bg-02 {
+        position: absolute;
+        top: 245px;
+        left: 105px;
+    }
+    .become-instructor-bg-03 {
+        position: absolute;
+        right: 20px;
+        top: 60px;    
+    }
+    .become-instructor-bg-04 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400px;
+    }
+    .become-instructor-bg-05 {
+        position: absolute;
+        top: 250px;
+        right: 0;
+        width: 266px;
+    }
+    .become-instructor-bg-06 {
+        position: absolute;
+        top: 105px;
+        right: 53px;
+    }
+    
+}
+@-webkit-keyframes floating-y{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.how-it-works-sec{
+    position: relative;
+    padding: 80px 0;
+    text-align: center;
+    background: variables.$light-900;
+    @include mixins.respond-below(lg){
+        padding: 50px 0 35px;
+    }
+    .share-knowledge-item-2{
+        background: variables.$white;
+        border: 1px solid variables.$border-color;
+        box-shadow: variables.$box-shadow-xs-2;
+        padding: 1.5rem;
+        border-radius: 10px;
+    }
+    .text-truncate.line-clamb-2{
+        -webkit-line-clamp: 2;
+    }
+}
+.counter-sec {
+    .become-instructor-item-3 {
+        padding: 20px;
+        border-radius: 10px;
+        background: variables.$white;
+        height: 113px;
+    }
+}
+.register-sec{
+    position: relative;
+    padding: 80px 0 60px;
+    @include mixins.respond-below(lg){
+        padding: 50px 0;
+    }
+   .toggle-passwords {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        right: 10px;
+    }
+    .register-section {
+        padding: 20px;
+        background: variables.$light-900;
+        border-radius: 10px;
+    }
+}
+.become-an-instructor {
+    .instructor-bg-1{
+        right: 25%;
+        top: 0;
+        position: absolute;
+        z-index: -1;
+    }
+    .instructor-bg-2{
+        left: 30%;
+        bottom: 0;
+        position: absolute;
+        z-index: -1;
+    }
+}

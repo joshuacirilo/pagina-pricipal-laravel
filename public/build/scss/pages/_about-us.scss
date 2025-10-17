@@ -1,0 +1,62 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.about-section {
+    padding: 80px 0;
+    @include mixins.respond-below(lg){
+        padding: 50px 0;
+    }
+    &-two {
+        padding: 80px 0;
+        @include mixins.respond-below(lg){
+            padding: 50px 0;
+        }
+        .img-radius {
+            border-radius: 100px 0;
+            @include mixins.respond-below(sm){
+                border-radius: 60px 0;
+            }
+        }
+        .about-icon{
+            width: 64px;
+            height: 64px;
+        }
+        .about-us-banner {
+            margin-bottom: 31px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            h6 {
+                font-size: variables.$font-size-18;
+            }
+        }
+    }
+}
+
+.benefit-section {
+    position: relative;
+    padding: 80px 0 56px;
+    @include mixins.respond-below(lg){
+    padding: 50px 0 30px;
+    }
+}
+.institutions-sec{
+    padding-bottom: 30px;
+    position: relative;
+}
+.counter-sec{
+    position: relative;
+    background-color: variables.$primary;
+    padding: 40px 0;
+    .about-us-count {
+        border: 1px solid #E9ECEF;
+        box-shadow: 0px 4px 14px 0px #E7E7E740;
+        background: variables.$white;
+        border-radius: 10px;
+        padding: 20px;
+        height: 112px;
+        @include mixins.respond-below(xl) {
+            margin-bottom: 24px;
+        }
+    }
+}

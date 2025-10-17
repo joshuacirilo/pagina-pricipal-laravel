@@ -1,0 +1,73 @@
+@use "../utils/variables";
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 50px !important;
+}
+::-webkit-scrollbar-track {
+    background: variables.$light-500;
+}
+::-webkit-scrollbar-thumb {
+    background: variables.$gray-200;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: variables.$gray-200;
+}
+.swal2-header{
+    .swal2-title{
+        font-size: variables.$font-size-18;
+    }
+}
+hr {
+    border-color: variables.$border-color;
+    opacity: 1;
+}
+.checkboxs {
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding-left: 25px;
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+}
+.checkboxs input ~ .checkmarks {
+    border: 1px solid variables.$light-900;
+    border-radius: 2px;
+}
+.checkboxs input:checked ~ .checkmarks {
+    background-color: variables.$primary;
+    border-color: variables.$primary;
+    &:after {
+        display: block;
+    }
+}
+.checkboxs .checkmarks {
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    &::after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        content: "\f00c";
+        font-family: 'Font Awesome 5 Free';
+        color: variables.$white;
+        font-weight: variables.$font-weight-semibold;
+        font-size: 10px;
+    }
+}
+.shadow-sm {
+    box-shadow: variables.$box-shadow-xs-2;
+}

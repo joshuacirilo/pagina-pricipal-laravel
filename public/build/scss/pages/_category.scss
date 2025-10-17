@@ -1,0 +1,267 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+/*=============================
+    Category
+===============================*/
+
+
+.categories {
+    &-item {
+        border: 1px solid variables.$border-color;
+        padding: 16px;
+        text-align: center;
+        @include mixins.rounded(10px);
+        margin-bottom: 24px;
+        background: variables.$white;
+        .categories-img {
+            width: 68px;
+            height: 68px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            background: variables.$light-900;
+            margin-bottom: 16px;
+            border: 1px solid variables.$white;
+        }
+        h6 {
+            font-size: variables.$font-size-16;
+        }
+        &:hover {
+            cursor: pointer;
+            .categories-img {
+                animation: verticalRotate 0.5s linear 1;
+            }        
+        }
+        p {
+            font-size: variables.$font-size-14;
+        }
+        &-two {
+            padding: 20px;
+            @include mixins.transition(all 0.3s ease 0s);    
+            .categories-icon {
+                display: block;
+                margin-bottom: 24px;
+                img {
+                    margin: 0 auto;
+                }
+            }
+            h5 {
+                margin-bottom: 4px;
+            }
+            p {
+                font-size: variables.$font-size-14;
+                font-weight: variables.$font-weight-medium;
+            }
+            &:hover {
+                background: variables.$primary;
+                @include mixins.transition(all 0.3s ease 0s);    
+                h5 {
+                    a {
+                        color: variables.$white;
+                    }
+                }
+                p {
+                    color: variables.$white;
+                }
+            }
+        }
+        &-three {
+            padding: 20px;
+            border: 1px solid variables.$gray-100;
+            img {
+                margin-bottom: 20px;
+            }
+            .title {
+                font-weight: variables.$font-weight-medium;
+                text-align: center;
+            }
+            &:hover {
+                img {
+                    animation: verticalRotate 0.5s linear 1;
+                }
+            }
+        }
+        &-four {
+            box-shadow: variables.$box-shadow;
+            padding: 24px;
+            margin-bottom: 24px;
+            @include mixins.transition(0.7s);	
+            position: relative;	
+            text-align: left;
+            z-index: 1;
+            &::before {
+                background: url('../img/bg/category-bg.png') no-repeat;
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100px;
+                height: 100%;
+                z-index: -1;
+            }
+            .categories-icon {
+                margin-bottom: 24px;
+                img {
+                    width: 53px;
+                }
+            }	
+            .title {
+                font-size: variables.$font-size-20;
+                @include mixins.transition(0.7s);	
+                margin-bottom: 4px;
+                @include mixins.respond-below(lg) {
+                    font-size: variables.$font-size-18;
+                }
+                @include mixins.respond-below(md) {
+                    font-size: variables.$font-size-16;
+                }
+            }
+            &:hover {
+                background: variables.$gray-400;
+                cursor: pointer;
+                border: 1px solid variables.$gray-400;
+                @include mixins.transition(0.7s);	
+                .title {
+                    a {
+                        color: variables.$white;
+                        @include mixins.transition(0.7s);	
+                    }
+                }
+                p {
+                    color: variables.$white;
+                    @include mixins.transition(0.7s);	
+                }
+            }
+        }
+        &-five {
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            @include mixins.transition(0.7s);
+            text-align: center;
+            margin-bottom: 40px;
+            .categories-icon {
+                width: 65px;
+                height: 65px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: variables.$light-900;
+                border-radius: 5px;
+                margin: 0 auto 12px;
+            }
+            h3 {
+                font-weight: variables.$font-weight-bold;
+			    font-size: variables.$font-size-18;
+            }
+            &:hover {
+                background: variables.$primary;
+                cursor: pointer;
+                border: 1px solid variables.$primary;
+                box-shadow: 0px 1px 4px rgb(0 0 0 / 20%);
+                @include mixins.transition(0.7s);
+                h3 {
+                    color: variables.$white;
+                    @include mixins.transition(0.7s);
+                    a {
+                        color: variables.$white;
+                    }
+                }
+                .instructors-info {
+                    p {
+                        color: variables.$white;
+                        @include mixins.transition(0.7s);
+                    }
+                }
+            }
+            .instructors-info {
+                display: flex;
+                display: -ms-flexbox;
+                align-items: center;
+                justify-content: center;
+                p {
+                    font-weight: 500;
+                    font-size: 14px;
+                    margin-bottom: 0;
+                    @include mixins.transition(0.7s);
+                }
+            }
+            .category-info {
+                border-bottom: 1px solid variables.$border-color;
+                margin-bottom: 15px;
+                padding-bottom: 15px;
+            }
+        }
+        &-six {            
+            background: variables.$light-900;
+            border: 1px solid transparent;
+            padding: 24px;
+            margin-bottom: 0;
+            .categories-icon {
+                margin-bottom: 24px;
+                text-align: center;
+                .icon-bg {
+                    position: relative;
+                    background: variables.$primary;
+                    border-radius: 75px 30px 75px 30px;
+                    width: 90px;
+                    margin: auto auto 0;
+                }
+                img {
+                    background: variables.$white;
+                    padding: 20px;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.4s ease 0s;
+                    border-radius: 50%;
+                }
+            }
+            .title {
+                font-size: variables.$font-size-20;
+                @include mixins.respond-below(md) {
+                    font-size: variables.$font-size-18;
+                }
+            }
+            p {
+                margin-bottom: 20px;
+            }
+            .view-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.4s ease 0s;
+                width: 30px;
+                height: 30px;
+                background: variables.$primary;
+                border-radius: 50%;
+                -webkit-transition: 0.7s;
+                -moz-transition: 0.7s;
+                -o-transition: 0.7s;
+                transition: 0.7s;
+                margin: 0 auto;
+                color: variables.$white;
+                font-size: variables.$font-size-12;
+            }
+            &:hover {
+                border: 1px solid variables.$primary;
+                background: variables.$primary;
+                border-radius: 10px;
+                transition-duration: 0s;
+                .icon-bg {
+                    background: variables.$secondary;
+                }
+                h3 {
+                    color: variables.$white;
+                }
+                p{
+                    color: variables.$light;
+                }
+                .view-icon {
+                    background: variables.$secondary;
+                }
+            }
+        }
+    }
+}

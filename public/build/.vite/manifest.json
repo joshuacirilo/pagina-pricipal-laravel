@@ -1,0 +1,80 @@
+{
+  "resources/css/style.css": {
+    "file": "css/style.min.css",
+    "src": "resources/css/style.css",
+    "isEntry": true,
+    "names": [
+      "style.css"
+    ]
+  },
+  "resources/img/bg/ban-bg.png": {
+    "file": "icons/ban-bg.png",
+    "src": "resources/img/bg/ban-bg.png"
+  },
+  "resources/img/bg/benefit-bg.png": {
+    "file": "icons/benefit-bg.png",
+    "src": "resources/img/bg/benefit-bg.png"
+  },
+  "resources/img/bg/bg-1.png": {
+    "file": "icons/bg-1.png",
+    "src": "resources/img/bg/bg-1.png"
+  },
+  "resources/img/bg/card-bg-02.png": {
+    "file": "icons/card-bg-02.png",
+    "src": "resources/img/bg/card-bg-02.png"
+  },
+  "resources/img/bg/category-bg.png": {
+    "file": "icons/category-bg.png",
+    "src": "resources/img/bg/category-bg.png"
+  },
+  "resources/img/bg/map-bg.png": {
+    "file": "icons/map-bg.png",
+    "src": "resources/img/bg/map-bg.png"
+  },
+  "resources/img/bg/map.png": {
+    "file": "icons/map.png",
+    "src": "resources/img/bg/map.png"
+  },
+  "resources/img/bg/role-bg-01.png": {
+    "file": "icons/role-bg-01.png",
+    "src": "resources/img/bg/role-bg-01.png"
+  },
+  "resources/img/bg/role-bg-02.png": {
+    "file": "icons/role-bg-02.png",
+    "src": "resources/img/bg/role-bg-02.png"
+  },
+  "resources/img/bg/subscribe-bg.png": {
+    "file": "icons/subscribe-bg.png",
+    "src": "resources/img/bg/subscribe-bg.png"
+  },
+  "resources/img/bg/testimonials-bg.jpg": {
+    "file": "icons/testimonials-bg.jpg",
+    "src": "resources/img/bg/testimonials-bg.jpg"
+  },
+  "resources/img/course/course-details-bg.jpg": {
+    "file": "icons/course-details-bg.jpg",
+    "src": "resources/img/course/course-details-bg.jpg"
+  },
+  "resources/img/feature/feature-28.jpg": {
+    "file": "icons/feature-28.jpg",
+    "src": "resources/img/feature/feature-28.jpg"
+  },
+  "resources/img/icon/email.svg": {
+    "file": "icons/email.svg",
+    "src": "resources/img/icon/email.svg"
+  },
+  "resources/img/icon/mail-2.svg": {
+    "file": "icons/mail-2.svg",
+    "src": "resources/img/icon/mail-2.svg"
+  },
+  "resources/img/shapes/dot-group.png": {
+    "file": "icons/dot-group.png",
+    "src": "resources/img/shapes/dot-group.png"
+  },
+  "resources/js/script.js": {
+    "file": "js/script.js",
+    "name": "script",
+    "src": "resources/js/script.js",
+    "isEntry": true
+  }
+}

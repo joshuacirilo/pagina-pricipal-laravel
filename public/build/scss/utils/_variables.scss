@@ -1,0 +1,432 @@
+@use "sass:color";
+// Font import
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+  --white: #fff;
+  --dark: #000;
+  --black: #000;
+  --light: #F8F8F8;
+
+  --gray-100: #E7E7E7;
+  --gray-200: #D1D1D1;
+  --gray-300: #B0B0B0;
+  --gray-400: #888888;
+  --gray-500: #6D6D6D;
+  --gray-600: #5D5D5D;
+  --gray-700: #4F4F4F;
+  --gray-800: #3D3D3D;
+  --gray-900: #191919;
+  
+  --light-100: #FEFEFE;
+  --light-200: #FCFCFD;
+  --light-300: #FBFBFD;
+  --light-400: #F9FAFC;
+  --light-500: #F8FAFB;
+  --light-600: #F7F9FB;
+  --light-700: #F6F8FA;
+  --light-800: #F5F7FA;
+  --light-900: #F4F6F9;
+}
+.dark-mode {
+  --white: #0D0D0D;
+  --dark: #D6DADE;
+  --black: #D6DADE;
+  --light: #0D0D0D;
+
+  --gray-100: #171717;
+  --gray-200: #1F2228;
+  --gray-300: #2F343C;
+  --gray-400: #9CA3AF;
+  --gray-500: #6B7280;
+  --gray-600: #4B5563;
+  --gray-700: #374151;
+  --gray-800: #C8D2E0;
+  --gray-900: #D8DFEE;
+  
+  --light-100: #0A0A0A;
+  --light-200: #0B0B0B;
+  --light-300: #0C0C0C;
+  --light-400: #0E0E0E;
+  --light-500: #0F0F0F;
+  --light-600: #101010;
+  --light-700: #111111;
+  --light-800: #121212;
+  --light-900: #181818;
+
+}
+
+// Base Font
+$font-size-base: 14px;
+$font-size-sm: $font-size-base * .875;
+$font-size-lg: $font-size-base * 1.25;
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+
+// Font Family
+$font-family-primary: "Inter", sans-serif;
+$font-awesome: "Fontawesome";
+	
+// Theme Colors Variables
+$primary: #392C7D;
+$primary-hover: #241B4B;
+$secondary: #FF4667;
+$secondary-hover: #ED1143;
+$success: #03C95A;
+$success-hover: color.adjust($success, $lightness: -10%);
+$info: #5625E8;
+$info-hover: color.adjust($info, $lightness: -10%);
+$warning: #FFC107;
+$warning-hover: color.adjust($warning, $lightness: -10%);
+$danger: #E70D0D;
+$danger-hover: color.adjust($danger, $lightness: -10%);
+$dark: var(--dark);
+$dark-hover: #061423;
+$light: var(--light);
+$light-hover: #A8AAB2;
+$white: var(--white);
+$black: var(--black);
+$purple: #AB47BC;
+$pink: #FD3995;
+$skyblue: #0DCAF0;
+$teal: #02a8b5;
+$ligh-green: #0DD3A3;
+
+$dark-green: #111926;
+$night-blue: #0F0F41;
+$dark-gray: #2E2E48;
+$royal-blue: #0039C6;
+$indigo: #391694;
+$darkaqua: #116D6E;
+$whiterock: #F0E4D7;
+$rockblue: #8CB9BD;
+$bluehaze: #B5C0D0;
+$brightblue:  #2066FF;
+$lunargreen: #365E32;
+$lavendar: #673AB7;
+$magenta: #E83E8C;
+$chromeyellow: #FFB54A;
+$lavared: #DC2626;
+$blackpearl: #080821;
+$maroon: #710034;
+$bluegem: #3E1C95;
+$firefly: #053333;
+
+$violet: red;
+$orange: orange;
+$green: green;
+$red: red;
+
+// Primary
+$primary-100: #D6D4E4;
+$primary-200: #C2BED6;
+$primary-300: #AEA9C9;
+$primary-400: #9A93BB;
+$primary-500: #857DAD;
+$primary-600: #7168A0;
+$primary-700: #5D5292;
+$primary-800: #483D85;
+$primary-900: #342777;
+
+// Secondary
+$secondary-100: #FFDAE0;
+$secondary-200: #FFC8D1;
+$secondary-300: #FFB5C1;
+$secondary-400: #FFA3B2;
+$secondary-500: #FF90A3;
+$secondary-600: #FF7E93;
+$secondary-700: #FF5974;
+$secondary-800: #FF5974;
+$secondary-900: #FF4665;
+
+// Pink
+$pink-100: #FFDBEC;
+$pink-200: #FECAE3;
+$pink-300: #FEB8D9;
+$pink-400: #FEA6D0;
+$pink-500: #FE94C6;
+$pink-600: #FE82BD;
+$pink-700: #FD71B3;
+$pink-800: #FD5FAA;
+$pink-900: #FD4DA0;
+
+// Light
+$light-100: var(--light-100);
+$light-200: var(--light-200);
+$light-300: var(--light-300);
+$light-400: var(--light-400);
+$light-500: var(--light-500);
+$light-600: var(--light-600);
+$light-700: var(--light-700);
+$light-800: var(--light-800);
+$light-900: var(--light-900);
+
+// Gray
+$gray-100: var(--gray-100);
+$gray-200: var(--gray-200);
+$gray-300: var(--gray-300);
+$gray-400: var(--gray-400);
+$gray-500: var(--gray-500);
+$gray-600: var(--gray-600);
+$gray-700: var(--gray-700);
+$gray-800: var(--gray-800);
+$gray-900: var(--gray-900);
+
+// Info
+$info-100: #E1D8FB;
+$info-200: #D1C4F9;
+$info-300: #C2B1F7;
+$info-400: #B39DF5;
+$info-500: #A489F2;
+$info-600: #9576F0;
+$info-700: #8562EE;
+$info-800: #764FEC;
+$info-900: #673BEA;
+
+// Success
+$success-100: #D2F5E1;
+$success-200: #BBF0D3;
+$success-300: #A4EBC4;
+$success-400: #8EE7B5;
+$success-500: #77E2A6;
+$success-600: #60DD97;
+$success-700: #49D889;
+$success-800: #33D37A;
+$success-900: #1CCE6B;
+
+// Danger
+$danger-100: #F6CECE;
+$danger-200: #F1B6B6;
+$danger-300: #EC9E9E;
+$danger-400: #E88686;
+$danger-500: #E36D6D;
+$danger-600: #DE5555;
+$danger-700: #D93D3D;
+$danger-800: #D52424;
+$danger-900: #D00C0C;
+
+// Warning
+$warning-100: #FFF4D2;
+$warning-200: #FFEEBC;
+$warning-300: #FFE9A6;
+$warning-400: #FFE390;
+$warning-500: #FFDD79;
+$warning-600: #FFD863;
+$warning-700: #FFD24D;
+$warning-800: #FFCD36;
+$warning-900: #FFC720;
+
+// Purple
+$purple-100: #F0DEF3;
+$purple-200: #E8CDED;
+$purple-300: #E1BDE7;
+$purple-400: #D9ACE1;
+$purple-500: #D19BDB;
+$purple-600: #CA8BD5;
+$purple-700: #C27ACF;
+$purple-800: #BB6AC9;
+$purple-900: #B359C3;
+
+// Skyblue
+$skyblue-100: #D3F5FC;
+$skyblue-200: #BEF1FB;
+$skyblue-300: #A8ECFA;
+$skyblue-400: #92E7F9;
+$skyblue-500: #7CE2F7;
+$skyblue-600: #66DDF6;
+$skyblue-700: #51D9F5;
+$skyblue-800: #3BD4F3;
+$skyblue-900: #25CFF2;
+
+// Darkmode Base
+$darkmode-light: #252525;
+$darkmode-dark: #D6DADE;
+$darkmode-white: #0D0D0D;
+
+// Darkmode Gray
+$darkmode-gray-900: #D8DFEE;
+$darkmode-gray-800: #C8D2E0;
+$darkmode-gray-700: #374151;
+$darkmode-gray-600: #4B5563;
+$darkmode-gray-500: #6B7280;
+$darkmode-gray-400: #9CA3AF;
+$darkmode-gray-300: #2F343C;
+$darkmode-gray-200: #1F2228;
+$darkmode-gray-100: #171717;
+
+// Darkmode Light
+$darkmode-light-900: #181818;
+$darkmode-light-800: #121212;
+$darkmode-light-700: #111111;
+$darkmode-light-600: #101010;
+$darkmode-light-500: #0F0F0F;
+$darkmode-light-400: #0E0E0E;
+$darkmode-light-300: #0C0C0C;
+$darkmode-light-200: #0B0B0B;
+$darkmode-light-100: #0A0A0A;
+
+// Darkmode Transparent
+$darkmode-primary-transparent: #100601;
+$darkmode-secondary-transparent: #030D11;
+$darkmode-success-transparent: #04150C;
+$darkmode-warning-transparent: #171203;
+$darkmode-danger-transparent: #240505;
+$darkmode-info-transparent: #050C15;
+$darkmode-purple-transparent: #17051B;
+$darkmode-skyblue-transparent: #03191E;
+$darkmode-pink-transparent: #240917;
+$darkmode-dark-transparent: #212324;
+$darkmode-light-transparent: #0B0F14;
+
+$colors: (
+  "skyblue":    $skyblue,
+  "purple":     $purple,
+  "pink":       $pink,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+);
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "purple": $purple
+);
+
+$text-color: var(--gray-500);
+$title-color: var(--gray-900);
+$sub-title: var(--gray-500);
+$body-bg: var(--white);
+$text-muted: #677788;
+$default-background: #F8F9FA;
+$black-bg: #141432;
+$input-bg: #2c2c50;
+$form-control-bg: var(--white);
+
+// Social Icons Colors
+$facebook: #3B5998;
+$twitter: #00ACEE;
+$google: #DD4B39;
+$linkedin: #0E76A8;
+$youtube: #C4302B;
+$instagram: #3F729B;
+$pinterest: #cc2127;
+$skype: #00AFF0;
+$email: #6567A5;
+$appstore: #000;
+
+// Gradient Variables
+$primary-transparent: #EBE9F1;
+$secondary-transparent: #FFEDF0;
+$success-transparent: #E8FAF0;
+$warning-transparent: #FFF9E9;
+$danger-transparent: #FAE7E7;
+$info-transparent: #F0EBFD;
+$pink-transparent: #FFEDF6;
+$light-transparent: #FDFDFF;
+$dark-transparent: #E8E8E8;
+$teal-transparent: #E6F9FF;
+$purple-transparent: #F7EEF9;
+$skyblue-transparent: #E9FAFE;
+$primary-gradient: linear-gradient(90deg, #FEE0DE 0%, #E4F5FD 51.39%, #DDEDFF 100%);
+$secondary-gradient: linear-gradient(180deg, #3B7080 0%, #3D90A9 100%);
+$success-gradient: linear-gradient(180deg, #2DCB73 0%, #0DA952 100%);
+$warning-gradient: linear-gradient(180deg, #FFC107 0%, #FFE8A5 100%);
+$danger-gradient: linear-gradient(180deg, #E70D0D 0%, #810707 100%);
+$info-gradient: linear-gradient(180deg, #177DBC 0%, #1A91DB 100%);
+$light-gradient: linear-gradient(180deg, #F8F9FA 0%, #EDEDED 100%);
+$dark-gradient: linear-gradient(180deg, #F3F6FF 0%, #FFFFFF 100%);
+$pink-gradient: linear-gradient(180deg, #FFA795 0%, #FFFFFF 100%);
+$purple-gradient: linear-gradient(180deg, #4B3088 0%, #5C2DC8 100%);
+$teal-gradient: linear-gradient(180deg, #E6F9FF 0%, #FFFFFF 100%);
+$orange-gradient: linear-gradient(180deg, #FF9945 0%, #FC6173 100%);
+$gradient-purple: linear-gradient(180deg, #667CE8 0%, #754EA7 100%);
+$blue-gradient: linear-gradient(180deg, #00C0F9 0%, #0257CE 100%);
+$maroon-gradient: linear-gradient(180deg, #EF3B4A 0%, #513A8F 100%);
+
+$purple-gradient2: linear-gradient(10.93deg, #392C7D 16.22%, #6850E3 120.13%);
+$blue-gradient2: linear-gradient(10.93deg, #2C7A9C 16.22%, #0936CB 120.13%);
+
+// Style Anchor Elements
+$link-color: $primary;
+$link-decoration: none;
+$link-shade-percentage: 20%;
+$link-hover-color: color.adjust($link-color, $lightness: -10%);
+$link-hover-decoration: null;
+$spacer: 1rem;
+
+// Border
+$border-width: 1px;
+$border-style: solid;
+$border-color: $gray-100;
+$default-border: $gray-100;
+$input-border: $gray-100;
+
+// Border Radius
+$border-radius: 4px;
+$border-radius-sm: 3px;
+$border-radius-lg: 5px;
+$border-radius-xl: 8px;
+$border-radius-xxl: 12px;
+$rounded: 50%;
+$rounded-pill: 1.5rem;
+
+// Box Shadow
+$box-shadow: 0px 4px 4px 0px #D4D4D440;
+$box-shadow-xs: 0px 1px 1px 1px rgba(198, 198, 198, 0.2);
+$box-shadow-xs-2: 0px 4px 4px 0px rgba(212, 212, 212, 0.2);
+$box-shadow-sm: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+$box-shadow-md: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+$box-shadow-lg: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+$drop-shadow: 0px 4px 14px 0px #DBDBDB40;
+$box-shadow-100: 0px 8px 24px 0px #959DA52E;
+$box-shadow1: 0px 4px 24px 0px rgba(220, 220, 220, 0.25);
+
+
+
+// Font Size
+$font-size-8: 8px;
+$font-size-9: 9px;
+$font-size-10: 10px;
+$font-size-11: 11px;
+$font-size-12: 12px;
+$font-size-13: 13px;
+$font-size-14: 14px;
+$font-size-15: 15px;
+$font-size-16: 16px;
+$font-size-17: 17px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+$font-size-22: 22px;
+$font-size-24: 24px;
+$font-size-26: 26px;
+$font-size-28: 28px;
+$font-size-30: 30px;
+$font-size-32: 32px;
+$font-size-34: 34px;
+$font-size-36: 36px;
+$font-size-38: 38px;
+$font-size-40: 40px;
+$font-size-42: 42px;
+$font-size-44: 44px;
+$font-size-48: 48px;
+$font-size-50: 50px;
+$font-size-54: 54px;
+$font-size-60: 60px;
+
+$h1-font-size: 28px;
+$h2-font-size: 24px;
+$h3-font-size: 20px;
+$h4-font-size: 18px;
+$h5-font-size: 16px;
+$h6-font-size: 14px;

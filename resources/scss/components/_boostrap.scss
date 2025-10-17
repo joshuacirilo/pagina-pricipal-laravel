@@ -1,0 +1,136 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover {
+	background-color: variables.$primary;
+	text-shadow: unset;
+}
+.bootstrap-datetimepicker-widget table {
+	th {
+		font-size: variables.$font-size-14;
+		font-weight: variables.$font-weight-semibold;
+		color: variables.$gray-900;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		&.prev, &.next {
+			padding-bottom: 16px;
+			span {
+				width: 24px;
+				height: 24px;
+				font-size: variables.$font-size-12;
+				border: 1px solid variables.$light-900;
+				@include mixins.rounded(50%);
+				display: -webkit-inline-box;
+				display: -ms-inline-flexbox;
+				display: inline-flex;
+				align-items: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				justify-content: center;
+				-webkit-justify-content: center;
+				-ms-flex-pack: center;
+				&:hover {
+					background: variables.$dark;
+					border-color: variables.$dark;
+					color: variables.$white;
+				}
+			}
+		}
+	}
+	td {
+		font-size: variables.$font-size-14;
+		color: variables.$gray-500;
+		&.day {
+			width: 30px;
+			height: 32px;
+			line-height: 32px;
+		}
+	}
+} 
+.bootstrap-datetimepicker-widget {
+	z-index: 999 !important;
+	.picker-switch {
+		padding-bottom: 16px;
+	}
+}
+.bootstrap-datetimepicker-widget table td.today:before {
+	border-bottom-color: variables.$primary;
+}
+.bootstrap-datetimepicker-widget table thead tr:first-child th:hover {
+    background: transparent;
+}
+.border-success {
+	border-color: variables.$success !important;
+}
+.shadow-sm {
+    box-shadow: variables.$box-shadow-sm !important;
+}
+.shadow-md {
+    box-shadow: variables.$box-shadow-md !important;
+}
+.list-group-item {
+	border-color: variables.$light-900 !important;
+	color: inherit;
+}
+.list-group {
+    a {
+        &.active {
+            background: variables.$primary-100;
+            color: variables.$primary;
+        }
+        &:hover {
+            background: variables.$primary-100;
+            color: variables.$primary;
+        }
+    }
+}
+.list-styled-dotted {
+    li {
+        list-style-type: disc;
+    }
+}
+.link-default {
+	color: variables.$gray-500;
+	&:hover {
+		color: variables.$primary;
+	}
+}
+.custom-offcanvas {
+    &.offcanvas.offcanvas-end {
+        width: 600px !important;
+        .offcanvas-header {
+            .close-btn {
+                width: 20px;
+                height: 20px;
+                color: variables.$white;
+                @include mixins.rounded(50%);
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                justify-content: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                background-color: variables.$gray-500;
+                border: 1px solid variables.$gray-500;
+                &:hover {
+                    background: variables.$danger;
+                    border-color: variables.$danger;
+                }
+            }
+        }
+    }
+}
+.w-40 {
+    width: 40%;
+    @include mixins.respond-below(md) {
+        width: 100%;
+    }
+}
+hr {
+    border-color: variables.$light-900;
+}

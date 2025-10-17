@@ -1,0 +1,81 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+
+.pricing-plan-sec{
+    position: relative;
+    padding: 60px 0;
+    @include mixins.respond-below(lg){
+        padding: 50px 0;
+    }
+    h2 {
+        font-size: variables.$font-size-32;
+    }
+    .pricing-cover {
+        margin: 40px 0 60px;
+    }
+    .pricing-item {
+        padding: 20px;
+        border: 1px solid variables.$border-color;
+        box-shadow: 0px 4px 4px 0px #D4D4D440;
+        border-radius: 10px;
+        h1 {
+            font-size: variables.$font-size-38;
+        }
+        p {
+            font-size: variables.$font-size-14;
+            color: variables.$gray-500;
+        }
+    }
+    .form-check-input{
+        background-color: variables.$gray-100;
+        border: none;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e") !important;
+    }
+    .form-check-input:checked {
+        background-color: variables.$primary;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e") !important;
+    }
+    .form-check-input:focus {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e") !important;   
+     }
+     table{
+        tr{
+            th{
+                font-size: variables.$font-size-18;
+                border: none;
+                padding: 12px 15px;
+                @include mixins.respond-below(lg){
+                    font-size: variables.$font-size-16;
+                }
+            }
+            td{
+                border: 1px solid variables.$gray-100;
+                padding: 12px 15px;
+                color: variables.$gray-900;
+                font-size: variables.$font-size-16;
+                font-weight: variables.$font-weight-medium;
+                @include mixins.respond-below(lg){
+                    font-size: variables.$font-size-14;
+                }
+            }
+            &.basic{
+                td{
+                    font-size: variables.$font-size-18;
+                    color: variables.$gray-900;
+                    @include mixins.respond-below(lg){
+                        font-size: variables.$font-size-16;
+                    }
+                }
+            }
+        }
+     }
+     .btn-start-free{
+        color: variables.$gray-900;
+        background-color: variables.$light;
+        &:hover{
+            background-color: variables.$secondary;
+            color: variables.$white;
+        }
+     }
+}

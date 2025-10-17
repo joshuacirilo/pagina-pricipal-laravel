@@ -1,0 +1,326 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.login-content {
+	.login-bg {
+		background: #FEEEF0;
+		min-height: 100vh;
+		position: fixed;
+		display: flex;
+		align-items: center;
+		width: 50%;
+	}
+	.login-banner {
+		max-width: 100%;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		img {
+			max-width: 430px;
+		}
+	}
+	.login-carousel {
+		width: 100%;
+		.login-carousel-section {
+			.login-banner {
+				margin: auto;
+				margin-bottom: 30px;
+			}
+			.mentor-course {
+				width: 558px;
+				text-align: center;
+				margin: auto;
+			}
+		}
+		p {
+			font-size: variables.$font-size-14;
+		}
+	}
+	.slick-dots {
+		button {
+			width: 10px;
+			height: 10px;
+			border-radius: 50px;
+			background: variables.$gray-100;
+		}
+		.slick-active {
+			width: 50px;
+			height: 10px;
+			border-radius: 50px;
+			background: variables.$secondary;
+			button {
+				background: transparent;
+			}
+		}
+	}
+	.welcome-login {
+		padding: 20px 20px 0px 20px;
+	}
+	.login-wrap-bg {
+		position: absolute;
+		right: 0;
+		padding: 0;
+		.login-wrapper {
+			max-width: 100%;
+			height: 100vh;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			justify-content: center;
+			display: -ms-flexbox;
+			display: flex;
+			flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+			.loginbox {
+				max-width: 100%;
+				width: 100%;
+				font-weight: 600;
+				padding: 20px 100px;
+				@include mixins.respond-below(xl) {
+					padding: 20px 70px;
+				}
+				@include mixins.respond-below(lg) {
+					padding: 20px 60px;
+				}
+				@include mixins.respond-below(md) {
+					padding: 20px 30px;
+				}
+				.img-logo {
+					margin-bottom: 54px;
+					display: -webkit-box;
+					display: -ms-flexbox;
+					display: flex;
+					align-items: center;
+					-webkit-box-align: center;
+					-ms-flex-align: center;
+					align-items: center;
+					img {
+						width: 150px;
+					}
+				}
+			}
+		}
+		.login-header {
+			margin-bottom: 80px;
+			@include mixins.respond-below(md) {
+				margin-bottom: 50px;
+			}
+			@include mixins.respond-below(sm) {
+				margin-bottom: 30px;
+			}
+
+		}
+		.topic {
+			margin-bottom: 40px;
+			@include mixins.respond-below(md) {
+				margin-bottom: 30px;
+			}
+			@include mixins.respond-below(sm) {
+				margin-bottom: 20px;
+			}
+		}
+
+		.form-control {
+			&:focus {
+				border-color: variables.$secondary;
+			}
+		}
+		.email-input {
+			position: relative;
+			&::before {
+				position: absolute;
+				content: "/f007";
+				font-family: "Font Awesome 5 Free";
+				color: #08131E;
+                font-size: 16px;
+                font-weight: 900;
+				z-index: 1;
+				top: 0;
+				right: 0;
+			}
+		}
+		.form-check-input {
+			width: 20px;
+			height: 20px;
+			margin-top: 0;
+			margin-right: 8px;
+		}
+		.form-check-label {
+			font-weight: variables.$font-weight-normal;
+		}
+
+		.form-control.otp {
+			width: 88px;
+			height: 70px;
+			margin-right: 20px;
+			text-align: center;
+			@include mixins.respond-below(xl) {
+				width: 75px;
+				height: 65px;
+			}
+			@include mixins.respond-below(md) {
+				width: 65px;
+				height: 55px;
+			}
+			&:last-child {
+				margin-right: 0;
+			}		  
+			& {
+				-moz-appearance: textfield;
+			}
+		}
+		.form-control.otp::-webkit-inner-spin-button, 
+			.form-control.otp::-webkit-outer-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+			}
+		
+		.or {
+			position: relative;
+			&::after {
+				position: absolute;
+				content: "";
+				width: 180px;
+				height: 1px;
+				background: variables.$gray-100;
+				left: 0;
+			}
+			&::before {
+				position: absolute;
+				content: "";
+				width: 180px;
+				height: 1px;
+				background: variables.$gray-100;
+				right: 0;
+			}
+		}
+	}
+	
+	.google-bg {
+		span {
+			a {
+				color: #22100D;
+				font-weight: 400;
+			}
+		}
+	}
+	.sign-google {
+		margin: 32px 0px;
+	}
+	.pass-group {
+		position: relative;
+	}
+	.toggle-password.feather-eye {
+		margin-right: 1px;
+		color: #6e82a3;
+	}
+	.toggle-password.feather-eye-off {
+		color: #F66962;
+	}
+	.pass-checked {
+		position: absolute;
+		right: 40px;
+		top: 55%;
+		transform: translateY(-50%);
+		color: #4CAF50;
+		opacity: 0;
+	}
+	.pass-checked.active {
+		opacity: 1;
+	}
+	.forgot-link {
+		color: #392C7D;
+		font-size: 14px;
+	}
+
+	.link-1 {
+		font-size: variables.$font-size-14;
+		color: variables.$secondary;
+		font-weight: variables.$font-weight-normal;
+		text-decoration: underline;
+		&:hover {
+			color: variables.$primary;
+		}
+	}
+	.link-2 {
+		color: variables.$secondary;
+		font-weight: variables.$font-weight-normal;
+		font-size: variables.$font-size-14;
+		&:hover {
+			color: variables.$primary;
+		}
+	}
+
+	.input-icon {
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+		color: #191919;
+		font-size: 18px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		align-items: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		justify-content: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		border-radius: 50%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		position: absolute;
+		top: 50%;
+		right: 10px;
+	}
+	.timer-cover {
+		margin-bottom: 20px;
+	}
+}
+
+// lock screen
+.lock-screen {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto auto;
+	background: linear-gradient(131.11deg, #FFEEF0 2.29%, #F8F7FF 74.3%);
+	height: 100vh;
+	.lock-wrapper {
+		max-width: 410px;
+		min-width: 300px;
+		width: 100%;
+		@include mixins.respond-below(sm) {
+			padding: 20px;
+		}
+		.lock-header {
+			margin-bottom: 80px;
+			@include mixins.respond-below(md) {
+				margin-bottom: 50px;
+			}
+			@include mixins.respond-below(sm) {
+				margin-bottom: 30px;
+			}
+		}
+		.user-profile {
+			width: 120px;
+			height: 120px;
+
+		}
+		input {
+			&:focus {
+				border-color: variables.$secondary;
+			}
+		}
+	}
+}

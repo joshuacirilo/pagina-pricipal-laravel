@@ -1,0 +1,784 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.add-course-item {
+	padding: 1.5rem;
+	border: 1px solid variables.$border-color;
+	box-shadow: variables.$box-shadow-xs-2;
+	border-radius: 10px;
+	.wizard {
+		padding: 20px;
+		border-bottom: 1px solid variables.$border-color;
+		p {
+			font-size: 14px;
+		}
+		ul {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			li {
+				width: 100%;
+				position: relative;
+				display: flex;
+				justify-content: center;
+				h5 {
+					font-size: 16px;
+					margin: 10px 0;
+					font-weight: 400;
+				}
+				span.dot-active {
+					width: 34px;
+					height: 34px;
+					border: 1px solid variables.$border-color;
+					background-color: variables.$light;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding: 5px 8px;
+					border-radius: 50%;
+					margin: auto;
+					margin-bottom: 0;
+					z-index: 1;
+					color: variables.$gray-900;
+					font-size: 12px;
+					font-weight: 600;
+					.number {
+						display: block;
+					}
+					.tickmark {
+						display: none;
+					}
+				}
+				&::after {
+					content: "";
+					width: 50%;
+					height: 1px;
+					background: variables.$gray-100;
+					position: absolute;
+					top: 17px;
+					left: 0;
+				}
+				&::before {
+					content: "";
+					width: 100%;
+					height: 1px;
+					background: variables.$gray-100;
+					position: absolute;
+					top: 17px;
+					right: 0;
+				}
+				&:first-child {
+					&:before {
+						width: 50%;
+					}
+					&::after {
+						display: none;
+					}
+				}
+				&:last-child {
+					&::before {
+						display: none;
+					}
+				}
+			}
+			li.progress-activated {
+				&::after {
+					background: variables.$success;
+				}
+				&::before {
+					background: variables.$success;
+				}
+				span.dot-active {
+					border-color: variables.$success;
+					background-color: variables.$success;
+					.number {
+						display: none;
+					}
+					.tickmark {
+						display: block;
+						color: variables.$white;
+						font-size: 12px;
+					}
+				}
+			}
+			li.progress-active {
+				&::after {
+					background: variables.$success;
+				}
+				span.dot-active {
+					background-color: variables.$gray-900;
+					color: variables.$white;
+					border-color: variables.$gray-900;
+				}
+			}
+		}
+	}
+	@include mixins.respond-below(xl) {
+		.wizard {
+			padding: 20px;
+			border-bottom: 1px solid variables.$border-color;
+			p {
+				font-size: 13px;
+			}
+			ul {
+				display: flex;
+				justify-content: center;
+				text-align: center;
+				li {
+					width: 100%;
+					position: relative;
+					display: flex;
+					justify-content: center;
+					h5 {
+						font-size: 16px;
+						margin: 10px 0;
+						font-weight: 400;
+					}
+					span.dot-active {
+						width: 34px;
+						height: 34px;
+						border: 1px solid variables.$light;
+						background-color: variables.$light;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						padding: 5px 8px;
+						border-radius: 50%;
+						margin: auto;
+						margin-bottom: 0;
+						z-index: 1;
+						color: variables.$gray-900;
+						font-size: 12px;
+						font-weight: 600;
+						.number {
+							display: block;
+						}
+						.tickmark {
+							display: none;
+						}
+					}
+					&::after {
+						content: "";
+						width: 50%;
+						height: 2px;
+						background: variables.$gray-100;
+						position: absolute;
+						top: 17px;
+						left: 0;
+					}
+					&::before {
+						content: "";
+						width: 100%;
+						height: 2px;
+						background: variables.$gray-100;
+						position: absolute;
+						top: 17px;
+						right: 0;
+					}
+					&:first-child {
+						&:before {
+							width: 50%;
+						}
+						&::after {
+							display: none;
+						}
+					}
+					&:last-child {
+						&::before {
+							display: none;
+						}
+					}
+				}
+				li.progress-activated {
+					&::after {
+						background: variables.$success;
+					}
+					&::before {
+						background: variables.$success;
+					}
+					span.dot-active {
+						border-color: variables.$success;
+						background-color: variables.$success;
+						.number {
+							display: none;
+						}
+						.tickmark {
+							display: block;
+							color: variables.$white;
+							font-size: 12px;
+						}
+					}
+				}
+				li.progress-active {
+					&::after {
+						background: variables.$success;
+					}
+					span.dot-active {
+						background-color: variables.$gray-900;
+						color: variables.$white;
+						border-color: variables.$gray-900;
+					}
+				}
+			}
+		}
+	}
+	@include mixins.respond-below(lg) {
+		.wizard {
+			padding: 20px;
+			border-bottom: 1px solid variables.$border-color;
+			p {
+				font-size: 11px;
+			}
+			ul {
+				display: flex;
+				justify-content: center;
+				text-align: center;
+				li {
+					width: 100%;
+					position: relative;
+					display: flex;
+					justify-content: center;
+					h5 {
+						font-size: 16px;
+						margin: 10px 0;
+						font-weight: 400;
+					}
+					span.dot-active {
+						width: 34px;
+						height: 34px;
+						border: 1px solid variables.$light;
+						background-color: variables.$light;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						padding: 5px 8px;
+						border-radius: 50%;
+						margin: auto;
+						margin-bottom: 0;
+						z-index: 1;
+						color: variables.$gray-900;
+						font-size: 12px;
+						font-weight: 600;
+						.number {
+							display: block;
+						}
+						.tickmark {
+							display: none;
+						}
+					}
+					&::after {
+						content: "";
+						width: 50%;
+						height: 2px;
+						background: variables.$gray-100;
+						position: absolute;
+						top: 17px;
+						left: 0;
+					}
+					&::before {
+						content: "";
+						width: 100%;
+						height: 2px;
+						background: variables.$gray-100;
+						position: absolute;
+						top: 17px;
+						right: 0;
+					}
+					&:first-child {
+						&:before {
+							width: 50%;
+						}
+						&::after {
+							display: none;
+						}
+					}
+					&:last-child {
+						&::before {
+							display: none;
+						}
+					}
+				}
+				li.progress-activated {
+					&::after {
+						background: variables.$success;
+					}
+					&::before {
+						background: variables.$success;
+					}
+					span.dot-active {
+						border-color: variables.$success;
+						background-color: variables.$success;
+						.number {
+							display: none;
+						}
+						.tickmark {
+							display: block;
+							color: variables.$white;
+							font-size: 12px;
+						}
+					}
+				}
+				li.progress-active {
+					&::after {
+						background: variables.$success;
+					}
+					span.dot-active {
+						background-color: variables.$gray-900;
+						color: variables.$white;
+						border-color: variables.$gray-900;
+					}
+				}
+			}
+		}
+	}
+	@include mixins.respond-below(sm) {
+		.wizard {
+			ul {
+				li {
+
+				span.dot-active {
+					display: none;
+				}
+				&::before {
+					display: none;
+				}
+				&::after {
+					display: none;
+				}
+					border-bottom: 2px solid variables.$border-color;
+					padding-bottom: 6px;
+				}
+					flex-direction: column;
+					row-gap: 10px;
+				li.progress-activated {
+					border-color: variables.$primary;
+				}
+			}
+		}
+	}
+
+
+.profile-step {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.wizard-form-card {
+	padding-top: 20px;
+	background: variables.$white;
+	.title {
+		margin-bottom: 20px;
+	}
+}
+.add-form-btn {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	.pre-btn {
+		background: #E8E8E8;
+		border-color: #E8E8E8;
+		box-shadow: none;
+		color: variables.$white;
+	}
+}
+.initialization-form-set {
+	#first {
+		display: block;
+	}
+	.main-btn {
+		display: inline-flex;
+		align-items: center;
+		gap: 2px;
+		background: variables.$secondary;
+		border-color: variables.$secondary;
+		color: variables.$white;
+		&:hover {
+			background: variables.$primary;
+			border-color: variables.$primary;
+			color: variables.$white;
+		}
+	}
+	.main-btn.prev_btns {
+		display: inline-flex;
+		align-items: center;
+		gap: 2px;
+		background: variables.$light;
+		border-color: variables.$light;
+		color: variables.$gray-900;
+		&:hover {
+			background: variables.$primary;
+			border-color: variables.$primary;
+			color: variables.$white;
+		}
+	}
+	fieldset {
+		display: none;
+	}
+}
+.rechange-details {
+	padding-bottom: 20px;
+	span {
+		border-radius: 10px;
+		background: rgba(5, 161, 68, 0.13);
+		color: #05A144;
+		padding: 20px;
+		display: block;
+		text-align: center;
+	}
+}
+.installation-header {
+	background: variables.$white;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.input-block {
+    margin-bottom: 16px;
+
+	.add-new-input {
+		margin-bottom: 8px;
+		.link-trash {
+			display: none;
+			margin-left: 8px;
+			&:hover {
+				color: variables.$danger;
+			}
+		}
+		&:hover {
+			.link-trash {
+				display: flex;
+			}
+		}
+	}
+	span {
+		font-size: variables.$font-size-13;
+		color: variables.$gray-500;
+	}
+}
+.file-upload-btn {
+	display: inline-block;
+	padding: 11px 16px;
+	font-size: variables.$font-size-14;
+	color: variables.$white;
+	background: variables.$primary;
+	border: none;
+	font-weight: variables.$font-weight-medium;
+	border-radius: 5px;
+	cursor: pointer;
+	border-radius: 40px;
+	@include mixins.respond-below(sm) {
+		margin-top: 20px;
+	}
+	&:hover {
+		background: variables.$secondary;
+	  }
+  }
+  input[type="file"] {
+	display: none;
+  }
+
+.note-toolbar {
+    color: #333;
+    background-color: variables.$white;
+    border-bottom: 1px solid;
+    border-color: variables.$gray-100;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.note-btn {
+	border-color: variables.$border-color;
+}
+.note-editor.note-frame {
+    border: 1px solid variables.$gray-100;
+	border-radius: 4px;
+}
+.note-editor.note-frame .note-statusbar .note-resizebar {
+    padding-top: 1px;
+    height: 9px;
+    width: 100%;
+    cursor: ns-resize;
+	background: variables.$white;
+}
+
+    .check:checked + .checktoggle:after {
+        background-color: variables.$white;
+        left: 100%;
+        transform: translate(calc(-90% - 3px), -45%);
+    }
+    .check {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        &:checked + {
+            .checktoggle {
+                background-color:variables.$success;
+            }
+        }
+    }
+    .relative-form {
+        background: variables.$white;
+        border: 1px solid variables.$border-color;
+        border-radius: 5px;
+        color: #6e82a3;
+        min-height: 40px;
+        padding: 6px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .relative-file-upload {
+        color: variables.$white;
+        background: variables.$primary;
+        border: 1px solid variables.$primary;
+        border-radius: 40px;
+        padding: 6px 16px;
+        font-size: 14px;
+        margin-bottom: 0;
+        cursor: pointer;
+        position: absolute;
+        right: 21px;  
+        text-align: center;
+    }
+    .relative-file-upload input[type="file"] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: variables.$white;
+        cursor: inherit;
+        display: block;
+    }
+    
+    .upload-img-section {
+        height: 120px;
+        background: variables.$light;
+        border: 1px dashed variables.$border-color;
+        border-radius: 6px;
+		p {
+			font-size: variables.$font-size-14;
+			font-weight: variables.$font-weight-medium;
+			color: variables.$gray-900;
+			&:hover {
+				color: variables.$secondary;
+			}
+		}
+		span {
+			font-size: variables.$font-size-14;
+		}
+    }
+
+    .play-btn {
+        position: absolute;
+        z-index: 0;
+		top: 50%;
+		left: 50%;
+    }
+    .accordion-button {
+        background-color: variables.$light;
+        color: variables.$gray-900;
+        padding: 16px;
+        font-size: variables.$font-size-15;
+        &:not(.collapsed) {
+            color: variables.$gray-900;
+            background-color: variables.$light;
+            box-shadow: none;
+        }
+        &:focus {
+            border-color: rgba(variables.$primary, 0.3);
+            box-shadow: none;
+        }
+        &:after,&:not(.collapsed)::after {
+            background-image: none;
+        }
+        &:after {
+            content: "\f13a";
+            font-family: variables.$font-awesome;
+            font-size: variables.$font-size-14;
+            line-height: 1;
+            color: variables.$white;
+            background-color: variables.$white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3.125rem;
+            color: #242B3A;
+        }
+    } 
+    .accordion-body {
+        padding: 1rem;
+        font-size: 0.8125rem;
+        color: variables.$text-muted;
+        background-color: variables.$light;
+    }
+    .accordion-item {
+        color: variables.$text-color;
+        background-color: variables.$white;
+        border: 1px solid variables.$light-900;
+    }
+    .accordions-items-seperate {
+        .accordion-item:not(:first-of-type) {
+            margin-block-start: 1rem;
+        }
+        .accordion-item {
+            border: 1px solid variables.$border-color;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    }
+
+	.custom_check input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+	}
+	  .custom_check {
+		color: variables.$gray-500 !important;
+		display: inline-block;
+		position: relative;
+		font-size: variables.$font-size-14 !important;
+		margin-bottom: 15px;
+		padding-left: 28px;
+		cursor: pointer;
+		font-weight: variables.$font-weight-normal !important;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		// line-height: 18px;
+		font-family: 'Noto Sans', sans-serif;
+	}
+	.custom_check .checkmark {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 20px;
+		width: 20px;
+		border: 1px solid variables.$gray-100;
+		background-color: variables.$white;
+		border-radius: 2px;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+	.custom_check .checkmark::after {
+		content: "\e92b";
+		font-family: 'feather' !important;
+		font-weight: variables.$font-weight-normal;
+		position: absolute;
+		display: none;
+		left: 2px;
+		top: -1px;
+		color: variables.$white;
+	}
+	.custom_check input:checked ~ .checkmark:after {
+		display: block;
+	}
+	.custom_check input:checked ~ .checkmark {
+		background-color: variables.$secondary;
+		border-color: variables.$secondary;
+	}
+
+	.add-new-topic {
+		color: variables.$secondary;
+		font-size: variables.$font-size-14;
+		&:hover {
+			color: variables.$primary;
+		}
+	}
+	.btn.add-edit-btn {
+		background: variables.$primary;
+		color: variables.$white;
+		&:hover {
+			background: variables.$secondary;
+		}
+	}
+	.input-block-link {
+		margin-bottom: 24px;
+	}
+	.play-icon{
+        width: 60px;
+        height: 60px;
+        background-color: rgba(1, 1, 1, .40);
+        border-radius: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: variables.$white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include mixins.respond-below(sm){
+            width: 25px;
+            height: 25px;
+			i {
+				font-size: 6px;
+			}
+    }
+}
+
+  .modal-content {
+    position: relative;
+    width: 80%;
+    max-width: 720px;
+    background: #000;
+    padding: 0;
+    border-radius: 8px;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+
+  iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+  }
+
+  .edit-btn1 {
+	padding: 4px;
+	background: variables.$white;
+	color: variables.$primary;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50px;
+	margin-right: 8px;
+	&:hover {
+		background: variables.$primary;
+		color: variables.$white;
+	}
+  }
+  .delete-btn1 {
+	padding: 4px;
+	background: variables.$white;
+	color: variables.$danger;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50px;
+	&:hover {
+		background: variables.$danger;
+		color: variables.$white;
+	}
+  }
+}
+
+

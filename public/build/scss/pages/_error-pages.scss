@@ -1,0 +1,304 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+
+.error-page {
+	align-items: center;
+	color: #1f1f1f;
+	display: flex;
+	background: variables.$primary-gradient;
+	.main-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
+		min-height: unset;
+		padding-top: 50px;
+	}
+}
+.error-box {
+	margin: 0 auto;
+	max-width: 570px;
+	padding: 20px 0;
+	text-align: center;
+	width: 100%;
+    position: relative;
+    z-index: 1;
+
+    .error-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    .bg-01 {
+        position: absolute;
+        top: 70px;
+        left: -15px;
+    }
+    .bg-02 {
+        position: absolute;
+        top: 25px;
+        right: -12px;
+    }
+    .bg-03 {
+        position: absolute;
+        top: 410px;
+        left: -60px;
+    }
+    .bg-04 {
+        position: absolute;
+        top: 260px;
+        right: -75px;
+    }
+    .bg-05 {
+        position: absolute;
+        bottom: 20px;
+        left: -180px;
+    }
+    .bg-06 {
+        position: absolute;
+        bottom: 115px;
+        right: -150px;
+    }
+    .bg-07 {
+        position: absolute;
+        bottom: 115px;
+        right: -150px;
+        z-index: 0;
+    }
+
+	h3 {
+		font-weight: 700;
+		font-size: 28px;
+		margin-top: 20px;
+	}
+	p {
+		margin-bottom: 30px;
+		color: variables.$gray-700;
+		font-size: 16px;
+        font-weight: 400;
+	}
+	h4 {
+		font-size: 32px;
+		margin-bottom: 0;
+	}
+	h6 {
+		font-size: 16px;
+		margin: 35px 0px;
+	}
+	.big-text {
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 1;
+		margin: 0;
+		margin-bottom: 15px;
+		padding-bottom: 15px;
+		color: #fff;
+		border-bottom: 1px solid #F2F2F2;
+	}
+    .back-to-home-btn {
+        background: variables.$secondary;
+        color: variables.$white;
+        &:hover {
+            background: variables.$primary;
+        }
+    }
+}
+.error-logo {
+	margin-bottom: 50px;
+	img {
+		width: 150px;
+	}
+}
+.come-soon-box {
+	h5 {
+		font-size: 20px;
+		margin: 50px 0px 25px;
+	}
+}
+.social-icon-soon {
+	ul {
+		padding: 0;
+		margin: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		justify-content: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		li {
+			i {
+				font-size: 24px;
+				&:hover {
+					color: variables.$secondary;
+				}
+			}
+			list-style: none;
+			&:not(:last-child) {
+				margin-right: 15px;
+			}
+			.face-book {
+				color: #1877F2;
+			}
+			.twit-ter {
+				color: #1DA1F2;
+			}
+			.insta-gram {
+				color: #000100;
+			}
+			.linked-in {
+				color: #0A66C2;
+			}
+		}
+	}
+}
+.subscribe-soon {
+	.btn-danger {
+		background: #FF5364;
+		border: 1px solid #FF5364;
+		min-width: 127px;
+		font-size: 16px;
+		&:hover {
+			background: #e63333;
+			border: 1px solid #e63333;
+		}
+	}
+	.form-control {
+		height: 48px;
+	}
+}
+.countdown-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+.countdown-el {
+	text-align: center;
+	background: rgba(0, 0, 0, 0.4);
+	min-width: 140px;
+	padding: 38px 20px;
+	border-radius: 10px;
+	color: #fff;
+	&:not(:last-child) {
+		margin-right: 15px;
+	}
+	span {
+		font-size: 26px;
+	}
+}
+
+// coming soon
+.coming-soon-content {
+    .coming-soon-topic {
+        margin-bottom: 38px;
+    }
+    .error-box-img.coming-soon-img {
+        margin-bottom: 60px;
+    }
+    .coming-soon.media-btn {
+        height: 30px;
+        width: 30px;
+        border-radius: 50px;
+        background: variables.$primary;
+        color: variables.$white;
+        &:hover {
+            background: variables.$secondary;
+        }
+    }
+    .subscribe-section {
+        margin-bottom: 20px;
+        .subcribe-cover {
+            position: relative;
+        
+            .customize-application-input {
+                position: absolute;
+                border: none;
+                width: 50%;
+                padding-left: 5px;
+                &:focus-visible{
+                    outline: none;
+                }
+             }
+        
+             .subscribe-btn {
+                position: absolute;
+                right: 16px;
+                font-size: 14px;
+                line-height: 24px;
+                background: variables.$secondary;
+                &:hover {
+                    background: variables.$primary;
+                 }
+             }
+        }
+    }
+    
+    .coming-soon-timer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        margin: 30px 0 53px;
+        @include mixins.respond-below(xl) {
+            margin: 20px 0;
+        }
+        li {
+            border: 1px solid variables.$gray-200;
+            background: #000000CC;
+            font-size: variables.$font-size-16;
+            width: 120px;
+            height: 120px;
+            border-radius: 8px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            justify-content: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            font-size: variables.$font-size-16;
+            font-weight: variables.$font-weight-medium;
+            flex-direction: column;
+            margin-right: 14px;
+            color: variables.$white;
+            @include mixins.respond-below(sm) {
+                width: 50px;
+                height: 50px;
+                margin-right: 5px;
+            }
+            span {
+                color: variables.$white;
+                font-size: variables.$font-size-32;
+                line-height: normal;
+                padding-bottom: 8px;
+                margin-bottom: 8px;
+                border-bottom: 1px solid #FFFFFF;
+                font-weight: variables.$font-weight-bold;
+                @include mixins.respond-below(sm) {
+                    font-size: variables.$font-size-20;
+                }
+            }
+            &.seperate-dot {
+                color: variables.$secondary;
+                width: auto;
+                height: auto;
+                border: 0;
+                border-radius: 0;
+                background-color: transparent;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

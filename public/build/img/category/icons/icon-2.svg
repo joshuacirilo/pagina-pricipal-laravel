@@ -1,0 +1,43 @@
+<svg width="116" height="117" viewBox="0 0 116 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+<foreignObject x="-17" y="-16.5327" width="150" height="150"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(8.5px);clip-path:url(#bgblur_0_199_10524_clip_path);height:100%;width:100%"></div></foreignObject><circle data-figma-bg-blur-radius="17" cx="58" cy="58.4673" r="56" fill="white" stroke="url(#paint0_linear_199_10524)" stroke-width="4"/>
+<foreignObject x="-7" y="-6.53271" width="129" height="129"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(8.5px);height:100%;width:100%"></div></foreignObject><circle data-figma-bg-blur-radius="17" cx="57.5" cy="57.9673" r="46" stroke="url(#paint1_linear_199_10524)" stroke-opacity="0.4" stroke-width="3"/>
+<foreignObject x="2" y="2.46729" width="111" height="111"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(8.5px);height:100%;width:100%"></div></foreignObject><circle data-figma-bg-blur-radius="17" cx="57.5" cy="57.9673" r="37" stroke="url(#paint2_linear_199_10524)" stroke-opacity="0.4" stroke-width="3"/>
+<foreignObject x="11" y="11.4673" width="93" height="93"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(8.5px);height:100%;width:100%"></div></foreignObject><circle data-figma-bg-blur-radius="17" cx="57.5" cy="57.9673" r="28" stroke="url(#paint3_linear_199_10524)" stroke-opacity="0.4" stroke-width="3"/>
+<foreignObject x="20" y="20.4673" width="75" height="75"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(8.5px);height:100%;width:100%"></div></foreignObject><circle data-figma-bg-blur-radius="17" cx="57.5" cy="57.9673" r="19" stroke="url(#paint4_linear_199_10524)" stroke-opacity="0.4" stroke-width="3"/>
+<foreignObject x="27" y="27.4673" width="61" height="61"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(8.5px);height:100%;width:100%"></div></foreignObject><circle data-figma-bg-blur-radius="17" cx="57.5" cy="57.9673" r="12" stroke="url(#paint5_linear_199_10524)" stroke-opacity="0.4" stroke-width="3"/>
+<foreignObject x="33" y="33.4673" width="49" height="49"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(8.5px);height:100%;width:100%"></div></foreignObject><circle data-figma-bg-blur-radius="17" cx="57.5" cy="57.9673" r="6" stroke="url(#paint6_linear_199_10524)" stroke-opacity="0.4" stroke-width="3"/>
+<path d="M72.4 37.8423H82L58 79.2423L34 37.8423H43.48H52.36L58 47.4423L63.52 37.8423H72.4Z" fill="#41B883"/>
+<path d="M34 37.8423L58 79.2423L82 37.8423H72.4L58 62.6823L43.48 37.8423H34Z" fill="#41B883"/>
+<path d="M43.48 37.8423L58 62.8023L72.4 37.8423H63.52L58 47.4423L52.36 37.8423H43.48Z" fill="#35495E"/>
+<defs>
+<clipPath id="bgblur_0_199_10524_clip_path"><circle transform="translate(17 16.5327)" cx="58" cy="58.4673" r="56"/>
+</clipPath><linearGradient id="paint0_linear_199_10524" x1="13.2" y1="9.16729" x2="113.451" y2="144.564" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E3E3E3" stop-opacity="0.41"/>
+<stop offset="1" stop-color="#FFDEDA"/>
+</linearGradient>
+<linearGradient id="paint1_linear_199_10524" x1="20.8103" y1="17.5923" x2="102.912" y2="128.478" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E3E3E3" stop-opacity="0.41"/>
+<stop offset="1" stop-color="#FFDEDA"/>
+</linearGradient>
+<linearGradient id="paint2_linear_199_10524" x1="27.7621" y1="25.2423" x2="94.3077" y2="115.118" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E3E3E3" stop-opacity="0.41"/>
+<stop offset="1" stop-color="#FFDEDA"/>
+</linearGradient>
+<linearGradient id="paint3_linear_199_10524" x1="34.7138" y1="32.8923" x2="85.7033" y2="101.758" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E3E3E3" stop-opacity="0.41"/>
+<stop offset="1" stop-color="#FFDEDA"/>
+</linearGradient>
+<linearGradient id="paint4_linear_199_10524" x1="41.6655" y1="40.5423" x2="77.0989" y2="88.3981" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E3E3E3" stop-opacity="0.41"/>
+<stop offset="1" stop-color="#FFDEDA"/>
+</linearGradient>
+<linearGradient id="paint5_linear_199_10524" x1="47.0724" y1="46.4923" x2="70.4066" y2="78.0071" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E3E3E3" stop-opacity="0.41"/>
+<stop offset="1" stop-color="#FFDEDA"/>
+</linearGradient>
+<linearGradient id="paint6_linear_199_10524" x1="51.7069" y1="51.5923" x2="64.6703" y2="69.1005" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E3E3E3" stop-opacity="0.41"/>
+<stop offset="1" stop-color="#FFDEDA"/>
+</linearGradient>
+</defs>
+</svg>

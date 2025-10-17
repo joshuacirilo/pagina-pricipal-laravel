@@ -1,0 +1,79 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+/*============================
+  32.breadcrumb
+============================*/
+
+.breadcrumb-bar {
+    padding: 40px 0 40px;
+    position: relative;
+    z-index: 1;
+    background: variables.$primary-gradient;
+    .breadcrumb-title {
+        font-size: variables.$font-size-36;
+        color: variables.$gray-900;
+        @include mixins.respond-below(lg) {
+            font-size: variables.$font-size-26;
+        }
+        @include mixins.respond-below(md) {
+            font-size: variables.$font-size-22;
+        }
+    }
+}
+.breadcrumb {
+    .breadcrumb-item {
+        color: variables.$gray-900;
+        position: relative;
+        font-size: variables.$font-size-14;
+        a {
+            color: variables.$gray-900;
+            &:hover {
+                color: variables.$secondary;
+            }
+        }
+        & +.breadcrumb-item {
+            margin-left: 26px;
+            &:before {
+                content: "";
+                width: 15px;
+                height: 5px;
+                border-radius: 5px;
+                background: variables.$secondary;
+                position: absolute;
+                left: -16px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &.active {
+            color: variables.$gray-700;
+        }
+    }
+}
+.breadcrumb-bg-01 {
+    background: url('../img/bg/breadcrumb.jpg') no-repeat;
+    background-size: cover;
+}
+.breadcrumb-bg-02 {
+    background: url('../img/bg/breadcrumb-02.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.breadcrumb-bg-03{
+    background: url('../img/bg/breadcrumb-03.jpg') no-repeat;
+    background-size: cover;
+}
+.breadcrumb-bg-04{
+    background-color: variables.$gray-900;
+}
+.breadcrumb-bg-05{
+    background: url('../img/bg/breadcrumb-05.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.breadcrumb-bg-06{
+    background: url('../img/bg/breadcrumb-04.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}

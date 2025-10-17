@@ -1,0 +1,227 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.checkout-content {
+    .checkout-item-1 {
+        border: 1px solid variables.$border-color;
+        box-shadow: 0px 4px 4px 0px #D4D4D440;
+        border-radius: 10px;
+        margin-bottom: 47px;
+        padding: 20px;
+        @include mixins.respond-below(lg){
+            margin-bottom: 30px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .checkbox {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #FFDEDA;
+        }
+        
+        .input-block {
+            margin-bottom: 26px !important;
+        }
+        .form-check-input {
+            width: 20px;
+            height: 20px;
+            margin-top: 0;
+            margin-right: 10px;
+        }
+    }
+
+    .nav-style-1 {
+        .nav-item {
+            margin-inline-end: 1rem;
+            &:last-child {
+            margin-inline-end: 0;
+        }
+          .nav-link {
+            color: variables.$gray-900;
+            border-radius: 10px;
+            border: 1px solid variables.$border-color;
+            @include mixins.respond-below(md) {
+                margin-bottom: 16px;
+            }
+            &.active, &:hover {
+              background: variables.$light;
+            }
+          }
+        }
+      }
+
+      .custom_check input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+	}
+	  .custom_check {
+		color: variables.$gray-500 !important;
+		display: inline-block;
+		position: relative;
+		font-size: variables.$font-size-14 !important;
+		margin-bottom: 15px;
+		padding-left: 28px;
+		cursor: pointer;
+		font-weight: variables.$font-weight-normal !important;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		font-family: 'Noto Sans', sans-serif;
+	}
+	.custom_check .checkmark {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 20px;
+		width: 20px;
+		border: 1px solid variables.$gray-100;
+		background-color: variables.$white;
+		border-radius: 2px;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+	.custom_check .checkmark::after {
+		content: "\e92b";
+		font-family: 'feather' !important;
+		font-weight: variables.$font-weight-normal;
+		position: absolute;
+		display: none;
+		left: 3px;
+		top: -1px;
+		color: variables.$white;
+	}
+	.custom_check input:checked ~ .checkmark:after {
+		display: block;
+	}
+	.custom_check input:checked ~ .checkmark {
+		background-color: variables.$secondary;
+		border-color: variables.$secondary;
+	}
+}
+
+// 
+
+.checkout-item-2 {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid variables.$border-color;
+    box-shadow: 0px 4px 4px 0px #D4D4D440;
+    @include mixins.respond-below(lg){
+        margin-top: 30px;
+    }
+    .checkout-item-3 {
+        overflow: hidden;
+        .order-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            position: relative;
+            img {
+                border-radius: 10px;
+                position: relative;
+                object-fit: cover;
+            }
+            a {
+                display: none;
+                position: absolute;
+                background: variables.$white;
+                color: variables.$danger;
+                bottom: 5px;
+                right: 5px;
+            }
+            &:hover {
+                a {
+                    display: flex;
+                    &:hover {
+                        background: variables.$secondary;
+                        color: variables.$white;
+                    }
+                }
+            }
+        }
+    }
+    
+    p {
+        font-size: variables.$font-size-14;
+    }
+}
+
+// notification
+
+.notification-content {
+    .notification-head {
+        margin-bottom: 40px;
+        @include mixins.respond-below(md) {
+            margin-bottom: 30px;
+        }
+        @include mixins.respond-below(sm) {
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: variables.$font-size-16;
+            color: variables.$gray-500;
+        }
+    }
+    .delete-all-btn {
+        background: variables.$secondary;
+        color: variables.$white;
+        &:hover {
+            background: variables.$primary;
+            border-color: variables.$primary;
+        }
+    }
+    .notification-item {
+        border: 1px solid variables.$border-color;
+        padding: 20px;
+        border-radius: 10px;
+        border-radius: 10px;
+        padding: 20px;
+        @include mixins.respond-below(sm) {
+            padding: 14px;
+        }
+        img {
+            width: 45px;
+            height: 45px;
+        }
+        .name-highlight {
+            color: variables.$gray-900;
+            font-size: variables.$font-size-16;
+            font-weight: variables.$font-weight-medium;
+        }
+
+        .delete-all-btn {
+            background: variables.$secondary !important;
+            color: variables.$white !important;
+            &:hover {
+                background: variables.$primary !important;
+            }
+        }
+        .btn-delete {
+            background: variables.$secondary;
+            color: variables.$white;
+            &:hover {
+                background: variables.$primary;
+            }
+        }
+        .btn-delete-hidden {
+            display: none;
+            background: variables.$secondary;
+            color: variables.$white;
+        }
+        &:hover {
+            .btn-delete-hidden {
+                display: flex;
+                align-items: center;
+                &:hover {
+                    background: variables.$primary;
+                }
+            }
+        }
+    }
+}

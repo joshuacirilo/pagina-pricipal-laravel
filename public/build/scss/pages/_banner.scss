@@ -1,0 +1,587 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+/*=============================
+    Banner
+===============================*/
+
+.banner-section {
+    position: relative;
+    background-color: variables.$primary;
+    padding: 155px 0 80px;
+    z-index: 0;
+    overflow: hidden;
+    @include mixins.respond-below(lg) {
+        padding: 105px 0 50px;
+    }
+    .banner-bg1{
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        top: 0;
+    }
+    .banner-bg2{
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 20%;  
+    }
+    .banner-bg3{
+        position: absolute;
+        z-index: -1;
+        left: 20px;
+        top: 33%; 
+    }
+    .banner-bg4{
+        position: absolute;
+        right: 0;
+        top: 30%;
+    }
+    .banner-content{
+        position: relative;
+        z-index: 0;
+        .banner-bg5{
+            position: absolute;
+            right: -10%;
+            top: 0;  
+            z-index: -1;
+        }
+        .hero-title{
+            display: inline-block;
+            background-color: variables.$primary-900;
+            padding: 4px 16px;
+            color: variables.$white;
+            font-size: variables.$font-size-14;
+            font-weight: variables.$font-weight-medium;
+            margin-bottom: 16px;
+            @include mixins.rounded(30px);
+        }
+        h1{
+            @include mixins.respond-below(lg) {
+                font-size: variables.$font-size-34;
+            }
+            @include mixins.respond-below(md) {
+                font-size: variables.$font-size-28;
+            }
+            @include mixins.respond-below(sm) {
+                font-size: variables.$font-size-26;
+            }
+            span {
+                color: variables.$secondary;
+                text-decoration: underline;
+                margin-bottom: 16px;
+            }
+        }
+        p {
+            color: variables.$light;
+            margin-bottom: 24px;
+        }
+        .banner-search {
+            background: variables.$white;
+            @include mixins.rounded(10px);
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 40px;
+            @include mixins.respond-below(sm) {
+                display: block;
+            }
+            .dropdown {
+                flex-shrink: 0;
+                margin-right: 20px;
+                @include mixins.respond-below(sm) {
+                    margin-right: 0;
+                }
+            }
+           .hero-dropdown{
+                height: 48px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: variables.$light;
+                @include mixins.rounded(10px);
+                font-size: variables.$font-size-14;
+                font-weight: variables.$font-weight-medium;
+                padding: 10px 20px;
+                i {
+                    margin-left: 29px;
+                }
+                &:hover {
+                    color: variables.$gray-900;
+                }
+           }
+           input{
+                height: 48px;
+                width: 100%;
+                @include mixins.respond-below(sm) {
+                    width: 100%;
+                }
+           }
+           button {
+                height: 47px;
+                width: 47px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include mixins.rounded(10px);
+                font-size: variables.$font-size-16;
+                @include mixins.respond-below(sm) {
+                    width: 100%;
+                }
+           }
+        }
+        .counter-item {
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+            @include mixins.respond-below(lg) {
+                width: 47%;
+            }
+            .counter-icon {
+                margin-right: 8px;
+            }
+            .count-content {
+                p {
+                    font-weight: variables.$font-weight-medium;
+                    margin-bottom: 0;
+                }
+            }
+            @include mixins.respond-below(sm) {
+                justify-content: center;
+            }
+        }
+    }
+    .banner-image {
+        position: relative;
+        padding: 0 40px;
+        &::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            background: url('../img/bg/ban-bg.png') no-repeat;
+            width: 100%;
+            height: 318px;
+        }
+        @include mixins.respond-below(lg) {
+            display: none;
+        }
+    }
+    &-two {
+        position: relative;
+        background: variables.$light-100;
+        max-height: 578px;
+        overflow: hidden;
+    
+        .star-01 {
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            left: -65px;
+        }
+        .star-02 {
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            left: 500px;
+        }
+        .star-03 {
+            position: absolute;
+            z-index: 0;
+            left: -60px;
+            top: 250px;
+        }
+        .star-04 {
+            position: absolute;
+            z-index: 0;
+            left: 255px;
+            top: 125px;
+        }
+        .star-05 {
+            position: absolute;
+            z-index: 0;
+            bottom: 0;
+            right: -70px;
+        }
+        .star-06 {
+            position: absolute;
+            z-index: 0;
+            top: 40px;
+            left: -45px;
+            animation: upDown 3s ease-in-out infinite;
+        }
+        .star-07 {
+            position: absolute;
+            z-index: 0;
+            top: 220px;
+            left: 520px;
+            animation: verticalRotate 5s linear infinite;
+        }
+        .star-08 {
+            position: absolute;
+            z-index: 0;
+            top: 115px;
+            right: 20px;
+            animation: moveDiagonal 4s ease-in-out infinite;
+        }
+        .star-09 {
+            position: absolute;
+            z-index: 0;
+            bottom: 0;
+            left: 320px;
+            animation: downUp 4s ease-in-out infinite;
+        }
+        .star-10 {
+            position: absolute;
+            z-index: 1;
+            bottom: 8px;
+            right: 70px;
+            animation: downUp 3s ease-in-out infinite;
+        }
+        .star-11 {
+            position: absolute;
+            z-index: 0;
+            top: 95px;
+            left: 430px;
+            animation: myAnim 4s ease 0s infinite normal forwards;
+        }
+    
+        .banner-badge {
+            padding: 4px 12px;
+            background: variables.$secondary;
+            border-radius: 10px;
+            color: variables.$white;
+        }
+        .banner-content {
+            padding: 118px 0;
+            @include mixins.respond-below(lg) {
+                padding: 80px 0;
+                display: block !important;
+            }
+            @include mixins.respond-below(md) {
+                padding: 60px 0;
+            }
+            @include mixins.respond-below(sm) {
+                padding: 20px 0;
+            }
+            .banner-info {
+                margin-bottom: 40px;
+                @include mixins.respond-below(md) {
+                    margin-bottom: 30px;
+                }
+                p {
+                    font-weight: variables.$font-weight-semibold;
+                }
+            }
+        }
+        h1 {
+            .banner-title {
+                z-index: 1;
+                color: variables.$white;
+                .title-bg {
+                    z-index: -1;
+                    top: 4px;
+                    left: -3px;
+                }
+            }
+        }
+        .banner-form {
+            position: relative;
+            border: 1px solid variables.$border-color;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: variables.$white;
+            @include mixins.rounded(80px);
+            box-shadow: variables.$drop-shadow;
+            padding: 15px;
+            @include mixins.respond-below(lg) {
+                height: 70px;
+            }
+            @include mixins.respond-below(sm) {
+                display: block;
+                height: auto;
+                @include mixins.rounded(10px);
+                box-shadow: 0px 4px 4px 0px rgba(212, 212, 212, 0.25);
+            }
+            .form-control {
+                position: relative;
+                border: none;
+                width: 50%;
+                background: transparent;
+                width: 100%;
+                padding-left: 0;
+                &:focus-visible{
+                    outline: none;
+                }
+                @include mixins.respond-below(sm) {
+                    padding-left: 0;
+                    height: 56px;
+                    border: 1px solid variables.$light !important;
+                    @include mixins.rounded(80px);
+                    margin-bottom: 10px;
+                    padding: 10px 20px;
+                }
+             }
+             .btn {
+                font-size: variables.$font-size-16;
+             }
+             button {
+                right: 16px;
+                @include mixins.respond-below(sm) {
+                    width: 100%;
+                    height: 42px;
+                }
+             }
+        }
+        
+        .dropdown {
+            padding: 0 16px 0 10px;
+            margin-right: 16px;
+            @include mixins.respond-below(sm) {
+                border: 1px solid variables.$light;
+                @include mixins.rounded(80px);
+                margin-bottom: 10px;
+                padding: 15px 20px;
+            }
+            .dropdown-toggle {
+                border: none;
+                padding: 0;
+                width: 100%;
+                i {
+                    color: variables.$gray-600;
+                }
+                @include mixins.respond-below(sm) {
+                    padding-right: 15px;
+                }
+                &::after {
+                    @include mixins.respond-below(sm) {
+                        position: absolute;
+                        right: 20px;
+                    }
+                }
+            }
+            .dropdown-menu {
+                width: 100%;
+            }
+        }
+        .btn.show, .btn.show:hover, .btn:first-child:active, :not(.btn-check) + .btn:active {
+            background: variables.$white;
+            border-color: variables.$white;
+            color:variables.$gray-900;
+        }
+    
+        .banner-img-section {
+            position: relative;
+            text-align: right;
+            padding-right: 50px;
+            margin-left: 40px;
+            @include mixins.respond-below(lg) {
+                display: none;
+            }
+            .about-img {
+                @include mixins.rounded(10px);
+            }
+            .banner-bg-01 {
+                position: absolute;
+                bottom: 0;
+                z-index: 0;
+                left: 70px;
+                @include mixins.respond-below(xxl) {
+                    left: 10px;
+                }
+            }
+            .banner-bg-02 {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: 0;
+            }
+            .enrolled-list-cover {
+                display: inline-flex;
+                box-shadow: variables.$box-shadow;
+                border: 1px solid variables.$light-900;
+                border-radius: 30px 30px 0px 30px;
+                background: variables.$white;
+                position: absolute;
+                left: 20px;
+                top: 85px;
+                z-index: 1;
+                padding: 10px;
+                @include mixins.respond-below(xl) {
+                    top: 20px;
+                    left: -80px;
+                }
+                .enrolled-list {
+                    padding: 15px;
+                    border: 1px solid variables.$light;
+                    border-radius: 30px 30px 0px 30px;
+                    p {
+                        color: variables.$gray-900;
+                        font-size: variables.$font-size-14;
+                        font-weight: variables.$font-weight-medium;
+                    }
+                    .avatar-list-stacked {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .course-count {
+                box-shadow: variables.$box-shadow;
+                padding: 10px;
+                background: variables.$primary;
+                border-radius: 30px 30px 30px 0;
+                position: absolute;
+                z-index: 1;
+                right: 0;
+                top: 170px;
+                .counter-icon {
+                    width: 32px;
+                    height: 32px;
+                    margin-right: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @include mixins.rounded(50%);
+                    background: variables.$secondary;
+                    color: variables.$white;
+                }
+                &:hover {
+                    h4 {
+                        animation: verticalRotate 0.5s linear 1;
+                    }
+                }
+            }
+        }
+    }
+    &-three {
+		position: relative;
+		padding: 120px 0 100px;
+		overflow: hidden;		
+		.banner-bg-01 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 0;
+		}
+
+		.banner-bg-02 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: 0;
+		}
+		.search-box {
+			.search-btn {
+				width: 150px;
+				-ms-flex: 0 0 150px;
+				flex: 0 0 130px;
+				border-radius: 5px;
+				position: absolute;
+				top: 8px;
+				right: 8px;
+				padding: 0px;
+			}
+		}
+		@include mixins.respond-below(lg) {
+			padding: 115px 0 120px;
+		}
+	}
+	&-four {
+		position: relative;
+		background: linear-gradient(349.22deg, #FBFCFF 25.7%, #F3EDFF 129.76%);
+		padding: 165px 0 80px;
+		z-index: 1;
+		@include mixins.respond-below(lg) {
+			padding: 105px 0 50px;
+		}
+		.drop-detail {
+			width: 180px;
+			display: flex;
+			margin: 0;
+			border-radius: 50px !important;
+			border: 0;
+			height: 44px;
+			@include mixins.respond-below(sm) {
+				width: 100%;
+			}
+			.select2-container--default .select2-selection--single .select2-selection__rendered {
+				font-weight: variables.$font-weight-semibold;
+			}
+			.select2-container--default .select2-selection--single .select2-selection__arrow b {
+				margin-top: 0;
+			}
+		}
+		.banner-content {
+			.form-inner {
+				padding: 10px;
+				background-color: variables.$white;
+				border-radius: 35px;
+				width: 100%;
+				border: 0;
+				max-width: 740px;
+			}
+		}
+		.banner-image {
+			margin-left: 24px;
+			@include mixins.respond-below(xxl) {
+				margin-left: 0;
+			}
+			@include mixins.respond-below(lg) {
+				display: none;
+			}
+			.img-01, .img-02, .img-03 {
+				@include mixins.rounded(10px);
+				width: 100%;
+			}
+		}
+		.logo-cover {
+			position: absolute;
+			width: 118px;
+			height: 118px;
+			top: 50%;
+			left: 50%;
+			@include mixins.transform(translate(-50%, -50%));
+			background: variables.$white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 1;
+			@include mixins.rounded(50%);
+			img {
+				width: 70px;
+			}
+		}
+	}
+}
+
+
+	
+	
+	
+
+
+
+
+
+	
+	
+	
+.banner-five {
+	position: relative;
+	background-color: variables.$light-900;
+    background-image: url(../img/bg/bg-1.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding-top: 100px;
+	@include mixins.respond-below (xxl){
+        padding-bottom: 24px;
+	}
+	@include mixins.respond-below (lg){
+		background-size: 40%;
+        padding-bottom: 90px;
+	}
+	@include mixins.respond-below (sm){
+		background-image: none;
+	}
+}

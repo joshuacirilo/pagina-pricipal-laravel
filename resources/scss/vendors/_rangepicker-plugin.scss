@@ -1,0 +1,39 @@
+@use "../utils/variables";
+
+
+.daterangepicker {
+    .ranges {
+        li.active {
+            background-color: variables.$primary;
+        }
+    }
+    td {
+        &.active {
+            background-color: variables.$primary;
+            &:hover {
+                background-color: variables.$primary;
+            }
+        }
+    }
+}
+.daterange-wraper {
+    .date-range {
+        padding-left: 30px;
+        font-size: variables.$font-size-14;
+        color: variables.$gray-700;
+        border: 0;
+        min-height: auto;
+        height: 36px;
+        border: 0;
+        box-shadow: 0px 4.4px 20px -1px #1310220D;
+        &:focus{
+            border-left:0;
+        }
+    }
+    .cal-icon-date {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

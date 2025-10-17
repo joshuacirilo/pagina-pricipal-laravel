@@ -1,0 +1,108 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+/*=============================
+    Testimonial
+===============================*/
+
+
+
+.testimonials {
+    &-section {
+        padding: 80px 0;
+        background: url(../img/bg/testimonials-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @include mixins.respond-below(lg){
+        padding: 50px 0;
+        }
+    }
+    &-two {
+        padding: 60px 0 36px;
+        .testimonial-item {
+            padding: 20px;
+            border: 1px solid #E7E7E7;
+            border-radius: 10px;
+            margin-bottom: 24px;
+            h6 {
+                margin-bottom: 8px;
+            }
+            p {
+                font-size: variables.$font-size-14;
+            }
+            a {
+                font-size: variables.$font-size-14;
+                font-weight: variables.$font-weight-medium;
+            }
+        }
+    }
+    &-item{
+		border: 1px solid variables.$border-color;
+		box-shadow: variables.$box-shadow-xs-2;
+        margin: 40px 10px 10px;
+        padding: 0 20px 20px;
+            .avatar{
+                margin-top: -35px;
+            }
+            .quote{
+                position: absolute;
+                right: 10px;
+                bottom: 0;
+            }
+            .slick-prev{
+                z-index: 99;
+                background: variables.$white;
+                border: 1px solid variables.$gray-100;
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+                width: 44px;
+                height: 44px;
+                border-radius: variables.$rounded-pill;
+                left: -12px;
+                @include mixins.respond-below(sm){
+                width: 35px;
+                height: 35px;
+                left: -7px;
+                }
+                &::before{
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f054";
+                    color: variables.$dark;
+                    font-size: 16px;
+                    font-weight: 900;
+                }
+            }
+            .slick-next{
+                z-index: 99;
+                background: variables.$white;
+                border: 1px solid variables.$gray-100;
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+                width: 44px;
+                height: 44px;
+                border-radius: variables.$rounded-pill;
+                right: -12px;
+                @include mixins.respond-below(sm){
+                    width: 35px;
+                    height: 35px;
+                    right: -7px;
+                }
+                &::before{
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f053";
+                    color: variables.$dark;
+                    font-size: 16px;
+                    font-weight: 900;
+                }
+            }
+    }
+}
+
+.testimonials-sec-two {
+    padding: 60px 0 36px;
+    .testimonial-item  {
+        border: 1px solid variables.$gray-100;
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 24px;
+    }
+}

@@ -1,0 +1,54 @@
+@use "../utils/variables";
+
+/*============================
+  60.meanmenu
+============================*/
+
+.mean-container {
+    a.meanmenu-reveal {
+        display: none !important;
+    }
+    .mean-bar {
+        background: variables.$white;
+    }
+    .mean-nav {
+        background: variables.$white;
+        margin-top: 0;
+        ul {
+            li {
+                &.active {
+                    & > a {
+                        color: variables.$primary;
+                    }
+                }
+                .submenu {
+                    li {
+                        &:last-child {
+                            margin-bottom: 12px;
+                        }
+                        a {
+                            font-size: variables.$font-size-14;
+                            font-weight: variables.$font-weight-normal;
+                            padding: 4px 4px 4px 16px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        & > ul {
+            display: block !important;
+            & > li {
+                border-bottom: 1px solid variables.$border-color;
+            }
+            li {
+                a {
+                    color: variables.$gray-600;
+                    font-weight: variables.$font-weight-medium;
+                    padding: 16px 0;
+                    border: 0;
+                }
+            }
+        }
+    }
+}

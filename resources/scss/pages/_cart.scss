@@ -1,0 +1,99 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.cart-cover {
+    margin: 0 60px;
+    @include mixins.respond-below(md) {
+        margin: 0 20px;
+    }
+    @include mixins.respond-below(sm) {
+        margin: 0;
+    }
+    .cart-items {
+        border: 1px solid variables.$border-color;
+        box-shadow: 0px 4px 4px 0px #D4D4D440;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 0;
+        .items-count {
+            background: variables.$light-900;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: variables.$font-size-16;
+            font-weight: variables.$font-weight-medium;
+            color: variables.$gray-900;
+            margin-bottom: 20px;
+        }
+        .cart-head {
+            margin-bottom: 20px;
+        }
+        .cart-item {
+            border: 1px solid variables.$border-color;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 0;
+            img {
+                border-radius: 10px;
+            }
+        }
+        p {
+            font-size: variables.$font-size-14;
+        }
+    }
+    .cart-img {
+        overflow: hidden;
+        border-radius: 10px;
+        img {
+            object-fit: cover;
+            transition: 0.5s;
+        }
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+    .dot {
+        width: 6px;
+        height: 6px;
+    }
+    .star {
+        color: variables.$warning;
+    }
+    .trash-btn {
+        width: 30px;
+        height: 30px;
+        padding: 4px;
+        border-radius: 18px;
+        border: 1px solid variables.$border-color;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: variables.$danger;
+        &:hover {
+            background: variables.$danger;
+            color: variables.$white;
+            border-color: variables.$danger;
+        }
+    }
+    .btn.continue-shopping-btn {
+        background: variables.$secondary;
+        color: variables.$white;
+        padding: 7px 16px;
+        &:hover {
+            background: variables.$primary;
+        }
+    }
+    .btn.checkout-btn {
+        background: variables.$primary;
+        color: variables.$white;
+        &:hover {
+            background: variables.$secondary;
+        }
+    }
+    .cart-trash {
+        @include mixins.respond-below(md) {
+            margin-top: 10px;
+        }
+    }
+}

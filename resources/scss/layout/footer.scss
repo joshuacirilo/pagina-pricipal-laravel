@@ -1,0 +1,245 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.footer {
+    position: relative;
+    border-top: 1px solid variables.$gray-100;
+    .footer-top {
+        padding: 50px 0;
+        @include mixins.respond-below(lg) {
+            padding: 40px 0;
+        }
+    }
+    .footer-about {
+        .footer-logo {
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+    }
+    .footer-contact-info {
+        .footer-address {
+            margin-bottom: 16px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .subscribe-input {
+        position: relative;
+        margin-bottom: 24px;
+        input {
+            height: 42px;
+            border-radius: 45px;
+            padding-right: 100px;
+            border: 1px solid variables.$border-color;
+            font-size: variables.$font-size-14;
+            padding-left: 16px;
+            &:placeholder {
+                color: variables.$gray-300;
+            }
+        }
+        button {
+            position: absolute;
+            right: 6px; 
+            top: 50%;
+            @include mixins.transform(translateY(-50%));
+            i {
+                font-size: variables.$font-size-10;
+            }
+        }
+    }
+}
+.footer-bg {
+    .footer-bg-1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 300px;
+        z-index: -1;
+    }
+    .footer-bg-2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
+.footer-widget {
+    .footer-title {
+        margin-bottom: 15px;
+    }
+    ul {
+        li {
+            margin-bottom: 14px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a {
+                color: variables.$gray-500;
+                font-size: variables.$font-size-15;
+                &:hover {
+                    color: variables.$secondary;
+                }
+                @include mixins.respond-below(lg) {
+                    font-size: variables.$font-size-14;
+                }
+            }
+        }
+    }
+}
+.footer-bottom {
+    background: variables.$primary-900 ;
+    padding: 1.5rem 0;
+    .footer-link {
+        li {
+            position: relative;
+            a {
+                color: variables.$white;
+                &:hover {
+                    color: variables.$secondary;
+                }
+            }
+            & + li {
+                padding-left: 15px;
+                margin-left: 15px;
+                &::before {
+                    content: "";
+                    width: 1px;
+                    height: 12px;
+                    background: variables.$white;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}
+.footer {
+    &.footer-one {
+        background: variables.$dark;
+        .footer-top {
+            padding: 60px 0;
+            @include mixins.respond-below(lg) {
+                padding: 40px 0;
+            }
+        }
+        .footer-about {
+            p {
+                color: variables.$light;
+            }
+        }
+        .footer-widget {
+            .footer-title {
+                font-size: variables.$font-size-18;
+                font-weight: variables.$font-weight-semibold;
+                color: variables.$white;
+            }
+            ul {
+                li {
+                    margin-bottom: 10px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    a {
+                        color: variables.$light;
+                        &:hover {
+                            color: variables.$secondary;
+                        }
+                    }
+                }
+            }
+        }
+        .subscribe-form {
+            position: relative;
+            margin-bottom: 16px;
+            span {
+                position: absolute;
+                top: 50%;
+                left: 32px;
+                @include mixins.transform(translateY(-50%));
+                color: variables.$gray-500;
+                display: flex;
+            }
+            .form-control {
+                height: 54px;
+                @include mixins.rounded(70px);
+                padding-left: 56px;
+                &::placeholder {
+                    color: variables.$gray-500;
+                }
+                @include mixins.respond-below(md) {
+                    height: 50px;
+                }
+            }
+        }
+        .footer-newsletter {
+            p {
+                color: variables.$light;
+                font-size: variables.$font-size-14;
+                margin-bottom: 16px;
+            }
+        }
+        .footer-bottom {
+            background: variables.$dark;
+            border-top: 1px solid variables.$gray-800;
+            p {
+                color: variables.$light;
+                font-size: variables.$font-size-14;
+            }
+            .footer-link {
+                li {
+                    a {
+                        font-size: variables.$font-size-14;
+                        color: variables.$light;
+                        &:hover {
+                            color: variables.$secondary;
+                        }
+                    }
+                    & + li {
+                        padding-left: 15px;
+                        margin-left: 15px;
+                        &::before {
+                            content: "";
+                            width: 1px;
+                            height: 10px;
+                            background: variables.$white;
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+            }
+            
+            .social-icon {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 8px;
+                a {
+                    width: 20px;
+                    height: 20px;
+                    background: variables.$light;
+                    @include mixins.rounded(50%);
+                    color: variables.$dark;
+                    font-size: variables.$font-size-12;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &:hover {
+                        background: variables.$secondary;
+                        color: variables.$white;
+                    }
+                }
+                @include mixins.respond-below(lg) {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
