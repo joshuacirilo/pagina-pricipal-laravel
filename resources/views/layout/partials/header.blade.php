@@ -94,20 +94,22 @@
                     </a>
                     <div class="navbar-logo">
                         @if(!Route::is(['index-2','index-5']))
-                        <a class="logo-white header-logo" href="{{url('index')}}">
-                            <img src="{{URL::asset('build/img/logo-white.svg')}}" class="logo" alt="Logo">
-                        </a>
-                        <a class="logo-dark header-logo" href="{{url('index')}}">
-                            <img src="{{URL::asset('build/img/logo-white.svg')}}" class="logo" alt="Logo">
-                        </a>
+                        <a class="logo-white header-logo" href="{{url('index-3')}}">
+    <img src="{{URL::asset('build/img/logo-white.svg')}}" class="logo" alt="Logo">
+</a>
+<a class="logo-dark header-logo" href="{{url('index-3')}}">
+    <img src="{{URL::asset('build/img/logo-white.svg')}}" class="logo" alt="Logo">
+</a>
+
                         @endif
                         @if(Route::is(['index-2','index-5']))
-                        <a class="logo-white header-logo" href="{{url('index')}}">
-                            <img src="{{URL::asset('build/img/logo.svg')}}" class="logo" alt="Logo">
-                        </a>
-                        <a class="logo-dark header-logo" href="{{url('index')}}">
-                            <img src="{{URL::asset('build/img/logo-white.svg')}}" class="logo" alt="Logo">
-                        </a>
+                       <a class="logo-white header-logo" href="{{url('index-3')}}">
+    <img src="{{URL::asset('build/img/logo-white.svg')}}" class="logo" alt="Logo">
+</a>
+<a class="logo-dark header-logo" href="{{url('index-3')}}">
+    <img src="{{URL::asset('build/img/logo-white.svg')}}" class="logo" alt="Logo">
+</a>
+
                         @endif
                     </div>
                 </div>
@@ -121,86 +123,16 @@
                         </a>
                     </div>
                     <ul class="main-nav">
-                        <li class="has-submenu megamenu active">
-                            <a href="#">Home <i class="fas fa-chevron-down"></i></a>
-                            <ul class="submenu mega-submenu">
-                                <li>
-                                    <div class="megamenu-wrapper">
-                                        <div class="row">
-                                            <div class="col-lg-2">
-                                                <div class="single-demo {{ Request::is('index') ? 'active' : '' }}">
-                                                    <div class="demo-img">
-                                                        <a href="{{url('index')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-01.jpg')}}" class="img-fluid " alt="img"></a>
-                                                    </div>
-                                                    <div class="demo-info">
-                                                        <a href="{{url('index')}}" class="inner-demo-img">Home 1</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <div class="single-demo {{ Request::is('index-2') ? 'active' : '' }}">
-                                                    <div class="demo-img">
-                                                        <a href="{{url('index-2')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-02.jpg')}}" class="img-fluid " alt="img"></a>
-                                                    </div>
-                                                    <div class="demo-info">
-                                                        <a href="{{url('index-2')}}" class="inner-demo-img">Home 2</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <div class="single-demo {{ Request::is('index-3') ? 'active' : '' }}">
-                                                    <div class="demo-img">
-                                                        <a href="{{url('index-3')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-03.jpg')}}" class="img-fluid " alt="img"></a>
-                                                    </div>
-                                                    <div class="demo-info">
-                                                        <a href="{{url('index-3')}}" class="inner-demo-img">Home 3</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <div class="single-demo {{ Request::is('index-4') ? 'active' : '' }}">
-                                                    <div class="demo-img">
-                                                        <a href="{{url('index-4')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-04.jpg')}}" class="img-fluid " alt="img"></a>
-                                                    </div>
-                                                    <div class="demo-info">
-                                                        <a href="{{url('index-4')}}" class="inner-demo-img">Home 4</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <div class="single-demo {{ Request::is('index-5') ? 'active' : '' }}">
-                                                    <div class="demo-img">
-                                                        <a href="{{url('index-5')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-05.jpg')}}" class="img-fluid " alt="img"></a>
-                                                    </div>
-                                                    <div class="demo-info">
-                                                        <a href="{{url('index-5')}}" class="inner-demo-img">Home 5</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <div class="single-demo {{ Request::is('index-6') ? 'active' : '' }}">
-                                                    <div class="demo-img">
-                                                        <a href="{{url('index-6')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-06.jpg')}}" class="img-fluid " alt="img"></a>
-                                                    </div>
-                                                    <div class="demo-info">
-                                                        <a href="{{url('index-6')}}" class="inner-demo-img">Home 6</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
+                        
                         <li class="has-submenu {{ Request::is('course-grid','course-list','course-resume','course-watch','cart','checkout','add-course',
                         'course-category','course-category-2','course-category-3','course-details','course-details-2') ? 'active' : '' }}">
-                            <a href="#">Courses <i class="fas fa-chevron-down"></i></a>
+                            <a href="#">PENSUM CARRERA<i class="fas fa-chevron-down"></i></a>
                             <ul class="submenu">
                                 <li class="has-submenu {{ Request::is('course-grid','course-list') ? 'active' : '' }}">
-                                    <a href="javascript:void(0);">Courses</a>
+                                    <a href="javascript:void(0);">CARRERAS</a>
                                     <ul class="submenu">
                                         <li class="{{ Request::is('course-grid') ? 'active' : '' }}"><a href="{{url('course-grid')}}">Course Grid</a></li>
-                                        <li class="{{ Request::is('course-list') ? 'active' : '' }}"><a href="{{url('course-list')}}">Course List</a></li>
+                                        <li class="{{ Request::is('course-list') ? 'active' : '' }}"><a href="{{url('course-list')}}">INGENIERIA</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-submenu {{ Request::is('course-category','course-category-2','course-category-3') ? 'active' : '' }}">
@@ -256,13 +188,13 @@
                                         <li class="{{ Request::is('instructor-settings') ? 'active' : '' }}"><a href="{{url('instructor-settings')}}">Settings</a></li>
                                     </ul> 
                                 </li>
-                                <li class="has-submenu {{ Request::is('student-dashboard','student-profile','student-courses','student-certificates','student-wishlist','student-reviews','student-quiz','student-order-history','student-referral'
+                                <li class="has-submenu {{ Request::is('student-dashboard','student-profile','student-CARRERAS','student-certificates','student-wishlist','student-reviews','student-quiz','student-order-history','student-referral'
                                 ,'student-messages','student-tickets','student-settings') ? 'active' : '' }}">
                                     <a href="javascript:void(0);">Student Dashboard</a>
                                     <ul class="submenu">
                                         <li class="{{ Request::is('student-dashboard') ? 'active' : '' }}"><a href="{{url('student-dashboard')}}">Student Dashboard</a></li>
                                         <li class="{{ Request::is('student-profile') ? 'active' : '' }}"><a href="{{url('student-profile')}}">My Profile</a></li>
-                                        <li class="{{ Request::is('student-courses') ? 'active' : '' }}"><a href="{{url('student-courses')}}">Enrolled Courses</a></li>
+                                        <li class="{{ Request::is('student-CARRERAS') ? 'active' : '' }}"><a href="{{url('student-CARRERAS')}}">Enrolled CARRERAS</a></li>
                                         <li class="{{ Request::is('student-certificates') ? 'active' : '' }}"><a href="{{url('student-certificates')}}">My Certificates</a></li>
                                         <li class="{{ Request::is('student-wishlist') ? 'active' : '' }}"><a href="{{url('student-wishlist')}}">Wishlist</a></li>
                                         <li class="{{ Request::is('student-reviews') ? 'active' : '' }}"><a href="{{url('student-reviews')}}">Reviews</a></li>
@@ -490,7 +422,7 @@
 
 @if(Route::is(['index-6']))
 
-<div class="home-six">
+<div class="INICIO-six">
     <!-- Header -->
     <header class="header-three">
         <div class="container">
@@ -504,103 +436,35 @@
                         </span>
                     </a>
                     <div class="navbar-logo">
-                        <a class="logo-white header-logo" href="{{url('index')}}">
-                            <img src="{{URL::asset('build/img/logo.svg')}}" class="logo" alt="Logo">
-                        </a>
-                        <a class="logo-dark header-logo" href="{{url('index')}}">
-                            <img src="{{URL::asset('build/img/logo-white.svg')}}" class="logo" alt="Logo">
-                        </a>
+                        <a class="logo-white header-logo" href="{{url('index-3')}}">
+    <img src="{{URL::asset('build/img/logo-white.svg')}}" class="logo" alt="Logo">
+</a>
+<a class="logo-dark header-logo" href="{{url('index-3')}}">
+    <img src="{{URL::asset('build/img/logo-white.svg')}}" class="logo" alt="Logo">
+</a>
+
                     </div>
                 </div>
                 <div class="main-menu-wrapper">								
                     <div class="menu-header">
-                        <a href="{{url('index')}}" class="menu-logo">
-                            <img src="{{URL::asset('build/img/logo.svg')}}" class="img-fluid" alt="Logo">
-                        </a>
-                        <a id="menu_close" class="menu-close" href="javascript:void(0);">
-                            <i class="fas fa-times"></i>
-                        </a>
+                        <a class="logo-white header-logo" href="{{url('index-3')}}">
+    <img src="{{URL::asset('build/img/logo-white.svg')}}" class="logo" alt="Logo">
+</a>
+<a class="logo-dark header-logo" href="{{url('index-3')}}">
+    <img src="{{URL::asset('build/img/logo-white.svg')}}" class="logo" alt="Logo">
+</a>
+
                     </div>
                     <ul class="main-nav">
-                        <li class="has-submenu megamenu active">
-                            <a href="#">Home <i class="fas fa-chevron-down"></i></a>
-                            <ul class="submenu mega-submenu">
-                                <li>
-                                    <div class="megamenu-wrapper">
-                                        <div class="row">
-                                            <div class="col-lg-2">
-                                                <div class="single-demo">
-                                                    <div class="demo-img">
-                                                        <a href="{{url('index')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-01.jpg')}}" class="img-fluid " alt="img"></a>
-                                                    </div>
-                                                    <div class="demo-info">
-                                                        <a href="{{url('index')}}" class="inner-demo-img">Home 1</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <div class="single-demo">
-                                                    <div class="demo-img">
-                                                        <a href="{{url('index-2')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-02.jpg')}}" class="img-fluid " alt="img"></a>
-                                                    </div>
-                                                    <div class="demo-info">
-                                                        <a href="{{url('index-2')}}" class="inner-demo-img">Home 2</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <div class="single-demo">
-                                                    <div class="demo-img">
-                                                        <a href="{{url('index-3')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-03.jpg')}}" class="img-fluid " alt="img"></a>
-                                                    </div>
-                                                    <div class="demo-info">
-                                                        <a href="{{url('index-3')}}" class="inner-demo-img">Home 3</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <div class="single-demo">
-                                                    <div class="demo-img">
-                                                        <a href="{{url('index-4')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-04.jpg')}}" class="img-fluid " alt="img"></a>
-                                                    </div>
-                                                    <div class="demo-info">
-                                                        <a href="{{url('index-4')}}" class="inner-demo-img">Home 4</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <div class="single-demo">
-                                                    <div class="demo-img">
-                                                        <a href="{{url('index-5')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-05.jpg')}}" class="img-fluid " alt="img"></a>
-                                                    </div>
-                                                    <div class="demo-info">
-                                                        <a href="{{url('index-5')}}" class="inner-demo-img">Home 5</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <div class="single-demo {{ Request::is('index-6') ? 'active' : '' }}">
-                                                    <div class="demo-img">
-                                                        <a href="{{url('index-6')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-06.jpg')}}" class="img-fluid " alt="img"></a>
-                                                    </div>
-                                                    <div class="demo-info">
-                                                        <a href="{{url('index-6')}}" class="inner-demo-img">Home 6</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
+                        
                         <li class="has-submenu">
-                            <a href="#">Courses <i class="fas fa-chevron-down"></i></a>
+                            <a href="#">PENSUM CARRERA<i class="fas fa-chevron-down"></i></a>
                             <ul class="submenu">
                                 <li class="has-submenu">
-                                    <a href="javascript:void(0);">Courses</a>
+                                    <a href="javascript:void(0);">CARRERAS</a>
                                     <ul class="submenu">
                                         <li><a href="{{url('course-grid')}}">Course Grid</a></li>
-                                        <li><a href="{{url('course-list')}}">Course List</a></li>
+                                        <li><a href="{{url('course-list')}}">INGENIERIA</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-submenu">
@@ -659,7 +523,7 @@
                                     <ul class="submenu">
                                         <li><a href="{{url('student-dashboard')}}">Student Dashboard</a></li>
                                         <li><a href="{{url('student-profile')}}">My Profile</a></li>
-                                        <li><a href="{{url('student-courses')}}">Enrolled Courses</a></li>
+                                        <li><a href="{{url('student-CARRERAS')}}">Enrolled CARRERAS</a></li>
                                         <li><a href="{{url('student-certificates')}}">My Certificates</a></li>
                                         <li><a href="{{url('student-wishlist')}}">Wishlist</a></li>
                                         <li><a href="{{url('student-reviews')}}">Reviews</a></li>
@@ -850,17 +714,17 @@
     </header>
     <!-- /Header -->
 
-    <!-- Home Banner -->
-    <section class="home-slide-five">
+    <!-- INICIOBanner -->
+    <section class="INICIO-slide-five">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-5 col-lg-6 col-12">
-                    <div class="home-slide-five-face" data-aos="fade-down">
+                    <div class="INICIO-slide-five-face" data-aos="fade-down">
 
                         <!-- Banner Text -->
-                        <div class="home-slide-five-text">
+                        <div class="INICIO-slide-five-text">
                             <span class="text-warning d-inline-flex fw-semibold text-uppercase mb-3">The Leader in Online Learning</span>
-                            <h1 class="text-white mb-4">Engaging & Accessible Online Courses For All</h1>
+                            <h1 class="text-white mb-4">Engaging & Accessible Online PENSUM CARRERAFor All</h1>
                             <p class="text-white fs-lg text-center text-md-start pb-2 pb-md-3 mb-4">Trusted by over 15K Users worldwide since 2022</p>
                         </div>
                         <!-- /Banner Text -->
@@ -883,7 +747,7 @@
                                         <!-- Slect Category -->
                                         
                                         <!-- Search -->
-                                        <input type="email" class="form-control" placeholder="Search for Courses, Instructors">
+                                        <input type="email" class="form-control" placeholder="Search for CARRERAS, Instructors">
                                         <!-- Search -->
 
                                         <!-- Submit Button -->
@@ -950,7 +814,7 @@
             </div>
         </div>
     </section>
-    <!-- /Home Banner -->
+    <!-- /INICIOBanner -->
 </div>
 @endif
 
@@ -972,103 +836,35 @@
                     </span>
                 </a>
                 <div class="navbar-logo">
-                    <a class="logo-white header-logo" href="{{url('index')}}">
-                        <img src="{{URL::asset('build/img/logo.svg')}}" class="logo" alt="Logo">
-                    </a>
-                    <a class="logo-dark header-logo" href="{{url('index')}}">
-                        <img src="{{URL::asset('build/img/logo-white.svg')}}" class="logo" alt="Logo">
-                    </a>
+                    <a class="logo-white header-logo" href="{{ route('index-3') }}">
+    <img src="{{ URL::asset('build/img/logo-white.svg') }}" class="logo" alt="Logo">
+</a>
+<a class="logo-dark header-logo" href="{{ route('index-3') }}">
+    <img src="{{ URL::asset('build/img/logo-white.svg') }}" class="logo" alt="Logo">
+</a>
+
                 </div>
             </div>
             <div class="main-menu-wrapper">								
                 <div class="menu-header">
-                    <a href="{{url('index')}}" class="menu-logo">
-                        <img src="{{URL::asset('build/img/logo.svg')}}" class="img-fluid" alt="Logo">
-                    </a>
-                    <a id="menu_close" class="menu-close" href="javascript:void(0);">
-                        <i class="fas fa-times"></i>
-                    </a>
+                    <a class="logo-white header-logo" href="{{ route('index-3') }}">
+    <img src="{{ URL::asset('build/img/logo-white.svg') }}" class="logo" alt="Logo">
+</a>
+<a class="logo-dark header-logo" href="{{ route('index-3') }}">
+    <img src="{{ URL::asset('build/img/logo-white.svg') }}" class="logo" alt="Logo">
+</a>
+
                 </div>
                 <ul class="main-nav">
-                    <li class="has-submenu megamenu active">
-                        <a href="#">Home <i class="fas fa-chevron-down"></i></a>
-                        <ul class="submenu mega-submenu">
-                            <li>
-                                <div class="megamenu-wrapper">
-                                    <div class="row">
-                                        <div class="col-lg-2">
-                                            <div class="single-demo">
-                                                <div class="demo-img">
-                                                    <a href="{{url('index')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-01.jpg')}}" class="img-fluid " alt="img"></a>
-                                                </div>
-                                                <div class="demo-info">
-                                                    <a href="{{url('index')}}" class="inner-demo-img">Home 1</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <div class="single-demo">
-                                                <div class="demo-img">
-                                                    <a href="{{url('index-2')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-02.jpg')}}" class="img-fluid " alt="img"></a>
-                                                </div>
-                                                <div class="demo-info">
-                                                    <a href="{{url('index-2')}}" class="inner-demo-img">Home 2</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <div class="single-demo {{ Request::is('index-3') ? 'active' : '' }} ">
-                                                <div class="demo-img">
-                                                    <a href="{{url('index-3')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-03.jpg')}}" class="img-fluid " alt="img"></a>
-                                                </div>
-                                                <div class="demo-info">
-                                                    <a href="{{url('index-3')}}" class="inner-demo-img">Home 3</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <div class="single-demo {{ Request::is('index-4') ? 'active' : '' }}">
-                                                <div class="demo-img">
-                                                    <a href="{{url('index-4')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-04.jpg')}}" class="img-fluid " alt="img"></a>
-                                                </div>
-                                                <div class="demo-info">
-                                                    <a href="{{url('index-4')}}" class="inner-demo-img">Home 4</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <div class="single-demo {{ Request::is('index-5') ? 'active' : '' }}">
-                                                <div class="demo-img">
-                                                    <a href="{{url('index-5')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-05.jpg')}}" class="img-fluid " alt="img"></a>
-                                                </div>
-                                                <div class="demo-info">
-                                                    <a href="{{url('index-5')}}" class="inner-demo-img">Home 5</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <div class="single-demo">
-                                                <div class="demo-img">
-                                                    <a href="{{url('index-6')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-06.jpg')}}" class="img-fluid " alt="img"></a>
-                                                </div>
-                                                <div class="demo-info">
-                                                    <a href="{{url('index-6')}}" class="inner-demo-img">Home 6</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
+                    
                     <li class="has-submenu">
-                        <a href="#">Courses <i class="fas fa-chevron-down"></i></a>
+                        <a href="#">PENSUM CARRERA<i class="fas fa-chevron-down"></i></a>
                         <ul class="submenu">
                             <li class="has-submenu">
-                                <a href="javascript:void(0);">Courses</a>
+                                <a href="javascript:void(0);">CARRERAS</a>
                                 <ul class="submenu">
                                     <li><a href="{{url('course-grid')}}">Course Grid</a></li>
-                                    <li><a href="{{url('course-list')}}">Course List</a></li>
+                                    <li><a href="{{url('course-list')}}">INGENIERIA</a></li>
                                 </ul>
                             </li>
                             <li class="has-submenu">
@@ -1127,7 +923,7 @@
                                 <ul class="submenu">
                                     <li><a href="{{url('student-dashboard')}}">Student Dashboard</a></li>
                                     <li><a href="{{url('student-profile')}}">My Profile</a></li>
-                                    <li><a href="{{url('student-courses')}}">Enrolled Courses</a></li>
+                                    <li><a href="{{url('student-CARRERAS')}}">Enrolled CARRERAS</a></li>
                                     <li><a href="{{url('student-certificates')}}">My Certificates</a></li>
                                     <li><a href="{{url('student-wishlist')}}">Wishlist</a></li>
                                     <li><a href="{{url('student-reviews')}}">Reviews</a></li>
@@ -1417,7 +1213,7 @@
     'instructor-message', 
     'instructor-notifications', 
     'student-change-password',
-     'student-courses', 
+     'student-CARRERAS', 
      'student-dashboard',
       'student-details', 
       'student-linked-accounts',
@@ -1486,86 +1282,16 @@
                     </a>
                 </div>
                 <ul class="main-nav">
-                    <li class="has-submenu megamenu">
-                        <a href="#">Home <i class="fas fa-chevron-down"></i></a>
-                        <ul class="submenu mega-submenu">
-                            <li>
-                                <div class="megamenu-wrapper">
-                                    <div class="row">
-                                        <div class="col-lg-2">
-                                            <div class="single-demo  {{ Request::is('index') ? 'active' : '' }}">
-                                                <div class="demo-img">
-                                                    <a href="{{url('index')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-01.jpg')}}" class="img-fluid " alt="img"></a>
-                                                </div>
-                                                <div class="demo-info">
-                                                    <a href="{{url('index')}}" class="inner-demo-img">Home 1</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <div class="single-demo  {{ Request::is('index-2') ? 'active' : '' }}">
-                                                <div class="demo-img">
-                                                    <a href="{{url('index-2')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-02.jpg')}}" class="img-fluid " alt="img"></a>
-                                                </div>
-                                                <div class="demo-info">
-                                                    <a href="{{url('index-2')}}" class="inner-demo-img">Home 2</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <div class="single-demo  {{ Request::is('index-3') ? 'active' : '' }}">
-                                                <div class="demo-img">
-                                                    <a href="{{url('index-3')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-03.jpg')}}" class="img-fluid " alt="img"></a>
-                                                </div>
-                                                <div class="demo-info">
-                                                    <a href="{{url('index-3')}}" class="inner-demo-img">Home 3</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <div class="single-demo  {{ Request::is('index-4') ? 'active' : '' }}">
-                                                <div class="demo-img">
-                                                    <a href="{{url('index-4')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-04.jpg')}}" class="img-fluid " alt="img"></a>
-                                                </div>
-                                                <div class="demo-info">
-                                                    <a href="{{url('index-4')}}" class="inner-demo-img">Home 4</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <div class="single-demo  {{ Request::is('index-5') ? 'active' : '' }}">
-                                                <div class="demo-img">
-                                                    <a href="{{url('index-5')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-05.jpg')}}" class="img-fluid " alt="img"></a>
-                                                </div>
-                                                <div class="demo-info">
-                                                    <a href="{{url('index-5')}}" class="inner-demo-img">Home 5</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <div class="single-demo  {{ Request::is('index-6') ? 'active' : '' }}">
-                                                <div class="demo-img">
-                                                    <a href="{{url('index-6')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-06.jpg')}}" class="img-fluid " alt="img"></a>
-                                                </div>
-                                                <div class="demo-info">
-                                                    <a href="{{url('index-6')}}" class="inner-demo-img">Home 6</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
+                    
                     <li class="has-submenu {{ Request::is('course-grid','course-list','course-resume','course-watch','cart','checkout','add-course',
                         'course-category','course-category-2','course-category-3','course-details','course-details-2') ? 'active' : '' }}">
-                        <a href="#">Courses <i class="fas fa-chevron-down"></i></a>
+                        <a href="#">PENSUM CARRERA<i class="fas fa-chevron-down"></i></a>
                         <ul class="submenu">
                             <li class="has-submenu {{ Request::is('course-grid','course-list') ? 'active' : '' }}">
-                                <a href="javascript:void(0);">Courses</a>
+                                <a href="javascript:void(0);">CARRERAS</a>
                                 <ul class="submenu">
                                     <li class="{{ Request::is('course-grid') ? 'active' : '' }}"><a href="{{url('course-grid')}}">Course Grid</a></li>
-                                    <li class="{{ Request::is('course-list') ? 'active' : '' }}"><a href="{{url('course-list')}}">Course List</a></li>
+                                    <li class="{{ Request::is('course-list') ? 'active' : '' }}"><a href="{{url('course-list')}}">INGENIERIA</a></li>
                                 </ul>
                             </li>
                             <li class="has-submenu {{ Request::is('course-category','course-category-2','course-category-3') ? 'active' : '' }}">
@@ -1620,13 +1346,13 @@
                                         <li class="{{ Request::is('instructor-settings') ? 'active' : '' }}"><a href="{{url('instructor-settings')}}">Settings</a></li>
                                     </ul>
                             </li>
-                            <li class="has-submenu {{ Request::is('student-dashboard','student-profile','student-courses','student-certificates','student-wishlist','student-reviews','student-quiz','student-order-history','student-referral'
+                            <li class="has-submenu {{ Request::is('student-dashboard','student-profile','student-CARRERAS','student-certificates','student-wishlist','student-reviews','student-quiz','student-order-history','student-referral'
                                 ,'student-messages','student-tickets','student-settings','student-notifications') ? 'active' : '' }}">
                                 <a href="javascript:void(0);">Student Dashboard</a>
                                 <ul class="submenu">
                                     <li class="{{ Request::is('student-dashboard') ? 'active' : '' }}"><a href="{{url('student-dashboard')}}">Student Dashboard</a></li>
                                     <li class="{{ Request::is('student-profile') ? 'active' : '' }}"><a href="{{url('student-profile')}}">My Profile</a></li>
-                                    <li class="{{ Request::is('student-courses') ? 'active' : '' }}"><a href="{{url('student-courses')}}">Enrolled Courses</a></li>
+                                    <li class="{{ Request::is('student-CARRERAS') ? 'active' : '' }}"><a href="{{url('student-CARRERAS')}}">Enrolled CARRERAS</a></li>
                                     <li class="{{ Request::is('student-certificates') ? 'active' : '' }}"><a href="{{url('student-certificates')}}">My Certificates</a></li>
                                     <li class="{{ Request::is('student-wishlist') ? 'active' : '' }}"><a href="{{url('student-wishlist')}}">Wishlist</a></li>
                                     <li class="{{ Request::is('student-reviews') ? 'active' : '' }}"><a href="{{url('student-reviews')}}">Reviews</a></li>
@@ -1803,7 +1529,7 @@
 <!-- /Header -->
 @endif
 @if (Route::is(['student-change-password',
- 'student-courses', 
+ 'student-CARRERAS', 
  'student-dashboard', 
  'student-linked-accounts',
   'student-messages',
@@ -1860,104 +1586,36 @@
                         </span>
                     </a>
                     <div class="navbar-logo">
-                        <a class="logo-white header-logo" href="{{url('index')}}">
-                            <img src="{{URL::asset('build/img/logo.svg')}}" class="logo" alt="Logo">
-                        </a>
-                        <a class="logo-dark header-logo" href="{{url('index')}}">
-                            <img src="{{URL::asset('build/img/logo-white.svg')}}" class="logo" alt="Logo">
-                        </a>
+                        <a class="logo-white header-logo" href="{{url('index-3')}}">
+    <img src="{{URL::asset('build/img/logo-white.svg')}}" class="logo" alt="Logo">
+</a>
+<a class="logo-dark header-logo" href="{{url('index-3')}}">
+    <img src="{{URL::asset('build/img/logo-white.svg')}}" class="logo" alt="Logo">
+</a>
+
                     </div>
                 </div>
                 <div class="main-menu-wrapper">								
                     <div class="menu-header">
-                        <a href="{{url('index')}}" class="menu-logo">
-                            <img src="{{URL::asset('build/img/logo.svg')}}" class="img-fluid" alt="Logo">
-                        </a>
-                        <a id="menu_close" class="menu-close" href="javascript:void(0);">
-                            <i class="fas fa-times"></i>
-                        </a>
+                        <a class="logo-white header-logo" href="{{url('index-3')}}">
+    <img src="{{URL::asset('build/img/logo-white.svg')}}" class="logo" alt="Logo">
+</a>
+<a class="logo-dark header-logo" href="{{url('index-3')}}">
+    <img src="{{URL::asset('build/img/logo-white.svg')}}" class="logo" alt="Logo">
+</a>
+
                     </div>
                     <ul class="main-nav">
-                        <li class="has-submenu megamenu">
-                            <a href="#">Home <i class="isax isax-add"></i></a>
-                            <ul class="submenu mega-submenu">
-                                <li>
-                                    <div class="megamenu-wrapper">
-                                        <div class="row">
-                                            <div class="col-lg-2">
-                                                <div class="single-demo {{ Request::is('index') ? 'active' : '' }}">
-                                                    <div class="demo-img">
-                                                        <a href="{{url('index')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-01.jpg')}}" class="img-fluid " alt="img"></a>
-                                                    </div>
-                                                    <div class="demo-info">
-                                                        <a href="{{url('index')}}" class="inner-demo-img">Home 1</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <div class="single-demo {{ Request::is('index-2') ? 'active' : '' }}">
-                                                    <div class="demo-img">
-                                                        <a href="{{url('index-2')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-02.jpg')}}" class="img-fluid " alt="img"></a>
-                                                    </div>
-                                                    <div class="demo-info">
-                                                        <a href="{{url('index-2')}}" class="inner-demo-img">Home 2</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <div class="single-demo {{ Request::is('index-3') ? 'active' : '' }}">
-                                                    <div class="demo-img">
-                                                        <a href="{{url('index-3')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-03.jpg')}}" class="img-fluid " alt="img"></a>
-                                                    </div>
-                                                    <div class="demo-info">
-                                                        <a href="{{url('index-3')}}" class="inner-demo-img">Home 3</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <div class="single-demo {{ Request::is('index-4') ? 'active' : '' }}">
-                                                    <div class="demo-img">
-                                                        <a href="{{url('index-4')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-04.jpg')}}" class="img-fluid " alt="img"></a>
-                                                    </div>
-                                                    <div class="demo-info">
-                                                        <a href="{{url('index-4')}}" class="inner-demo-img">Home 4</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <div class="single-demo {{ Request::is('index-5') ? 'active' : '' }}">
-                                                    <div class="demo-img">
-                                                        <a href="{{url('index-5')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-05.jpg')}}" class="img-fluid " alt="img"></a>
-                                                    </div>
-                                                    <div class="demo-info">
-                                                        <a href="{{url('index-5')}}" class="inner-demo-img">Home 5</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <div class="single-demo {{ Request::is('index-6') ? 'active' : '' }}">
-                                                    <div class="demo-img">
-                                                        <a href="{{url('index-6')}}" class="inner-demo-img"><img src="{{URL::asset('build/img/home/home-06.jpg')}}" class="img-fluid " alt="img"></a>
-                                                    </div>
-                                                    <div class="demo-info">
-                                                        <a href="{{url('index-6')}}" class="inner-demo-img">Home 6</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
+                       
                         <li class="has-submenu  {{ Request::is('course-grid','course-list','course-resume','course-watch','cart','checkout','add-course',
                         'course-category','course-category-2','course-category-3','course-details','course-details-2') ? 'active' : '' }}">
-                            <a href="#">Courses <i class="isax isax-add"></i></a>
+                            <a href="#">PENSUM CARRERA<i class="isax isax-add"></i></a>
                             <ul class="submenu">
                                 <li class="has-submenu {{ Request::is('course-grid','course-list') ? 'active' : '' }}">
-                                    <a href="javascript:void(0);">Courses</a>
+                                    <a href="javascript:void(0);">CARRERAS</a>
                                     <ul class="submenu">
                                         <li class="{{ Request::is('course-grid') ? 'active' : '' }}"><a href="{{url('course-grid')}}">Course Grid</a></li>
-                                        <li class="{{ Request::is('course-list') ? 'active' : '' }}"><a href="{{url('course-list')}}">Course List</a></li>
+                                        <li class="{{ Request::is('course-list') ? 'active' : '' }}"><a href="{{url('course-list')}}">INGENIERIA</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-submenu {{ Request::is('course-category','course-category-2','course-category-3') ? 'active' : '' }}">
@@ -1986,7 +1644,7 @@
                         'instructor-announcements','instructor-assignment','students','student-list','student-details',
                         'instructor-quiz','instructor-quiz-results','instructor-certificate','instructor-earnings','instructor-payout','instructor-statements','instructor-tickets'
                         ,'instructor-settings','student-notifications','student-order-history','student-profile','student-quiz-questions','student-quiz','student-referral','student-reviews','student-settings','student-social-profile',
-                        'student-tickets','student-wishlist','student-change-password','student-courses','student-dashboard','student-linked-accounts','student-certificates','student-billing-address','instructor-message','student-messages') ? 'active' : '' }} ">
+                        'student-tickets','student-wishlist','student-change-password','student-CARRERAS','student-dashboard','student-linked-accounts','student-certificates','student-billing-address','instructor-message','student-messages') ? 'active' : '' }} ">
                             <a href="javascript:void(0);">Dashboard <i class="isax isax-add"></i></a>
                             <ul class="submenu">
                                 <li class="has-submenu {{ Request::is('instructor-dashboard','instructor-profile','instructor-course','instructor-announcements','instructor-assignment','students','student-list','student-details','instructor-statements','instructor-message','instructor-tickets') ? 'active' : '' }}">
@@ -2016,13 +1674,13 @@
                                         <li class="{{ Request::is('instructor-settings') ? 'active' : '' }}"><a href="{{url('instructor-settings')}}">Settings</a></li>
                                     </ul>
                                 </li>
-                                <li class="has-submenu {{ Request::is('student-dashboard','student-profile','student-courses','student-certificates','student-wishlist','student-reviews','student-quiz','student-order-history','student-referral'
-                                ,'student-messages','student-tickets','student-settings','student-notifications','student-order-history','student-quiz-questions','student-social-profile','student-change-password','student-courses','student-linked-accounts','student-billing-address') ? 'active' : '' }}">
+                                <li class="has-submenu {{ Request::is('student-dashboard','student-profile','student-CARRERAS','student-certificates','student-wishlist','student-reviews','student-quiz','student-order-history','student-referral'
+                                ,'student-messages','student-tickets','student-settings','student-notifications','student-order-history','student-quiz-questions','student-social-profile','student-change-password','student-CARRERAS','student-linked-accounts','student-billing-address') ? 'active' : '' }}">
                                     <a href="javascript:void(0);">Student Dashboard</a>
                                     <ul class="submenu">
                                         <li class="{{ Request::is('student-dashboard') ? 'active' : '' }}"><a href="{{url('student-dashboard')}}">Student Dashboard</a></li>
                                         <li class="{{ Request::is('student-profile') ? 'active' : '' }}"><a href="{{url('student-profile')}}">My Profile</a></li>
-                                        <li class="{{ Request::is('student-courses','student-courses') ? 'active' : '' }}"><a href="{{url('student-courses')}}">Enrolled Courses</a></li>
+                                        <li class="{{ Request::is('student-CARRERAS','student-CARRERAS') ? 'active' : '' }}"><a href="{{url('student-CARRERAS')}}">Enrolled CARRERAS</a></li>
                                         <li class="{{ Request::is('student-certificates') ? 'active' : '' }}"><a href="{{url('student-certificates')}}">My Certificates</a></li>
                                         <li class="{{ Request::is('student-wishlist') ? 'active' : '' }}"><a href="{{url('student-wishlist')}}">Wishlist</a></li>
                                         <li class="{{ Request::is('student-reviews') ? 'active' : '' }}"><a href="{{url('student-reviews')}}">Reviews</a></li>
@@ -2128,7 +1786,7 @@
                     <div class="dropdown profile-dropdown">
                         <a href="javascript:void(0);" class="d-flex align-items-center" data-bs-toggle="dropdown">
                             @if (Route::is(['student-change-password',
- 'student-courses', 
+ 'student-CARRERAS', 
  'student-dashboard', 
  'student-linked-accounts',
   'student-messages',

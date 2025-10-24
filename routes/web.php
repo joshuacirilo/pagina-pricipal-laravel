@@ -12,16 +12,17 @@ Route::get('signout', [CustomAuthController::class, 'signOut'])->name('signout')
 
 
 Route::get('/', function () {
-return view('index');
-})->name('index');
+ return view('JOSHUA.index-3');
+})->name('index-3');
 
 Route::get('/index-2', function () {
 return view('index-2');
 })->name('index-2');
 
 Route::get('/index-3', function () {
-return view('index-3');
+    return view('JOSHUA.index-3');
 })->name('index-3');
+
 
 Route::get('/index-4', function () {
 return view('index-4');

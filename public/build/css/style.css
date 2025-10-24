@@ -7149,6 +7149,13 @@ header .header-nav .main-menu-wrapper {
     display: none;
   }
 }
+/* Ajuste de tamaño del logo en la barra de navegación */
+.navbar-logo img {
+    max-width: 120px;   /* puedes probar 100px, 120px o 150px */
+    height: auto;
+    object-fit: contain;
+}
+
 @media (max-width: 991.98px) {
   header .header-nav .main-menu-wrapper .main-nav {
     -ms-flex-direction: column;
