@@ -10,18 +10,52 @@ Route::get('register', [CustomAuthController::class, 'registration'])->name('reg
 Route::post('custom-registration', [CustomAuthController::class, 'customRegistration'])->name('register.custom');
 Route::get('signout', [CustomAuthController::class, 'signOut'])->name('signout');
 
+//routes index
 
 Route::get('/', function () {
  return view('JOSHUA.index-3');
 })->name('index-3');
 
 
-//routas para grupo 75
+//---routas para grupo 75
 
 
 Route::get('/grupo75/trabajo-social', function () {
     return view('grupo75.trabajo-social');
 })->name('trabajo-social');
+
+
+
+
+//---sistemas-redes-sociales
+Route::get('/grupo75/sistemas-redes-sociales', function () {
+    return view('grupo75.sistemas-redes-sociales');
+})->name('sistemas-redes-sociales');
+
+
+//---sistemas-redes-sociales
+Route::get('/grupo75/auditoria', function () {
+    return view('grupo75.auditoria');
+})->name('auditoria');
+
+//--------routes para grupo 74
+
+//administracion
+
+Route::get('/grupo74/administracion', function () {
+    return view('grupo74.administracion');
+})->name('administracion');
+
+//criminologia
+Route::get('/grupo74/criminologia', function () {
+    return view('grupo74.criminologia');
+})->name('criminologia');
+
+//derecho
+Route::get('/grupo74/derecho', function () {
+    return view('grupo74.derecho');
+})->name('derecho');
+
 
 
 

@@ -122,34 +122,34 @@
                             <i class="fas fa-times"></i>
                         </a>
                     </div>
- <ul class="main-nav">
+  <ul class="main-nav">
 
     <!-- Facultades -->
     <li class="has-submenu">
-        <a href="javascript:void(0);">Facultades <i class="fas fa-chevron-down"></i></a>
+        <a href="javascript:void(0);">Facultades<i class="fas fa-chevron-down"></i></a>
         <ul class="submenu">
-            <li><a href="{{ url('facultad/derecho') }}">Derecho</a></li>
-            <li><a href="{{ url('facultad/administracion') }}">Administración</a></li>
-            <li><a href="{{ url('facultad/criminologia') }}">Criminología</a></li>
-            <li><a href="{{ url('facultad/sistemas-redes') }}">Sistemas Redes Sociales</a></li>
+            <li><a href="{{ route('derecho') }}">Derecho</a></li>
+            <li><a href="{{ route('administracion') }}">Administración</a></li>
+            <li><a href="{{ route('criminologia') }}">Criminología</a></li>
+            <li><a href="{{ route('sistemas-redes-sociales') }}">Sistemas Redes Sociales</a></li>
             <li><a href="{{ route('trabajo-social') }}">Trabajo Social</a></li> <!--Funciona maybe-->
-            <li><a href="{{ url('facultad/auditoria') }}">Auditoría</a></li>
+            <li><a href="{{ route('auditoria') }}">Auditoria</a></li>
         </ul>
     </li>
 
     <!-- Admisiones (enlace externo) -->
     <li>
-        <a href="https://www.ejemplo-admisiones.com" target="_blank">Admisiones</a>
+        <a href="https://umg.edu.gt/admisiones?_gl=1*gy62cr*_ga*MTYwNzAyMjcxMC4xNzYxNDM2MjQ0*_ga_HV9W4QM6V6*czE3NjE2MjQ5OTAkbzQkZzAkdDE3NjE2MjQ5OTAkajYwJGwwJGgw" target="_blank">Admisiones</a>
     </li>
 
     <!-- Centro de Informaciones (enlace externo) -->
     <li>
-        <a href="https://www.ejemplo-centroinformaciones.com" target="_blank">Centro de Informaciones</a>
+        <a href="https://umg.edu.gt/info" target="_blank">Centro de Informaciones</a>
     </li>
 
     <!-- Blog (enlace externo) -->
     <li>
-        <a href="https://www.ejemplo-blog.com" target="_blank">Blog</a>
+        <a href="https://es.wikipedia.org/wiki/Blog" target="_blank">Blog</a>
     </li>
 
 </ul>
@@ -327,38 +327,37 @@
 </a>
 
                     </div>
- <ul class="main-nav">
+  <ul class="main-nav">
 
     <!-- Facultades -->
     <li class="has-submenu">
-        <a href="javascript:void(0);">Facultades <i class="fas fa-chevron-down"></i></a>
+        <a href="javascript:void(0);">Facultades<i class="fas fa-chevron-down"></i></a>
         <ul class="submenu">
-            <li><a href="{{ url('facultad/derecho') }}">Derecho</a></li>
-            <li><a href="{{ url('facultad/administracion') }}">Administración</a></li>
-            <li><a href="{{ url('facultad/criminologia') }}">Criminología</a></li>
-            <li><a href="{{ url('facultad/sistemas-redes') }}">Sistemas Redes Sociales</a></li>
+            <li><a href="{{ route('derecho') }}">Derecho</a></li>
+            <li><a href="{{ route('administracion') }}">Administración</a></li>
+            <li><a href="{{ route('criminologia') }}">Criminología</a></li>
+            <li><a href="{{ route('sistemas-redes-sociales') }}">Sistemas Redes Sociales</a></li>
             <li><a href="{{ route('trabajo-social') }}">Trabajo Social</a></li> <!--Funciona maybe-->
-            <li><a href="{{ url('facultad/auditoria') }}">Auditoría</a></li>
+            <li><a href="{{ route('auditoria') }}">Auditoria</a></li>
         </ul>
     </li>
 
     <!-- Admisiones (enlace externo) -->
     <li>
-        <a href="https://www.ejemplo-admisiones.com" target="_blank">Admisiones</a>
+        <a href="https://umg.edu.gt/admisiones?_gl=1*gy62cr*_ga*MTYwNzAyMjcxMC4xNzYxNDM2MjQ0*_ga_HV9W4QM6V6*czE3NjE2MjQ5OTAkbzQkZzAkdDE3NjE2MjQ5OTAkajYwJGwwJGgw" target="_blank">Admisiones</a>
     </li>
 
     <!-- Centro de Informaciones (enlace externo) -->
     <li>
-        <a href="https://www.ejemplo-centroinformaciones.com" target="_blank">Centro de Informaciones</a>
+        <a href="https://umg.edu.gt/info" target="_blank">Centro de Informaciones</a>
     </li>
 
     <!-- Blog (enlace externo) -->
     <li>
-        <a href="https://www.ejemplo-blog.com" target="_blank">Blog</a>
+        <a href="https://es.wikipedia.org/wiki/Blog" target="_blank">Blog</a>
     </li>
 
 </ul>
-
 
                     <div class="menu-dropdown">
                         <div class="cart-item">
@@ -607,34 +606,34 @@
 </a>
 
                 </div>
- <ul class="main-nav">
+  <ul class="main-nav">
 
     <!-- Facultades -->
     <li class="has-submenu">
-        <a href="javascript:void(0);">Facultades <i class="fas fa-chevron-down"></i></a>
+        <a href="javascript:void(0);">Facultades<i class="fas fa-chevron-down"></i></a>
         <ul class="submenu">
-            <li><a href="{{ url('facultad/derecho') }}">Derecho</a></li>
-            <li><a href="{{ url('facultad/administracion') }}">Administración</a></li>
-            <li><a href="{{ url('facultad/criminologia') }}">Criminología</a></li>
-            <li><a href="{{ url('facultad/sistemas-redes') }}">Sistemas Redes Sociales</a></li>
+            <li><a href="{{ route('derecho') }}">Derecho</a></li>
+            <li><a href="{{ route('administracion') }}">Administración</a></li>
+            <li><a href="{{ route('criminologia') }}">Criminología</a></li>
+            <li><a href="{{ route('sistemas-redes-sociales') }}">Sistemas Redes Sociales</a></li>
             <li><a href="{{ route('trabajo-social') }}">Trabajo Social</a></li> <!--Funciona maybe-->
-            <li><a href="{{ url('facultad/auditoria') }}">Auditoría</a></li>
+            <li><a href="{{ route('auditoria') }}">Auditoria</a></li>
         </ul>
     </li>
 
     <!-- Admisiones (enlace externo) -->
     <li>
-        <a href="https://www.ejemplo-admisiones.com" target="_blank">Admisiones</a>
+        <a href="https://umg.edu.gt/admisiones?_gl=1*gy62cr*_ga*MTYwNzAyMjcxMC4xNzYxNDM2MjQ0*_ga_HV9W4QM6V6*czE3NjE2MjQ5OTAkbzQkZzAkdDE3NjE2MjQ5OTAkajYwJGwwJGgw" target="_blank">Admisiones</a>
     </li>
 
     <!-- Centro de Informaciones (enlace externo) -->
     <li>
-        <a href="https://www.ejemplo-centroinformaciones.com" target="_blank">Centro de Informaciones</a>
+        <a href="https://umg.edu.gt/info" target="_blank">Centro de Informaciones</a>
     </li>
 
     <!-- Blog (enlace externo) -->
     <li>
-        <a href="https://www.ejemplo-blog.com" target="_blank">Blog</a>
+        <a href="https://es.wikipedia.org/wiki/Blog" target="_blank">Blog</a>
     </li>
 
 </ul>
@@ -912,34 +911,34 @@
                         <i class="fas fa-times"></i>
                     </a>
                 </div>
- <ul class="main-nav">
+  <ul class="main-nav">
 
     <!-- Facultades -->
     <li class="has-submenu">
-        <a href="javascript:void(0);">Facultades <i class="fas fa-chevron-down"></i></a>
+        <a href="javascript:void(0);">Facultades<i class="fas fa-chevron-down"></i></a>
         <ul class="submenu">
-            <li><a href="{{ url('facultad/derecho') }}">Derecho</a></li>
-            <li><a href="{{ url('facultad/administracion') }}">Administración</a></li>
-            <li><a href="{{ url('facultad/criminologia') }}">Criminología</a></li>
-            <li><a href="{{ url('facultad/sistemas-redes') }}">Sistemas Redes Sociales</a></li>
+            <li><a href="{{ route('derecho') }}">Derecho</a></li>
+            <li><a href="{{ route('administracion') }}">Administración</a></li>
+            <li><a href="{{ route('criminologia') }}">Criminología</a></li>
+            <li><a href="{{ route('sistemas-redes-sociales') }}">Sistemas Redes Sociales</a></li>
             <li><a href="{{ route('trabajo-social') }}">Trabajo Social</a></li> <!--Funciona maybe-->
-            <li><a href="{{ url('facultad/auditoria') }}">Auditoría</a></li>
+            <li><a href="{{ route('auditoria') }}">Auditoria</a></li>
         </ul>
     </li>
 
     <!-- Admisiones (enlace externo) -->
     <li>
-        <a href="https://www.ejemplo-admisiones.com" target="_blank">Admisiones</a>
+        <a href="https://umg.edu.gt/admisiones?_gl=1*gy62cr*_ga*MTYwNzAyMjcxMC4xNzYxNDM2MjQ0*_ga_HV9W4QM6V6*czE3NjE2MjQ5OTAkbzQkZzAkdDE3NjE2MjQ5OTAkajYwJGwwJGgw" target="_blank">Admisiones</a>
     </li>
 
     <!-- Centro de Informaciones (enlace externo) -->
     <li>
-        <a href="https://www.ejemplo-centroinformaciones.com" target="_blank">Centro de Informaciones</a>
+        <a href="https://umg.edu.gt/info" target="_blank">Centro de Informaciones</a>
     </li>
 
     <!-- Blog (enlace externo) -->
     <li>
-        <a href="https://www.ejemplo-blog.com" target="_blank">Blog</a>
+        <a href="https://es.wikipedia.org/wiki/Blog" target="_blank">Blog</a>
     </li>
 
 </ul>
@@ -1113,30 +1112,30 @@
 
     <!-- Facultades -->
     <li class="has-submenu">
-        <a href="javascript:void(0);">Facultades <i class="fas fa-chevron-down"></i></a>
+        <a href="javascript:void(0);">Facultades<i class="fas fa-chevron-down"></i></a>
         <ul class="submenu">
-            <li><a href="{{ url('facultad/derecho') }}">Derecho</a></li>
-            <li><a href="{{ url('facultad/administracion') }}">Administración</a></li>
-            <li><a href="{{ url('facultad/criminologia') }}">Criminología</a></li>
-            <li><a href="{{ url('facultad/sistemas-redes') }}">Sistemas Redes Sociales</a></li>
+            <li><a href="{{ route('derecho') }}">Derecho</a></li>
+            <li><a href="{{ route('administracion') }}">Administración</a></li>
+            <li><a href="{{ route('criminologia') }}">Criminología</a></li>
+            <li><a href="{{ route('sistemas-redes-sociales') }}">Sistemas Redes Sociales</a></li>
             <li><a href="{{ route('trabajo-social') }}">Trabajo Social</a></li> <!--Funciona maybe-->
-            <li><a href="{{ url('facultad/auditoria') }}">Auditoría</a></li>
+            <li><a href="{{ route('auditoria') }}">Auditoria</a></li>
         </ul>
     </li>
 
     <!-- Admisiones (enlace externo) -->
     <li>
-        <a href="https://www.ejemplo-admisiones.com" target="_blank">Admisiones</a>
+        <a href="https://umg.edu.gt/admisiones?_gl=1*gy62cr*_ga*MTYwNzAyMjcxMC4xNzYxNDM2MjQ0*_ga_HV9W4QM6V6*czE3NjE2MjQ5OTAkbzQkZzAkdDE3NjE2MjQ5OTAkajYwJGwwJGgw" target="_blank">Admisiones</a>
     </li>
 
     <!-- Centro de Informaciones (enlace externo) -->
     <li>
-        <a href="https://www.ejemplo-centroinformaciones.com" target="_blank">Centro de Informaciones</a>
+        <a href="https://umg.edu.gt/info" target="_blank">Centro de Informaciones</a>
     </li>
 
     <!-- Blog (enlace externo) -->
     <li>
-        <a href="https://www.ejemplo-blog.com" target="_blank">Blog</a>
+        <a href="https://es.wikipedia.org/wiki/Blog" target="_blank">Blog</a>
     </li>
 
 </ul>
