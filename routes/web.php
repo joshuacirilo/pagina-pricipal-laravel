@@ -3,17 +3,28 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomAuthController;
 
-Route::get('index', [CustomAuthController::class, 'dashboard']); 
+Route::get('index', [CustomAuthController::class, 'dashboard']);
 Route::get('login', [CustomAuthController::class, 'index'])->name('login');
-Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name('login.custom'); 
+Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name('login.custom');
 Route::get('register', [CustomAuthController::class, 'registration'])->name('register-user');
-Route::post('custom-registration', [CustomAuthController::class, 'customRegistration'])->name('register.custom'); 
+Route::post('custom-registration', [CustomAuthController::class, 'customRegistration'])->name('register.custom');
 Route::get('signout', [CustomAuthController::class, 'signOut'])->name('signout');
 
 
 Route::get('/', function () {
  return view('JOSHUA.index-3');
 })->name('index-3');
+
+
+//routas para grupo 75
+
+
+Route::get('/grupo75/trabajo-social', function () {
+    return view('grupo75.trabajo-social');
+})->name('trabajo-social');
+
+
+
 
 Route::get('/index-2', function () {
 return view('index-2');
@@ -39,7 +50,8 @@ return view('index-6');
 Route::get('/index-rtl', function () {
 return view('index-rtl');
 })->name('index-rtl');
-    
+
+//borrar esta
 Route::get('/add-course', function () {
 return view('add-course');
 })->name('add-course');
@@ -48,6 +60,7 @@ Route::get('/blog-details', function () {
 return view('blog-details');
 })->name('blog-details');
 
+//borrar esto
 Route::get('/blog-grid', function () {
 return view('blog-grid');
 })->name('blog-grid');
@@ -393,6 +406,8 @@ Route::get('/blog-details-right-sidebar', function () {
 return view('blog-details-right-sidebar');
 })->name('blog-details-right-sidebar');
 
+
+//borrar esto
 Route::get('/blog-left-sidebar', function () {
 return view('blog-left-sidebar');
 })->name('blog-left-sidebar');
@@ -408,18 +423,21 @@ return view('contact-us');
 Route::get('/course-resume', function () {
 return view('course-resume');
 })->name('course-resume');
-    
+
+//borrar esto
 Route::get('/blog-2-grid', function () {
 return view('blog-2-grid');
- })->name('blog-2-grid');   
+ })->name('blog-2-grid');
 
 Route::get('/blog-3-grid', function () {
  return view('blog-3-grid');
- })->name('blog-3-grid');   
+ })->name('blog-3-grid');
 
+
+//borrar esto
 Route::get('/blog-carousal', function () {
 return view('blog-carousal');
-})->name('blog-carousal');   
+})->name('blog-carousal');
 
 Route::get('/course-watch', function () {
 return view('course-watch');
@@ -427,15 +445,15 @@ return view('course-watch');
 
 Route::get('/instructor-payout', function () {
 return view('instructor-payout');
-})->name('instructor-payout'); 
+})->name('instructor-payout');
 
 Route::get('/instructor-social-profiles', function () {
 return view('instructor-social-profiles');
-})->name('instructor-social-profiles'); 
+})->name('instructor-social-profiles');
 
 Route::get('/instructor-plans', function () {
 return view('instructor-plans');
-})->name('instructor-plans'); 
+})->name('instructor-plans');
 
 Route::get('/instructor-quiz-questions', function () {
 return view('instructor-quiz-questions');
@@ -443,8 +461,8 @@ return view('instructor-quiz-questions');
 
 Route::get('/instructor-quiz-results', function () {
 return view('instructor-quiz-results');
-})->name('instructor-quiz-results'); 
-                          
+})->name('instructor-quiz-results');
+
 Route::get('/course-category-2', function () {
 return view('course-category-2');
 })->name('course-category-2');
@@ -525,6 +543,8 @@ Route::get('/testimonials', function () {
 return view('testimonials');
 })->name('testimonials');
 
+
+//borrar esto
 Route::get('/become-an-instructor', function () {
 return view('become-an-instructor');
 })->name('become-an-instructor');
@@ -550,4 +570,4 @@ Route::get('/about-us', function () {
         Route::get('/instructor-statements', function () {
             return view('instructor-statements');
             })->name('instructor-statements');
-    
+

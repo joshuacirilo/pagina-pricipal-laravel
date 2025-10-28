@@ -280,5 +280,5 @@
                 </div>
             </div>
         </div>
-        <!-- /Instructor -->
+        <!-- /Instructor -->  
 @endsection
