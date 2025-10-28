@@ -306,7 +306,7 @@
                             </div>
                         </div>
                         <!-- /Tags -->
-                        
+
                     </div>
                     <!-- /Blog Sidebar -->
                 </div>
@@ -314,4 +314,4 @@
         </div>
         <!-- blog -->
 
-@endsection    
+@endsection
