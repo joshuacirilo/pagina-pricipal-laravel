@@ -57,6 +57,44 @@ Route::get('/grupo74/derecho', function () {
 })->name('derecho');
 
 
+//maestro 1
+Route::get('/grupo74/detalles-instructor', function () {
+    return view('grupo74.detalles-instructor');
+})->name('detalles-instructor');
+
+
+
+
+//--------routes para grupo 73 pruebas de conexion
+
+
+//pagina de sistemas prueba
+
+
+Route::get('/grupo73/sistemas', function () {
+    return view('grupo73.sistemas');
+})->name('sistemas');
+
+
+
+//instructor 1 prueba
+Route::get('/grupo73/detalles-instructor1', function () {
+    return view('grupo73.detalles-instructor1');
+})->name('detalles-instructor1');
+
+
+//instructor 2 prueba
+Route::get('/grupo73/detalles-instructor2', function () {
+    return view('grupo73.detalles-instructor2');
+})->name('detalles-instructor2');
+
+
+//instructor 3 prueba
+Route::get('/grupo73/detalles-instructor3', function () {
+    return view('grupo73.detalles-instructor3');
+})->name('detalles-instructor3');
+
+
 
 
 
