@@ -38,7 +38,7 @@
                                             <span class="fs-14">4.9 (200 Reviews)</span>
                                         </div>
                                         <div>
-                                            <p>I am a web developer with a vast array of knowledge in many different front end and back end languages, responsive frameworks, databases, and best code practices.</p>
+                                            <p>I am a web QUE GUAPO ES AXEL GRRR developer with a vast array of knowledge in many different front end and back end languages, responsive frameworks, databases, and best code practices.</p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between flex-wrap">
