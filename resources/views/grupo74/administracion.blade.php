@@ -124,51 +124,51 @@
     </section>
     <!-- benefits -->
 
-    <!-- institutions -->
-    <section class="client-section">
-        <div class="container">
-        <h6 class="fw-medium text-center mb-4">Trusted by <span class="text-decoration-underline text-secondary">20+</span> Institutions Around the World</h6>
-        <div class="institutions-slider lazy slider">
-            <div class="institutions-items p-1">
-                <img class="img-fluid" src="./build/img/client/01.svg" alt="img">
+<!-- *************************Instructores*************************esto ya funciona -->
+<section class="instructors-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold text-primary">Nuestros Instructores</h2>
+
+        <div class="row g-4">
+            <!-- Instructor 1 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                     onclick="window.location='{{ route('detalles-instructor-administracion1') }}'">
+                    <img src="{{ asset('/build/img/instructor/profesor1.jpeg') }}" class="card-img-top" alt="Profesor 1"> <!--la imagen de profesor se encuentra en public/build/img/instructor/profesor1 -->
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2">Lic. Carlos Gómez</h5>
+                        <p class="card-text text-muted">Docente en Derecho Penal con más de 10 años de experiencia universitaria.</p>
+                    </div>
+                </div>
             </div>
-            <div class="institutions-items p-1">
-                <img class="img-fluid" src="./build/img/client/02.svg" alt="img">
+
+            <!-- Instructor 2 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                     onclick="window.location='{{ route('detalles-instructor-administracion2') }}'">
+                    <img src="{{ asset('build/img/instructors/profesor2.jpg') }}" class="card-img-top" alt="Profesor 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2">Ing. María López</h5>
+                        <p class="card-text text-muted">Especialista en Redes Sociales y Sistemas, apasionada por la enseñanza práctica.</p>
+                    </div>
+                </div>
             </div>
-            <div class="institutions-items p-1">
-                <img class="img-fluid" src="./build/img/client/03.svg" alt="img">
-            </div>
-            <div class="institutions-items p-1">
-                <img class="img-fluid" src="./build/img/client/04.svg" alt="img">
-            </div>
-            <div class="institutions-items p-1">
-                <img class="img-fluid" src="./build/img/client/05.svg" alt="img">
-            </div>
-            <div class="institutions-items p-1">
-                <img class="img-fluid" src="./build/img/client/06.svg" alt="img">
-            </div>
-            <div class="institutions-items p-1">
-                <img class="img-fluid" src="./build/img/client/07.svg" alt="img">
-            </div>
-            <div class="institutions-items p-1">
-                <img class="img-fluid" src="./build/img/client/02.svg" alt="img">
-            </div>
-            <div class="institutions-items p-1">
-                <img class="img-fluid" src="./build/img/client/03.svg" alt="img">
-            </div>
-            <div class="institutions-items p-1">
-                <img class="img-fluid" src="./build/img/client/04.svg" alt="img">
-            </div>
-            <div class="institutions-items p-1">
-                <img class="img-fluid" src="./build/img/client/05.svg" alt="img">
-            </div>
-            <div class="institutions-items p-1">
-                <img class="img-fluid" src="./build/img/client/06.svg" alt="img">
+
+            <!-- Instructor 3 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                     onclick="window.location='{{ route('detalles-instructor-administracion3') }}'">
+                    <img src="{{ asset('build/img/instructors/profesor3.jpg') }}" class="card-img-top" alt="Profesor 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2">M.Sc. José Hernández</h5>
+                        <p class="card-text text-muted">Docente en Administración Financiera con enfoque en innovación y liderazgo.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-    </section>
-    <!-- institutions -->
+    </div>
+</section>
+<!-- /Instructores -->
 
     <!-- counter -->
     <section class="counter-sec">
