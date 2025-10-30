@@ -1,11 +1,11 @@
 <?php $page = 'index-3'; ?>
+
 @extends('layout.mainlayout')
 @section('content')
 
     <!-- Home Banner -->
     <section class="banner-section-three d-flex align-items-center">
-        <img src="{{URL::asset('build/img/bg/bg-3.png')}}" alt="img" class="img-fluid banner-bg-01">
-        <img src="{{URL::asset('build/img/bg/bg-4.png')}}" alt="img" class="img-fluid banner-bg-02">
+
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -16,7 +16,7 @@
                             <p class="mt-4">Our specialized online courses are designed to bring the classroom experience to you, no matter where you are.</p>
                         </div>
                         <div class="banner-content">
-                            <form class="form"  action="{{url('course-list')}}">            
+                            <form class="form"  action="{{url('course-list')}}">
                                 <div class="form-inner">
                                     <div class="input-group">
                                         <i class="fa-solid fa-magnifying-glass search-icon"></i>
@@ -41,8 +41,8 @@
                                 <div class="rate-head">
                                     <h2><span>1000</span>+</h2>
                                 </div>
-                                <div class="rating d-flex align-items-center">	
-                                    <h2 class="d-inline-block average-rating">4.4</h2>	
+                                <div class="rating d-flex align-items-center">
+                                    <h2 class="d-inline-block average-rating">4.4</h2>
                                     <i class="fas fa-star filled"></i>
                                     <i class="fas fa-star filled"></i>
                                     <i class="fas fa-star filled"></i>
@@ -107,7 +107,7 @@
                             </div>
                             <div class="expert-content">
                                 <h4><span class="counterup">60</span>K</h4>
-                                <p>Online Students</p> 
+                                <p>Online Students</p>
                             </div>
                         </div>
                     </div>
@@ -118,63 +118,13 @@
     <!-- Home Banner -->
 
     <!-- Top Categories -->
-    <div class="section how-it-works">
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 aos" data-aos="fade-up">
-                <div class="section-header">
-                    <span class="fw-medium text-secondary fs-18 fw-bold mb-2 d-inline-block">Favourite Course</span>
-                    <h2 class="mb-0">Top Category</h2>
-                </div>
-                <div>
-                    <a href="{{url('course-category-2')}}" class="btn btn-secondary btn-xl">View all Categories</a>
-                </div>
-            </div>
-            <div class="mentoring-course aos" data-aos="fade-up">
-                <div class="categories-item categories-item-two">			
-                    <span class="categories-icon">
-                        <img src="{{URL::asset('build/img/category/icons/icon-1.svg')}}" alt="Img">
-                    </span>		
-                    <h5><a href="{{url('course-category')}}">Angular Development</a></h5>
-                    <p>40 Instructors</p>
-                </div>
-                <div class="categories-item categories-item-two">			
-                    <span class="categories-icon">
-                        <img src="{{URL::asset('build/img/category/icons/icon-2.svg')}}" alt="Img">
-                    </span>		
-                    <h5><a href="{{url('course-category')}}">Docker Development</a></h5>
-                    <p>45 Instructors</p>
-                </div>
-                <div class="categories-item categories-item-two">			
-                    <span class="categories-icon">
-                        <img src="{{URL::asset('build/img/category/icons/icon-3.svg')}}" alt="Img">
-                    </span>		
-                    <h5><a href="{{url('course-category')}}">Node JS Frontend</a></h5>
-                    <p>40 Instructors</p>
-                </div>
-                <div class="categories-item categories-item-two">			
-                    <span class="categories-icon">
-                        <img src="{{URL::asset('build/img/category/icons/icon-4.svg')}}" alt="Img">
-                    </span>		
-                    <h5><a href="{{url('course-category')}}">Swift Development</a></h5>
-                    <p>23 Instructors</p>
-                </div>
-                <div class="categories-item categories-item-two">			
-                    <span class="categories-icon">
-                        <img src="{{URL::asset('build/img/category/icons/icon-5.png')}}" alt="Img">
-                    </span>		
-                    <h5><a href="{{url('course-category')}}">React Native</a></h5>
-                    <p>80 Instructors</p>
-                </div>
-            </div>
-        </div>
-    </div>	
-    <!-- /Top Categories -->	
 
-    <!-- Feature Course -->		
+    <!-- /Top Categories -->
+
+    <!-- Feature Course -->
     <div class="section new-course">
         <div class="home-three-sec-bg">
-            <img src="{{URL::asset('build/img/bg/bg-3.png')}}" alt="img" class="img-fluid sec-bg-01">
-            <img src="{{URL::asset('build/img/bg/bg-4.png')}}" alt="img" class="img-fluid sec-bg-02">
+
         </div>
         <div class="container">
             <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 aos" data-aos="fade-up">
@@ -221,7 +171,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <div class="rating m-0">							
+                                    <div class="rating m-0">
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
@@ -267,7 +217,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <div class="rating m-0">							
+                                    <div class="rating m-0">
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
@@ -313,7 +263,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <div class="rating m-0">							
+                                    <div class="rating m-0">
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
@@ -361,7 +311,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <div class="rating m-0">							
+                                    <div class="rating m-0">
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
@@ -407,7 +357,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <div class="rating m-0">							
+                                    <div class="rating m-0">
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
@@ -453,7 +403,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <div class="rating m-0">							
+                                    <div class="rating m-0">
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
@@ -469,10 +419,10 @@
                 </div>
             </div>
         </div>
-    </div>	
-    <!-- /Feature Course -->	
+    </div>
+    <!-- /Feature Course -->
 
-    <!-- Master Skill -->	
+    <!-- Master Skill -->
     <div class="section master-skill">
         <div class="container">
             <div class="row align-items-end">
@@ -531,13 +481,12 @@
             </div>
         </div>
     </div>
-    <!-- /Master Skill -->			
+    <!-- /Master Skill -->
 
     <!-- Trending Course -->
     <div class="section trend-course">
         <div class="home-three-sec-bg">
-            <img src="{{URL::asset('build/img/bg/bg-3.png')}}" alt="img" class="img-fluid sec-bg-01">
-            <img src="{{URL::asset('build/img/bg/bg-4.png')}}" alt="img" class="img-fluid sec-bg-02">
+
         </div>
         <div class="container">
             <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 aos" data-aos="fade-up">
@@ -586,7 +535,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <div class="rating m-0">							
+                                    <div class="rating m-0">
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
@@ -636,7 +585,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <div class="rating m-0">							
+                                    <div class="rating m-0">
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
@@ -686,7 +635,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <div class="rating m-0">							
+                                    <div class="rating m-0">
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
@@ -736,7 +685,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <div class="rating m-0">							
+                                    <div class="rating m-0">
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
@@ -786,7 +735,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <div class="rating m-0">							
+                                    <div class="rating m-0">
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
@@ -836,7 +785,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <div class="rating m-0">							
+                                    <div class="rating m-0">
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
@@ -886,7 +835,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <div class="rating m-0">							
+                                    <div class="rating m-0">
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
@@ -901,7 +850,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Feature Instructors -->
             <div class="feature-instructors">
                 <div class="section-header text-center aos" data-aos="fade-up">
@@ -1041,7 +990,7 @@
                 </div>
             </div>
             <!-- /Feature Instructors -->
-            
+
         </div>
     </div>
     <!-- /Trending Course -->
@@ -1084,7 +1033,7 @@
                         <div class="lead-img">
                             <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/client/27.svg')}}">
                         </div>
-                    </div>							
+                    </div>
                 </div>
             </div>
         </div>
@@ -1104,7 +1053,7 @@
                         <img src="{{URL::asset('build/img/feature/feature-17.svg')}}" alt="Img" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-md-6 d-flex align-items-center"> 
+                <div class="col-md-6 d-flex align-items-center">
                     <div class="join-mentor aos" data-aos="fade-up">
                         <h2>Want to share your knowledge? Join us a Mentor</h2>
                         <p>High-definition video is video of higher resolution and quality than standard-definition. While there is no standardized meaning for high-definition, generally any video.</p>
@@ -1282,13 +1231,13 @@
                                 <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/blog/blog-40.jpg')}}">
                             </a>
                         </div>
-                        <div class="blog-content"> 
+                        <div class="blog-content">
                             <div class="blog-info mb-3">
                                 <a href="javascript:void(0);" class="blog-category">Marketing</a>
                                 <p class="blog-date"><i class="isax isax-calendar-1"></i>May 15, 2020</p>
                             </div>
                             <h5><a href="{{url('blog-grid')}}">How to Find the Perfect Mentor for Your Academic Journey</a></h5>
-                        </div>	
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -1298,13 +1247,13 @@
                                 <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/blog/blog-41.jpg')}}">
                             </a>
                         </div>
-                        <div class="blog-content"> 
+                        <div class="blog-content">
                             <div class="blog-info mb-3">
                                 <a href="javascript:void(0);" class="blog-category">Statistics</a>
                                 <p class="blog-date"><i class="isax isax-calendar-1"></i>May 15, 2020</p>
                             </div>
                             <h5><a href="{{url('blog-grid')}}">Unlocking Your Potential in School and Beyond</a></h5>
-                        </div>	
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -1314,13 +1263,13 @@
                                 <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/blog/blog-42.jpg')}}">
                             </a>
                         </div>
-                        <div class="blog-content"> 
+                        <div class="blog-content">
                             <div class="blog-info mb-3">
                                 <a href="javascript:void(0);" class="blog-category">Learning</a>
                                 <p class="blog-date"><i class="isax isax-calendar-1"></i>May 15, 2020</p>
                             </div>
                             <h5><a href="{{url('blog-grid')}}">11 Tips to Help You Get New Clients with the design knowledge</a></h5>
-                        </div>	
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1390,7 +1339,7 @@
                 </div>
             </div>
         </div>
-    </div>	
+    </div>
     <!-- /Latest Blog -->
 
 @endsection

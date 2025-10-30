@@ -1,0 +1,419 @@
+/* =========================================================
+   UMG – Universidad Mariano Gálvez
+   Tema de sobreescritura (cargar DESPUÉS de style.css)
+   Archivo plano, sin Vite/Mix
+   ========================================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;600;700&display=swap");
+
+/* ---------- Variables de marca ---------- */
+:root{
+  --umg-blue-900:#0B2A52;
+  --umg-blue-700:#1A3F73;
+  --umg-blue-100:#E8EFF7;
+  --umg-red-700:#AA1E23;
+  --umg-red-500:#C62828;
+  --umg-red-100:#FBECEE;
+  --umg-gold-500:#C6A256;
+  --umg-text-900:#1A1D21;
+  --umg-text-700:#2F343B;
+  --umg-shadow:0 10px 24px rgba(11,42,82,.10);
+  --umg-radius:14px;
+  --umg-font-sans:"Montserrat","Roboto",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --umg-font-display:"Merriweather","Georgia",serif;
+  --bs-primary:#AA1E23; --primary:#AA1E23;
+  --bs-secondary:#1A3F73; --secondary:#1A3F73;
+}
+
+/* ---------- Tipografía base ---------- */
+body{ font-family:var(--umg-font-sans); color:var(--umg-text-900); }
+h1,h2,h3,h4{ font-family:var(--umg-font-display); color:var(--umg-blue-900); }
+
+
+
+/* ---------- Botones ---------- */
+.btn-primary,.btn.btn-primary,.theme-btn{
+  background-color:var(--umg-red-700)!important; border-color:var(--umg-red-700)!important; color:#fff!important;
+}
+.btn-primary:hover,.theme-btn:hover{
+  background-color:var(--umg-red-500)!important; border-color:var(--umg-red-500)!important;
+}
+.btn-secondary,.btn.btn-secondary{
+  background-color:var(--umg-blue-700)!important; border-color:var(--umg-blue-700)!important; color:#fff!important;
+}
+.btn-secondary:hover{
+  background-color:var(--umg-blue-900)!important; border-color:var(--umg-blue-900)!important;
+}
+
+/* ---------- Cards ---------- */
+.card{
+  border:1px solid #E7ECF2; border-radius:var(--umg-radius);
+  box-shadow:var(--umg-shadow);
+  background-color:#fff!important; color:var(--umg-text-900)!important;
+}
+.card-header{ background:var(--umg-blue-100); color:var(--umg-blue-900); font-weight:700; }
+
+/* ---------- Footer ---------- */
+footer,.footer{ background:var(--umg-blue-900)!important; color:#fff; }
+footer a,.footer a{ color:#fff; opacity:.9; }
+footer a:hover,.footer a:hover{ opacity:1; }
+
+/* ---------- Links y foco ---------- */
+a{ color:var(--umg-blue-700); }
+a:hover{ text-decoration:underline; }
+:focus-visible{ outline:3px solid var(--umg-gold-500); outline-offset:2px; }
+
+/* =========================================================
+   HERO / BANNER – Fondo institucional UMG
+   ========================================================= */
+
+.banner-section,.hero,.home-banner,.main-banner,
+.home-one .banner,.home-two .banner,.home-three .banner,
+.home-four .banner,.home-five .banner,.index-six .banner,
+section.banner-section,.banner-section-three{
+  background-color:var(--umg-blue-900)!important;
+  background-image:linear-gradient(90deg,var(--umg-blue-900) 0%,var(--umg-blue-700) 100%)!important;
+  color:#fff!important;
+  position:relative; overflow:hidden!important;
+}
+.banner-section::before,.banner-section::after,
+.hero::before,.hero::after,
+.home-banner::before,.home-banner::after,
+.main-banner::before,.main-banner::after,
+.banner-section-three::before,.banner-section-three::after{
+  content:none!important; background:none!important; display:none!important;
+}
+.banner-section h1,.banner-section h2,.banner-section h3,
+.hero h1,.hero h2,.hero h3,.banner-section-three h1,.banner-section-three h2{
+  color:#fff!important;
+}
+.banner-section p,.hero p,.banner-section-three p{ color:#f5f5f5!important; }
+
+/* -------- Banner 3 con efecto vidrio -------- */
+.banner-section-three{
+  min-height:100vh; display:flex; align-items:center;
+}
+.banner-section-three .home-slide-face{
+  position:relative; background:rgba(255,255,255,.08);
+  backdrop-filter:blur(12px); border-radius:18px; padding:45px;
+  box-shadow:0 10px 35px rgba(0,0,0,.25);
+}
+.banner-section-three h1 span{ color:var(--umg-red-700)!important; }
+
+/* =========================================================
+   🔵 FONDO INSTITUCIONAL UMG GLOBAL
+   ========================================================= */
+body{
+  background-color:var(--umg-blue-900)!important;
+  background-image:linear-gradient(90deg,var(--umg-blue-900) 0%,var(--umg-blue-700) 100%)!important;
+  color:#fff!important;
+}
+
+/* Secciones con fondo transparente para respetar el azul */
+section,.main-wrapper>div,.container{
+  background:transparent!important;
+}
+
+/* Ajustar contraste de texto dentro de secciones claras */
+.card,.category-item,.course-box,.feature-item{
+  background-color:#fff!important; color:var(--umg-text-900)!important;
+}
+h1,h2,h3,h4,h5,h6,p,span,a{ color:inherit; }
+
+/* =========================================================
+   Fin tema UMG
+   ========================================================= */
+/* =========================================================
+   UMG – Pack de Limpieza / Polish Pack (drop-in)
+   Añadir AL FINAL del umg-theme.css
+   ========================================================= */
+
+/* Escala de espacios y contenedor más legible */
+:root{
+  --space-1: .25rem;   /* 4px  */
+  --space-2: .5rem;    /* 8px  */
+  --space-3: .75rem;   /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.5rem;   /* 24px */
+  --space-6: 2rem;     /* 32px */
+  --space-8: 3rem;     /* 48px */
+  --space-10: 4rem;    /* 64px */
+  --container: 1200px; /* ancho cómodo */
+}
+
+/* Contenedor UMG (si tu template no lo limita) */
+.umg-container{
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--space-4);
+}
+
+/* Secciones respirables */
+.umg-section{
+  padding-block: clamp(2.5rem, 6vw, 5rem);
+}
+.umg-section--tight{ padding-block: clamp(1.5rem,4vw,3rem); }
+.umg-section--wide{  padding-block: clamp(3.5rem,8vw,7rem); }
+
+/* Tipografía más limpia en contenidos largos */
+.umg-prose{
+  max-width: 70ch;
+  line-height: 1.65;
+  font-size: 1.025rem;
+}
+.umg-prose h1,.umg-prose h2,.umg-prose h3{ margin-top: 1.6em; margin-bottom: .6em; }
+.umg-prose p{ margin: .9em 0; }
+.umg-prose ul,.umg-prose ol{ margin: .8em 0 .8em 1.25em; }
+.umg-prose li{ margin: .35em 0; }
+.umg-prose a{ text-decoration: underline; text-underline-offset: 3px; }
+
+/* Encabezados: espaciado consistente en todo el sitio */
+h1,h2,h3{ letter-spacing:.2px; }
+h1{ margin: 0 0 .6em; }
+h2{ margin: 1.2em 0 .5em; }
+h3{ margin: 1.1em 0 .45em; }
+
+/* Botones: micro-elevación y estados */
+.btn, .btn-primary, .btn-secondary, .theme-btn{
+  transition: transform .15s ease, box-shadow .2s ease, background-color .2s ease, border-color .2s ease;
+  will-change: transform, box-shadow;
+}
+.btn:hover{ transform: translateY(-1px); }
+.btn:active{ transform: translateY(0); }
+.btn .bi, .btn .fas, .btn .icon{ margin-inline-start:.4rem; }
+
+/* Tarjetas: separación y hover sutil */
+.card{ transition: box-shadow .2s ease, transform .2s ease; }
+.card + .card{ margin-top: var(--space-4); } /* si apilan tarjetas */
+.card:hover{ box-shadow: 0 14px 32px rgba(11,42,82,.18); transform: translateY(-2px); }
+
+/* Sombras y radios utilitarios (prefijo umg- para no chocar) */
+.umg-shadow-sm{ box-shadow: 0 4px 12px rgba(11,42,82,.10)!important; }
+.umg-shadow-md{ box-shadow: 0 10px 24px rgba(11,42,82,.14)!important; }
+.umg-shadow-lg{ box-shadow: 0 20px 44px rgba(11,42,82,.18)!important; }
+.umg-rounded{ border-radius: var(--umg-radius)!important; }
+.umg-rounded-xl{ border-radius: calc(var(--umg-radius) * 1.5)!important; }
+
+/* Grillas: atajos de separación (no rompe Bootstrap) */
+.umg-gx-2 > .row{ --bs-gutter-x: .5rem; }
+.umg-gx-3 > .row{ --bs-gutter-x: .75rem; }
+.umg-gx-4 > .row{ --bs-gutter-x: 1rem; }
+.umg-gy-2 > .row{ --bs-gutter-y: .5rem; }
+.umg-gy-4 > .row{ --bs-gutter-y: 1rem; }
+
+/* Formularios: enfoque visible y inputs más cómodos */
+.form-control, .form-select{
+  padding: .65rem .9rem;
+  border-radius: 12px;
+  transition: border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+.form-control:focus, .form-select:focus{
+  border-color: var(--umg-red-700)!important;
+  box-shadow: 0 0 0 .2rem rgba(170,30,35,.15)!important;
+}
+.form-label{ font-weight:600; color: var(--umg-text-700); }
+
+/* Tablas limpias */
+.table.umg-table{
+  background:#fff; border-radius: 12px; overflow: hidden;
+}
+.table.umg-table thead th{
+  background: var(--umg-blue-100); color: var(--umg-blue-900);
+  border-bottom: 1px solid #DEE6EF;
+}
+.table.umg-table tbody tr:hover{ background: #F8FAFD; }
+
+/* Breadcrumb minimalista */
+.umg-breadcrumb{
+  display:flex; flex-wrap:wrap; gap:.5rem; align-items:center;
+  font-size:.925rem; opacity:.95;
+}
+.umg-breadcrumb a{ color:#fff; opacity:.9; }
+.umg-breadcrumb a:hover{ opacity:1; text-decoration:underline; text-underline-offset:3px; }
+.umg-breadcrumb .sep{ opacity:.6; }
+
+/* Navbar: altura y separación coherente */
+.navbar{ min-height: 64px; }
+.navbar .nav-link{ padding:.5rem .75rem; }
+
+/* Footer: respirable y fino */
+.footer{ padding-block: var(--space-6); }
+.footer .list-unstyled li + li{ margin-top:.35rem; }
+
+/* Imágenes con bordes suaves en contenidos */
+img.umg-soft{
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.15);
+}
+
+/* Scrollbar (WebKit) en tono institucional – opcional */
+*::-webkit-scrollbar{ width: 10px; height:10px; }
+*::-webkit-scrollbar-track{ background: rgba(255,255,255,.12); }
+*::-webkit-scrollbar-thumb{ background: rgba(255,255,255,.35); border-radius:20px; }
+*::-webkit-scrollbar-thumb:hover{ background: rgba(255,255,255,.45); }
+
+/* Transiciones sutiles para links y tarjetas (no global para evitar lag) */
+a, .card, .list-group-item{ transition: color .2s ease, background-color .2s ease, box-shadow .2s ease; }
+
+/* Badges/chips de información con tonos UMG */
+.umg-chip{
+  display:inline-flex; align-items:center; gap:.35rem;
+  padding:.2rem .6rem; border-radius: 999px;
+  font-weight:600; font-size:.85rem; line-height:1;
+  background:#fff; color: var(--umg-blue-900);
+  box-shadow: 0 6px 14px rgba(11,42,82,.12);
+}
+.umg-chip .dot{
+  width:.5rem; height:.5rem; border-radius:50%; background: var(--umg-red-700);
+}
+
+/* Bloques destacados sobre el fondo azul (cards grandes) */
+.umg-surface{
+  background:#fff; color: var(--umg-text-900);
+  border-radius: 18px; padding: clamp(1.25rem, 3vw, 2rem);
+  box-shadow: 0 18px 40px rgba(11,42,82,.16);
+}
+
+/* Callout / aviso */
+.umg-callout{
+  border-left: 4px solid var(--umg-red-700);
+  background: rgba(255,255,255,.12);
+  color:#fff; padding: 1rem 1.25rem; border-radius: 10px;
+}
+
+/* Utilidades rápidas */
+.umg-mt-6{ margin-top: var(--space-6)!important; }
+.umg-mb-6{ margin-bottom: var(--space-6)!important; }
+.umg-pt-6{ padding-top: var(--space-6)!important; }
+.umg-pb-6{ padding-bottom: var(--space-6)!important; }
+.umg-muted{ opacity:.85; }
+
+.header.is-sticky a, .navbar.is-sticky a {
+  color: #fff !important;
+}
+.header.is-sticky a:hover, .navbar.is-sticky a:hover {
+  color: #C6A256 !important; /* dorado suave */
+}
+
+/* Intercambia los logos */
+.header.is-sticky .navbar-logo .logo-white { display: inline-block !important; }
+.header.is-sticky .navbar-logo .logo-dark  { display: none !important; }
+
+/* Logo: proporciones */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-logo img.logo {
+  height: auto;
+  width: auto;
+  max-height: 64px;
+  object-fit: contain;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+/* Grid del header: logo | menú | acciones */
+#umgHeader .header-nav{
+  display:grid !important;
+  grid-template-columns:auto 1fr auto !important;
+  align-items:center !important;
+  gap:16px !important;
+}
+
+/* Menú centrado, una sola línea */
+#umgHeader .main-menu-wrapper{ display:flex !important; justify-content:center; align-items:center; min-width:0; }
+#umgHeader .main-menu-wrapper .main-nav{ display:flex; flex-wrap:nowrap; gap:8px; }
+
+/* Acciones a la derecha (no bajar de línea) */
+#umgHeader .header-navbar-rht{ display:flex !important; align-items:center !important; gap:12px; white-space:nowrap; }
+
+/* En móviles deja que el theme colapse normal */
+@media (max-width: 991.98px){
+  #umgHeader .header-nav{ grid-template-columns:auto 1fr auto; }
+  #umgHeader .main-menu-wrapper .main-nav{ flex-wrap:wrap; }
+}
+/* ===== Grid del header: logo | menú | acciones ===== */
+#umgHeader .header-nav{
+  display:grid !important;
+  grid-template-columns:auto 1fr auto !important;
+  align-items:center !important;
+  gap:16px !important;
+}
+
+/* Logo / hamburguesa */
+#umgHeader .navbar-header{ display:flex; align-items:center; gap:12px; min-width:0; }
+
+/* Menú centrado en una sola línea */
+#umgHeader .main-menu-wrapper{ display:flex !important; justify-content:center; align-items:center; min-width:0; }
+#umgHeader .main-menu-wrapper .main-nav{ display:flex; flex-wrap:nowrap; gap:8px; }
+
+/* Acciones a la derecha como en tu captura */
+#umgHeader .header-actions,
+#umgHeader .header-navbar-rht,         /* si el theme usa este nombre */
+#umgHeader .header-navbar-right,
+#umgHeader .header-right{
+  justify-self:end;
+  display:flex !important;
+  align-items:center !important;
+  gap:12px;
+  white-space:nowrap;          /* no bajan de línea */
+}
+
+/* Botones UMG (formas y colores como tu captura) */
+#umgHeader .btn{ border-radius:999px; padding:.5rem 1rem; }
+#umgHeader .btn-primary{
+  background:#AA1E23 !important; border-color:#AA1E23 !important; color:#fff !important;
+}
+#umgHeader .btn-primary:hover{ background:#C62828 !important; border-color:#C62828 !important; }
+#umgHeader .btn-secondary{
+  background:#1A3F73 !important; border-color:#1A3F73 !important; color:#fff !important;
+}
+#umgHeader .btn-secondary:hover{ filter:brightness(1.1); }
+
+/* ===== Cambio de color blanco → azul (sticky) ===== */
+
+/* Arriba: BLANCO */
+#umgHeader:not(.is-sticky){
+  background:#fff !important;
+  color:#1A1D21 !important;
+  box-shadow:0 4px 12px rgba(11,42,82,.06);
+  transition: background-color .3s ease, box-shadow .3s ease, color .2s ease;
+}
+#umgHeader:not(.is-sticky) a{ color:#1A1D21 !important; }
+#umgHeader:not(.is-sticky) a:hover{ color:#AA1E23 !important; }
+#umgHeader:not(.is-sticky) .main-nav .submenu{
+  background:#fff !important; color:#1A1D21 !important;
+  border:1px solid #E7ECF2 !important; box-shadow:0 10px 24px rgba(11,42,82,.14);
+}
+#umgHeader:not(.is-sticky) .main-nav .submenu a{ color:#1A1D21 !important; }
+#umgHeader:not(.is-sticky) .main-nav .submenu a:hover{ background:#F4F7FB !important; color:#0B2A52 !important; }
+
+/* Al bajar: AZUL */
+#umgHeader.is-sticky{
+  background-image:linear-gradient(90deg,#0B2A52 0%,#1A3F73 100%) !important;
+  background-color:#0B2A52 !important;
+  color:#fff !important;
+  box-shadow:0 6px 18px rgba(0,0,0,.25);
+}
+#umgHeader.is-sticky a{ color:#fff !important; }
+#umgHeader.is-sticky a:hover{ color:#C6A256 !important; }
+#umgHeader.is-sticky .main-nav .submenu{
+  background:#0F2F5D !important; color:#fff !important;
+  border:1px solid rgba(255,255,255,.15) !important; box-shadow:0 12px 28px rgba(0,0,0,.28);
+}
+#umgHeader.is-sticky .main-nav .submenu a{ color:#fff !important; }
+#umgHeader.is-sticky .main-nav .submenu a:hover{ background:rgba(255,255,255,.08) !important; color:#fff !important; }
+
+/* Evitar que wrappers del theme repinten fondos */
+#umgHeader, #umgHeader .header-nav, #umgHeader .main-menu-wrapper, #umgHeader .container{
+  background:transparent !important;
+}
+
+/* Sombra y z-index del sticky */
+#umgHeader{ position:relative; z-index:1030; }
+
+/* Responsive básico (deja que el theme colapse) */
+@media (max-width: 991.98px){
+  #umgHeader .main-menu-wrapper .main-nav{ flex-wrap:wrap; }
+}
+

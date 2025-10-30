@@ -1,125 +1,126 @@
-
 <!DOCTYPE html>
-@if(!Route::is(['index-rtl']))
-<html lang="en">
-@endif
 @if(Route::is(['index-rtl']))
 <html lang="en" dir="rtl">
-@endif    
+@else
+<html lang="en">
+@endif
+
 <head>
     <!-- Meta Tags -->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Dreams LMS is a powerful Learning Management System template designed for educators, training institutions, and businesses. Manage courses, track student progress, conduct virtual classes, and enhance e-learning experiences with an intuitive and feature-rich platform.">
-		<meta name="keywords" content="LMS template, Learning Management System, e-learning software, online course platform, student management, education portal, virtual classroom, training management system, course tracking, online education">
-		<meta name="author" content="Dreams Technologies">
-		<meta name="robots" content="index, follow">
-		
-		<title>Dreams LMS | Advanced Learning Management System Template</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    @include('layout.partials.head')
+    <!-- Branding UMG -->
+    <title>Universidad Mariano Gálvez de Guatemala</title>
+    <meta name="description" content="Portal institucional de la Universidad Mariano Gálvez de Guatemala. Conoce nuestras facultades, programas académicos, sedes y servicios estudiantiles.">
+    <meta name="keywords" content="Universidad Mariano Gálvez, UMG, educación superior, Guatemala, facultades, carreras, sedes">
+    <meta name="author" content="Universidad Mariano Gálvez de Guatemala">
+    <meta name="robots" content="index, follow">
+
+    {{-- CSS/JS del template --}}
+@include('layout.partials.head')   {{-- aquí ya se cargó style.css --}}
+
+{{-- Tema UMG: al final y una sola vez --}}
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-theme.css') }}?v={{ filemtime(public_path('build/css/umg-theme.css')) }}">
+
 </head>
 
-@if (!Route::is(['index-5','index-6']))
-<body>
-@endif
-  
-    @if (Route::is(['index-5','index-6']))
+@php
+  // Clases dinámicas para <body>
+  $bodyClass = '';
+  if (Route::is(['index-5','index-6'])) {
+      $bodyClass = 'home-five';
+  } elseif (Route::is(['error-404','error-500','under-construction'])) {
+      $bodyClass = 'error-page';
+  } elseif (Route::is(['coming-soon'])) {
+      $bodyClass = 'error-page comming-soon-pg';
+  } elseif (Route::is(['student-messages','instructor-chat'])) {
+      $bodyClass = 'chat-page main-chat-blk';
+  }
 
-    <body class="home-five">
+  // Wrapper principal
+  $wrapClasses = 'main-wrapper';
+  if (Route::is(['login','register'])) $wrapClasses .= ' log-wrap';
+  if (Route::is(['index-6']))          $wrapClasses .= ' index-six';
+
+  // Flags para wrappers secundarios por home-3/home-4
+  $isHome3 = Route::is(['index-3']);
+  $isHome4 = Route::is(['index-4']);
+
+  // Algunas vistas no muestran header/footer
+  $hideLayoutChrome = Route::is([
+    'coming-soon','error-404','error-500','forgot-password','login',
+    'new-password','register-step-five','register-step-four','register-step-one',
+    'register-step-three','register-step-two','register','under-construction',
+    'verification-code','view-invoice','lock-screen','otp','reset-password','set-password',
+  ]);
+
+  // Chat wrapper
+  $useChatWrapper = Route::is(['student-messages','instructor-chat']);
+@endphp
+
+<body class="{{ $bodyClass }}">
+
+    @if ($useChatWrapper)
+      <div class="main-wrapper chat-wrapper">
     @endif
-    
-    @if (Route::is(['error-404', 'error-500', 'under-construction']))
 
-        <body class="error-page">
-    @endif
-
-    @if (Route::is(['coming-soon']))
-
-        <body class="error-page comming-soon-pg">
-    @endif
-
-    @if (Route::is(['student-messages','instructor-chat']))
-    <body class="chat-page main-chat-blk">
-    @endif
-    @if (Route::is(['student-messages','instructor-chat']))
-    <div class="main-wrapper chat-wrapper">
+    <div class="{{ $wrapClasses }}">
+        @if ($isHome3)
+          <div class="home-3">
         @endif
-    <!-- Main Wrapper -->
-    @if (!Route::is(['login', 'register','student-messages','instructor-chat','index-6']))
-        <div class="main-wrapper">
-    @endif
-    @if (Route::is(['index-3']))
-    <div class="home-3">
-    @endif
-    @if (Route::is(['index-4']))
-    <div class="home-4">
-    @endif
-    @if (Route::is(['login', 'register']))
-        <div class="main-wrapper log-wrap">
-    @endif
-    @if (Route::is(['index-6']))
-    <div class="main-wrapper index-six">
-    @endif
-    @if (
-        !Route::is([
-            'coming-soon',
-            'error-404',
-            'error-500',
-            'forgot-password',
-            'login',
-            'new-password',
-            'register-step-five',
-            'register-step-four',
-            'register-step-one',
-            'register-step-three',
-            'register-step-two',
-            'register',
-            'under-construction',
-            'verification-code',
-            'view-invoice',
-            'lock-screen',
-            'otp',
-            'reset-password',
-            'set-password'
-        ]))
-        @include('layout.partials.header')
-    @endif
-    @yield('content')
-    @if (
-        !Route::is([
-            'coming-soon',
-            'error-404',
-            'error-500',
-            'forgot-password',
-            'login',
-            'new-password',
-            'register-step-five',
-            'register-step-four',
-            'register-step-one',
-            'register-step-three',
-            'register-step-two',
-            'register',
-            'under-construction',
-            'verification-code',
-            'lock-screen',
-            'otp',
-            'set-password',
-            'reset-password'
-        ]))
-        @include('layout.partials.footer')
-    @endif
-    @if (Route::is(['index-3','index-4']))
+        @if ($isHome4)
+          <div class="home-4">
+        @endif
+
+        @unless($hideLayoutChrome)
+          @include('layout.partials.header')
+        @endunless
+
+        @yield('content')
+
+        @unless($hideLayoutChrome)
+          @include('layout.partials.footer')
+        @endunless
+
+        @if ($isHome3)
+          </div>
+        @endif
+        @if ($isHome4)
+          </div>
+        @endif
     </div>
+
+    @if ($useChatWrapper)
+      </div>
     @endif
-   </div>
-    <!-- /Main Wrapper -->
-    @component('components.modalpopup')
-    @endcomponent
+
+    @component('components.modalpopup') @endcomponent
 
     @include('layout.partials.footer-scripts')
 
-</body>
+<script>
+(() => {
+  const header = document.getElementById('umgHeader');
+  if (!header) return;
 
+  const onScroll = () => {
+    if (window.scrollY > 20) {
+      header.classList.add('is-sticky');
+      document.body.classList.add('scrolled');
+    } else {
+      header.classList.remove('is-sticky');
+      document.body.classList.remove('scrolled');
+    }
+  };
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+
+
+</body>
 </html>

@@ -17,14 +17,14 @@ Route::get('/', function () {
 })->name('index-3');
 
 
-//----------routas para grupo 75------------------
+//---routas para grupo 75
 
 
-
-//---trabajo social
 Route::get('/grupo75/trabajo-social', function () {
     return view('grupo75.trabajo-social');
 })->name('trabajo-social');
+
+
 
 
 //---sistemas-redes-sociales
@@ -33,42 +33,12 @@ Route::get('/grupo75/sistemas-redes-sociales', function () {
 })->name('sistemas-redes-sociales');
 
 
-//-------------------auditoria----------------
+//---sistemas-redes-sociales
 Route::get('/grupo75/auditoria', function () {
     return view('grupo75.auditoria');
 })->name('auditoria');
 
-
-//routas auditoria profesores
-
-
-//maestro1
-Route::get('/grupo75/detalles-instructor-auditoria1', function () {
-    return view('grupo75.detalles-instructor-auditoria1');
-})->name('detalles-instructor-auditoria1');
-
-//maestro2
-Route::get('/grupo75/detalles-instructor-auditoria2', function () {
-    return view('grupo75.detalles-instructor-auditoria2');
-})->name('detalles-instructor-auditoria2');
-
-//maestro3
-Route::get('/grupo75/detalles-instructor-auditoria3', function () {
-    return view('grupo75.detalles-instructor-auditoria3');
-})->name('detalles-instructor-auditoria3');
-
-
-//maestro4
-Route::get('/grupo75/detalles-instructor-auditoria4', function () {
-    return view('grupo75.detalles-instructor-auditoria4');
-})->name('detalles-instructor-auditoria4');
-
-
-
-
-
-
-//------------------------------routes para grupo 74---------------------------------------
+//--------routes para grupo 74
 
 //administracion
 
@@ -87,25 +57,10 @@ Route::get('/grupo74/derecho', function () {
 })->name('derecho');
 
 
-//maestros administracion----
-
-
-//maestro1
-Route::get('/grupo74/detalles-instructor-administracion1', function () {
-    return view('grupo74.detalles-instructor-administracion1');
-})->name('detalles-instructor-administracion1');
-
-//maestro2
-Route::get('/grupo74/detalles-instructor-administracion2', function () {
-    return view('grupo74.detalles-instructor-administracion2');
-})->name('detalles-instructor-administracion2');
-
-
-//maestro3
-Route::get('/grupo74/detalles-instructor-administracion3', function () {
-    return view('grupo74.detalles-instructor-administracion3');
-})->name('detalles-instructor-administracion3');
-
+//maestro 1
+Route::get('/grupo74/detalles-instructor', function () {
+    return view('grupo74.detalles-instructor');
+})->name('detalles-instructor');
 
 
 

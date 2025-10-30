@@ -1,7 +1,9 @@
 
-<!-- Favicon -->
-<link rel="shortcut icon" href="{{URL::asset('build/img/favicon.png')}}"> 
-<link rel="apple-touch-icon" href="{{URL::asset('build/img/apple-icon.png')}}">
+<!-- Favicon personalizado -->
+<link rel="icon" type="image/png" href="{{ URL::asset('build/img/logo.svg') }}">
+<link rel="shortcut icon" type="image/png" href="{{ URL::asset('build/img/logo.svg') }}">
+<link rel="apple-touch-icon" href="{{ URL::asset('build/img/logo.svg') }}">
+
 @if(!Route::is(['error-404','error-500','forgot-password','login','register','under-construction','set-password','otp','lock-screen','reset-password']))
     <!-- Theme Settings Js -->
     <script src="{{URL::asset('build/js/theme-script.js')}}"></script>

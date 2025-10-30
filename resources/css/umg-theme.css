@@ -1,0 +1,80 @@
+/* ===============================
+   UMG – Universidad Mariano Gálvez
+   Tema de sobreescritura (después de style.css)
+   =============================== */
+
+:root{
+  --umg-blue-900:#0B2A52;
+  --umg-blue-700:#1A3F73;
+  --umg-blue-100:#E8EFF7;
+  --umg-red-700:#AA1E23;
+  --umg-red-500:#C62828;
+  --umg-red-100:#FBECEE;
+  --umg-gold-500:#C6A256;
+  --umg-text-900:#1A1D21;
+  --umg-text-700:#2F343B;
+  --umg-shadow:0 10px 24px rgba(11,42,82,.10);
+  --umg-radius:14px;
+  --umg-font-sans:"Montserrat","Roboto",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --umg-font-display:"Merriweather","Georgia",serif;
+}
+
+/* Tipografía base */
+body{ font-family:var(--umg-font-sans); color:var(--umg-text-900); }
+
+/* Titulares sobrios */
+h1,h2,h3,h4{ font-family:var(--umg-font-display); color:var(--umg-blue-900); }
+
+/* Navbar / header */
+.header, .navbar, .top-nav, .main-header{
+  background:var(--umg-blue-900)!important; color:#fff;
+}
+.navbar a, .header a{ color:#fff!important; }
+.navbar a:hover, .header a:hover{ color:var(--umg-gold-500)!important; }
+
+/* Botones principales */
+.btn-primary, .btn.btn-primary{
+  background:var(--umg-red-700)!important; border-color:var(--umg-red-700)!important;
+}
+.btn-primary:hover{ background:var(--umg-red-500)!important; border-color:var(--umg-red-500)!important; }
+
+/* Botón secundario */
+.btn-secondary{
+  background:var(--umg-blue-700)!important; border-color:var(--umg-blue-700)!important; color:#fff!important;
+}
+.btn-secondary:hover{ filter:brightness(1.06); }
+
+/* Cards */
+.card{
+  border:1px solid #E7ECF2; border-radius:var(--umg-radius);
+  box-shadow:var(--umg-shadow);
+}
+.card-header{ background:var(--umg-blue-100); color:var(--umg-blue-900); font-weight:700; }
+
+/* Footer */
+footer, .footer{ background:var(--umg-blue-900)!important; color:#fff; }
+footer a, .footer a{ color:#fff; opacity:.9; }
+footer a:hover, .footer a:hover{ opacity:1; }
+
+/* Links */
+a{ color:var(--umg-blue-700); }
+a:hover{ text-decoration:underline; }
+
+/* Accesibilidad */
+:focus-visible{ outline:3px solid var(--umg-gold-500); outline-offset:2px; }
+.header, .navbar, .main-header, .top-nav{
+  background-color:#0B2A52 !important;
+  background-image:none !important;
+  color:#fff !important;
+}
+.btn-primary, .btn.btn-primary, .theme-btn{
+  background-color:#AA1E23 !important;
+  border-color:#AA1E23 !important;
+  background-image:none !important;
+  color:#fff !important;
+}
+.banner-section, .hero, .home-banner, .main-banner{
+  background-color:#0B2A52 !important;
+  background-image:linear-gradient(90deg,#0B2A52 0%, #1A3F73 100%) !important;
+  color:#fff !important;
+}
