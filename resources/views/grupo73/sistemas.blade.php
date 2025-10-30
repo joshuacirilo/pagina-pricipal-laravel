@@ -134,7 +134,7 @@
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
                      onclick="window.location='{{ route('detalles-instructor1') }}'">
-                    <img src="{{ asset('build/img/instructors/profesor1.jpg') }}" class="card-img-top" alt="Profesor 1">
+                    <img src="{{ asset('/build/img/instructor/profesor1.jpeg') }}" class="card-img-top" alt="Profesor 1"> <!--la imagen de profesor se encuentra en public/build/img/instructor/profesor1 -->
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Lic. Carlos Gómez</h5>
                         <p class="card-text text-muted">Docente en Derecho Penal con más de 10 años de experiencia universitaria.</p>
