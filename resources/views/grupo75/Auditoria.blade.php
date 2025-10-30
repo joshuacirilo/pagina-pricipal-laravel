@@ -165,6 +165,19 @@
                     </div>
                 </div>
             </div>
+
+                        <!-- Instructor 4 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                     onclick="window.location='{{ route('detalles-instructor-auditoria4') }}'">
+                    <img src="{{ asset('build/img/instructors/profesor3.jpg') }}" class="card-img-top" alt="Profesor 4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2">M.Sc. José Hernández</h5>
+                        <p class="card-text text-muted">Docente en Administración Financiera con enfoque en innovación y liderazgo.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>

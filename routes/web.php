@@ -58,6 +58,11 @@ Route::get('/grupo75/detalles-instructor-auditoria3', function () {
 })->name('detalles-instructor-auditoria3');
 
 
+//maestro4
+Route::get('/grupo75/detalles-instructor-auditoria4', function () {
+    return view('grupo75.detalles-instructor-auditoria4');
+})->name('detalles-instructor-auditoria4');
+
 
 
 
