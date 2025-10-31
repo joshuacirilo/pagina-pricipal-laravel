@@ -28,7 +28,7 @@
                                 <div class="flex-fill">
                                     <div class="pb-3 border-bottom mb-3">
                                         <div class="d-flex align-items-center justify-content-between mb-1">
-                                            <h6 class="fw-bold"><a href="javascript:void(0);">Instructor 1</a></h6>
+                                            <h6 class="fw-bold"><a href="javascript:void(0);">Instructor 2</a></h6>
                                         </div>
                                         <div class="d-flex align-items-center mb-1">
                                             <a href="javascript:void(0);" class="fs-14 me-2">Developer</a>
