@@ -11,7 +11,7 @@
                 <div class="col-lg-6">
                     <div class="home-slide-face aos" data-aos="fade-up">
                         <div class="home-slide-text ">
-                            <span class="fw-bold text-uppercase">The Leader in Online Learning</span>
+                            <span class="fw-bold text-uppercase">Universidad Mariano Galves</span>
                             <h1 class="mt-4">Engaging &  Accessible <span class="text-secondary">Online Courses</span> For All</h1>
                             <p class="mt-4">Our specialized online courses are designed to bring the classroom experience to you, no matter where you are.</p>
                         </div>
