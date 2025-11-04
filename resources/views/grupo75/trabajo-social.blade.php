@@ -36,8 +36,8 @@
                     <div class="ps-0 ps-lg-2 pt-4 pt-lg-0 ps-xl-5">
                         <div class="section-header">
                             <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">About</span>
-                            <h2>Trabajo-Social</h2>
-                            <p>At DreamsLMS, we make education accessible to all with interactive courses and expert-led content. Learn anytime, anywhere, and achieve your goals seamlessly.</p>
+                            <h2>Licenciatura en Trabajo Social</h2>
+                            <p>La Escuela de Trabajo Social, tiene como visión formar profesionales especializados que respondan a las problemáticas sociales, capacitados para aplicar técnicas y herramientas de la gerencia social, mediante el fortalecimiento de los conocimientos teóricos de las ciencias sociales y del trabajo social.</p>
                         </div>
                         <div class="d-flex align-items-center about-us-banner">
                             <div>
@@ -46,8 +46,8 @@
                                 </span>
                             </div>
                             <div class="ps-3">
-                                <h6 class="mb-2">Learn from anywhere</h6>
-                                <p>Learning from anywhere has become a transform aspect of modern education, allowing individuals.</p>
+                                <h6 class="mb-2">Título académico a obtener</h6>
+                                <p>Licenciado en Trabajo Social.</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center about-us-banner">
@@ -57,8 +57,8 @@
                                 </span>
                             </div>
                             <div class="ps-3">
-                                <h6 class="mb-2">Expert Mentors</h6>
-                                <p>Expert mentors are invaluable assets in any field, providing seasoned guidance knowledge.</p>
+                                <h6 class="mb-2">Duración</h6>
+                                <p>5 años.</p>
                             </div>
                         </div>
                     </div>
@@ -73,8 +73,8 @@
         <div class="container">
             <div class="section-header text-center">
                 <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">Our Benefits</span>
-                <h2>Master the Skills to Drive your Career</h2>
-                <p>The right course, guided by an expert mentor, can provide invaluable insights, practical skills.</p>
+                <h2>Desarrolla tu potencial y lidera en tu profesión</h2>
+                <p>La carrera de Licenciado en Trabajo Social, guiada por nuestros mentores expertos, puede proporcionar información invaluable para tu desarrollo profesional.</p>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6">
@@ -86,8 +86,12 @@
                             <div class="p-4 rounded-pill bg-primary-transparent d-inline-flex">
                                 <i class="isax isax-book-1 fs-24"></i>
                             </div>
-                            <h5 class="mt-3 mb-1">Flexible Learning</h5>
-                            <p>We believe that high-quality education should be accessible to everyone. Our pricing form in models are designed.</p>
+                            <h5 class="mt-3 mb-1">¿Qué aprenderás?</h5>
+                            <p>Ciclos 1° al 4°: Formación teórica en ciencias sociales, fundamentos del trabajo social y el contexto histórico nacional.
+
+                               Ciclos 5° al 6°: Enfoque práctico en la especialidad, desarrollando el razonamiento lógico para analizar problemáticas sociales específicas.
+
+                               Ciclos 7° al 10°: Especialización en gestión e intervención dentro del sistema de protección social.</p>
                         </div>
                     </div>
                 </div>
@@ -100,8 +104,8 @@
                             <div class="p-4 rounded-pill bg-secondary-transparent d-inline-flex">
                                 <i class="isax isax-bookmark5 fs-24"></i>
                             </div>
-                            <h5 class="mt-3 mb-1">Lifetime Access</h5>
-                            <p>When you enroll in our courses, you’re not just signing up for a temporary learning to experience you’re making.</p>
+                            <h5 class="mt-3 mb-1">Perfil de Ingreso</h5>
+                            <p>Posee habilidades avanzadas de comunicación, análisis y pensamiento crítico. Su perfil se distingue por una marcada sensibilidad social para trabajar con grupos vulnerables y adaptarse a entornos de riesgo, actuando siempre con un sólido compromiso ético y respeto por la diversidad cultural y lingüística.</p>
                         </div>
                     </div>
                 </div>
@@ -114,8 +118,12 @@
                             <div class="p-4 rounded-pill bg-skyblue-transparent d-inline-flex">
                                 <i class="isax isax-chart-26 fs-24"></i>
                             </div>
-                            <h5 class="mt-3 mb-1">Expert Instruction</h5>
-                            <p>Our instructors are seasoned professionals with years of experience in their respective fields & Experts advice</p>
+                            <h5 class="mt-3 mb-1">Perfil de Egreso</h5>
+                            <p>Es un profesional comprometido para la promoción del desarrollo y la justicia social, sobre las bases del cumplimiento efectivo de los derechos humanos, la solidaridad y la equidad.
+
+                               Posee conocimientos científicos para comprender las problemáticas que afronta la sociedad.
+
+                               Aplica conocimientos para convertirlos en acciones que contribuyan al bienestar de las personas, familias y grupos vulnerables</p>
                         </div>
                     </div>
                 </div>
