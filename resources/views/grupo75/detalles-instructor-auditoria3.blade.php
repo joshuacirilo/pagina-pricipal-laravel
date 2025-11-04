@@ -28,10 +28,10 @@
                                 <div class="flex-fill">
                                     <div class="pb-3 border-bottom mb-3">
                                         <div class="d-flex align-items-center justify-content-between mb-1">
-                                            <h6 class="fw-bold"><a href="javascript:void(0);">Instructor 3</a></h6>
+                                            <h6 class="fw-bold"><a href="javascript:void(0);">Carlos Manuel Ramos Gomez</a></h6>
                                         </div>
                                         <div class="d-flex align-items-center mb-1">
-                                            <a href="javascript:void(0);" class="fs-14 me-2">Developer</a>
+                                            <a href="javascript:void(0);" class="fs-14 me-2">Licenciado</a>
                                             <span class="me-2">
                                                 <i class="fa-solid fa-star text-warning"></i>
                                             </span>

@@ -36,8 +36,8 @@
                     <div class="ps-0 ps-lg-2 pt-4 pt-lg-0 ps-xl-5">
                         <div class="section-header">
                             <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">About</span>
-                            <h2>Auditoria</h2>
-                            <p>At DreamsLMS, we make education accessible to all with interactive courses and expert-led content. Learn anytime, anywhere, and achieve your goals seamlessly.</p>
+                            <h2>Licenciatura en Contaduría Pública y Auditoría</h2>
+                            <p>Es una carrera que promueve la excelencia académica mediante la implementación de un programa integral para la formación de contadores públicos y auditores con principios éticos y morales preparados para responder a las exigencias de las empresas que necesitan competir en un mundo globalizado. La carrera es impartida por docentes altamente calificados con experiencia profesional y académica..</p>
                         </div>
                         <div class="d-flex align-items-center about-us-banner">
                             <div>
@@ -46,8 +46,8 @@
                                 </span>
                             </div>
                             <div class="ps-3">
-                                <h6 class="mb-2">Learn from anywhere</h6>
-                                <p>Learning from anywhere has become a transform aspect of modern education, allowing individuals.</p>
+                                <h6 class="mb-2">Título académico a obtener</h6>
+                                <p>Licenciado en Contaduría Pública y Auditoría.</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center about-us-banner">
@@ -57,8 +57,8 @@
                                 </span>
                             </div>
                             <div class="ps-3">
-                                <h6 class="mb-2">Expert Mentors</h6>
-                                <p>Expert mentors are invaluable assets in any field, providing seasoned guidance knowledge.</p>
+                                <h6 class="mb-2">Duración</h6>
+                                <p>4 años y medio.</p>
                             </div>
                         </div>
                     </div>
@@ -73,8 +73,8 @@
         <div class="container">
             <div class="section-header text-center">
                 <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">Our Benefits</span>
-                <h2>Master the Skills to Drive your Career</h2>
-                <p>The right course, guided by an expert mentor, can provide invaluable insights, practical skills.</p>
+                <h2>Desarrolla tu potencial y lidera en tu profesión</h2>
+                <p>La carrera de Contaduría Pública y Auditoría, guiada por nuestros mentores expertos, puede proporcionar información invaluable para tu desarrollo profesional.</p>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6">
@@ -86,8 +86,8 @@
                             <div class="p-4 rounded-pill bg-primary-transparent d-inline-flex">
                                 <i class="isax isax-book-1 fs-24"></i>
                             </div>
-                            <h5 class="mt-3 mb-1">Flexible Learning</h5>
-                            <p>We believe that high-quality education should be accessible to everyone. Our pricing form in models are designed.</p>
+                            <h5 class="mt-3 mb-1">¿Qué aprenderás?</h5>
+                            <p>Esta carrera te prepara para resolver problemas empresariales y tomar decisiones en áreas contables y financieras, utilizando las nuevas tecnologías. Con un sólido enfoque en normativas internacionales, te mantendrás a la vanguardia para atender con profesionalismo a empresas tanto nacionales como internacionales.</p>
                         </div>
                     </div>
                 </div>
@@ -100,8 +100,8 @@
                             <div class="p-4 rounded-pill bg-secondary-transparent d-inline-flex">
                                 <i class="isax isax-bookmark5 fs-24"></i>
                             </div>
-                            <h5 class="mt-3 mb-1">Lifetime Access</h5>
-                            <p>When you enroll in our courses, you’re not just signing up for a temporary learning to experience you’re making.</p>
+                            <h5 class="mt-3 mb-1">Perfil de Ingreso</h5>
+                            <p>Cualquier persona interesada en profundizar sus conocimientos en el área contable y de auditoría, de preferencia con habilidades numéricas, razonamiento crítico y analítico, comprensión lectora, solución de problemas y dedicación. A lo largo de la carrera desarrollará las habilidades para asesorar al Consejo de administración y Gobierno corporativo de la empresa.</p>
                         </div>
                     </div>
                 </div>
@@ -114,8 +114,8 @@
                             <div class="p-4 rounded-pill bg-skyblue-transparent d-inline-flex">
                                 <i class="isax isax-chart-26 fs-24"></i>
                             </div>
-                            <h5 class="mt-3 mb-1">Expert Instruction</h5>
-                            <p>Our instructors are seasoned professionals with years of experience in their respective fields & Experts advice</p>
+                            <h5 class="mt-3 mb-1">Perfil de Egreso</h5>
+                            <p>Profesional ético e independiente, capacitado para desempeñarse en cualquier circunstancia y responder a las demandas de un mundo globalizado. Con sólida formación técnica, está preparado para resolver problemas empresariales y tomar decisiones en los ámbitos contable, financiero, de auditoría y de tecnología.</p>
                         </div>
                     </div>
                 </div>
@@ -136,8 +136,8 @@
                      onclick="window.location='{{ route('detalles-instructor-auditoria1') }}'">
                     <img src="{{ asset('build/img/instructors/profesor1.jpeg') }}" class="card-img-top" alt="Profesor 1">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">Lic. Carlos Gómez</h5>
-                        <p class="card-text text-muted">Docente en Derecho Penal con más de 10 años de experiencia universitaria.</p>
+                        <h5 class="card-title mb-2">Lic. Flavio Juárez</h5>
+                        <p class="card-text text-muted">Coordinador de Facultad y Docente en Derecho Penal con más de 10 años de experiencia universitaria.</p>
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@
                      onclick="window.location='{{ route('detalles-instructor-auditoria2') }}'">
                     <img src="{{ asset('build/img/instructors/profesor2.jpg') }}" class="card-img-top" alt="Profesor 2">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">Ing. María López</h5>
+                        <h5 class="card-title mb-2">Lic. José Pérez</h5>
                         <p class="card-text text-muted">Especialista en Redes Sociales y Sistemas, apasionada por la enseñanza práctica.</p>
                     </div>
                 </div>
@@ -160,7 +160,7 @@
                      onclick="window.location='{{ route('detalles-instructor-auditoria3') }}'">
                     <img src="{{ asset('build/img/instructors/profesor3.jpg') }}" class="card-img-top" alt="Profesor 3">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">M.Sc. José Hernández</h5>
+                        <h5 class="card-title mb-2">Lic. Carlos Ramos</h5>
                         <p class="card-text text-muted">Docente en Administración Financiera con enfoque en innovación y liderazgo.</p>
                     </div>
                 </div>
