@@ -355,24 +355,24 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingcustomicon1One">
                                 <a href="#" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapsecustomicon1One" aria-expanded="true" aria-controls="collapsecustomicon1One">
-                                 ¿Qué cursos contiene la carrera? <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
+                                 ¿Por qué elegirnos para tu educación? <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
                                 </a>
                             </h2>
                             <div id="collapsecustomicon1One" class="accordion-collapse collapse show" aria-labelledby="headingcustomicon1One" data-bs-parent="#accordioncustomicon1Example">
                                 <div class="accordion-body pt-0">
-                                 <p>Puede revisar la sección de Centro de Informaciones para revisar el pensum de estudios o bien visitar la oficina de su Centro UMG más cercano.</p>
+                                 <p>En UMG te formamos como un profesional contable y auditor competitivo, con un plan de estudios actualizado y enfoque práctico que te prepara para destacar en el sector financiero nacional e internacional.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingcustomicon1Two">
                             <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapsecustomicon1Two" aria-expanded="false" aria-controls="collapsecustomicon1One">
-                                ¿Por qué elegirnos para tu educación? <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
+                                 ¿Qué cursos contiene la carrera? <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
                             </a>
                             </h2>
                             <div id="collapsecustomicon1Two" class="accordion-collapse collapse" aria-labelledby="headingcustomicon1Two" data-bs-parent="#accordioncustomicon1Example">
                              <div class="accordion-body pt-0">
-                                 <p>En UMG te formamos como un profesional contable y auditor competitivo, con un plan de estudios actualizado y enfoque práctico que te prepara para destacar en el sector financiero nacional e internacional.</p>
+                                 <p>Puede encotrar más detalles en la sección de Centro de Informaciones para revisar el pensum de estudios o bien visitar la oficina de su Centro UMG más cercano.</p>
                             </div>
                             </div>
                         </div>
