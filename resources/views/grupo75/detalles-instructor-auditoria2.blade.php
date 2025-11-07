@@ -28,28 +28,28 @@
                                 <div class="flex-fill">
                                     <div class="pb-3 border-bottom mb-3">
                                         <div class="d-flex align-items-center justify-content-between mb-1">
-                                            <h6 class="fw-bold"><a href="javascript:void(0);">Jose Favio Perez Quevedo</a></h6>
+                                            <h6 class="fw-bold"><a href="javascript:void(0);">No disponible</a></h6>
                                         </div>
                                         <div class="d-flex align-items-center mb-1">
-                                            <a href="javascript:void(0);" class="fs-14 me-2">Licenciado</a>
+                                            <a href="javascript:void(0);" class="fs-14 me-2">En mantenimiento</a>
                                             <span class="me-2">
                                                 <i class="fa-solid fa-star text-warning"></i>
                                             </span>
-                                            <span class="fs-14">4.9 (200 Reviews)</span>
+                                            <span class="fs-14"></span>
                                         </div>
                                         <div>
-                                            <p>I am a web QUE GUAPO ES AXEL GRRR developer with a vast array of knowledge in many different front end and back end languages, responsive frameworks, databases, and best code practices.</p>
+                                            <p>Muy pronto disponible!</p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between flex-wrap">
                                         <div class="d-flex align-items-center counts-details">
                                             <span class="d-flex align-items-center me-4">
                                                 <span class="d-flex align-items-center"><i class="isax isax-book-saved5 fs-16 text-secondary me-2"></i></span>
-                                                12+ Lesson
+
                                             </span>
                                             <span class="d-flex align-items-center">
                                                 <span class="d-flex align-items-center"><i class="isax isax-profile-2user5 fs-16 text-secondary me-2"></i></span>
-                                                50 Students
+
                                             </span>
                                         </div>
                                         <div class="d-flex align-items-center">
@@ -87,31 +87,31 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="mb-3">About Me</h5>
-                                <p class="mb-3">Very well thought out and articulate communication. Clear milestones, deadlines and fast work. Patience. Infinite patience. No shortcuts. Even if the client is being careless. Some quick example text to build on the card title and bulk the card's content Moltin gives you platform.</p>
+                                <p class="mb-3"> </p>
                                 <a href="javascript:void(0);" class="read-more-btn">Read More</a>
                             </div>
                         </div>
 
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="mb-3">Education</h5>
+                                <h5 class="mb-3">Educación</h5>
                                 <div class="education-flow">
                                     <div class="ps-4 pb-4 timeline-flow">
                                         <div>
-                                            <h6 class="mb-1">BCA - Bachelor of Computer Applications</h6>
-                                            <p class="fs-14">International University - (2004 - 2010)</p>
+                                            <h6 class="mb-1">A</h6>
+                                            <p class="fs-14"></p>
                                         </div>
                                     </div>
                                     <div class="ps-4 pb-4 timeline-flow">
                                         <div>
-                                            <h6 class="mb-1">MCA - Master of Computer Application</h6>
-                                            <p class="fs-14">International University - (2010 - 2012)</p>
+                                            <h6 class="mb-1">B</h6>
+                                            <p class="fs-14"></p>
                                         </div>
                                     </div>
                                     <div class="ps-4 timeline-flow">
                                         <div>
-                                            <h6 class="mb-1">Design Communication Visual</h6>
-                                            <p class="fs-14">International University - (2012-2015)</p>
+                                            <h6 class="mb-1">C</h6>
+                                            <p class="fs-14"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -120,24 +120,24 @@
 
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="mb-3">Experience</h5>
+                                <h5 class="mb-3">Experiencia</h5>
                                 <div class="d-flex align-items-center mb-4">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
-                                        <h6 class="mb-1">Web Design & Development Team Leader</h6>
-                                        <p>Creative Agency - (2013 - 2016)</p>
+                                        <h6 class="mb-1">A</h6>
+                                        <p>-</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
-                                        <h6 class="mb-1">Project Manager</h6>
-                                        <p>CJobcy Technology Pvt.Ltd - (Present)</p>
+                                        <h6 class="mb-1">B</h6>
+                                        <p>-</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
+<!--
                         <div class="card border-0">
                             <div class="card-body p-0">
                                     <h5 class="mb-3">Courses</h5>
@@ -155,7 +155,7 @@
                                                     <div class="avatar avatar-sm rounded-circle">
                                                         <img class="img-fluid rounded-circle object-fit-cover" src="{{URL::asset('./build/img/avatar/avatar2.jpg')}}" alt="img">
                                                     </div>
-                                                    <p class="ms-2"><a href="{{url('instructor-details')}}">Ana Reyes</a></p>
+                                                    <p class="ms-2"><a href="{{url('instructor-details')}}"></a></p>
                                                 </div>
                                                 <span class="tag-btn">Wordpress</span>
                                             </div>
@@ -222,7 +222,7 @@
                         </div>
 
                     </div>
-
+-->
                     <div class="col-lg-4">
                         <div class="card">
                             <div class="card-body">
@@ -253,7 +253,7 @@
                                     </span>
                                     <div>
                                         <h6 class="mb-0">Email</h6>
-                                        <p class="mb-0">jennywilson@example.com</p>
+                                        <p class="mb-0">j@example.com</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center mb-4">
@@ -262,7 +262,7 @@
                                     </span>
                                     <div>
                                         <h6 class="fs-16 fw-medium text-gray-9 mb-0">Address</h6>
-                                        <p class="mb-0 text-truncate">877 Ferry Street, Huntsville, Alabama</p>
+                                        <p class="mb-0 text-truncate"></p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -271,7 +271,7 @@
                                     </span>
                                     <div>
                                         <h6 class="fs-16 fw-medium text-gray-9 mb-0">Phone</h6>
-                                        <p class="mb-0">+1(452) 125-6789</p>
+                                        <p class="mb-0"></p>
                                     </div>
                                 </div>
                             </div>

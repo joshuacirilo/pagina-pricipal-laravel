@@ -37,7 +37,7 @@
                         <div class="section-header">
                             <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">About</span>
                             <h2>Licenciatura en Contaduría Pública y Auditoría</h2>
-                            <p>Es una carrera que promueve la excelencia académica mediante la implementación de un programa integral para la formación de contadores públicos y auditores con principios éticos y morales preparados para responder a las exigencias de las empresas que necesitan competir en un mundo globalizado. La carrera es impartida por docentes altamente calificados con experiencia profesional y académica..</p>
+                            <p>Es una carrera que promueve la excelencia académica mediante la implementación de un programa integral para la formación de contadores públicos y auditores con principios éticos y morales preparados para responder a las exigencias de las empresas que necesitan competir en un mundo globalizado. La carrera es impartida por docentes altamente calificados con experiencia profesional y académica.</p>
                         </div>
                         <div class="d-flex align-items-center about-us-banner">
                             <div>
@@ -136,8 +136,8 @@
                      onclick="window.location='{{ route('detalles-instructor-auditoria1') }}'">
                     <img src="{{ asset('build/img/instructors/profesor1.jpeg') }}" class="card-img-top" alt="Profesor 1">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">Lic. Flavio Juárez</h5>
-                        <p class="card-text text-muted">Coordinador de Facultad y Docente en Derecho Penal con más de 10 años de experiencia universitaria.</p>
+                        <h5 class="card-title mb-2">Lic. José Pérez</h5>
+                        <p class="card-text text-muted">Coordinador de Facultad, Lic en Contaduría Pública y Auditoría.</p>
                     </div>
                 </div>
             </div>
@@ -148,8 +148,8 @@
                      onclick="window.location='{{ route('detalles-instructor-auditoria2') }}'">
                     <img src="{{ asset('build/img/instructors/profesor2.jpg') }}" class="card-img-top" alt="Profesor 2">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">Lic. José Pérez</h5>
-                        <p class="card-text text-muted">Especialista en Redes Sociales y Sistemas, apasionada por la enseñanza práctica.</p>
+                        <h5 class="card-title mb-2">No disponible</h5>
+                        <p class="card-text text-muted">No disponible, en espera.</p>
                     </div>
                 </div>
             </div>
@@ -160,8 +160,8 @@
                      onclick="window.location='{{ route('detalles-instructor-auditoria3') }}'">
                     <img src="{{ asset('build/img/instructors/profesor3.jpg') }}" class="card-img-top" alt="Profesor 3">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">Lic. Carlos Ramos</h5>
-                        <p class="card-text text-muted">Docente en Administración Financiera con enfoque en innovación y liderazgo.</p>
+                        <h5 class="card-title mb-2">No disponible</h5>
+                        <p class="card-text text-muted">No disponible, en espera.</p>
                     </div>
                 </div>
             </div>
