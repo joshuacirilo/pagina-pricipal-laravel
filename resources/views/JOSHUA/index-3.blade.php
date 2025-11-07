@@ -4,7 +4,6 @@
 @section('content')
 
     <!-- Home Banner -->
-    <section class="banner-section-three d-flex align-items-center">
 
         <div class="container">
             <div class="row align-items-center">
