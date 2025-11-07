@@ -190,8 +190,8 @@
                                     <img src="./build/img/icons/counter-icon1.svg" alt="img">
                                 </div>
                                 <div class="count-content">
-                                    <h4 class="text-info"><span class="count-digit">10</span>K</h4>
-                                    <p>Online Courses</p>
+                                    <h4 class="text-info"><span class="count-digit">8</span>+</h4>
+                                    <p>Oportunidades laborales</p>
                                 </div>
                             </div>
                         </div>
@@ -205,8 +205,8 @@
                                     <img src="./build/img/icons/counter-icon2.svg" alt="img">
                                 </div>
                                 <div class="count-content">
-                                    <h4 class="text-warning"><span class="count-digit">200</span>+</h4>
-                                    <p>Expert Tutors</p>
+                                    <h4 class="text-warning"><span class="count-digit">12</span>+</h4>
+                                    <p>Catedráticos</p>
                                 </div>
                             </div>
                         </div>
@@ -220,8 +220,8 @@
                                     <img src="./build/img/icons/counter-icon3.svg" alt="img">
                                 </div>
                                 <div class="count-content">
-                                    <h4 class="text-skyblue"><span class="count-digit">6</span>K+</h4>
-                                    <p>Certified Courses</p>
+                                    <h4 class="text-skyblue"><span class="count-digit">25</span>+</h4>
+                                    <p>Cursos certificados</p>
                                 </div>
                             </div>
                         </div>
@@ -234,8 +234,8 @@
                             <img src="./build/img/icons/counter-icon4.svg" alt="img">
                             </div>
                             <div class="count-content">
-                            <h4 class="text-lightgreen"><span class="count-digit">60</span>K+</h4>
-                                <p>Online Students</p>
+                            <h4 class="text-lightgreen"><span class="count-digit">8</span></h4>
+                                <p>Salones de clases</p>
                             </div>
                         </div>
                     </div>
@@ -354,68 +354,79 @@
                 <div class="col-lg-7">
                     <div class="section-header">
                         <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">FAQs</span>
-                        <h2>Frequently Asked Questions</h2>
-                        <p>Explore detailed answers to the most common questions about our platform.</p>
+                        <h2>Preguntas Frecuentes</h2>
+                        <p>Explore respuestas sobre las preguntas más comunes sobre nosotros!.</p>
                     </div>
                     <div class="faq-content">
                     <div class="accordion accordion-customicon1 accordions-items-seperate" id="accordioncustomicon1Example">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingcustomicon1One">
                                 <a href="#" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapsecustomicon1One" aria-expanded="true" aria-controls="collapsecustomicon1One">
-                                 What’s DreamLMS want to give you? <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
+                                 ¿Qué cursos contiene la carrera? <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
                                 </a>
                             </h2>
                             <div id="collapsecustomicon1One" class="accordion-collapse collapse show" aria-labelledby="headingcustomicon1One" data-bs-parent="#accordioncustomicon1Example">
                                 <div class="accordion-body pt-0">
-                                 <p>DreamLMS aims to provide you with a comprehensive and intuitive learning platform that enhances your educational experience.</p>
+                                 <p>Puede revisar la sección de Centro de Informaciones para revisar el pensum de estudios o bien visitar la oficina de su Centro UMG más cercano.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingcustomicon1Two">
                             <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapsecustomicon1Two" aria-expanded="false" aria-controls="collapsecustomicon1One">
-                                Why choose us for your education? <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
+                                ¿Por qué elegirnos para tu educación? <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
                             </a>
                             </h2>
                             <div id="collapsecustomicon1Two" class="accordion-collapse collapse" aria-labelledby="headingcustomicon1Two" data-bs-parent="#accordioncustomicon1Example">
                              <div class="accordion-body pt-0">
-                                 <p>DreamLMS aims to provide you with a comprehensive and intuitive learning platform that enhances your educational experience.</p>
+                                 <p>En la Facultad de Trabajo Social de la UMG formamos profesionales con sensibilidad social y capacidad de intervención real. Te prepararemos para transformar vidas y comunidades.</p>
                             </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingcustomicon1Three">
                             <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapsecustomicon1Three" aria-expanded="false" aria-controls="collapsecustomicon1One">
-                            How We Provide Service For you? <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
+                            ¿En qué me podré desempeñar? <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
                             </a>
                             </h2>
                             <div id="collapsecustomicon1Three" class="accordion-collapse collapse" aria-labelledby="headingcustomicon1Three" data-bs-parent="#accordioncustomicon1Example">
                              <div class="accordion-body pt-0">
-                                 <p>DreamLMS aims to provide you with a comprehensive and intuitive learning platform that enhances your educational experience.</p>
+                                 <p>Podrás desempeñarte en la intervención directa con familias y comunidades, gestión de proyectos sociales, promoción y defensa de derechos humanos e investigación y docencia en el ámbito social.</p>
                             </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingcustomicon1Four">
                             <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapsecustomicon1Four" aria-expanded="false" aria-controls="collapsecustomicon1One">
-                                Do you have a monthly plan? <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
+                               ¿Qué documentos necesito para inscribirme? (recién graduado) <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
                             </a>
                             </h2>
                             <div id="collapsecustomicon1Four" class="accordion-collapse collapse" aria-labelledby="headingcustomicon1Four" data-bs-parent="#accordioncustomicon1Example">
                              <div class="accordion-body pt-0">
-                                 <p>DreamLMS aims to provide you with a comprehensive and intuitive learning platform that enhances your educational experience.</p>
+                                 <p>	Constancia de Evaluación de Ubicación.
+                                    	Completar Formulario de Nuevo Estudiante.
+                                    	Original y fotocopia de DPI o pasaporte.
+                                    	Certificación original de Básicos y Diversificado.
+                                    	Fotostática de título de 5 x 7 pulgadas. (sellado por Contraloría de Cuentas).
+                                    	Dos fotografías recientes tamaño Cédula.
+                                    	Efectuar los pagos de inscripción correspondientes.</p>
                             </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingcustomicon1Five">
                             <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapsecustomicon1Five" aria-expanded="false" aria-controls="collapsecustomicon1One">
-                            Are you Affordable For Your Course <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
+                            ¿Qué necesito para traslado de otra universidad? <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
                             </a>
                             </h2>
                             <div id="collapsecustomicon1Five" class="accordion-collapse collapse" aria-labelledby="headingcustomicon1Five" data-bs-parent="#accordioncustomicon1Example">
                              <div class="accordion-body pt-0">
-                                 <p>DreamLMS aims to provide you with a comprehensive and intuitive learning platform that enhances your educational experience.</p>
+                                 <p> 	Certificación de matrícula.
+                                   	Certificación de estudios (ambas de Universidad de procedencia).
+
+                                    Inversión (costos de preinscripción, inscripción, colegiaturas).
+                                   	Costos de inscripción
+                                    	 Costos de colegiatura (Costos sujestos a cambios)</p>
                             </div>
                             </div>
                         </div>
