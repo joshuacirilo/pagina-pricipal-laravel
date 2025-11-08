@@ -31,7 +31,7 @@ Route::get('/grupo75/sistemas-redes-sociales', function () {
 })->name('sistemas-redes-sociales');
 
 
-//---sistemas-auditoria
+//-auditoria
 Route::get('/grupo75/auditoria', function () {
     return view('grupo75.auditoria');
 })->name('auditoria');

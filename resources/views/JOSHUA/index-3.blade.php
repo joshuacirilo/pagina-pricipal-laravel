@@ -11,37 +11,82 @@
                     <div class="home-slide-face aos" data-aos="fade-up">
                         <div class="home-slide-text ">
                             <span class="fw-bold text-uppercase">The Leader in Online Learning</span>
-                            <h1 class="mt-4">Engaging &  Accessible <span class="text-secondary">Online Courses</span> For All</h1>
-                            <p class="mt-4">Our specialized online courses are designed to bring the classroom experience to you, no matter where you are.</p>
+                            <h1 class="mt-4">Universidad Mariano Galves Guatemala<span class="text-secondary"> Sede Guastatoya</span></h1>
+                            <p class="mt-4">En la sede Guastatoya, brindamos oportunidades educativas de calidad para impulsar el desarrollo profesional y humano de nuestros estudiantes.</p>
                         </div>
-                        <div class="banner-content">
-                            <form class="form"  action="{{url('course-list')}}">
-                                <div class="form-inner">
-                                    <div class="input-group">
-                                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                                        <input type="email" class="form-control" placeholder="Search School, Online eductional centers, etc">
-                                        <span class="drop-detail">
-                                            <select class="form-select select">
-                                                <option>Category</option>
-                                                <option>Angular</option>
-                                                <option>Node Js</option>
-                                                <option>React</option>
-                                                <option>Python</option>
-                                            </select>
-                                        </span>
-                                        <button class="btn sub-btn" type="submit"><i class="fas fa-arrow-right"></i></button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+        <div class="banner-content">
+            <form class="form" onsubmit="return false;">
+                <div class="form-inner">
+                    <div class="input-group">
+                        <!-- 🔍 Ícono de búsqueda -->
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+
+                        <!-- 🧱 Campo visual bloqueado -->
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Busca la facultad perfecta para tu futuro..."
+                            readonly
+                            style="background-color: #f8f9fa; cursor: not-allowed;"
+                        >
+
+                        <!-- 🔽 Menú desplegable -->
+                        <span class="drop-detail">
+                            <select class="form-select select" id="facultySelect" onchange="redirectFaculty()">
+                                <option value=""></option>
+                                <option value="derecho">Derecho</option>
+                                <option value="administracion">Administración</option>
+                                <option value="criminologia">Criminología</option>
+                                <option value="sistemas-redes-sociales">Ingeniería en Sistemas</option>
+                                <option value="trabajo-social">Trabajo Social</option>
+                                <option value="auditoria">Auditoría</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- 🚀 Script corregido -->
+        <script>
+            function redirectFaculty() {
+                const faculty = document.getElementById('facultySelect').value;
+
+                if (!faculty) return;
+
+                switch (faculty) {
+                    case 'derecho':
+                        window.location.href = "{{ url('/grupo74/derecho') }}";
+                        break;
+                    case 'administracion':
+                        window.location.href = "{{ url('/grupo74/administracion') }}";
+                        break;
+                    case 'criminologia':
+                        window.location.href = "{{ url('/grupo74/criminologia') }}";
+                        break;
+                    case 'sistemas-redes-sociales':
+                        window.location.href = "{{ url('/grupo75/sistemas-redes-sociales') }}";
+                        break;
+                    case 'trabajo-social':
+                        window.location.href = "{{ url('/grupo75/trabajo-social') }}";
+                        break;
+                    case 'auditoria':
+                        window.location.href = "{{ url('/grupo75/auditoria') }}";
+                        break;
+                    default:
+                        console.error('Ruta no encontrada para:', faculty);
+                }
+            }
+        </script>
+
+
                         <div class="trust-user">
-                            <h5>Trusted by over 15K Users worldwide since 2022</h5>
+                            <h5>Excelencia académica y compromiso con la verdad desde 1966</h5>
                             <div class="trust-rating d-flex align-items-center">
                                 <div class="rate-head">
-                                    <h2><span>1000</span>+</h2>
                                 </div>
                                 <div class="rating d-flex align-items-center">
-                                    <h2 class="d-inline-block average-rating">4.4</h2>
+                                    <h2 class="d-inline-block average-rating">4.9</h2>
                                     <i class="fas fa-star filled"></i>
                                     <i class="fas fa-star filled"></i>
                                     <i class="fas fa-star filled"></i>
@@ -54,66 +99,75 @@
                 </div>
                 <div class="col-lg-6 d-flex align-items-center">
                     <div class="banner-image aos" data-aos="fade-up">
-                        <img src="{{URL::asset('build/img/hero/hero-2.png')}}" alt="Img">
+                        <img src="{{URL::asset('build/img/hero/imagenhero2.png')}}" alt="Img">
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- /Home Banner -->
+<div class="section student-course">
+    <div class="container">
+        <div class="course-widget">
+            <div class="row row-gap-4">
 
-    <div class="section student-course">
-        <div class="container">
-            <div class="course-widget">
-                <div class="row row-gap-4">
-                    <div class="col-lg-3 col-md-6 d-flex">
-                        <div class="expert-item flex-fill aos" data-aos="fade-up">
-                            <div class="expert-img">
-                                <img src="{{URL::asset('build/img/icons/icon-24.svg')}}" alt="Img">
-                            </div>
-                            <div class="expert-content">
-                                <h4><span class="counterup">10</span>K</h4>
-                                <p>Online Courses</p>
-                            </div>
+                <!-- Facultades -->
+                <div class="col-lg-3 col-md-6 d-flex">
+                    <div class="expert-item flex-fill aos" data-aos="fade-up">
+                        <div class="expert-img">
+                            <img src="{{URL::asset('build/img/icons/icon-24.svg')}}" alt="Facultades">
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 d-flex">
-                        <div class="expert-item flex-fill aos" data-aos="fade-up">
-                            <div class="expert-img">
-                                <img src="{{URL::asset('build/img/icons/icon-25.svg')}}" alt="Img">
-                            </div>
-                            <div class="expert-content">
-                                <h4><span class="counterup">200</span>K</h4>
-                                <p>Expert Tutors</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 d-flex">
-                        <div class="expert-item flex-fill aos" data-aos="fade-up">
-                            <div class="expert-img">
-                                <img src="{{URL::asset('build/img/icons/icon-26.svg')}}" alt="Img">
-                            </div>
-                            <div class="expert-content">
-                                <h4><span class="counterup">6</span>K</h4>
-                                <p>Ceritified Courses</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 d-flex">
-                        <div class="expert-item flex-fill aos" data-aos="fade-up">
-                            <div class="expert-img">
-                                <img src="{{URL::asset('build/img/icons/icon-27.svg')}}" alt="Img">
-                            </div>
-                            <div class="expert-content">
-                                <h4><span class="counterup">60</span>K</h4>
-                                <p>Online Students</p>
-                            </div>
+                        <div class="expert-content">
+                            <h4><span class="counterup">15</span>+</h4>
+                            <p>Facultades y programas académicos</p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Docentes -->
+                <div class="col-lg-3 col-md-6 d-flex">
+                    <div class="expert-item flex-fill aos" data-aos="fade-up">
+                        <div class="expert-img">
+                            <img src="{{URL::asset('build/img/icons/icon-25.svg')}}" alt="Docentes">
+                        </div>
+                        <div class="expert-content">
+                            <h4><span class="counterup">120</span>+</h4>
+                            <p>Docentes altamente capacitados</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programas certificados -->
+                <div class="col-lg-3 col-md-6 d-flex">
+                    <div class="expert-item flex-fill aos" data-aos="fade-up">
+                        <div class="expert-img">
+                            <img src="{{URL::asset('build/img/icons/icon-26.svg')}}" alt="Programas">
+                        </div>
+                        <div class="expert-content">
+                            <h4><span class="counterup">12</span></h4>
+                            <p>Programas certificados y acreditados</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Estudiantes activos -->
+                <div class="col-lg-3 col-md-6 d-flex">
+                    <div class="expert-item flex-fill aos" data-aos="fade-up">
+                        <div class="expert-img">
+                            <img src="{{URL::asset('build/img/icons/icon-27.svg')}}" alt="Estudiantes">
+                        </div>
+                        <div class="expert-content">
+                            <h4><span class="counterup">800</span>+</h4>
+                            <p>Estudiantes activos en la sede Guastatoya</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
+</div>
+
     <!-- Home Banner -->
 
     <!-- Top Categories -->
