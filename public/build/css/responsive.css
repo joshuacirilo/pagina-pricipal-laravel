@@ -1,0 +1,298 @@
+/* ======== Overlay del template: controlado por nosotros ======== */
+/* Apaga overlays genéricos cuando el menú móvil nuestro esté abierto */
+body.menu-open .sidebar-overlay,
+body.menu-open .mobile-menu-overlay,
+body.menu-open .menu-overlay,
+body.menu-open .bg-overlay,
+html.menu-opened::before { display:none !important; opacity:0 !important; z-index:0 !important; }
+
+/* El template pone estas clases; que NO bloqueen scrolling ni fijen altura */
+html.menu-opened, html.menu-opened body { height:auto !important; overflow:visible !important; }
+
+/* ======== Header + panel móvil desde cero ======== */
+:root{ --header-h: 56px; }  /* se recalcula por JS abajo */
+
+@media (max-width: 991.98px){
+  /* Header fijo y arriba de todo */
+  #umgHeader{ position:fixed; top:0; left:0; right:0; z-index:100000; }
+  /* Deja espacio al contenido */
+  body{ padding-top: var(--header-h); }
+
+  /* Logo pequeño en móvil (ajusta altura si quieres) */
+  #umgHeader .navbar-logo img.logo{ height:26px !important; width:auto; object-fit:contain; }
+
+  /* Botón hamburguesa visible */
+  #mobile_btn{ display:inline-flex; color:#fff; padding:10px 8px; }
+
+  /* Panel de menú: fijo, debajo del header, con scroll propio y encima de TODO */
+  #umgHeader .main-menu-wrapper{
+    position: fixed !important;
+    top: var(--header-h) !important; left:0; right:0;
+    max-height: calc(100vh - var(--header-h)); overflow:auto;
+    background:#fff; border-radius:0 0 14px 14px;
+    box-shadow:0 12px 28px rgba(0,0,0,.18);
+    display:none; transform:translateY(-6px); opacity:0;
+    transition:transform .18s ease, opacity .18s ease;
+    z-index: 2147483646; /* por encima de cualquier overlay del template */
+  }
+  body.menu-open #umgHeader .main-menu-wrapper{ display:block; transform:none; opacity:1; }
+
+  /* Evita scroll del fondo mientras el panel está abierto */
+  body.menu-open{ overflow:hidden !important; touch-action:none; }
+
+  /* Estilo de items dentro del panel */
+  #umgHeader .main-nav > li{ border-bottom:1px solid #eef1f6; }
+  #umgHeader .main-nav > li > a{ display:block; padding:12px 18px; color:#0B2A52 !important; font-weight:600; }
+  #umgHeader .main-nav .submenu{ display:none; padding:6px 0; }
+  #umgHeader .main-nav .has-submenu.open > .submenu{ display:block; }
+  #umgHeader .main-nav .submenu a{ padding:10px 28px; color:#0B2A52 !important; font-weight:500; }
+
+  /* Bloque de botones Sign In / Register dentro del panel */
+  #umgHeader .main-menu-wrapper .menu-login{ padding:12px 16px; display:grid; gap:10px; }
+  #umgHeader .main-menu-wrapper .menu-login .btn{
+    width:100%; padding:12px 14px; border-radius:14px;
+    opacity:1 !important; visibility:visible !important; filter:none !important; transform:none !important;
+  }
+  #umgHeader .main-menu-wrapper .menu-login .btn.btn-primary{ background:#C62828 !important; border-color:#C62828 !important; color:#fff !important; }
+  #umgHeader .main-menu-wrapper .menu-login .btn.btn-secondary{ background:#1A3F73 !important; border-color:#1A3F73 !important; color:#fff !important; }
+
+  /* Oculta los botones de la derecha del header para no duplicar */
+  #umgHeader .header-btn{ display:none !important; }
+}
+
+/* Escritorio normal */
+@media (min-width: 992px){
+  #mobile_btn{ display:none !important; }
+  #umgHeader .main-menu-wrapper{ position:static !important; max-height:none; box-shadow:none; display:block; transform:none; opacity:1; }
+  #umgHeader .main-nav{ display:flex; gap:22px; }
+  #umgHeader .main-nav > li > a{ color:#fff !important; padding:12px 8px; font-weight:500; }
+}
+/* === Neutraliza overlays del template cuando usamos nuestro menú móvil === */
+body.menu-open .sidebar-overlay,
+body.menu-open .mobile-menu-overlay,
+body.menu-open .menu-overlay,
+body.menu-open .bg-overlay { display:none !important; opacity:0 !important; z-index:0 !important; }
+
+/* El tema fija overflow/height al abrir su menú; lo soltamos para usar el nuestro */
+html.menu-opened, html.menu-opened body { height:auto !important; overflow:visible !important; }
+
+/* ================== Header + Menú móvil (mobile-first) ================== */
+:root{ --header-h: 56px; } /* se recalcula por JS */
+
+@media (max-width: 991.98px){
+
+  /* Header fijo arriba y con z-index alto */
+  #umgHeader{ position:fixed; top:0; left:0; right:0; z-index:100000; }
+  body{ padding-top: var(--header-h); }  /* para que el contenido no quede debajo */
+
+  /* Logo más pequeño (ajusta altura si quieres menos) */
+  #umgHeader .navbar-logo img.logo{
+    height:26px !important;
+    width:auto; max-width:140px; object-fit:contain;
+  }
+
+  /* Botón hamburguesa visible y a la derecha */
+  #mobile_btn{ display:inline-flex; margin-left:auto; color:#fff; padding:10px 8px; font-size:1.2rem; }
+
+  /* Oculta botones de la derecha del header en móvil (ya van en el panel) */
+  #umgHeader .header-btn{ display:none !important; }
+
+  /* Panel del menú: fijo, debajo del header, con scroll y por encima de TODO */
+  #umgHeader .main-menu-wrapper{
+    position:fixed !important;
+    top: var(--header-h) !important; left:0; right:0;
+    max-height: calc(100vh - var(--header-h));
+    overflow:auto;
+    background:#fff;
+    border-radius:0 0 14px 14px;
+    box-shadow:0 12px 28px rgba(0,0,0,.18);
+    z-index:2147483646;   /* mayor que cualquier overlay */
+    display:none; transform:translateY(-6px); opacity:0;
+    transition:transform .18s ease, opacity .18s ease;
+  }
+  body.menu-open #umgHeader .main-menu-wrapper{ display:block; transform:none; opacity:1; }
+
+  /* Mientras el panel está abierto, bloquea scroll del fondo */
+  body.menu-open{ overflow:hidden !important; touch-action:none; }
+
+  /* Items del menú en panel */
+  #umgHeader .main-nav > li{ border-bottom:1px solid #eef1f6; }
+  #umgHeader .main-nav > li > a{
+    display:block; padding:12px 18px; color:#0B2A52 !important; font-weight:600;
+  }
+
+  /* Desactiva dropdown por :hover del desktop en móvil */
+  #umgHeader .main-nav .submenu{ display:none; padding:6px 0; }
+  #umgHeader .main-nav .has-submenu.open > .submenu{ display:block; }
+  #umgHeader .main-nav .submenu a{ padding:10px 28px; color:#0B2A52 !important; font-weight:500; }
+
+  /* Botones de login dentro del panel */
+  #umgHeader .main-menu-wrapper .menu-login{
+    padding:12px 16px; display:grid; gap:10px; position:relative; z-index:1;
+  }
+  #umgHeader .main-menu-wrapper .menu-login .btn{
+    width:100%; padding:12px 14px; border-radius:14px;
+    opacity:1 !important; visibility:visible !important; filter:none !important; transform:none !important;
+  }
+  #umgHeader .main-menu-wrapper .menu-login .btn.btn-primary{
+    background:#C62828 !important; border-color:#C62828 !important; color:#fff !important;
+  }
+  #umgHeader .main-menu-wrapper .menu-login .btn.btn-secondary{
+    background:#1A3F73 !important; border-color:#1A3F73 !important; color:#fff !important;
+  }
+}
+
+/* Escritorio normal */
+@media (min-width: 992px){
+  #mobile_btn{ display:none !important; }
+  #umgHeader .main-menu-wrapper{ position:static !important; max-height:none; box-shadow:none; display:block; transform:none; opacity:1; }
+  #umgHeader .main-nav{ display:flex; gap:22px; }
+  #umgHeader .main-nav > li > a{ color:#fff !important; padding:12px 8px; font-weight:500; }
+}
+/* ====== FIX: colores del menú en el panel móvil ====== */
+@media (max-width: 991.98px){
+
+  /* Fondo claro en todo el panel y submenús */
+  #umgHeader .main-menu-wrapper,
+  #umgHeader .main-menu-wrapper .submenu{
+    background:#fff !important;
+  }
+
+  /* Links principales y de submenú en azul oscuro (legibles) */
+  body.menu-open #umgHeader .main-nav > li > a,
+  body.menu-open #umgHeader .main-nav .submenu a{
+    color:#0B2A52 !important;
+    text-shadow:none !important;
+  }
+
+  /* Íconos/chevrons dentro de los <a> también en azul oscuro */
+  body.menu-open #umgHeader .main-nav i,
+  body.menu-open #umgHeader .main-nav .isax,
+  body.menu-open #umgHeader .main-nav svg{
+    color:#0B2A52 !important;
+    fill:#0B2A52 !important;
+  }
+
+  /* Quita cualquier “overlay” oscuro que ponga el tema sobre submenús */
+  #umgHeader .main-nav .has-submenu > .submenu{
+    background:#fff !important;
+    box-shadow:none;            /* si el tema aplicaba sombras azules */
+  }
+
+  /* Items con borde separador para legibilidad */
+  #umgHeader .main-nav > li{ border-bottom:1px solid #e9ecf3; }
+  #umgHeader .main-nav .submenu li{ border-bottom:1px solid #f2f4f8; }
+  #umgHeader .main-nav a{ display:block; padding:12px 18px; font-weight:600; }
+  #umgHeader .main-nav .submenu a{ padding:10px 28px; font-weight:500; }
+}
+
+/* (Opcional) Si tu dropdown usa .dropdown-menu dentro del panel */
+@media (max-width: 991.98px){
+  #umgHeader .main-menu-wrapper .dropdown-menu{
+    background:#fff !important;
+    color:#0B2A52 !important;
+    border:1px solid #eef1f6;
+  }
+  #umgHeader .main-menu-wrapper .dropdown-menu .dropdown-item{
+    color:#0B2A52 !important;
+  }
+}
+/* === MODO MÓVIL: panel sólido y sin velos encima o debajo === */
+@media (max-width: 991.98px){
+
+  /* 1) Apaga cualquier pseudo-elemento decorativo del header cuando el menú está abierto */
+  body.menu-open #umgHeader::before,
+  body.menu-open #umgHeader::after,
+  body.menu-open #umgHeader .container::before,
+  body.menu-open #umgHeader .container::after,
+  body.menu-open #umgHeader .header-nav::before,
+  body.menu-open #umgHeader .header-nav::after{
+    content:none !important;
+    display:none !important;
+  }
+
+  /* 2) Panel 100% opaco, por encima de todo y ancho completo */
+  body.menu-open #umgHeader .main-menu-wrapper{
+    position:fixed !important;
+    inset: var(--header-h,56px) 0 auto 0 !important; /* top right bottom left */
+    width:100vw !important;
+    background:#fff !important;
+    opacity:1 !important;
+    z-index:2147483646 !important;
+    box-shadow: 0 12px 28px rgba(0,0,0,.18);
+  }
+
+  /* 3) Asegura que nada le aplique opacidad al panel ni a sus hijos */
+  body.menu-open #umgHeader,
+  body.menu-open #umgHeader *{
+    opacity:1 !important;
+    mix-blend-mode:normal !important;
+    backdrop-filter:none !important;
+  }
+
+  /* 4) Links y submenús con color legible */
+  body.menu-open #umgHeader .main-nav > li > a,
+  body.menu-open #umgHeader .main-nav .submenu a{
+    color:#0B2A52 !important;
+    text-shadow:none !important;
+    background:transparent !important;
+  }
+
+  /* 5) Botones nítidos (sin desaturación) */
+  body.menu-open #umgHeader .main-menu-wrapper .menu-login .btn{
+    opacity:1 !important;
+    filter:none !important;
+    transform:none !important;
+    visibility:visible !important;
+  }
+
+  /* 6) Si el tema pinta el submenú con azul translúcido, fuerzalo a blanco */
+  body.menu-open #umgHeader .main-nav .submenu{
+    background:#fff !important;
+    box-shadow:none !important;
+  }
+}
+/* ====== OCULTAR LOGO CUANDO EL MENÚ MÓVIL ESTÁ ABIERTO ====== */
+@media (max-width: 991.98px){
+  body.menu-open #umgHeader .navbar-logo {
+    display: none !important;        /* Oculta el logo */
+    visibility: hidden !important;   /* Asegura que no se renderice */
+  }
+}
+/* ====== OCULTAR LOGO INTERNO DEL MENÚ MÓVIL ====== */
+@media (max-width: 991.98px){
+  body.menu-open #umgHeader .main-menu-wrapper .menu-header .menu-logo {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+/* ================================================
+   Ajuste específico para H1 del home (móvil)
+   ================================================ */
+@media (max-width: 576px){
+  .home-slide-text h1.mt-4 {
+    font-size: clamp(22px, 6vw, 28px) !important;
+    line-height: 1.2 !important;
+    font-weight: 700 !important;
+    letter-spacing: -.2px !important;
+    margin-top: 8px !important;
+    text-align: left !important;       /* puedes cambiar a center si lo prefieres */
+    color: #0B2A52 !important;         /* tu azul UMG */
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+  }
+  .home-slide-text p.mt-4 {
+    font-size: 0.95rem !important;
+    line-height: 1.55 !important;
+    color: #444 !important;
+  }
+}
+
+/* Tablet: un poco más grande */
+@media (min-width: 577px) and (max-width: 991.98px){
+  .home-slide-text h1.mt-4 {
+    font-size: clamp(28px, 4.5vw, 36px) !important;
+    line-height: 1.18 !important;
+  }
+}

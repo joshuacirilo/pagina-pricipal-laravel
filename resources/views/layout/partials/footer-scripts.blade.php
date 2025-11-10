@@ -16,7 +16,7 @@
     <script src="{{URL::asset('build/plugins/swiper/js/swiper-bundle.min.js')}}"></script>
 
     <!-- Fancybox JS -->
-    <script src="{{URL::asset('build/plugins/fancybox/jquery.fancybox.min.js')}}"></script>	
+    <script src="{{URL::asset('build/plugins/fancybox/jquery.fancybox.min.js')}}"></script>
 @endif
 
 <!-- Select2 JS -->
@@ -106,3 +106,55 @@
 
 <!-- Custom JS -->
 <script src="{{ URL::asset('/build/js/script.js') }}"></script>
+<script>
+(function(){
+  const header   = document.getElementById('umgHeader');
+  const btn      = document.getElementById('mobile_btn');
+  const panel    = document.querySelector('#umgHeader .main-menu-wrapper');
+  const closeBtn = document.getElementById('menu_close');
+  const nav      = document.querySelector('#umgHeader .main-nav');
+
+  // Calcula altura real del header -> --header-h
+  function setHeaderH(){
+    if (!header) return;
+    const h = header.offsetHeight || 56;
+    document.documentElement.style.setProperty('--header-h', h + 'px');
+  }
+  setHeaderH(); addEventListener('load', setHeaderH); addEventListener('resize', setHeaderH);
+
+  // Toggle del panel
+  const open  = ()=> document.body.classList.add('menu-open');
+  const close = ()=> document.body.classList.remove('menu-open');
+  const toggle= ()=> document.body.classList.contains('menu-open') ? close() : open();
+
+  if (btn)      btn.addEventListener('click', e => { e.preventDefault(); toggle(); });
+  if (closeBtn) closeBtn.addEventListener('click', e => { e.preventDefault(); close(); });
+
+  // Submenús en móvil (tap)
+  if (nav){
+    nav.addEventListener('click', e=>{
+      const link = e.target.closest('.has-submenu > a');
+      const isMobile = matchMedia('(max-width: 991.98px)').matches;
+      if (link && isMobile){ e.preventDefault(); link.parentElement.classList.toggle('open'); }
+    });
+  }
+
+  // Cerrar al hacer click fuera del panel
+  document.addEventListener('click', e=>{
+    const isMobile = matchMedia('(max-width: 991.98px)').matches;
+    if (!isMobile) return;
+    const inside = e.target.closest('#umgHeader .main-menu-wrapper, #mobile_btn');
+    if (!inside) close();
+  });
+
+  // Cerrar con ESC y al pasar a escritorio
+  document.addEventListener('keydown', e=>{ if (e.key === 'Escape') close(); });
+  matchMedia('(min-width: 992px)').addEventListener('change', mq=>{ if (mq.matches) close(); });
+
+  // Si el template abre su propio overlay, apágalo en caliente
+  const killOverlay = ()=> document.querySelectorAll('.sidebar-overlay,.mobile-menu-overlay,.menu-overlay,.bg-overlay')
+                      .forEach(el => el.style.display = 'none');
+  document.addEventListener('DOMNodeInserted', killOverlay);
+  document.addEventListener('click', killOverlay);
+})();
+</script>

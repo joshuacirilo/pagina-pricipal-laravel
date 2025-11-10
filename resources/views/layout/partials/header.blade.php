@@ -60,56 +60,23 @@
 
         {{-- --- DROPDOWNS Y LOGIN MOBILE --- --}}
         <div class="menu-dropdown">
-          <div class="dropdown mb-2">
-            <a href="javascript:void(0);" class="dropdown-toggle" data-bs-toggle="dropdown">
-              USD
-            </a>
-            <ul class="dropdown-menu p-2 mt-2">
-              <li><a class="dropdown-item" href="#">USD</a></li>
-              <li><a class="dropdown-item" href="#">YEN</a></li>
-              <li><a class="dropdown-item" href="#">EURO</a></li>
-            </ul>
-          </div>
+
         </div>
 
         <div class="menu-login">
-          <a href="{{ url('login') }}" class="btn btn-primary w-100 mb-2">
-            <i class="isax isax-user me-2"></i>Sign In
-          </a>
-          <a href="{{ url('register') }}" class="btn btn-secondary w-100">
-            <i class="isax isax-user-edit me-2"></i>Register
-          </a>
+         <a href="{{ url('https://apps2.umg.edu.gt/') }}" class="btn btn-primary d-inline-flex align-items-center me-2">
+          CANVAS
+        </a>
         </div>
       </div>
 
       {{-- --- BOTONES DERECHA (ESCRITORIO) --- --}}
       <div class="header-btn d-flex align-items-center">
-        <div class="icon-btn me-2">
-          <a href="javascript:void(0);" id="dark-mode-toggle" class="theme-toggle activate">
-            <i class="isax isax-sun-15"></i>
-          </a>
-          <a href="javascript:void(0);" id="light-mode-toggle" class="theme-toggle">
-            <i class="isax isax-moon"></i>
-          </a>
-        </div>
 
-        <div class="dropdown me-3">
-          <a href="javascript:void(0);" class="dropdown-toggle" data-bs-toggle="dropdown">
-            USD
-          </a>
-          <ul class="dropdown-menu p-2 mt-2">
-            <li><a class="dropdown-item" href="#">USD</a></li>
-            <li><a class="dropdown-item" href="#">YEN</a></li>
-            <li><a class="dropdown-item" href="#">EURO</a></li>
-          </ul>
-        </div>
+        <a href="{{ url('https://apps2.umg.edu.gt/') }}" class="btn btn-primary d-inline-flex align-items-center me-2">
+          CANVAS
+        </a>
 
-        <a href="{{ url('login') }}" class="btn btn-primary d-inline-flex align-items-center me-2">
-          Sign In
-        </a>
-        <a href="{{ url('register') }}" class="btn btn-secondary me-0">
-          Register
-        </a>
       </div>
     </div>
   </div>

@@ -1,0 +1,247 @@
+/* =========================================================
+   Global Responsive – se aplica a TODO el sitio
+   Mobile-first; breakpoints: sm 576, md 768, lg 992, xl 1200
+   ========================================================= */
+
+/* Base segura */
+*,*::before,*::after{ box-sizing:border-box }
+html{-webkit-text-size-adjust:100%}
+img,svg,video,canvas{ max-width:100%; height:auto; display:block }
+a{ color:inherit; text-decoration:none }
+button,input,select,textarea{ font:inherit }
+
+/* Tipografía fluida y espaciados */
+:root{
+  --fs-sm:clamp(.9rem,.85rem + .4vw,1rem);
+  --fs-md:clamp(1rem,.95rem + .6vw,1.125rem);
+  --fs-lg:clamp(1.25rem,1.1rem + 1vw,1.5rem);
+  --fs-xl:clamp(1.6rem,1.35rem + 1.6vw,2.25rem);
+  --section-y:clamp(16px,5vw,48px);
+  --radius:14px;
+  --shadow:0 10px 24px rgba(0,0,0,.10);
+}
+body{ font-size:var(--fs-md); line-height:1.6; overflow-x:hidden }
+h1{ font-size:var(--fs-xl); line-height:1.15 }
+h2{ font-size:var(--fs-lg); line-height:1.2 }
+
+/* Contenedores */
+.container,.container-lg,.container-xl{
+  width:100%;
+  max-width:1200px;
+  margin-inline:auto;
+  padding-inline:clamp(12px,2.5vw,24px);
+}
+
+/* Secciones */
+section,.section{ padding-block:var(--section-y) }
+
+/* ====== REGLAS UNIVERSALES PARA APILAR EN MÓVIL ====== */
+@media (max-width: 991.98px){
+
+  /* Cualquier fila/row (Bootstrap o similar) se vuelve una columna */
+  .row,
+  [class*="row-"],
+  .grid-row,
+  .d-flex.gx-*, .d-flex.gy-*{
+    display:flex !important;
+    flex-wrap:wrap !important;
+    gap:clamp(12px,3vw,20px);
+  }
+
+  /* Todas las “cols” pasan a 100% */
+  .row > [class*="col"],
+  .row > [class*="col-"],
+  [class*="row-"] > [class*="col"],
+  .grid-row > *{
+    flex:0 0 100% !important;
+    max-width:100% !important;
+  }
+
+  /* Tarjetas y bloques comunes */
+  .card{ border-radius:var(--radius); box-shadow:var(--shadow) }
+  .card img{ width:100%; height:auto; object-fit:cover }
+
+  /* Hero / banners de 2 columnas → apilados (texto arriba, imagen abajo) */
+  .hero, .banner, .banner-section, .page-hero{
+    display:flex; flex-direction:column-reverse; gap:14px;
+  }
+  .hero [class*="img"], .banner [class*="img"], .banner-right, .hero-media{
+    max-height:260px; overflow:hidden; border-radius:12px;
+  }
+  .hero [class*="img"] img, .banner-right img, .hero-media img{
+    width:100%; height:100%; object-fit:cover;
+  }
+
+  /* Formularios: grid adaptable 1→2 cols donde aplique */
+  .form-row, .form-grid, form .row{
+    display:grid !important; gap:12px;
+    grid-template-columns:1fr;
+  }
+  @media (min-width:576px) and (max-width:991.98px){
+    .form-row, .form-grid, form .row{ grid-template-columns:repeat(2,1fr) }
+  }
+  label{ font-size:var(--fs-sm) }
+  input,select,textarea{ width:100%; padding:12px; border-radius:12px }
+
+  /* Botones dentro de contenedores estrechos a 100% (mejor toque) */
+  .btn, button[type="submit"]{ min-height:44px }
+
+  /* Listas de tarjetas/cursos → 1 por fila en móvil, 2 en tablet */
+  .cards, .cards-row, .courses-grid .row, .featured-courses .row, .list-grid .row{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:16px !important;
+  }
+  @media (min-width:576px){
+    .cards, .cards-row, .courses-grid .row, .featured-courses .row, .list-grid .row{
+      grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    }
+  }
+
+  /* Métricas/“stats” en cuadrícula simple */
+  .stats, .features-row, .counter-section .row{
+    display:grid !important; grid-template-columns:1fr; gap:12px;
+  }
+
+  /* Header/hero con margen inferior menor */
+  .page-header, .header-spacer{ margin-bottom:12px !important }
+}
+
+/* ====== TABLAS UNIVERSALES – scroll horizontal automático ====== */
+/* Se aplica a TODAS las tablas sin tocar Blade */
+table{ width:100%; border-collapse:collapse }
+th,td{ padding:10px 12px; border-bottom:1px solid #eef1f6; text-align:left }
+thead th{ background:#f7f9fc }
+@media (max-width: 576px){
+  table{ display:block; overflow-x:auto; -webkit-overflow-scrolling:touch }
+}
+
+/* ====== IMÁGENES GRANDES EN SECCIONES (robustas) ====== */
+.figure, .cover, .media, .block-image{ overflow:hidden; border-radius:12px }
+.figure img, .cover img, .media img, .block-image img{ width:100%; height:auto; object-fit:cover }
+
+/* ====== UTILIDADES ====== */
+.hide-mobile{ display:none !important }
+@media (min-width: 768px){ .hide-mobile{ display:initial !important } }
+
+.full-width-mobile{ width:100% !important }
+.center-mobile{ text-align:center !important }
+
+/* ====== NO ROMPER ESCRITORIO ====== */
+@media (min-width: 992px){
+  .row{ display:flex } /* deja a tu framework hacer su trabajo */
+}
+/* ===== Anti-balas tipografía móvil global ===== */
+/* Cubre títulos del hero y de secciones sin tocar Blade */
+@media (max-width: 576px){
+  html, body{ font-size: 15px !important; line-height: 1.55 !important; }
+
+  /* H1 en cualquier banner/hero/section (muy específico + !important) */
+  body :where(.banner-content,.banner,.hero,.page-hero,.header-banner,.section-header,.section-title,.page-header)
+       :is(h1,.h1,.banner-title,.display-1),
+  body :is(.home-3,.home-three,.home_3) .banner-content :is(h1,.h1,.banner-title,.display-1),
+  body :is(h1.display-1,.display-1,.banner-title){
+    font-size: clamp(26px, 7vw, 32px) !important;
+    line-height: 1.18 !important;
+    margin: 6px 0 10px !important;
+    letter-spacing: -.2px !important;
+    text-wrap: balance;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
+    text-transform: none !important;
+  }
+
+  /* H2 y títulos secundarios */
+  body :where(h2,.h2,.section-title h2,.card-title-lg){
+    font-size: clamp(20px, 5.5vw, 26px) !important;
+    line-height: 1.22 !important;
+    margin: 12px 0 8px !important;
+    text-wrap: balance;
+  }
+
+  /* Párrafos grandes en hero/intros */
+  body :where(.banner-content,.hero,.page-hero,.lead,p.lead) p,
+  body :is(.banner-content p,.hero p,.page-hero p,.lead,p.lead){
+    font-size: 0.98rem !important;
+    line-height: 1.55 !important;
+    color: #4a5568 !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* Buscador/inputs del hero: altura táctil */
+  body :is(.search-bar,.banner-search,.search-box) :is(input,select,.form-control){
+    height: 44px !important; font-size: .95rem !important;
+  }
+
+  /* Cards/métricas: número y texto */
+  body :is(.counter-card,.feature-card,.stats .card){
+    padding: 14px !important; border-radius: 14px !important;
+  }
+  body :is(.counter-card .count,.feature-card .count,.counter .count){
+    font-size: 1.22rem !important; line-height: 1.1 !important;
+  }
+  body :is(.counter-card p,.feature-card p,.counter p){
+    font-size: .95rem !important; margin-top: 6px !important;
+  }
+
+  /* Evita que algo meta escalas/uppercase raras */
+  body :where(.display-1,.display-2,.hero-title){ transform:none !important; }
+}
+
+/* Tablet: un poco más grande pero controlado */
+@media (min-width: 576px) and (max-width: 991.98px){
+  body :where(.banner-content,.banner,.hero,.page-hero,.section-header) :is(h1,.h1,.banner-title,.display-1){
+    font-size: clamp(30px, 4.6vw, 40px) !important;
+    line-height: 1.16 !important;
+  }
+  body :where(h2,.h2){ font-size: clamp(22px, 3.4vw, 30px) !important; }
+}
+/* ================================================
+   Ajuste específico para H1 del home (móvil)
+   ================================================ */
+@media (max-width: 576px){
+  .home-slide-text h1.mt-4 {
+    font-size: clamp(22px, 6vw, 28px) !important;
+    line-height: 1.2 !important;
+    font-weight: 700 !important;
+    letter-spacing: -.2px !important;
+    margin-top: 8px !important;
+    text-align: left !important;       /* puedes cambiar a center si lo prefieres */
+    color: #0B2A52 !important;         /* tu azul UMG */
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+  }
+  .home-slide-text p.mt-4 {
+    font-size: 0.95rem !important;
+    line-height: 1.55 !important;
+    color: #444 !important;
+  }
+}
+
+/* Tablet: un poco más grande */
+@media (min-width: 577px) and (max-width: 991.98px){
+  .home-slide-text h1.mt-4 {
+    font-size: clamp(28px, 4.5vw, 36px) !important;
+    line-height: 1.18 !important;
+  }
+}
+/* Usar SOLO la altura real del header para separar el contenido */
+@media (max-width: 991.98px){
+  /* separa el contenido = altura del header + un respiro pequeño */
+  body{ padding-top: calc(var(--header-h, 56px) + 6px) !important; }
+
+  /* no agregues márgenes extra arriba del hero (anula lo puesto antes) */
+  .home-3 .banner,
+  .home-3 .home-slide-face,
+  .home-3 .banner-content,
+  .home-3 .home-slide-text{
+    margin-top: 0 !important;
+  }
+}
+
+/* en escritorio no añadimos relleno extra */
+@media (min-width: 992px){
+  body{ padding-top: 0 !important; }
+}

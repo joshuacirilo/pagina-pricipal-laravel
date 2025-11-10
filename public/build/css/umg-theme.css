@@ -328,3 +328,120 @@ header a:hover, .header a:hover, .navbar a:hover, #umgHeader a:hover{
 @media (max-width: 575.98px){
   .navbar-logo img.logo { max-height: 48px; }
 }
+/* ====== FIX: colores del menú en el panel móvil ====== */
+@media (max-width: 991.98px){
+
+  /* Fondo claro en todo el panel y submenús */
+  #umgHeader .main-menu-wrapper,
+  #umgHeader .main-menu-wrapper .submenu{
+    background:#fff !important;
+  }
+
+  /* Links principales y de submenú en azul oscuro (legibles) */
+  body.menu-open #umgHeader .main-nav > li > a,
+  body.menu-open #umgHeader .main-nav .submenu a{
+    color:#0B2A52 !important;
+    text-shadow:none !important;
+  }
+
+  /* Íconos/chevrons dentro de los <a> también en azul oscuro */
+  body.menu-open #umgHeader .main-nav i,
+  body.menu-open #umgHeader .main-nav .isax,
+  body.menu-open #umgHeader .main-nav svg{
+    color:#0B2A52 !important;
+    fill:#0B2A52 !important;
+  }
+
+  /* Quita cualquier “overlay” oscuro que ponga el tema sobre submenús */
+  #umgHeader .main-nav .has-submenu > .submenu{
+    background:#fff !important;
+    box-shadow:none;            /* si el tema aplicaba sombras azules */
+  }
+
+  /* Items con borde separador para legibilidad */
+  #umgHeader .main-nav > li{ border-bottom:1px solid #e9ecf3; }
+  #umgHeader .main-nav .submenu li{ border-bottom:1px solid #f2f4f8; }
+  #umgHeader .main-nav a{ display:block; padding:12px 18px; font-weight:600; }
+  #umgHeader .main-nav .submenu a{ padding:10px 28px; font-weight:500; }
+}
+
+/* (Opcional) Si tu dropdown usa .dropdown-menu dentro del panel */
+@media (max-width: 991.98px){
+  #umgHeader .main-menu-wrapper .dropdown-menu{
+    background:#fff !important;
+    color:#0B2A52 !important;
+    border:1px solid #eef1f6;
+  }
+  #umgHeader .main-menu-wrapper .dropdown-menu .dropdown-item{
+    color:#0B2A52 !important;
+  }
+}
+/* === MODO MÓVIL: panel sólido y sin velos encima o debajo === */
+@media (max-width: 991.98px){
+
+  /* 1) Apaga cualquier pseudo-elemento decorativo del header cuando el menú está abierto */
+  body.menu-open #umgHeader::before,
+  body.menu-open #umgHeader::after,
+  body.menu-open #umgHeader .container::before,
+  body.menu-open #umgHeader .container::after,
+  body.menu-open #umgHeader .header-nav::before,
+  body.menu-open #umgHeader .header-nav::after{
+    content:none !important;
+    display:none !important;
+  }
+
+  /* 2) Panel 100% opaco, por encima de todo y ancho completo */
+  body.menu-open #umgHeader .main-menu-wrapper{
+    position:fixed !important;
+    inset: var(--header-h,56px) 0 auto 0 !important; /* top right bottom left */
+    width:100vw !important;
+    background:#fff !important;
+    opacity:1 !important;
+    z-index:2147483646 !important;
+    box-shadow: 0 12px 28px rgba(0,0,0,.18);
+  }
+
+  /* 3) Asegura que nada le aplique opacidad al panel ni a sus hijos */
+  body.menu-open #umgHeader,
+  body.menu-open #umgHeader *{
+    opacity:1 !important;
+    mix-blend-mode:normal !important;
+    backdrop-filter:none !important;
+  }
+
+  /* 4) Links y submenús con color legible */
+  body.menu-open #umgHeader .main-nav > li > a,
+  body.menu-open #umgHeader .main-nav .submenu a{
+    color:#0B2A52 !important;
+    text-shadow:none !important;
+    background:transparent !important;
+  }
+
+  /* 5) Botones nítidos (sin desaturación) */
+  body.menu-open #umgHeader .main-menu-wrapper .menu-login .btn{
+    opacity:1 !important;
+    filter:none !important;
+    transform:none !important;
+    visibility:visible !important;
+  }
+
+  /* 6) Si el tema pinta el submenú con azul translúcido, fuerzalo a blanco */
+  body.menu-open #umgHeader .main-nav .submenu{
+    background:#fff !important;
+    box-shadow:none !important;
+  }
+}
+/* ====== OCULTAR LOGO CUANDO EL MENÚ MÓVIL ESTÁ ABIERTO ====== */
+@media (max-width: 991.98px){
+  body.menu-open #umgHeader .navbar-logo {
+    display: none !important;        /* Oculta el logo */
+    visibility: hidden !important;   /* Asegura que no se renderice */
+  }
+}
+/* ====== OCULTAR LOGO INTERNO DEL MENÚ MÓVIL ====== */
+@media (max-width: 991.98px){
+  body.menu-open #umgHeader .main-menu-wrapper .menu-header .menu-logo {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
