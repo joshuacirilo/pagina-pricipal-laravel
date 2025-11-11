@@ -68,61 +68,51 @@
     </section>
     <!-- about -->
 
-    <!-- benefits -->
-    <section class="benefit-section">
+    <!-- *************************Instructores*************************esto ya funciona -->
+    <section class="instructors-section py-5">
         <div class="container">
-            <div class="section-header text-center">
-                <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">Our Benefits</span>
-                <h2>Master the Skills to Drive your Career</h2>
-                <p>The right course, guided by an expert mentor, can provide invaluable insights, practical skills.</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card shadow-sm">
-                        <div class="card-body p-4">
-                            <div class="position-absolute top-0 end-0 mt-n3 me-n4">
-                                <img src="./build/img/shapes/bg-1.png" alt="img">
-                            </div>
-                            <div class="p-4 rounded-pill bg-primary-transparent d-inline-flex">
-                                <i class="isax isax-book-1 fs-24"></i>
-                            </div>
-                            <h5 class="mt-3 mb-1">Flexible Learning</h5>
-                            <p>We believe that high-quality education should be accessible to everyone. Our pricing form in models are designed.</p>
+            <h2 class="text-center mb-5 fw-bold text-primary">Nuestros Instructores</h2>
+
+            <div class="row g-4">
+                <!-- Instructor 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                        onclick="window.location='{{ route('detalles-instructor-criminologia1') }}'">
+                        <img src="{{ asset('build/img/instructor/profesor1.jpeg') }}" class="card-img-top" alt="Profesor 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-2">Lic. Carlos Gómez</h5>
+                            <p class="card-text text-muted">Docente en Derecho Penal con más de 10 años de experiencia universitaria.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card shadow-sm">
-                        <div class="card-body p-4">
-                            <div class="position-absolute top-0 end-0 mt-n3 me-n4">
-                                <img src="{{URL::asset('build/img/shapes/bg-2.png')}}" alt="img">
-                            </div>
-                            <div class="p-4 rounded-pill bg-secondary-transparent d-inline-flex">
-                                <i class="isax isax-bookmark5 fs-24"></i>
-                            </div>
-                            <h5 class="mt-3 mb-1">Lifetime Access</h5>
-                            <p>When you enroll in our courses, you’re not just signing up for a temporary learning to experience you’re making.</p>
+
+                <!-- Instructor 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                        onclick="window.location='{{ route('detalles-instructor-administracion2') }}'">
+                        <img src="{{ asset('build/img/instructors/profesor2.jpg') }}" class="card-img-top" alt="Profesor 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-2">Ing. María López</h5>
+                            <p class="card-text text-muted">Especialista en Redes Sociales y Sistemas, apasionada por la enseñanza práctica.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card shadow-sm">
-                        <div class="card-body p-4">
-                            <div class="position-absolute top-0 end-0 mt-n3 me-n4">
-                                <img src="{{URL::asset('build/img/shapes/bg-3.png')}}" alt="img">
-                            </div>
-                            <div class="p-4 rounded-pill bg-skyblue-transparent d-inline-flex">
-                                <i class="isax isax-chart-26 fs-24"></i>
-                            </div>
-                            <h5 class="mt-3 mb-1">Expert Instruction</h5>
-                            <p>Our instructors are seasoned professionals with years of experience in their respective fields & Experts advice</p>
+
+                <!-- Instructor 3 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                        onclick="window.location='{{ route('detalles-instructor-administracion3') }}'">
+                        <img src="{{ asset('build/img/instructors/profesor3.jpg') }}" class="card-img-top" alt="Profesor 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-2">M.Sc. José Hernández</h5>
+                            <p class="card-text text-muted">Docente en Administración Financiera con enfoque en innovación y liderazgo.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- benefits -->
+    <!-- /Instructores -->
 
     <!-- institutions -->
     <section class="client-section">

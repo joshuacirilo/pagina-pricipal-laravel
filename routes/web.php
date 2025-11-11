@@ -110,6 +110,17 @@ Route::get('/grupo74/detalles-instructor-administracion3', function () {
 
 
 
+//-------maestros criminologria-----
+
+
+//instructor 1
+Route::get('/grupo74/detalles-instructor-criminologia1', function () {
+    return view('grupo74.detalles-instructor-criminologia1');
+})->name('detalles-instructor-criminologia1');
+
+
+
+
 
 
 
