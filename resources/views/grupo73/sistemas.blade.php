@@ -81,7 +81,7 @@
                     <div class="card shadow-sm">
                         <div class="card-body p-4">
                             <div class="position-absolute top-0 end-0 mt-n3 me-n4">
-                                <img src="./build/img/shapes/bg-1.png" alt="img">
+                                <img src="./build/img/hero/fondo.jpg" alt="img">
                             </div>
                             <div class="p-4 rounded-pill bg-primary-transparent d-inline-flex">
                                 <i class="isax isax-book-1 fs-24"></i>
@@ -146,7 +146,7 @@
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
                      onclick="window.location='{{ route('detalles-instructor2') }}'">
-                    <img src="{{ asset('build/img/instructors/profesor2.jpg') }}" class="card-img-top" alt="Profesor 2">
+                    <img src="{{ asset('build/img/hero/fondo.jpg') }}" class="card-img-top" alt="fondo">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Ing. María López</h5>
                         <p class="card-text text-muted">Especialista en Redes Sociales y Sistemas, apasionada por la enseñanza práctica.</p>
@@ -171,73 +171,6 @@
 <!-- /Instructores -->
 
 
-
-    <!-- counter -->
-    <section class="counter-sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-3 col-md-6">
-                    <div class="card border-0 mb-0">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <div class="counter-icon">
-                                    <img src="./build/img/icons/counter-icon1.svg" alt="img">
-                                </div>
-                                <div class="count-content">
-                                    <h4 class="text-info"><span class="count-digit">10</span>K</h4>
-                                    <p>Online Courses</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="card border-0 mb-0">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <div class="counter-icon">
-                                    <img src="./build/img/icons/counter-icon2.svg" alt="img">
-                                </div>
-                                <div class="count-content">
-                                    <h4 class="text-warning"><span class="count-digit">200</span>+</h4>
-                                    <p>Expert Tutors</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="card border-0 mb-0">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <div class="counter-icon">
-                                    <img src="./build/img/icons/counter-icon3.svg" alt="img">
-                                </div>
-                                <div class="count-content">
-                                    <h4 class="text-skyblue"><span class="count-digit">6</span>K+</h4>
-                                    <p>Certified Courses</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="card border-0 mb-0">
-                        <div class="card-body d-flex align-items-center">
-                            <div class="counter-icon">
-                            <img src="./build/img/icons/counter-icon4.svg" alt="img">
-                            </div>
-                            <div class="count-content">
-                            <h4 class="text-lightgreen"><span class="count-digit">60</span>K+</h4>
-                                <p>Online Students</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- counter -->
 
     <!-- testimonials -->
     <section class="testimonials-section text-center">
