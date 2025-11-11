@@ -37,7 +37,7 @@
                         <div class="section-header">
                             <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">About</span>
                             <h2>Sistemas</h2>
-                            <p>At DreamsLMS, we make education accessible to all with interactive courses and expert-led content. Learn anytime, anywhere, and achieve your goals seamlessly.</p>
+                            <p>At sistemas es lo mejor courses and expert-led content. Learn anytime, anywhere, and achieve your goals seamlessly.</p>
                         </div>
                         <div class="d-flex align-items-center about-us-banner">
                             <div>
