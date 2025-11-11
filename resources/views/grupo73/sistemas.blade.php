@@ -47,7 +47,7 @@
                             </div>
                             <div class="ps-3">
                                 <h6 class="mb-2">Learn from anywhere</h6>
-                                <p>Learning from anywhere has become a transform aspect of modern education, allowing individuals.</p>
+                                <p>Learnin somoslos mejores become a transform aspect of modern education, allowing individuals.</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center about-us-banner">
