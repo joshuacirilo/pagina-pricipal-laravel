@@ -21,24 +21,24 @@
                             <div class="card-body instructor-details">
                                 <div class="instructor-img">
                                     <a href="javascript:void(0);">
-                                        <img src="{{URL::asset('build/img/instructor/IngSistemasInstructor/IngRichardOrtizPerfil.jpeg')}}" alt="img" class="img-fluid">
+                                        <img src="{{URL::asset('build/img/instructor/IngSistemasInstructor/IngRaquelSanchezPerfil.jpeg')}}" alt="img" class="img-fluid">
                                     </a>
 
                                 </div>
                                 <div class="flex-fill">
                                     <div class="pb-3 border-bottom mb-3">
                                         <div class="d-flex align-items-center justify-content-between mb-1">
-                                            <h6 class="fw-bold">Ing Richard David Ortiz Sasvín</h6>
+                                            <h6 class="fw-bold">Ing Evelyn Raquel Cabrera Sánchez</h6>
                                         </div>
                                         <div class="d-flex align-items-center mb-1">
-                                            <p>Ingeniero en Sistemas de la Información y Ciencias de la Computación</p>
+                                            <p>Ingeniera en Sistemas de la Información y Ciencias de la Computación</p>
                                             <span class="me-2">
 
                                             </span>
                                             <span class="fs-14"></span>
                                         </div>
                                         <div>
-                                            <p>Con experiencia en CiberSeguridad</p>
+                                            <p>Con experiencia en dirección y gestión de recursos humanos</p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between flex-wrap">
@@ -91,7 +91,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="mb-3">Acerca de Mí</h5>
-                                <p class="mb-3"> Ingeniero en Sistemas con especialización en infraestructura tecnológica. Cuento con certificaciones oficiales en CyberSeguridad. Mi experiencia combinada con la docencia universitaria, formando a la nueva generación de ingenieros con enfoque en tecnologías actuales y mejores prácticas de la industria.</p>
+                                <p class="mb-3">Ingeniera en Sistemas de la Información y Ciencias de la Computación con experiencia en dirección y gestión de recursos humanos. Como docente, combino mi formación tecnológica con un interés por la electrónica, integrando estos conocimientos para ofrecer una perspectiva integral en la formación de nuevos profesionales. Mi enfoque académico busca equilibrar la teoría con aplicaciones prácticas, preparando estudiantes para los desafíos del sector tecnológico actual.</p>
 
                             </div>
                         </div>
@@ -106,15 +106,9 @@
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
-                                    <div class="ps-4 pb-4 timeline-flow">
-                                        <div>
-                                            <h6 class="mb-1">Especialista en CyberSeguridad</h6>
-                                            <p class="fs-14"></p>
-                                        </div>
-                                    </div>
                                     <div class="ps-4 timeline-flow">
                                         <div>
-                                            <h6 class="mb-1">FullStack Developer</h6>
+                                            <h6 class="mb-1">Magister Artium en Dirección y Gestión de Recursos Humanos</h6>
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
@@ -125,20 +119,30 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="mb-3">Experiencia</h5>
-
-                                 <div class="d-flex align-items-center mb-4">
-                                    <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
-                                    <div>
-                                        <h6 class="mb-1">Experiencia en CyberSeguridad</h6>
-
-                                    </div>
-                                </div>
                                 <div class="d-flex align-items-center mb-4">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
-                                        <h6 class="mb-1">Docente de Ingeniería en Sistemas Centro UMG Guastatoya</h6>
+                                        <h6 class="mb-1">Desarrolladora de Software</h6>
 
                                     </div>
+                                </div>
+
+                                <div class="d-flex align-items-center mb-4">
+                                    <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
+                                    <div>
+                                        <h6 class="mb-1">Experiencia en Dirección y Gestión de Recursos Humanos</h6>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-4">
+                                    <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
+                                    <div>
+                                        <h6 class="mb-1">Catedrática de la Facultad de Ingeniería en Sistemas Centro UMG Guastatoya</h6>
+
+                                    </div>
+
                                 </div>
                             </div>
                         </div>

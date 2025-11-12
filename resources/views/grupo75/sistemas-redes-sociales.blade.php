@@ -168,6 +168,45 @@
                     </div>
                 </div>
             </div>
+
+             <!-- Instructor 4 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                     onclick="window.location='{{ route('detalles-instructor-sistemas4') }}'">
+                    <img src="{{ asset('build/img/instructor/IngSistemasInstructor/IngRaquelSanchezPerfil.jpeg') }}" class="card-img-top" alt="Profesor 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2">Ing Evelyn Cabrera </h5>
+                        <p class="card-text text-muted">Ing en Sistemas de la Información y Ciencias de la Computación (experiencia en Dirección y Gestión).</p>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Instructor 5 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                     onclick="window.location='{{ route('detalles-instructor-sistemas5') }}'">
+                    <img src="{{ asset('build/img/instructor/IngSistemasInstructor/IngTeresitaOrellanaPerfil.jpeg') }}" class="card-img-top" alt="Profesor 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2">Ing Teresita Orellana</h5>
+                        <p class="card-text text-muted">Ing en Sistemas de la Información y Ciencias de la Computación (experiencia en Seguridad Informática).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instructor 6 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                     onclick="window.location='{{ route('detalles-instructor-sistemas6') }}'">
+                    <img src="{{ asset('build/img/instructor/IngSistemasInstructor/IngEduardoHernandezPerfil.jpeg') }}" class="card-img-top" alt="Profesor 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2">Ing Eduardo Hernández</h5>
+                        <p class="card-text text-muted">Ing en Sistemas de la Información y Ciencias de la Computación (experiencia en Seguridad Informática).</p>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
     </div>
 </section>
@@ -204,7 +243,7 @@
                                 </div>
                                 -->
                                 <div class="count-content">
-                                    <h4 class="text-warning"><span class="count-digit">10</span>+</h4>
+                                    <h4 class="text-warning"><span class="count-digit">6</span>+</h4>
                                     <p>Catedráticos</p>
                                 </div>
                             </div>
@@ -339,7 +378,6 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="section-header">
-                        <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">FAQs</span>
                         <h2>Preguntas Frecuentes</h2>
                         <p>Explore respuestas sobre las preguntas más comunes sobre nosotros!.</p>
                     </div>

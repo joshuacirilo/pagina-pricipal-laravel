@@ -44,6 +44,17 @@ Route::get('/grupo75/detalles-instructor-sistemas3', function () {
     return view('grupo75.detalles-instructor-sistemas3');
 })->name('detalles-instructor-sistemas3');
 
+Route::get('/grupo75/detalles-instructor-sistemas4', function () {
+    return view('grupo75.detalles-instructor-sistemas4');
+})->name('detalles-instructor-sistemas4');
+
+Route::get('/grupo75/detalles-instructor-sistemas5', function () {
+    return view('grupo75.detalles-instructor-sistemas5');
+})->name('detalles-instructor-sistemas5');
+
+Route::get('/grupo75/detalles-instructor-sistemas6', function () {
+    return view('grupo75.detalles-instructor-sistemas6');
+})->name('detalles-instructor-sistemas6');
 
 //-auditoria
 Route::get('/grupo75/auditoria', function () {

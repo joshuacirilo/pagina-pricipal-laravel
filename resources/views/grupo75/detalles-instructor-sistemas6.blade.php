@@ -21,14 +21,14 @@
                             <div class="card-body instructor-details">
                                 <div class="instructor-img">
                                     <a href="javascript:void(0);">
-                                        <img src="{{URL::asset('build/img/instructor/IngSistemasInstructor/IngRichardOrtizPerfil.jpeg')}}" alt="img" class="img-fluid">
+                                        <img src="{{URL::asset('build/img/instructor/IngSistemasInstructor/IngEduardoHernandezPerfil.jpeg')}}" alt="img" class="img-fluid">
                                     </a>
 
                                 </div>
                                 <div class="flex-fill">
                                     <div class="pb-3 border-bottom mb-3">
                                         <div class="d-flex align-items-center justify-content-between mb-1">
-                                            <h6 class="fw-bold">Ing Richard David Ortiz Sasvín</h6>
+                                            <h6 class="fw-bold">Ing Eduardo Steven Hernández Méndez</h6>
                                         </div>
                                         <div class="d-flex align-items-center mb-1">
                                             <p>Ingeniero en Sistemas de la Información y Ciencias de la Computación</p>
@@ -38,7 +38,7 @@
                                             <span class="fs-14"></span>
                                         </div>
                                         <div>
-                                            <p>Con experiencia en CiberSeguridad</p>
+                                            <p>Con experiencia en Seguridad Informática</p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between flex-wrap">
@@ -91,7 +91,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="mb-3">Acerca de Mí</h5>
-                                <p class="mb-3"> Ingeniero en Sistemas con especialización en infraestructura tecnológica. Cuento con certificaciones oficiales en CyberSeguridad. Mi experiencia combinada con la docencia universitaria, formando a la nueva generación de ingenieros con enfoque en tecnologías actuales y mejores prácticas de la industria.</p>
+                                <p class="mb-3">Profesional con Maestría en Seguridad Informática y experiencia como docente en la Facultad de Ingeniería en Sistemas. Mi trayectoria combina la formación académica especializada en ciberseguridad con la práctica docente, orientada a preparar a los estudiantes para los desafíos tecnológicos actuales. Me dedico a integrar los avances en protección de datos y gestión de riesgos digitales en la formación de futuros ingenieros, promoviendo un enfoque integral entre la teoría y la aplicación en seguridad informática.</p>
 
                             </div>
                         </div>
@@ -108,13 +108,7 @@
                                     </div>
                                     <div class="ps-4 pb-4 timeline-flow">
                                         <div>
-                                            <h6 class="mb-1">Especialista en CyberSeguridad</h6>
-                                            <p class="fs-14"></p>
-                                        </div>
-                                    </div>
-                                    <div class="ps-4 timeline-flow">
-                                        <div>
-                                            <h6 class="mb-1">FullStack Developer</h6>
+                                            <h6 class="mb-1">Maestría en Seguridad Informática</h6>
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
@@ -125,20 +119,30 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="mb-3">Experiencia</h5>
-
-                                 <div class="d-flex align-items-center mb-4">
-                                    <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
-                                    <div>
-                                        <h6 class="mb-1">Experiencia en CyberSeguridad</h6>
-
-                                    </div>
-                                </div>
                                 <div class="d-flex align-items-center mb-4">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
-                                        <h6 class="mb-1">Docente de Ingeniería en Sistemas Centro UMG Guastatoya</h6>
+                                        <h6 class="mb-1">Desarrollador de Software</h6>
 
                                     </div>
+                                </div>
+
+                                <div class="d-flex align-items-center mb-4">
+                                    <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
+                                    <div>
+                                        <h6 class="mb-1">Experincia en Seguridad Informática</h6>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-4">
+                                    <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
+                                    <div>
+                                        <h6 class="mb-1">Catedrático de la Facultad de Ingeniería en Sistemas Centro UMG Guastatoya</h6>
+
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
