@@ -29,15 +29,16 @@
                     <div class="position-absolute bottom-0 start-0 mb-md-5 ms-md-n5">
                         <img src="{{URL::asset('build/img/icons/icon-1.svg')}}" alt="img">
                     </div>
-                    <img class="img-fluid img-radius" src="./build/img/about/about-2.svg" alt="img">
+                    <img class="img-fluid img-radius" src="./build/img/about/iniciocrimi-1.jpg" alt="tendria">
                 </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="ps-0 ps-lg-2 pt-4 pt-lg-0 ps-xl-5">
                         <div class="section-header">
-                            <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">About</span>
-                            <h2>Criminología</h2>
-                            <p>At DreamsLMS, we make education accessible to all with interactive courses and expert-led content. Learn anytime, anywhere, and achieve your goals seamlessly.</p>
+                            <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">Criminología</span>
+                            <h2>Licenciatura en Criminología y Política Criminal</h2>
+                            <p>Es una carrera que promueve la excelencia académica mediante la implementación de un programa integral para la formación de criminólogos, técnica y científicamente competentes en su especialidad, la carrera tiene un enfoque desde el área psicológica, sociológica y sobre todo estratégica para la seguridad, prevención del delito, detección de formación de fenómenos criminales.
+                            </p>
                         </div>
                         <div class="d-flex align-items-center about-us-banner">
                             <div>
@@ -46,8 +47,8 @@
                                 </span>
                             </div>
                             <div class="ps-3">
-                                <h6 class="mb-2">Learn from anywhere</h6>
-                                <p>Learning from anywhere has become a transform aspect of modern education, allowing individuals.</p>
+                                <h6 class="mb-2">Título académico a obtener</h6>
+                                <p>Licenciado en Criminología y Política Criminal</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center about-us-banner">
@@ -57,8 +58,8 @@
                                 </span>
                             </div>
                             <div class="ps-3">
-                                <h6 class="mb-2">Expert Mentors</h6>
-                                <p>Expert mentors are invaluable assets in any field, providing seasoned guidance knowledge.</p>
+                                <h6 class="mb-2">Duración</h6>
+                                <p>5 años</p>
                             </div>
                         </div>
                     </div>
@@ -68,20 +69,81 @@
     </section>
     <!-- about -->
 
+    <!-- benefits, fragmento copiado de auditoria -->
+    <section class="benefit-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">En UMG Guastatoya</span>
+                <h2>Desarrolla tu potencial y lidera en tu profesión</h2>
+                <p>La carrera de Criminología y Política Criminal, guiada por nuestros mentores expertos, es la fuente de conocimiento invaluable para entender y combatir la conducta criminal.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="position-absolute top-0 end-0 mt-n3 me-n4">
+                                <img src="./build/img/shapes/bg-1.png" alt="img">
+                            </div>
+                            <div class="p-4 rounded-pill bg-primary-transparent d-inline-flex">
+                                <i class="isax isax-book-1 fs-24"></i>
+                            </div>
+                            <h5 class="mt-3 mb-1">¿Qué aprenderás?</h5>
+                            <p>En esta carrera de Criminología, adquirirás las habilidades teóricas y prácticas para el análisis profundo del delito, aplicando creatividad, habilidad investigativa y lógica crítica para determinar el porqué de un hecho delictivo. El plan de estudios te proporcionará una sólida base en psicología criminal para la comprensión integral del delincuente, junto con el dominio de los aspectos jurídicos esenciales, asegurando el respeto del marco legal en todas las acciones de investigación criminal que realices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="position-absolute top-0 end-0 mt-n3 me-n4">
+                                <img src="{{URL::asset('build/img/shapes/bg-2.png')}}" alt="img">
+                            </div>
+                            <div class="p-4 rounded-pill bg-secondary-transparent d-inline-flex">
+                                <i class="isax isax-bookmark5 fs-24"></i>
+                            </div>
+                            <h5 class="mt-3 mb-1">Perfil de Ingreso</h5>
+                            <p>El aspirante ideal a la Licenciatura en Criminología debe poseer una marcada habilidad investigativa y lógica, un profundo pensamiento crítico para el análisis de problemas sociales y delictivos, y un fuerte interés por el comportamiento humano (psicología y sociología). Es esencial que demuestre un sólido compromiso ético y social con la justicia y el marco legal, así como una afinidad por las Ciencias Sociales y Jurídicas, complementada con habilidades de comunicación efectiva para el reporte e interacción profesional.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="position-absolute top-0 end-0 mt-n3 me-n4">
+                                <img src="{{URL::asset('build/img/shapes/bg-3.png')}}" alt="img">
+                            </div>
+                            <div class="p-4 rounded-pill bg-skyblue-transparent d-inline-flex">
+                                <i class="isax isax-chart-26 fs-24"></i>
+                            </div>
+                            <h5 class="mt-3 mb-1">Perfil de Egreso</h5>
+                            <p>El egresado de Criminología será un profesional capacitado para la investigación, el análisis y la prevención de fenómenos delictivos. Dominará las técnicas de investigación criminal y forense, la perfilación psicológica del delincuente, y aplicará su conocimiento jurídico para diseñar e implementar estrategias de seguridad, prevención y reinserción social que operen de manera ética y dentro del marco legal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- benefits -->
+
+
+
+
+
+
     <!-- *************************Instructores*************************esto ya funciona -->
     <section class="instructors-section py-5">
         <div class="container">
-            <h2 class="text-center mb-5 fw-bold text-primary">Nuestros Instructores</h2>
+            <h2 class="text-center mb-5 fw-bold text-primary">Nuestros Catedráticos</h2>
 
             <div class="row g-4">
                 <!-- Instructor 1 -->
                 <div class="col-md-4 col-sm-6">
                     <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
                         onclick="window.location='{{ route('detalles-instructor-criminologia1') }}'">
-                        <img src="{{ asset('build/img/instructor/profesor1.jpeg') }}" class="card-img-top" alt="Profesor 1">
+                        <img src="{{ asset('build/img/instructor/docenteCrimi1.png') }}" class="card-img-top" alt="Profesor 1">
                         <div class="card-body text-center">
-                            <h5 class="card-title mb-2">Lic. Carlos Gómez</h5>
-                            <p class="card-text text-muted">Docente en Derecho Penal con más de 10 años de experiencia universitaria.</p>
+                            <h5 class="card-title mb-2">Lic. Roberto Bladimir Roldán Cruz</h5>
+                            <p class="card-text text-muted">LICENCIADO EN CIENCIAS CRIMINOLOGÍA Y CRIMINALÍSTICA</p>
                         </div>
                     </div>
                 </div>
@@ -89,11 +151,11 @@
                 <!-- Instructor 2 -->
                 <div class="col-md-4 col-sm-6">
                     <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                        onclick="window.location='{{ route('detalles-instructor-administracion2') }}'">
-                        <img src="{{ asset('build/img/instructors/profesor2.jpg') }}" class="card-img-top" alt="Profesor 2">
+                        onclick="window.location='{{ route('detalles-instructor-criminologia2') }}'">
+                        <img src="{{ asset('build/img/instructor/docenteCrimi2.png') }}" class="card-img-top" alt="Profesor 1">
                         <div class="card-body text-center">
-                            <h5 class="card-title mb-2">Ing. María López</h5>
-                            <p class="card-text text-muted">Especialista en Redes Sociales y Sistemas, apasionada por la enseñanza práctica.</p>
+                            <h5 class="card-title mb-2">Lic. Marlon Estudardo Casasola Catalán</h5>
+                            <p class="card-text text-muted">Licenciado en Ciencias Jurídicas y Sociales Abogado y notario</p>
                         </div>
                     </div>
                 </div>
@@ -101,11 +163,75 @@
                 <!-- Instructor 3 -->
                 <div class="col-md-4 col-sm-6">
                     <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                        onclick="window.location='{{ route('detalles-instructor-administracion3') }}'">
-                        <img src="{{ asset('build/img/instructors/profesor3.jpg') }}" class="card-img-top" alt="Profesor 3">
+                        onclick="window.location='{{ route('detalles-instructor-criminologia2') }}'">
+                        <img src="{{ asset('build/img/instructor/docenteCrimi3.png') }}" class="card-img-top" alt="Profesor 1">
                         <div class="card-body text-center">
-                            <h5 class="card-title mb-2">M.Sc. José Hernández</h5>
-                            <p class="card-text text-muted">Docente en Administración Financiera con enfoque en innovación y liderazgo.</p>
+                            <h5 class="card-title mb-2">Licda. Susan Eunice Galindo Catalán</h5>
+                            <p class="card-text text-muted">Licenciada en Ciencias Jurídicas y Sociales, Abogada y Notaria</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                  <!-- Instructor 4 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                        onclick="window.location='{{ route('detalles-instructor-criminologia2') }}'">
+                        <img src="{{ asset('build/img/instructor/docenteCrimi4.png') }}" class="card-img-top" alt="Profesor 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-2">inga. Evelyn Raquel Cabrera Sánchez</h5>
+                            <p class="card-text text-muted">Ingeniera en Sistemas de Información y Ciencias de la Computación</p>
+                        </div>
+                    </div>
+                </div>
+             
+                  <!-- Instructor 5 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                        onclick="window.location='{{ route('detalles-instructor-criminologia2') }}'">
+                        <img src="{{ asset('build/img/instructor/docenteCrimi5.png') }}" class="card-img-top" alt="Profesor 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-2">Lic. Carlos Augusto Naavarro Ávila</h5>
+                            <p class="card-text text-muted">licenciado en Ciencias Criminológicas Y Criminalísticas </p>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Instructor 6 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                        onclick="window.location='{{ route('detalles-instructor-criminologia2') }}'">
+                        <img src="{{ asset('build/img/instructor/docenteCrimi6.png') }}" class="card-img-top" alt="Profesor 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-2">Licda. Debora Anahid Soto Colindres</h5>
+                            <p class="card-text text-muted">Licenciada en Administración de Empresas</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                  <!-- Instructor 7 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                        onclick="window.location='{{ route('detalles-instructor-criminologia2') }}'">
+                        <img src="{{ asset('build/img/instructor/docenteCrimi7.png') }}" class="card-img-top" alt="Profesor 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-2">Lic .Arqueol. Josué Roberto García Valdez</h5>
+                            <p class="card-text text-muted">Licenciado en Arqueología</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Instructor 8f -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                        onclick="window.location='{{ route('detalles-instructor-criminologia2') }}'">
+                        <img src="{{ asset('build/img/instructor/docenteCrimi8.jpg') }}" class="card-img-top" alt="Profesor 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-2">Lic. Flavio Arturo</h5>
+                            <p class="card-text text-muted">Licenciado en Ciencias Jurídicas y Sociales</p>
                         </div>
                     </div>
                 </div>
@@ -113,6 +239,10 @@
         </div>
     </section>
     <!-- /Instructores -->
+
+
+
+
 
     <!-- institutions -->
     <section class="client-section">

@@ -118,8 +118,10 @@ Route::get('/grupo74/detalles-instructor-criminologia1', function () {
     return view('grupo74.detalles-instructor-criminologia1');
 })->name('detalles-instructor-criminologia1');
 
-
-
+//instructor 2
+Route::get('/grupo74/detalles-instructor-criminologia2', function () {
+    return view('grupo74.detalles-instructor-criminologia2');
+})->name('detalles-instructor-criminologia2');
 
 
 
