@@ -136,7 +136,7 @@
             <!-- Instructor 1 -->
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                     onclick="window.location='{{ route('detalles-instructor-auditoria1') }}'">
+                     onclick="window.location='{{ route('detalles-instructor-sistemas1') }}'">
                     <img src="{{ asset('build/img/instructor/IngSistemasInstructor/IngOscarValientePerfil.jpg') }}" class="card-img-top" alt="Profesor 1">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Ing Oscar Valiente </h5>
@@ -148,7 +148,7 @@
             <!-- Instructor 2 -->
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                     onclick="window.location='{{ route('detalles-instructor-auditoria2') }}'">
+                     onclick="window.location='{{ route('detalles-instructor-sistemas2') }}'">
                     <img src="{{ asset('build/img/instructor/IngSistemasInstructor/IngRichardOrtizPerfil.jpeg') }}" class="card-img-top" alt="Profesor 2">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Ing Richard Ortiz</h5>
@@ -160,7 +160,7 @@
             <!-- Instructor 3 -->
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                     onclick="window.location='{{ route('detalles-instructor-auditoria3') }}'">
+                     onclick="window.location='{{ route('detalles-instructor-sistemas3') }}'">
                     <img src="{{ asset('build/img/instructor/IngSistemasInstructor/IngOttoOrtizPerfil.jpeg') }}" class="card-img-top" alt="Profesor 3">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Ing Otto Ortíz</h5>
