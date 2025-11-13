@@ -173,14 +173,14 @@
 
     <!-- /Top Categories -->
 
-    <!-- Feature Course -->
+    <!-- oportunidades academicas -->
     <div class="section new-course">
         <div class="container">
             <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 aos" data-aos="fade-up">
-                    <div class="section-header text-center">
-                        <span class="fw-medium text-secondary fs-18 fw-bold mb-2 d-inline-block">Descubre tu Futuro</span>
-                        <h2 class="mb-0">Oportunidades Académicas en la UMG Guastatoya</h2>
-                    </div>
+                <div class="section-header w-100 text-center">
+                    <span class="fw-medium text-secondary fs-18 fw-bold mb-2 d-inline-block">Descubre tu Futuro</span>
+                    <h2 class="mb-0">Oportunidades Académicas en la UMG Guastatoya</h2>
+                </div>
             </div>
 
 <!-- Oportunidades académicas -->
@@ -308,363 +308,104 @@
         </div>
         <div class="container">
             <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 aos" data-aos="fade-up">
-                <div class="section-header">
-                    <span class="fw-medium text-secondary fs-18 fw-bold mb-2 d-inline-block">What’s New</span>
-                    <h2 class="mb-0">Trending Courses</h2>
+                <div class="section-header w-100 text-center">
+                    <span class="fw-medium text-secondary fs-18 fw-bold mb-2 d-inline-block">Egresados Destacados</span>
+                    <h2 class="mb-0">Orgullo de la Universidad Mariano Gálvez</h2>
                 </div>
             </div>
-            <div class="trending-course owl-theme aos" data-aos="fade-up">
-                <div>
-                    <div class="course-box trend-box">
-                        <div class="course-item course-item-three mx-0 flex-fill aos" data-aos="fade-up">
-                            <div class="course-img">
-                                <a href="{{url('course-details')}}">
-                                    <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/course/course-40.jpg')}}">
-                                </a>
-                                <div class="price">
-                                    <h3>$200 <span>$99.00</span></h3>
-                                </div>
-                            </div>
-                            <div class="course-content">
-                                <div class="course-user">
-                                    <div class="course-user-img">
-                                        <a href="{{url('instructor-profile')}}"><img src="{{URL::asset('build/img/avatar/avatar-27.jpg')}}" alt="Img" class="img-fluid"></a>
-                                        <div class="course-name">
-                                            <h4><a href="{{url('instructor-profile')}}">John Michael</a></h4>
-                                            <p>Instructor</p>
-                                        </div>
-                                    </div>
-                                    <div class="course-share d-flex align-items-center justify-content-center">
-                                        <a href="#"><i class="fa-regular fa-heart"></i></a>
-                                    </div>
-                                </div>
-                                <h3 class="title"><a href="{{url('course-details')}}">Learn JavaScript and Express to become a professional JavaScript</a></h3>
-                                <div class="course-info d-flex align-items-center">
-                                    <div class="course-lesson d-flex align-items-center">
-                                        <img src="{{URL::asset('build/img/icons/icon-3.svg')}}" alt="Img" class="img-fluid">
-                                        <p>13+ Lesson</p>
-                                    </div>
-                                    <div class="course-time d-flex align-items-center">
-                                        <img src="{{URL::asset('build/img/icons/icon-4.svg')}}" alt="Img" class="img-fluid">
-                                        <p>10hr 30min</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="rating m-0">
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="d-inline-block average-rating"><span>4.0</span> (15)</span>
-                                    </div>
-                                    <a href="{{url('checkout')}}" class="btn btn-primary btn-xl d-inline-flex align-items-center"><i class="isax isax-shopping-cart5 me-2"></i>Buy Now</a>
-                                </div>
-                            </div>
+
+        <div class="trending-course owl-theme aos" data-aos="fade-up">
+
+            <!-- Egresado 1 -->
+            <div>
+                <div class="course-box trend-box">
+                    <div class="course-item course-item-three mx-0 flex-fill aos" data-aos="fade-up">
+
+                        <div class="course-img text-center">
+                            <a href="#">
+                                <img class="img-fluid" alt="Egresado" src="{{URL::asset('build/img/course/course-40.jpg')}}">
+                            </a>
                         </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="course-box trend-box">
-                        <div class="course-item course-item-three mx-0 flex-fill aos" data-aos="fade-up">
-                            <div class="course-img">
-                                <a href="{{url('course-details')}}">
-                                    <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/course/course-41.jpg')}}">
-                                </a>
-                                <div class="price">
-                                    <h3>$300 <span>$99.00</span></h3>
-                                </div>
-                            </div>
-                            <div class="course-content">
-                                <div class="course-user">
-                                    <div class="course-user-img">
-                                        <a href="{{url('instructor-profile')}}"><img src="{{URL::asset('build/img/avatar/avatar-22.jpg')}}" alt="Img" class="img-fluid"></a>
-                                        <div class="course-name">
-                                            <h4><a href="{{url('instructor-profile')}}">John Smith</a></h4>
-                                            <p>Instructor</p>
-                                        </div>
-                                    </div>
-                                    <div class="course-share d-flex align-items-center justify-content-center">
-                                        <a href="#"><i class="fa-regular fa-heart"></i></a>
-                                    </div>
-                                </div>
-                                <h3 class="title"><a href="{{url('course-details')}}">Responsive Web Design Essentials HTML5 CSS3 and Bootstrap</a></h3>
-                                <div class="course-info d-flex align-items-center">
-                                    <div class="course-lesson d-flex align-items-center">
-                                        <img src="{{URL::asset('build/img/icons/icon-3.svg')}}" alt="Img" class="img-fluid">
-                                        <p>10+ Lesson</p>
-                                    </div>
-                                    <div class="course-time d-flex align-items-center">
-                                        <img src="{{URL::asset('build/img/icons/icon-4.svg')}}" alt="Img" class="img-fluid">
-                                        <p>11hr 30min</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="rating m-0">
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="d-inline-block average-rating"><span>4.2</span> (15)</span>
-                                    </div>
-                                    <a href="{{url('checkout')}}" class="btn btn-primary btn-xl d-inline-flex align-items-center"><i class="isax isax-shopping-cart5 me-2"></i>Buy Now</a>
-                                </div>
-                            </div>
+
+                        <div class="course-content text-center mt-3">
+                            <h3 class="title mb-2">
+                                <a href="#">Luis Fernando López</a>
+                            </h3>
+
+                            <p class="mb-1"><strong>Carrera:</strong> Ingeniería en Sistemas</p>
+                            <p class="mb-1"><strong>Graduación:</strong> Promoción 2021</p>
+                            <p class="mb-2"><strong>Empresa:</strong> Tigo Guatemala</p>
+
+                            <blockquote class="fst-italic text-secondary" style="font-size: 0.9rem;">
+                                “La UMG me dio las herramientas para crear soluciones que impactan a miles de usuarios.”
+                            </blockquote>
                         </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="course-box trend-box">
-                        <div class="course-item course-item-three mx-0 flex-fill aos" data-aos="fade-up">
-                            <div class="course-img">
-                                <a href="{{url('course-details')}}">
-                                    <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/course/course-44.jpg')}}">
-                                </a>
-                                <div class="price">
-                                    <h3>$100 <span>$99.00</span></h3>
-                                </div>
-                            </div>
-                            <div class="course-content">
-                                <div class="course-user">
-                                    <div class="course-user-img">
-                                        <a href="{{url('instructor-profile')}}"><img src="{{URL::asset('build/img/avatar/avatar-23.jpg')}}" alt="Img" class="img-fluid"></a>
-                                        <div class="course-name">
-                                            <h4><a href="{{url('instructor-profile')}}">Lavern M.</a></h4>
-                                            <p>Instructor</p>
-                                        </div>
-                                    </div>
-                                    <div class="course-share d-flex align-items-center justify-content-center">
-                                        <a href="#"><i class="fa-regular fa-heart"></i></a>
-                                    </div>
-                                </div>
-                                <h3 class="title"><a href="{{url('course-details')}}">The Complete App Design Course - UX, UI and Design Thinking</a></h3>
-                                <div class="course-info d-flex align-items-center">
-                                    <div class="course-lesson d-flex align-items-center">
-                                        <img src="{{URL::asset('build/img/icons/icon-3.svg')}}" alt="Img" class="img-fluid">
-                                        <p>8+ Lesson</p>
-                                    </div>
-                                    <div class="course-time d-flex align-items-center">
-                                        <img src="{{URL::asset('build/img/icons/icon-4.svg')}}" alt="Img" class="img-fluid">
-                                        <p>8hr 30min</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="rating m-0">
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="d-inline-block average-rating"><span>4.3</span> (15)</span>
-                                    </div>
-                                    <a href="{{url('checkout')}}" class="btn btn-primary btn-xl d-inline-flex align-items-center"><i class="isax isax-shopping-cart5 me-2"></i>Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="course-box d-flex aos">
-                        <div class="course-item course-item-three mx-0 flex-fill aos" data-aos="fade-up">
-                            <div class="course-img">
-                                <a href="{{url('course-details')}}">
-                                    <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/course/course-42.jpg')}}">
-                                </a>
-                                <div class="price combo">
-                                    <h3>Free</h3>
-                                </div>
-                            </div>
-                            <div class="course-content">
-                                <div class="course-user">
-                                    <div class="course-user-img">
-                                        <a href="{{url('instructor-profile')}}"><img src="{{URL::asset('build/img/avatar/avatar-23.jpg')}}" alt="Img" class="img-fluid"></a>
-                                        <div class="course-name">
-                                            <h4><a href="{{url('instructor-profile')}}">John Smith</a></h4>
-                                            <p>Instructor</p>
-                                        </div>
-                                    </div>
-                                    <div class="course-share d-flex align-items-center justify-content-center">
-                                        <a href="#"><i class="fa-regular fa-heart"></i></a>
-                                    </div>
-                                </div>
-                                <h3 class="title"><a href="{{url('course-details')}}">Build Responsive Real World Websites with HTML5 and CSS3</a></h3>
-                                <div class="course-info d-flex align-items-center">
-                                    <div class="rating-img d-flex align-items-center">
-                                        <img src="{{URL::asset('build/img/icons/icon-3.svg')}}" alt="Img">
-                                        <p>13+ Lesson</p>
-                                    </div>
-                                    <div class="course-view d-flex align-items-center">
-                                        <img src="{{URL::asset('build/img/icons/icon-4.svg')}}" alt="Img">
-                                        <p>10hr 30min</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="rating m-0">
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="d-inline-block average-rating"><span>4.0</span> (15)</span>
-                                    </div>
-                                    <a href="{{url('checkout')}}" class="btn btn-primary btn-xl d-inline-flex align-items-center"><i class="isax isax-shopping-cart5 me-2"></i>Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="course-box trend-box">
-                        <div class="course-item course-item-three mx-0 flex-fill aos" data-aos="fade-up">
-                            <div class="course-img">
-                                <a href="{{url('course-details')}}">
-                                    <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/course/course-44.jpg')}}">
-                                </a>
-                                <div class="price">
-                                    <h3>$300 <span>$99.00</span></h3>
-                                </div>
-                            </div>
-                            <div class="course-content">
-                                <div class="course-user">
-                                    <div class="course-user-img">
-                                        <a href="{{url('instructor-profile')}}"><img src="{{URL::asset('build/img/avatar/avatar-22.jpg')}}" alt="Img" class="img-fluid"></a>
-                                        <div class="course-name">
-                                            <h4><a href="{{url('instructor-profile')}}">John Smith</a></h4>
-                                            <p>Instructor</p>
-                                        </div>
-                                    </div>
-                                    <div class="course-share d-flex align-items-center justify-content-center">
-                                        <a href="#"><i class="fa-regular fa-heart"></i></a>
-                                    </div>
-                                </div>
-                                <h3 class="title"><a href="{{url('course-details')}}">Responsive Web Design Essentials HTML5 CSS3 and Bootstrap</a></h3>
-                                <div class="course-info d-flex align-items-center">
-                                    <div class="course-lesson d-flex align-items-center">
-                                        <img src="{{URL::asset('build/img/icons/icon-3.svg')}}" alt="Img" class="img-fluid">
-                                        <p>10+ Lesson</p>
-                                    </div>
-                                    <div class="course-time d-flex align-items-center">
-                                        <img src="{{URL::asset('build/img/icons/icon-4.svg')}}" alt="Img" class="img-fluid">
-                                        <p>11hr 30min</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="rating m-0">
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="d-inline-block average-rating"><span>4.5</span> (15)</span>
-                                    </div>
-                                    <a href="{{url('checkout')}}" class="btn btn-primary btn-xl d-inline-flex align-items-center"><i class="isax isax-shopping-cart5 me-2"></i>Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="course-box trend-box">
-                        <div class="course-item course-item-three mx-0 flex-fill aos" data-aos="fade-up">
-                            <div class="course-img">
-                                <a href="{{url('course-details')}}">
-                                    <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/course/course-45.jpg')}}">
-                                </a>
-                                <div class="price">
-                                    <h3>$100 <span>$99.00</span></h3>
-                                </div>
-                            </div>
-                            <div class="course-content">
-                                <div class="course-user">
-                                    <div class="course-user-img">
-                                        <a href="{{url('instructor-profile')}}"><img src="{{URL::asset('build/img/avatar/avatar-24.jpg')}}" alt="Img" class="img-fluid"></a>
-                                        <div class="course-name">
-                                            <h4><a href="{{url('instructor-profile')}}">Lavern M.</a></h4>
-                                            <p>Instructor</p>
-                                        </div>
-                                    </div>
-                                    <div class="course-share d-flex align-items-center justify-content-center">
-                                        <a href="#"><i class="fa-regular fa-heart"></i></a>
-                                    </div>
-                                </div>
-                                <h3 class="title"><a href="{{url('course-details')}}">The Complete App Design Course - UX, UI and Design Thinking</a></h3>
-                                <div class="course-info d-flex align-items-center">
-                                    <div class="course-lesson d-flex align-items-center">
-                                        <img src="{{URL::asset('build/img/icons/icon-3.svg')}}" alt="Img" class="img-fluid">
-                                        <p>8+ Lesson</p>
-                                    </div>
-                                    <div class="course-time d-flex align-items-center">
-                                        <img src="{{URL::asset('build/img/icons/icon-4.svg')}}" alt="Img" class="img-fluid">
-                                        <p>8hr 30min</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="rating m-0">
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="d-inline-block average-rating"><span>4.0</span> (15)</span>
-                                    </div>
-                                    <a href="{{url('checkout')}}" class="btn btn-primary btn-xl d-inline-flex align-items-center"><i class="isax isax-shopping-cart5 me-2"></i>Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="course-box trend-box">
-                        <div class="course-item course-item-three mx-0 flex-fill aos" data-aos="fade-up">
-                            <div class="course-img">
-                                <a href="{{url('course-details')}}">
-                                    <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/course/course-44.jpg')}}">
-                                </a>
-                                <div class="price">
-                                    <h3>$200 <span>$99.00</span></h3>
-                                </div>
-                            </div>
-                            <div class="course-content">
-                                <div class="course-user">
-                                    <div class="course-user-img">
-                                        <a href="{{url('instructor-profile')}}"><img src="{{URL::asset('build/img/avatar/avatar-21.jpg')}}" alt="Img" class="img-fluid"></a>
-                                        <div class="course-name">
-                                            <h4><a href="{{url('instructor-profile')}}">John Michael</a></h4>
-                                            <p>Instructor</p>
-                                        </div>
-                                    </div>
-                                    <div class="course-share d-flex align-items-center justify-content-center">
-                                        <a href="#"><i class="fa-regular fa-heart"></i></a>
-                                    </div>
-                                </div>
-                                <h3 class="title"><a href="{{url('course-details')}}">Learn JavaScript and Express to become a professional JavaScript</a></h3>
-                                <div class="course-info d-flex align-items-center">
-                                    <div class="course-lesson d-flex align-items-center">
-                                        <img src="{{URL::asset('build/img/icons/icon-3.svg')}}" alt="Img" class="img-fluid">
-                                        <p>13+ Lesson</p>
-                                    </div>
-                                    <div class="course-time d-flex align-items-center">
-                                        <img src="{{URL::asset('build/img/icons/icon-4.svg')}}" alt="Img" class="img-fluid">
-                                        <p>10hr 30min</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="rating m-0">
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="d-inline-block average-rating"><span>4.0</span> (15)</span>
-                                    </div>
-                                    <a href="{{url('checkout')}}" class="btn btn-primary btn-xl d-inline-flex align-items-center"><i class="isax isax-shopping-cart5 me-2"></i>Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
+
+            <!-- Egresado 2 -->
+            <div>
+                <div class="course-box trend-box">
+                    <div class="course-item course-item-three mx-0 flex-fill aos" data-aos="fade-up">
+
+                        <div class="course-img text-center">
+                            <a href="#">
+                                <img class="img-fluid" alt="Egresado" src="{{URL::asset('build/img/course/course-41.jpg')}}">
+                            </a>
+                        </div>
+
+                        <div class="course-content text-center mt-3">
+                            <h3 class="title mb-2">
+                                <a href="#">María José Herrera</a>
+                            </h3>
+
+                            <p class="mb-1"><strong>Carrera:</strong> Administración de Empresas</p>
+                            <p class="mb-1"><strong>Graduación:</strong> Promoción 2020</p>
+                            <p class="mb-2"><strong>Empresa:</strong> Banco Industrial</p>
+
+                            <blockquote class="fst-italic text-secondary" style="font-size: 0.9rem;">
+                                “En la UMG descubrí mi pasión por liderar proyectos con impacto humano.”
+                            </blockquote>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Egresado 3 -->
+            <div>
+                <div class="course-box trend-box">
+                    <div class="course-item course-item-three mx-0 flex-fill aos" data-aos="fade-up">
+
+                        <div class="course-img text-center">
+                            <a href="#">
+                                <img class="img-fluid" alt="Egresado" src="{{URL::asset('build/img/course/course-44.jpg')}}">
+                            </a>
+                        </div>
+
+                        <div class="course-content text-center mt-3">
+                            <h3 class="title mb-2">
+                                <a href="#">Carlos Medina</a>
+                            </h3>
+
+                            <p class="mb-1"><strong>Carrera:</strong> Ciencias Jurídicas y Sociales</p>
+                            <p class="mb-1"><strong>Graduación:</strong> Promoción 2019</p>
+                            <p class="mb-2"><strong>Empresa:</strong> Ministerio Público</p>
+
+                            <blockquote class="fst-italic text-secondary" style="font-size: 0.9rem;">
+                                “Servir a Guatemala con justicia es el mayor honor que la UMG me permitió alcanzar.”
+                            </blockquote>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
 
             <!-- Feature Instructors -->
             <div class="feature-instructors">

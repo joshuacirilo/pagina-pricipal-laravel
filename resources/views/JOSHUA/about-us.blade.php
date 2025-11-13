@@ -4,16 +4,16 @@
 
     @component('components.breadcrumb')
         @slot('title')
-            About Us
+            Y conoceréis la verdad y la verdad os hará libres
         @endslot
         @slot('item1')
             Home
         @endslot
         @slot('item2')
-            About Us
+            Y conoceréis la verdad y la verdad os hará libres
         @endslot
     @endcomponent
-	
+
     <!-- about -->
     <section class="about-section-two pb-0">
         <div class="container">
@@ -67,7 +67,7 @@
         </div>
     </section>
     <!-- about -->
-    
+
     <!-- benefits -->
     <section class="benefit-section">
         <div class="container">
@@ -304,8 +304,8 @@
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-solid fa-star text-warning"></i>
                         </div>
-                    </div>  
-                </div>  
+                    </div>
+                </div>
                 <div>
                     <div class="testimonials-item rounded-3 bg-white">
                         <div class="position-relative d-inline-flex mb-2">
@@ -324,8 +324,8 @@
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-solid fa-star text-warning"></i>
                         </div>
-                    </div>  
-                </div>  
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -359,7 +359,7 @@
                             </h2>
                             <div id="collapsecustomicon1One" class="accordion-collapse collapse show" aria-labelledby="headingcustomicon1One" data-bs-parent="#accordioncustomicon1Example">
                                 <div class="accordion-body pt-0">
-                                 <p>DreamLMS aims to provide you with a comprehensive and intuitive learning platform that enhances your educational experience.</p>                                     
+                                 <p>DreamLMS aims to provide you with a comprehensive and intuitive learning platform that enhances your educational experience.</p>
                                 </div>
                             </div>
                         </div>
@@ -371,7 +371,7 @@
                             </h2>
                             <div id="collapsecustomicon1Two" class="accordion-collapse collapse" aria-labelledby="headingcustomicon1Two" data-bs-parent="#accordioncustomicon1Example">
                              <div class="accordion-body pt-0">
-                                 <p>DreamLMS aims to provide you with a comprehensive and intuitive learning platform that enhances your educational experience.</p>                                     
+                                 <p>DreamLMS aims to provide you with a comprehensive and intuitive learning platform that enhances your educational experience.</p>
                             </div>
                             </div>
                         </div>
@@ -383,7 +383,7 @@
                             </h2>
                             <div id="collapsecustomicon1Three" class="accordion-collapse collapse" aria-labelledby="headingcustomicon1Three" data-bs-parent="#accordioncustomicon1Example">
                              <div class="accordion-body pt-0">
-                                 <p>DreamLMS aims to provide you with a comprehensive and intuitive learning platform that enhances your educational experience.</p>                                     
+                                 <p>DreamLMS aims to provide you with a comprehensive and intuitive learning platform that enhances your educational experience.</p>
                             </div>
                             </div>
                         </div>
@@ -395,7 +395,7 @@
                             </h2>
                             <div id="collapsecustomicon1Four" class="accordion-collapse collapse" aria-labelledby="headingcustomicon1Four" data-bs-parent="#accordioncustomicon1Example">
                              <div class="accordion-body pt-0">
-                                 <p>DreamLMS aims to provide you with a comprehensive and intuitive learning platform that enhances your educational experience.</p>                                     
+                                 <p>DreamLMS aims to provide you with a comprehensive and intuitive learning platform that enhances your educational experience.</p>
                             </div>
                             </div>
                         </div>
@@ -407,11 +407,11 @@
                             </h2>
                             <div id="collapsecustomicon1Five" class="accordion-collapse collapse" aria-labelledby="headingcustomicon1Five" data-bs-parent="#accordioncustomicon1Example">
                              <div class="accordion-body pt-0">
-                                 <p>DreamLMS aims to provide you with a comprehensive and intuitive learning platform that enhances your educational experience.</p>                                     
+                                 <p>DreamLMS aims to provide you with a comprehensive and intuitive learning platform that enhances your educational experience.</p>
                             </div>
                             </div>
                         </div>
-                                                     
+
                     </div>
                     </div>
                 </div>
