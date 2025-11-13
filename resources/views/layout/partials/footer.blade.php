@@ -240,11 +240,10 @@
                             <div class="footer-widget footer-menu">
                                 <h6 class="footer-title">Soporte</h6>
                                 <ul>
-                                    <li><a href="{{url('course-grid')}}">Educación</a></li>
-                                    <li><a href="{{url('add-course')}}">Inscribirse en un curso</a></li>
-                                    <li><a href="{{url('register')}}">Pedidos</a></li>
-                                    <li><a href="{{url('pricing-plan')}}">Pagos</a></li>
-                                    <li><a href="{{url('contact-us')}}">Contáctanos</a></li>
+                                    <li><a href="https://umg.edu.gt/#facultades" target="_blank" rel="noopener noreferrer">Facultades</a></li>
+                                    <li><a href="https://umg.edu.gt/info/estudiantes/inscripcion" target="_blank" rel="noopener noreferrer">Inscribirse en un curso</a></li>
+                                    <li><a href="https://umg.edu.gt/tours" target="_blank" rel="noopener noreferrer">Tour Virtual</a></li>
+                                    <li><a href="https://umg.edu.gt/info" target="_blank" rel="noopener noreferrer">Contáctanos</a></li>
                                 </ul>
                             </div>
                             <!-- /Widget del pie de página -->
@@ -259,9 +258,9 @@
                                 <ul>
                                     <li><a href="{{url('course-category')}}">Categorías</a></li>
                                     <li><a href="{{url('course-category')}}">Servicios</a></li>
-                                    <li><a href="{{url('about-us')}}">Sobre Nosotros</a></li>
+                                    <li><a href="https://umg.edu.gt/historia" target="_blank" rel="noopener noreferrer">Historia</a></li>
                                     <li><a href="{{url('faq')}}">Preguntas Frecuentes</a></li>
-                                    <li><a href="{{url('blog-3-grid')}}">Blog</a></li>
+                                    <li><a href="https://es.wikipedia.org/wiki/Blog" target="_blank" rel="noopener noreferrer">Blog</a></li>
                                 </ul>
                             </div>
                             <!-- /Widget del pie de página -->
@@ -272,19 +271,19 @@
 
                             <!-- Widget del pie de página -->
                             <div class="footer-widget footer-menu">
-                                <h6 class="footer-title">Enlaces Útiles</h6>
+                                <h6 class="footer-title">Vida Estudiantil</h6>
                                 <ul>
-                                    <li><a href="javascript:void(0);">Nuestros Valores</a></li>
-                                    <li><a href="javascript:void(0);">Consejo Asesor</a></li>
-                                    <li><a href="javascript:void(0);">Nuestros Socios</a></li>
-                                    <li><a href="javascript:void(0);">Conviértete en Socio</a></li>
-                                    <li><a href="javascript:void(0);">Aprendizaje Futuro</a></li>
+                                    <li><a href="https://umg.edu.gt/calendario" target="_blank" rel="noopener noreferrer">Calendario Académico</a></li>
+                                    <li><a href="https://radio.umg.edu.gt/" target="_blank" rel="noopener noreferrer">Radio</></li>
+                                    <li><a href="https://umg.edu.gt/biblioteca" target="_blank" rel="noopener noreferrer">Biblioteca</a></li>
+                                    <li><a href="https://umg.edu.gt/empleos" target="_blank" rel="noopener noreferrer">Empleo</a></li>
+                                    <li><a href="https://umg.edu.gt/capellania" target="_blank" rel="noopener noreferrer">Capellanía</></li>
                                 </ul>
                             </div>
                             <!-- /Widget del pie de página -->
 
                         </div>
-
+                        
                         <div class="col-lg-3 col-md-6">
 
                             <!-- Widget del pie de página -->

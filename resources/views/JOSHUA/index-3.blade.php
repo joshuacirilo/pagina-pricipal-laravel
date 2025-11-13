@@ -258,9 +258,9 @@
             <div class="row align-items-end">
                 <div class="col-lg-6 col-md-12">
                     <div class="section-header aos" data-aos="fade-up">
-                        <span class="fw-medium text-secondary fs-18 fw-bold mb-2 d-inline-block">What’s New</span>
-                        <h2>Master the skills to drive your career</h2>
-                        <p>Get certified, master modern tech skills, and level up your career — whether you’re starting out or a seasoned pro. 95% of eLearning learners report our hands-on content directly helped their careers.</p>
+                        <span class="fw-medium text-secondary fs-18 fw-bold mb-2 d-inline-block">Ingeniero</span>
+                        <h2>Antonio Valiente </h2>
+                        <p>Ingresar a la carrera de Ingeniería en Sistemas es dar un paso hacia un universo lleno de posibilidades. En esta profesión se unen la creatividad, la lógica y la innovación para resolver los desafíos del presente y del futuro. Cada día surgen nuevas tecnologías, y con ellas, nuevas oportunidades de cambiar la forma en que vivimos, trabajamos y nos comunicamos</p>
                     </div>
                     <div class="career-group aos" data-aos="fade-up">
                         <div class="row row-gap-4">
@@ -269,7 +269,7 @@
                                     <div class="certified-img ">
                                         <img src="{{URL::asset('build/img/icons/icon-22.svg')}}" alt="Img" class="img-fluid">
                                     </div>
-                                    <p>Stay motivated with engaging instructors</p>
+                                    <p>Ser ingeniero en sistemas es transformar los sueños en programas y las ideas en realidades.</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 d-flex">
@@ -277,14 +277,14 @@
                                     <div class="certified-img ">
                                         <img src="{{URL::asset('build/img/icons/icon-17.svg')}}" alt="Img" class="img-fluid">
                                     </div>
-                                    <p>Keep up with in the latest in cloud</p>
+                                    <p>conectando conocimiento, creando futuro.</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 d-flex">
                                 <div class="certified-item d-flex align-items-center flex-fill">
                                     <div class="certified-img "><img src="{{URL::asset('build/img/icons/icon-23.svg')}}" alt="Img" class="img-fluid">
                                     </div>
-                                    <p>Get certified with 100+ certification courses</p>
+                                    <p>Conecta con el mundo, domina tu destino.</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 d-flex">
@@ -292,7 +292,7 @@
                                     <div class="certified-img ">
                                         <img src="{{URL::asset('build/img/icons/icon-16.svg')}}" alt="Img" class="img-fluid">
                                     </div>
-                                    <p>Build skills your way, from labs to courses</p>
+                                    <p>Programa tu éxito, conquista tus metas.</p>
                                 </div>
                             </div>
                         </div>
@@ -301,10 +301,8 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="career-img aos" data-aos="fade-up">
                         <img src="{{URL::asset('build/img/bg/bg-2.png')}}" alt="Img" class="img-fluid master-bg">
-                        <img src="{{URL::asset('build/img/feature/feature-16.png')}}" alt="Img" class="img-fluid girl-img">
-                        <img src="{{URL::asset('build/img/icons/icon-18.svg')}}" alt="Img" class="img-fluid float-img-01">
+                        <img src="{{asset('build/img/Tony.jpg') }}" alt="Tony" class="img-fluid girl-img">
                         <img src="{{URL::asset('build/img/icons/icon-19.svg')}}" alt="Img" class="img-fluid float-img-02">
-                        <img src="{{URL::asset('build/img/icons/icon-20.svg')}}" alt="Img" class="img-fluid float-img-03">
                         <img src="{{URL::asset('build/img/icons/icon-21.svg')}}" alt="Img" class="img-fluid float-img-04">
                     </div>
                 </div>
