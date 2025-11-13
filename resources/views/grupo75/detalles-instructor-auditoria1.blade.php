@@ -21,7 +21,7 @@
                             <div class="card-body instructor-details">
                                 <div class="instructor-img">
                                     <a href="javascript:void(0);">
-                                        <img src="{{URL::asset('build/img/user/user-61.jpg')}}" alt="img" class="img-fluid">
+                                        <img src="{{URL::asset('build/img/instructor/unknown_user.png')}}" alt="img" class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="flex-fill">
@@ -269,7 +269,7 @@
                                         <i class="isax isax-location"></i>
                                     </span>
                                     <div>
-                                        <h6 class="fs-16 fw-medium text-gray-9 mb-0">Address</h6>
+                                        <h6 class="fs-16 fw-medium text-gray-9 mb-0">Dirección</h6>
                                         <p class="mb-0 text-truncate">Guastatoya</p>
                                     </div>
                                 </div>

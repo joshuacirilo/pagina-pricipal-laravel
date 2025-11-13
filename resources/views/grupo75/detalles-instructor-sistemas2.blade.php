@@ -108,13 +108,13 @@
                                     </div>
                                     <div class="ps-4 pb-4 timeline-flow">
                                         <div>
-                                            <h6 class="mb-1">Especialista en CyberSeguridad</h6>
+                                            <h6 class="mb-1">Especialista en CiberSeguridad</h6>
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
                                     <div class="ps-4 timeline-flow">
                                         <div>
-                                            <h6 class="mb-1">FullStack Developer</h6>
+                                            <h6 class="mb-1">Desarrollador de Software</h6>
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
@@ -130,6 +130,13 @@
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
                                         <h6 class="mb-1">Experiencia en CyberSeguridad</h6>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
+                                    <div>
+                                        <h6 class="mb-1">Desarrollador de Software (FullStack Developer)</h6>
 
                                     </div>
                                 </div>
@@ -229,6 +236,7 @@
                     </div>
 -->
                     <div class="col-lg-4">
+                        <!--
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="mb-3">Certificaciones</h5>
@@ -248,6 +256,7 @@
                                 </div>
                             </div>
                         </div>
+                        -->
 
                         <div class="card">
                             <div class="card-body">
@@ -266,8 +275,8 @@
                                         <i class="isax isax-location"></i>
                                     </span>
                                     <div>
-                                        <h6 class="fs-16 fw-medium text-gray-9 mb-0">Address</h6>
-                                        <p class="mb-0 text-truncate"></p>
+                                        <h6 class="fs-16 fw-medium text-gray-9 mb-0">Dirección</h6>
+                                        <p class="mb-0 text-truncate">Guastatoya</p>
                                     </div>
                                 </div>
                                 <!--
