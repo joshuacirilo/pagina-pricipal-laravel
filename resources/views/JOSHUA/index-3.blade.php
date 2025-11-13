@@ -352,7 +352,7 @@
 
                         <div class="course-img text-center">
                             <a href="#">
-                                <img class="img-fluid" alt="Egresado" src="{{URL::asset('build/img/course/course-41.jpg')}}">
+                                <img class="img-fluid" alt="Egresado" src="{{URL::asset('build/img/index/egresado3.png')}}">
                             </a>
                         </div>
 
@@ -381,7 +381,7 @@
 
                         <div class="course-img text-center">
                             <a href="#">
-                                <img class="img-fluid" alt="Egresado" src="{{URL::asset('build/img/course/course-44.jpg')}}">
+                                <img class="img-fluid" alt="Egresado" src="{{URL::asset('build/img/index/Egresado2.png')}}">
                             </a>
                         </div>
 
@@ -604,20 +604,20 @@
     </div>
     <div class="container">
         <div class="row align-items-center row-gap-4">
-            
+
             <!-- Imagen lateral -->
             <div class="col-md-6">
                 <div class="knowledge-img aos" data-aos="fade-up">
                     <img src="{{URL::asset('build/img/index/EstudiantesU.png')}}" alt="Img" class="img-fluid">
                 </div>
             </div>
-            
+
             <!-- Texto principal -->
             <div class="col-md-6 d-flex align-items-center">
                 <div class="join-mentor aos" data-aos="fade-up">
                     <h2>¿Por qué estudiar en la Universidad Mariano Gálvez?</h2>
                     <p>
-                        Formar parte de la <strong>Universidad Mariano Gálvez</strong> significa acceder a una educación con excelencia académica, valores cristianos y una sólida formación profesional. 
+                        Formar parte de la <strong>Universidad Mariano Gálvez</strong> significa acceder a una educación con excelencia académica, valores cristianos y una sólida formación profesional.
                         La UMG ofrece las herramientas necesarias para desarrollarte con éxito en el ámbito laboral y personal.
                     </p>
                     <ul class="list-unstyled mb-4">
