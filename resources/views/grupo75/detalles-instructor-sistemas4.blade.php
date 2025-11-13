@@ -104,7 +104,7 @@
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
-                                    <div class="ps-4 timeline-flow">
+                                    <div class="ps-4 pb-4 timeline-flow">
                                         <div>
                                             <h6 class="mb-1">Maestría en Dirección y Gestión de Recursos Humanos</h6>
                                             <p class="fs-14"></p>

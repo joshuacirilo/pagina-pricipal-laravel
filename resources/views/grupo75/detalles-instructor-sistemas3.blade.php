@@ -111,21 +111,21 @@
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
-                                    <div class="ps-4 timeline-flow">
+                                    <div class="ps-4 pb-4 timeline-flow">
                                         <div>
                                             <h6 class="mb-1">Desarrollador de Software</h6>
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
 
-                                    <div class="ps-4 timeline-flow">
+                                    <div class="ps-4 pb-4 timeline-flow">
                                         <div>
                                             <h6 class="mb-1">AWS Solutions Architect</h6>
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
 
-                                    <div class="ps-4 timeline-flow">
+                                    <div class="ps-4 pb-4 timeline-flow">
                                         <div>
                                             <h6 class="mb-1">Scrum Máster</h6>
                                             <p class="fs-14"></p>
@@ -266,7 +266,7 @@
                                 <h5 class="mb-3">Certificaciones</h5>
                                 <div class="d-flex align-items-center">
                                     <div class="certificate-img rounded-circle me-2">
-                                        <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/certificadoAWSSolutionsArch.jpeg')}}" alt="img" class="img-fluid">
+                                        <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/certificadoAWSSolutionsArch.jpg')}}" alt="img" class="img-fluid">
                                     </div>
                                     <div class="certificate-img rounded-circle me-2">
                                         <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/certificadoScrum.jpeg')}}" alt="img" class="img-fluid">

@@ -118,14 +118,14 @@
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
-                                    <div class="ps-4 timeline-flow">
+                                    <div class="ps-4 pb-4 timeline-flow">
                                         <div>
                                             <h6 class="mb-1">AWS Cloud Practitioner</h6>
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
 
-                                    <div class="ps-4 timeline-flow">
+                                    <div class="ps-4 pb-4 timeline-flow">
                                         <div>
                                             <h6 class="mb-1">Linux Profesional</h6>
                                             <p class="fs-14"></p>
@@ -268,18 +268,15 @@
                                 <h5 class="mb-3">Certificaciones</h5>
                                 <div class="d-flex align-items-center">
                                     <div class="certificate-img rounded-circle me-2">
-                                        <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/certificadoCloudAWSPractt.png')}}" alt="img" class="img-fluid">
+                                        <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/certificadoCloudAWSPractt.jpg')}}" alt="img" class="img-fluid">
                                     </div>
-                                </div>
-                                <div class="d-flex align-items-center">
                                     <div class="certificate-img rounded-circle me-2">
-                                        <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/CertificadoCiscoCCNA.jpeg')}}" alt="img" class="img-fluid">
+                                        <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/CertificadoCiscoCCNA.jpg')}}" alt="img" class="img-fluid">
                                     </div>
-                                </div>
-                                <div class="d-flex align-items-center">
                                     <div class="certificate-img rounded-circle me-2">
                                         <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/CertificadoLinux.jpeg')}}" alt="img" class="img-fluid">
                                     </div>
+
                                 </div>
                             </div>
                         </div>
