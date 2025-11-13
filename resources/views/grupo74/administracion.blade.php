@@ -36,8 +36,12 @@
                     <div class="ps-0 ps-lg-2 pt-4 pt-lg-0 ps-xl-5">
                         <div class="section-header">
                             <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">About</span>
-                            <h2>Administracion</h2>
-                            <p>At DreamsLMS, we make education accessible to all with interactive courses and expert-led content. Learn anytime, anywhere, and achieve your goals seamlessly.</p>
+                            <h2>Licenciatura en
+                            Ciencias de la Administración</h2>
+                            <p>La Licenciatura en Ciencias de la Administración es una carrera que promueve la excelencia académica mediante la implementación de
+                                un programa acreditado internacionalmente que integra aspectos teóricos y prácticos para la dirección de empresas y la gestión de
+                                 organizaciones en el marco de un entorno cambiante y globalizado, el programa académico es impartido por docentes altamente
+                                 calificados con experiencia profesional y académica.</p>
                         </div>
                         <div class="d-flex align-items-center about-us-banner">
                             <div>
@@ -46,8 +50,8 @@
                                 </span>
                             </div>
                             <div class="ps-3">
-                                <h6 class="mb-2">Learn from anywhere</h6>
-                                <p>Learning from anywhere has become a transform aspect of modern education, allowing individuals.</p>
+                                <h6 class="mb-2">Título académico a obtener</h6>
+                                <p>Licenciado en Administración de Empresas</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center about-us-banner">
@@ -57,8 +61,8 @@
                                 </span>
                             </div>
                             <div class="ps-3">
-                                <h6 class="mb-2">Expert Mentors</h6>
-                                <p>Expert mentors are invaluable assets in any field, providing seasoned guidance knowledge.</p>
+                                <h6 class="mb-2">Duración</h6>
+                                <p>4 años</p>
                             </div>
                         </div>
                     </div>
@@ -73,8 +77,9 @@
         <div class="container">
             <div class="section-header text-center">
                 <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">Our Benefits</span>
-                <h2>Master the Skills to Drive your Career</h2>
-                <p>The right course, guided by an expert mentor, can provide invaluable insights, practical skills.</p>
+                <h2>Desarrolla tu potencial y lidera en tu profesión</h2>
+                <p>La carrera de  Ciencias de la Administración, guiada por nuestros mentores expertos, puede proporcionar información
+                    invaluable para tu desarrollo profesional.</p>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6">
@@ -86,8 +91,12 @@
                             <div class="p-4 rounded-pill bg-primary-transparent d-inline-flex">
                                 <i class="isax isax-book-1 fs-24"></i>
                             </div>
-                            <h5 class="mt-3 mb-1">Flexible Learning</h5>
-                            <p>We believe that high-quality education should be accessible to everyone. Our pricing form in models are designed.</p>
+                            <h5 class="mt-3 mb-1">¿Qué aprenderás</h5>
+                            <p>En esta carrera aprenderás sobre Dirección de Empresas, Requisitos legales de negocios, Contabilidad y Finanzas, Filosofía y
+                                Sociología de Negocios, Mercadeo y Proyectos, Economía y Globalización, Operaciones y Logística, Talento Humano y Motivación.
+                                Adquirirás conocimientos teóricos y prácticos sobre: Comunicación de Negocios, Análisis de Situaciones Críticas, Gestión de
+                                Coaching, Dirección de Equipos, Resolución de Conflictos, Procesos Estadísticos, Toma de Decisiones, Autodominio de Actitud
+                                <br><br><br><br> <br><br> <br></p>
                         </div>
                     </div>
                 </div>
@@ -100,8 +109,14 @@
                             <div class="p-4 rounded-pill bg-secondary-transparent d-inline-flex">
                                 <i class="isax isax-bookmark5 fs-24"></i>
                             </div>
-                            <h5 class="mt-3 mb-1">Lifetime Access</h5>
-                            <p>When you enroll in our courses, you’re not just signing up for a temporary learning to experience you’re making.</p>
+                            <h5 class="mt-3 mb-1">Perfil de
+                            Ingreso</h5>
+                            <p>El aspirante a la carrera de Administración de Empresas debe tener una inclinación hacia el pensamiento analítico y estratégico.
+                                Los aspirantes deben mostrar interés en comprender el funcionamiento de las organizaciones, así como en las dinámicas de gestión
+                                y liderazgo empresarial. Se espera que posean habilidades comunicativas y de trabajo en equipo, dado que la colaboración es
+                                fundamental en el entorno administrativo. <br> <br>
+                                Además, es deseable que tengan una actitud proactiva y adaptabilidad frente a los cambios, habilidades que son cruciales en el mundo
+                                empresarial en constante evolución <br> <br><br> </p>
                         </div>
                     </div>
                 </div>
@@ -114,8 +129,15 @@
                             <div class="p-4 rounded-pill bg-skyblue-transparent d-inline-flex">
                                 <i class="isax isax-chart-26 fs-24"></i>
                             </div>
-                            <h5 class="mt-3 mb-1">Expert Instruction</h5>
-                            <p>Our instructors are seasoned professionals with years of experience in their respective fields & Experts advice</p>
+                            <h5 class="mt-3 mb-1">Perfil de
+                            Egreso</h5>
+                            <p>Al terminar la carrera, el administrador de empresas debe tener el siguiente perfil de egreso: <br> <br>
+                                Conocimientos en: dirección de empresas, requisitos legales de negocios, contabilidad, finanzas,
+                                 filosofía y sociología de negocios, mercadeo y proyectos, economía y globalización, operaciones y
+                                 logística, informática y tecnología, talento humano y motivación.<br> <br>
+                                Habilidades en: comunicación de negocios, análisis de situaciones críticas, gestión de coaching,
+                                dirección de equipos, resolución de conflictos, procesos estadísticos, toma de decisiones, autodominio
+                                de actitudes, influencia de valores.</p>
                         </div>
                     </div>
                 </div>
@@ -171,72 +193,7 @@
     <!-- /Instructores -->
 
 
-    <!-- counter -->
-    <section class="counter-sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-3 col-md-6">
-                    <div class="card border-0 mb-0">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <div class="counter-icon">
-                                    <img src="./build/img/icons/counter-icon1.svg" alt="img">
-                                </div>
-                                <div class="count-content">
-                                    <h4 class="text-info"><span class="count-digit">10</span>K</h4>
-                                    <p>Online Courses</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="card border-0 mb-0">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <div class="counter-icon">
-                                    <img src="./build/img/icons/counter-icon2.svg" alt="img">
-                                </div>
-                                <div class="count-content">
-                                    <h4 class="text-warning"><span class="count-digit">200</span>+</h4>
-                                    <p>Expert Tutors</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="card border-0 mb-0">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <div class="counter-icon">
-                                    <img src="./build/img/icons/counter-icon3.svg" alt="img">
-                                </div>
-                                <div class="count-content">
-                                    <h4 class="text-skyblue"><span class="count-digit">6</span>K+</h4>
-                                    <p>Certified Courses</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="card border-0 mb-0">
-                        <div class="card-body d-flex align-items-center">
-                            <div class="counter-icon">
-                            <img src="./build/img/icons/counter-icon4.svg" alt="img">
-                            </div>
-                            <div class="count-content">
-                            <h4 class="text-lightgreen"><span class="count-digit">60</span>K+</h4>
-                                <p>Online Students</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- counter -->
+
 
     <!-- testimonials -->
     <section class="testimonials-section text-center">
@@ -347,68 +304,78 @@
                 <div class="col-lg-7">
                     <div class="section-header">
                         <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">FAQs</span>
-                        <h2>Frequently Asked Questions</h2>
-                        <p>Explore detailed answers to the most common questions about our platform.</p>
+                        <h2>Preguntas Frecuentes</h2>
+                        <p>Explore respuestas sobre las preguntas más comunes sobre nosotros!.</p>
                     </div>
                     <div class="faq-content">
                     <div class="accordion accordion-customicon1 accordions-items-seperate" id="accordioncustomicon1Example">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingcustomicon1One">
                                 <a href="#" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapsecustomicon1One" aria-expanded="true" aria-controls="collapsecustomicon1One">
-                                 What’s DreamLMS want to give you? <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
+                                ¿Por qué elegirnos para tu educación?
+                                 <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
                                 </a>
                             </h2>
                             <div id="collapsecustomicon1One" class="accordion-collapse collapse show" aria-labelledby="headingcustomicon1One" data-bs-parent="#accordioncustomicon1Example">
                                 <div class="accordion-body pt-0">
-                                 <p>DreamLMS aims to provide you with a comprehensive and intuitive learning platform that enhances your educational experience.</p>
+                                 <p> En la Universidad Mariano Gálvez te formamos como un profesional competitivo en Administración de Empresas, mediante
+                                     un plan de estudios actualizado y con enfoque práctico. Nuestra formación te prepara para destacar en el ámbito
+                                     financiero y empresarial</p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingcustomicon1Two">
                             <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapsecustomicon1Two" aria-expanded="false" aria-controls="collapsecustomicon1One">
-                                Why choose us for your education? <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
+                            ¿Qué cursos contiene la carrera? <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
                             </a>
                             </h2>
                             <div id="collapsecustomicon1Two" class="accordion-collapse collapse" aria-labelledby="headingcustomicon1Two" data-bs-parent="#accordioncustomicon1Example">
                              <div class="accordion-body pt-0">
-                                 <p>DreamLMS aims to provide you with a comprehensive and intuitive learning platform that enhances your educational experience.</p>
+                                 <p>
+                                 Puede encotrar más detalles en la sección de Centro de Informaciones para revisar el pensum de estudios o bien visitar la oficina
+                                  de su Centro UMG más cercano.</p>
                             </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingcustomicon1Three">
                             <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapsecustomicon1Three" aria-expanded="false" aria-controls="collapsecustomicon1One">
-                            How We Provide Service For you? <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
+                            ¿En qué me podré desempeñar? <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
                             </a>
                             </h2>
                             <div id="collapsecustomicon1Three" class="accordion-collapse collapse" aria-labelledby="headingcustomicon1Three" data-bs-parent="#accordioncustomicon1Example">
                              <div class="accordion-body pt-0">
-                                 <p>DreamLMS aims to provide you with a comprehensive and intuitive learning platform that enhances your educational experience.</p>
+                                 <p>Podrás desempeñarte en cargos directivos, administrativos, financieros, comerciales o incluso como empresario independiente,
+                                    gracias a tu formación integral, ética y con visión global.</p>
                             </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingcustomicon1Four">
                             <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapsecustomicon1Four" aria-expanded="false" aria-controls="collapsecustomicon1One">
-                                Do you have a monthly plan? <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
+                            ¿Qué documentos necesito para inscribirme? (recién graduado) <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
                             </a>
                             </h2>
                             <div id="collapsecustomicon1Four" class="accordion-collapse collapse" aria-labelledby="headingcustomicon1Four" data-bs-parent="#accordioncustomicon1Example">
                              <div class="accordion-body pt-0">
-                                 <p>DreamLMS aims to provide you with a comprehensive and intuitive learning platform that enhances your educational experience.</p>
+                                 <p> Constancia de Evaluación de Ubicación.  Completar Formulario de Nuevo Estudiante.  Original y fotocopia de DPI o pasaporte.
+                                     Certificación original de Básicos y Diversificado.  Fotostática de título de 5 x 7 pulgadas. (sellado por Contraloría de
+                                    Cuentas).  Dos fotografías recientes tamaño Cédula.  Efectuar los pagos de inscripción correspondientes .</p>
                             </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingcustomicon1Five">
                             <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapsecustomicon1Five" aria-expanded="false" aria-controls="collapsecustomicon1One">
-                            Are you Affordable For Your Course <i class="isax isax-add fs-20 fw-semibold ms-1"></i>
+                            ¿Qué necesito para traslado de otra universidad?<i class="isax isax-add fs-20 fw-semibold ms-1"></i>
                             </a>
                             </h2>
                             <div id="collapsecustomicon1Five" class="accordion-collapse collapse" aria-labelledby="headingcustomicon1Five" data-bs-parent="#accordioncustomicon1Example">
                              <div class="accordion-body pt-0">
-                                 <p>DreamLMS aims to provide you with a comprehensive and intuitive learning platform that enhances your educational experience.</p>
+                                 <p> Certificación de matrícula.  Certificación de estudios (ambas de Universidad de procedencia).  Inversión
+                                    (costos de preinscripción, inscripción, colegiaturas).  Costos de inscripción Q600.00  Costos de colegiatura Q560.00
+                                    (Costos sujestos a cambios) .</p>
                             </div>
                             </div>
                         </div>
