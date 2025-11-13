@@ -134,7 +134,7 @@
                 <!-- Instructor 1 -->
                 <div class="col-md-4 col-sm-6">
                     <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                        onclick="window.location='{{ route('detalles-instructor-criminologia2') }}'">
+                        onclick="window.location='{{ route('detalles-instructor-criminologia1') }}'">
                         <img src="{{ asset('build/img/instructor/LicCarlos.png') }}" class="card-img-top" alt="Profesor 1">
                         <div class="card-body text-center">
                             <h5 class="card-title mb-2">Lic. Carlos Augusto Naavarro Ávila</h5>
@@ -146,7 +146,7 @@
                    <!-- Instructor 2 -->
                 <div class="col-md-4 col-sm-6">
                     <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                        onclick="window.location='{{ route('detalles-instructor-criminologia2') }}'">
+                        onclick="window.location='{{ route('detalles-instructor-criminologia22') }}'">
                         <img src="{{ asset('build/img/instructor/docenteCrimi3.png') }}" class="card-img-top" alt="Profesor 1">
                         <div class="card-body text-center">
                             <h5 class="card-title mb-2">Licda.Susan Eunice Galindo Catalan</h5>
@@ -158,7 +158,7 @@
                 <!-- Instructor 3 -->
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                     onclick="window.location='{{ route('detalles-instructor-sistemas2') }}'">
+                     onclick="window.location='{{ route('detalles-instructor-criminologia3') }}'">
                     <img src="{{ asset('build/img/instructor/2.png') }}" class="card-img-top" alt="Profesor 2">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Lic. Roberto Bladimir Roldán Cruz</h5>
@@ -170,7 +170,7 @@
             <!-- Instructor 4 -->
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                     onclick="window.location='{{ route('detalles-instructor-criminologia2') }}'">
+                     onclick="window.location='{{ route('detalles-instructor-criminologia4') }}'">
                     <img src="{{ asset('build/img/instructor/1.png') }}" class="card-img-top" alt="Profesor 3">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Licda. Falvio Arturon</h5>
@@ -179,10 +179,10 @@
                 </div>
             </div>
 
-             <!-- Instructor 4 -->
+             <!-- Instructor 5 -->
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                     onclick="window.location='{{ route('detalles-instructor-criminologia2') }}'">
+                     onclick="window.location='{{ route('detalles-instructor-criminologia5') }}'">
                     <img src="{{ asset('build/img/instructor/debora.png') }}" class="card-img-top" alt="Profesor 3">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Licda. Debora Anahid Soto Colindres</h5>
@@ -190,10 +190,10 @@
                     </div>
                 </div>
             </div>
-            <!-- Instructor 4 -->
+            <!-- Instructor 6 -->
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                     onclick="window.location='{{ route('detalles-instructor-criminologia2') }}'">
+                     onclick="window.location='{{ route('detalles-instructor-criminologia6') }}'">
                     <img src="{{ asset('build/img/instructor/docenteCrimi4.png') }}" class="card-img-top" alt="Profesor 3">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Inga. Evelyn Raquel Cabrera Sánchez </h5>
