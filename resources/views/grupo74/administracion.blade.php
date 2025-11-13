@@ -26,16 +26,16 @@
                     <div class="position-absolute bottom-0 end-0 z-n1">
                         <img src="{{URL::asset('build/img/shapes/shape-2.svg')}}" alt="img">
                     </div>
-                    <div class="position-absolute bottom-0 start-0 mb-md-5 ms-md-n5">
+                    <!--<div class="position-absolute bottom-0 start-0 mb-md-5 ms-md-n5">
                         <img src="{{URL::asset('build/img/icons/icon-1.svg')}}" alt="img">
-                    </div>
-                    <img class="img-fluid img-radius" src="./build/img/about/about-2.svg" alt="img">
+                    </div>-->
+                    <img class="img-fluid img-radius" src="/build/img/about/imgadmi11.jpg" alt="img">
                 </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="ps-0 ps-lg-2 pt-4 pt-lg-0 ps-xl-5">
                         <div class="section-header">
-                            <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">About</span>
+                            <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">Administración</span>
                             <h2>Licenciatura en
                             Ciencias de la Administración</h2>
                             <p>La Licenciatura en Ciencias de la Administración es una carrera que promueve la excelencia académica mediante la implementación de
@@ -76,7 +76,7 @@
     <section class="benefit-section">
         <div class="container">
             <div class="section-header text-center">
-                <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">Our Benefits</span>
+                <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">UMG Guastatoya</span>
                 <h2>Desarrolla tu potencial y lidera en tu profesión</h2>
                 <p>La carrera de  Ciencias de la Administración, guiada por nuestros mentores expertos, puede proporcionar información
                     invaluable para tu desarrollo profesional.</p>
@@ -86,7 +86,7 @@
                     <div class="card shadow-sm">
                         <div class="card-body p-4">
                             <div class="position-absolute top-0 end-0 mt-n3 me-n4">
-                                <img src="./build/img/shapes/bg-1.png" alt="img">
+                                <!--<img src="./build/img/shapes/bg-1.png" alt="img">-->
                             </div>
                             <div class="p-4 rounded-pill bg-primary-transparent d-inline-flex">
                                 <i class="isax isax-book-1 fs-24"></i>
@@ -154,44 +154,150 @@
             <div class="row g-4">
                 <!-- Instructor 1 -->
                 <div class="col-md-4 col-sm-6">
-                    <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                        onclick="window.location='{{ route('detalles-instructor-administracion1') }}'">
-                        <img src="{{ asset('build/img/instructor/profesor1.jpeg') }}" class="card-img-top" alt="Profesor 1">
+                    <div >
+                        <img src="{{ asset('build/img/instructor/docente1admi.jpg') }}" class="card-img-top" alt="Profesor 1">
                         <div class="card-body text-center">
-                            <h5 class="card-title mb-2">Lic. Carlos Gómez</h5>
-                            <p class="card-text text-muted">Docente en Derecho Penal con más de 10 años de experiencia universitaria.</p>
+                            <h5 class="card-title mb-2">Lic. Jose Humberto Martinez Morales</h5>
+                            <p class="card-text text-muted">Docente En administración de empresas con más de 14 años de experiencia universitaria. Maestria en docencia Superior</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Instructor 2 -->
                 <div class="col-md-4 col-sm-6">
-                    <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                        onclick="window.location='{{ route('detalles-instructor-administracion2') }}'">
-                        <img src="{{ asset('build/img/instructors/profesor2.jpg') }}" class="card-img-top" alt="Profesor 2">
+                    <div >
+                        <img src="{{ asset('build/img/instructor/debora soto1.jpg') }}" class="card-img-top" alt="Profesor 2">
                         <div class="card-body text-center">
-                            <h5 class="card-title mb-2">Ing. María López</h5>
-                            <p class="card-text text-muted">Especialista en Redes Sociales y Sistemas, apasionada por la enseñanza práctica.</p>
+                            <h5 class="card-title mb-2">Licda. Debora Anahid Soto Colindres</h5>
+                            <p class="card-text text-muted">Docente En administración de empresas con más de 7 años de experiencia universitaria.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Instructor 3 -->
                 <div class="col-md-4 col-sm-6">
-                    <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                        onclick="window.location='{{ route('detalles-instructor-administracion3') }}'">
-                        <img src="{{ asset('build/img/instructors/profesor3.jpg') }}" class="card-img-top" alt="Profesor 3">
+                    <div >
+                        <img src="{{ asset('build/img/instructor/cordinadora admi.jpg') }}" class="card-img-top" alt="Profesor 3">
                         <div class="card-body text-center">
-                            <h5 class="card-title mb-2">M.Sc. José Hernández</h5>
-                            <p class="card-text text-muted">Docente en Administración Financiera con enfoque en innovación y liderazgo.</p>
+                            <h5 class="card-title mb-2">Licda. Heissell Yesenia Grajeda Solis (COORDINADORA)</h5>
+                            <p class="card-text text-muted"> Docente En administración de empresas con más de 10 años de experiencia universitaria.</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <!-- Instructor 4 -->
+                  <div class="col-md-4 col-sm-6">
+                <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                     onclick="window.location='{{ route('detalles-instructor-sistemas6') }}'">
+                    <img src="{{ asset('build/img/instructor/IngSistemasInstructor/IngEduardoHernandezPerfil.jpeg') }}" class="card-img-top" alt="Profesor 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2">Ing Eduardo Hernández</h5>
+                        <p class="card-text text-muted">Ing en Sistemas de la Información y Ciencias de la Computación (experiencia en Seguridad Informática).</p>
+                    </div>
+                </div>
+            </div>
+              <!-- Instructor 5 -->
+              <div class="col-md-4 col-sm-6">
+                    <div >
+                        <img src="{{ asset('build/img/instructor/maestra2admi.jpg') }}" class="card-img-top" alt="Profesor 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-2"><br><br><br>Licda. Ana Patricia De Leon</h5>
+                            <p class="card-text text-muted">Docente En administración de empresas con más de 9 años de experiencia universitaria. Maestria en Dirección y Gestión del Recurso
+                            Humano</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Instructor 6 -->
+              <div class="col-md-4 col-sm-6">
+                    <div >
+                        <img src="{{ asset('build/img/instructor/maestro33admi.jpg') }}" class="card-img-top" alt="Profesor 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-2"><br><br><br>Lic. Marvin Wosbely Colindres Gutierrez</h5>
+                            <p class="card-text text-muted">Docente En administración de empresas con más de 5 años de experiencia universitaria. Maestria en Dirección y Gestión del Recurso
+                            Humano</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /Instructores -->
+
+<!-- counter -->
+<section class="counter-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-md-6">
+                    <div class="card border-0 mb-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <!--
+                                <div class="counter-icon">
+                                    <img src="/build/img/icons/iconsIngSistemas/networking_3150652.png" alt="img">
+                                </div>
+                                -->
+                                <div class="count-content">
+                                    <h4 class="text-info"><span class="count-digit">+10</span>+</h4>
+                                    <p>Oportunidades laborales</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card border-0 mb-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <!--
+                                <div class="counter-icon">
+                                    <img src="./build/img/icons/counter-icon2.svg" alt="img">
+                                </div>
+                                -->
+                                <div class="count-content">
+                                    <h4 class="text-warning"><span class="count-digit">+10</span>+</h4>
+                                    <p>Catedráticos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card border-0 mb-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <!--
+                                <div class="counter-icon">
+                                    <img src="./build/img/icons/counter-icon3.svg" alt="img">
+                                </div>
+                                -->
+                                <div class="count-content">
+                                    <h4 class="text-skyblue"><span class="count-digit">+15</span>+</h4>
+                                    <p>Cursos certificados</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card border-0 mb-0">
+                        <div class="card-body d-flex align-items-center">
+                            <!--
+                            <div class="counter-icon">
+                            <img src="./build/img/icons/counter-icon4.svg" alt="img">
+                            </div>
+                            -->
+                            <div class="count-content">
+                            <h4 class="text-lightgreen"><span class="count-digit">+10</span>+</h4>
+                                <p>Salones de clases</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- /Instructores -->
-
+    <!-- counter -->
 
 
 
@@ -199,28 +305,34 @@
     <section class="testimonials-section text-center">
         <div class="container">
             <div class="section-header text-center">
-                <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">Featured Instructors</span>
-                <h2>Top Class & Professional Instructors</h2>
-                <p>Words from Those Who’ve Experienced Real Growth.</p>
+                <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block"></span>
+                <h2>Administración</h2>
+                <p>La administración combina conocimientos técnicos, liderazgo y toma de decisiones para dirigir a las personas y los recursos
+                     de una organización hacia el éxito, fomentando la innovación, el trabajo en equipo y la responsabilidad social.</p>
             </div>
             <div class="testimonials-slider lazy mt-4">
                 <div>
                     <div class="testimonials-item rounded-3 bg-white">
                         <div class="position-relative d-inline-flex mb-2">
                             <div class="avatar rounded-circle avatar-xxl border border-white border-3">
-                                <a href="{{url('instructor-details')}}"><img class="img-fluid rounded-circle" src="./build/img/user/user-41.jpg" alt="img"></a>
+                                <!--<a href="{{url('instructor-details')}}"><img class="img-fluid rounded-circle" src="./build/img/user/user-41.jpg" alt="img"></a>
+                             -->
                             </div>
-                            <i class="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1"></i>
+                            <!-- <i class="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1"></i> -->
                         </div>
-                        <h6 class="mb-1"><a href="{{url('instructor-details')}}">Brenda Slaton</a></h6>
-                        <p class="fs-14 mb-3">Designer</p>
-                        <p class="mb-3 text-truncate line-clamb-2">This mentor helped me understand concepts that I had been struggling with for weeks.</p>
+                        <h6 class="mb-1"><a href="{{url('instructor-details')}}">¿Por qué estudiar Administración?</a></h6>
+                        <p class="fs-14 mb-3">Estudiar Administración te permite adquirir los conocimientos y habilidades necesarios para
+                            dirigir, planificar y coordinar los recursos de una empresa u organización. Es una carrera que forma líderes capaces de tomar
+                             decisiones, resolver problemas y alcanzar objetivos de manera eficiente. Además, brinda una visión integral de áreas como
+                              finanzas, recursos humanos, marketing y emprendimiento, preparando al profesional para desenvolverse en distintos sectores
+                              laborales o incluso crear su propio negocio.</p>
+                        <p class="mb-3 text-truncate line-clamb-2"></p>
                         <div>
+                            <!--<i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i> -->
                         </div>
                     </div>
                 </div>
@@ -228,19 +340,21 @@
                     <div class="testimonials-item rounded-3 bg-white">
                         <div class="position-relative d-inline-flex mb-2">
                             <div class="avatar rounded-circle avatar-xxl border border-white border-3">
-                                <a href="{{url('instructor-details')}}"><img class="img-fluid rounded-circle" src="./build/img/user/user-42.jpg" alt="img"></a>
+                               <!-- <a href="{{url('instructor-details')}}"><img class="img-fluid rounded-circle" src="./build/img/user/user-42.jpg" alt="img"></a>-->
                             </div>
-                            <i class="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1"></i>
+                            <!--<i class="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1"></i> -->
                         </div>
-                        <h6 class="mb-1"><a href="{{url('instructor-details')}}">Adrian Dennis</a></h6>
-                        <p class="fs-14 mb-3">Developer</p>
-                        <p class="mb-3 text-truncate line-clamb-2">I’ve learned so much from my mentor’s personal experience.</p>
+                        <h6 class="mb-1"><a href="{{url('instructor-details')}}">El Futuro de la Administración</a></h6>
+                        <p class="fs-14 mb-3"></p>El futuro de la Administración se orienta hacia la innovación, la tecnología y la sostenibilidad.
+                         Los administradores del mañana deberán ser líderes éticos, digitales y capaces de adaptarse a los constantes cambios del
+                          entorno empresarial global.
+                        <p class="mb-3 text-truncate line-clamb-2"></p>
                         <div>
+                            <!--<i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>-->
                         </div>
                     </div>
                 </div>
@@ -248,19 +362,20 @@
                     <div class="testimonials-item rounded-3 bg-white">
                         <div class="position-relative d-inline-flex mb-2">
                             <div class="avatar rounded-circle avatar-xxl border border-white border-3">
-                                <a href="{{url('instructor-details')}}"><img class="img-fluid rounded-circle" src="./build/img/user/user-43.jpg" alt="img"></a>
+                              <!--  <a href="{{url('instructor-details')}}"><img class="img-fluid rounded-circle" src="./build/img/user/user-43.jpg" alt="img"></a>-->
                             </div>
-                            <i class="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1"></i>
+                           <!-- <i class="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1"></i>-->
                         </div>
-                        <h6 class="mb-1"><a href="{{url('instructor-details')}}">Adrian Coztanza</a></h6>
-                        <p class="fs-14 mb-3">Architect</p>
-                        <p class="mb-3 text-truncate line-clamb-2">The advice was useful, but I wish my mentor had been more available for follow-up discussions.</p>
+                        <h6 class="mb-1"><a href="{{url('instructor-details')}}">Competencias Clave del Administrador</a></h6>
+                        <p class="fs-14 mb-3">Las competencias clave del administrador son el liderazgo, la comunicación, la toma de decisiones, la
+                             planificación estratégica, la adaptabilidad, la ética y la capacidad de innovar.</p>
+                        <p class="mb-3 text-truncate line-clamb-2"></p>
                         <div>
+                          <!--  <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>-->
                         </div>
                     </div>
                 </div>
@@ -268,19 +383,21 @@
                     <div class="testimonials-item rounded-3 bg-white">
                         <div class="position-relative d-inline-flex mb-2">
                             <div class="avatar rounded-circle avatar-xxl border border-white border-3">
-                                <a href="{{url('instructor-details')}}"><img class="img-fluid rounded-circle" src="./build/img/user/user-43.jpg" alt="img"></a>
+                                <!--<a href="{{url('instructor-details')}}"><img class="img-fluid rounded-circle" src="./build/img/user/user-43.jpg" alt="img"></a>-->
                             </div>
-                            <i class="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1"></i>
+                           <!-- <i class="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1"></i>-->
                         </div>
-                        <h6 class="mb-1"><a href="{{url('instructor-details')}}">Adrian Coztanza</a></h6>
-                        <p class="fs-14 mb-3">Architect</p>
-                        <p class="mb-3 text-truncate line-clamb-2">The advice was useful, but I wish my mentor had been more available for follow-up discussions.</p>
+                        <h6 class="mb-1"><a href="{{url('instructor-details')}}">Administración y Responsabilidad Social</a></h6>
+                        <p class="fs-14 mb-3">La Administración y la Responsabilidad Social van de la mano, ya que el administrador moderno debe dirigir las
+                            organizaciones con ética, compromiso ambiental y enfoque humano, buscando no solo el éxito económico, sino también el bienestar
+                            social.</p>
+                        <p class="mb-3 text-truncate line-clamb-2"></p>
                         <div>
+                           <!-- <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>-->
                         </div>
                     </div>
                 </div>
@@ -295,15 +412,15 @@
             <div class="row align-items-center">
                 <div class="col-lg-5 pe-md-5">
                     <div class="position-relative">
-                        <img class="img-fluid rounded-4" src="{{URL::asset('build/img/about/about-1.jpg')}}" alt="img">
+                        <img class="img-fluid rounded-4" src="{{URL::asset('/build/img/about/pabellonUMG.jpeg')}}" alt="img">
                         <div class="bg-warning text-center p-3 rounded-5 position-absolute top-0 end-0 z-index-1 d-none d-sm-block my-3 mx-3">
-                            <i class="isax isax-message-question5 heading-color fs-46"></i>
+                           <i class="isax isax-message-question5 heading-color fs-46"></i>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-7">
                     <div class="section-header">
-                        <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">FAQs</span>
+                        <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block"></span>
                         <h2>Preguntas Frecuentes</h2>
                         <p>Explore respuestas sobre las preguntas más comunes sobre nosotros!.</p>
                     </div>
