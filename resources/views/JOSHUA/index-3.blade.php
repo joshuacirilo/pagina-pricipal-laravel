@@ -579,86 +579,154 @@
 <!-- /Estudiar en Mariano Gálvez -->
 
 
-    <!-- Say testimonial Four -->
-    <div class="testimonial-four">
-        <div class="review">
-            <div class="container">
-                <div class="section-header text-center aos" data-aos="fade-up">
-                    <span class="fw-medium text-white fs-18 fw-bold mb-2 d-inline-block">Check out these real reviews</span>
-                    <h2 class="text-white mb-0">Users-love-us Don't take it from us.</h2>
-                </div>
-                <div class="mentor-testimonial lazy slider aos" data-aos="fade-up" data-sizes="50vw ">
-                    <div class="d-flex justify-content-center">
-                        <div class="testimonial-all">
-                            <div class="testimonial-quotes">
-                                <img src="{{URL::asset('build/img/icons/icon-28.png')}}" alt="Img" >
-                            </div>
-                            <div class="testimonial-content text-center align-items-center d-flex">
-                                <div class="testimonial-info ">
-                                    <div class="testimonial-icon">
-                                        <img src="{{URL::asset('build/img/icons/icon-29.png')}}" alt="Img">
-                                    </div>
-                                    <p>I really appreciated my mentor’s insight, but sometimes I felt overwhelmed by the amount of information they provided. It would have been helpful to focus on one or two areas at a time rather than trying to cover everything.</p>
-                                    <div class="testimonial-user">
-                                        <div class="user-img">
-                                            <a href="{{url('instructor-profile')}}"><img src="{{URL::asset('build/img/avatar/avatar-21.jpg')}}" alt="Img" class="img-fluid"></a>
-                                        </div>
-                                        <h6><a href="{{url('instructor-profile')}}">Daziy Millar</a></h6>
-                                        <span>Founder of Awesomeux Technology</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <div class="testimonial-all">
-                            <div class="testimonial-quotes">
-                                <img src="{{URL::asset('build/img/icons/icon-28.png')}}" alt="Img" >
-                            </div>
-                            <div class="testimonial-content text-center align-items-center d-flex">
-                                <div class="testimonial-info ">
-                                    <div class="testimonial-icon">
-                                        <img src="{{URL::asset('build/img/icons/icon-29.png')}}" alt="Img">
-                                    </div>
-                                    <p>I really appreciated my mentor’s insight, but sometimes I felt overwhelmed by the amount of information they provided. It would have been helpful to focus on one or two areas at a time rather than trying to cover everything.</p>
-                                    <div class="testimonial-user">
-                                        <div class="user-img">
-                                            <a href="{{url('instructor-profile')}}"><img src="{{URL::asset('build/img/avatar/avatar-23.jpg')}}" alt="Img" class="img-fluid"></a>
-                                        </div>
-                                        <h6><a href="{{url('instructor-profile')}}">john smith</a></h6>
-                                        <span>Founder of Awesomeux Technology</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <div class="testimonial-all">
-                            <div class="testimonial-quotes">
-                                <img src="{{URL::asset('build/img/icons/icon-28.png')}}" alt="Img" >
-                            </div>
-                            <div class="testimonial-content text-center align-items-center d-flex">
-                                <div class="testimonial-info ">
-                                    <div class="testimonial-icon">
-                                        <img src="{{URL::asset('build/img/icons/icon-29.png')}}" alt="Img">
-                                    </div>
-                                    <p>I really appreciated my mentor’s insight, but sometimes I felt overwhelmed by the amount of information they provided. It would have been helpful to focus on one or two areas at a time rather than trying to cover everything.</p>
-                                    <div class="testimonial-user">
-                                        <div class="user-img">
-                                            <a href="{{url('instructor-profile')}}"><img src="{{URL::asset('build/img/avatar/avatar-22.jpg')}}" alt="Img" class="img-fluid"></a>
-                                        </div>
-                                        <h6><a href="{{url('instructor-profile')}}">David Lee</a></h6>
-                                        <span>Founder of Awesomeux Technology</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!-- Testimoniales / Frases Motivadoras -->
+<div class="testimonial-four">
+    <div class="review">
+        <div class="container">
+            <div class="section-header text-center aos" data-aos="fade-up">
+                <span class="fw-medium text-white fs-18 fw-bold mb-2 d-inline-block">Palabras que inspiran</span>
+                <h2 class="text-white mb-0">Descubre la pasión por aprender en la UMG</h2>
             </div>
+
+            <div class="mentor-testimonial lazy slider aos" data-aos="fade-up" data-sizes="50vw">
+
+                <!-- Frase 1 -->
+                <div class="d-flex justify-content-center">
+                    <div class="testimonial-all">
+                        <div class="testimonial-quotes">
+                            <img src="{{URL::asset('build/img/icons/icon-28.png')}}" alt="Icono">
+                        </div>
+                        <div class="testimonial-content text-center align-items-center d-flex">
+                            <div class="testimonial-info">
+                                <div class="testimonial-icon">
+                                    <img src="{{URL::asset('build/img/icons/icon-29.png')}}" alt="Icono">
+                                </div>
+                                <p>
+                                    “En la Universidad Mariano Gálvez formamos profesionales con propósito, capaces de transformar su entorno a través del conocimiento y los valores.”
+                                </p>
+                                <div class="testimonial-user">
+                                    <div class="user-img">
+                                        <img src="{{URL::asset('build/img/avatar/avatar-21.jpg')}}" alt="Img" class="img-fluid">
+                                    </div>
+                                    <h6>Universidad Mariano Gálvez</h6>
+                                    <span>Educación con valores y excelencia</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frase 2 -->
+                <div class="d-flex justify-content-center">
+                    <div class="testimonial-all">
+                        <div class="testimonial-quotes">
+                            <img src="{{URL::asset('build/img/icons/icon-28.png')}}" alt="Icono">
+                        </div>
+                        <div class="testimonial-content text-center align-items-center d-flex">
+                            <div class="testimonial-info">
+                                <div class="testimonial-icon">
+                                    <img src="{{URL::asset('build/img/icons/icon-29.png')}}" alt="Icono">
+                                </div>
+                                <p>
+                                    “Cada carrera es una oportunidad para descubrir tu potencial y dejar huella en el mundo. En la UMG, el futuro lo construyes tú.”
+                                </p>
+                                <div class="testimonial-user">
+                                    <div class="user-img">
+                                        <img src="{{URL::asset('build/img/avatar/avatar-22.jpg')}}" alt="Img" class="img-fluid">
+                                    </div>
+                                    <h6>Facultad de Ingeniería</h6>
+                                    <span>Innovación y liderazgo tecnológico</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frase 3 -->
+                <div class="d-flex justify-content-center">
+                    <div class="testimonial-all">
+                        <div class="testimonial-quotes">
+                            <img src="{{URL::asset('build/img/icons/icon-28.png')}}" alt="Icono">
+                        </div>
+                        <div class="testimonial-content text-center align-items-center d-flex">
+                            <div class="testimonial-info">
+                                <div class="testimonial-icon">
+                                    <img src="{{URL::asset('build/img/icons/icon-29.png')}}" alt="Icono">
+                                </div>
+                                <p>
+                                    “Estudiar en la UMG no solo te prepara para una profesión, te enseña a servir con integridad, fe y compromiso hacia los demás.”
+                                </p>
+                                <div class="testimonial-user">
+                                    <div class="user-img">
+                                        <img src="{{URL::asset('build/img/avatar/avatar-23.jpg')}}" alt="Img" class="img-fluid">
+                                    </div>
+                                    <h6>Comunidad UMG</h6>
+                                    <span>Comprometidos con la excelencia humana</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frase 4 -->
+                <div class="d-flex justify-content-center">
+                    <div class="testimonial-all">
+                        <div class="testimonial-quotes">
+                            <img src="{{URL::asset('build/img/icons/icon-28.png')}}" alt="Icono">
+                        </div>
+                        <div class="testimonial-content text-center align-items-center d-flex">
+                            <div class="testimonial-info">
+                                <div class="testimonial-icon">
+                                    <img src="{{URL::asset('build/img/icons/icon-29.png')}}" alt="Icono">
+                                </div>
+                                <p>
+                                    “El conocimiento es poder, pero los valores son la guía. En la UMG cultivamos ambos para formar líderes con propósito.”
+                                </p>
+                                <div class="testimonial-user">
+                                    <div class="user-img">
+                                        <img src="{{URL::asset('build/img/avatar/avatar-24.jpg')}}" alt="Img" class="img-fluid">
+                                    </div>
+                                    <h6>Facultad de Humanidades</h6>
+                                    <span>Formación integral y humana</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frase 5 -->
+                <div class="d-flex justify-content-center">
+                    <div class="testimonial-all">
+                        <div class="testimonial-quotes">
+                            <img src="{{URL::asset('build/img/icons/icon-28.png')}}" alt="Icono">
+                        </div>
+                        <div class="testimonial-content text-center align-items-center d-flex">
+                            <div class="testimonial-info">
+                                <div class="testimonial-icon">
+                                    <img src="{{URL::asset('build/img/icons/icon-29.png')}}" alt="Icono">
+                                </div>
+                                <p>
+                                    “Cada día de estudio es un paso más hacia tus sueños. En la UMG, creemos en ti y en el poder de tu esfuerzo.”
+                                </p>
+                                <div class="testimonial-user">
+                                    <div class="user-img">
+                                        <img src="{{URL::asset('build/img/avatar/avatar-25.jpg')}}" alt="Img" class="img-fluid">
+                                    </div>
+                                    <h6>Estudiantes UMG</h6>
+                                    <span>Pasión, esfuerzo y crecimiento constante</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- /slider -->
         </div>
     </div>
-    <!-- /Say testimonial Four -->
+</div>
+<!-- /Testimoniales / Frases Motivadoras -->
+
+
 
     <!-- Become An Instructor -->
     <div class="section become-instructors aos" data-aos="fade-up">
