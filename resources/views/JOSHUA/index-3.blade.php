@@ -252,14 +252,14 @@
     </div>
     <!-- /Feature Course -->
 
-    <!-- Master Skill -->
+    <!-- Master Skill Pagina Cuerpo - Catedratico Coordinador -->
     <div class="section master-skill">
         <div class="container">
             <div class="row align-items-end">
                 <div class="col-lg-6 col-md-12">
                     <div class="section-header aos" data-aos="fade-up">
-                        <span class="fw-medium text-secondary fs-18 fw-bold mb-2 d-inline-block">Ingeniero</span>
-                        <h2>Antonio Valiente </h2>
+                        <span class="fw-medium text-secondary fs-18 fw-bold mb-2 d-inline-block">Coordinador</span>
+                        <h2>Ingeniero: Antonio Valiente </h2>
                         <p>Ingresar a la carrera de Ingeniería en Sistemas es dar un paso hacia un universo lleno de posibilidades. En esta profesión se unen la creatividad, la lógica y la innovación para resolver los desafíos del presente y del futuro. Cada día surgen nuevas tecnologías, y con ellas, nuevas oportunidades de cambiar la forma en que vivimos, trabajamos y nos comunicamos</p>
                     </div>
                     <div class="career-group aos" data-aos="fade-up">
@@ -309,7 +309,7 @@
             </div>
         </div>
     </div>
-    <!-- /Master Skill -->
+    <!-- /Master Skill Pagina Cuerpo - Catedratico Coordinador -->
 
     <!-- Trending Course -->
     <div class="section trend-course">
