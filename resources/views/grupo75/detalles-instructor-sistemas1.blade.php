@@ -134,21 +134,28 @@
                                 <div class="d-flex align-items-center mb-4">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
-                                        <h6 class="mb-1">AWS Certified Cloud Practitioner</h6>
+                                        <h6 class="mb-1">AWS Cloud</h6>
 
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center mb-4">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
-                                        <h6 class="mb-1">Cisco Certified Network Associate (CCNA)</h6>
+                                        <h6 class="mb-1">Desarrollador de Software</h6>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
+                                    <div>
+                                        <h6 class="mb-1">CyberSeguridad</h6>
 
                                     </div>
                                 </div>
                                  <div class="d-flex align-items-center mb-4">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
-                                        <h6 class="mb-1">LPIC-1, LPIC-2, LPIC-3 - Linux Profesional</h6>
+                                        <h6 class="mb-1">Administración de Sistemas</h6>
 
                                     </div>
                                 </div>
@@ -276,7 +283,7 @@
                                         <i class="isax isax-location"></i>
                                     </span>
                                     <div>
-                                        <h6 class="fs-16 fw-medium text-gray-9 mb-0">Address</h6>
+                                        <h6 class="fs-16 fw-medium text-gray-9 mb-0">Dirección</h6>
                                         <p class="mb-0 text-truncate">Guastatoya</p>
                                     </div>
                                 </div>

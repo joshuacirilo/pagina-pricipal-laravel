@@ -270,6 +270,7 @@
                                         <p class="mb-0 text-truncate"></p>
                                     </div>
                                 </div>
+                                <!--
                                 <div class="d-flex align-items-center">
                                     <span class="contact-icon rounded-circle d-flex align-items-center justify-content-center me-3">
                                         <i class="isax isax-call"></i>
@@ -279,6 +280,7 @@
                                         <p class="mb-0"></p>
                                     </div>
                                 </div>
+                                 -->
                             </div>
                         </div>
                     </div>
