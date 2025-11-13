@@ -259,9 +259,9 @@
           <span class="fw-medium text-secondary fs-18 fw-bold mb-2 d-inline-block">Coordinador</span>
           <h2 class="fw-bold text-primary mb-3">Ingeniero Antonio Valiente</h2>
           <p class="text-muted">
-            Ingresar a la carrera de Ingeniería en Sistemas es dar un paso hacia un universo lleno de posibilidades. 
-            En esta profesión se unen la creatividad, la lógica y la innovación para resolver los desafíos del presente 
-            y del futuro. Cada día surgen nuevas tecnologías, y con ellas, nuevas oportunidades de cambiar la forma 
+            Ingresar a la carrera de Ingeniería en Sistemas es dar un paso hacia un universo lleno de posibilidades.
+            En esta profesión se unen la creatividad, la lógica y la innovación para resolver los desafíos del presente
+            y del futuro. Cada día surgen nuevas tecnologías, y con ellas, nuevas oportunidades de cambiar la forma
             en que vivimos, trabajamos y nos comunicamos.
           </p>
         </div>
@@ -323,7 +323,7 @@
 
                         <div class="course-img text-center">
                             <a href="#">
-                                <img class="img-fluid" alt="Egresado" src="{{URL::asset('build/img/course/course-40.jpg')}}">
+                                <img class="img-fluid" alt="Egresado" src="{{URL::asset('build/img/index/egresado1.png')}}">
                             </a>
                         </div>
 
