@@ -144,13 +144,100 @@ section.banner-section, .banner-section-three {
 /* =========================================================
    FOOTER – Azul institucional
    ========================================================= */
-footer, .footer{
-  background:var(--umg-blue-900) !important;
-  color:#fff !important;
-  padding-block: var(--space-6);
+/* ================================
+   FOOTER UMG
+   (solo footer, NO navbar)
+   ================================ */
+
+footer,
+.footer,
+.footer-three,
+.footer-four,
+#umgFooter {
+  background-image: linear-gradient(
+    90deg,
+    var(--umg-blue-900) 0%,
+    var(--umg-blue-700) 100%
+  );
+  background-color: var(--umg-blue-900);
+  color: #ffffff;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.35);
+  position: relative;
+  z-index: 10;
 }
-footer a,.footer a{ color:#fff !important; opacity:.9; }
-footer a:hover,.footer a:hover{ opacity:1; }
+
+/* Texto general del footer */
+footer p,
+footer li,
+footer span,
+#umgFooter p,
+#umgFooter li,
+#umgFooter span {
+  color: #f5f7fb;
+  font-size: 0.95rem;
+}
+
+/* Títulos de columna ("Soporte", "Acerca de", etc.) */
+footer h4,
+footer h5,
+footer h6,
+#umgFooter h4,
+#umgFooter h5 {
+  color: #c62c29;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+#umgFooter span {
+  color: #b0822e;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+/* Links del footer */
+footer a,
+.footer a,
+#umgFooter a {
+  color: var(--umg-whithe-500);
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.15s ease;
+}
+
+footer a:hover,
+.footer a:hover,
+#umgFooter a:hover {
+  color: var(--umg-gold-500);
+  transform: translateY(-1px);
+}
+
+/* Línea superior opcional dorada para separar el footer del contenido */
+#umgFooter,
+footer.footer {
+  border-top: 4px solid var(--umg-gold-500);
+}
+
+/* Ajustes para la parte inferior del footer (derechos reservados, etc.) */
+.footer-bottom,
+#umgFooter .footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  color: #d0d7e6;
+}
+
+/* RESPONSIVE: alineación de texto en móviles */
+@media (max-width: 767.98px) {
+  #umgFooter,
+  footer {
+    text-align: center;
+  }
+
+  #umgFooter .footer-widget,
+  footer .footer-widget {
+    margin-bottom: 1.25rem;
+  }
+}
 
 /* =========================================================
    Componentes comunes (opcional pero útil)
