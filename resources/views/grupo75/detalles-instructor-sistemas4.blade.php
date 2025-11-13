@@ -108,7 +108,7 @@
                                     </div>
                                     <div class="ps-4 timeline-flow">
                                         <div>
-                                            <h6 class="mb-1">Magister Artium en Dirección y Gestión de Recursos Humanos</h6>
+                                            <h6 class="mb-1">Maestría en Dirección y Gestión de Recursos Humanos</h6>
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
@@ -233,6 +233,7 @@
                     </div>
 -->
                     <div class="col-lg-4">
+                        <!--
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="mb-3">Certificaciones</h5>
@@ -252,6 +253,7 @@
                                 </div>
                             </div>
                         </div>
+                         -->
 
                         <div class="card">
                             <div class="card-body">
@@ -262,7 +264,7 @@
                                     </span>
                                     <div>
                                         <h6 class="mb-0">Email</h6>
-                                        <p class="mb-0">j@example.com</p>
+                                        <p class="mb-0">ecabreras9@miumg.edu.gt</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center mb-4">
@@ -270,10 +272,11 @@
                                         <i class="isax isax-location"></i>
                                     </span>
                                     <div>
-                                        <h6 class="fs-16 fw-medium text-gray-9 mb-0">Address</h6>
-                                        <p class="mb-0 text-truncate"></p>
+                                        <h6 class="fs-16 fw-medium text-gray-9 mb-0">Dirección</h6>
+                                        <p class="mb-0 text-truncate">Guastatoya</p>
                                     </div>
                                 </div>
+                                <!--
                                 <div class="d-flex align-items-center">
                                     <span class="contact-icon rounded-circle d-flex align-items-center justify-content-center me-3">
                                         <i class="isax isax-call"></i>
@@ -283,6 +286,7 @@
                                         <p class="mb-0"></p>
                                     </div>
                                 </div>
+                                 -->
                             </div>
                         </div>
                     </div>

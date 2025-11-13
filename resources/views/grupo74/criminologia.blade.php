@@ -4,13 +4,13 @@
 
     @component('components.breadcrumb')
         @slot('title')
-            About Us
+            Y conoceréis la verdad y la verdad os hará libres
         @endslot
         @slot('item1')
             Home
         @endslot
         @slot('item2')
-            About Us
+            Y conoceréis la verdad y la verdad os hará libres
         @endslot
     @endcomponent
 
@@ -184,7 +184,7 @@
                         </div>
                     </div>
                 </div>
-             
+
                   <!-- Instructor 5 -->
                 <div class="col-md-4 col-sm-6">
                     <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
@@ -196,7 +196,7 @@
                         </div>
                     </div>
                 </div>
-                
+
 
                 <!-- Instructor 6 -->
                 <div class="col-md-4 col-sm-6">

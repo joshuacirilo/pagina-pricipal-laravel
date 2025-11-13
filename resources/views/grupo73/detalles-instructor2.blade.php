@@ -86,7 +86,7 @@
 
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="mb-3">About Me</h5>
+                                <h5 class="mb-3">y conoceréis la verdad y la verdad os hará libres</h5>
                                 <p class="mb-3">Very well thought out and articulate communication. Clear milestones, deadlines and fast work. Patience. Infinite patience. No shortcuts. Even if the client is being careless. Some quick example text to build on the card title and bulk the card's content Moltin gives you platform.</p>
                                 <a href="javascript:void(0);" class="read-more-btn">Read More</a>
                             </div>

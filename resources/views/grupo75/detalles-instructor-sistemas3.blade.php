@@ -278,7 +278,7 @@ Ingeniero en Sistemas de Información y Ciencias de la Computación con especial
                                     </span>
                                     <div>
                                         <h6 class="mb-0">Email</h6>
-                                        <p class="mb-0">j@example.com</p>
+                                        <p class="mb-0">oortizp@miumg.edu.gt</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center mb-4">
@@ -286,10 +286,11 @@ Ingeniero en Sistemas de Información y Ciencias de la Computación con especial
                                         <i class="isax isax-location"></i>
                                     </span>
                                     <div>
-                                        <h6 class="fs-16 fw-medium text-gray-9 mb-0">Address</h6>
-                                        <p class="mb-0 text-truncate"></p>
+                                        <h6 class="fs-16 fw-medium text-gray-9 mb-0">Dirección</h6>
+                                        <p class="mb-0 text-truncate">Guastatoya</p>
                                     </div>
                                 </div>
+                                <!--
                                 <div class="d-flex align-items-center">
                                     <span class="contact-icon rounded-circle d-flex align-items-center justify-content-center me-3">
                                         <i class="isax isax-call"></i>
@@ -299,6 +300,7 @@ Ingeniero en Sistemas de Información y Ciencias de la Computación con especial
                                         <p class="mb-0"></p>
                                     </div>
                                 </div>
+                                 -->
                             </div>
                         </div>
                     </div>

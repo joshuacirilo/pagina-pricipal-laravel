@@ -243,73 +243,63 @@
 
     </div>
 </div>
-
-
         <!--Fin oportunidades academicas-->
-
-
         </div>
     </div>
     <!-- /Feature Course -->
 
-    <!-- carta presentacion ingeniero  -->
-    <div class="section master-skill">
-        <div class="container">
-            <div class="row align-items-end">
-                <div class="col-lg-6 col-md-12">
-                    <div class="section-header aos" data-aos="fade-up">
-                        <span class="fw-medium text-secondary fs-18 fw-bold mb-2 d-inline-block">Coordinador</span>
-                        <h2>Ingeniero: Antonio Valiente </h2>
-                        <p>Ingresar a la carrera de Ingeniería en Sistemas es dar un paso hacia un universo lleno de posibilidades. En esta profesión se unen la creatividad, la lógica y la innovación para resolver los desafíos del presente y del futuro. Cada día surgen nuevas tecnologías, y con ellas, nuevas oportunidades de cambiar la forma en que vivimos, trabajamos y nos comunicamos</p>
-                    </div>
-                    <div class="career-group aos" data-aos="fade-up">
-                        <div class="row row-gap-4">
-                            <div class="col-lg-6 col-md-6 d-flex">
-                                <div class="certified-item d-flex align-items-center flex-fill">
-                                    <div class="certified-img ">
-                                        <img src="{{URL::asset('build/img/icons/icon-22.svg')}}" alt="Img" class="img-fluid">
-                                    </div>
-                                    <p>Ser ingeniero en sistemas es transformar los sueños en programas y las ideas en realidades.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 d-flex">
-                                <div class="certified-item d-flex align-items-center flex-fill">
-                                    <div class="certified-img ">
-                                        <img src="{{URL::asset('build/img/icons/icon-17.svg')}}" alt="Img" class="img-fluid">
-                                    </div>
-                                    <p>conectando conocimiento, creando futuro.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 d-flex">
-                                <div class="certified-item d-flex align-items-center flex-fill">
-                                    <div class="certified-img "><img src="{{URL::asset('build/img/icons/icon-23.svg')}}" alt="Img" class="img-fluid">
-                                    </div>
-                                    <p>Conecta con el mundo, domina tu destino.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 d-flex">
-                                <div class="certified-item d-flex align-items-center flex-fill">
-                                    <div class="certified-img ">
-                                        <img src="{{URL::asset('build/img/icons/icon-16.svg')}}" alt="Img" class="img-fluid">
-                                    </div>
-                                    <p>Programa tu éxito, conquista tus metas.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <div class="career-img aos" data-aos="fade-up">
-                        <img src="{{URL::asset('build/img/bg/bg-2.png')}}" alt="Img" class="img-fluid master-bg">
-                        <img src="{{asset('build/img/Tony.jpg') }}" alt="Tony" class="img-fluid girl-img">
-                        <img src="{{URL::asset('build/img/icons/icon-19.svg')}}" alt="Img" class="img-fluid float-img-02">
-                        <img src="{{URL::asset('build/img/icons/icon-21.svg')}}" alt="Img" class="img-fluid float-img-04">
-                    </div>
-                </div>
-            </div>
+<!-- Carta de presentación del Ingeniero -->
+<div class="section master-skill py-5">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+
+      <!-- Columna izquierda: Texto -->
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+        <div class="section-header aos" data-aos="fade-up">
+          <span class="fw-medium text-secondary fs-18 fw-bold mb-2 d-inline-block">Coordinador</span>
+          <h2 class="fw-bold text-primary mb-3">Ingeniero Antonio Valiente</h2>
+          <p class="text-muted">
+            Ingresar a la carrera de Ingeniería en Sistemas es dar un paso hacia un universo lleno de posibilidades. 
+            En esta profesión se unen la creatividad, la lógica y la innovación para resolver los desafíos del presente 
+            y del futuro. Cada día surgen nuevas tecnologías, y con ellas, nuevas oportunidades de cambiar la forma 
+            en que vivimos, trabajamos y nos comunicamos.
+          </p>
         </div>
+
+        <!-- Tarjeta de perfil profesional -->
+        <div class="card shadow-sm border-0 rounded-4 p-4 aos" data-aos="fade-up">
+          <div class="d-flex align-items-start">
+            <div class="me-3">
+              <img src="{{ URL::asset('build/img/icons/icon-22.svg') }}" alt="Icono" class="img-fluid" width="55">
+            </div>
+            <div>
+              <h5 class="fw-bold mb-1 text-dark">Administrador de Sistemas</h5>
+              <h6 class="fw-bold mb-1 text-dark">Especialista en Ciberseguridad</h6>
+              <h6 class="fw-bold mb-3 text-dark">FullStack Developer</h6>
+
+              <p class="fw-semibold text-secondary mb-2">Certificaciones</p>
+              <ul class="list-unstyled mb-0 text-muted small">
+                <li>• AWS Certified Cloud Practitioner</li>
+                <li>• Cisco Certified Network Associate (CCNA)</li>
+                <li>• LPIC-1, LPIC-2, LPIC-3 — Linux Profesional</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna derecha: Imagen -->
+      <div class="col-lg-5 col-md-12 text-center aos" data-aos="fade-up">
+        <div class="position-relative d-inline-block">
+          <img src="{{ URL::asset('build/img/bg/bg-2.png') }}" alt="Fondo" class="img-fluid master-bg position-absolute top-0 start-0 w-100 h-100 rounded-4">
+          <img src="{{ asset('build/img/Tony.jpg') }}" alt="Tony" class="img-fluid girl-img rounded-4 shadow-lg position-relative" style="width: 380px; height: auto; object-fit: cover;">
+        </div>
+      </div>
+
     </div>
-    <!-- /carta de presentacion -->
+  </div>
+</div>
+<!-- /Carta de presentación -->
 
     <!-- Trending Course -->
     <div class="section trend-course">
