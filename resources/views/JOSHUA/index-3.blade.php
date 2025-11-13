@@ -407,124 +407,98 @@
 
 
         <!--Congresos-->
-        <div class="instructors-course aos" data-aos="fade-up" data-autoplay="true">
 
-            <!-- 1 -->
-            <div class="instructor-item instructor-item-two">
-                <div class="instructors-img">
-                    <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/instructor/instructor-09.jpg')}}">
+                <div class="section-header w-100 text-center">
+                    <h2 class="mb-0">Eventos Importantes</h2>
                 </div>
-                <div class="instructor-content text-center">
-                    <h3 class="title">Congreso de Derecho Penal</h3>
-                    <p class="text-secondary">Análisis jurídico sobre reformas penales y aplicación en Guatemala.</p>
-                </div>
-            </div>
 
-            <!-- 2 -->
-            <div class="instructor-item instructor-item-two">
-                <div class="instructors-img">
-                    <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/instructor/instructor-10.jpg')}}">
-                </div>
-                <div class="instructor-content text-center">
-                    <h3 class="title">Congreso de Administración</h3>
-                    <p class="text-secondary">Tendencias modernas en liderazgo, emprendimiento y gestión empresarial.</p>
-                </div>
-            </div>
+                <div class="instructors-course owl-carousel aos" data-aos="fade-up" data-autoplay="true">
+                    <!-- 1 -->
+                    <div class="instructor-item instructor-item-two">
+                        <div class="instructors-img">
+                            <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/index/congresoderecho.jpeg')}}">
+                        </div>
+                        <div class="instructor-content text-center">
+                            <h3 class="title">Congreso de Derecho Penal</h3>
+                            <p class="text-secondary">Análisis jurídico sobre reformas penales y aplicación en Guatemala.</p>
+                        </div>
+                    </div>
 
-            <!-- 3 -->
-            <div class="instructor-item instructor-item-two">
-                <div class="instructors-img">
-                    <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/instructor/instructor-11.jpg')}}">
-                </div>
-                <div class="instructor-content text-center">
-                    <h3 class="title">Congreso de Criminología</h3>
-                    <p class="text-secondary">Investigación criminal, perfiles criminológicos y prevención del delito.</p>
-                </div>
-            </div>
+                    <!-- 2 -->
+                    <div class="instructor-item instructor-item-two">
+                        <div class="instructors-img">
+                            <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/index/congresoadministracion.jpeg')}}">
+                        </div>
+                        <div class="instructor-content text-center">
+                            <h3 class="title">Congreso de Administración</h3>
+                            <p class="text-secondary">Tendencias modernas en liderazgo, emprendimiento y gestión empresarial.</p>
+                        </div>
+                    </div>
 
-            <!-- 4 -->
-            <div class="instructor-item instructor-item-two">
-                <div class="instructors-img">
-                    <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/instructor/instructor-12.jpg')}}">
-                </div>
-                <div class="instructor-content text-center">
-                    <h3 class="title">Congreso de Trabajo Social</h3>
-                    <p class="text-secondary">Acción comunitaria y fortalecimiento de políticas de bienestar social.</p>
-                </div>
-            </div>
+                    <!-- 3 -->
+                    <div class="instructor-item instructor-item-two">
+                        <div class="instructors-img">
+                            <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/index/congresocriminologia.jpeg')}}">
+                        </div>
+                        <div class="instructor-content text-center">
+                            <h3 class="title">Congreso de Criminología</h3>
+                            <p class="text-secondary">Investigación criminal, perfiles criminológicos y prevención del delito.</p>
+                        </div>
+                    </div>
 
-            <!-- 5 -->
-            <div class="instructor-item instructor-item-two">
-                <div class="instructors-img">
-                    <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/instructor/instructor-10.jpg')}}">
-                </div>
-                <div class="instructor-content text-center">
-                    <h3 class="title">Congreso de Ingeniería en Sistemas</h3>
-                    <p class="text-secondary">Ciberseguridad, desarrollo de software y tendencias tecnológicas.</p>
-                </div>
-            </div>
+                    <!-- 4 -->
+                    <div class="instructor-item instructor-item-two">
+                        <div class="instructors-img">
+                            <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/index/congresotrabajosocial.jpeg')}}">
+                        </div>
+                        <div class="instructor-content text-center">
+                            <h3 class="title">Congreso de Trabajo Social</h3>
+                            <p class="text-secondary">Acción comunitaria y fortalecimiento de políticas de bienestar social.</p>
+                        </div>
+                    </div>
 
-            <!-- 6 -->
-            <div class="instructor-item instructor-item-two">
-                <div class="instructors-img">
-                    <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/instructor/instructor-09.jpg')}}">
-                </div>
-                <div class="instructor-content text-center">
-                    <h3 class="title">Congreso de Auditoría</h3>
-                    <p class="text-secondary">Normas internacionales de auditoría y control financiero moderno.</p>
-                </div>
-            </div>
+                    <!-- 5 -->
+                    <div class="instructor-item instructor-item-two">
+                        <div class="instructors-img">
+                            <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/index/congresosistemas.jpg')}}">
+                        </div>
+                        <div class="instructor-content text-center">
+                            <h3 class="title">Congreso de Ingeniería en Sistemas</h3>
+                            <p class="text-secondary">Ciberseguridad, desarrollo de software y tendencias tecnológicas.</p>
+                        </div>
+                    </div>
 
-        </div>
+                    <!-- 6 -->
+                    <div class="instructor-item instructor-item-two">
+                        <div class="instructors-img">
+                            <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/index/congresocriminologia.jpeg')}}">
+                        </div>
+                        <div class="instructor-content text-center">
+                            <h3 class="title">Congreso de Auditoría</h3>
+                            <p class="text-secondary">Normas internacionales de auditoría y control financiero moderno.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                $('.instructors-course').owlCarousel({
+                    loop: true,
+                    margin: 20,
+                    autoplay: true,
+                    autoplayTimeout: 2500,
+                    autoplayHoverPause: false,
+                    responsive:{
+                        0:{ items:1 },
+                        768:{ items:2 },
+                        1024:{ items:3 }
+                    }
+                });
+                </script>
+
 
         </div>
     </div>
     <!-- /Trending Course -->
-
-    <!-- Leading Companies -->
-    <div class="section lead-companies">
-        <div class="container">
-            <div class="section-header text-center aos" data-aos="fade-up">
-                <span class="fw-medium text-secondary fs-18 fw-bold mb-2 d-inline-block">Trusted By</span>
-                <h2 class="mb-0">500+ Leading Universities And Companies</h2>
-            </div>
-            <div class="lead-group aos" data-aos="fade-up">
-                <div class="lead-group-slider owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="lead-img">
-                            <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/client/22.svg')}}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="lead-img">
-                            <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/client/23.svg')}}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="lead-img">
-                            <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/client/24.svg')}}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="lead-img">
-                            <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/client/25.svg')}}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="lead-img">
-                            <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/client/26.svg')}}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="lead-img">
-                            <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/client/27.svg')}}">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Leading Companies -->
 
    <!-- Estudiar en Mariano Gálvez -->
 <div class="section share-knowledge">
@@ -728,54 +702,7 @@
 
 
 
-    <!-- Become An Instructor -->
-    <div class="section become-instructors aos" data-aos="fade-up">
-        <img src="{{URL::asset('build/img/bg/bg-5.png')}}" alt="" class="img-fluid become-instructors-bg1">
-        <img src="{{URL::asset('build/img/bg/bg-6.png')}}" alt="" class="img-fluid become-instructors-bg2">
-        <div class="container">
-            <div class="row row-gap-3">
-                <div class="col-md-6 d-flex">
-                    <div class="student-mentor d-flex flex-fill">
-                        <div class="row align-items-center">
-                            <div class="col-lg-7 col-md-12">
-                                <div class="top-instructors">
-                                    <h4>Become An Instructor</h4>
-                                    <p>Top instructors from around the world teach millions of students on Mentoring.</p>
-                                    <a href="{{url('become-an-instructor')}}" class="btn btn-secondary btn-xl">Register as Instructor</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-5 col-md-12">
-                                <div class="mentor-img">
-                                    <img class="img-fluid d-none d-lg-flex" alt="Img" src="{{URL::asset('build/img/feature/feature-15.svg')}}">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 d-flex">
-                    <div class="student-mentor bg-dark d-flex flex-fill">
-                        <div class="row align-items-center">
-                            <div class="col-lg-7 col-md-12">
-                                <div class="top-instructors">
-                                    <h4>Transform Access To Education</h4>
-                                    <p>Create an account to receive our newsletter course promotions.</p>
-                                    <a href="{{url('become-an-instructor')}}" class="btn btn-secondary btn-xl">Register as Instructor</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-5 col-md-12">
-                                <div class="mentor-img d-none d-lg-flex">
-                                    <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/feature/feature-14.svg')}}">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Become An Instructor -->
-
-    <!-- Latest Blog -->
+    <!-- Blog -->
     <div class="section latest-blog">
         <div class="home-three-sec-bg">
             <img src="{{URL::asset('build/img/bg/bg-3.png')}}" alt="img" class="img-fluid sec-bg-01">
@@ -783,126 +710,85 @@
         </div>
         <div class="container">
             <div class="section-header text-center aos" data-aos="fade-up">
-                <h2>Latest Blogs</h2>
-                <p class="mb-0">Dont Miss Stay Updated with the Latest Articles and Insights</p>
+                <h2>Noticias UMG</h2>
+                <p class="mb-0">Mantente informado sobre actividades, logros y eventos importantes de la Universidad Mariano Gálvez</p>
             </div>
+
             <div class="row row-gap-4 justify-content-center">
+
+                <!-- Blog 1 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="blog-wrap shadow-sm mb-0">
                         <div class="blog-img">
-                            <a href="{{url('blog-grid')}}">
-                                <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/blog/blog-40.jpg')}}">
+                            <a href="https://es.wikipedia.org/wiki/Universidad_Mariano_G%C3%A1lvez" target="_blank">
+                                <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/index/blog1.png')}}">
                             </a>
                         </div>
                         <div class="blog-content">
                             <div class="blog-info mb-3">
-                                <a href="javascript:void(0);" class="blog-category">Marketing</a>
-                                <p class="blog-date"><i class="isax isax-calendar-1"></i>May 15, 2020</p>
+                                <a href="javascript:void(0);" class="blog-category">UMG</a>
+                                <p class="blog-date"><i class="isax isax-calendar-1"></i>Feb 10, 2025</p>
                             </div>
-                            <h5><a href="{{url('blog-grid')}}">How to Find the Perfect Mentor for Your Academic Journey</a></h5>
+                            <h5>
+                                <a href="https://es.wikipedia.org/wiki/Universidad_Mariano_G%C3%A1lvez" target="_blank">
+                                    UMG inaugura nuevos programas académicos en sus sedes departamentales
+                                </a>
+                            </h5>
                         </div>
                     </div>
                 </div>
+
+                <!-- Blog 2 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="blog-wrap shadow-sm mb-0">
                         <div class="blog-img">
-                            <a href="{{url('blog-grid')}}">
-                                <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/blog/blog-41.jpg')}}">
+                            <a href="https://es.wikipedia.org/wiki/Guatemala" target="_blank">
+                                <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/index/blog2.jpeg')}}">
                             </a>
                         </div>
                         <div class="blog-content">
                             <div class="blog-info mb-3">
-                                <a href="javascript:void(0);" class="blog-category">Statistics</a>
-                                <p class="blog-date"><i class="isax isax-calendar-1"></i>May 15, 2020</p>
+                                <a href="javascript:void(0);" class="blog-category">Educación</a>
+                                <p class="blog-date"><i class="isax isax-calendar-1"></i>Feb 12, 2025</p>
                             </div>
-                            <h5><a href="{{url('blog-grid')}}">Unlocking Your Potential in School and Beyond</a></h5>
+                            <h5>
+                                <a href="https://es.wikipedia.org/wiki/Guatemala" target="_blank">
+                                    UMG fortalece proyectos de investigación para el desarrollo del país
+                                </a>
+                            </h5>
                         </div>
                     </div>
                 </div>
+
+                <!-- Blog 3 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="blog-wrap shadow-sm mb-0">
                         <div class="blog-img">
-                            <a href="{{url('blog-grid')}}">
-                                <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/blog/blog-42.jpg')}}">
+                            <a href="https://es.wikipedia.org/wiki/Estudio_universitario" target="_blank">
+                                <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/index/blog3.jpeg')}}">
                             </a>
                         </div>
                         <div class="blog-content">
                             <div class="blog-info mb-3">
-                                <a href="javascript:void(0);" class="blog-category">Learning</a>
-                                <p class="blog-date"><i class="isax isax-calendar-1"></i>May 15, 2020</p>
+                                <a href="javascript:void(0);" class="blog-category">Eventos</a>
+                                <p class="blog-date"><i class="isax isax-calendar-1"></i>Feb 14, 2025</p>
                             </div>
-                            <h5><a href="{{url('blog-grid')}}">11 Tips to Help You Get New Clients with the design knowledge</a></h5>
+                            <h5>
+                                <a href="https://es.wikipedia.org/wiki/Estudio_universitario" target="_blank">
+                                    Congreso académico reúne a estudiantes y profesionales en la UMG
+                                </a>
+                            </h5>
                         </div>
                     </div>
                 </div>
+
             </div>
-            <div class="enroll-group aos" data-aos="fade-up">
-                <div class="row row-gap-3 justify-content-center">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="enroll-course d-flex align-items-center">
-                            <div class="enroll-img">
-                                <img src="{{URL::asset('build/img/icons/icon-5.svg')}}" alt="Img" class="img-fluid">
-                            </div>
-                            <div class="course-count">
-                                <h3><span class="counterUp">3,490</span></h3>
-                                <p>Students Enrolled</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="enroll-course d-flex align-items-center">
-                            <div class="enroll-img ">
-                                <img src="{{URL::asset('build/img/icons/icon-6.svg')}}" alt="Img" class="img-fluid">
-                            </div>
-                            <div class="course-count">
-                                <h3><span class="counterUp" >255</span></h3>
-                                <p>Total Courses</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="enroll-course d-flex align-items-center">
-                            <div class="enroll-img ">
-                                <img src="{{URL::asset('build/img/icons/icon-7.svg')}}" alt="Img" class="img-fluid">
-                            </div>
-                            <div class="course-count">
-                                <h3><span class="counterUp" >15</span></h3>
-                                <p>Countries</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="lab-course">
-                <div class="client-slider aos" data-aos="fade-up">
-                    <div>
-                        <img src="{{URL::asset('build/img/icons/icon-8.svg')}}" alt="Img" class="img-fluid">
-                    </div>
-                    <div>
-                        <img src="{{URL::asset('build/img/icons/icon-9.svg')}}" alt="Img" class="img-fluid">
-                    </div>
-                    <div>
-                        <img src="{{URL::asset('build/img/icons/icon-10.svg')}}" alt="Img" class="img-fluid">
-                    </div>
-                    <div>
-                        <img src="{{URL::asset('build/img/icons/icon-11.svg')}}" alt="Img" class="img-fluid">
-                    </div>
-                    <div>
-                        <img src="{{URL::asset('build/img/icons/icon-12.svg')}}" alt="Img" class="img-fluid">
-                    </div>
-                    <div>
-                        <img src="{{URL::asset('build/img/icons/icon-13.svg')}}" alt="Img" class="img-fluid">
-                    </div>
-                    <div>
-                        <img src="{{URL::asset('build/img/icons/icon-14.svg')}}" alt="Img" class="img-fluid">
-                    </div>
-                    <div>
-                        <img src="{{URL::asset('build/img/icons/icon-15.svg')}}" alt="Img" class="img-fluid">
-                    </div>
-                </div>
-            </div>
+
+
+
         </div>
     </div>
-    <!-- /Latest Blog -->
+
+    <!-- /Blog -->
 
 @endsection
