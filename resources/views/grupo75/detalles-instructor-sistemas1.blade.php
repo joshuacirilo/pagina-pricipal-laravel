@@ -263,6 +263,16 @@
                                         <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/certificadoCloudAWSPractt.png')}}" alt="img" class="img-fluid">
                                     </div>
                                 </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="certificate-img rounded-circle me-2">
+                                        <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/CertificadoCiscoCCNA.jpeg')}}" alt="img" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="certificate-img rounded-circle me-2">
+                                        <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/CertificadoLinux.jpeg')}}" alt="img" class="img-fluid">
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -275,7 +285,7 @@
                                     </span>
                                     <div>
                                         <h6 class="mb-0">Email</h6>
-                                        <p class="mb-0">j@example.com</p>
+                                        <p class="mb-0">ovalientea@miumg.edu.gt</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center mb-4">

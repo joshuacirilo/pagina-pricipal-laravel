@@ -249,89 +249,54 @@
     <section class="testimonials-section text-center">
         <div class="container">
             <div class="section-header text-center">
-                <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">Featured Instructors</span>
-                <h2>Top Class & Professional Instructors</h2>
-                <p>Words from Those Who’ve Experienced Real Growth.</p>
+                <h2>Licenciatura en Contaduría y Auditoría</h2>
+                <p>Esta carrera forma profesionales expertos en el análisis, control y gestión de la información financiera de las organizaciones. Los estudiantes desarrollan competencias en contabilidad, auditoría, normativas internacionales y herramientas tecnológicas aplicadas al ámbito tributario y financiero..</p>
             </div>
             <div class="testimonials-slider lazy mt-4">
                 <div>
                     <div class="testimonials-item rounded-3 bg-white">
                         <div class="position-relative d-inline-flex mb-2">
                             <div class="avatar rounded-circle avatar-xxl border border-white border-3">
-                                <a href="{{url('instructor-details')}}"><img class="img-fluid rounded-circle" src="./build/img/user/user-41.jpg" alt="img"></a>
                             </div>
-                            <i class="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1"></i>
                         </div>
-                        <h6 class="mb-1"><a href="{{url('instructor-details')}}">Brenda Slaton</a></h6>
-                        <p class="fs-14 mb-3">Designer</p>
-                        <p class="mb-3 text-truncate line-clamb-2">This mentor helped me understand concepts that I had been struggling with for weeks.</p>
+                        <h6 class="mb-1">¿Por qué estudiar Licenciatura en Contaduría y Auditoría?</h6>
+                        <p class="fs-14 mb-3">Esta carrera ofrece una sólida formación en el ámbito financiero y contable, preparando profesionales capaces de gestionar, auditar y analizar la información económica de cualquier organización. Con un plan de estudios actualizado en normativas internacionales y herramientas tecnológicas, los graduados se integran a un campo laboral estable y con alta demanda, tanto en el sector público como privado, contribuyendo a la transparencia y sostenibilidad de las empresas.</p>
                         <div>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
+
+                    </div>
+                </div>
+                <div>
+                    <div class="testimonials-item rounded-3 bg-white">
+                        <h6 class="mb-1">
+                        <div class="position-relative d-inline-flex mb-2">
+                            <div class="avatar rounded-circle avatar-xxl border border-white border-3">
+                            </div>
                         </div>
+                        <h6 class="mb-1">El Futuro de la Lic. en Contaduría y Auditoría</h6>
+                        <p class="fs-14 mb-3">El campo de la contaduría y auditoría está experimentando una transformación impulsada por la tecnología y las normativas globales. Los profesionales de esta disciplina ya no se limitan al registro de operaciones financieras, sino que ahora asumen roles estratégicos en la gestión de riesgos, el análisis de datos y la implementación de sistemas de control automatizados. El futuro de la carrera se orienta hacia la integración de habilidades técnicas y analíticas, preparando a los graduados para liderar en un entorno empresarial cada vez más digitalizado y global.</p>
+
                     </div>
                 </div>
                 <div>
                     <div class="testimonials-item rounded-3 bg-white">
                         <div class="position-relative d-inline-flex mb-2">
                             <div class="avatar rounded-circle avatar-xxl border border-white border-3">
-                                <a href="{{url('instructor-details')}}"><img class="img-fluid rounded-circle" src="./build/img/user/user-42.jpg" alt="img"></a>
                             </div>
-                            <i class="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1"></i>
                         </div>
-                        <h6 class="mb-1"><a href="{{url('instructor-details')}}">Adrian Dennis</a></h6>
-                        <p class="fs-14 mb-3">Developer</p>
-                        <p class="mb-3 text-truncate line-clamb-2">I’ve learned so much from my mentor’s personal experience.</p>
-                        <div>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                        </div>
+                        <h6 class="mb-1">Competencias Clave del Lic. en Contaduría y Auditoría</h6>
+
+                        <p class="fs-14 mb-3">El profesional egresado destaca por su capacidad para implementar sistemas de control interno, realizar auditorías financieras y aplicar normativas contables internacionales. Combina habilidades analíticas con un enfoque crítico para la toma de decisiones, gestionando riesgos y optimizando los procesos financieros. Además, domina herramientas tecnológicas para el análisis de datos y la emisión de informes confiables.</p>
+
                     </div>
                 </div>
                 <div>
                     <div class="testimonials-item rounded-3 bg-white">
                         <div class="position-relative d-inline-flex mb-2">
                             <div class="avatar rounded-circle avatar-xxl border border-white border-3">
-                                <a href="{{url('instructor-details')}}"><img class="img-fluid rounded-circle" src="./build/img/user/user-43.jpg" alt="img"></a>
                             </div>
-                            <i class="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1"></i>
                         </div>
-                        <h6 class="mb-1"><a href="{{url('instructor-details')}}">Adrian Coztanza</a></h6>
-                        <p class="fs-14 mb-3">Architect</p>
-                        <p class="mb-3 text-truncate line-clamb-2">The advice was useful, but I wish my mentor had been more available for follow-up discussions.</p>
-                        <div>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="testimonials-item rounded-3 bg-white">
-                        <div class="position-relative d-inline-flex mb-2">
-                            <div class="avatar rounded-circle avatar-xxl border border-white border-3">
-                                <a href="{{url('instructor-details')}}"><img class="img-fluid rounded-circle" src="./build/img/user/user-43.jpg" alt="img"></a>
-                            </div>
-                            <i class="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1"></i>
-                        </div>
-                        <h6 class="mb-1"><a href="{{url('instructor-details')}}">Adrian Coztanza</a></h6>
-                        <p class="fs-14 mb-3">Architect</p>
-                        <p class="mb-3 text-truncate line-clamb-2">The advice was useful, but I wish my mentor had been more available for follow-up discussions.</p>
-                        <div>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                        </div>
+                        <h6 class="mb-1">Licenciatura en Contaduría y Auditoría y Responsabilidad Social</h6>
+                        <p class="fs-14 mb-3">Más allá del ámbito técnico, esta carrera forma profesionales comprometidos con la ética y la responsabilidad social. Los contadores y auditores promueven la transparencia financiera, contribuyen al cumplimiento de obligaciones fiscales y apoyan el desarrollo económico sostenible. Su labor es fundamental para generar confianza en las organizaciones y fomentar prácticas empresariales alineadas con el bienestar social.</p>
                     </div>
                 </div>
             </div>
@@ -378,7 +343,7 @@
                             </h2>
                             <div id="collapsecustomicon1Two" class="accordion-collapse collapse" aria-labelledby="headingcustomicon1Two" data-bs-parent="#accordioncustomicon1Example">
                              <div class="accordion-body pt-0">
-                                 <p>Puede encotrar más detalles en la sección de Centro de Informaciones para revisar el pensum de estudios o bien visitar la oficina de su Centro UMG más cercano.</p>
+                                 <p>La carrera de Contaduría y Auditoría integra una formación completa que abarca contabilidad básica y avanzada, normas internacionales de información financiera y auditoría, legislación mercantil y tributaria, matemática financiera, análisis de estados financieros y gestión de riesgos. Incluye también cursos especializados en costos, auditoría de sistemas, ética profesional y desarrollo de proyectos, preparando profesionales para los desafíos del entorno financiero y empresarial actual. Puede encontrar más información en la sección de <strong>Centro de Informaciones</strong> o bien visitar la oficina del Centro UMG Guastatoya.</p>
                             </div>
                             </div>
                         </div>

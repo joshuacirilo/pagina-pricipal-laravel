@@ -254,17 +254,12 @@ Ingeniero en Sistemas de Información y Ciencias de la Computación con especial
                                 <h5 class="mb-3">Certificaciones</h5>
                                 <div class="d-flex align-items-center">
                                     <div class="certificate-img rounded-circle me-2">
-                                        <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/certificadoCloudAWSPractt.png')}}" alt="img" class="img-fluid">
+                                        <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/certificadoAWSSolutionsArch.jpeg')}}" alt="img" class="img-fluid">
                                     </div>
                                     <div class="certificate-img rounded-circle me-2">
-                                        <img src="{{URL::asset('build/img/certificates/certificate-02.svg')}}" alt="img" class="img-fluid">
+                                        <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/certificadoScrum.jpeg')}}" alt="img" class="img-fluid">
                                     </div>
-                                    <div class="certificate-img rounded-circle me-2">
-                                        <img src="{{URL::asset('build/img/certificates/certificate-03.svg')}}" alt="img" class="img-fluid">
-                                    </div>
-                                    <div class="certificate-img rounded-circle">
-                                        <img src="{{URL::asset('build/img/certificates/certificate-01.svg')}}" alt="img" class="img-fluid">
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
