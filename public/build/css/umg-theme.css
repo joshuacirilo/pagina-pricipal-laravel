@@ -237,6 +237,14 @@ footer.footer {
   footer .footer-widget {
     margin-bottom: 1.25rem;
   }
+  /* Tamaño del logo del footer */
+
+/* Logo SOLO del FOOTER */
+#umgFooter .footer-logo img {
+  width: 10px !important;   /* ajusta este valor */
+}
+
+
 }
 
 /* =========================================================
@@ -532,3 +540,12 @@ header a:hover, .header a:hover, .navbar a:hover, #umgHeader a:hover{
     visibility: hidden !important;
   }
 }
+/* DEBUG: probar si agarro el logo del FOOTER */
+/*footer .footer-logo img {
+  border: 4px solid red !important;
+}*/
+
+footer .footer-logo img {
+  width: 120px !important;
+}
+
