@@ -571,18 +571,24 @@ section.banner-section,
 /* Igualar altura de TODAS las tarjetas tipo card */
 .umg-card,
 .card,
+/* Igualar SOLO las tarjetas de las páginas de información (las tres columnas) */
 .feature-box,
 .course-widget,
-.service-widget {
+.service-widget,
+.umg-card {
     height: 100% !important;
     display: flex;
     flex-direction: column;
 }
 
-/* Contenido interno también se ajusta */
-.umg-card .card-body,
-.card .card-body,
 .feature-box .feature-content,
-.service-widget .service-content {
+.course-widget .course-content,
+.service-widget .service-content,
+.umg-card .card-body {
     flex: 1 1 auto;
+}
+/* En páginas de detalle de instructor, NO igualar altura de las cards */
+.instructor-detail-content .card {
+    height: auto !important;
+    display: block !important;
 }

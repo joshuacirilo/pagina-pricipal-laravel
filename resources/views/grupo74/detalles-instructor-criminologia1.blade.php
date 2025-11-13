@@ -3,14 +3,12 @@
 @section('content')
     @component('components.breadcrumb')
         @slot('title')
-            Instructor Details
-        @endslot
+            Conoce a nuestros profesores        @endslot
         @slot('item1')
             Home
         @endslot
         @slot('item2')
-            Instructor Details
-        @endslot
+            Conoce a nuestros profesores        @endslot
     @endcomponent
         <!-- Instructor -->
         <div class="instructor-detail-content">
