@@ -580,7 +580,7 @@
                                 </p>
                                 <div class="testimonial-user">
                                     <div class="user-img">
-                                        <img src="{{URL::asset('build/img/avatar/avatar-21.jpg')}}" alt="Img" class="img-fluid">
+                                        <img src="{{URL::asset('build/img/index/frase1.png')}}" alt="Img" class="img-fluid">
                                     </div>
                                     <h6>Universidad Mariano Gálvez</h6>
                                     <span>Educación con valores y excelencia</span>
@@ -606,7 +606,7 @@
                                 </p>
                                 <div class="testimonial-user">
                                     <div class="user-img">
-                                        <img src="{{URL::asset('build/img/avatar/avatar-22.jpg')}}" alt="Img" class="img-fluid">
+                                        <img src="{{URL::asset('build/img/index/frase2.png')}}" alt="Img" class="img-fluid">
                                     </div>
                                     <h6>Facultad de Ingeniería</h6>
                                     <span>Innovación y liderazgo tecnológico</span>
@@ -632,7 +632,7 @@
                                 </p>
                                 <div class="testimonial-user">
                                     <div class="user-img">
-                                        <img src="{{URL::asset('build/img/avatar/avatar-23.jpg')}}" alt="Img" class="img-fluid">
+                                        <img src="{{URL::asset('build/img/index/frase2.png')}}" alt="Img" class="img-fluid">
                                     </div>
                                     <h6>Comunidad UMG</h6>
                                     <span>Comprometidos con la excelencia humana</span>
@@ -650,15 +650,12 @@
                         </div>
                         <div class="testimonial-content text-center align-items-center d-flex">
                             <div class="testimonial-info">
-                                <div class="testimonial-icon">
-                                    <img src="{{URL::asset('build/img/icons/icon-29.png')}}" alt="Icono">
-                                </div>
                                 <p>
                                     “El conocimiento es poder, pero los valores son la guía. En la UMG cultivamos ambos para formar líderes con propósito.”
                                 </p>
                                 <div class="testimonial-user">
                                     <div class="user-img">
-                                        <img src="{{URL::asset('build/img/avatar/avatar-24.jpg')}}" alt="Img" class="img-fluid">
+                                        <img src="{{URL::asset('build/img/index/frase3.png')}}" alt="Img" class="img-fluid">
                                     </div>
                                     <h6>Facultad de Humanidades</h6>
                                     <span>Formación integral y humana</span>
@@ -676,15 +673,13 @@
                         </div>
                         <div class="testimonial-content text-center align-items-center d-flex">
                             <div class="testimonial-info">
-                                <div class="testimonial-icon">
-                                    <img src="{{URL::asset('build/img/icons/icon-29.png')}}" alt="Icono">
-                                </div>
+
                                 <p>
                                     “Cada día de estudio es un paso más hacia tus sueños. En la UMG, creemos en ti y en el poder de tu esfuerzo.”
                                 </p>
                                 <div class="testimonial-user">
                                     <div class="user-img">
-                                        <img src="{{URL::asset('build/img/avatar/avatar-25.jpg')}}" alt="Img" class="img-fluid">
+                                        <img src="{{URL::asset('build/img/index/frase2.png')}}" alt="Img" class="img-fluid">
                                     </div>
                                     <h6>Estudiantes UMG</h6>
                                     <span>Pasión, esfuerzo y crecimiento constante</span>
