@@ -264,7 +264,7 @@
                                     </span>
                                     <div>
                                         <h6 class="mb-0">Email</h6>
-                                        <p class="mb-0">ehernandezm@miumg.edu.gt</p>
+                                        <p class="mb-0 text-break">ehernandezm@miumg.edu.gt</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center mb-4">
