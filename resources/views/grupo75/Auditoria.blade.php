@@ -26,16 +26,17 @@
                     <div class="position-absolute bottom-0 end-0 z-n1">
                         <img src="{{URL::asset('build/img/shapes/shape-2.svg')}}" alt="img">
                     </div>
+                    <!--
                     <div class="position-absolute bottom-0 start-0 mb-md-5 ms-md-n5">
                         <img src="{{URL::asset('build/img/icons/icon-1.svg')}}" alt="img">
                     </div>
-                    <img class="img-fluid img-radius" src="./build/img/about/about-2.svg" alt="img">
+                    -->
+                    <img class="img-fluid img-radius" src="/build/img/about/aboutAuditoria/laptop-paperwork-contabilidad.jpg" alt="img">
                 </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="ps-0 ps-lg-2 pt-4 pt-lg-0 ps-xl-5">
                         <div class="section-header">
-                            <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">About</span>
                             <h2>Licenciatura en Contaduría Pública y Auditoría</h2>
                             <p>Es una carrera que promueve la excelencia académica mediante la implementación de un programa integral para la formación de contadores públicos y auditores con principios éticos y morales preparados para responder a las exigencias de las empresas que necesitan competir en un mundo globalizado. La carrera es impartida por docentes altamente calificados con experiencia profesional y académica.</p>
                         </div>
@@ -72,7 +73,6 @@
     <section class="benefit-section">
         <div class="container">
             <div class="section-header text-center">
-                <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">Our Benefits</span>
                 <h2>Desarrolla tu potencial y lidera en tu profesión</h2>
                 <p>La carrera de Contaduría Pública y Auditoría, guiada por nuestros mentores expertos, puede proporcionar información invaluable para tu desarrollo profesional.</p>
             </div>
@@ -81,7 +81,6 @@
                     <div class="card shadow-sm">
                         <div class="card-body p-4">
                             <div class="position-absolute top-0 end-0 mt-n3 me-n4">
-                                <img src="./build/img/shapes/bg-1.png" alt="img">
                             </div>
                             <div class="p-4 rounded-pill bg-primary-transparent d-inline-flex">
                                 <i class="isax isax-book-1 fs-24"></i>
@@ -134,7 +133,9 @@
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
                      onclick="window.location='{{ route('detalles-instructor-auditoria1') }}'">
+                     <!--
                     <img src="{{ asset('build/img/instructors/profesor1.jpeg') }}" class="card-img-top" alt="Profesor 1">
+                    -->
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Lic. José Pérez</h5>
                         <p class="card-text text-muted">Coordinador de Facultad, Lic en Contaduría Pública y Auditoría.</p>
@@ -142,7 +143,9 @@
                 </div>
             </div>
 
+
             <!-- Instructor 2 -->
+             <!--
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
                      onclick="window.location='{{ route('detalles-instructor-auditoria2') }}'">
@@ -153,8 +156,9 @@
                     </div>
                 </div>
             </div>
-
+            -->
             <!-- Instructor 3 -->
+             <!--
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
                      onclick="window.location='{{ route('detalles-instructor-auditoria3') }}'">
@@ -165,6 +169,7 @@
                     </div>
                 </div>
             </div>
+            -->
         </div>
     </div>
 </section>
@@ -180,7 +185,7 @@
                         <div class="card-body">
                             <div class="d-flex align-items-center">
                                 <div class="counter-icon">
-                                    <img src="./build/img/icons/counter-icon1.svg" alt="img">
+
                                 </div>
                                 <div class="count-content">
                                     <h4 class="text-info"><span class="count-digit">8</span>+</h4>
@@ -195,7 +200,7 @@
                         <div class="card-body">
                             <div class="d-flex align-items-center">
                                 <div class="counter-icon">
-                                    <img src="./build/img/icons/counter-icon2.svg" alt="img">
+
                                 </div>
                                 <div class="count-content">
                                     <h4 class="text-warning"><span class="count-digit">12</span>+</h4>
@@ -210,7 +215,9 @@
                         <div class="card-body">
                             <div class="d-flex align-items-center">
                                 <div class="counter-icon">
+                                    <!--
                                     <img src="./build/img/icons/counter-icon3.svg" alt="img">
+                                    -->
                                 </div>
                                 <div class="count-content">
                                     <h4 class="text-skyblue"><span class="count-digit">25</span>+</h4>
@@ -224,7 +231,7 @@
                     <div class="card border-0 mb-0">
                         <div class="card-body d-flex align-items-center">
                             <div class="counter-icon">
-                            <img src="./build/img/icons/counter-icon4.svg" alt="img">
+
                             </div>
                             <div class="count-content">
                             <h4 class="text-lightgreen"><span class="count-digit">8</span>+</h4>
@@ -338,7 +345,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-5 pe-md-5">
                     <div class="position-relative">
-                        <img class="img-fluid rounded-4" src="{{URL::asset('build/img/about/about-1.jpg')}}" alt="img">
+                        <img class="img-fluid rounded-4" src="{{URL::asset('/build/img/about/pabellonUMG.jpeg')}}" alt="img">
                         <div class="bg-warning text-center p-3 rounded-5 position-absolute top-0 end-0 z-index-1 d-none d-sm-block my-3 mx-3">
                             <i class="isax isax-message-question5 heading-color fs-46"></i>
                         </div>
@@ -346,7 +353,6 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="section-header">
-                        <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">FAQs</span>
                         <h2>Preguntas Frecuentes</h2>
                         <p>Explore respuestas sobre las preguntas más comunes sobre nosotros!.</p>
                     </div>

@@ -23,26 +23,26 @@
                                     <a href="javascript:void(0);">
                                         <img src="{{URL::asset('build/img/user/user-61.jpg')}}" alt="img" class="img-fluid">
                                     </a>
-                                    <a href="javascript:void(0);" class="btn heart"><i class="isax isax-heart5 text-danger"></i></a>
                                 </div>
                                 <div class="flex-fill">
                                     <div class="pb-3 border-bottom mb-3">
                                         <div class="d-flex align-items-center justify-content-between mb-1">
-                                            <h6 class="fw-bold"><a href="javascript:void(0);">Lic José Pérez Quevedo</a></h6>
+                                            <h6 class="fw-bold">Lic José Pérez Quevedo</h6>
                                         </div>
                                         <div class="d-flex align-items-center mb-1">
-                                            <a href="javascript:void(0);" class="fs-14 me-2">Lic en Contaduría Pública y Auditoría</a>
+                                            <p>Coordinador de la Facultad de Licenciatura en Contaduría Pública y Auditoría Centro UMG Guastatoya y Licenciado en Contaduría Pública y Auditoría, Magíster Scientiae en Contabilidad y Auditoría Internacional con Enfoque en Riesgos, experiencia profesional en Auditorías en Entidades Financieras y Comerciales</p>
+
                                             <span class="me-2">
-                                                <i class="fa-solid fa-star text-warning"></i>
                                             </span>
                                             <span class="fs-14"></span>
                                         </div>
                                         <div>
-                                            <p>Licenciado en Contaduría Pública y Auditoría, Magíster Scientiae en Contabilidad y Auditoría Internacional con Enfoque en Riesgos, experiencia profesional en Auditorías en Entidades Financieras y Comerciales</p>
+                                            <p>Con experiencia profesional en Auditorías en Entidades Financieras y Comerciales</p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between flex-wrap">
-                                        <div class="d-flex align-items-center counts-details">
+                                    <!--
+                                    <div class="d-flex align-items-center counts-details">
                                             <span class="d-flex align-items-center me-4">
                                                 <span class="d-flex align-items-center"><i class="isax isax-book-saved5 fs-16 text-secondary me-2"></i></span>
 
@@ -79,6 +79,7 @@
                                                 </a>
                                             </span>
                                         </div>
+                                        -->
                                     </div>
                                 </div>
                             </div>
@@ -86,9 +87,8 @@
 
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="mb-3">About Me</h5>
-                                <p class="mb-3">Soy Licenciado en Contaduría Pública y Auditoría, con una Maestría en Contabilidad y Auditoría Internacional especializada en riesgos. Mi experiencia se centra en la ejecución de auditorías para entidades financieras y comerciales..</p>
-                                <a href="javascript:void(0);" class="read-more-btn">Read More</a>
+                                <h5 class="mb-3">Acerca de Mí</h5>
+                                <p class="mb-3">Soy Licenciado en Contaduría Pública y Auditoría, con una Maestría en Contabilidad y Auditoría Internacional especializada en riesgos. Mi experiencia se centra en la ejecución de auditorías para entidades financieras y comerciales.</p>
                             </div>
                         </div>
 
@@ -228,8 +228,10 @@
                         </div>
 
                     </div>
--->
+                    -->
+
                     <div class="col-lg-4">
+                        <!--
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="mb-3">Certifications</h5>
@@ -249,10 +251,10 @@
                                 </div>
                             </div>
                         </div>
-
+                        -->
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="mb-3">Contact Details</h5>
+                                <h5 class="mb-3">Detalle de Contacto</h5>
                                 <div class="d-flex align-items-center mb-4">
                                     <span class="contact-icon rounded-circle d-flex align-items-center justify-content-center me-3">
                                         <i class="fa-regular fa-envelope"></i>
@@ -271,15 +273,17 @@
                                         <p class="mb-0 text-truncate">Guastatoya</p>
                                     </div>
                                 </div>
+                                <!--
                                 <div class="d-flex align-items-center">
                                     <span class="contact-icon rounded-circle d-flex align-items-center justify-content-center me-3">
                                         <i class="isax isax-call"></i>
                                     </span>
                                     <div>
                                         <h6 class="fs-16 fw-medium text-gray-9 mb-0">Phone</h6>
-                                        <p class="mb-0">+502 5015-2636</p>
+                                        <p class="mb-0"></p>
                                     </div>
                                 </div>
+                                 -->
                             </div>
                         </div>
                     </div>
