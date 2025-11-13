@@ -331,7 +331,7 @@
                             -->
                         </div>
                         <h6 class="mb-1">El Futuro de la Ingeniería en Sistemas</h6>
-                        <p class="mb-3 text-truncate line-clamb-2">La demanda de ingenieros en sistemas sigue en crecimiento constante, con nuevas oportunidades en campos como la ciberseguridad, la inteligencia artificial y el análisis de datos. Estos profesionales son clave para la transformación digital de empresas e instituciones, impulsando la innovación y optimizando procesos en todos los sectores productivos..</p>
+                        <p class="fs-14 mb-3">La demanda de ingenieros en sistemas sigue en crecimiento constante, con nuevas oportunidades en campos como la ciberseguridad, la inteligencia artificial y el análisis de datos. Estos profesionales son clave para la transformación digital de empresas e instituciones, impulsando la innovación y optimizando procesos en todos los sectores productivos..</p>
                          <!--
                         <div>
                             <i class="fa-solid fa-star text-warning"></i>
@@ -348,7 +348,7 @@
                         <div class="position-relative d-inline-flex mb-2">
                         </div>
                         <h6 class="mb-1">Competencias Clave del Ingeniero en Sistemas</h6>
-                        <p class="mb-3 text-truncate line-clamb-2">Un ingeniero en sistemas destaca por su capacidad para analizar, diseñar e implementar soluciones tecnológicas eficientes. Entre sus competencias principales se incluyen el pensamiento crítico, la gestión de proyectos, el trabajo en equipo y la comunicación efectiva, habilidades que complementan su conocimiento técnico especializado.</p>
+                        <p class="fs-14 mb-3">Un ingeniero en sistemas destaca por su capacidad para analizar, diseñar e implementar soluciones tecnológicas eficientes. Entre sus competencias principales se incluyen el pensamiento crítico, la gestión de proyectos, el trabajo en equipo y la comunicación efectiva, habilidades que complementan su conocimiento técnico especializado.</p>
                     </div>
                 </div>
                 <div>
@@ -356,7 +356,7 @@
                         <div class="position-relative d-inline-flex mb-2">
                         </div>
                         <h6 class="mb-1">Ingeniería en Sistemas y Responsabilidad Social</h6>
-                        <p class="mb-3 text-truncate line-clamb-2">Más allá del aspecto técnico, la carrera forma profesionales conscientes de su impacto social. Los ingenieros en sistemas pueden desarrollar soluciones inclusivas, promover el acceso a la tecnología y contribuir a resolver problemáticas sociales a través de innovaciones con sentido humano.</p>
+                        <p class="fs-14 mb-3">Más allá del aspecto técnico, la carrera forma profesionales conscientes de su impacto social. Los ingenieros en sistemas pueden desarrollar soluciones inclusivas, promover el acceso a la tecnología y contribuir a resolver problemáticas sociales a través de innovaciones con sentido humano.</p>
                     </div>
                 </div>
             </div>
@@ -370,7 +370,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-5 pe-md-5">
                     <div class="position-relative">
-                        <img class="img-fluid rounded-4" src="{{URL::asset('/build/img/about/abouIngSistemas/pabellonUMG.jpeg')}}" alt="img">
+                        <img class="img-fluid rounded-4" src="{{URL::asset('/build/img/about/pabellonUMG.jpeg')}}" alt="img">
                         <div class="bg-warning text-center p-3 rounded-5 position-absolute top-0 end-0 z-index-1 d-none d-sm-block my-3 mx-3">
                             <i class="isax isax-message-question5 heading-color fs-46"></i>
                         </div>
