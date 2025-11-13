@@ -36,7 +36,7 @@
                                 <option value="derecho">Derecho</option>
                                 <option value="administracion">Administración</option>
                                 <option value="criminologia">Criminología</option>
-                                <option value="sistemas-redes-sociales">Ingeniería en Sistemas</option>
+                                <option value="sistemas">Ingeniería en Sistemas</option>
                                 <option value="trabajo-social">Trabajo Social</option>
                                 <option value="auditoria">Auditoría</option>
                             </select>
@@ -63,7 +63,7 @@
                     case 'criminologia':
                         window.location.href = "{{ url('/grupo74/criminologia') }}";
                         break;
-                    case 'sistemas-redes-sociales':
+                    case 'sistemas':
                         window.location.href = "{{ url('/grupo75/sistemas-redes-sociales') }}";
                         break;
                     case 'trabajo-social':

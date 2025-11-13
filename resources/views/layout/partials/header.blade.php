@@ -48,7 +48,7 @@
               <li><a href="{{ route('derecho') }}">Derecho</a></li>
               <li><a href="{{ route('administracion') }}">Administración</a></li>
               <li><a href="{{ route('criminologia') }}">Criminología</a></li>
-              <li><a href="{{ route('sistemas-redes-sociales') }}">Sistemas Redes Sociales</a></li>
+              <li><a href="{{ route('sistemas-redes-sociales') }}">Sistemas</a></li>
               <li><a href="{{ route('trabajo-social') }}">Trabajo Social</a></li>
               <li><a href="{{ route('auditoria') }}">Auditoría</a></li>
             </ul>
