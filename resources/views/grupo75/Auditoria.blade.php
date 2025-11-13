@@ -4,13 +4,13 @@
 
     @component('components.breadcrumb')
         @slot('title')
-            About Us
+            Y conoceréis la verdad y la verdad os hará libres
         @endslot
         @slot('item1')
             Home
         @endslot
         @slot('item2')
-            About Us
+            Y conoceréis la verdad y la verdad os hará libres
         @endslot
     @endcomponent
 

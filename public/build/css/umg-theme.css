@@ -549,3 +549,40 @@ footer .footer-logo img {
   width: 120px !important;
 }
 
+/* Altura aproximada del header (ajusta si hace falta) */
+:root{
+  --umg-header-height: 50px;
+}
+
+/* Dar espacio al contenido para que no quede debajo del header */
+body {
+  padding-top: var(--umg-header-height);
+}
+
+/* Por si el template envuelve el contenido en main-wrapper */
+.main-wrapper,
+.page-content,
+section.banner-section,
+.home-banner,
+.main-banner {
+  padding-top: calc(var(--umg-header-height) + 10px);
+}
+
+/* Igualar altura de TODAS las tarjetas tipo card */
+.umg-card,
+.card,
+.feature-box,
+.course-widget,
+.service-widget {
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenido interno también se ajusta */
+.umg-card .card-body,
+.card .card-body,
+.feature-box .feature-content,
+.service-widget .service-content {
+    flex: 1 1 auto;
+}
