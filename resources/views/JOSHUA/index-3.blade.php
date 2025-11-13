@@ -192,7 +192,7 @@
             <div class="course-item course-item-three mx-0 flex-fill aos" data-aos="fade-up">
                 <div class="course-img text-center">
                     <a href="https://umg.edu.gt/admisiones?_gl=1*16aqkrz*_ga*MTYwNzAyMjcxMC4xNzYxNDM2MjQ0*_ga_HV9W4QM6V6*czE3NjMwMDA0MDMkbzExJGcxJHQxNzYzMDAwOTY2JGo2MCRsMCRoMA..">
-                        <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/course/course-40.jpg')}}">
+                        <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/index/admision.png')}}">
                     </a>
                 </div>
 
@@ -210,7 +210,7 @@
             <div class="course-item course-item-three mx-0 flex-fill aos" data-aos="fade-up">
                 <div class="course-img text-center">
                     <a href="https://umg.edu.gt/info/estudiantes/inscripcion?_gl=1*mztnnj*_ga*MTYwNzAyMjcxMC4xNzYxNDM2MjQ0*_ga_HV9W4QM6V6*czE3NjMwMDA0MDMkbzExJGcxJHQxNzYzMDAxMjQ1JGo1OCRsMCRoMA..">
-                        <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/course/course-41.jpg')}}">
+                        <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/index/pagoInscripcion.png')}}">
                     </a>
                 </div>
 
@@ -228,7 +228,7 @@
             <div class="course-item course-item-three mx-0 flex-fill aos" data-aos="fade-up">
                 <div class="course-img text-center">
                     <a href="https://umg.edu.gt/tours?_gl=1*10v6jy4*_ga*MTYwNzAyMjcxMC4xNzYxNDM2MjQ0*_ga_HV9W4QM6V6*czE3NjMwMDA0MDMkbzExJGcxJHQxNzYzMDAxMjU1JGo0OCRsMCRoMA..">
-                        <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/course/course-42.jpg')}}">
+                        <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/index/tourVirtual.png')}}">
                     </a>
                 </div>
 
@@ -252,7 +252,7 @@
     </div>
     <!-- /Feature Course -->
 
-    <!-- Master Skill -->
+    <!-- carta presentacion ingeniero  -->
     <div class="section master-skill">
         <div class="container">
             <div class="row align-items-end">
@@ -309,7 +309,7 @@
             </div>
         </div>
     </div>
-    <!-- /Master Skill -->
+    <!-- /carta de presentacion -->
 
     <!-- Trending Course -->
     <div class="section trend-course">
