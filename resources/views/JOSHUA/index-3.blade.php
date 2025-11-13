@@ -406,146 +406,76 @@
         </div>
 
 
+        <!--Congresos-->
+        <div class="instructors-course aos" data-aos="fade-up" data-autoplay="true">
 
-            <!-- Feature Instructors -->
-            <div class="feature-instructors">
-                <div class="section-header text-center aos" data-aos="fade-up">
-                    <h2>Featured Instructor</h2>
-                    <p class="mb-0"> Our team combines cutting-edge design with robust development</p>
+            <!-- 1 -->
+            <div class="instructor-item instructor-item-two">
+                <div class="instructors-img">
+                    <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/instructor/instructor-09.jpg')}}">
                 </div>
-                <div class="instructors-course aos" data-aos="fade-up">
-                    <div class="instructor-item instructor-item-two">
-                        <div class="instructors-img">
-                            <a href="{{url('instructor-list')}}" tabindex="0">
-                                <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/instructor/instructor-09.jpg')}}">
-                            </a>
-                            <div class="position-absolute start-0 top-0 d-flex align-items-start w-100 z-index-2 p-3">
-                                <span class="verify">
-                                    <i class="isax isax-verify5"></i>
-                                </span>
-                                <a href="{{url('course-list')}}" class="course-count ms-auto">20 Courses</a>
-                            </div>
-                            <div class="position-absolute end-0 bottom-0 d-flex align-items-start w-100 z-index-2 p-3">
-                                <a href="javascript:void(0);" class="favourite selected ms-auto">
-                                    <i class="isax isax-heart"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="instructor-content">
-                            <h3 class="title">
-                                <a href="{{url('instructor-details')}}">David Lee</a>
-                            </h3>
-                            <span class="designation">Web Developer</span>
-                            <div class="student-count">
-                                <i class="isax isax-profile-2user5 text-secondary me-2"></i><span>50 Students</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="instructor-item instructor-item-two">
-                        <div class="instructors-img">
-                            <a href="{{url('instructor-list')}}" tabindex="0">
-                                <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/instructor/instructor-10.jpg')}}">
-                            </a>
-                            <div class="position-absolute start-0 top-0 d-flex align-items-start w-100 z-index-2 p-3">
-                                <a href="{{url('course-list')}}" class="course-count ms-auto">15 Courses</a>
-                            </div>
-                            <div class="position-absolute end-0 bottom-0 d-flex align-items-start w-100 z-index-2 p-3">
-                                <a href="javascript:void(0);" class="favourite ms-auto">
-                                    <i class="isax isax-heart"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="instructor-content">
-                            <h3 class="title">
-                                <a href="{{url('instructor-details')}}">Daziy Millar</a>
-                            </h3>
-                            <span class="designation">PHP Expert</span>
-                            <div class="student-count">
-                                <i class="isax isax-profile-2user5 text-warning me-2"></i><span>60 Students</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="instructor-item instructor-item-two">
-                        <div class="instructors-img">
-                            <a href="{{url('instructor-list')}}" tabindex="0">
-                                <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/instructor/instructor-11.jpg')}}">
-                            </a>
-                            <div class="position-absolute start-0 top-0 d-flex align-items-start w-100 z-index-2 p-3">
-                                <span class="verify">
-                                    <i class="isax isax-verify5"></i>
-                                </span>
-                                <a href="{{url('course-list')}}" class="course-count ms-auto">22 Courses</a>
-                            </div>
-                            <div class="position-absolute end-0 bottom-0 d-flex align-items-start w-100 z-index-2 p-3">
-                                <a href="javascript:void(0);" class="favourite ms-auto">
-                                    <i class="isax isax-heart"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="instructor-content">
-                            <h3 class="title">
-                                <a href="{{url('instructor-details')}}">Patricia Mendoza</a>
-                            </h3>
-                            <span class="designation">Web Developer</span>
-                            <div class="student-count">
-                                <i class="isax isax-profile-2user5 text-primary me-2"></i><span>40 Students</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="instructor-item instructor-item-two">
-                        <div class="instructors-img">
-                            <a href="{{url('instructor-list')}}" tabindex="0">
-                                <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/instructor/instructor-12.jpg')}}">
-                            </a>
-                            <div class="position-absolute start-0 top-0 d-flex align-items-start w-100 z-index-2 p-3">
-                                <span class="verify">
-                                    <i class="isax isax-verify5"></i>
-                                </span>
-                                <a href="{{url('course-list')}}" class="course-count ms-auto">20 Courses</a>
-                            </div>
-                            <div class="position-absolute end-0 bottom-0 d-flex align-items-start w-100 z-index-2 p-3">
-                                <a href="javascript:void(0);" class="favourite ms-auto">
-                                    <i class="isax isax-heart"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="instructor-content">
-                            <h3 class="title">
-                                <a href="{{url('instructor-details')}}">Skyler Whites</a>
-                            </h3>
-                            <span class="designation">UI Designer</span>
-                            <div class="student-count">
-                                <i class="isax isax-profile-2user5 text-danger me-2"></i><span>50 Students</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="instructor-item instructor-item-two">
-                        <div class="instructors-img">
-                            <a href="{{url('instructor-details')}}" tabindex="0">
-                                <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/instructor/instructor-10.jpg')}}">
-                            </a>
-                            <div class="position-absolute start-0 top-0 d-flex align-items-start w-100 z-index-2 p-3">
-                                <a href="{{url('course-list')}}" class="course-count ms-auto">15 Courses</a>
-                            </div>
-                            <div class="position-absolute end-0 bottom-0 d-flex align-items-start w-100 z-index-2 p-3">
-                                <a href="javascript:void(0);" class="favourite ms-auto">
-                                    <i class="isax isax-heart"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="instructor-content">
-                            <h3 class="title">
-                                <a href="{{url('instructor-details')}}">Patricia Mendoza</a>
-                            </h3>
-                            <span class="designation">Web Developer</span>
-                            <div class="student-count">
-                                <i class="isax isax-profile-2user5 text-pink me-2"></i><span>50 Students</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="instructor-content text-center">
+                    <h3 class="title">Congreso de Derecho Penal</h3>
+                    <p class="text-secondary">Análisis jurídico sobre reformas penales y aplicación en Guatemala.</p>
                 </div>
             </div>
-            <!-- /Feature Instructors -->
+
+            <!-- 2 -->
+            <div class="instructor-item instructor-item-two">
+                <div class="instructors-img">
+                    <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/instructor/instructor-10.jpg')}}">
+                </div>
+                <div class="instructor-content text-center">
+                    <h3 class="title">Congreso de Administración</h3>
+                    <p class="text-secondary">Tendencias modernas en liderazgo, emprendimiento y gestión empresarial.</p>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="instructor-item instructor-item-two">
+                <div class="instructors-img">
+                    <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/instructor/instructor-11.jpg')}}">
+                </div>
+                <div class="instructor-content text-center">
+                    <h3 class="title">Congreso de Criminología</h3>
+                    <p class="text-secondary">Investigación criminal, perfiles criminológicos y prevención del delito.</p>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="instructor-item instructor-item-two">
+                <div class="instructors-img">
+                    <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/instructor/instructor-12.jpg')}}">
+                </div>
+                <div class="instructor-content text-center">
+                    <h3 class="title">Congreso de Trabajo Social</h3>
+                    <p class="text-secondary">Acción comunitaria y fortalecimiento de políticas de bienestar social.</p>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="instructor-item instructor-item-two">
+                <div class="instructors-img">
+                    <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/instructor/instructor-10.jpg')}}">
+                </div>
+                <div class="instructor-content text-center">
+                    <h3 class="title">Congreso de Ingeniería en Sistemas</h3>
+                    <p class="text-secondary">Ciberseguridad, desarrollo de software y tendencias tecnológicas.</p>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="instructor-item instructor-item-two">
+                <div class="instructors-img">
+                    <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/instructor/instructor-09.jpg')}}">
+                </div>
+                <div class="instructor-content text-center">
+                    <h3 class="title">Congreso de Auditoría</h3>
+                    <p class="text-secondary">Normas internacionales de auditoría y control financiero moderno.</p>
+                </div>
+            </div>
+
+        </div>
 
         </div>
     </div>
