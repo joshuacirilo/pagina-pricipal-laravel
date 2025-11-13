@@ -31,6 +31,20 @@ Route::get('/grupo75/sistemas-redes-sociales', function () {
 })->name('sistemas-redes-sociales');
 
 
+//-----maestros sistemas-------
+Route::get('/grupo75/detalles-instructor-sistemas1', function () {
+    return view('grupo75.detalles-instructor-sistemas1');
+})->name('detalles-instructor-sistemas1');
+
+Route::get('/grupo75/detalles-instructor-sistemas2', function () {
+    return view('grupo75.detalles-instructor-sistemas2');
+})->name('detalles-instructor-sistemas2');
+
+Route::get('/grupo75/detalles-instructor-sistemas3', function () {
+    return view('grupo75.detalles-instructor-sistemas3');
+})->name('detalles-instructor-sistemas3');
+
+
 //-auditoria
 Route::get('/grupo75/auditoria', function () {
     return view('grupo75.auditoria');
