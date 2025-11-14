@@ -84,7 +84,7 @@
                     <div class="card shadow-sm">
                         <div class="card-body p-4">
                             <div class="position-absolute top-0 end-0 mt-n3 me-n4">
-
+                                <img src="/build/img/shapes/bg-1.png" alt="img">
                             </div>
                             <div class="p-4 rounded-pill bg-primary-transparent d-inline-flex">
                                 <i class="isax isax-book-1 fs-24"></i>
@@ -139,7 +139,7 @@
                      onclick="window.location='{{ route('detalles-instructor-sistemas1') }}'">
                     <img src="{{ asset('build/img/instructor/IngSistemasInstructor/IngOscarValientePerfil.jpg') }}" class="card-img-top" alt="Profesor 1">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">Ing Oscar Valiente </h5>
+                        <h5 class="card-title mb-2">Ing. Oscar Valiente </h5>
                         <p class="card-text text-muted">Coordinador de Facultad e Ing en Sistemas de la Información y Ciencias de la Computación (experiencia en CiberSeguridad y Administración de Sistemas).</p>
                     </div>
                 </div>
@@ -151,7 +151,7 @@
                      onclick="window.location='{{ route('detalles-instructor-sistemas2') }}'">
                     <img src="{{ asset('build/img/instructor/IngSistemasInstructor/IngRichardOrtizPerfil.jpeg') }}" class="card-img-top" alt="Profesor 2">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">Ing Richard Ortiz</h5>
+                        <h5 class="card-title mb-2">Ing. Richard Ortíz</h5>
                         <p class="card-text text-muted">Ing en Sistemas de la Información y Ciencias de la Computación (experiencia en CiberSeguridad) .</p>
                     </div>
                 </div>
@@ -163,7 +163,7 @@
                      onclick="window.location='{{ route('detalles-instructor-sistemas3') }}'">
                     <img src="{{ asset('build/img/instructor/IngSistemasInstructor/IngOttoOrtizPerfil.jpeg') }}" class="card-img-top" alt="Profesor 3">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">Ing Otto Ortíz</h5>
+                        <h5 class="card-title mb-2">Ing. Otto Ortíz</h5>
                         <p class="card-text text-muted">Ing en Sistemas de la Información y Ciencias de la Computación (experiencia en AWS Solutions).</p>
                     </div>
                 </div>
@@ -175,7 +175,7 @@
                      onclick="window.location='{{ route('detalles-instructor-sistemas4') }}'">
                     <img src="{{ asset('build/img/instructor/IngSistemasInstructor/IngRaquelSanchezPerfil.jpeg') }}" class="card-img-top" alt="Profesor 3">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">Ing Evelyn Cabrera </h5>
+                        <h5 class="card-title mb-2">Ing. Evelyn Cabrera </h5>
                         <p class="card-text text-muted">Ing en Sistemas de la Información y Ciencias de la Computación (experiencia en Dirección y Gestión).</p>
                     </div>
                 </div>
@@ -187,7 +187,7 @@
                      onclick="window.location='{{ route('detalles-instructor-sistemas5') }}'">
                     <img src="{{ asset('build/img/instructor/IngSistemasInstructor/IngTeresitaOrellanaPerfil.jpeg') }}" class="card-img-top" alt="Profesor 3">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">Ing Teresita Orellana</h5>
+                        <h5 class="card-title mb-2">Ing. Teresita Orellana</h5>
                         <p class="card-text text-muted">Ing en Sistemas de la Información y Ciencias de la Computación (experiencia en Seguridad Informática).</p>
                     </div>
                 </div>
@@ -199,7 +199,7 @@
                      onclick="window.location='{{ route('detalles-instructor-sistemas6') }}'">
                     <img src="{{ asset('build/img/instructor/IngSistemasInstructor/IngEduardoHernandezPerfil.jpeg') }}" class="card-img-top" alt="Profesor 3">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">Ing Eduardo Hernández</h5>
+                        <h5 class="card-title mb-2">Ing. Eduardo Hernández</h5>
                         <p class="card-text text-muted">Ing en Sistemas de la Información y Ciencias de la Computación (experiencia en Seguridad Informática).</p>
                     </div>
                 </div>
@@ -220,11 +220,11 @@
                     <div class="card border-0 mb-0">
                         <div class="card-body">
                             <div class="d-flex align-items-center">
-                                <!--
+
                                 <div class="counter-icon">
-                                    <img src="/build/img/icons/iconsIngSistemas/networking_3150652.png" alt="img">
+                                    <img src="/build/img/icons/counter-icon1.svg" alt="img">
                                 </div>
-                                -->
+
                                 <div class="count-content">
                                     <h4 class="text-info"><span class="count-digit">10</span>+</h4>
                                     <p>Oportunidades laborales</p>
@@ -237,11 +237,11 @@
                     <div class="card border-0 mb-0">
                         <div class="card-body">
                             <div class="d-flex align-items-center">
-                                <!--
+
                                 <div class="counter-icon">
-                                    <img src="./build/img/icons/counter-icon2.svg" alt="img">
+                                    <img src="/build/img/icons/counter-icon2.svg" alt="img">
                                 </div>
-                                -->
+
                                 <div class="count-content">
                                     <h4 class="text-warning"><span class="count-digit">6</span>+</h4>
                                     <p>Catedráticos</p>
@@ -254,11 +254,11 @@
                     <div class="card border-0 mb-0">
                         <div class="card-body">
                             <div class="d-flex align-items-center">
-                                <!--
+
                                 <div class="counter-icon">
-                                    <img src="./build/img/icons/counter-icon3.svg" alt="img">
+                                    <img src="/build/img/icons/counter-icon3.svg" alt="img">
                                 </div>
-                                -->
+
                                 <div class="count-content">
                                     <h4 class="text-skyblue"><span class="count-digit">25</span>+</h4>
                                     <p>Cursos certificados</p>
@@ -270,11 +270,10 @@
                 <div class="col-xl-3 col-md-6">
                     <div class="card border-0 mb-0">
                         <div class="card-body d-flex align-items-center">
-                            <!--
+
                             <div class="counter-icon">
-                            <img src="./build/img/icons/counter-icon4.svg" alt="img">
+                                 <img src="/build/img/icons/counter-icon4.svg" alt="img">
                             </div>
-                            -->
                             <div class="count-content">
                             <h4 class="text-lightgreen"><span class="count-digit">8</span>+</h4>
                                 <p>Salones de clases</p>
@@ -298,64 +297,42 @@
                 <div>
                     <div class="testimonials-item rounded-3 bg-white">
                         <div class="position-relative d-inline-flex mb-2">
-                            <div class="avatar rounded-circle avatar-xxl border border-white border-3">
-                               <!--
-                                <a href="{{url('instructor-details')}}"><img class="img-fluid rounded-circle" src="./build/img/user/user-41.jpg" alt="img"></a>
-                                -->
-                            </div>
-                            <!--
-                            <i class="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1"></i>
-                            -->
+
                         </div>
-                        <h6>¿Por qué estudiar Ingeniería en Sistemas?</h6>
+                        <h6 class="mb-1">¿Por qué estudiar Ingeniería en Sistemas?</h6>
+                        <p class="fs-14 mb-3"></p>
                         <p class="fs-14 mb-3">Porque es la carrera con mayor demanda en el mercado digital actual. Te prepara para crear soluciones tecnológicas innovadoras, trabajar en proyectos globales y desarrollar competencias en áreas como inteligencia artificial, ciberseguridad y desarrollo de software, con un campo laboral en constante crecimiento.</p>
 
-                        <!--
-                        <div>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                        </div>
--->
                     </div>
                 </div>
                 <div>
                     <div class="testimonials-item rounded-3 bg-white">
                         <div class="position-relative d-inline-flex mb-2">
-                             <!--
-                            <div class="avatar rounded-circle avatar-xxl border border-white border-3">
-                                <a href="{{url('instructor-details')}}"><img class="img-fluid rounded-circle" src="./build/img/user/user-42.jpg" alt="img"></a>
-                            </div>
-                            -->
+
                         </div>
                         <h6 class="mb-1">El Futuro de la Ingeniería en Sistemas</h6>
-                        <p class="fs-14 mb-3">La demanda de ingenieros en sistemas sigue en crecimiento constante, con nuevas oportunidades en campos como la ciberseguridad, la inteligencia artificial y el análisis de datos. Estos profesionales son clave para la transformación digital de empresas e instituciones, impulsando la innovación y optimizando procesos en todos los sectores productivos..</p>
-                         <!--
-                        <div>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                        </div>
-                        -->
+                        <p class="fs-14 mb-3"></p>
+                        <p class="fs-14 mb-3">La demanda de ingenieros en sistemas sigue en crecimiento constante, con nuevas oportunidades en campos como la ciberseguridad, la inteligencia artificial y el análisis de datos. Estos profesionales son clave para la transformación digital de empresas e instituciones, impulsando la innovación y optimizando procesos en todos los sectores productivos.</p>
+
                     </div>
                 </div>
                 <div>
                     <div class="testimonials-item rounded-3 bg-white">
                         <div class="position-relative d-inline-flex mb-2">
+
                         </div>
                         <h6 class="mb-1">Competencias Clave del Ingeniero en Sistemas</h6>
+                        <p class="fs-14 mb-3"></p>
                         <p class="fs-14 mb-3">Un ingeniero en sistemas destaca por su capacidad para analizar, diseñar e implementar soluciones tecnológicas eficientes. Entre sus competencias principales se incluyen el pensamiento crítico, la gestión de proyectos, el trabajo en equipo y la comunicación efectiva, habilidades que complementan su conocimiento técnico especializado.</p>
                     </div>
                 </div>
                 <div>
                     <div class="testimonials-item rounded-3 bg-white">
                         <div class="position-relative d-inline-flex mb-2">
+
                         </div>
                         <h6 class="mb-1">Ingeniería en Sistemas y Responsabilidad Social</h6>
+                        <p class="fs-14 mb-3"></p>
                         <p class="fs-14 mb-3">Más allá del aspecto técnico, la carrera forma profesionales conscientes de su impacto social. Los ingenieros en sistemas pueden desarrollar soluciones inclusivas, promover el acceso a la tecnología y contribuir a resolver problemáticas sociales a través de innovaciones con sentido humano.</p>
                     </div>
                 </div>

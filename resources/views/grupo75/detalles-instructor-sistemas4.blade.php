@@ -3,14 +3,12 @@
 @section('content')
     @component('components.breadcrumb')
         @slot('title')
-            Instructor Details
-        @endslot
+            Conoce a nuestros profesores        @endslot
         @slot('item1')
             Home
         @endslot
         @slot('item2')
-            Instructor Details
-        @endslot
+            Conoce a nuestros profesores        @endslot
     @endcomponent
         <!-- Instructor -->
         <div class="instructor-detail-content">
@@ -106,7 +104,7 @@
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
-                                    <div class="ps-4 timeline-flow">
+                                    <div class="ps-4 pb-4 timeline-flow">
                                         <div>
                                             <h6 class="mb-1">Maestría en Dirección y Gestión de Recursos Humanos</h6>
                                             <p class="fs-14"></p>
@@ -264,7 +262,7 @@
                                     </span>
                                     <div>
                                         <h6 class="mb-0">Email</h6>
-                                        <p class="mb-0">ecabreras9@miumg.edu.gt</p>
+                                        <p class="mb-0 text-break">ecabreras9@miumg.edu.gt</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center mb-4">

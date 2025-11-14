@@ -9,12 +9,12 @@
         </br>
             Nuestros Instructores
         @endslot
+            Conoce a nuestros profesores        @endslot
         @slot('item1')
             Home
         @endslot
         @slot('item2')
-            Instructor Details
-        @endslot
+            Conoce a nuestros profesores        @endslot
     @endcomponent
 
     <!-- Instructores -->

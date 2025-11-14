@@ -3,14 +3,12 @@
 @section('content')
     @component('components.breadcrumb')
         @slot('title')
-            Instructor Details
-        @endslot
+            Conoce a nuestros profesores        @endslot
         @slot('item1')
             Home
         @endslot
         @slot('item2')
-            Instructor Details
-        @endslot
+            Conoce a nuestros profesores        @endslot
     @endcomponent
         <!-- Instructor -->
         <div class="instructor-detail-content">
@@ -92,7 +90,7 @@
                             <div class="card-body">
                                 <h5 class="mb-3">Acerca de Mí</h5>
                                 <p class="mb-3">Catedrático de la Facultad de Ingeniería en Sistemas - Centro UMG
-Ingeniero en Sistemas de Información y Ciencias de la Computación con especialización en análisis y predicción de datos. Como desarrollador FullStack y Scrum Máster certificado, integro metodologías ágiles en la creación de soluciones tecnológicas escalables. Cuento con certificaciones como AWS Solutions Architect, respaldando mi experiencia en arquitecturas cloud. En el ámbito académico, me dedico a formar profesionales capaces de liderar la transformación digital, combinando conocimiento técnico con visión innovadora en el campo de la computación.</p>
+                                    Ingeniero en Sistemas de Información y Ciencias de la Computación con especialización en análisis y predicción de datos. Como desarrollador FullStack y Scrum Máster certificado, integro metodologías ágiles en la creación de soluciones tecnológicas escalables. Cuento con certificaciones como AWS Solutions Architect, respaldando mi experiencia en arquitecturas cloud. En el ámbito académico, me dedico a formar profesionales capaces de liderar la transformación digital, combinando conocimiento técnico con visión innovadora en el campo de la computación.</p>
 
                             </div>
                         </div>
@@ -113,9 +111,23 @@ Ingeniero en Sistemas de Información y Ciencias de la Computación con especial
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
-                                    <div class="ps-4 timeline-flow">
+                                    <div class="ps-4 pb-4 timeline-flow">
                                         <div>
-                                            <h6 class="mb-1">FullStack Developer</h6>
+                                            <h6 class="mb-1">Desarrollador de Software</h6>
+                                            <p class="fs-14"></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="ps-4 pb-4 timeline-flow">
+                                        <div>
+                                            <h6 class="mb-1">AWS Solutions Architect</h6>
+                                            <p class="fs-14"></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="ps-4 pb-4 timeline-flow">
+                                        <div>
+                                            <h6 class="mb-1">Scrum Máster</h6>
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
@@ -129,7 +141,7 @@ Ingeniero en Sistemas de Información y Ciencias de la Computación con especial
                                 <div class="d-flex align-items-center mb-4">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
-                                        <h6 class="mb-1">Desarrollador de Software</h6>
+                                        <h6 class="mb-1">Desarrollador de Software (FullStack Developer)</h6>
 
                                     </div>
                                 </div>
@@ -254,7 +266,7 @@ Ingeniero en Sistemas de Información y Ciencias de la Computación con especial
                                 <h5 class="mb-3">Certificaciones</h5>
                                 <div class="d-flex align-items-center">
                                     <div class="certificate-img rounded-circle me-2">
-                                        <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/certificadoAWSSolutionsArch.jpeg')}}" alt="img" class="img-fluid">
+                                        <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/certificadoAWSSolutionsArch.jpg')}}" alt="img" class="img-fluid">
                                     </div>
                                     <div class="certificate-img rounded-circle me-2">
                                         <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/certificadoScrum.jpeg')}}" alt="img" class="img-fluid">

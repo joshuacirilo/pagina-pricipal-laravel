@@ -81,6 +81,7 @@
                     <div class="card shadow-sm">
                         <div class="card-body p-4">
                             <div class="position-absolute top-0 end-0 mt-n3 me-n4">
+                                 <img src="/build/img/shapes/bg-1.png" alt="img">
                             </div>
                             <div class="p-4 rounded-pill bg-primary-transparent d-inline-flex">
                                 <i class="isax isax-book-1 fs-24"></i>
@@ -185,7 +186,7 @@
                         <div class="card-body">
                             <div class="d-flex align-items-center">
                                 <div class="counter-icon">
-
+                                     <img src="/build/img/icons/counter-icon1.svg" alt="img">
                                 </div>
                                 <div class="count-content">
                                     <h4 class="text-info"><span class="count-digit">8</span>+</h4>
@@ -200,7 +201,7 @@
                         <div class="card-body">
                             <div class="d-flex align-items-center">
                                 <div class="counter-icon">
-
+                                     <img src="/build/img/icons/counter-icon2.svg" alt="img">
                                 </div>
                                 <div class="count-content">
                                     <h4 class="text-warning"><span class="count-digit">12</span>+</h4>
@@ -215,9 +216,7 @@
                         <div class="card-body">
                             <div class="d-flex align-items-center">
                                 <div class="counter-icon">
-                                    <!--
-                                    <img src="./build/img/icons/counter-icon3.svg" alt="img">
-                                    -->
+                                     <img src="/build/img/icons/counter-icon3.svg" alt="img">
                                 </div>
                                 <div class="count-content">
                                     <h4 class="text-skyblue"><span class="count-digit">25</span>+</h4>
@@ -231,7 +230,7 @@
                     <div class="card border-0 mb-0">
                         <div class="card-body d-flex align-items-center">
                             <div class="counter-icon">
-
+                                 <img src="/build/img/icons/counter-icon4.svg" alt="img">
                             </div>
                             <div class="count-content">
                             <h4 class="text-lightgreen"><span class="count-digit">8</span>+</h4>
@@ -256,8 +255,10 @@
                 <div>
                     <div class="testimonials-item rounded-3 bg-white">
                         <div class="position-relative d-inline-flex mb-2">
+                            <!--
                             <div class="avatar rounded-circle avatar-xxl border border-white border-3">
                             </div>
+                            -->
                         </div>
                         <h6 class="mb-1">¿Por qué estudiar Licenciatura en Contaduría y Auditoría?</h6>
                         <p class="fs-14 mb-3">Esta carrera ofrece una sólida formación en el ámbito financiero y contable, preparando profesionales capaces de gestionar, auditar y analizar la información económica de cualquier organización. Con un plan de estudios actualizado en normativas internacionales y herramientas tecnológicas, los graduados se integran a un campo laboral estable y con alta demanda, tanto en el sector público como privado, contribuyendo a la transparencia y sostenibilidad de las empresas.</p>
@@ -269,8 +270,7 @@
                     <div class="testimonials-item rounded-3 bg-white">
                         <h6 class="mb-1">
                         <div class="position-relative d-inline-flex mb-2">
-                            <div class="avatar rounded-circle avatar-xxl border border-white border-3">
-                            </div>
+
                         </div>
                         <h6 class="mb-1">El Futuro de la Lic. en Contaduría y Auditoría</h6>
                         <p class="fs-14 mb-3">El campo de la contaduría y auditoría está experimentando una transformación impulsada por la tecnología y las normativas globales. Los profesionales de esta disciplina ya no se limitan al registro de operaciones financieras, sino que ahora asumen roles estratégicos en la gestión de riesgos, el análisis de datos y la implementación de sistemas de control automatizados. El futuro de la carrera se orienta hacia la integración de habilidades técnicas y analíticas, preparando a los graduados para liderar en un entorno empresarial cada vez más digitalizado y global.</p>
@@ -280,8 +280,7 @@
                 <div>
                     <div class="testimonials-item rounded-3 bg-white">
                         <div class="position-relative d-inline-flex mb-2">
-                            <div class="avatar rounded-circle avatar-xxl border border-white border-3">
-                            </div>
+
                         </div>
                         <h6 class="mb-1">Competencias Clave del Lic. en Contaduría y Auditoría</h6>
 
@@ -292,8 +291,7 @@
                 <div>
                     <div class="testimonials-item rounded-3 bg-white">
                         <div class="position-relative d-inline-flex mb-2">
-                            <div class="avatar rounded-circle avatar-xxl border border-white border-3">
-                            </div>
+
                         </div>
                         <h6 class="mb-1">Licenciatura en Contaduría y Auditoría y Responsabilidad Social</h6>
                         <p class="fs-14 mb-3">Más allá del ámbito técnico, esta carrera forma profesionales comprometidos con la ética y la responsabilidad social. Los contadores y auditores promueven la transparencia financiera, contribuyen al cumplimiento de obligaciones fiscales y apoyan el desarrollo económico sostenible. Su labor es fundamental para generar confianza en las organizaciones y fomentar prácticas empresariales alineadas con el bienestar social.</p>
@@ -391,8 +389,8 @@
                                    	Certificación de estudios (ambas de Universidad de procedencia).
 
                                     Inversión (costos de preinscripción, inscripción, colegiaturas).
-                                   	Costos de inscripción Q600.00
-                                    	 Costos de colegiatura Q560.00  (Costos sujestos a cambios)
+                                   	Costos de inscripción
+                                    	 Costos de colegiatura (Costos sujetos a cambios)
                                  .</p>
                             </div>
                             </div>

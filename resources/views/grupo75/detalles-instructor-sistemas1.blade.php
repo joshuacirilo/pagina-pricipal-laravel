@@ -114,16 +114,24 @@
                                     </div>
                                     <div class="ps-4 pb-4 timeline-flow">
                                         <div>
-                                            <h6 class="mb-1">Especialista en CyberSeguridad</h6>
+                                            <h6 class="mb-1">Especialista en CiberSeguridad</h6>
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
-                                    <div class="ps-4 timeline-flow">
+                                    <div class="ps-4 pb-4 timeline-flow">
                                         <div>
-                                            <h6 class="mb-1">FullStack Developer</h6>
+                                            <h6 class="mb-1">AWS Cloud Practitioner</h6>
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
+
+                                    <div class="ps-4 pb-4 timeline-flow">
+                                        <div>
+                                            <h6 class="mb-1">Linux Profesional</h6>
+                                            <p class="fs-14"></p>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -134,21 +142,21 @@
                                 <div class="d-flex align-items-center mb-4">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
-                                        <h6 class="mb-1">AWS Cloud</h6>
+                                        <h6 class="mb-1">AWS-Cloud</h6>
 
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center mb-4">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
-                                        <h6 class="mb-1">Desarrollador de Software</h6>
+                                        <h6 class="mb-1">Desarrollador de Software (FullStack Developer)</h6>
 
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center mb-4">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
-                                        <h6 class="mb-1">CyberSeguridad</h6>
+                                        <h6 class="mb-1">CiberSeguridad</h6>
 
                                     </div>
                                 </div>
@@ -260,18 +268,15 @@
                                 <h5 class="mb-3">Certificaciones</h5>
                                 <div class="d-flex align-items-center">
                                     <div class="certificate-img rounded-circle me-2">
-                                        <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/certificadoCloudAWSPractt.png')}}" alt="img" class="img-fluid">
+                                        <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/certificadoCloudAWSPractt.jpg')}}" alt="img" class="img-fluid">
                                     </div>
-                                </div>
-                                <div class="d-flex align-items-center">
                                     <div class="certificate-img rounded-circle me-2">
-                                        <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/CertificadoCiscoCCNA.jpeg')}}" alt="img" class="img-fluid">
+                                        <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/CertificadoCiscoCCNA.jpg')}}" alt="img" class="img-fluid">
                                     </div>
-                                </div>
-                                <div class="d-flex align-items-center">
                                     <div class="certificate-img rounded-circle me-2">
                                         <img src="{{URL::asset('build/img/certificates/certificatesIngSistemas/CertificadoLinux.jpeg')}}" alt="img" class="img-fluid">
                                     </div>
+
                                 </div>
                             </div>
                         </div>
