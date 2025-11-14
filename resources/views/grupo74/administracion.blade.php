@@ -154,70 +154,42 @@
             <div class="row g-4">
                 <!-- Instructor 1 -->
                 <div class="col-md-4 col-sm-6">
-                    <div >
+                    <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                    onclick="window.location='{{ route('detalles-instructor-administracion1') }}'">
                         <img src="{{ asset('build/img/instructor/docente1admi.jpg') }}" class="card-img-top" alt="Profesor 1">
                         <div class="card-body text-center">
                             <h5 class="card-title mb-2">Lic. Jose Humberto Martinez Morales</h5>
-                            <p class="card-text text-muted">Docente En administración de empresas con más de 14 años de experiencia universitaria. Maestria en docencia Superior</p>
+                           <!-- <p class="card-text text-muted">Docente En administración de empresas con más de 14 años de experiencia universitaria. Maestria en docencia Superior</p>-->
                         </div>
                     </div>
                 </div>
 
                 <!-- Instructor 2 -->
                 <div class="col-md-4 col-sm-6">
-                    <div >
+                    <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                    onclick="window.location='{{ route('detalles-instructor-criminologia5') }}'" >
                         <img src="{{ asset('build/img/instructor/debora soto1.jpg') }}" class="card-img-top" alt="Profesor 2">
                         <div class="card-body text-center">
                             <h5 class="card-title mb-2">Licda. Debora Anahid Soto Colindres</h5>
-                            <p class="card-text text-muted">Docente En administración de empresas con más de 7 años de experiencia universitaria.</p>
+                            <p class="card-text text-muted"></p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Instructor 3 -->
-                <div class="col-md-4 col-sm-6">
-                    <div >
-                        <img src="{{ asset('build/img/instructor/cordinadora admi.jpg') }}" class="card-img-top" alt="Profesor 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title mb-2">Licda. Heissell Yesenia Grajeda Solis (COORDINADORA)</h5>
-                            <p class="card-text text-muted"> Docente En administración de empresas con más de 10 años de experiencia universitaria.</p>
-                        </div>
-                    </div>
-                </div>
 
-                  <!-- Instructor 4 -->
+
+                  <!-- Instructor 3 -->
                   <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
                      onclick="window.location='{{ route('detalles-instructor-sistemas6') }}'">
-                    <img src="{{ asset('build/img/instructor/IngSistemasInstructor/IngEduardoHernandezPerfil.jpeg') }}" class="card-img-top" alt="Profesor 3">
+                    <img src="{{ asset('build/img/instructor/IngMaestroAdmi.jpg') }}" class="card-img-top" alt="Profesor 3">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Ing Eduardo Hernández</h5>
-                        <p class="card-text text-muted">Ing en Sistemas de la Información y Ciencias de la Computación (experiencia en Seguridad Informática).</p>
+                        <p class="card-text text-muted"></p>
                     </div>
                 </div>
             </div>
-              <!-- Instructor 5 -->
-              <div class="col-md-4 col-sm-6">
-                    <div >
-                        <img src="{{ asset('build/img/instructor/maestra2admi.jpg') }}" class="card-img-top" alt="Profesor 2">
-                        <div class="card-body text-center">
-                            <h5 class="card-title mb-2"><br><br><br>Licda. Ana Patricia De Leon</h5>
-                            <p class="card-text text-muted">Docente En administración de empresas con más de 9 años de experiencia universitaria. Maestria en Dirección y Gestión del Recurso
-                            Humano</p>
-                        </div>
-                    </div>
-                </div>
-                 <!-- Instructor 6 -->
-              <div class="col-md-4 col-sm-6">
-                    <div >
-                        <img src="{{ asset('build/img/instructor/maestro33admi.jpg') }}" class="card-img-top" alt="Profesor 2">
-                        <div class="card-body text-center">
-                            <h5 class="card-title mb-2"><br><br><br>Lic. Marvin Wosbely Colindres Gutierrez</h5>
-                            <p class="card-text text-muted">Docente En administración de empresas con más de 5 años de experiencia universitaria. Maestria en Dirección y Gestión del Recurso
-                            Humano</p>
-                        </div>
-                    </div>
-                </div>
+
 
             </div>
         </div>
