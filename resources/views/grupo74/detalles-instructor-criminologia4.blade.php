@@ -87,8 +87,8 @@
             </div>
             <h6 class="fw-bold mb-1 text-secondary ms-1" style="margin-left: 0px;">Especialidades:</h6>
             <div class="text-end">
-                <span class="badge bg-primary me-1">Análisis Criminal</span>
-                <span class="badge bg-primary me-1">Seguridad Digital</span>
+                <span class="badge bg-primary me-1">Notariado</span>
+                <span class="badge bg-primary me-1">Derecho Penal y Civil</span>
                 <span class="badge bg-primary me-1">Investigación Forense</span>
             </div>
         </div>
@@ -124,7 +124,9 @@
             </div>
             <hr class="my-3">
             <h6 class="fw-semibold text-secondary">Formación Académica</h6>
-            <p class="text-muted small mb-0">Licenciatura en Criminología - UMG</p>
+            <p class="text-muted small mb-0">Licenciatura en Ciencias Jurídicas y Sociales - UMG</p>
+            <p class="text-muted small mb-0">Notariado - UMG</p>
+            <p class="text-muted small mb-0">Derecho Penal y Civil - UMG</p>
             </div>
     </div>
 </div>

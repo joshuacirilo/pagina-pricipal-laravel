@@ -181,8 +181,8 @@
                   <!-- Instructor 3 -->
                   <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                     onclick="window.location='{{ route('detalles-instructor-sistemas6') }}'">
-                    <img src="{{ asset('build/img/instructor/IngMaestroAdmi.jpg') }}" class="card-img-top" alt="Profesor 3">
+                     onclick="window.location='{{ route('detalles-instructor-administracion3') }}'">
+                    <img src="{{ asset('build/img/instructor/IngSistemasInstructor/IngEduardoHernandezPerfil.jpeg') }}" class="card-img-top" alt="Profesor 3">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Ing Eduardo Hernández</h5>
                         <p class="card-text text-muted"></p>
@@ -196,21 +196,21 @@
     </section>
     <!-- /Instructores -->
 
-<!-- counter -->
-<section class="counter-sec">
+   <!-- counter -->
+    <section class="counter-sec">
         <div class="container">
             <div class="row">
                 <div class="col-xl-3 col-md-6">
                     <div class="card border-0 mb-0">
                         <div class="card-body">
                             <div class="d-flex align-items-center">
-                                <!--
+
                                 <div class="counter-icon">
-                                    <img src="/build/img/icons/iconsIngSistemas/networking_3150652.png" alt="img">
+                                    <img src="/build/img/icons/counter-icon1.svg" alt="img">
                                 </div>
-                                -->
+
                                 <div class="count-content">
-                                    <h4 class="text-info"><span class="count-digit">+10</span>+</h4>
+                                    <h4 class="text-info"><span class="count-digit">10</span>+</h4>
                                     <p>Oportunidades laborales</p>
                                 </div>
                             </div>
@@ -221,13 +221,13 @@
                     <div class="card border-0 mb-0">
                         <div class="card-body">
                             <div class="d-flex align-items-center">
-                                <!--
+
                                 <div class="counter-icon">
-                                    <img src="./build/img/icons/counter-icon2.svg" alt="img">
+                                    <img src="/build/img/icons/counter-icon2.svg" alt="img">
                                 </div>
-                                -->
+
                                 <div class="count-content">
-                                    <h4 class="text-warning"><span class="count-digit">+10</span>+</h4>
+                                    <h4 class="text-warning"><span class="count-digit">6</span>+</h4>
                                     <p>Catedráticos</p>
                                 </div>
                             </div>
@@ -238,13 +238,13 @@
                     <div class="card border-0 mb-0">
                         <div class="card-body">
                             <div class="d-flex align-items-center">
-                                <!--
+
                                 <div class="counter-icon">
-                                    <img src="./build/img/icons/counter-icon3.svg" alt="img">
+                                    <img src="/build/img/icons/counter-icon3.svg" alt="img">
                                 </div>
-                                -->
+
                                 <div class="count-content">
-                                    <h4 class="text-skyblue"><span class="count-digit">+15</span>+</h4>
+                                    <h4 class="text-skyblue"><span class="count-digit">25</span>+</h4>
                                     <p>Cursos certificados</p>
                                 </div>
                             </div>
@@ -254,13 +254,12 @@
                 <div class="col-xl-3 col-md-6">
                     <div class="card border-0 mb-0">
                         <div class="card-body d-flex align-items-center">
-                            <!--
+
                             <div class="counter-icon">
-                            <img src="./build/img/icons/counter-icon4.svg" alt="img">
+                                 <img src="/build/img/icons/counter-icon4.svg" alt="img">
                             </div>
-                            -->
                             <div class="count-content">
-                            <h4 class="text-lightgreen"><span class="count-digit">+10</span>+</h4>
+                            <h4 class="text-lightgreen"><span class="count-digit">8</span>+</h4>
                                 <p>Salones de clases</p>
                             </div>
                         </div>

@@ -3,6 +3,9 @@
 @section('content')
     @component('components.breadcrumb')
         @slot('title')
+         <br>
+            <span class="badge" style="background-color: #3f3f3fff; color: white;">ADMINISTRACIÓN DE EMPRESAS</span>
+        </br>
             Conoce a nuestros profesores        @endslot
         @slot('item1')
             Home
@@ -20,15 +23,15 @@
     <div class="card-body ps-5 pe-4 pt-4 pb-4">
         <!-- Encabezado con imagen y datos -->
         <div class="d-flex align-items-center mb-4">
-        <img src="{{ URL::asset('build/img/instructor/maestra2admi.jpg') }}"
+        <img src="{{ URL::asset('build/img/instructor/IngSistemasInstructor/IngEduardoHernandezPerfil.jpeg') }}"
      alt="Instructor"
      class="me-3"
      style="width: 190px; height: 190px; object-fit: cover; border-radius: 50%; border: 2px solid #dee2e6;">
 
             <div>
-                <h4 class="fw-bold text-primary mb-1">Licda. Ana Patricia De Leon</h4>
-                <span class="text-muted d-block">Instructora Senior en Administración</span>
-                <small class="text-secondary">UMG Guastatoya | 9 años de experiencia</small>
+                <h4 class="fw-bold text-primary mb-1">Ing Eduardo Steven Hernández Méndez</h4>
+                <span class="text-muted d-block">Ingeniero en Sistemas de Información y Ciencias de la Computación</span>
+                <small class="text-secondary">UMG Guastatoya | Experiencia como docente en la Facultad de Ingeniería en Sistemas. | Experiencia en Seguridad Informática |Desarrollador de Software</small>
             </div>
             </div>
         </div>
@@ -36,7 +39,16 @@
         <!-- Título y categoría -->
         <div class="d-flex align-items-center justify-content-between mb-3 border-bottom pb-2">
             <div class="card-body ps-5 pe-4 pt-4 pb-4">
-            <h5 class="fw-bold mb-0 text-dark">Especialidad Principal</h5>
+            
+        <!-- Título principal -->
+        <h5 class="fw-bold mb-1 text-dark">
+            <i class="fa-solid fa-user-tie me-2 text-primary"></i> Perfil Profesional
+        </h5>
+          <!-- Subtítulo debajo -->
+        <span class="fw-semibold text-muted" style="font-size: 0.92rem;">
+            Formación y experiencia destacada del instructor
+        </span>
+
         </div>
         </div>
 
@@ -45,21 +57,17 @@
             <div class="d-flex align-items-center mb-2 flex-wrap">
                 <div class="card-body ps-5 pe-4 pt-4 pb-4">
 
-                <span class="me-2 fw-semibold text-muted">Administración y Gestión del Recurso
-                Humano</span>
-                <a href="javascript:void(0);" class="text-dark fw-medium me-3"> </a>
-                <!--<i class="fa-solid fa-star text-warning me-1"></i>
+                <span class="me-2 fw-semibold text-muted">Email:</span>
+                <a href="javascript:void(0);" class="text-dark fw-medium me-3">estever51@miumg.edu.gt</a>
+                <i class="fa-solid fa-star text-warning me-1"></i>
                 <span class="fw-semibold">4.9</span>
-                <span class="text-muted ms-1">(200 Reviews)</span>-->
+                <span class="text-muted ms-1">(200 Reviews)</span>
 
             </div>
             </div>
             <p class="text-muted mb-0">
                 <div class="card-body ps-5 pe-4 pt-4 pb-4">
-                profesional con formación universitaria sólida, capaz de aplicar conocimientos teóricos y prácticos en su campo de
-                especialización. Se destaca por su responsabilidad, ética y compromiso con el trabajo bien hecho. Posee habilidades
-                de comunicación, análisis y resolución de problemas, lo que le permite desempeñarse con eficacia en diferentes entornos
-                laborales.
+                Profesional con Maestría en Seguridad Informática y experiencia como docente en la Facultad de Ingeniería en Sistemas. Mi trayectoria combina la formación académica especializada en ciberseguridad con la práctica docente, orientada a preparar a los estudiantes para los desafíos tecnológicos actuales. Me dedico a integrar los avances en protección de datos y gestión de riesgos digitales en la formación de futuros ingenieros, promoviendo un enfoque integral entre la teoría y la aplicación en seguridad informática.
                 </div>
             </p>
 
@@ -77,9 +85,9 @@
             </div>
             <h6 class="fw-bold mb-1 text-primary ms-1" style="margin-left: 0px;">Especialidades:</h6>
             <div class="text-end">
-                <span class="badge bg-primary me-1">Administración Estratégica</span>
-                <span class="badge bg-success me-1">Administración Pública</span>
-                <span class="badge bg-info text-dark">Administración de Recursos Humanos</span>
+                <span class="badge bg-primary me-1">Desarrollador de Software</span>
+                <span class="badge bg-primary me-1">Seguridad Informática</span>
+                <span class="badge bg-primary me-1">Maestría en Seguridad Informática</span>
             </div>
         </div>
 

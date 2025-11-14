@@ -5,10 +5,10 @@
     @component('components.breadcrumb')
         @slot('title')
         <br>
-            <span class="badge" style="background-color: #3f3f3fff; color: white;">CRIMINOLOGIA</span>
+            <span class="badge" style="background-color: #3f3f3fff; color: white;">DERECHO</span>
         </br>
-            Nuestros Instructores
-            Conoce a nuestros profesores        @endslot
+            
+            Nuestros Instructores        @endslot
         @slot('item1')
             Home
         @endslot
@@ -26,15 +26,15 @@
     <div class="card-body ps-5 pe-4 pt-4 pb-4">
         <!-- Encabezado con imagen y datos -->
         <div class="d-flex align-items-center mb-4">
-        <img src="{{ URL::asset('build/img/instructor/LicCarlos.png') }}" 
+        <img src="{{ URL::asset('build/img/instructor/docenteCrimi3.png') }}" 
      alt="Instructor" 
      class="me-3"
      style="width: 190px; height: 190px; object-fit: cover; border-radius: 50%; border: 2px solid #dee2e6;">
 
             <div>
-                <h4 class="fw-bold text-primary mb-1">Lic. Carlos Augusto Naavarro Ávila</h4>
-                <span class="text-muted d-block">Instructor Senior en Criminología</span>
-                <small class="text-secondary">Universidad Mariano Gálvez de Guatemala | Más de 10 años de experiencia</small>
+                <h4 class="fw-bold text-primary mb-1">Licda. Susan Eunice Galindo Catalan</h4>
+                <span class="text-muted d-block">Licenciada en Ciencias Jurídicas y Sociales</span>
+                <small class="text-secondary">Universidad Mariano Gálvez de Guatemala | Más de 11 años de experiencia</small>
             </div>
             </div>
         </div>
@@ -61,7 +61,7 @@
                 <div class="card-body ps-5 pe-4 pt-4 pb-4">
 
                 <span class="me-2 fw-semibold text-muted">Email:</span>
-                <a href="javascript:void(0);" class="text-dark fw-medium me-3">acarlosn72@miumg.edu.gt</a>
+                <a href="javascript:void(0);" class="text-dark fw-medium me-3">seuniceg15@miumg.edu.gt</a>
                 <i class="fa-solid fa-star text-warning me-1"></i>
                 <span class="fw-semibold">4.9</span>
                 <span class="text-muted ms-1">(200 Reviews)</span>
@@ -70,8 +70,10 @@
             </div>  
             <p class="text-muted mb-0">
                 <div class="card-body ps-5 pe-4 pt-4 pb-4">
-                Especialización Universitaria En Análisis Forense Digital Y Actuaciones Como Primeros Respondientes (Universidad Europea Miguel De Cervantes, Valladolid, España)
-                </div>    
+                Con 11 años de experiencia en diferentes áreas del Derecho como lo son penal, familia, civil y notariado.
+                Catedrática de la facultad de Criminología y Política Criminal desde el año 2,018, impartiendo mis conocimientos y habilidades en la formación académica de nuestros estudiantes en las áreas específicas del Derecho.   
+            </div>    
+
             </p>
 
         </div>
@@ -88,9 +90,9 @@
             </div>
             <h6 class="fw-bold mb-1 text-secondary ms-1" style="margin-left: 0px;">Especialidades:</h6>
             <div class="text-end">
-                <span class="badge bg-primary me-1">Análisis Criminal</span>
-                <span class="badge bg-primary me-1">Seguridad Digital</span>
-                <span class="badge bg-primary me-1">Investigación Forense</span>
+                <span class="badge bg-primary me-1">Derecho Penal</span>
+                <span class="badge bg-primary me-1">Derecho Notariado</span>
+                <span class="badge bg-primary me-1">Derecho Civil</span>
             </div>
         </div>
 
@@ -122,16 +124,15 @@
             <h5 class="fw-bold mb-3">Certificaciones</h5>
             <div class="d-flex justify-content-center gap-3 flex-wrap">
                 <img src="{{ URL::asset('build/img/instructor/umg.png') }}" alt="Cert" width="60" class="rounded-3 shadow-sm">
-                <img src="{{ URL::asset('build/img/instructor/usac.png') }}" alt="Cert" width="60" class="rounded-3 shadow-sm">
-                <img src="{{ URL::asset('build/img/instructor/valladolid.png') }}" alt="Cert" width="60" class="rounded-3 shadow-sm">
+
             </div>
             <hr class="my-3">
             <h6 class="fw-semibold text-secondary">Formación Académica</h6>
-            <p class="text-muted small mb-0">Licenciatura en Criminología - UMG</p>
+            <p class="text-muted small mb-0">Licenciatura en Ciencias Jurídicas y Sociales - UMG</p>
             
-            <p class="text-muted small mb-0">Licenciatura en Criminología - USAC</p>
+            <p class="text-muted small mb-0">Derecho Penal y Civil - UMG</p>
 
-            <p class="text-muted small mb-0">Especialización Universitaria En Análisis Forense Digital Y Actuaciones Como Primeros Respondientes  - Valladolid</p></p>
+            <p class="text-muted small mb-0">Notariado - UMG</p></p>
         </div>
     </div>
 </div>

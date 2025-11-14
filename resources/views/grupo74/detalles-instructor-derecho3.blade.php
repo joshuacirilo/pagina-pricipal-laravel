@@ -5,7 +5,7 @@
     @component('components.breadcrumb')
         @slot('title')
         <br>
-            <span class="badge" style="background-color: #3f3f3fff; color: white;">CRIMINOLOGIA</span>
+            <span class="badge" style="background-color: #3f3f3fff; color: white;">DERECHO</span>
         </br>
             Nuestros Instructores
             Conoce a nuestros profesores        @endslot
@@ -32,7 +32,7 @@
      style="width: 190px; height: 190px; object-fit: cover; border-radius: 50%; border: 2px solid #dee2e6;">
 
             <div>
-                <h4 class="fw-bold text-primary mb-1">Lic. Carlos Augusto Naavarro Ávila</h4>
+                <h4 class="fw-bold text-primary mb-1">Lic. Carlos Augusto Navarro Ávila</h4>
                 <span class="text-muted d-block">Instructor Senior en Criminología</span>
                 <small class="text-secondary">Universidad Mariano Gálvez de Guatemala | Más de 10 años de experiencia</small>
             </div>
