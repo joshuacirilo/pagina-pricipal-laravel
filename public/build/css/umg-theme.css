@@ -592,3 +592,40 @@ section.banner-section,
     height: auto !important;
     display: block !important;
 }
+
+
+/* Eliminar espacio blanco arriba del header */
+body, html {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Forzar que el header no deje espacio encima */
+header, .header, .header-five, .header-four, .header-three {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    top: 0 !important;
+}
+
+/* Eliminar cualquier espacio fantasma antes del header */
+body > *:first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+        .instructors-section .card-img-top {
+            width: 180px;            /* tamaño del círculo */
+            height: 180px;           /* tamaño del círculo */
+            border-radius: 50%;      /* hace el círculo */
+            object-fit: cover;       /* recorta sin deformar */
+            object-position: center; /* centra la imagen */
+            margin: 20px auto 0;     /* centrar imagen dentro de la card */
+            display: block;
+        }
+
+        /* Ajusta la tarjeta para que no se vea estirada */
+        .instructor-card {
+            padding-top: 20px;
+            text-align: center;
+        }
+
