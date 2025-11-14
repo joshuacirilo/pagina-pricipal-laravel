@@ -221,7 +221,7 @@
                                      <img src="/build/img/icons/counter-icon2.svg" alt="img">
                                 </div>
                                 <div class="count-content">
-                                    <h4 class="text-warning"><span class="count-digit">12</span>+</h4>
+                                    <h4 class="text-warning"><span class="count-digit">6</span>+</h4>
                                     <p>Catedráticos</p>
                                 </div>
                             </div>

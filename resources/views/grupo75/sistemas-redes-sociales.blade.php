@@ -50,7 +50,7 @@
                             </div>
                             <div class="ps-3">
                                 <h6 class="mb-2">Título académico a obtener</h6>
-                                <p>Ingeniero en Sistemas de Información y Ciencias de la Computación.</p>
+                                <p>Ingeniero en Sistemas de Información y Ciencias de la Computación</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center about-us-banner">

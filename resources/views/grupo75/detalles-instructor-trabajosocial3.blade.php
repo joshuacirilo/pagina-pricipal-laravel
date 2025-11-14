@@ -28,13 +28,13 @@
                                             <h6 class="fw-bold">Lic. Flavio Arturo Juárez Arristondo</h6>
                                         </div>
                                         <div class="d-flex align-items-center mb-1">
-                                            <p>Licenciado en Trabajo Social</p>
+                                            <p>Licenciado en Pedagogia y Ciencias en la Educación</p>
                                             <span class="me-2">
                                             </span>
                                             <span class="fs-14"></span>
                                         </div>
                                         <div>
-                                            <p>Catedrático de la Facultad de Licenciatura en Trabajo Social</p>
+                                            <p>Pedagogo, Teólogo y Magister en Criminología </p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between flex-wrap">
@@ -47,7 +47,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="mb-3">Acerca de Mí</h5>
-                                <p class="mb-3">  Mi trayectoria se ha centrado en la gestión de proyectos de desarrollo comunitario y la incidencia en políticas públicas, trabajando con municipalidades. En el aula, promuevo el análisis crítico de la realidad guatemalteca y la planificación estratégica de intervenciones sociales sostenibles, siempre desde el respeto a la diversidad cultural y los derechos humanos.</p>
+                                <p class="mb-3">Soy un docente multidisciplinario con formación en Teología, Criminología y Psicología Forense, Pedagogía, y un doctorado en curso en Ciencias de la Investigación. Integro conocimientos humanistas, científicos y metodológicos para enriquecer la formación en facultades como Trabajo Social, Derecho y Educación. Mi enfoque conecta la ética, el análisis social y la investigación aplicada, preparando estudiantes para responder a los desafíos contemporáneos con rigor y conciencia crítica.</p>
                             </div>
                         </div>
 
@@ -57,24 +57,36 @@
                                 <div class="education-flow">
                                     <div class="ps-4 pb-4 timeline-flow">
                                         <div>
-                                            <h6 class="mb-1">Licenciatura en Trabajo Social</h6>
+                                            <h6 class="mb-1">Profesor de enseñanza media</h6>
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
-                                    <!--
+
                                     <div class="ps-4 pb-4 timeline-flow">
                                         <div>
-                                            <h6 class="mb-1">B</h6>
+                                            <h6 class="mb-1">Licenciatura en Pedagogía y Ciencias de la Educación</h6>
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
-                                    <div class="ps-4 timeline-flow">
+                                    <div class="ps-4 pb-4 timeline-flow">
                                         <div>
-                                            <h6 class="mb-1">C</h6>
+                                            <h6 class="mb-1">Maestría en Teología</h6>
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
-                                    -->
+                                    <div class="ps-4 pb-4 timeline-flow">
+                                        <div>
+                                            <h6 class="mb-1">Maestría en Criminología con Énfasis de Psicología Forense</h6>
+                                            <p class="fs-14"></p>
+                                        </div>
+                                    </div>
+                                    <div class="ps-4 pb-4 timeline-flow">
+                                        <div>
+                                            <h6 class="mb-1">Cierre de Doctorado en Ciencias de la Investigación</h6>
+                                            <p class="fs-14"></p>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -85,17 +97,39 @@
                                 <div class="d-flex align-items-center mb-4">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
-                                        <h6 class="mb-1">Ayuda en programas de apoyo a comunidades</h6>
+                                        <h6 class="mb-1">Ministerio de Educación</h6>
                                         <p></p>
                                     </div>
                                 </div>
-                                <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center mb-4">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
-                                        <h6 class="mb-1">Catedrático de la Facultad de Trabajo Social</h6>
+                                        <h6 class="mb-1">Catedrático de distintas Facultades del Centro UMG Guastatoya</h6>
                                         <p></p>
                                     </div>
                                 </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
+                                    <div>
+                                        <h6 class="mb-1">Experiencia como Teólogo</h6>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
+                                    <div>
+                                        <h6 class="mb-1">Experiencia en Investigación</h6>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
+                                    <div>
+                                        <h6 class="mb-1">Experiencia en Criminología y Psicología Forense</h6>
+                                        <p></p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
 <!--

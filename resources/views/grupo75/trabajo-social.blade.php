@@ -191,7 +191,7 @@
                     <img src="{{ asset('build/img/instructor/TrabajoSocialInstructor/LicFlavioJuarez.jpg') }}" class="card-img-top" alt="Profesor 3">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Lic. Flavio Juárez</h5>
-                        <p class="card-text text-muted">Licenciado en Trabajo Social.</p>
+                        <p class="card-text text-muted">Licenciado en Pedagogía y Ciencia de la Educación</p>
                     </div>
                 </div>
             </div>
@@ -228,7 +228,7 @@
                                     <img src="/build/img/icons/counter-icon2.svg" alt="img">
                                 </div>
                                 <div class="count-content">
-                                    <h4 class="text-warning"><span class="count-digit">8</span>+</h4>
+                                    <h4 class="text-warning"><span class="count-digit">6</span>+</h4>
                                     <p>Catedráticos</p>
                                 </div>
                             </div>
