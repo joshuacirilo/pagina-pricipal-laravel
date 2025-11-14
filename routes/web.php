@@ -136,27 +136,71 @@ Route::get('/grupo74/detalles-instructor-administracion3', function () {
 
 
 //-------maestros criminologria-----
-
-
 //instructor 1
 Route::get('/grupo74/detalles-instructor-criminologia1', function () {
     return view('grupo74.detalles-instructor-criminologia1');
 })->name('detalles-instructor-criminologia1');
 
 //instructor 2
-Route::get('/grupo74/detalles-instructor-criminologia2', function () {
-    return view('grupo74.detalles-instructor-criminologia2');
-})->name('detalles-instructor-criminologia2');
+Route::get('/grupo74/detalles-instructor-criminologia22', function () {
+    return view('grupo74.detalles-instructor-criminologia22');
+})->name('detalles-instructor-criminologia22');
 
+//instructor 3
+Route::get('/grupo74/detalles-instructor-criminologia3', function () {
+    return view('grupo74.detalles-instructor-criminologia3');
+})->name('detalles-instructor-criminologia3');
+
+//instructor 4
+Route::get('/grupo74/detalles-instructor-criminologia4', function () {
+    return view('grupo74.detalles-instructor-criminologia4');
+})->name('detalles-instructor-criminologia4');
+
+//instructor 5
+Route::get('/grupo74/detalles-instructor-criminologia5', function () {
+    return view('grupo74.detalles-instructor-criminologia5');
+})->name('detalles-instructor-criminologia5');
+
+
+//instructor 6
+Route::get('/grupo74/detalles-instructor-criminologia6', function () {
+    return view('grupo74.detalles-instructor-criminologia6');
+})->name('detalles-instructor-criminologia6');
+
+
+// ----------maestros Derecho-----
+//instructor 1
+Route::get('/grupo74/detalles-instructor-derecho1', function () {
+    return view('grupo74.detalles-instructor-derecho1');
+})->name('detalles-instructor-derecho1');
+//instructor 2
+Route::get('/grupo74/detalles-instructor-derecho2', function () {
+    return view('grupo74.detalles-instructor-derecho2');
+})->name('detalles-instructor-derecho2');
+//instructor 3
+Route::get('/grupo74/detalles-instructor-derecho3', function () {
+    return view('grupo74.detalles-instructor-derecho3');
+})->name('detalles-instructor-derecho3');
+//instructor 4
+Route::get('/grupo74/detalles-instructor-derecho4', function () {
+    return view('grupo74.detalles-instructor-derecho4');
+})->name('detalles-instructor-derecho4');
+//instructor 5
+Route::get('/grupo74/detalles-instructor-derecho5', function () {
+    return view('grupo74.detalles-instructor-derecho5');
+})->name('detalles-instructor-derecho5');
+
+
+
+//instructor 6
+Route::get('/grupo74/detalles-instructor-derecho6', function () {
+    return view('grupo74.detalles-instructor-derecho6');
+})->name('detalles-instructor-derecho6');
 
 
 
 //--------routes para grupo 73 pruebas de conexion
-
-
 //pagina de sistemas prueba
-
-
 Route::get('/grupo73/sistemas', function () {
     return view('grupo73.sistemas');
 })->name('sistemas');
