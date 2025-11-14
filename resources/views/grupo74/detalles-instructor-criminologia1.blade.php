@@ -7,9 +7,8 @@
         <br>
             <span class="badge" style="background-color: #3f3f3fff; color: white;">CRIMINOLOGIA</span>
         </br>
-            Nuestros Instructores
-        @endslot
-            Conoce a nuestros profesores        @endslot
+            
+            Nuestros Instructores        @endslot
         @slot('item1')
             Home
         @endslot

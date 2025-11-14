@@ -162,7 +162,7 @@
                     <img src="{{ asset('build/img/instructor/2.png') }}" class="card-img-top" alt="Profesor 2">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Lic. Roberto Bladimir Roldán Cruz</h5>
-                        <p class="card-text text-muted">Licenciado en Administración de Empresas</p>
+                        <p class="card-text text-muted">LICENCIADO EN CIENCIAS CRIMINOLOGÍA Y CRIMINALÍSTICA </p>
                     </div>
                 </div>
             </div>
@@ -173,7 +173,7 @@
                      onclick="window.location='{{ route('detalles-instructor-criminologia4') }}'">
                     <img src="{{ asset('build/img/instructor/1.png') }}" class="card-img-top" alt="Profesor 3">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">Licda. Falvio Arturon</h5>
+                        <h5 class="card-title mb-2">Lic. Falvio Arturon</h5>
                         <p class="card-text text-muted">Licenciado en Ciencias Jurídicas y Sociales</p>
                     </div>
                 </div>
