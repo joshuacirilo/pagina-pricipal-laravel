@@ -128,6 +128,27 @@
     <!-- benefits -->
 
     <!-- *************************Instructores*************************esto ya funciona -->
+
+
+    <style>
+        .instructors-section .card-img-top {
+            width: 180px;            /* tamaño del círculo */
+            height: 180px;           /* tamaño del círculo */
+            border-radius: 50%;      /* hace el círculo */
+            object-fit: cover;       /* recorta sin deformar */
+            object-position: center; /* centra la imagen */
+            margin: 20px auto 0;     /* centrar imagen dentro de la card */
+            display: block;
+        }
+
+        /* Ajusta la tarjeta para que no se vea estirada */
+        .instructor-card {
+            padding-top: 20px;
+            text-align: center;
+        }
+    </style>
+
+
 <section class="instructors-section py-5">
     <div class="container">
         <h2 class="text-center mb-5 fw-bold text-primary">Nuestros Instructores</h2>
