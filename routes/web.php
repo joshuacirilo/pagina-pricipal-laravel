@@ -25,6 +25,20 @@ Route::get('/grupo75/trabajo-social', function () {
     return view('grupo75.trabajo-social');
 })->name('trabajo-social');
 
+//---maestros trabajo social
+Route::get('/grupo75/detalles-instructor-trabajosocial1', function () {
+    return view('grupo75.detalles-instructor-trabajosocial1');
+})->name('detalles-instructor-trabajosocial1');
+
+Route::get('/grupo75/detalles-instructor-trabajosocial2', function () {
+    return view('grupo75.detalles-instructor-trabajosocial2');
+})->name('detalles-instructor-trabajosocial2');
+
+Route::get('/grupo75/detalles-instructor-trabajosocial3', function () {
+    return view('grupo75.detalles-instructor-trabajosocial3');
+})->name('detalles-instructor-trabajosocial3');
+
+
 //---sistemas-redes-sociales
 Route::get('/grupo75/sistemas-redes-sociales', function () {
     return view('grupo75.sistemas-redes-sociales');

@@ -19,64 +19,26 @@
                             <div class="card-body instructor-details">
                                 <div class="instructor-img">
                                     <a href="javascript:void(0);">
-                                        <img src="{{URL::asset('build/img/user/user-61.jpg')}}" alt="img" class="img-fluid">
+                                        <img src="{{URL::asset('build/img/instructor/unknown_user.png')}}" alt="img" class="img-fluid">
                                     </a>
-                                    <a href="javascript:void(0);" class="btn heart"><i class="isax isax-heart5 text-danger"></i></a>
                                 </div>
                                 <div class="flex-fill">
                                     <div class="pb-3 border-bottom mb-3">
                                         <div class="d-flex align-items-center justify-content-between mb-1">
-                                            <h6 class="fw-bold"><a href="javascript:void(0);">No disponible</a></h6>
+                                            <h6 class="fw-bold">Lic. Carlos Manuel Ramos Gomez</h6>
                                         </div>
                                         <div class="d-flex align-items-center mb-1">
-                                            <a href="javascript:void(0);" class="fs-14 me-2">En mantenimiento</a>
+                                            <p>Lic. en Contaduría Pública y Auditoría</p>
                                             <span class="me-2">
-                                                <i class="fa-solid fa-star text-warning"></i>
                                             </span>
                                             <span class="fs-14"></span>
                                         </div>
                                         <div>
-                                            <p>Muy pronto disponible!</p>
+                                            <p>Catedrático de la Facultad de Ciencias Económicas</p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between flex-wrap">
-                                        <div class="d-flex align-items-center counts-details">
-                                            <span class="d-flex align-items-center me-4">
-                                                <span class="d-flex align-items-center"><i class="isax isax-book-saved5 fs-16 text-secondary me-2"></i></span>
 
-                                            </span>
-                                            <span class="d-flex align-items-center">
-                                                <span class="d-flex align-items-center"><i class="isax isax-profile-2user5 fs-16 text-secondary me-2"></i></span>
-
-                                            </span>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <span>
-                                                <a href="javascript:void(0);" class="rounded-circle d-inline-flex align-items-center justify-content-center me-2">
-                                                    <i class="fa-brands fa-facebook-f"></i>
-                                                </a>
-                                            </span>
-                                            <span>
-                                                <a href="javascript:void(0);" class="rounded-circle d-inline-flex align-items-center justify-content-center me-2">
-                                                    <i class="fa-brands fa-instagram"></i>
-                                                </a>
-                                            </span>
-                                            <span>
-                                                <a href="javascript:void(0);" class="rounded-circle d-inline-flex align-items-center justify-content-center me-2">
-                                                    <i class="fa-brands fa-x-twitter"></i>
-                                                </a>
-                                            </span>
-                                            <span>
-                                                <a href="javascript:void(0);" class="rounded-circle d-inline-flex align-items-center justify-content-center me-2">
-                                                    <i class="fa-brands fa-youtube"></i>
-                                                </a>
-                                            </span>
-                                            <span>
-                                                <a href="javascript:void(0);" class="rounded-circle d-inline-flex align-items-center justify-content-center">
-                                                    <i class="fa-brands fa-linkedin-in"></i>
-                                                </a>
-                                            </span>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -84,9 +46,8 @@
 
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="mb-3">About Me</h5>
-                                <p class="mb-3"> </p>
-                                <a href="javascript:void(0);" class="read-more-btn">Read More</a>
+                                <h5 class="mb-3">Acerca de Mí</h5>
+                                <p class="mb-3"> Licenciado en Contaduría Pública y Auditoría con especialización en tributación y consultoría empresarial. En mi trayectoria profesional he liderado procesos de implementación de sistemas de control interno en PyMEs. Como catedrática de la UMG Guastatoya, me dedico a formar profesionales capaces de generar valor a través de la gestión contable estratégica, combinando marcos normativos locales con estándares globales.</p>
                             </div>
                         </div>
 
@@ -96,10 +57,11 @@
                                 <div class="education-flow">
                                     <div class="ps-4 pb-4 timeline-flow">
                                         <div>
-                                            <h6 class="mb-1">A</h6>
+                                            <h6 class="mb-1">Licenciatura en Contaduría Pública y Auditoría</h6>
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
+                                    <!--
                                     <div class="ps-4 pb-4 timeline-flow">
                                         <div>
                                             <h6 class="mb-1">B</h6>
@@ -112,6 +74,7 @@
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
+                                    -->
                                 </div>
                             </div>
                         </div>
@@ -122,14 +85,14 @@
                                 <div class="d-flex align-items-center mb-4">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
-                                        <h6 class="mb-1">A</h6>
+                                        <h6 class="mb-1">Contador Público</h6>
                                         <p>-</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
-                                        <h6 class="mb-1">B</h6>
+                                        <h6 class="mb-1">Auditor en entidades privadas</h6>
                                         <p>-</p>
                                     </div>
                                 </div>
@@ -222,6 +185,7 @@
                     </div>
 -->
                     <div class="col-lg-4">
+                        <!--
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="mb-3">Certifications</h5>
@@ -241,17 +205,17 @@
                                 </div>
                             </div>
                         </div>
-
+                         -->
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="mb-3">Contact Details</h5>
+                                <h5 class="mb-3">Detalles de Contacto</h5>
                                 <div class="d-flex align-items-center mb-4">
                                     <span class="contact-icon rounded-circle d-flex align-items-center justify-content-center me-3">
                                         <i class="fa-regular fa-envelope"></i>
                                     </span>
                                     <div>
                                         <h6 class="mb-0">Email</h6>
-                                        <p class="mb-0">j@example.com</p>
+                                        <p class="mb-0">cramosg@miumg.edu.gt</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center mb-4">
@@ -259,10 +223,11 @@
                                         <i class="isax isax-location"></i>
                                     </span>
                                     <div>
-                                        <h6 class="fs-16 fw-medium text-gray-9 mb-0">Address</h6>
-                                        <p class="mb-0 text-truncate"></p>
+                                        <h6 class="fs-16 fw-medium text-gray-9 mb-0">Dirección</h6>
+                                        <p class="mb-0 text-truncate">Guastatoya</p>
                                     </div>
                                 </div>
+                                <!--
                                 <div class="d-flex align-items-center">
                                     <span class="contact-icon rounded-circle d-flex align-items-center justify-content-center me-3">
                                         <i class="isax isax-call"></i>
@@ -272,6 +237,7 @@
                                         <p class="mb-0"></p>
                                     </div>
                                 </div>
+                                 -->
                             </div>
                         </div>
                     </div>

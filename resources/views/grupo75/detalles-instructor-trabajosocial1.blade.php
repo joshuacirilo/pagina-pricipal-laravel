@@ -25,20 +25,59 @@
                                 <div class="flex-fill">
                                     <div class="pb-3 border-bottom mb-3">
                                         <div class="d-flex align-items-center justify-content-between mb-1">
-                                            <h6 class="fw-bold">Lic. Eddy Guillermo Menendez Muñoz</h6>
+                                            <h6 class="fw-bold">Lic Lygia</h6>
                                         </div>
                                         <div class="d-flex align-items-center mb-1">
-                                            <p>Lic. en Contaduría Pública y Audtoría</p>
+                                            <p>Coordinadora de la Facultad de Licenciatura en Trabajo Social Centro UMG Guastatoya y Licenciada en Trabajo Social.</p>
+
                                             <span class="me-2">
                                             </span>
                                             <span class="fs-14"></span>
                                         </div>
                                         <div>
-                                            <p>Catedrático de la Facultad de Ciencias Económicas</p>
+                                            <p>Con experiencia en ayuda a comunidades en riesgo</p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between flex-wrap">
+                                    <!--
+                                    <div class="d-flex align-items-center counts-details">
+                                            <span class="d-flex align-items-center me-4">
+                                                <span class="d-flex align-items-center"><i class="isax isax-book-saved5 fs-16 text-secondary me-2"></i></span>
 
+                                            </span>
+                                            <span class="d-flex align-items-center">
+                                                <span class="d-flex align-items-center"><i class="isax isax-profile-2user5 fs-16 text-secondary me-2"></i></span>
+
+                                            </span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <span>
+                                                <a href="javascript:void(0);" class="rounded-circle d-inline-flex align-items-center justify-content-center me-2">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </a>
+                                            </span>
+                                            <span>
+                                                <a href="javascript:void(0);" class="rounded-circle d-inline-flex align-items-center justify-content-center me-2">
+                                                    <i class="fa-brands fa-instagram"></i>
+                                                </a>
+                                            </span>
+                                            <span>
+                                                <a href="javascript:void(0);" class="rounded-circle d-inline-flex align-items-center justify-content-center me-2">
+                                                    <i class="fa-brands fa-x-twitter"></i>
+                                                </a>
+                                            </span>
+                                            <span>
+                                                <a href="javascript:void(0);" class="rounded-circle d-inline-flex align-items-center justify-content-center me-2">
+                                                    <i class="fa-brands fa-youtube"></i>
+                                                </a>
+                                            </span>
+                                            <span>
+                                                <a href="javascript:void(0);" class="rounded-circle d-inline-flex align-items-center justify-content-center">
+                                                    <i class="fa-brands fa-linkedin-in"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        -->
                                     </div>
                                 </div>
                             </div>
@@ -47,7 +86,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="mb-3">Acerca de Mí</h5>
-                                <p class="mb-3">Contador Público y Auditor con amplia experiencia en el sector público y auditoría gubernamental. Mi labor docente en la UMG Guastatoya se centra en áreas de contabilidad avanzada, auditoría de estados financieros y gestión de riesgos. Promuevo en mis estudiantes el análisis crítico de la realidad económica nacional y la aplicación de herramientas tecnológicas para la transformación de la práctica contable moderna.</p>
+                                <p class="mb-3">Como coordinadora de la facultad, promuevo una formación basada en la ética, el pensamiento crítico y la intervención social con impacto tangible. Trabajamos para que nuestros estudiantes se conviertan en agentes de cambio capaces de transformar realidades, combinando el rigor académico con el compromiso hacia las necesidades más urgentes de la sociedad guatemalteca.</p>
                             </div>
                         </div>
 
@@ -57,24 +96,27 @@
                                 <div class="education-flow">
                                     <div class="ps-4 pb-4 timeline-flow">
                                         <div>
-                                            <h6 class="mb-1">Licenciatura en Contaduría Pública y Auditoría</h6>
-                                            <p class="fs-14">-</p>
+                                            <h6 class="mb-1">Licenciatura en Trabajo Social</h6>
+                                            <p class="fs-14"></p>
                                         </div>
                                     </div>
                                     <!--
                                     <div class="ps-4 pb-4 timeline-flow">
                                         <div>
-                                            <h6 class="mb-1">B</h6>
-                                            <p class="fs-14">-</p>
+                                            <h6 class="mb-1">Magíster Scientiae en Contabilidad y Auditoría Internacional con Enfoque en Riesgos</h6>
+                                            <p class="fs-14"></p>
                                         </div>
                                     </div>
+
                                     <div class="ps-4 timeline-flow">
-                                        <div>
-                                            <h6 class="mb-1">C</h6>
-                                            <p class="fs-14">-</p>
+                                         <div>
+
+                                             <h6 class="mb-1">Design Communication Visual</h6>
+                                             <p class="fs-14"></p>
+
                                         </div>
                                     </div>
-                                     -->
+                                    -->
                                 </div>
                             </div>
                         </div>
@@ -85,17 +127,19 @@
                                 <div class="d-flex align-items-center mb-4">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
-                                        <h6 class="mb-1">Contador Público</h6>
-                                        <p>-</p>
+                                        <h6 class="mb-1">Experiencia en comunidades en riesgo</h6>
+                                        <p></p>
                                     </div>
                                 </div>
+
                                 <div class="d-flex align-items-center">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
-                                        <h6 class="mb-1">Auditor en entidades públicas y privadas</h6>
-                                        <p>-</p>
+                                        <h6 class="mb-1">Coordinadora de Facultad de Trabajo Social Centro UMG Guastatoya</h6>
+                                        <p></p>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
 <!--
@@ -183,7 +227,7 @@
                         </div>
 
                     </div>
--->
+                    -->
 
                     <div class="col-lg-4">
                         <!--
@@ -206,17 +250,17 @@
                                 </div>
                             </div>
                         </div>
-                         -->
+                        -->
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="mb-3">Detalles de Contacto</h5>
+                                <h5 class="mb-3">Detalle de Contacto</h5>
                                 <div class="d-flex align-items-center mb-4">
                                     <span class="contact-icon rounded-circle d-flex align-items-center justify-content-center me-3">
                                         <i class="fa-regular fa-envelope"></i>
                                     </span>
                                     <div>
                                         <h6 class="mb-0">Email</h6>
-                                        <p class="mb-0 text-break">emenendezm@miumg.edu.gt</p>
+                                        <p class="mb-0">No disponible</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center mb-4">

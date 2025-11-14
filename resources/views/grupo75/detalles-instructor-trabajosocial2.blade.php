@@ -25,16 +25,16 @@
                                 <div class="flex-fill">
                                     <div class="pb-3 border-bottom mb-3">
                                         <div class="d-flex align-items-center justify-content-between mb-1">
-                                            <h6 class="fw-bold">Lic. Eddy Guillermo Menendez Muñoz</h6>
+                                            <h6 class="fw-bold">Lic. María Isabel González López </h6>
                                         </div>
                                         <div class="d-flex align-items-center mb-1">
-                                            <p>Lic. en Contaduría Pública y Audtoría</p>
+                                            <p>Licenciada en Trabajo Social</p>
                                             <span class="me-2">
                                             </span>
                                             <span class="fs-14"></span>
                                         </div>
                                         <div>
-                                            <p>Catedrático de la Facultad de Ciencias Económicas</p>
+                                            <p>Catedrática de la Facultad de Licenciatura en Trabajo Social</p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between flex-wrap">
@@ -47,7 +47,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="mb-3">Acerca de Mí</h5>
-                                <p class="mb-3">Contador Público y Auditor con amplia experiencia en el sector público y auditoría gubernamental. Mi labor docente en la UMG Guastatoya se centra en áreas de contabilidad avanzada, auditoría de estados financieros y gestión de riesgos. Promuevo en mis estudiantes el análisis crítico de la realidad económica nacional y la aplicación de herramientas tecnológicas para la transformación de la práctica contable moderna.</p>
+                                <p class="mb-3"> Licenciada en Trabajo Social con 12 años de experiencia en intervención comunitaria y derechos humanos. Como catedrática de la UMG, integro metodologías participativas que vinculan la teoría con los desafíos sociales actuales de Guatemala, priorizando el enfoque de género e interculturalidad.</p>
                             </div>
                         </div>
 
@@ -57,24 +57,24 @@
                                 <div class="education-flow">
                                     <div class="ps-4 pb-4 timeline-flow">
                                         <div>
-                                            <h6 class="mb-1">Licenciatura en Contaduría Pública y Auditoría</h6>
-                                            <p class="fs-14">-</p>
+                                            <h6 class="mb-1">Licenciatura en Trabajo Social</h6>
+                                            <p class="fs-14"></p>
                                         </div>
                                     </div>
                                     <!--
                                     <div class="ps-4 pb-4 timeline-flow">
                                         <div>
                                             <h6 class="mb-1">B</h6>
-                                            <p class="fs-14">-</p>
+                                            <p class="fs-14"></p>
                                         </div>
                                     </div>
                                     <div class="ps-4 timeline-flow">
                                         <div>
                                             <h6 class="mb-1">C</h6>
-                                            <p class="fs-14">-</p>
+                                            <p class="fs-14"></p>
                                         </div>
                                     </div>
-                                     -->
+                                    -->
                                 </div>
                             </div>
                         </div>
@@ -85,14 +85,14 @@
                                 <div class="d-flex align-items-center mb-4">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
-                                        <h6 class="mb-1">Contador Público</h6>
+                                        <h6 class="mb-1">Ayuda en programas de alimentación y apoyo a comunidades</h6>
                                         <p>-</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
-                                        <h6 class="mb-1">Auditor en entidades públicas y privadas</h6>
+                                        <h6 class="mb-1">Catedrática de la Facultad de Trabajo Social</h6>
                                         <p>-</p>
                                     </div>
                                 </div>
@@ -116,7 +116,7 @@
                                                     <div class="avatar avatar-sm rounded-circle">
                                                         <img class="img-fluid rounded-circle object-fit-cover" src="{{URL::asset('./build/img/avatar/avatar2.jpg')}}" alt="img">
                                                     </div>
-                                                    <p class="ms-2"><a href="{{url('instructor-details')}}">Ana Reyes</a></p>
+                                                    <p class="ms-2"><a href="{{url('instructor-details')}}"></a></p>
                                                 </div>
                                                 <span class="tag-btn">Wordpress</span>
                                             </div>
@@ -184,7 +184,6 @@
 
                     </div>
 -->
-
                     <div class="col-lg-4">
                         <!--
                         <div class="card">
@@ -216,7 +215,7 @@
                                     </span>
                                     <div>
                                         <h6 class="mb-0">Email</h6>
-                                        <p class="mb-0 text-break">emenendezm@miumg.edu.gt</p>
+                                        <p class="mb-0">No disponible</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center mb-4">

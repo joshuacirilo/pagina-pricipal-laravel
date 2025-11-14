@@ -125,6 +125,24 @@
     <!-- benefits -->
 
 <!-- *************************Instructores*************************esto ya funciona -->
+<style>
+        .instructors-section .card-img-top {
+            width: 180px;            /* tamaño del círculo */
+            height: 180px;           /* tamaño del círculo */
+            border-radius: 50%;      /* hace el círculo */
+            object-fit: cover;       /* recorta sin deformar */
+            object-position: center; /* centra la imagen */
+            margin: 20px auto 0;     /* centrar imagen dentro de la card */
+            display: block;
+        }
+
+        /* Ajusta la tarjeta para que no se vea estirada */
+        .instructor-card {
+            padding-top: 20px;
+            text-align: center;
+        }
+    </style>
+
 <section class="instructors-section py-5">
     <div class="container">
         <h2 class="text-center mb-5 fw-bold text-primary">Nuestros Instructores</h2>
@@ -134,9 +152,9 @@
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
                      onclick="window.location='{{ route('detalles-instructor-auditoria1') }}'">
-                     <!--
-                    <img src="{{ asset('build/img/instructors/profesor1.jpeg') }}" class="card-img-top" alt="Profesor 1">
-                    -->
+
+                    <img src="{{ asset('build/img/instructor/unknown_user.png') }}" class="card-img-top" alt="Profesor 1">
+
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Lic. José Pérez</h5>
                         <p class="card-text text-muted">Coordinador de Facultad, Lic en Contaduría Pública y Auditoría.</p>
@@ -146,31 +164,30 @@
 
 
             <!-- Instructor 2 -->
-             <!--
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
                      onclick="window.location='{{ route('detalles-instructor-auditoria2') }}'">
-                    <img src="{{ asset('build/img/instructors/profesor2.jpg') }}" class="card-img-top" alt="Profesor 2">
+                    <img src="{{ asset('build/img/instructor/unknown_user.png') }}" class="card-img-top" alt="Profesor 2">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">No disponible</h5>
-                        <p class="card-text text-muted">No disponible, en espera.</p>
+                        <h5 class="card-title mb-2">Lic. Carlos Ramos</h5>
+                        <p class="card-text text-muted">Lic. en Contaduría Pública y Auditoría</p>
                     </div>
                 </div>
             </div>
-            -->
+
             <!-- Instructor 3 -->
-             <!--
+
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
                      onclick="window.location='{{ route('detalles-instructor-auditoria3') }}'">
-                    <img src="{{ asset('build/img/instructors/profesor3.jpg') }}" class="card-img-top" alt="Profesor 3">
+                    <img src="{{ asset('build/img/instructor/unknown_user.png') }}" class="card-img-top" alt="Profesor 3">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">No disponible</h5>
-                        <p class="card-text text-muted">No disponible, en espera.</p>
+                        <h5 class="card-title mb-2">Lic. Eddy Menendez</h5>
+                        <p class="card-text text-muted">Lic. en Contaduría Pública y Auditoría.</p>
                     </div>
                 </div>
             </div>
-            -->
+
         </div>
     </div>
 </section>
