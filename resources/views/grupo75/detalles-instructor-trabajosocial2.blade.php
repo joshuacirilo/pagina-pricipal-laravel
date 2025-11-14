@@ -19,7 +19,7 @@
                             <div class="card-body instructor-details">
                                 <div class="instructor-img">
                                     <a href="javascript:void(0);">
-                                        <img src="{{URL::asset('build/img/instructor/unknown_user.png')}}" alt="img" class="img-fluid">
+                                        <img src="{{URL::asset('build/img/instructor/TrabajoSocialInstructor/LicdaMaria.png')}}" alt="img" class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="flex-fill">
@@ -86,14 +86,14 @@
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
                                         <h6 class="mb-1">Ayuda en programas de alimentación y apoyo a comunidades</h6>
-                                        <p>-</p>
+                                        <p></p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
                                         <h6 class="mb-1">Catedrática de la Facultad de Trabajo Social</h6>
-                                        <p>-</p>
+                                        <p></p>
                                     </div>
                                 </div>
                             </div>

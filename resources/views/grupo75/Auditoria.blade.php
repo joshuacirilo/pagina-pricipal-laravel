@@ -153,7 +153,7 @@
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
                      onclick="window.location='{{ route('detalles-instructor-auditoria1') }}'">
 
-                    <img src="{{ asset('build/img/instructor/unknown_user.png') }}" class="card-img-top" alt="Profesor 1">
+                    <img src="{{ asset('build/img/instructor/AuditoriaInstructor/LicJosePerezPerfil.png') }}" class="card-img-top" alt="Profesor 1">
 
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Lic. José Pérez</h5>
@@ -167,7 +167,7 @@
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
                      onclick="window.location='{{ route('detalles-instructor-auditoria2') }}'">
-                    <img src="{{ asset('build/img/instructor/unknown_user.png') }}" class="card-img-top" alt="Profesor 2">
+                    <img src="{{ asset('build/img/instructor/AuditoriaInstructor/LicCarlosRamos.png') }}" class="card-img-top" alt="Profesor 2">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Lic. Carlos Ramos</h5>
                         <p class="card-text text-muted">Lic. en Contaduría Pública y Auditoría</p>
@@ -180,7 +180,7 @@
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
                      onclick="window.location='{{ route('detalles-instructor-auditoria3') }}'">
-                    <img src="{{ asset('build/img/instructor/unknown_user.png') }}" class="card-img-top" alt="Profesor 3">
+                    <img src="{{ asset('build/img/instructor/AuditoriaInstructor/LicEddyMenendez.png') }}" class="card-img-top" alt="Profesor 3">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Lic. Eddy Menendez</h5>
                         <p class="card-text text-muted">Lic. en Contaduría Pública y Auditoría.</p>

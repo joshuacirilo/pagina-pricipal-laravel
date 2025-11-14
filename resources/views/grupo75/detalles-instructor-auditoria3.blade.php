@@ -19,7 +19,7 @@
                             <div class="card-body instructor-details">
                                 <div class="instructor-img">
                                     <a href="javascript:void(0);">
-                                        <img src="{{URL::asset('build/img/instructor/unknown_user.png')}}" alt="img" class="img-fluid">
+                                        <img src="{{URL::asset('build/img/instructor/AuditoriaInstructor/LicEddyMenendez.png')}}" alt="img" class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="flex-fill">

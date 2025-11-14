@@ -161,7 +161,7 @@
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
                     onclick="window.location='{{ route('detalles-instructor-trabajosocial1') }}'">
 
-                    <img src="{{ asset('build/img/instructor/unknown_user.png') }}" class="card-img-top" alt="Profesor 1">
+                    <img src="{{ asset('build/img/instructor/TrabajoSocialInstructor/LicdaLygia.png') }}" class="card-img-top" alt="Profesor 1">
 
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Lic. Lygia</h5>
@@ -175,7 +175,7 @@
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
                      onclick="window.location='{{ route('detalles-instructor-trabajosocial2') }}'">
-                    <img src="{{ asset('build/img/instructor/unknown_user.png') }}" class="card-img-top" alt="Profesor 2">
+                    <img src="{{ asset('build/img/instructor/TrabajoSocialInstructor/LicdaMaria.png') }}" class="card-img-top" alt="Profesor 2">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Lic. María González</h5>
                         <p class="card-text text-muted">Licenciada en Trabajo Social.</p>
@@ -188,9 +188,9 @@
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
                      onclick="window.location='{{ route('detalles-instructor-trabajosocial3') }}'">
-                    <img src="{{ asset('build/img/instructor/unknown_user.png') }}" class="card-img-top" alt="Profesor 3">
+                    <img src="{{ asset('build/img/instructor/TrabajoSocialInstructor/LicFlavioJuarez.jpg') }}" class="card-img-top" alt="Profesor 3">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">Lic. Luis Pérez</h5>
+                        <h5 class="card-title mb-2">Lic. Flavio Juárez</h5>
                         <p class="card-text text-muted">Licenciado en Trabajo Social.</p>
                     </div>
                 </div>

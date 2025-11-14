@@ -19,13 +19,13 @@
                             <div class="card-body instructor-details">
                                 <div class="instructor-img">
                                     <a href="javascript:void(0);">
-                                        <img src="{{URL::asset('build/img/instructor/unknown_user.png')}}" alt="img" class="img-fluid">
+                                        <img src="{{URL::asset('build/img/instructor/TrabajoSocialInstructor/LicFlavioJuarez.jpg')}}" alt="img" class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="flex-fill">
                                     <div class="pb-3 border-bottom mb-3">
                                         <div class="d-flex align-items-center justify-content-between mb-1">
-                                            <h6 class="fw-bold">Lic. Luis Antonio Pérez Hernández</h6>
+                                            <h6 class="fw-bold">Lic. Flavio Arturo Juárez Arristondo</h6>
                                         </div>
                                         <div class="d-flex align-items-center mb-1">
                                             <p>Licenciado en Trabajo Social</p>
@@ -86,14 +86,14 @@
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
                                         <h6 class="mb-1">Ayuda en programas de apoyo a comunidades</h6>
-                                        <p>-</p>
+                                        <p></p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
                                         <h6 class="mb-1">Catedrático de la Facultad de Trabajo Social</h6>
-                                        <p>-</p>
+                                        <p></p>
                                     </div>
                                 </div>
                             </div>
@@ -215,7 +215,7 @@
                                     </span>
                                     <div>
                                         <h6 class="mb-0">Email</h6>
-                                        <p class="mb-0">No disponible</p>
+                                        <p class="mb-0">fjuareza@miumg.edu.gt</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center mb-4">
