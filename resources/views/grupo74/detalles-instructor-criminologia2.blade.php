@@ -3,6 +3,9 @@
 @section('content')
     @component('components.breadcrumb')
         @slot('title')
+        <br>
+            <span class="badge" style="background-color: #3f3f3fff; color: white;">CRIMINOLOGIA</span>
+        </br>
             Conoce a nuestros profesores        @endslot
         @slot('item1')
             Home

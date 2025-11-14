@@ -131,77 +131,42 @@
             <h2 class="text-center mb-5 fw-bold text-primary">Nuestros Catedráticos</h2>
                     
             <div class="row g-4">       
-                <!-- Instructor 1 -->
+                
+            <!-- Instructor 1 -->
                 <div class="col-md-4 col-sm-6">
                     <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
                         onclick="window.location='{{ route('detalles-instructor-derecho1') }}'">
-                        <img src="{{ asset('build/img/instructor/instructor1.jpg') }}" class="card-img-top" alt="Profesor 1">
+                        <img src="{{ asset('build/img/instructor/docenteCrimi3.png') }}" class="card-img-top" alt="Profesor 1">
                         <div class="card-body text-center">
-                            <h5 class="card-title mb-2">Catedrático</h5>
-                            <p class="card-text text-muted">Informacion no proporcionada por facultdad de Derecho</p>
+                            <h5 class="card-title mb-2">Licda. Susan Eunice Galindo Catalan</h5>
+                            <p class="card-text text-muted">Licenciada en Ciencias Jurídicas y Sociales</p>
                         </div>
                     </div>
                 </div>
 
                    <!-- Instructor 2 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                     onclick="window.location='{{ route('detalles-instructor-derecho2') }}'">
+                    <img src="{{ asset('build/img/instructor/1.png') }}" class="card-img-top" alt="Profesor 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2">Licda. Falvio Arturon</h5>
+                        <p class="card-text text-muted">Licenciado en Ciencias Jurídicas y Sociales</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instructor 3 -->
                 <div class="col-md-4 col-sm-6">
                     <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                        onclick="window.location='{{ route('detalles-instructor-derecho2') }}'">
-                        <img src="{{ asset('build/img/instructor/instructor1.jpg') }}" class="card-img-top" alt="Profesor 1">
+                        onclick="window.location='{{ route('detalles-instructor-derecho3') }}'">
+                        <img src="{{ asset('build/img/instructor/LicCarlos.png') }}" class="card-img-top" alt="Profesor 1">
                         <div class="card-body text-center">
-                             <h5 class="card-title mb-2">Catedrático</h5>
-                            <p class="card-text text-muted">Informacion no proporcionada por facultdad de Derecho</p>
+                            <h5 class="card-title mb-2">Lic. Carlos Augusto Naavarro Ávila</h5>
+                            <p class="card-text text-muted">Licenciado en Ciencias Criminológicas Y Criminalísticas </p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Instructor 3 -->
-            <div class="col-md-4 col-sm-6">
-                <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                     onclick="window.location='{{ route('detalles-instructor-derecho3') }}'">
-                    <img src="{{ asset('build/img/instructor/instructor1.jpg') }}" class="card-img-top" alt="Profesor 2">
-                    <div class="card-body text-center">
-                          <h5 class="card-title mb-2">Catedrático</h5>
-                            <p class="card-text text-muted">Informacion no proporcionada por facultdad de Derecho</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Instructor 4 -->
-            <div class="col-md-4 col-sm-6">
-                <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                     onclick="window.location='{{ route('detalles-instructor-derecho4') }}'">
-                    <img src="{{ asset('build/img/instructor/instructor1.jpg') }}" class="card-img-top" alt="Profesor 3">
-                    <div class="card-body text-center">
-                         <h5 class="card-title mb-2">Catedrático</h5>
-                            <p class="card-text text-muted">Informacion no proporcionada por facultdad de Derecho</p>
-                    </div>
-                </div>
-            </div>
-
-             <!-- Instructor 5 -->
-            <div class="col-md-4 col-sm-6">
-                <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                     onclick="window.location='{{ route('detalles-instructor-derecho5') }}'">
-                    <img src="{{ asset('build/img/instructor/instructor1.jpg') }}" class="card-img-top" alt="Profesor 3">
-                    <div class="card-body text-center">
-                         <h5 class="card-title mb-2">Catedrático</h5>
-                            <p class="card-text text-muted">Informacion no proporcionada por facultdad de Derecho</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Instructor 6 -->
-            <div class="col-md-4 col-sm-6">
-                <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                     onclick="window.location='{{ route('detalles-instructor-derecho6') }}'">
-                    <img src="{{ asset('build/img/instructor/instructor1.jpg') }}" class="card-img-top" alt="Profesor 3">
-                    <div class="card-body text-center">
-                         <h5 class="card-title mb-2">Catedrático</h5>
-                            <p class="card-text text-muted">Informacion no proporcionada por facultdad de Derecho</p>
-                    </div>
-                </div>
-            </div>
-
 
             </div>
         </div>
@@ -216,13 +181,13 @@
                     <div class="card border-0 mb-0">
                         <div class="card-body">
                             <div class="d-flex align-items-center">
-                                <!--
+
                                 <div class="counter-icon">
-                                    <img src="/build/img/icons/iconsIngSistemas/networking_3150652.png" alt="img">
+                                    <img src="/build/img/icons/counter-icon1.svg" alt="img">
                                 </div>
-                                -->
+
                                 <div class="count-content">
-                                    <h4 class="text-info"><span class="count-digit">+10</span></h4>
+                                    <h4 class="text-info"><span class="count-digit">10</span>+</h4>
                                     <p>Oportunidades laborales</p>
                                 </div>
                             </div>
@@ -233,13 +198,13 @@
                     <div class="card border-0 mb-0">
                         <div class="card-body">
                             <div class="d-flex align-items-center">
-                                <!--
+
                                 <div class="counter-icon">
-                                    <img src="./build/img/icons/counter-icon2.svg" alt="img">
+                                    <img src="/build/img/icons/counter-icon2.svg" alt="img">
                                 </div>
-                                -->
+
                                 <div class="count-content">
-                                    <h4 class="text-warning"><span class="count-digit">+20</span></h4>
+                                    <h4 class="text-warning"><span class="count-digit">6</span>+</h4>
                                     <p>Catedráticos</p>
                                 </div>
                             </div>
@@ -250,13 +215,13 @@
                     <div class="card border-0 mb-0">
                         <div class="card-body">
                             <div class="d-flex align-items-center">
-                                <!--
+
                                 <div class="counter-icon">
-                                    <img src="./build/img/icons/counter-icon3.svg" alt="img">
+                                    <img src="/build/img/icons/counter-icon3.svg" alt="img">
                                 </div>
-                                -->
+
                                 <div class="count-content">
-                                    <h4 class="text-skyblue"><span class="count-digit">+15</span></h4>
+                                    <h4 class="text-skyblue"><span class="count-digit">25</span>+</h4>
                                     <p>Cursos certificados</p>
                                 </div>
                             </div>
@@ -266,13 +231,12 @@
                 <div class="col-xl-3 col-md-6">
                     <div class="card border-0 mb-0">
                         <div class="card-body d-flex align-items-center">
-                            <!--
+
                             <div class="counter-icon">
-                            <img src="./build/img/icons/counter-icon4.svg" alt="img">
+                                 <img src="/build/img/icons/counter-icon4.svg" alt="img">
                             </div>
-                            -->
                             <div class="count-content">
-                            <h4 class="text-lightgreen"><span class="count-digit">+15</span></h4>
+                            <h4 class="text-lightgreen"><span class="count-digit">8</span>+</h4>
                                 <p>Salones de clases</p>
                             </div>
                         </div>
