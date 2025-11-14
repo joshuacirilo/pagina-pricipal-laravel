@@ -176,40 +176,19 @@
                     </div>
                 </div>
 
-                <!-- Instructor 3 -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                    onclick="window.location='{{ route('detalles-instructor-administracion2') }}'" >
-                        <img src="{{ asset('build/img/instructor/cordinadora admi.jpg') }}" class="card-img-top" alt="Profesor 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title mb-2">Licda. Heissell Yesenia Grajeda Solis (COORDINADORA)</h5>
-                            <p class="card-text text-muted"> </p>
-                        </div>
-                    </div>
-                </div>
 
-                  <!-- Instructor 4 -->
+
+                  <!-- Instructor 3 -->
                   <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
                      onclick="window.location='{{ route('detalles-instructor-sistemas6') }}'">
-                    <img src="{{ asset('build/img/instructor/IngSistemasInstructor/IngEduardoHernandezPerfil.jpeg') }}" class="card-img-top" alt="Profesor 3">
+                    <img src="{{ asset('build/img/instructor/IngMaestroAdmi.jpg') }}" class="card-img-top" alt="Profesor 3">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Ing Eduardo Hernández</h5>
                         <p class="card-text text-muted"></p>
                     </div>
                 </div>
             </div>
-              <!-- Instructor 5 -->
-              <div class="col-md-4 col-sm-6">
-                    <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                    onclick="window.location='{{ route('detalles-instructor-administracion3') }}'">
-                        <img src="{{ asset('build/img/instructor/maestra2admi.jpg') }}" class="card-img-top" alt="Profesor 2">
-                        <div class="card-body text-center">
-                            <h5 class="card-title mb-2"><br><br><br>Licda. Ana Patricia De Leon</h5>
-                            <p class="card-text text-muted"></p>
-                        </div>
-                    </div>
-                </div>
 
 
             </div>
