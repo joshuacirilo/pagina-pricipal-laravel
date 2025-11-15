@@ -45,10 +45,9 @@
                             <div class="footer-widget footer-menu">
                                 <h6 class="footer-title">Acerca de</h6>
                                 <ul>
-                                    <li><a href="{{url('course-category')}}">Categorías</a></li>
-                                    <li><a href="{{url('course-category')}}">Servicios</a></li>
+                                    <li><a href="https://umg.edu.gt/posgrados?_gl=1*1xjd79h*_ga*MTYxMDQ5NjI3MC4xNzIzMzA5OTk0*_ga_HV9W4QM6V6*czE3NjMyMTU4MjYkbzkkZzEkdDE3NjMyMTYwNzkkajQxJGwwJGgw" target="_blank" rel="noopener noreferrer">Posgrado</a></li>
                                     <li><a href="https://umg.edu.gt/historia" target="_blank" rel="noopener noreferrer">Historia</a></li>
-                                    <li><a href="{{url('faq')}}">Preguntas Frecuentes</a></li>
+                                    <li><a href="https://umg.edu.gt/info?_gl=1*1qs2pdp*_ga*MTYxMDQ5NjI3MC4xNzIzMzA5OTk0*_ga_HV9W4QM6V6*czE3NjMyMTU4MjYkbzkkZzEkdDE3NjMyMTU5MjIkajYwJGwwJGgw" target="_blank" rel="noopener noreferrer">Preguntas Frecuentes</a></li>
                                     <li><a href="https://es.wikipedia.org/wiki/Blog" target="_blank" rel="noopener noreferrer">Blog</a></li>
                                 </ul>
                             </div>
@@ -94,7 +93,7 @@
                                     <li>
                                         <div class="contact-infos">
                                             <span>Dirección</span>
-                                            <p>3a. Avenida 9-00 Zona 2, Ciudad de Guatemala, Guatemala, 01002</p>
+                                            <p>Barrio El Porvenir,Guastatoya, El Progreso</p>
                                         </div>
                                     </li>
                                 </ul>
