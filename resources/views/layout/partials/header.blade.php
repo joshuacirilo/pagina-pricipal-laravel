@@ -55,7 +55,8 @@
           </li>
           <li><a href="https://umg.edu.gt/admisiones" target="_blank">Admisiones</a></li>
           <li><a href="https://umg.edu.gt/info" target="_blank">Centro de Informaciones</a></li>
-          <li><a href="https://es.wikipedia.org/wiki/Blog" target="_blank">Blog</a></li>
+          <li><a href="{{ route('conts') }}" target="_blank">Blog</a></li>
+          <li><a href="{{ route('conts') }}" target="_blank">Contactanos</a></li>
         </ul>
 
         {{-- --- DROPDOWNS Y LOGIN MOBILE --- --}}

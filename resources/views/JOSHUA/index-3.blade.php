@@ -715,7 +715,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="blog-wrap shadow-sm mb-0">
                         <div class="blog-img">
-                            <a href="https://es.wikipedia.org/wiki/Universidad_Mariano_G%C3%A1lvez" target="_blank">
+                            <a href="{{ route('conts') }}" target="_blank">
                                 <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/index/blog1.png')}}">
                             </a>
                         </div>
@@ -725,7 +725,7 @@
                                 <p class="blog-date"><i class="isax isax-calendar-1"></i>Feb 10, 2025</p>
                             </div>
                             <h5>
-                                <a href="https://es.wikipedia.org/wiki/Universidad_Mariano_G%C3%A1lvez" target="_blank">
+                                <a href="{{ route('conts') }}" target="_blank">
                                     UMG inaugura nuevos programas académicos en sus sedes departamentales
                                 </a>
                             </h5>
@@ -737,7 +737,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="blog-wrap shadow-sm mb-0">
                         <div class="blog-img">
-                            <a href="https://es.wikipedia.org/wiki/Guatemala" target="_blank">
+                            <a href="{{ route('conts') }}" target="_blank">
                                 <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/index/blog2.jpeg')}}">
                             </a>
                         </div>
@@ -747,7 +747,7 @@
                                 <p class="blog-date"><i class="isax isax-calendar-1"></i>Feb 12, 2025</p>
                             </div>
                             <h5>
-                                <a href="https://es.wikipedia.org/wiki/Guatemala" target="_blank">
+                                <a href="{{ route('conts') }}" target="_blank">
                                     UMG fortalece proyectos de investigación para el desarrollo del país
                                 </a>
                             </h5>
@@ -759,7 +759,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="blog-wrap shadow-sm mb-0">
                         <div class="blog-img">
-                            <a href="https://es.wikipedia.org/wiki/Estudio_universitario" target="_blank">
+                            <a href="{{ route('conts') }}" target="_blank">
                                 <img class="img-fluid" alt="Img" src="{{URL::asset('build/img/index/blog3.jpeg')}}">
                             </a>
                         </div>
@@ -769,7 +769,7 @@
                                 <p class="blog-date"><i class="isax isax-calendar-1"></i>Feb 14, 2025</p>
                             </div>
                             <h5>
-                                <a href="https://es.wikipedia.org/wiki/Estudio_universitario" target="_blank">
+                                <a href="{{ route('conts') }}" target="_blank">
                                     Congreso académico reúne a estudiantes y profesionales en la UMG
                                 </a>
                             </h5>

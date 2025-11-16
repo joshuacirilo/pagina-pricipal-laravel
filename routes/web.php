@@ -241,6 +241,23 @@ Route::get('/grupo73/detalles-instructor3', function () {
 
 
 
+//--------construccion
+
+
+//proximamente
+Route::get('/prox/conts', function () {
+    return view('prox.conts');
+})->name('conts');
+
+
+//proximamente
+Route::get('/prox/contact-us', function () {
+    return view('prox.contact-us');
+})->name('contact-us');
+
+
+
+
 
 Route::get('/index-2', function () {
 return view('index-2');

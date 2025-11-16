@@ -697,3 +697,40 @@ body > *:first-child {
     color: #0B2A52 !important;
     letter-spacing: 0.5px;
 }
+
+
+
+/*construccion page */
+/* Fondo elegante */
+.construccion-section {
+    background: linear-gradient(135deg, #f6f8fc, #e9eef6);
+    min-height: 70vh;
+}
+
+/* Tarjeta profesional */
+.construccion-box {
+    max-width: 520px;
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 35px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+    transition: transform .3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.construccion-box:hover {
+    transform: translateY(-6px);
+}
+
+/* Imagen */
+.construccion-img {
+    max-width: 240px;
+    animation: fadeIn .8s ease-in-out;
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(.95); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
