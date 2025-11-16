@@ -10,7 +10,7 @@
                 <div class="col-lg-6">
                     <div class="home-slide-face aos" data-aos="fade-up">
                         <div class="home-slide-text ">
-                            <h1 class="mt-4">Universidad Mariano Galves Guatemala<span class="text-secondary"> Sede Guastatoya</span></h1>
+                            <h1 class="mt-4">Universidad Mariano Gálvez Guatemala<span class="text-secondary"> Sede Guastatoya</span></h1>
                             <p class="mt-4">En la sede Guastatoya, brindamos oportunidades educativas de calidad para impulsar el desarrollo profesional y humano de nuestros estudiantes.</p>
                         </div>
         <div class="banner-content">
