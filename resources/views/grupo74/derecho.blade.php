@@ -36,7 +36,7 @@
                     <div class="ps-0 ps-lg-2 pt-4 pt-lg-0 ps-xl-5">
                         <div class="section-header">
                             <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">Derecho</span>
-                            <h2>Facultad de Ciencias Jurídicas y Sociales</h2>
+                            <h2>Ciencias Jurídicas y Sociales</h2>
                             <p>La carrera de Ciencias Jurídicas y Sociales entrelaza el estudio del derecho con las ciencias sociales, enfatizando la interpretación y aplicación legal en contextos variados. El aprendizaje se basa en el análisis de casos, el debate crítico y la práctica en clínicas jurídicas. Se cultiva la habilidad argumentativa y el razonamiento ético para abordar asuntos de justicia social. La formación se orienta hacia la conciencia social y el desarrollo humano en la práctica legal. El objetivo es formar juristas con visión integral, capaces de influir positivamente en la sociedad.
                             </p>
                         </div>
@@ -247,82 +247,56 @@
     </section>
     <!-- counter -->
 
-    <!-- testimonials -->
+   <!--Tarjetas de informacion con modales -->
     <section class="testimonials-section text-center">
         <div class="container">
-            <div class="section-header text-center">
-                <h2>Derecho</h2>
-                <p>El Derecho es la disciplina que estudia, interpreta y aplica el conjunto de normas que regulan la convivencia social, garantizando la justicia, la equidad y el orden jurídico. Integra conocimientos de áreas como la filosofía, la sociología, la política, la economía y la ética, permitiendo comprender el funcionamiento del Estado, las instituciones y las relaciones entre las personas dentro del marco legal vigente.</p>
-            </div>
-            <div class="testimonials-slider lazy mt-4">
-                <div>
-                    <div class="testimonials-item rounded-3 bg-white">
-                        <div class="position-relative d-inline-flex mb-2">
-                            <div class="avatar rounded-circle avatar-xxl border border-white border-3">
-                               <!--
-                                <a href="{{url('instructor-details')}}"><img class="img-fluid rounded-circle" src="./build/img/user/user-41.jpg" alt="img"></a>
-                                -->
-                            </div>
-                            <!--
-                            <i class="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1"></i>
-                            -->
-                        </div>
-                        <h6>¿Por qué estudiar Derecho?</h6>
-                        <p class="fs-14 mb-3">Porque es una carrera fundamental para la construcción de una sociedad justa y democrática. Te prepara para analizar problemas legales, defender derechos, asesorar a personas e instituciones, redactar instrumentos jurídicos y participar activamente en la solución de conflictos. Además, es una profesión con amplia demanda en el sector público, privado, empresarial y judicial, con oportunidades de especialización en diversas ramas del derecho.</p>
 
-                        <!--
-                        <div>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                        </div>
--->
-                    </div>
-                </div>
-                <div>
-                    <div class="testimonials-item rounded-3 bg-white">
-                        <div class="position-relative d-inline-flex mb-2">
-                             <!--
-                            <div class="avatar rounded-circle avatar-xxl border border-white border-3">
-                                <a href="{{url('instructor-details')}}"><img class="img-fluid rounded-circle" src="./build/img/user/user-42.jpg" alt="img"></a>
-                            </div>
-                            -->
-                        </div>
-                        <h6 class="mb-1">El Futuro del Derecho</h6>
-                        <p class="fs-14 mb-3">El Derecho evoluciona constantemente debido a los cambios sociales, tecnológicos y económicos. Los profesionales del área serán cada vez más necesarios para abordar temas como el derecho digital, protección de datos, derechos humanos, nuevas formas de contratación, litigios especializados y mecanismos alternativos de resolución de conflictos. Su papel es clave en la defensa de la legalidad y en la construcción de un Estado de Derecho sólido y funcional.</p>
-                         <!--
-                        <div>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                        </div>
-                        -->
-                    </div>
-                </div>
-                <div>
-                    <div class="testimonials-item rounded-3 bg-white">
-                        <div class="position-relative d-inline-flex mb-2">
-                        </div>
-                        <h6 class="mb-1">Competencias Clave del Abogado</h6>
-                        <p class="fs-14 mb-3">Un abogado se distingue por su pensamiento crítico, capacidad argumentativa y compromiso ético. Entre sus principales competencias destacan la investigación jurídica, la interpretación normativa, la redacción de documentos legales, la negociación, la oratoria y la resolución de conflictos. Estas habilidades le permiten actuar con profesionalismo, responsabilidad y eficacia dentro de cualquier ámbito jurídico.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="testimonials-item rounded-3 bg-white">
-                        <div class="position-relative d-inline-flex mb-2">
-                        </div>
-                        <h6 class="mb-1">Derecho y Responsabilidad Social</h6>
-                        <p class="fs-14 mb-3">Más allá de la práctica legal, el Derecho promueve el compromiso con la justicia, la dignidad humana y la convivencia pacífica. Los profesionales del área participan en proyectos de orientación jurídica, defensa de los derechos fundamentales, educación legal y fortalecimiento institucional. Su labor contribuye directamente al desarrollo social, la cultura de legalidad y la protección de los sectores más vulnerables.</p>
-                    </div>
-                </div>
+            <!-- TÍTULO Y DESCRIPCIÓN -->
+            <div class="section-header text-center">
+                <h2>Facultad de Ciencias Jurídicas y Sociales</h2>
+                <h4>-Derecho-</h4>
+                <p>
+                    Es la disciplina que interpreta, aplica y desarrolla el ordenamiento jurídico, utilizando conocimientos en legislación, argumentación, análisis crítico y redacción legal para resolver conflictos, garantizar la justicia y atender las necesidades sociales dentro del marco del Derecho.
+                </p>
             </div>
+
+            <div class="testimonials-slider lazy mt-4">
+
+                <!-- 1 -->
+                <div>
+                    <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal1">
+                        <h6 class="mb-2 fw-bold">¿Por qué estudiar Derecho?</h6>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div>
+                    <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal2">
+                        <h6 class="mb-2 fw-bold">El Futuro del Derecho</h6>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div>
+                    <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal3">
+                        <h6 class="mb-2 fw-bold">Competencias Clave</h6>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div>
+                    <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal4">
+                        <h6 class="mb-2 fw-bold">Responsabilidad Social</h6>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </section>
-    <!-- testimonials -->
+
+
+    <!--fin Tarjetas de informacion con modales -->
     
 
     <!-- faq -->
@@ -426,4 +400,67 @@
         </div>
     </section>
     <!-- faq -->
+
+
+<!--Modales -->
+            <!-- Modal 1 -->
+    <div class="modal fade custom-modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">¿Por qué estudiar Derecho?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Permite defender derechos, resolver conflictos, participar en la construcción de una sociedad más justa y acceder a múltiples oportunidades profesionales en el sector público y privado.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade custom-modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">El Futuro del Derecho</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                La práctica jurídica evoluciona con la digitalización, el gobierno electrónico y la gestión moderna de información legal, generando nuevas áreas de especialización.                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade custom-modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Competencias Clave</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Interpretación de normas, argumentación jurídica, redacción legal, análisis crítico y uso adecuado de herramientas tecnológicas aplicadas al ámbito jurídico.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade custom-modal" id="modal4" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Responsabilidad Social</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    El profesional del Derecho contribuye al bienestar social garantizando justicia, respeto a los derechos humanos y soluciones legales que fortalezcan la convivencia y el orden jurídico.
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Final modales -->    
 @endsection
