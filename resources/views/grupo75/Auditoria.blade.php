@@ -167,10 +167,10 @@
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
                      onclick="window.location='{{ route('detalles-instructor-auditoria2') }}'">
-                    <img src="{{ asset('build/img/instructor/AuditoriaInstructor/LicCarlosRamos.png') }}" class="card-img-top" alt="Profesor 2">
+                    <img src="{{ asset('build/img/instructor/unknown_user.png') }}" class="card-img-top" alt="Profesor 2">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">Lic. Carlos Ramos</h5>
-                        <p class="card-text text-muted">Lic. en Contaduría Pública y Auditoría</p>
+                        <h5 class="card-title mb-2">En Construcción...</h5>
+                        <p class="card-text text-muted"></p>
                     </div>
                 </div>
             </div>
@@ -180,10 +180,10 @@
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
                      onclick="window.location='{{ route('detalles-instructor-auditoria3') }}'">
-                    <img src="{{ asset('build/img/instructor/AuditoriaInstructor/LicEddyMenendez.png') }}" class="card-img-top" alt="Profesor 3">
+                    <img src="{{ asset('build\img\instructor\unknown_user.png') }}" class="card-img-top" alt="Profesor 3">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">Lic. Eddy Menendez</h5>
-                        <p class="card-text text-muted">Lic. en Contaduría Pública y Auditoría.</p>
+                        <h5 class="card-title mb-2">En Construcción...</h5>
+                        <p class="card-text text-muted"></p>
                     </div>
                 </div>
             </div>
@@ -261,63 +261,52 @@
     </section>
     <!-- counter -->
 
-    <!-- testimonials -->
+    <!--Tarjetas de informacion con modales -->
     <section class="testimonials-section text-center">
         <div class="container">
+
+            <!-- TÍTULO Y DESCRIPCIÓN -->
             <div class="section-header text-center">
                 <h2>Licenciatura en Contaduría y Auditoría</h2>
-                <p>Esta carrera forma profesionales expertos en el análisis, control y gestión de la información financiera de las organizaciones. Los estudiantes desarrollan competencias en contabilidad, auditoría, normativas internacionales y herramientas tecnológicas aplicadas al ámbito tributario y financiero..</p>
+                <p>
+                     Esta carrera forma profesionales expertos en el análisis, control y gestión de la información financiera de las organizaciones. Los estudiantes desarrollan competencias en contabilidad, auditoría, normativas internacionales y herramientas tecnológicas aplicadas al ámbito tributario y financiero.
+                </p>
             </div>
+
             <div class="testimonials-slider lazy mt-4">
-                <div>
-                    <div class="testimonials-item rounded-3 bg-white">
-                        <div class="position-relative d-inline-flex mb-2">
-                            <!--
-                            <div class="avatar rounded-circle avatar-xxl border border-white border-3">
-                            </div>
-                            -->
-                        </div>
-                        <h6 class="mb-1">¿Por qué estudiar Licenciatura en Contaduría y Auditoría?</h6>
-                        <p class="fs-14 mb-3">Esta carrera ofrece una sólida formación en el ámbito financiero y contable, preparando profesionales capaces de gestionar, auditar y analizar la información económica de cualquier organización. Con un plan de estudios actualizado en normativas internacionales y herramientas tecnológicas, los graduados se integran a un campo laboral estable y con alta demanda, tanto en el sector público como privado, contribuyendo a la transparencia y sostenibilidad de las empresas.</p>
-                        <div>
 
+                <!-- 1 -->
+                <div>
+                    <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal1">
+                        <h6 class="mb-2 fw-bold">¿Por qué estudiar Licenciatura en Contaduría y Auditoría?</h6>
                     </div>
                 </div>
+
+                <!-- 2 -->
                 <div>
-                    <div class="testimonials-item rounded-3 bg-white">
-                        <h6 class="mb-1">
-                        <div class="position-relative d-inline-flex mb-2">
-
-                        </div>
-                        <h6 class="mb-1">El Futuro de la Lic. en Contaduría y Auditoría</h6>
-                        <p class="fs-14 mb-3">El campo de la contaduría y auditoría está experimentando una transformación impulsada por la tecnología y las normativas globales. Los profesionales de esta disciplina ya no se limitan al registro de operaciones financieras, sino que ahora asumen roles estratégicos en la gestión de riesgos, el análisis de datos y la implementación de sistemas de control automatizados. El futuro de la carrera se orienta hacia la integración de habilidades técnicas y analíticas, preparando a los graduados para liderar en un entorno empresarial cada vez más digitalizado y global.</p>
-
+                    <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal2">
+                        <h6 class="mb-2 fw-bold">El Futuro de la Lic. en Contaduría y Auditoría</h6>
                     </div>
                 </div>
+
+                <!-- 3 -->
                 <div>
-                    <div class="testimonials-item rounded-3 bg-white">
-                        <div class="position-relative d-inline-flex mb-2">
-
-                        </div>
-                        <h6 class="mb-1">Competencias Clave del Lic. en Contaduría y Auditoría</h6>
-
-                        <p class="fs-14 mb-3">El profesional egresado destaca por su capacidad para implementar sistemas de control interno, realizar auditorías financieras y aplicar normativas contables internacionales. Combina habilidades analíticas con un enfoque crítico para la toma de decisiones, gestionando riesgos y optimizando los procesos financieros. Además, domina herramientas tecnológicas para el análisis de datos y la emisión de informes confiables.</p>
-
+                    <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal3">
+                        <h6 class="mb-2 fw-bold">Competencias Clave</h6>
                     </div>
                 </div>
-                <div>
-                    <div class="testimonials-item rounded-3 bg-white">
-                        <div class="position-relative d-inline-flex mb-2">
 
-                        </div>
-                        <h6 class="mb-1">Licenciatura en Contaduría y Auditoría y Responsabilidad Social</h6>
-                        <p class="fs-14 mb-3">Más allá del ámbito técnico, esta carrera forma profesionales comprometidos con la ética y la responsabilidad social. Los contadores y auditores promueven la transparencia financiera, contribuyen al cumplimiento de obligaciones fiscales y apoyan el desarrollo económico sostenible. Su labor es fundamental para generar confianza en las organizaciones y fomentar prácticas empresariales alineadas con el bienestar social.</p>
+                <!-- 4 -->
+                <div>
+                    <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal4">
+                        <h6 class="mb-2 fw-bold">Responsabilidad Social</h6>
                     </div>
                 </div>
+
             </div>
+
         </div>
     </section>
-    <!-- testimonials -->
 
     <!-- faq -->
     <section class="faq-section">
@@ -420,4 +409,69 @@
         </div>
     </section>
    <!-- faq -->
+
+
+   <!--Modales -->
+            <!-- Modal 1 -->
+    <div class="modal fade custom-modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">¿Por qué estudiar Licenciatura en Contaduría Pública y Auditoría?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                   Esta carrera ofrece una sólida formación en el ámbito financiero y contable, preparando profesionales capaces de gestionar, auditar y analizar la información económica de cualquier organización.
+                   Los graduados se integran a un campo laboral estable y con alta demanda, tanto en el sector público como privado, contribuyendo a la transparencia y sostenibilidad de las empresas.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade custom-modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">El Futuro de la Licenciatura en Contaduría Pública y Auditoría</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Los profesionales de esta disciplina ya no se limitan al registro de operaciones financieras, sino que ahora asumen roles estratégicos en la gestión de riesgos, el análisis de datos y la implementación de sistemas de control automatizados. El futuro de la carrera se orienta hacia la integración de habilidades técnicas y analíticas, preparando a los graduados para liderar en un entorno empresarial cada vez más digitalizado y global.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade custom-modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Competencias Clave</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    El profesional egresado destaca por su capacidad para implementar sistemas de control interno, realizar auditorías financieras y aplicar normativas contables internacionales. Combina habilidades analíticas con un enfoque crítico para la toma de decisiones, gestionando riesgos y optimizando los procesos financieros.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade custom-modal" id="modal4" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Responsabilidad Social</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Esta carrera forma profesionales comprometidos con la ética y la responsabilidad social. Los contadores y auditores promueven la transparencia financiera, contribuyen al cumplimiento de obligaciones fiscales y apoyan el desarrollo económico sostenible. Su labor es fundamental para generar confianza en las organizaciones y fomentar prácticas empresariales alineadas con el bienestar social.
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Final modales -->
 @endsection

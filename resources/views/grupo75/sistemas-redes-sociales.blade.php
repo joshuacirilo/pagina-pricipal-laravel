@@ -307,8 +307,7 @@
     </section>
     <!-- counter -->
 
-
-    <!--Tarjetas de informacion con modales -->
+      <!--Tarjetas de informacion con modales -->
     <section class="testimonials-section text-center">
         <div class="container">
 
@@ -357,8 +356,6 @@
         </div>
     </section>
 
-
-    <!--fin Tarjetas de informacion con modales -->
 
 
     <!-- faq -->
@@ -463,7 +460,7 @@
     </section>
     <!-- faq -->
 
-    <!--Modales -->
+        <!--Modales -->
             <!-- Modal 1 -->
     <div class="modal fade custom-modal" id="modal1" tabindex="-1">
         <div class="modal-dialog modal-lg modal-dialog-centered">

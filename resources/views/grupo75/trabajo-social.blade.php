@@ -156,34 +156,8 @@
         <h2 class="text-center mb-5 fw-bold text-primary">Nuestros Instructores</h2>
 
         <div class="row g-4">
-            <!-- Instructor 1 -->
-            <div class="col-md-4 col-sm-6">
-                <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                    onclick="window.location='{{ route('detalles-instructor-trabajosocial1') }}'">
 
-                    <img src="{{ asset('build/img/instructor/TrabajoSocialInstructor/LicdaLygia.png') }}" class="card-img-top" alt="Profesor 1">
-
-                    <div class="card-body text-center">
-                        <h5 class="card-title mb-2">Lic. Lygia</h5>
-                        <p class="card-text text-muted">Coordinadora de Facultad y Licenciada en Trabajo Social.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Instructor 2 -->
-
-            <div class="col-md-4 col-sm-6">
-                <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                     onclick="window.location='{{ route('detalles-instructor-trabajosocial2') }}'">
-                    <img src="{{ asset('build/img/instructor/TrabajoSocialInstructor/LicdaMaria.png') }}" class="card-img-top" alt="Profesor 2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title mb-2">Lic. María González</h5>
-                        <p class="card-text text-muted">Licenciada en Trabajo Social.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Instructor 3 -->
+             <!-- Instructor 3 -->
 
             <div class="col-md-4 col-sm-6">
                 <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
@@ -192,6 +166,37 @@
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">Lic. Flavio Juárez</h5>
                         <p class="card-text text-muted">Licenciado en Pedagogía y Ciencia de la Educación</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Instructor 1 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                    onclick="window.location='{{ route('detalles-instructor-trabajosocial1') }}'">
+
+                    <img src="{{ asset('build\img\instructor\unknown_user.png') }}" class="card-img-top" alt="Profesor 1">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2">En Construcción...</h5>
+                        <p class="card-text text-muted"></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Instructor 2 -->
+
+            <div class="col-md-4 col-sm-6">
+                <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                     onclick="window.location='{{ route('detalles-instructor-trabajosocial2') }}'">
+                    <img src="{{ asset('build\img\instructor\unknown_user.png') }}" class="card-img-top" alt="Profesor 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2">En Construcción...</h5>
+                        <p class="card-text text-muted"></p>
                     </div>
                 </div>
             </div>
@@ -268,82 +273,56 @@
     </section>
     <!-- counter -->
 
-    <!-- testimonials -->
+
+
+    <!--Tarjetas de informacion con modales -->
     <section class="testimonials-section text-center">
         <div class="container">
+
+            <!-- TÍTULO Y DESCRIPCIÓN -->
             <div class="section-header text-center">
                 <h2>Licenciatura en Trabajo Social</h2>
-                <p>Forma profesionales con sensibilidad social y capacidad de intervención en realidades complejas. A través de un enfoque teórico-práctico, los estudiantes desarrollan habilidades para gestionar proyectos sociales, promover derechos humanos y trabajar con grupos vulnerables, contribuyendo al bienestar colectivo y la transformación social en Guatemala.</p>
+                <p>
+                    Forma profesionales con sensibilidad social y capacidad de intervención en realidades complejas. A través de un enfoque teórico-práctico, los estudiantes desarrollan habilidades para gestionar proyectos sociales, promover derechos humanos y trabajar con grupos vulnerables, contribuyendo al bienestar colectivo y la transformación social en Guatemala.
+                </p>
             </div>
+
             <div class="testimonials-slider lazy mt-4">
+
+                <!-- 1 -->
                 <div>
-                    <div class="testimonials-item rounded-3 bg-white">
-                        <div class="position-relative d-inline-flex mb-2">
-                            <!--
-                            <div class="avatar rounded-circle avatar-xxl border border-white border-3">
-
-                                <a href="{{url('instructor-details')}}"><img class="img-fluid rounded-circle" src="./build/img/user/user-41.jpg" alt="img"></a>
-
-                            </div>
-
-                            <i class="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1"></i>
-                            -->
-                        </div>
-                        <h6 class="mb-1">¿Por qué estudiar Lic en Trabajo Social?</h6>
-                        <p class="fs-14 mb-3"></p>
-                                <!--class="mb-3 text-truncate line-clamb-2"-->
-                        <p class="fs-14 mb-3" >Porque te prepara para ser un agente de cambio en la sociedad, con las herramientas necesarias para intervenir, gestionar y transformar realidades en comunidades, familias e instituciones. A través de un enfoque humanista y metodologías prácticas, desarrollarás la capacidad de promover derechos humanos, impulsar proyectos de impacto social y trabajar con grupos en situación de vulnerabilidad, contribuyendo a la construcción de un país más justo e inclusivo.</p>
-                        <div>
-                            <!--
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            -->
-                        </div>
+                    <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal1">
+                        <h6 class="mb-2 fw-bold">¿Por qué estudiar Licenciatura en Trabajo Social?</h6>
                     </div>
                 </div>
+
+                <!-- 2 -->
                 <div>
-                    <div class="testimonials-item rounded-3 bg-white">
-                        <div class="position-relative d-inline-flex mb-2">
-
-                        </div>
-                        <h6 class="mb-1">El Futuro de la Lic. en Trabajo Social</h6>
-                        <p class="fs-14 mb-3"></p>
-                        <p class="fs-14 mb-3">El campo del trabajo social está evolucionando hacia un enfoque más estratégico y especializado, con una creciente demanda de profesionales capacitados para abordar problemáticas sociales complejas. Los futuros trabajadores sociales no solo intervendrán en situaciones de vulnerabilidad, sino que también liderarán proyectos de innovación social, gestión comunitaria y políticas públicas.
-
-                                Tendencias como la migración, el envejecimiento poblacional, la violencia estructural y los efectos del cambio climático requerirán intervenciones basadas en datos y metodologías validadas.</p>
-
+                    <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal2">
+                        <h6 class="mb-2 fw-bold">El Futuro de la Licenciatura en Trabajo Social</h6>
                     </div>
                 </div>
-                <div>
-                    <div class="testimonials-item rounded-3 bg-white">
-                        <div class="position-relative d-inline-flex mb-2">
 
-                        </div>
-                        <h6 class="mb-1">Competencias Clave del Lic. en Trabajo Social</h6>
-                        <p class="fs-14 mb-3"></p>
-                        <p class="fs-14 mb-3">El profesional en Trabajo Social destaca por su capacidad para diseñar, implementar y evaluar intervenciones sociales basadas en el diagnóstico de necesidades comunitarias. Desarrolla habilidades en mediación y resolución de conflictos, acompañamiento psicosocial y gestión de proyectos de impacto colectivo. Su formación le permite trabajar con enfoque intercultural, aplicar marcos legales y éticos, y promover la participación ciudadana para impulsar cambios sostenibles en diversos contextos sociales.</p>
+                <!-- 3 -->
+                <div>
+                    <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal3">
+                        <h6 class="mb-2 fw-bold">Competencias Clave</h6>
                     </div>
                 </div>
+
+                <!-- 4 -->
                 <div>
-                    <div class="testimonials-item rounded-3 bg-white">
-                        <div class="position-relative d-inline-flex mb-2">
-
-                        </div>
-                        <h6 class="mb-1">Licenciatura en Trabajo Social y Responsabilidad Social</h6>
-                          <p class="fs-14 mb-3"></p>
-                          <p class="fs-14 mb-3">La Licenciatura en Trabajo Social forma profesionales cuyo ejercicio profesional está intrínsecamente ligado a la responsabilidad social. A través de su labor, promueven la justicia social, la equidad y el respeto por los derechos humanos, trabajando directamente con comunidades, grupos vulnerables e instituciones para generar condiciones de vida más dignas.
-
-                                Su enfoque integra el acompañamiento psicosocial, la gestión de proyectos sostenibles y la incidencia en políticas públicas, siempre orientados a fortalecer el tejido social y a reducir desigualdades.
-                          </p>
+                    <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal4">
+                        <h6 class="mb-2 fw-bold">Responsabilidad Social</h6>
                     </div>
                 </div>
+
             </div>
+
         </div>
     </section>
-    <!-- testimonials -->
+    <!--fin Tarjetas de informacion con modales -->
+
 
     <!-- faq -->
     <section class="faq-section">
@@ -446,4 +425,68 @@
         </div>
     </section>
    <!-- faq -->
+
+
+  <!--Modales -->
+            <!-- Modal 1 -->
+    <div class="modal fade custom-modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">¿Por qué estudiar Lic en Trabajo Social?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                        Porque te prepara para ser un agente de cambio en la sociedad, con las herramientas necesarias para intervenir, gestionar y transformar realidades en comunidades, familias e instituciones. A través de un enfoque humanista y metodologías prácticas, desarrollarás la capacidad de promover derechos humanos, impulsar proyectos de impacto social y trabajar con grupos en situación de vulnerabilidad.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade custom-modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">El Futuro de la Licenciatura en Trabajo Social</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    El campo del trabajo social está evolucionando hacia un enfoque más estratégico y especializado, con una creciente demanda de profesionales capacitados para abordar problemáticas sociales complejas. Los futuros trabajadores sociales no solo intervendrán en situaciones de vulnerabilidad, sino que también liderarán proyectos de innovación social, gestión comunitaria y políticas públicas.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade custom-modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Competencias Clave</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    El profesional en Trabajo Social destaca por su capacidad para diseñar, implementar y evaluar intervenciones sociales basadas en el diagnóstico de necesidades comunitarias. Desarrolla habilidades en mediación y resolución de conflictos, acompañamiento psicosocial y gestión de proyectos de impacto colectivo.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade custom-modal" id="modal4" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Responsabilidad Social</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    La Licenciatura en Trabajo Social forma profesionales cuyo ejercicio profesional está intrínsecamente ligado a la responsabilidad social. A través de su labor, promueven la justicia social, la equidad y el respeto por los derechos humanos, trabajando directamente con comunidades, grupos vulnerables e instituciones para generar condiciones de vida más dignas.
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Final modales -->
 @endsection

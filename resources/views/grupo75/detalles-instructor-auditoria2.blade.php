@@ -19,22 +19,22 @@
                             <div class="card-body instructor-details">
                                 <div class="instructor-img">
                                     <a href="javascript:void(0);">
-                                        <img src="{{URL::asset('build/img/instructor/AuditoriaInstructor/LicCarlosRamos.png')}}" alt="img" class="img-fluid">
+                                        <img src="{{URL::asset('build\img\instructor\unknown_user200.png')}}" alt="img" class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="flex-fill">
                                     <div class="pb-3 border-bottom mb-3">
                                         <div class="d-flex align-items-center justify-content-between mb-1">
-                                            <h6 class="fw-bold">Lic. Carlos Manuel Ramos Gomez</h6>
+                                            <h6 class="fw-bold"></h6>
                                         </div>
                                         <div class="d-flex align-items-center mb-1">
-                                            <p>Lic. en Contaduría Pública y Auditoría</p>
+                                            <p></p>
                                             <span class="me-2">
                                             </span>
                                             <span class="fs-14"></span>
                                         </div>
                                         <div>
-                                            <p>Catedrático de la Facultad de Ciencias Económicas</p>
+                                            <p></p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between flex-wrap">
@@ -44,24 +44,28 @@
                             </div>
                         </div>
 
+                        <!--Sección en construcción-->
+
+
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="mb-3">Acerca de Mí</h5>
-                                <p class="mb-3"> Licenciado en Contaduría Pública y Auditoría con especialización en tributación y consultoría empresarial. En mi trayectoria profesional he liderado procesos de implementación de sistemas de control interno en PyMEs. Como catedrática de la UMG Guastatoya, me dedico a formar profesionales capaces de generar valor a través de la gestión contable estratégica, combinando marcos normativos locales con estándares globales.</p>
+                                <h5 class="mb-3">¡En Construcción!</h5>
+                                <p class="mb-3">Muy pronto estará disponible</p>
                             </div>
                         </div>
 
+                        <!--
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="mb-3">Educación</h5>
                                 <div class="education-flow">
                                     <div class="ps-4 pb-4 timeline-flow">
                                         <div>
-                                            <h6 class="mb-1">Licenciatura en Contaduría Pública y Auditoría</h6>
+                                            <h6 class="mb-1"></h6>
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
-                                    <!--
+
                                     <div class="ps-4 pb-4 timeline-flow">
                                         <div>
                                             <h6 class="mb-1">B</h6>
@@ -74,30 +78,32 @@
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
-                                    -->
+
                                 </div>
                             </div>
                         </div>
-
+                        -->
+                        <!--
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="mb-3">Experiencia</h5>
                                 <div class="d-flex align-items-center mb-4">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
-                                        <h6 class="mb-1">Contador Público</h6>
+                                        <h6 class="mb-1"></h6>
                                         <p>-</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <span class="bg-light border avatar avatar-lg text-gray-9 flex-shrink-0 me-3"><i class="isax isax-briefcase"></i></span>
                                     <div>
-                                        <h6 class="mb-1">Auditor en entidades privadas</h6>
+                                        <h6 class="mb-1"></h6>
                                         <p>-</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                         -->
 <!--
                         <div class="card border-0">
                             <div class="card-body p-0">
@@ -206,6 +212,7 @@
                             </div>
                         </div>
                          -->
+                        <!--
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="mb-3">Detalles de Contacto</h5>
@@ -215,7 +222,7 @@
                                     </span>
                                     <div>
                                         <h6 class="mb-0">Email</h6>
-                                        <p class="mb-0">cramosg@miumg.edu.gt</p>
+                                        <p class="mb-0">No disponible</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center mb-4">
@@ -227,7 +234,7 @@
                                         <p class="mb-0 text-truncate">Guastatoya</p>
                                     </div>
                                 </div>
-                                <!--
+
                                 <div class="d-flex align-items-center">
                                     <span class="contact-icon rounded-circle d-flex align-items-center justify-content-center me-3">
                                         <i class="isax isax-call"></i>
@@ -237,9 +244,11 @@
                                         <p class="mb-0"></p>
                                     </div>
                                 </div>
-                                 -->
+
                             </div>
+
                         </div>
+                        -->
                     </div>
                 </div>
             </div>

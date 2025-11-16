@@ -19,23 +19,23 @@
                             <div class="card-body instructor-details">
                                 <div class="instructor-img">
                                     <a href="javascript:void(0);">
-                                        <img src="{{URL::asset('build/img/instructor/TrabajoSocialInstructor/LicdaLygia.png')}}" alt="img" class="img-fluid">
+                                        <img src="{{URL::asset('build\img\instructor\unknown_user.png')}}" alt="img" class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="flex-fill">
                                     <div class="pb-3 border-bottom mb-3">
                                         <div class="d-flex align-items-center justify-content-between mb-1">
-                                            <h6 class="fw-bold">Lic Lygia</h6>
+                                            <h6 class="fw-bold"></h6>
                                         </div>
                                         <div class="d-flex align-items-center mb-1">
-                                            <p>Coordinadora de la Facultad de Licenciatura en Trabajo Social Centro UMG Guastatoya y Licenciada en Trabajo Social.</p>
+                                            <p></p>
 
                                             <span class="me-2">
                                             </span>
                                             <span class="fs-14"></span>
                                         </div>
                                         <div>
-                                            <p>Con experiencia en ayuda a comunidades en riesgo</p>
+                                            <p></p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between flex-wrap">
@@ -85,11 +85,11 @@
 
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="mb-3">Acerca de Mí</h5>
-                                <p class="mb-3">Como coordinadora de la facultad, promuevo una formación basada en la ética, el pensamiento crítico y la intervención social con impacto tangible. Trabajamos para que nuestros estudiantes se conviertan en agentes de cambio capaces de transformar realidades, combinando el rigor académico con el compromiso hacia las necesidades más urgentes de la sociedad guatemalteca.</p>
+                                <h5 class="mb-3">¡En Construcción!</h5>
+                                <p class="mb-3">Muy pronto estará disponible</p>
                             </div>
                         </div>
-
+ <!--
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="mb-3">Educación</h5>
@@ -100,7 +100,7 @@
                                             <p class="fs-14"></p>
                                         </div>
                                     </div>
-                                    <!--
+
                                     <div class="ps-4 pb-4 timeline-flow">
                                         <div>
                                             <h6 class="mb-1">Magíster Scientiae en Contabilidad y Auditoría Internacional con Enfoque en Riesgos</h6>
@@ -116,11 +116,12 @@
 
                                         </div>
                                     </div>
-                                    -->
+
                                 </div>
                             </div>
                         </div>
-
+-->
+                        <!--
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="mb-3">Experiencia</h5>
@@ -142,6 +143,7 @@
 
                             </div>
                         </div>
+-->
 <!--
                         <div class="card border-0">
                             <div class="card-body p-0">
@@ -251,6 +253,7 @@
                             </div>
                         </div>
                         -->
+                         <!--
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="mb-3">Detalle de Contacto</h5>
@@ -272,7 +275,7 @@
                                         <p class="mb-0 text-truncate">Guastatoya</p>
                                     </div>
                                 </div>
-                                <!--
+
                                 <div class="d-flex align-items-center">
                                     <span class="contact-icon rounded-circle d-flex align-items-center justify-content-center me-3">
                                         <i class="isax isax-call"></i>
@@ -282,9 +285,10 @@
                                         <p class="mb-0"></p>
                                     </div>
                                 </div>
-                                 -->
+
                             </div>
                         </div>
+                        -->
                     </div>
                 </div>
             </div>
