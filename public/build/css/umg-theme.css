@@ -629,3 +629,71 @@ body > *:first-child {
             text-align: center;
         }
 
+
+/* Modales */
+
+.modal-backdrop.show {
+    backdrop-filter: blur(7px) brightness(80%);
+    background-color: rgba(0,0,0,0.35);
+}
+
+.custom-modal .modal-content {
+    border-radius: 20px;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.35);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+.custom-modal .modal-dialog {
+    transform: scale(0.8);
+    transition: all .25s ease;
+}
+
+.custom-modal.show .modal-dialog {
+    transform: scale(1);
+}
+
+.modal-trigger {
+    cursor: pointer;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.modal-trigger:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+}
+
+
+/* TARJETAS BLANCAS */
+.card-blue {
+    background: #ffffff !important;   /* Fondo blanco */
+    border-radius: 18px !important;   /* Bordes redondeados */
+    padding: 18px 24px !important;
+    min-height: 65px;
+    max-width: 900px;
+    margin: 12px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(0,0,0,0.12); /* Borde suave */
+    cursor: pointer;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+/* Hover elegante */
+.card-blue:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+}
+
+/* 🔵 TITULO EN AZUL INSTITUCIONAL */
+.card-blue h6 {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0B2A52 !important;
+    letter-spacing: 0.5px;
+}

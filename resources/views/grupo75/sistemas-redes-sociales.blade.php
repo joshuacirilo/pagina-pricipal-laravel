@@ -307,60 +307,59 @@
     </section>
     <!-- counter -->
 
-    <!-- testimonials -->
+
+    <!--Tarjetas de informacion con modales -->
     <section class="testimonials-section text-center">
         <div class="container">
+
+            <!-- TÍTULO Y DESCRIPCIÓN -->
             <div class="section-header text-center">
                 <h2>Ingeniería en Sistemas</h2>
-                <p>Es la disciplina que diseña, implementa y optimiza soluciones tecnológicas integrales, combinando conocimientos en software, hardware, redes y gestión de datos para resolver problemas complejos y impulsar la transformación digital en organizaciones.</p>
+                <p>
+                    Es la disciplina que diseña, implementa y optimiza soluciones tecnológicas integrales,
+                    combinando conocimientos en software, hardware, redes y gestión de datos para resolver
+                    problemas complejos y apoyar la transformación digital.
+                </p>
             </div>
+
             <div class="testimonials-slider lazy mt-4">
+
+                <!-- 1 -->
                 <div>
-                    <div class="testimonials-item rounded-3 bg-white">
-                        <div class="position-relative d-inline-flex mb-2">
-
-                        </div>
-                        <h6 class="mb-1">¿Por qué estudiar Ingeniería en Sistemas?</h6>
-                        <p class="fs-14 mb-3"></p>
-                        <p class="fs-14 mb-3">Porque es la carrera con mayor demanda en el mercado digital actual. Te prepara para crear soluciones tecnológicas innovadoras, trabajar en proyectos globales y desarrollar competencias en áreas como inteligencia artificial, ciberseguridad y desarrollo de software, con un campo laboral en constante crecimiento.</p>
-
+                    <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal1">
+                        <h6 class="mb-2 fw-bold">¿Por qué estudiar Ingeniería en Sistemas?</h6>
                     </div>
                 </div>
+
+                <!-- 2 -->
                 <div>
-                    <div class="testimonials-item rounded-3 bg-white">
-                        <div class="position-relative d-inline-flex mb-2">
-
-                        </div>
-                        <h6 class="mb-1">El Futuro de la Ingeniería en Sistemas</h6>
-                        <p class="fs-14 mb-3"></p>
-                        <p class="fs-14 mb-3">La demanda de ingenieros en sistemas sigue en crecimiento constante, con nuevas oportunidades en campos como la ciberseguridad, la inteligencia artificial y el análisis de datos. Estos profesionales son clave para la transformación digital de empresas e instituciones, impulsando la innovación y optimizando procesos en todos los sectores productivos.</p>
-
+                    <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal2">
+                        <h6 class="mb-2 fw-bold">El Futuro de la Ingeniería en Sistemas</h6>
                     </div>
                 </div>
-                <div>
-                    <div class="testimonials-item rounded-3 bg-white">
-                        <div class="position-relative d-inline-flex mb-2">
 
-                        </div>
-                        <h6 class="mb-1">Competencias Clave del Ingeniero en Sistemas</h6>
-                        <p class="fs-14 mb-3"></p>
-                        <p class="fs-14 mb-3">Un ingeniero en sistemas destaca por su capacidad para analizar, diseñar e implementar soluciones tecnológicas eficientes. Entre sus competencias principales se incluyen el pensamiento crítico, la gestión de proyectos, el trabajo en equipo y la comunicación efectiva, habilidades que complementan su conocimiento técnico especializado.</p>
+                <!-- 3 -->
+                <div>
+                    <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal3">
+                        <h6 class="mb-2 fw-bold">Competencias Clave</h6>
                     </div>
                 </div>
-                <div>
-                    <div class="testimonials-item rounded-3 bg-white">
-                        <div class="position-relative d-inline-flex mb-2">
 
-                        </div>
-                        <h6 class="mb-1">Ingeniería en Sistemas y Responsabilidad Social</h6>
-                        <p class="fs-14 mb-3"></p>
-                        <p class="fs-14 mb-3">Más allá del aspecto técnico, la carrera forma profesionales conscientes de su impacto social. Los ingenieros en sistemas pueden desarrollar soluciones inclusivas, promover el acceso a la tecnología y contribuir a resolver problemáticas sociales a través de innovaciones con sentido humano.</p>
+                <!-- 4 -->
+                <div>
+                    <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal4">
+                        <h6 class="mb-2 fw-bold">Responsabilidad Social</h6>
                     </div>
                 </div>
+
             </div>
+
         </div>
     </section>
-    <!-- testimonials -->
+
+
+    <!--fin Tarjetas de informacion con modales -->
+
 
     <!-- faq -->
         <section class="faq-section">
@@ -463,4 +462,74 @@
         </div>
     </section>
     <!-- faq -->
-@endsection
+
+    <!--Modales -->
+            <!-- Modal 1 -->
+    <div class="modal fade custom-modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">¿Por qué estudiar Ingeniería en Sistemas?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Porque es una de las carreras con mayor demanda, con oportunidades globales
+                    en desarrollo de software, ciberseguridad, IA y automatización empresarial.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade custom-modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">El Futuro de la Ingeniería en Sistemas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                El crecimiento en IA, ciberseguridad y ciencia de datos posiciona a los ingenieros
+                en sistemas como líderes clave en la transformación digital.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade custom-modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Competencias Clave</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Pensamiento crítico, resolución de problemas, diseño de soluciones, comunicación
+                    efectiva y gestión de proyectos tecnológicos.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade custom-modal" id="modal4" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Responsabilidad Social</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Los ingenieros en sistemas tienen un papel clave en crear soluciones que reduzcan
+                    brechas sociales, fomenten la accesibilidad y mejoren la calidad de vida.
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Final modales -->
+
+
+    @endsection
+
