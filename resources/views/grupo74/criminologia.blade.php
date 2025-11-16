@@ -288,12 +288,9 @@
 
             <!-- TÍTULO Y DESCRIPCIÓN -->
             <div class="section-header text-center">
-                <h2>Ingeniería en Sistemas</h2>
+                <h2>Criminologia</h2>
                 <p>
-                    Es la disciplina que diseña, implementa y optimiza soluciones tecnológicas integrales,
-                    combinando conocimientos en software, hardware, redes y gestión de datos para resolver
-                    problemas complejos y apoyar la transformación digital.
-                </p>
+La Criminología es la ciencia que estudia el delito, al delincuente y a la víctima, así como los factores que influyen en la conducta criminal. Su propósito es comprender, prevenir y analizar el fenómeno delictivo para contribuir a la seguridad y bienestar de la sociedad.                </p>
             </div>
 
             <div class="testimonials-slider lazy mt-4">
@@ -301,14 +298,14 @@
                 <!-- 1 -->
                 <div>
                     <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal1">
-                        <h6 class="mb-2 fw-bold">¿Por qué estudiar Ingeniería en Sistemas?</h6>
+                        <h6 class="mb-2 fw-bold">¿Por qué estudiar criminologia?</h6>
                     </div>
                 </div>
 
                 <!-- 2 -->
                 <div>
                     <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal2">
-                        <h6 class="mb-2 fw-bold">El Futuro de la Ingeniería en Sistemas</h6>
+                        <h6 class="mb-2 fw-bold">El Futuro de criminologia</h6>
                     </div>
                 </div>
 
@@ -442,13 +439,11 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header border-0">
-                    <h5 class="modal-title fw-bold">¿Por qué estudiar Ingeniería en Sistemas?</h5>
+                    <h5 class="modal-title fw-bold">¿Por qué estudiar criminologia?</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    Porque es una de las carreras con mayor demanda, con oportunidades globales
-                    en desarrollo de software, ciberseguridad, IA y automatización empresarial.
-                </div>
+                   Estudiar criminología permite comprender las causas del delito, apoyar la seguridad ciudadana y trabajar en instituciones de investigación, prevención y justicia. Es una carrera ideal para quienes desean contribuir a una sociedad más justa y segura.                </div>
             </div>
         </div>
     </div>
@@ -462,9 +457,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                El crecimiento en IA, ciberseguridad y ciencia de datos posiciona a los ingenieros
-                en sistemas como líderes clave en la transformación digital.
-                </div>
+La criminología actual se dirige hacia el uso de tecnologías avanzadas, como análisis forense digital, criminometría y sistemas predictivos. El futuro de la disciplina combina ciencia, tecnología y prevención para comprender mejor las dinámicas del delito.                </div>
             </div>
         </div>
     </div>
@@ -478,8 +471,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    Pensamiento crítico, resolución de problemas, diseño de soluciones, comunicación
-                    efectiva y gestión de proyectos tecnológicos.
+                  Un criminólogo debe dominar la investigación científica, el análisis de conducta delictiva, la elaboración de perfiles criminológicos y la interpretación de datos. También requiere habilidades en mediación, pensamiento crítico y toma de decisiones informada.
                 </div>
             </div>
         </div>
@@ -494,8 +486,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    Los ingenieros en sistemas tienen un papel clave en crear soluciones que reduzcan
-                    brechas sociales, fomenten la accesibilidad y mejoren la calidad de vida.
+                    La responsabilidad social en criminología implica promover prácticas que fortalezcan la convivencia y reduzcan la violencia. El criminólogo debe actuar con ética, respeto a los derechos humanos y enfoque preventivo para contribuir al bienestar comunitario.
                 </div>
             </div>
         </div>

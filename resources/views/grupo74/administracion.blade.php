@@ -278,11 +278,9 @@
 
             <!-- TÍTULO Y DESCRIPCIÓN -->
             <div class="section-header text-center">
-                <h2>Ingeniería en Sistemas</h2>
+                <h2>Administración de Empresas</h2>
                 <p>
-                    Es la disciplina que diseña, implementa y optimiza soluciones tecnológicas integrales,
-                    combinando conocimientos en software, hardware, redes y gestión de datos para resolver
-                    problemas complejos y apoyar la transformación digital.
+                    La gestión estratégica consiste en definir objetivos, analizar el entorno y tomar decisiones que permitan a la empresa mantenerse competitiva. Implica planificar, ejecutar y evaluar acciones que alineen los recursos con la visión de la organización.
                 </p>
             </div>
 
@@ -291,14 +289,14 @@
                 <!-- 1 -->
                 <div>
                     <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal1">
-                        <h6 class="mb-2 fw-bold">¿Por qué estudiar Ingeniería en Sistemas?</h6>
+                        <h6 class="mb-2 fw-bold">¿Por qué estudiar Administración de Empresas?</h6>
                     </div>
                 </div>
 
                 <!-- 2 -->
                 <div>
                     <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal2">
-                        <h6 class="mb-2 fw-bold">El Futuro de la Ingeniería en Sistemas</h6>
+                        <h6 class="mb-2 fw-bold">El Futuro de Administración de Empresas</h6>
                     </div>
                 </div>
 
@@ -308,7 +306,7 @@
                         <h6 class="mb-2 fw-bold">Competencias Clave</h6>
                     </div>
                 </div>
-
+        
                 <!-- 4 -->
                 <div>
                     <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal4">
@@ -430,12 +428,11 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header border-0">
-                    <h5 class="modal-title fw-bold">¿Por qué estudiar Ingeniería en Sistemas?</h5>
+                    <h5 class="modal-title fw-bold">¿Por qué estudiar administraciòn de empresas?</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    Porque es una de las carreras con mayor demanda, con oportunidades globales
-                    en desarrollo de software, ciberseguridad, IA y automatización empresarial.
+                    La carrera evoluciona hacia un enfoque digital, innovador y global, incorporando análisis de datos, automatización, liderazgo adaptativo y gestión del cambio como elementos indispensables para enfrentar los nuevos desafíos empresariales.
                 </div>
             </div>
         </div>
@@ -446,12 +443,11 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header border-0">
-                    <h5 class="modal-title fw-bold">El Futuro de la Ingeniería en Sistemas</h5>
+                    <h5 class="modal-title fw-bold">El Futuro de administraciòn de empresas</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                El crecimiento en IA, ciberseguridad y ciencia de datos posiciona a los ingenieros
-                en sistemas como líderes clave en la transformación digital.
+                La carrera evoluciona hacia un enfoque digital, innovador y global, incorporando análisis de datos, automatización, liderazgo adaptativo y gestión del cambio como elementos indispensables para enfrentar los nuevos desafíos empresariales.
                 </div>
             </div>
         </div>
@@ -466,9 +462,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    Pensamiento crítico, resolución de problemas, diseño de soluciones, comunicación
-                    efectiva y gestión de proyectos tecnológicos.
-                </div>
+El profesional en Administración de Empresas desarrolla habilidades en liderazgo, toma de decisiones, análisis financiero, gestión de recursos, planificación estratégica y trabajo en equipo, esenciales para dirigir con eficiencia cualquier organización.                </div>
             </div>
         </div>
     </div>
@@ -482,8 +476,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    Los ingenieros en sistemas tienen un papel clave en crear soluciones que reduzcan
-                    brechas sociales, fomenten la accesibilidad y mejoren la calidad de vida.
+               La Administración de Empresas promueve una gestión responsable, integrando prácticas éticas y sostenibles en los procesos organizacionales para generar valor económico, social y ambiental dentro de las empresas y su entorno.
                 </div>
             </div>
         </div>

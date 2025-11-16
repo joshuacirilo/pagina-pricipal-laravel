@@ -157,16 +157,18 @@
             </div>
 
             <!-- Instructor 3 -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
-                        onclick="window.location='{{ route('detalles-instructor-derecho3') }}'">
-                        <img src="{{ asset('build/img/instructor/LicCarlos.png') }}" class="card-img-top" alt="Profesor 1">
-                        <div class="card-body text-center">
-                            <h5 class="card-title mb-2">Lic. Carlos Augusto Naavarro Ávila</h5>
-                            <p class="card-text text-muted">Licenciado en Ciencias Criminológicas Y Criminalísticas </p>
-                        </div>
+                  <!-- Instructor 3 -->
+
+            <div class="col-md-4 col-sm-6">
+                <div class="card shadow-sm border-0 h-100 instructor-card" style="cursor:pointer;"
+                     onclick="window.location='{{ route('detalles-instructor-auditoria3') }}'">
+                    <img src="{{ asset('build\img\instructor\unknown_user.png') }}" class="card-img-top" alt="Profesor 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2">En Construcción...</h5>
+                        <p class="card-text text-muted"></p>
                     </div>
                 </div>
+            </div>
 
             </div>
         </div>
