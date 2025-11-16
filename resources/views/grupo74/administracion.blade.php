@@ -272,110 +272,57 @@
 
 
 
-    <!-- testimonials -->
+   <!--Tarjetas de informacion con modales -->
     <section class="testimonials-section text-center">
         <div class="container">
+
+            <!-- TÍTULO Y DESCRIPCIÓN -->
             <div class="section-header text-center">
-                <span class="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block"></span>
-                <h2>Administración</h2>
-                <p>La administración combina conocimientos técnicos, liderazgo y toma de decisiones para dirigir a las personas y los recursos
-                     de una organización hacia el éxito, fomentando la innovación, el trabajo en equipo y la responsabilidad social.</p>
+                <h2>Ingeniería en Sistemas</h2>
+                <p>
+                    Es la disciplina que diseña, implementa y optimiza soluciones tecnológicas integrales,
+                    combinando conocimientos en software, hardware, redes y gestión de datos para resolver
+                    problemas complejos y apoyar la transformación digital.
+                </p>
             </div>
+
             <div class="testimonials-slider lazy mt-4">
+
+                <!-- 1 -->
                 <div>
-                    <div class="testimonials-item rounded-3 bg-white">
-                        <div class="position-relative d-inline-flex mb-2">
-                            <div class="avatar rounded-circle avatar-xxl border border-white border-3">
-                                <!--<a href="{{url('instructor-details')}}"><img class="img-fluid rounded-circle" src="./build/img/user/user-41.jpg" alt="img"></a>
-                             -->
-                            </div>
-                            <!-- <i class="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1"></i> -->
-                        </div>
-                        <h6 class="mb-1"><a href="{{url('instructor-details')}}">¿Por qué estudiar Administración?</a></h6>
-                        <p class="fs-14 mb-3">Estudiar Administración te permite adquirir los conocimientos y habilidades necesarios para
-                            dirigir, planificar y coordinar los recursos de una empresa u organización. Es una carrera que forma líderes capaces de tomar
-                             decisiones, resolver problemas y alcanzar objetivos de manera eficiente. Además, brinda una visión integral de áreas como
-                              finanzas, recursos humanos, marketing y emprendimiento, preparando al profesional para desenvolverse en distintos sectores
-                              laborales o incluso crear su propio negocio.</p>
-                        <p class="mb-3 text-truncate line-clamb-2"></p>
-                        <div>
-                            <!--<i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i> -->
-                        </div>
+                    <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal1">
+                        <h6 class="mb-2 fw-bold">¿Por qué estudiar Ingeniería en Sistemas?</h6>
                     </div>
                 </div>
+
+                <!-- 2 -->
                 <div>
-                    <div class="testimonials-item rounded-3 bg-white">
-                        <div class="position-relative d-inline-flex mb-2">
-                            <div class="avatar rounded-circle avatar-xxl border border-white border-3">
-                               <!-- <a href="{{url('instructor-details')}}"><img class="img-fluid rounded-circle" src="./build/img/user/user-42.jpg" alt="img"></a>-->
-                            </div>
-                            <!--<i class="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1"></i> -->
-                        </div>
-                        <h6 class="mb-1"><a href="{{url('instructor-details')}}">El Futuro de la Administración</a></h6>
-                        <p class="fs-14 mb-3"></p>El futuro de la Administración se orienta hacia la innovación, la tecnología y la sostenibilidad.
-                         Los administradores del mañana deberán ser líderes éticos, digitales y capaces de adaptarse a los constantes cambios del
-                          entorno empresarial global.
-                        <p class="mb-3 text-truncate line-clamb-2"></p>
-                        <div>
-                            <!--<i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>-->
-                        </div>
+                    <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal2">
+                        <h6 class="mb-2 fw-bold">El Futuro de la Ingeniería en Sistemas</h6>
                     </div>
                 </div>
+
+                <!-- 3 -->
                 <div>
-                    <div class="testimonials-item rounded-3 bg-white">
-                        <div class="position-relative d-inline-flex mb-2">
-                            <div class="avatar rounded-circle avatar-xxl border border-white border-3">
-                              <!--  <a href="{{url('instructor-details')}}"><img class="img-fluid rounded-circle" src="./build/img/user/user-43.jpg" alt="img"></a>-->
-                            </div>
-                           <!-- <i class="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1"></i>-->
-                        </div>
-                        <h6 class="mb-1"><a href="{{url('instructor-details')}}">Competencias Clave del Administrador</a></h6>
-                        <p class="fs-14 mb-3">Las competencias clave del administrador son el liderazgo, la comunicación, la toma de decisiones, la
-                             planificación estratégica, la adaptabilidad, la ética y la capacidad de innovar.</p>
-                        <p class="mb-3 text-truncate line-clamb-2"></p>
-                        <div>
-                          <!--  <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>-->
-                        </div>
+                    <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal3">
+                        <h6 class="mb-2 fw-bold">Competencias Clave</h6>
                     </div>
                 </div>
+
+                <!-- 4 -->
                 <div>
-                    <div class="testimonials-item rounded-3 bg-white">
-                        <div class="position-relative d-inline-flex mb-2">
-                            <div class="avatar rounded-circle avatar-xxl border border-white border-3">
-                                <!--<a href="{{url('instructor-details')}}"><img class="img-fluid rounded-circle" src="./build/img/user/user-43.jpg" alt="img"></a>-->
-                            </div>
-                           <!-- <i class="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1"></i>-->
-                        </div>
-                        <h6 class="mb-1"><a href="{{url('instructor-details')}}">Administración y Responsabilidad Social</a></h6>
-                        <p class="fs-14 mb-3">La Administración y la Responsabilidad Social van de la mano, ya que el administrador moderno debe dirigir las
-                            organizaciones con ética, compromiso ambiental y enfoque humano, buscando no solo el éxito económico, sino también el bienestar
-                            social.</p>
-                        <p class="mb-3 text-truncate line-clamb-2"></p>
-                        <div>
-                           <!-- <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>-->
-                        </div>
+                    <div class="testimonials-item card-blue modal-trigger" data-bs-toggle="modal" data-bs-target="#modal4">
+                        <h6 class="mb-2 fw-bold">Responsabilidad Social</h6>
                     </div>
                 </div>
+
             </div>
+
         </div>
     </section>
-    <!-- testimonials -->
+
+
+    <!--fin Tarjetas de informacion con modales -->
 
     <!-- faq -->
     <section class="faq-section">
@@ -475,4 +422,72 @@
         </div>
     </section>
    <!-- faq -->
+
+
+   <!--Modales -->
+            <!-- Modal 1 -->
+    <div class="modal fade custom-modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">¿Por qué estudiar Ingeniería en Sistemas?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Porque es una de las carreras con mayor demanda, con oportunidades globales
+                    en desarrollo de software, ciberseguridad, IA y automatización empresarial.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade custom-modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">El Futuro de la Ingeniería en Sistemas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                El crecimiento en IA, ciberseguridad y ciencia de datos posiciona a los ingenieros
+                en sistemas como líderes clave en la transformación digital.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade custom-modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Competencias Clave</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Pensamiento crítico, resolución de problemas, diseño de soluciones, comunicación
+                    efectiva y gestión de proyectos tecnológicos.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade custom-modal" id="modal4" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Responsabilidad Social</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Los ingenieros en sistemas tienen un papel clave en crear soluciones que reduzcan
+                    brechas sociales, fomenten la accesibilidad y mejoren la calidad de vida.
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Final modales -->
 @endsection
