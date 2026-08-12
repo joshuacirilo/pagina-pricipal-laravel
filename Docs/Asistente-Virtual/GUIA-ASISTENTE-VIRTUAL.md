@@ -27,7 +27,20 @@ Usuario pregunta -> ChatController -> ChatService
 
 ---
 
-## 1. Instalar PostgreSQL + pgvector (entorno de desarrollo)
+## 1. PostgreSQL + pgvector en Windows con Docker
+
+Este proyecto ya incluye `docker-compose.yml` con la imagen `pgvector/pgvector:pg16`.
+Desde PowerShell, en la raíz del proyecto, inicia la base de datos con:
+
+```powershell
+docker compose up -d postgres
+docker compose ps
+```
+
+La configuración incluida expone Postgres en `127.0.0.1:5432`, con base `laravel` y usuario `postgres`.
+Si el volumen `pagina_principal_db_data` ya existía, Docker mantiene la contraseña original aunque edites el archivo Compose. En ese caso actualiza `DB_PASSWORD` con la contraseña que usaste inicialmente. No borres el volumen salvo que quieras perder todos los datos locales.
+
+> Los comandos de Ubuntu/WSL siguientes son sólo una alternativa para quien no use Docker.
 
 En Ubuntu/WSL:
 
@@ -62,28 +75,26 @@ Avísale a quien administrará el VPS que necesitará este mismo setup en produc
 
 ## 2. Instalar Ollama (embeddings + generación, gratis y local)
 
-```bash
-curl -fsSL https://ollama.com/install.sh | sh
+En Windows instala Ollama desde su instalador oficial y usa PowerShell:
 
+```powershell
 ollama pull nomic-embed-text   # modelo de embeddings (768 dimensiones)
 ollama pull qwen2.5:3b         # modelo de generación, buen desempeño en español
 ```
 
 Verifica que esté corriendo:
 
-```bash
-curl http://localhost:11434/api/tags
+```powershell
+Invoke-RestMethod http://127.0.0.1:11434/api/tags
 ```
 
 ---
 
 ## 3. Configurar Laravel
 
-### 3.1 Instalar el paquete de pgvector para PHP
+### 3.1 Dependencia de PHP
 
-```bash
-composer require pgvector/pgvector-php
-```
+No se requiere un paquete adicional: el proyecto guarda y consulta el tipo `vector` con SQL parametrizado de Laravel. La guía original mencionaba `pgvector/pgvector-php`, pero ese paquete ya no está publicado con ese nombre en Composer.
 
 ### 3.2 Configurar `.env`
 
@@ -95,8 +106,8 @@ DB_DATABASE=universidad
 DB_USERNAME=postgres
 DB_PASSWORD=postgres
 
-OLLAMA_URL=http://localhost:11434
-OLLAMA_EMBEDDING_MODEL=nomic-embed-text
+OLLAMA_URL=http://127.0.0.1:11434
+OLLAMA_EMBEDDING_MODEL=nomic-embed-text:latest
 OLLAMA_CHAT_MODEL=qwen2.5:3b
 ```
 
@@ -112,7 +123,7 @@ OLLAMA_CHAT_MODEL=qwen2.5:3b
 Y agregar los snippets:
 
 - El contenido de `config/services-snippet.php` dentro de tu `config/services.php`
-- El contenido de `routes/api-snippet.php` dentro de tu `routes/api.php`
+- La ruta API ya está registrada en `routes/api.php` y habilitada desde `bootstrap/app.php` (Laravel 12 no la crea por defecto).
 
 ### 3.4 Correr la migración
 
@@ -130,8 +141,8 @@ Esto crea la extensión `vector`, la tabla `knowledge_chunks` y el índice HNSW 
 
 2. Corre el comando de ingesta:
 
-```bash
-php artisan knowledge:ingest /ruta/a/knowledge-base-ejemplo --category=admisiones
+```powershell
+php artisan knowledge:ingest "Docs\Asistente-Virtual" --category=admisiones --replace
 ```
 
 Esto:
@@ -146,12 +157,10 @@ Repite el comando por cada carpeta/categoría de contenido que tengas (becas, ca
 
 ## 5. Probar el endpoint
 
-Con el servidor de Laravel corriendo (`php artisan serve`):
+Con el servidor de Laravel corriendo (`php artisan serve`), en PowerShell:
 
-```bash
-curl -X POST http://localhost:8000/api/chat \
-  -H "Content-Type: application/json" \
-  -d '{"question": "¿Cuándo son las fechas de inscripción?"}'
+```powershell
+Invoke-RestMethod http://127.0.0.1:8000/api/chat -Method Post -ContentType 'application/json' -Body '{"question":"¿Cuándo son las fechas de inscripción?"}'
 ```
 
 Respuesta esperada:
