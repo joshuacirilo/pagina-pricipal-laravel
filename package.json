@@ -4,12 +4,13 @@
     "scripts": {
         "build": "vite build",
         "dev": "vite",
-        "sass": "sass resources/scss/main.scss:resources/css/style.css", 
+        "sass": "sass resources/scss/main.scss:resources/css/style.css",
         "sass:watch": "sass sass resources/scss/main.scss:resources/css/style.css --watch",
         "sass:no-map": "sass resources/scss/main.scss:resources/css/style.css --style=compressed --no-source-map"
     },
     "devDependencies": {
         "laravel-vite-plugin": "^2.0.1",
+        "sass": "^1.102.0",
         "vite": "^7.1.5",
         "vite-plugin-static-copy": "^3.1.2"
     }
