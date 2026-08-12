@@ -37,7 +37,7 @@ docker compose up -d postgres
 docker compose ps
 ```
 
-La configuración incluida expone Postgres en `127.0.0.1:5432`, con base `laravel` y usuario `postgres`.
+La configuración incluida expone Postgres en `127.0.0.1:5433`, con base `laravel` y usuario `postgres`. Se usa el puerto 5433 para no interferir con una instalación local de PostgreSQL que normalmente usa 5432.
 Si el volumen `pagina_principal_db_data` ya existía, Docker mantiene la contraseña original aunque edites el archivo Compose. En ese caso actualiza `DB_PASSWORD` con la contraseña que usaste inicialmente. No borres el volumen salvo que quieras perder todos los datos locales.
 
 > Los comandos de Ubuntu/WSL siguientes son sólo una alternativa para quien no use Docker.
@@ -101,7 +101,7 @@ No se requiere un paquete adicional: el proyecto guarda y consulta el tipo `vect
 ```
 DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
-DB_PORT=5432
+DB_PORT=5433
 DB_DATABASE=universidad
 DB_USERNAME=postgres
 DB_PASSWORD=postgres
