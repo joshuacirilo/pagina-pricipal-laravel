@@ -39,11 +39,10 @@ Orden de la página:
 
 1. **Hero parallax** - `<x-umg-parallax-hero />` (foto campus, overlay navy, 3 CTAs: Admisión / Pago / Tour)
 2. **Facultades** - `<x-umg-faculties />` (6 cards: Derecho, Administración, Criminología, Sistemas, Trabajo Social, Auditoría)
-3. **Landing Sistemas** - `<x-umg-sistemas-landing />` (migrada desde `ideas/umgguastatoyagt`: hero + countdown, valor, futuro, evento, contacto + form)
-4. **Por qué UMG** - bloque `share-knowledge` (aún template LMS; pendiente de rediseño)
-5. **Footer UMG** - `layout/partials/footer.blade.php` (navy, logo en recuadro blanco, columnas Contacto / Facultades / Universidad)
+3. **Landing admisión UMG** - `<x-umg-sistemas-landing />` (hero + countdown, por qué UMG, formación, callout admisión, contacto + form)
+4. **Footer UMG** - `layout/partials/footer.blade.php` (navy, logo en recuadro blanco, columnas Contacto / Facultades / Universidad)
 
-Se quitaron del home: coordinador, egresados, eventos, frases, noticias y métricas `.student-course`.
+Se quitaron del home: coordinador, egresados, eventos, frases, noticias, métricas `.student-course` y bloque LMS `share-knowledge` (copy migrado a la landing).
 
 ### Landing Sistemas (referencia)
 
@@ -87,6 +86,6 @@ Casi todos los miles de cambios hacia GitHub son cache AST de Graphify, no la ho
 1. Rol: senior frontend. Responder en español.
 2. Antes de explorar código: `graphify query "..."` (grafo en `graphify-out/`; si no existe, se puede construir).
 3. UI: leer skill UI UX Pro Max; `--design-system` + `--stack laravel`; no asumir React.
-4. Seguir rediseñando la home por bloques (egresados, eventos, por qué UMG, noticias), mismo lenguaje visual que hero/facultades/footer.
+4. Seguir rediseñando la home por bloques pendientes del template LMS, mismo lenguaje visual que hero/facultades/footer.
 5. Tras editar codigo: `graphify update .`
 6. No commitear ni pushear salvo que el usuario lo pida.

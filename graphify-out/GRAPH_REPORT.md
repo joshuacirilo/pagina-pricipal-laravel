@@ -1,16 +1,16 @@
-# Graph Report - pagina-pricipal-laravel  (2026-08-11)
+# Graph Report - pagina-pricipal-laravel  (2026-08-12)
 
 ## Corpus Check
-- 373 files · ~2,466,383 words
+- 374 files · ~2,581,370 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 6864 nodes · 17113 edges · 592 communities (469 shown, 123 thin omitted)
+- 6865 nodes · 17113 edges · 595 communities (473 shown, 122 thin omitted)
 - Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 679 edges (avg confidence: 0.6)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `23ec5329`
+- Built from commit: `c1d44d7c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -18,7 +18,7 @@
 - Sc
 - .get
 - .is
-- r
+- .init
 - $_
 - swiper-bundle.min.js
 - id
@@ -58,12 +58,12 @@
 - remove
 - Context
 - .clone
-- .getAttribute
+- yi
 - TemplateFactory
 - remove
 - .hide
 - hd
-- yi
+- getWindow
 - select2.full.min.js
 - .stopListening
 - all.js
@@ -104,7 +104,7 @@
 - qd
 - .fire
 - ScrollSpy
-- sd
+- r
 - .trigger
 - SelectAdapter
 - .init
@@ -112,7 +112,7 @@
 - SelectAdapter
 - Ln
 - d
-- addHandler
+- .match
 - kd
 - .destroy
 - .has
@@ -144,11 +144,11 @@
 - .bind
 - Dropdown
 - xw
-- n
+- .push
 - Design System Master File
 - If
 - ys
-- .init
+- g
 - .append
 - .trigger
 - scripts
@@ -196,7 +196,7 @@
 - ScrollBarHelper
 - Ce
 - ScrollBarHelper
-- .top
+- theia-sticky-sidebar.js
 - .getFirstPosition
 - script.js
 - findIcon
@@ -265,7 +265,10 @@
 - Button
 - MaximumSelectionLength
 - _wrapRegExp
+- ._isShown
+- Swipe
 - MaximumSelectionLength
+- ly
 - Popover
 - extra
 - keywords
@@ -281,10 +284,9 @@
 - summernote-ext-databasic.js
 - dev
 - Gc
-- Backdrop
 - Yd
 - c
-- .push
+- .getChild
 - wD
 - BaseAdapter
 - fI
@@ -318,7 +320,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (592 total, 123 thin omitted)
+## Communities (595 total, 122 thin omitted)
 
 ### Community 0 - "Sc"
 Cohesion: 0.15
@@ -326,15 +328,15 @@ Nodes (4): getTokenFor(), ps(), registerTokenUrl(), Sc
 
 ### Community 1 - ".get"
 Cohesion: 0.03
-Nodes (40): _addBasicStylesAutoformats(), _addBlockQuoteAutoformats(), _addCodeBlockAutoformats(), _addElementCallback(), _addHeadingAutoformats(), _addHorizontalLineAutoformats(), _addListAutoformats(), afterInit() (+32 more)
+Nodes (41): _addBasicStylesAutoformats(), _addBlockQuoteAutoformats(), _addCodeBlockAutoformats(), _addElementCallback(), _addHeadingAutoformats(), _addHorizontalLineAutoformats(), _addListAutoformats(), afterInit() (+33 more)
 
 ### Community 2 - ".is"
 Cohesion: 0.04
-Nodes (34): ad(), al(), Av(), Ce(), du(), eE(), er(), fd() (+26 more)
+Nodes (45): ad(), al(), Av(), bs(), Ce(), cv(), di(), du() (+37 more)
 
-### Community 3 - "r"
-Cohesion: 0.06
-Nodes (20): aE(), bx(), dE(), fE, init(), lE(), Nm(), Qi() (+12 more)
+### Community 3 - ".init"
+Cohesion: 0.08
+Nodes (10): init(), Nm(), nx, Qi(), s(), td, Tl(), tv (+2 more)
 
 ### Community 4 - "$_"
 Cohesion: 0.02
@@ -349,8 +351,8 @@ Cohesion: 0.11
 Nodes (7): aw(), id, jc(), Jl(), pu(), ww(), Zl()
 
 ### Community 7 - "bootstrap.bundle.js"
-Cohesion: 0.06
-Nodes (83): applyStyles(), areValidElements(), arrow(), computeAutoPlacement(), computeOffsets(), computeStyles(), debounce(), detectOverflow() (+75 more)
+Cohesion: 0.05
+Nodes (68): addHandler(), arrow(), bootstrapDelegationHandler(), bootstrapHandler(), computeAutoPlacement(), computeOffsets(), computeStyles(), detectOverflow() (+60 more)
 
 ### Community 9 - "all.min.js"
 Cohesion: 0.07
@@ -412,10 +414,6 @@ Nodes (79): a(), c(), d(), e(), f(), g(), h(), i() (+71 more)
 Cohesion: 0.08
 Nodes (4): Collapse, remove(), Tooltip, noop()
 
-### Community 28 - "ps"
-Cohesion: 0.08
-Nodes (3): ps, qt, U
-
 ### Community 29 - "conflict-detection.js"
 Cohesion: 0.10
 Nodes (38): _arrayLikeToArray(), _arrayWithoutHoles(), binl2rstr(), binlMD5(), bitRotateLeft(), conflictDetection(), _defineProperty(), detectSvgConflicts() (+30 more)
@@ -437,8 +435,8 @@ Cohesion: 0.14
 Nodes (5): ArrayAdapter(), InputData(), SelectAdapter(), Tags(), Tokenizer()
 
 ### Community 35 - "remove"
-Cohesion: 0.08
-Nodes (4): Alert, Offcanvas, remove(), Toast
+Cohesion: 0.06
+Nodes (5): Alert, Modal, Offcanvas, remove(), Toast
 
 ### Community 36 - "zc"
 Cohesion: 0.10
@@ -460,9 +458,9 @@ Nodes (7): Ue(), pi, remove(), Ze, Ns(), xs(), Ye()
 Cohesion: 0.08
 Nodes (4): byTriggerPoint(), Context(), Group(), Waypoint()
 
-### Community 43 - ".getAttribute"
-Cohesion: 0.03
-Nodes (27): bv, cv(), dv(), Fx(), gs(), ir(), iw(), jd() (+19 more)
+### Community 43 - "yi"
+Cohesion: 0.07
+Nodes (16): aE(), bx(), dE(), fE, Fx(), kx, Lx(), Mx() (+8 more)
 
 ### Community 44 - "TemplateFactory"
 Cohesion: 0.07
@@ -475,6 +473,10 @@ Nodes (3): es, remove(), W
 ### Community 46 - ".hide"
 Cohesion: 0.08
 Nodes (3): mo, Qn, x()
+
+### Community 48 - "getWindow"
+Cohesion: 0.14
+Nodes (36): applyStyles(), areValidElements(), debounce(), effect(), effect$2(), getBoundingClientRect(), getClientRectFromMixedType(), getClippingParents() (+28 more)
 
 ### Community 49 - "select2.full.min.js"
 Cohesion: 0.11
@@ -522,7 +524,7 @@ Nodes (3): bm, vh, yh()
 
 ### Community 70 - "TemplateFactory"
 Cohesion: 0.06
-Nodes (5): BaseComponent, Config, sanitizeHtml(), Swipe, TemplateFactory
+Nodes (5): Backdrop, BaseComponent, Config, sanitizeHtml(), TemplateFactory
 
 ### Community 72 - "vu"
 Cohesion: 0.05
@@ -541,8 +543,12 @@ Cohesion: 0.09
 Nodes (12): callDep(), countResults(), DecoratedClass(), Dropdown(), hasProp(), makeNormalize(), makeRelParts(), makeRequire() (+4 more)
 
 ### Community 87 - ".fire"
-Cohesion: 0.07
-Nodes (6): bs(), ib, il(), nl, QE(), rd
+Cohesion: 0.10
+Nodes (5): gA(), il(), nl, oa(), xh()
+
+### Community 89 - "r"
+Cohesion: 0.06
+Nodes (6): a(), af, ak, ib, r(), sd()
 
 ### Community 91 - "SelectAdapter"
 Cohesion: 0.21
@@ -564,29 +570,29 @@ Nodes (3): ArrayAdapter(), SelectAdapter(), Tags()
 Cohesion: 0.14
 Nodes (5): Ln, gn(), pn(), wn(), yn()
 
-### Community 97 - "addHandler"
-Cohesion: 0.16
-Nodes (17): addHandler(), bootstrapDelegationHandler(), bootstrapHandler(), find(), findHandler(), focusableChildren(), getElementEvents(), getTypeEvent() (+9 more)
+### Community 97 - ".match"
+Cohesion: 0.08
+Nodes (6): bb, lE(), lr, wl, zr(), zy()
 
 ### Community 99 - ".destroy"
 Cohesion: 0.04
 Nodes (8): cx, dr, Ik, kf, pr, sb, Vg, wf
 
 ### Community 100 - ".has"
-Cohesion: 0.04
-Nodes (7): dx, eu(), jh, pk(), uk(), yk, zp()
+Cohesion: 0.05
+Nodes (6): eu(), jh, ob, pk(), uk(), zp()
 
 ### Community 101 - "contains"
-Cohesion: 0.10
-Nodes (4): contains(), effect$1(), Modal, Tab
+Cohesion: 0.18
+Nodes (3): contains(), effect$1(), Tab
 
 ### Community 103 - "Zs"
 Cohesion: 0.22
 Nodes (3): Zs, Rs(), zs()
 
 ### Community 104 - "f"
-Cohesion: 0.10
-Nodes (3): f(), m, nv
+Cohesion: 0.06
+Nodes (8): bv, dv(), f(), lv(), m, Mv, nv, z()
 
 ### Community 105 - "B"
 Cohesion: 0.12
@@ -624,9 +630,9 @@ Nodes (3): AttachBody(), CloseOnSelect(), EventRelay()
 Cohesion: 0.13
 Nodes (3): fp, hp(), xw
 
-### Community 129 - "n"
+### Community 129 - ".push"
 Cohesion: 0.04
-Nodes (15): a(), af, cl(), _colorFillPaths(), dy, GE, hs, jp() (+7 more)
+Nodes (14): cd(), cl(), _colorFillPaths(), dd(), eg(), fs(), gd(), gs() (+6 more)
 
 ### Community 130 - "Design System Master File"
 Cohesion: 0.11
@@ -635,6 +641,10 @@ Nodes (17): Additional Forbidden Patterns, Anti-Patterns (Do NOT Use), Buttons, 
 ### Community 131 - "If"
 Cohesion: 0.14
 Nodes (3): If, tf(), Zm
+
+### Community 133 - "g"
+Cohesion: 0.08
+Nodes (5): g(), Hr(), k(), Q(), Sk()
 
 ### Community 135 - ".append"
 Cohesion: 0.13
@@ -671,6 +681,10 @@ Nodes (13): _arrayLikeToArray(), _arrayWithoutHoles(), defineIcons(), _definePro
 ### Community 147 - "ts"
 Cohesion: 0.24
 Nodes (3): e(), ts, Ki()
+
+### Community 148 - "lt"
+Cohesion: 0.21
+Nodes (3): lt, tt(), st()
 
 ### Community 149 - ".preventDefault"
 Cohesion: 0.10
@@ -748,13 +762,13 @@ Nodes (3): Lw(), Pw(), x()
 Cohesion: 0.26
 Nodes (3): ri(), we(), Ce
 
-### Community 182 - ".top"
-Cohesion: 0.25
-Nodes (8): distanceAndSkiddingToXY(), getSideOffsets(), hide(), isAnySideFullyClipped(), getWidthForObject(), init(), tryInit(), tryInitOrHookIntoEvents()
+### Community 182 - "theia-sticky-sidebar.js"
+Cohesion: 0.70
+Nodes (4): getWidthForObject(), init(), tryInit(), tryInitOrHookIntoEvents()
 
 ### Community 183 - ".getFirstPosition"
-Cohesion: 0.07
-Nodes (10): bl(), Fy(), gx, hy, jy(), Mv, Pb(), px() (+2 more)
+Cohesion: 0.06
+Nodes (8): dx, Fy(), gx, hy, jy(), px(), qy, Uy()
 
 ### Community 186 - "findIcon"
 Cohesion: 0.22
@@ -920,9 +934,9 @@ Nodes (3): dev, Composer\\Config::disableProcessTimeout, npx concurrently -c \"#
 Cohesion: 0.12
 Nodes (4): c(), gi(), jo(), vc()
 
-### Community 642 - ".push"
+### Community 642 - ".getChild"
 Cohesion: 0.06
-Nodes (12): cd(), dd(), eg(), Fc(), g(), gd(), ld(), ny (+4 more)
+Nodes (8): bl(), Fc(), jd(), ny, od, Pb(), QE(), rd
 
 ### Community 698 - "UMG Guastatoya - Portal Laravel"
 Cohesion: 0.20
@@ -931,15 +945,15 @@ Nodes (9): Archivos clave, Cómo correrlo, Git, Home - estado actual, Landing Si
 ## Knowledge Gaps
 - **81 isolated node(s):** `$schema`, `name`, `type`, `description`, `laravel` (+76 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **123 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **122 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `$_` connect `$_` to `Sc`, `.get`, `.is`, `r`, `id`, `.findAncestor`, `iu`, `bootstrap.bundle.min.js`, `ms`, `qc`, `.setTemplate`, `.setSelection`, `Uc`, `.getSelectedElement`, `zc`, `ea`, `.change`, `gf`, `remove`, `.clone`, `.getAttribute`, `hd`, `yi`, `.stopListening`, `kl`, `ih`, `Ic`, `Ds`, `fl`, `vh`, `hu`, `ks`, `vu`, `._createAt`, `w`, `Zh`, `Br`, `Pc`, `ma`, `ws`, `Tc`, `qd`, `.fire`, `sd`, `.init`, `d`, `Gc`, `.destroy`, `.has`, `kd`, `Zs`, `f`, `B`, `Nc`, `vs`, `Ac`, `ud`, `.getLastPosition`, `bc`, `Ho`, `us`, `Yd`, `c`, `xw`, `n`, `.push`, `If`, `ys`, `.init`, `.isBefore`, `la`, `bd`, `vk`, `Vd`, `wD`, `Ss`, `ts`, `.preventDefault`, `nr`, `fI`, `Eo`, `.getMinimalFlatRanges`, `ot`, `.createRange`, `qs`, `tp`, `Cs`, `wt`, `._clone`, `xp`, `.mapViewToDom`, `.getFirstPosition`, `rb`, `ed`, `wp`, `.getAncestors`, `._remove`, `Gw`, `dh`, `Nd`, `zo`, `Mc`, `Cf`, `HE`, `Ek`, `ph`, `Is`, `kb`, `wg`?**
-  _High betweenness centrality (0.514) - this node is a cross-community bridge._
-- **Why does `ws` connect `ws` to `.get`, `.is`, `Cs`, `$_`, `.trigger`, `._remove`, `Zh`, `.getAttribute`, `ms`?**
-  _High betweenness centrality (0.118) - this node is a cross-community bridge._
+- **Why does `$_` connect `$_` to `Sc`, `.get`, `.is`, `.init`, `id`, `.findAncestor`, `iu`, `bootstrap.bundle.min.js`, `ms`, `qc`, `.setTemplate`, `.setSelection`, `Uc`, `.getSelectedElement`, `zc`, `ea`, `.change`, `gf`, `remove`, `.clone`, `yi`, `hd`, `.stopListening`, `kl`, `ih`, `Ic`, `Ds`, `fl`, `vh`, `hu`, `ks`, `vu`, `._createAt`, `w`, `Zh`, `Br`, `Pc`, `ma`, `ws`, `Tc`, `qd`, `.fire`, `r`, `.init`, `d`, `.match`, `Gc`, `.destroy`, `.has`, `kd`, `Zs`, `f`, `B`, `Nc`, `vs`, `Ac`, `ud`, `.getLastPosition`, `bc`, `Ho`, `us`, `Yd`, `c`, `xw`, `.push`, `.getChild`, `If`, `ys`, `g`, `.isBefore`, `la`, `bd`, `vk`, `Vd`, `wD`, `Ss`, `ts`, `lt`, `.preventDefault`, `nr`, `fI`, `Eo`, `.getMinimalFlatRanges`, `.createRange`, `qs`, `tp`, `Cs`, `wt`, `._clone`, `xp`, `.mapViewToDom`, `.getFirstPosition`, `rb`, `ed`, `wp`, `.getAncestors`, `._remove`, `Gw`, `dh`, `Nd`, `zo`, `Mc`, `Cf`, `HE`, `Ek`, `ph`, `Is`, `kb`, `wg`, `ly`?**
+  _High betweenness centrality (0.506) - this node is a cross-community bridge._
+- **Why does `ws` connect `ws` to `.get`, `.is`, `Cs`, `$_`, `.trigger`, `._remove`, `Zh`, `ms`?**
+  _High betweenness centrality (0.120) - this node is a cross-community bridge._
 - **Why does `zo()` connect `zo` to `Ho`, `$_`, `parseMeta`?**
   _High betweenness centrality (0.068) - this node is a cross-community bridge._
 - **Are the 79 inferred relationships involving `n()` (e.g. with `.attributeToAttribute()` and `.attributeToElement()`) actually correct?**
@@ -947,6 +961,6 @@ _Questions this graph is uniquely positioned to answer:_
 - **What connects `$schema`, `name`, `type` to the rest of the system?**
   _81 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `.get` be split into smaller, more focused modules?**
-  _Cohesion score 0.033009585475782394 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.03065834221613116 - nodes in this community are weakly interconnected._
 - **Should `.is` be split into smaller, more focused modules?**
-  _Cohesion score 0.04437689969604863 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.04148061104582844 - nodes in this community are weakly interconnected._

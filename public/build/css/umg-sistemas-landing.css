@@ -205,6 +205,13 @@
   margin-bottom: 1rem;
 }
 
+.umg-sistemas-landing .eyebrow-urgent {
+  color: #ffd7d5;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid rgba(194, 60, 57, 0.45);
+  background: rgba(194, 60, 57, 0.16);
+}
+
 .umg-sistemas-landing h1,
 .umg-sistemas-landing h2,
 .umg-sistemas-landing h3 {
@@ -274,16 +281,45 @@
   box-shadow: var(--sis-shadow);
 }
 
+.umg-sistemas-landing .countdown-card--critical {
+  border-color: rgba(194, 60, 57, 0.55);
+  background:
+    linear-gradient(165deg, rgba(194, 60, 57, 0.22) 0%, rgba(9, 17, 29, 0.72) 42%, rgba(9, 17, 29, 0.88) 100%);
+  box-shadow: var(--sis-shadow), 0 0 0 1px rgba(182, 138, 52, 0.18);
+}
+
+.umg-sistemas-landing .countdown-card--critical .eyebrow {
+  color: #ffc9c6;
+}
+
 .umg-sistemas-landing .countdown-card h2 {
   font-size: 1.8rem !important;
   margin-top: 0.25rem !important;
   color: var(--sis-white) !important;
 }
 
+.umg-sistemas-landing .countdown-card--critical h2 {
+  font-size: clamp(1.9rem, 3vw, 2.35rem) !important;
+  letter-spacing: -0.04em;
+}
+
 .umg-sistemas-landing .countdown-card p {
   margin: 0.65rem 0 0;
   color: #c2cfdf;
   line-height: 1.6;
+}
+
+.umg-sistemas-landing .countdown-card__cta {
+  width: 100%;
+  margin-top: 1.15rem;
+  background: var(--sis-red);
+  color: var(--sis-white);
+  border-color: transparent;
+}
+
+.umg-sistemas-landing .countdown-card__cta:hover {
+  background: #d14946;
+  color: var(--sis-white);
 }
 
 .umg-sistemas-landing .timer-grid {
@@ -418,16 +454,25 @@
   grid-template-columns: minmax(0, 1fr) 480px;
   gap: 2rem;
   align-items: center;
+  width: min(1180px, 100%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.umg-sistemas-landing .split-section .section-copy h2,
-.umg-sistemas-landing .split-section .section-copy p {
-  margin-left: 0;
-  max-width: 12ch;
+.umg-sistemas-landing .split-section .section-copy {
+  margin: 0;
+}
+
+.umg-sistemas-landing .split-section .section-copy h2 {
+  margin: 0 !important;
+  max-width: none;
+  line-height: 1.05 !important;
   color: var(--sis-white) !important;
 }
 
 .umg-sistemas-landing .split-section .section-copy p {
+  margin-left: 0;
+  margin-top: 1rem;
   max-width: 58ch;
   color: #c0cfdf !important;
 }
@@ -467,6 +512,18 @@
 .umg-sistemas-landing .light-text p,
 .umg-sistemas-landing .eyebrow.light {
   color: var(--sis-white) !important;
+}
+
+.umg-sistemas-landing .section-callout__cta {
+  margin-top: 1.75rem;
+  background: var(--sis-red);
+  color: var(--sis-white);
+  border-color: transparent;
+}
+
+.umg-sistemas-landing .section-callout__cta:hover {
+  background: #d14946;
+  color: var(--sis-white);
 }
 
 .umg-sistemas-landing .contact-section {

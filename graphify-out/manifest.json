@@ -950,8 +950,8 @@
     "semantic_hash": "a1466687c85034a1bb6815bcae772a5f"
   },
   "resources/views/JOSHUA/index-3.blade.php": {
-    "mtime": 1786512157.2519865,
-    "ast_hash": "c2fa8d0abbd7c6428553d9e34fbbb107",
+    "mtime": 1786515461.3842597,
+    "ast_hash": "f5ba511ce613b4383af9cf7421f578c0",
     "semantic_hash": ""
   },
   "resources/views/JOSHUA/instructor-details.blade.php": {
@@ -1760,8 +1760,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1786512244.1873562,
-    "ast_hash": "fc85fa4c6b9650a8e84959d990df776f",
+    "mtime": 1786515465.521291,
+    "ast_hash": "c2f4f749b73d97d274201f104d6dcbba",
     "semantic_hash": ""
   },
   "public/robots.txt": {
@@ -6985,8 +6985,8 @@
     "semantic_hash": ""
   },
   "resources/views/components/umg-sistemas-landing.blade.php": {
-    "mtime": 1786512126.4567623,
-    "ast_hash": "2b1add990ec83bf8037f567580d56410",
+    "mtime": 1786515622.0867124,
+    "ast_hash": "8dd5f3395a0986162b4cd0f1f3a8c322",
     "semantic_hash": ""
   },
   "design-system/umg-derecho/MASTER.md": {
@@ -7022,6 +7022,11 @@
   "public/images/mascota-digital.png": {
     "mtime": 1786512437.2048142,
     "ast_hash": "e991a9159c6eafcb7621613af3778727",
+    "semantic_hash": ""
+  },
+  "config/umg-faculties.php": {
+    "mtime": 1786515480.8417952,
+    "ast_hash": "6ec3d7eb3b3bc60132729477056ac022",
     "semantic_hash": ""
   }
 }

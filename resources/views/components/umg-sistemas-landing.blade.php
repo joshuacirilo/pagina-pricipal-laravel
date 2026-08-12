@@ -5,71 +5,74 @@
 <div class="umg-sistemas-landing" id="sistemas-landing">
     <main class="page-shell">
         <header class="topbar">
-            <a class="brand" href="#hero" aria-label="UMG Ingeniería en Sistemas sede Guastatoya">
+            <a class="brand" href="#hero" aria-label="Universidad Mariano Gálvez sede Guastatoya">
                 <img src="{{ asset('images/logo-umg.png') }}" alt="Logo oficial Universidad Mariano Gálvez de Guatemala" width="66" height="66" />
                 <div>
                     <span>Universidad Mariano Gálvez</span>
-                    <strong>Ingeniería en Sistemas</strong>
+                    <strong>Admisión abierta</strong>
                     <small>Sede Guastatoya</small>
                 </div>
             </a>
 
-            <nav aria-label="Secciones Ingeniería en Sistemas">
-                <a href="#valor">Propuesta</a>
-                <a href="#futuro">Salida laboral</a>
-                <a href="#evento">Evento 2026</a>
+            <nav aria-label="Secciones de admisión UMG Guastatoya">
+                <a href="#valor">Por qué UMG</a>
+                <a href="#futuro">Formación</a>
+                <a href="#evento">Admisión</a>
                 <a href="#contacto">Contacto</a>
             </nav>
 
-            <a class="cta small" href="#contacto">Solicitar info</a>
+            <a class="cta small" href="#contacto">Aplicar ahora</a>
         </header>
 
         <section id="hero" class="hero-panel hero-stage">
             <div class="hero-media">
-                <img src="{{ asset('images/hero-umg.png') }}" alt="Comunidad académica de Ingeniería en Sistemas UMG Guastatoya" />
+                <img src="{{ asset('images/hero-umg.png') }}" alt="Comunidad académica Universidad Mariano Gálvez sede Guastatoya" />
             </div>
 
             <div class="hero-scrim"></div>
 
             <div class="hero-content">
                 <div class="hero-copy">
-                    <span class="eyebrow">Admisión abierta · segundo semestre · sede guastatoya</span>
-                    <h1>La carrera que crece con la era de la inteligencia artificial.</h1>
+                    <h1>Tu lugar en la UMG se define en estas horas.</h1>
                     <p>
-                        Estudiá Ingeniería en Sistemas en la UMG y preparate para un mundo donde el software,
-                        los datos, la automatización y la IA están transformando la forma de trabajar, crear y emprender.
+                        En la Universidad Mariano Gálvez, sede Guastatoya, la admisión del segundo semestre ya está abierta.
+                        Esta es tu <strong>ventana crítica</strong>: el momento de asegurar tu inscripción, elegir carrera
+                        y empezar el ciclo con ventaja — antes de que el plazo se cierre.
                     </p>
 
                     <div class="hero-actions">
-                        <a class="cta primary" href="#contacto">Inscribirme ahora</a>
-                        <a class="cta secondary" href="#contacto">Quiero más información</a>
+                        <a class="cta primary" href="#contacto">Asegurar mi inscripción</a>
+                        <a class="cta secondary" href="#contacto">Hablar con admisiones</a>
                     </div>
 
                     <div class="hero-meta">
                         <div>
-                            <strong>+Tecnología</strong>
-                            <span>Una carrera conectada con el presente.</span>
+                            <strong>+Calidad</strong>
+                            <span>Programas académicos actualizados y de alta calidad.</span>
                         </div>
                         <div>
-                            <strong>+Oportunidad</strong>
-                            <span>Ideal para jóvenes, trabajadores y quienes retoman estudios.</span>
+                            <strong>+Docentes</strong>
+                            <span>Profesores altamente capacitados y con experiencia profesional.</span>
                         </div>
                         <div>
-                            <strong>+Comunidad</strong>
-                            <span>Eventos, proyectos y presencia real en Guastatoya.</span>
+                            <strong>+Valores</strong>
+                            <span>Formación con excelencia académica, ética y valores cristianos.</span>
                         </div>
                     </div>
                 </div>
 
                 <aside class="hero-sidecard">
                     <div
-                        class="countdown-card"
+                        class="countdown-card countdown-card--critical"
                         data-countdown
                         @if ($countdownDeadline) data-deadline="{{ $countdownDeadline }}" @endif
                     >
                         <span class="eyebrow">Ventana crítica</span>
-                        <h2>48 horas para aplicar</h2>
-                        <p>Activá tu proceso para el segundo semestre y tu interés por el Evento Tecnológico 2026.</p>
+                        <h2>Quedan horas para aplicar</h2>
+                        <p>
+                            Cuando el contador llegue a cero, esta ventana de admisión puede cerrarse.
+                            Activá tu proceso hoy y asegurá tu lugar en la UMG Guastatoya.
+                        </p>
 
                         <div class="timer-grid" aria-live="polite">
                             <div>
@@ -89,6 +92,8 @@
                                 <span>Seg</span>
                             </div>
                         </div>
+
+                        <a class="cta primary countdown-card__cta" href="#contacto">Quiero aplicar en esta ventana</a>
                     </div>
                 </aside>
             </div>
@@ -96,69 +101,73 @@
 
         <section id="valor" class="section section-light">
             <div class="section-copy center">
-                <span class="eyebrow dark">Propuesta de valor</span>
-                <h2>Ingeniería en Sistemas ya no es una opción de nicho. Es una de las rutas con más crecimiento en la economía digital.</h2>
+                <span class="eyebrow dark">Por qué la UMG</span>
+                <h2>¿Por qué estudiar en la Universidad Mariano Gálvez?</h2>
                 <p>
-                    Hoy las empresas buscan personas capaces de pensar en sistemas, construir soluciones, integrar inteligencia artificial y adaptarse a cambios tecnológicos constantes.
+                    Formar parte de la <strong>Universidad Mariano Gálvez</strong> significa acceder a una educación con excelencia académica, valores cristianos y una sólida formación profesional.
+                    La UMG te da las herramientas para crecer con éxito — en lo laboral y en lo personal.
                 </p>
             </div>
 
             <div class="value-grid">
                 <article class="value-card">
                     <span>01</span>
-                    <h3>Demanda real</h3>
-                    <p>Más sectores dependen de software, infraestructura, datos y automatización.</p>
+                    <h3>Calidad</h3>
+                    <p>Programas académicos actualizados y de alta calidad.</p>
                 </article>
                 <article class="value-card">
                     <span>02</span>
-                    <h3>Ingeniería + IA</h3>
-                    <p>No se trata solo de usar herramientas: se trata de entender cómo diseñarlas e integrarlas.</p>
+                    <h3>Docentes</h3>
+                    <p>Profesores altamente capacitados y con experiencia profesional.</p>
                 </article>
                 <article class="value-card">
                     <span>03</span>
-                    <h3>Flexibilidad</h3>
-                    <p>Una carrera atractiva para graduados recientes, estudiantes en pausa o personas que trabajan.</p>
+                    <h3>Infraestructura</h3>
+                    <p>Campus moderno y recursos tecnológicos para aprender con ventaja.</p>
                 </article>
                 <article class="value-card">
                     <span>04</span>
-                    <h3>Proyección</h3>
-                    <p>Te prepara para crecer profesionalmente en una industria que no deja de expandirse.</p>
+                    <h3>Valores</h3>
+                    <p>Formación basada en valores éticos, humanos y cristianos.</p>
                 </article>
             </div>
         </section>
 
         <section id="futuro" class="section section-dark split-section">
             <div class="section-copy">
-                <span class="eyebrow">Salida laboral y tecnología</span>
-                <h2>Una apuesta inteligente para el presente y para lo que viene.</h2>
+                <span class="eyebrow">Tu futuro en Guastatoya</span>
+                <h2>Una formación que te prepara para crecer.</h2>
                 <p>
-                    Ingeniería en Sistemas te abre puertas en desarrollo web, análisis de sistemas, soporte TI, automatización, datos y transformación digital. En la era de la IA, quien entiende tecnología tiene más capacidad para liderar, innovar y construir oportunidades.
+                    En la UMG Guastatoya encontrás facultades activas, docentes de alto nivel y un entorno universitario real.
+                    No es solo estudiar: es construir tu futuro con respaldo académico y oportunidades concretas de crecimiento profesional.
                 </p>
             </div>
 
             <div class="stats-panel">
                 <div class="stat-card feature">
-                    <span class="eyebrow">Habilidades</span>
-                    <p>Programación, lógica, innovación, arquitectura de soluciones, visión digital.</p>
-                </div>
-                <div class="stat-card">
                     <span class="eyebrow">Oportunidades</span>
-                    <p>Software, datos, soporte TI, análisis, automatización y crecimiento profesional.</p>
+                    <p>Amplias oportunidades de crecimiento profesional en distintas áreas del conocimiento.</p>
                 </div>
                 <div class="stat-card">
                     <span class="eyebrow">Comunidad</span>
-                    <p>Formación con entorno activo, proyectos y una cultura tecnológica visible.</p>
+                    <p>Presencia real en Guastatoya, vida universitaria activa y acompañamiento cercano.</p>
+                </div>
+                <div class="stat-card">
+                    <span class="eyebrow">Admisión</span>
+                    <p>La ventana del segundo semestre está abierta: este es el momento de inscribirte.</p>
                 </div>
             </div>
         </section>
 
         <section id="evento" class="section section-image-callout">
             <div class="section-copy center narrow light-text">
-                <span class="eyebrow light">Próximamente</span>
-                <h2>Evento Tecnológico 2026 · UMG Ingeniería en Sistemas · Sede Guastatoya</h2>
+                <span class="eyebrow light">Admisión abierta</span>
+                <h2>Tu lugar en la UMG Guastatoya se decide ahora.</h2>
                 <p>
-                    Un espacio para conectar con innovación, proyectos, networking y cultura tecnológica. No solo querés estudiar una carrera: querés entrar a una comunidad que se mueve.
+                    Excelencia académica, valores cristianos y formación profesional en una sede que te conoce por nombre.
+                    No esperes al último día: asegurá tu inscripción mientras la ventana sigue activa.
                 </p>
+                <a class="cta primary section-callout__cta" href="#contacto">Quiero inscribirme hoy</a>
             </div>
         </section>
 
@@ -218,13 +227,13 @@
                     <span>Interés principal</span>
                     <select name="interes" required aria-invalid="{{ $errors->has('interes') ? 'true' : 'false' }}">
                         <option value="inscripcion" @selected(old('interes', 'inscripcion') === 'inscripcion')>
-                            Inscribirme en Ingeniería en Sistemas
+                            Inscribirme en la UMG Guastatoya
                         </option>
                         <option value="informacion" @selected(old('interes') === 'informacion')>
                             Solicitar información
                         </option>
                         <option value="evento" @selected(old('interes') === 'evento')>
-                            Recibir noticias del Evento Tecnológico 2026
+                            Quiero que me contacten sobre admisión
                         </option>
                     </select>
                     @error('interes')
@@ -235,10 +244,5 @@
                 <button type="submit" class="cta primary">Quiero que me contacten</button>
             </form>
         </section>
-
-        <footer class="footer-bar">
-            <span>UMG Ingeniería en Sistemas // Guastatoya</span>
-            <span>Status: admisión activa</span>
-        </footer>
     </main>
 </div>
