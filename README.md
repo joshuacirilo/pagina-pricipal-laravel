@@ -28,6 +28,14 @@ Este README es la fuente de contexto para que un agente de IA continúe el traba
 6. Pre-footer «¿Listo para lo que sigue?» **oculto solo en home**; otras páginas lo conservan.
 7. Última pantalla del home: **contacto 60dvh + footer 40dvh**.
 8. Formulario `#contacto` rediseñado (solo frontend): layout lineal, toggle **Correo | WhatsApp**, CTA rojo destacado. Backend `POST /contacto` ya existe; el toggle UI mueve `name="contacto"` al input activo.
+9. **Motion propio en el home** (sin paquetes externos). Ver sección «Animaciones del home» abajo.
+10. Se evaluó y **rechazó** el paquete `bertux77/laravel-inview-animations` (supply chain / CDN / poca adopción). No instalarlo.
+
+### Decisiones de producto (esta conversación)
+
+- El usuario quiere motion que **atrape** (lento, legible), no micro-transiciones rápidas.
+- Las animaciones deben arrancar **al llegar a la pantalla** (scroll-snap), no mientras aún estás en la anterior.
+- Feedback del usuario: el timing/trigger quedó bien tras el fix de facultades; **no reabrir** el tema de paquetes de animación de terceros salvo pedido.
 
 ### Incidente previo (recuperación)
 
@@ -60,6 +68,7 @@ Si está vacío, el countdown usa 48 h desde la carga de la página.
 - Tema UMG: `public/build/css/umg-theme.css` (**fuente de verdad**; no `resources/css/umg-theme.css`)
 - Landing admisión: `public/build/css/umg-sistemas-landing.css` (scoped bajo `.umg-sistemas-landing`)
 - Fuentes landing: Inter + Space Grotesk + JetBrains Mono (Google Fonts, solo en `index-3`)
+- AOS está en el template global, pero el **home UMG no depende de AOS** para sus reveals; usa `umg-home-motion.js` + `.umg-reveal`
 
 ---
 
@@ -97,8 +106,8 @@ Hero parallax → Facultades → Landing admisión → Footer
 
 | Orden | Bloque | Notas |
 |------:|--------|--------|
-| 1 | `<x-umg-parallax-hero />` | Campus, overlay navy, CTAs Admisión / Pago / Tour. `100dvh` + snap |
-| 2 | `<x-umg-faculties />` | 6 cards. `100dvh` + snap, centrado vertical |
+| 1 | `<x-umg-parallax-hero />` | Campus, overlay navy, CTAs Admisión / Pago / Tour. `100dvh` + snap + reveal |
+| 2 | `<x-umg-faculties />` | 6 cards con `.umg-reveal`. `100dvh` + snap (puede **desbordar** en móvil) |
 | 3 | `<x-umg-sistemas-landing />` | Ver tabla de secciones abajo |
 | 4 | Footer `#umgFooter` | En home: **40dvh** (última pantalla junto a contacto) |
 
@@ -113,6 +122,33 @@ Hero parallax → Facultades → Landing admisión → Footer
 - Última pantalla: `#contacto` **60dvh** + footer **40dvh**.
 - `prefers-reduced-motion`: desactiva snap y smooth scroll.
 - Anclas respetan `--header-h` vía `scroll-padding-top` / `scroll-margin-top`.
+
+### Animaciones del home (motion propio)
+
+**Objetivo:** atrapar la mirada; reveals lentos y legibles al llegar a cada pantalla.
+
+| Pieza | Archivo | Rol |
+|-------|---------|-----|
+| JS motion | `public/build/js/umg-home-motion.js` | Observa **secciones** (no cada card); añade `.is-visible` a `.umg-reveal` internos |
+| CSS reveal | `public/build/css/umg-theme.css` (bloque `.umg-reveal` + overrides `body.umg-home`) | Timing home ~**1.15s**; stagger cards ~**0.2s** entre ítems |
+| Parallax + zoom hero | `public/build/js/umg-home.js` | Parallax media + clase `.is-ready` para zoom suave de imagen |
+| Countdown pulse | `umg-sistemas-countdown.js` + CSS landing | Clase `.is-ticking` → pulso en `.alert-box` (respeta reduced-motion) |
+| Cableado | `resources/views/layout/partials/footer-scripts.blade.php` | Solo en ruta `index-3`, tras `umg-home.js` |
+
+**Markup:** elementos con clase `.umg-reveal` (variantes `--left`, `--right`, `--scale`). Grids con `.umg-reveal-stagger` para cascada. El sistema `.umg-reveal` también lo usa Derecho (`umg-faculty-derecho.js`); los timings **lentos** están scoped a `body.umg-home`.
+
+**Cómo decide el JS cuándo animar**
+
+- Observa: `.umg-parallax-hero`, `.umg-faculties`, `.umg-sistemas-landing .hero-panel`, `.umg-sistemas-landing .section`.
+- **No** uses `intersectionRatio >= 0.55` sobre secciones altas: facultades (6 cards) puede medir >100vh y **nunca** alcanza ese ratio → cards quedan en `opacity: 0`.
+- Criterio actual: pantalla activa por posición (`boundingClientRect`: top cerca del viewport + suficiente área visible). Ver `isActiveScreen()` en `umg-home-motion.js`.
+- Una vez revelada, `data-umg-revealed="1"` + `unobserve` (no repite).
+
+**Preferencias del usuario (no revertir sin pedir)**
+
+- Velocidad: deliberada / cinematográfica (no 300–450 ms).
+- No instalar `bertux77/laravel-inview-animations` ni CDN de terceros para animar.
+- No romper scroll-snap ni el split 60/40.
 
 ### Landing admisión (`umg-sistemas-landing`) — secciones internas
 
@@ -151,28 +187,34 @@ Footer interno de la landing Astro **eliminado** (evita doble footer).
 | `resources/views/layout/mainlayout.blade.php` | Layout; `umg-home-scroll`; pre-footer omitido en home |
 | `resources/views/layout/partials/header.blade.php` | Nav; transparente hasta scroll en home |
 | `resources/views/layout/partials/footer.blade.php` | Footer UMG |
-| `resources/views/components/umg-parallax-hero.blade.php` | Hero campus |
-| `resources/views/components/umg-faculties.blade.php` | Grid facultades |
-| `resources/views/components/umg-sistemas-landing.blade.php` | Landing admisión |
+| `resources/views/layout/partials/footer-scripts.blade.php` | Scripts home (incl. `umg-home-motion.js`) |
+| `resources/views/components/umg-parallax-hero.blade.php` | Hero campus + `.umg-reveal` |
+| `resources/views/components/umg-faculties.blade.php` | Grid facultades + stagger |
+| `resources/views/components/umg-faculty-card.blade.php` | Card; acepta `class` vía `$attributes` |
+| `resources/views/components/umg-sistemas-landing.blade.php` | Landing admisión + reveals |
 | `resources/views/components/umg-prefooter-cta.blade.php` | Solo fuera de home |
 | `resources/views/components/umg-floating-assistant.blade.php` | Asistente flotante |
-| `public/build/css/umg-theme.css` | Tema + scroll-snap home + footer 40dvh |
-| `public/build/css/umg-sistemas-landing.css` | Estilos landing (scoped) |
-| `public/build/js/umg-home.js` | Parallax hero |
-| `public/build/js/umg-sistemas-countdown.js` | Countdown |
+| `public/build/css/umg-theme.css` | Tema + scroll-snap + `.umg-reveal` + motion home |
+| `public/build/css/umg-sistemas-landing.css` | Estilos landing (scoped) + pulse countdown |
+| `public/build/js/umg-home.js` | Parallax hero + `.is-ready` |
+| `public/build/js/umg-home-motion.js` | Reveals por pantalla (IntersectionObserver) |
+| `public/build/js/umg-sistemas-countdown.js` | Countdown + `.is-ticking` |
 | `public/build/js/umg-sistemas-contact.js` | Toggle Correo/WhatsApp |
 
-**Trampas CSS conocidas**
+**Trampas CSS / motion conocidas**
 
 - El tema pinta todos los `<header>`: en facultades usar `<div class="umg-faculties__header">`.
 - `section { background: transparent !important }` en el tema: secciones de color necesitan `background: ... !important`.
 - Si `umg-sistemas-landing.css` o los JS de landing faltan en disco (p. ej. tras un reset), restaurar desde git: `git show HEAD:public/build/css/umg-sistemas-landing.css`.
+- `.umg-reveal` sin `.is-visible` = `opacity: 0`. Si el observer no dispara, el contenido **desaparece**. Al tocar motion, verificar hero + facultades + landing.
+- No volver a umbrales altos de `intersectionRatio` sobre `.umg-faculties` (sección alta).
+- Tras cambiar CSS/JS en `public/build`, el usuario suele necesitar **hard refresh** (`Ctrl+F5`) por `filemtime` / caché.
 
 ---
 
 ## Facultades (páginas por grupo)
 
-Vistas en `resources/views/grupo73|74|75/*.blade.php`. Derecho tiene design system y componentes legacy (`umg-derecho-*`, `umg-faculty-derecho.js`).
+Vistas en `resources/views/grupo73|74|75/*.blade.php`. Derecho tiene design system y componentes legacy (`umg-derecho-*`, `umg-faculty-derecho.js` con su propio `.umg-reveal`).
 
 No reintroducir sin pedido: experimentos del agente fallido (`umg-faculty-landing`, `umg-law-story`, `umg-derecho-story.*` genéricos no pedidos).
 
@@ -189,16 +231,18 @@ No reintroducir sin pedido: experimentos del agente fallido (`umg-faculty-landin
 
 ## Para el agente (siguiente sesión)
 
-1. Leer este README completo.
+1. Leer este README completo (sobre todo **Animaciones del home** y trampas).
 2. `graphify query "..."` antes de explorar.
 3. UI: skill UI UX Pro Max + `--stack laravel`; tokens UMG; no React.
 4. **No romper** scroll-snap del home ni el split 60/40 contacto/footer sin pedirlo.
 5. **No reintroducir** secciones LMS quitadas ni el pre-footer en home.
-6. Trabajo pendiente típico (confirmar con el usuario):
+6. **No instalar** paquetes/CDN de animaciones de terceros salvo pedido explícito; el motion del home ya es propio.
+7. Trabajo pendiente típico (confirmar con el usuario):
    - Backend del formulario: tipar email vs WhatsApp, validación, notificaciones.
    - Pulir tipografía/espaciado móvil del scroll (facultades 6 cards pueden desbordar 100dvh).
    - Rediseñar landings de otras facultades (Derecho ya tiene design system).
    - Opcional: renombrar mentalmente/componentes `umg-sistemas-*` a `umg-admision-*` (hoy el nombre es legado).
-7. Tras editar: `graphify update .`
-8. No commit/push salvo pedido.
-9. Si la página “desaparece”: primero autoload + `git status` de imágenes; no reescribir la home desde cero.
+   - Si pide más motion: afinar delays en `body.umg-home` / `umg-home-motion.js`, no reescribir desde cero.
+8. Tras editar: `graphify update .`
+9. No commit/push salvo pedido.
+10. Si la página “desaparece”: primero autoload + `git status` de imágenes; si falta contenido del home, mirar `.umg-reveal` sin `.is-visible` / JS motion; no reescribir la home desde cero.
