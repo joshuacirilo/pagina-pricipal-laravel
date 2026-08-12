@@ -6,7 +6,7 @@
     'description',
 ])
 
-<article class="umg-faculty-card">
+<article {{ $attributes->class(['umg-faculty-card']) }}>
     <div class="umg-faculty-card__media">
         <img src="{{ URL::asset($image) }}" alt="{{ $alt }}" width="640" height="360">
     </div>

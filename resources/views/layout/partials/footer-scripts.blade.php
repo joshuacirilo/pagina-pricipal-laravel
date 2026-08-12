@@ -108,6 +108,7 @@
 <script src="{{ URL::asset('/build/js/script.js') }}"></script>
 @if (Route::is(['index-3']))
 <script src="{{ URL::asset('build/js/umg-home.js') }}?v={{ filemtime(public_path('build/js/umg-home.js')) }}"></script>
+<script src="{{ URL::asset('build/js/umg-home-motion.js') }}?v={{ filemtime(public_path('build/js/umg-home-motion.js')) }}"></script>
 <script src="{{ URL::asset('build/js/umg-sistemas-countdown.js') }}?v={{ filemtime(public_path('build/js/umg-sistemas-countdown.js')) }}"></script>
 <script src="{{ URL::asset('build/js/umg-sistemas-contact.js') }}?v={{ filemtime(public_path('build/js/umg-sistemas-contact.js')) }}"></script>
 @endif

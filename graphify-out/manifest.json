@@ -1695,8 +1695,8 @@
     "semantic_hash": ""
   },
   "resources/views/layout/partials/footer-scripts.blade.php": {
-    "mtime": 1786554680.364045,
-    "ast_hash": "a2a16282a558d3ee0141da999c8f3b95",
+    "mtime": 1786555415.7743216,
+    "ast_hash": "c5b752557728d199bea82699240cd0cb",
     "semantic_hash": ""
   },
   "resources/views/layout/partials/footer.blade.php": {
@@ -1755,13 +1755,13 @@
     "semantic_hash": "ce0d1bce38906f7d45d9ae7bdfc6b0d2"
   },
   "resources/views/components/umg-parallax-hero.blade.php": {
-    "mtime": 1786501256.0203946,
-    "ast_hash": "b9d3ccf59108db1fc34b2626095086d9",
+    "mtime": 1786555370.5299277,
+    "ast_hash": "80ad30a7883c00d0e0ff49d2efe79fae",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1786554698.0763285,
-    "ast_hash": "e8d5ca07a9b620f3f4113137c331ba33",
+    "mtime": 1786554860.5315988,
+    "ast_hash": "9610e5e87410db12ee605663d8b07257",
     "semantic_hash": ""
   },
   "public/robots.txt": {
@@ -6895,13 +6895,13 @@
     "semantic_hash": ""
   },
   "resources/views/components/umg-faculties.blade.php": {
-    "mtime": 1786501256.0209155,
-    "ast_hash": "7e19cb43e5fad43457a4ac291a54eb2d",
+    "mtime": 1786555378.2711372,
+    "ast_hash": "75bf32fbc8be886302851d3e386aa523",
     "semantic_hash": ""
   },
   "resources/views/components/umg-faculty-card.blade.php": {
-    "mtime": 1786501256.021426,
-    "ast_hash": "cc32e51868c33f6bb635ef1da566c0ec",
+    "mtime": 1786555318.6414034,
+    "ast_hash": "3a56ac7afec4ec28993f2342324790b5",
     "semantic_hash": ""
   },
   "resources/views/components/umg-prefooter-cta.blade.php": {
@@ -6985,8 +6985,8 @@
     "semantic_hash": ""
   },
   "resources/views/components/umg-sistemas-landing.blade.php": {
-    "mtime": 1786554651.8237455,
-    "ast_hash": "be16d91b3513f6f22cb781fab73083c0",
+    "mtime": 1786555415.339106,
+    "ast_hash": "5e725bf97f475d1675658c31b2c79214",
     "semantic_hash": ""
   },
   "design-system/umg-derecho/MASTER.md": {

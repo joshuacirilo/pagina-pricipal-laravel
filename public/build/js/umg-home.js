@@ -6,6 +6,10 @@
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   let ticking = false;
 
+  requestAnimationFrame(function () {
+    hero.classList.add("is-ready");
+  });
+
   function updateParallax() {
     ticking = false;
     if (reduceMotion.matches) {

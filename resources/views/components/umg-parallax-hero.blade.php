@@ -11,11 +11,11 @@
     <div class="umg-parallax-hero__overlay"></div>
 
     <div class="umg-parallax-hero__content">
-        <p class="umg-parallax-hero__eyebrow">Universidad Mariano Gálvez</p>
-        <h1 id="umg-hero-title">Sede Guastatoya</h1>
-        <p class="umg-parallax-hero__sub">Formación profesional con valores en El Progreso</p>
+        <p class="umg-parallax-hero__eyebrow umg-reveal">Universidad Mariano Gálvez</p>
+        <h1 id="umg-hero-title" class="umg-reveal">Sede Guastatoya</h1>
+        <p class="umg-parallax-hero__sub umg-reveal">Formación profesional con valores en El Progreso</p>
 
-        <nav class="umg-parallax-hero__actions" aria-label="Accesos principales">
+        <nav class="umg-parallax-hero__actions umg-reveal" aria-label="Accesos principales">
             <a
                 class="umg-hero-btn"
                 href="https://umg.edu.gt/admisiones"

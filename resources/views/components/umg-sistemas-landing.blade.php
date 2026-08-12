@@ -32,7 +32,7 @@
             <div class="hero-scrim"></div>
 
             <div class="hero-content">
-                <div class="hero-copy">
+                <div class="hero-copy umg-reveal umg-reveal--left">
                     <h1>Tu lugar en la UMG se define en estas horas.</h1>
                     <p>
                         En la Universidad Mariano Gálvez, sede Guastatoya, la admisión del segundo semestre ya está abierta.
@@ -61,7 +61,7 @@
                     </div>
                 </div>
 
-                <aside class="hero-sidecard">
+                <aside class="hero-sidecard umg-reveal umg-reveal--right">
                     <div
                         class="countdown-card countdown-card--critical"
                         data-countdown
@@ -100,7 +100,7 @@
         </section>
 
         <section id="valor" class="section section-light">
-            <div class="section-copy center">
+            <div class="section-copy center umg-reveal">
                 <span class="eyebrow dark">Por qué la UMG</span>
                 <h2>¿Por qué estudiar en la Universidad Mariano Gálvez?</h2>
                 <p>
@@ -109,23 +109,23 @@
                 </p>
             </div>
 
-            <div class="value-grid">
-                <article class="value-card">
+            <div class="value-grid umg-reveal-stagger">
+                <article class="value-card umg-reveal umg-reveal--scale">
                     <span>01</span>
                     <h3>Calidad</h3>
                     <p>Programas académicos actualizados y de alta calidad.</p>
                 </article>
-                <article class="value-card">
+                <article class="value-card umg-reveal umg-reveal--scale">
                     <span>02</span>
                     <h3>Docentes</h3>
                     <p>Profesores altamente capacitados y con experiencia profesional.</p>
                 </article>
-                <article class="value-card">
+                <article class="value-card umg-reveal umg-reveal--scale">
                     <span>03</span>
                     <h3>Infraestructura</h3>
                     <p>Campus moderno y recursos tecnológicos para aprender con ventaja.</p>
                 </article>
-                <article class="value-card">
+                <article class="value-card umg-reveal umg-reveal--scale">
                     <span>04</span>
                     <h3>Valores</h3>
                     <p>Formación basada en valores éticos, humanos y cristianos.</p>
@@ -134,7 +134,7 @@
         </section>
 
         <section id="futuro" class="section section-dark split-section">
-            <div class="section-copy">
+            <div class="section-copy umg-reveal umg-reveal--left">
                 <span class="eyebrow">Tu futuro en Guastatoya</span>
                 <h2>Una formación que te prepara para crecer.</h2>
                 <p>
@@ -143,16 +143,16 @@
                 </p>
             </div>
 
-            <div class="stats-panel">
-                <div class="stat-card feature">
+            <div class="stats-panel umg-reveal-stagger">
+                <div class="stat-card feature umg-reveal umg-reveal--right">
                     <span class="eyebrow">Oportunidades</span>
                     <p>Amplias oportunidades de crecimiento profesional en distintas áreas del conocimiento.</p>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card umg-reveal umg-reveal--right">
                     <span class="eyebrow">Comunidad</span>
                     <p>Presencia real en Guastatoya, vida universitaria activa y acompañamiento cercano.</p>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card umg-reveal umg-reveal--right">
                     <span class="eyebrow">Admisión</span>
                     <p>La ventana del segundo semestre está abierta: este es el momento de inscribirte.</p>
                 </div>
@@ -160,7 +160,7 @@
         </section>
 
         <section id="evento" class="section section-image-callout">
-            <div class="section-copy center narrow light-text">
+            <div class="section-copy center narrow light-text umg-reveal umg-reveal--scale">
                 <span class="eyebrow light">Admisión abierta</span>
                 <h2>Tu lugar en la UMG Guastatoya se decide ahora.</h2>
                 <p>
@@ -178,7 +178,7 @@
             @endphp
 
             <div class="contact-section__inner">
-                <div class="section-copy center">
+                <div class="section-copy center umg-reveal">
                     <h2>Pedí información o iniciá tu inscripción hoy.</h2>
                 </div>
 
@@ -186,7 +186,7 @@
                     <p class="contact-status" role="status">{{ session('status') }}</p>
                 @endif
 
-                <form class="contact-form contact-form--linear" method="POST" action="{{ route('contacto.store') }}" novalidate data-contact-form>
+                <form class="contact-form contact-form--linear umg-reveal" method="POST" action="{{ route('contacto.store') }}" novalidate data-contact-form>
                     @csrf
 
                     <div class="honeypot" aria-hidden="true">

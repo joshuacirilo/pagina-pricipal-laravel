@@ -1072,10 +1072,16 @@ body.umg-home #umgFooter .umg-footer__bottom p {
 
 @media (prefers-reduced-motion: reduce) {
   .umg-parallax-hero__media,
+  .umg-parallax-hero__media img,
   .umg-hero-btn {
     transform: none !important;
     transition: none !important;
     will-change: auto;
+    animation: none !important;
+  }
+
+  body.umg-home .umg-parallax-hero__media img {
+    transform: none !important;
   }
 }
 
@@ -1706,13 +1712,123 @@ section.umg-coordinator,
 
 .umg-reveal {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.65s ease, transform 0.65s ease;
+  transform: translateY(16px);
+  transition:
+    opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--umg-reveal-delay, 0s);
+  will-change: opacity, transform;
 }
 
 .umg-reveal.is-visible {
   opacity: 1;
   transform: none;
+  will-change: auto;
+}
+
+.umg-reveal--left {
+  transform: translateX(-18px);
+}
+
+.umg-reveal--right {
+  transform: translateX(18px);
+}
+
+.umg-reveal--scale {
+  transform: translateY(10px) scale(0.97);
+}
+
+.umg-reveal.is-visible.umg-reveal--left,
+.umg-reveal.is-visible.umg-reveal--right,
+.umg-reveal.is-visible.umg-reveal--scale {
+  transform: none;
+}
+
+.umg-reveal-stagger > .umg-reveal:nth-child(1) { --umg-reveal-delay: 0s; }
+.umg-reveal-stagger > .umg-reveal:nth-child(2) { --umg-reveal-delay: 0.08s; }
+.umg-reveal-stagger > .umg-reveal:nth-child(3) { --umg-reveal-delay: 0.16s; }
+.umg-reveal-stagger > .umg-reveal:nth-child(4) { --umg-reveal-delay: 0.24s; }
+.umg-reveal-stagger > .umg-reveal:nth-child(5) { --umg-reveal-delay: 0.32s; }
+.umg-reveal-stagger > .umg-reveal:nth-child(6) { --umg-reveal-delay: 0.4s; }
+
+/* Home: reveals más lentos para atrapar la mirada */
+body.umg-home .umg-reveal {
+  transform: translateY(32px);
+  transition:
+    opacity 1.15s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1.15s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--umg-reveal-delay, 0s);
+}
+
+body.umg-home .umg-reveal--left {
+  transform: translateX(-40px);
+}
+
+body.umg-home .umg-reveal--right {
+  transform: translateX(40px);
+}
+
+body.umg-home .umg-reveal--scale {
+  transform: translateY(26px) scale(0.94);
+}
+
+body.umg-home .umg-reveal.is-visible,
+body.umg-home .umg-reveal.is-visible.umg-reveal--left,
+body.umg-home .umg-reveal.is-visible.umg-reveal--right,
+body.umg-home .umg-reveal.is-visible.umg-reveal--scale {
+  transform: none;
+}
+
+body.umg-home .umg-reveal-stagger > .umg-reveal:nth-child(1) { --umg-reveal-delay: 0.2s; }
+body.umg-home .umg-reveal-stagger > .umg-reveal:nth-child(2) { --umg-reveal-delay: 0.4s; }
+body.umg-home .umg-reveal-stagger > .umg-reveal:nth-child(3) { --umg-reveal-delay: 0.6s; }
+body.umg-home .umg-reveal-stagger > .umg-reveal:nth-child(4) { --umg-reveal-delay: 0.8s; }
+body.umg-home .umg-reveal-stagger > .umg-reveal:nth-child(5) { --umg-reveal-delay: 1s; }
+body.umg-home .umg-reveal-stagger > .umg-reveal:nth-child(6) { --umg-reveal-delay: 1.2s; }
+
+body.umg-home .umg-parallax-hero__media img {
+  transform: scale(1.08);
+  transition: transform 2.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body.umg-home .umg-parallax-hero.is-ready .umg-parallax-hero__media img {
+  transform: scale(1);
+}
+
+body.umg-home .umg-parallax-hero__eyebrow {
+  --umg-reveal-delay: 0.25s;
+}
+
+body.umg-home .umg-parallax-hero #umg-hero-title {
+  --umg-reveal-delay: 0.55s;
+}
+
+body.umg-home .umg-parallax-hero__sub {
+  --umg-reveal-delay: 0.85s;
+}
+
+body.umg-home .umg-parallax-hero__actions {
+  --umg-reveal-delay: 1.15s;
+}
+
+body.umg-home .umg-faculties__header {
+  --umg-reveal-delay: 0.25s;
+}
+
+body.umg-home .umg-sistemas-landing .hero-copy {
+  --umg-reveal-delay: 0.25s;
+}
+
+body.umg-home .umg-sistemas-landing .hero-sidecard {
+  --umg-reveal-delay: 0.65s;
+}
+
+body.umg-home .umg-sistemas-landing .section-copy.umg-reveal {
+  --umg-reveal-delay: 0.2s;
+}
+
+body.umg-home .umg-sistemas-landing .contact-form.umg-reveal {
+  --umg-reveal-delay: 0.5s;
 }
 
 /* ---- Hero ---- */
@@ -2198,6 +2314,9 @@ section.umg-coordinator,
 
 @media (prefers-reduced-motion: reduce) {
   .umg-reveal,
+  .umg-reveal--left,
+  .umg-reveal--right,
+  .umg-reveal--scale,
   .umg-faculty-hero__media img,
   .umg-faculty-image-card img,
   .umg-faculty-instructor-card,

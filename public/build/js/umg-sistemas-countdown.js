@@ -37,5 +37,8 @@
   };
 
   tick();
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    countdownRoot.classList.add('is-ticking');
+  }
   setInterval(tick, 1000);
 })();
