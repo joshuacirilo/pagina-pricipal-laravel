@@ -24,6 +24,7 @@
 {{-- Tema UMG: al final y una sola vez --}}
 <link rel="stylesheet"
       href="{{ asset('build/css/umg-theme.css') }}?v={{ filemtime(public_path('build/css/umg-theme.css')) }}">
+<link rel="stylesheet" href="{{ asset('build/css/chat-widget.css') }}">
 
 </head>
 
