@@ -4,62 +4,43 @@ namespace App\Services;
 
 use App\Models\KnowledgeChunk;
 use Illuminate\Support\Facades\Http;
-use RuntimeException;
 
 class ChatService
 {
-    protected string $baseUrl;
-    protected string $model;
+    public function __construct(private readonly EmbeddingService $embeddings) {}
 
-    public function __construct(protected EmbeddingService $embeddings)
-    {
-        $this->baseUrl = config('services.ollama.url', 'http://localhost:11434');
-        $this->model = config('services.ollama.chat_model', 'qwen2.5:3b');
-    }
-
-    /**
-     * Responde una pregunta usando RAG: busca contexto relevante en la base
-     * vectorizada y se lo pasa al modelo de Ollama para que redacte la respuesta.
-     *
-     * @return array{answer: string, sources: array}
-     */
+    /** @return array{answer: string, sources: array<int, string>} */
     public function ask(string $question, int $contextChunks = 5): array
     {
-        $queryEmbedding = $this->embeddings->embed($question);
-
-        $chunks = KnowledgeChunk::nearest($queryEmbedding, $contextChunks);
+        $chunks = KnowledgeChunk::nearest($this->embeddings->embed($question), $contextChunks);
 
         if ($chunks->isEmpty()) {
             return [
-                'answer' => 'No tengo información suficiente para responder eso. Te recomiendo contactar directamente a la universidad.',
+                'answer' => 'No tengo información suficiente para responder esa pregunta. Te recomiendo contactar directamente a la universidad.',
                 'sources' => [],
             ];
         }
 
-        $context = $chunks->map(fn ($chunk) => "- {$chunk->content}")->implode("\n");
-
+        $context = $chunks->map(fn (KnowledgeChunk $chunk): string => "- {$chunk->content}")->implode("\n\n");
         $prompt = <<<PROMPT
-        Eres el asistente virtual de la universidad. Responde ÚNICAMENTE basándote en el
-        siguiente contexto. Si la respuesta no está en el contexto, dilo claramente y sugiere
-        contactar a la universidad. Responde en español, de forma breve, clara y amable.
+Eres el asistente virtual de la universidad. Responde únicamente basándote en el contexto proporcionado. Si la respuesta no está allí, indícalo claramente y sugiere contactar a la universidad. Responde en español, de forma breve, clara y amable.
 
-        Contexto:
-        {$context}
+Contexto:
+{$context}
 
-        Pregunta: {$question}
+Pregunta: {$question}
 
-        Respuesta:
-        PROMPT;
+Respuesta:
+PROMPT;
 
-        $response = Http::timeout(60)->post("{$this->baseUrl}/api/generate", [
-            'model' => $this->model,
-            'prompt' => $prompt,
-            'stream' => false,
-        ]);
-
-        if ($response->failed()) {
-            throw new RuntimeException('No se pudo generar la respuesta: '.$response->body());
-        }
+        $response = Http::baseUrl(config('services.ollama.url'))
+            ->timeout(90)
+            ->post('/api/generate', [
+                'model' => config('services.ollama.chat_model'),
+                'prompt' => $prompt,
+                'stream' => false,
+            ])
+            ->throw();
 
         return [
             'answer' => trim((string) $response->json('response')),

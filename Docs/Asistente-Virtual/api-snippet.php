@@ -1,8 +1,7 @@
 <?php
 
-// Agrega esto en routes/api.php
-
 use App\Http\Controllers\ChatController;
+use Illuminate\Support\Facades\Route;
 
 Route::post('/chat', [ChatController::class, 'ask'])
-    ->middleware('throttle:20,1'); // opcional: máximo 20 preguntas por minuto por IP
+    ->middleware('throttle:20,1');

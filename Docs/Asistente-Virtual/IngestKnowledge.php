@@ -8,94 +8,61 @@ use Illuminate\Console\Command;
 
 class IngestKnowledge extends Command
 {
-    protected $signature = 'knowledge:ingest {path : Ruta a la carpeta con archivos .txt o .md} {--category= : Categoria opcional para todos los archivos de esta corrida}';
+    protected $signature = 'knowledge:ingest {path : Ruta de la carpeta con archivos .txt o .md} {--category= : Categoría opcional} {--replace : Reemplaza los fragmentos de cada archivo antes de cargarlo}';
 
-    protected $description = 'Trocea archivos de texto, genera sus embeddings con Ollama y los guarda en knowledge_chunks';
+    protected $description = 'Carga texto, genera embeddings con Ollama y los guarda en pgvector.';
 
     public function handle(EmbeddingService $embeddings): int
     {
-        $path = rtrim((string) $this->argument('path'), '/');
-        $category = $this->option('category');
-
+        $path = rtrim((string) $this->argument('path'), '/\\');
         if (! is_dir($path)) {
             $this->error("La carpeta {$path} no existe.");
-
             return self::FAILURE;
         }
 
-        $files = array_merge(
-            glob("{$path}/*.txt") ?: [],
-            glob("{$path}/*.md") ?: [],
-        );
-
-        if (empty($files)) {
-            $this->warn('No se encontraron archivos .txt o .md en esa carpeta.');
-
+        $files = array_merge(glob($path.DIRECTORY_SEPARATOR.'*.txt') ?: [], glob($path.DIRECTORY_SEPARATOR.'*.md') ?: []);
+        if ($files === []) {
+            $this->warn('No se encontraron archivos .txt o .md.');
             return self::SUCCESS;
         }
 
-        $this->info(count($files).' archivo(s) encontrado(s). Iniciando ingesta...');
-        $bar = $this->output->createProgressBar(count($files));
-
-        $totalChunks = 0;
-
+        $count = 0;
         foreach ($files as $file) {
-            $content = file_get_contents($file);
-            $chunks = $this->splitIntoChunks($content ?: '');
-
-            foreach ($chunks as $chunkText) {
-                $embedding = $embeddings->embed($chunkText);
-
-                KnowledgeChunk::create([
-                    'content' => $chunkText,
-                    'source' => basename($file),
-                    'category' => $category,
-                    'embedding' => $embedding,
-                ]);
-
-                $totalChunks++;
+            $source = basename($file);
+            if ($this->option('replace')) {
+                KnowledgeChunk::where('source', $source)->delete();
             }
 
-            $bar->advance();
+            foreach ($this->splitIntoChunks((string) file_get_contents($file)) as $content) {
+                KnowledgeChunk::create([
+                    'content' => $content,
+                    'source' => $source,
+                    'category' => $this->option('category'),
+                    'embedding' => KnowledgeChunk::toVectorLiteral($embeddings->embed($content)),
+                ]);
+                $count++;
+            }
         }
 
-        $bar->finish();
-        $this->newLine(2);
-        $this->info("Ingesta completada: {$totalChunks} fragmentos guardados.");
-
+        $this->info("Ingesta completada: {$count} fragmentos guardados.");
         return self::SUCCESS;
     }
 
-    /**
-     * Divide el texto en fragmentos manejables (por párrafo, ~800 caracteres máx).
-     *
-     * @return array<string>
-     */
-    protected function splitIntoChunks(string $content, int $maxLength = 800): array
+    /** @return array<int, string> */
+    private function splitIntoChunks(string $content, int $maxLength = 800): array
     {
-        $paragraphs = preg_split('/\n\s*\n/', trim($content)) ?: [];
         $chunks = [];
         $current = '';
-
-        foreach ($paragraphs as $paragraph) {
+        foreach (preg_split('/\R\s*\R/', trim($content)) ?: [] as $paragraph) {
             $paragraph = trim($paragraph);
-
-            if ($paragraph === '') {
-                continue;
-            }
-
-            if (strlen($current) + strlen($paragraph) > $maxLength && $current !== '') {
+            if ($paragraph === '') continue;
+            if (mb_strlen($current) + mb_strlen($paragraph) > $maxLength && $current !== '') {
                 $chunks[] = $current;
                 $current = '';
             }
-
             $current .= ($current === '' ? '' : "\n\n").$paragraph;
         }
-
-        if ($current !== '') {
-            $chunks[] = $current;
-        }
-
+        if ($current !== '') $chunks[] = $current;
         return $chunks;
     }
 }
