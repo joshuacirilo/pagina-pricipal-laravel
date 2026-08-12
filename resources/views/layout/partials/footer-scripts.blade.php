@@ -106,6 +106,9 @@
 
 <!-- Custom JS -->
 <script src="{{ URL::asset('/build/js/script.js') }}"></script>
+@if (Route::is(['index-3']))
+<script src="{{ URL::asset('build/js/umg-home.js') }}?v={{ filemtime(public_path('build/js/umg-home.js')) }}"></script>
+@endif
 <script>
 (function(){
   const header   = document.getElementById('umgHeader');

@@ -21,10 +21,10 @@
         </a>
 
         <div class="navbar-logo">
-          <a class="logo-white header-logo" href="{{ url('index-3') }}">
+          <a class="logo-white header-logo" href="{{ route('index-3') }}">
             <img src="{{ URL::asset('build/img/logo-white.svg') }}" class="logo" alt="Logo UMG">
           </a>
-          <a class="logo-dark header-logo" href="{{ url('index-3') }}">
+          <a class="logo-dark header-logo" href="{{ route('index-3') }}">
             <img src="{{ URL::asset('build/img/logo-white.svg') }}" class="logo" alt="Logo UMG">
           </a>
         </div>
@@ -33,7 +33,7 @@
       {{-- --- MENÚ PRINCIPAL --- --}}
       <div class="main-menu-wrapper">
         <div class="menu-header">
-          <a href="{{ url('index') }}" class="menu-logo">
+          <a href="{{ route('index-3') }}" class="menu-logo">
             <img src="{{ URL::asset('build/img/logo.svg') }}" class="img-fluid" alt="Logo UMG">
           </a>
           <a id="menu_close" class="menu-close" href="javascript:void(0);">

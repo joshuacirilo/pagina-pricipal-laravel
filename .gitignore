@@ -31,3 +31,6 @@ Thumbs.db
 .cache/
 dist/
 
+/ideas/*
+/graphify-out/
+/.cursor/

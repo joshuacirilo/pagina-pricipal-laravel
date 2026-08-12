@@ -2,7 +2,7 @@
 @if(Route::is(['index-rtl']))
 <html lang="en" dir="rtl">
 @else
-<html lang="en">
+<html lang="es">
 @endif
 
 <head>
@@ -30,7 +30,9 @@
 @php
   // Clases dinámicas para <body>
   $bodyClass = '';
-  if (Route::is(['index-5','index-6'])) {
+  if (Route::is(['index-3'])) {
+      $bodyClass = 'umg-home';
+  } elseif (Route::is(['index-5','index-6'])) {
       $bodyClass = 'home-five';
   } elseif (Route::is(['error-404','error-500','under-construction'])) {
       $bodyClass = 'error-page';
@@ -82,6 +84,7 @@
         @yield('content')
 
         @unless($hideLayoutChrome)
+          <x-umg-prefooter-cta />
           @include('layout.partials.footer')
         @endunless
 
