@@ -102,6 +102,10 @@
 
     @component('components.modalpopup') @endcomponent
 
+    @unless($hideLayoutChrome)
+      <x-chat-widget />
+    @endunless
+
     @include('layout.partials.footer-scripts')
 
 <script>
