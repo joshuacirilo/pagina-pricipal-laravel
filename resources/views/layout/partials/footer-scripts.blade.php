@@ -108,7 +108,12 @@
 <script src="{{ URL::asset('/build/js/script.js') }}"></script>
 @if (Route::is(['index-3']))
 <script src="{{ URL::asset('build/js/umg-home.js') }}?v={{ filemtime(public_path('build/js/umg-home.js')) }}"></script>
+<script src="{{ URL::asset('build/js/umg-sistemas-countdown.js') }}?v={{ filemtime(public_path('build/js/umg-sistemas-countdown.js')) }}"></script>
 @endif
+@if (Route::is(['derecho']))
+<script src="{{ URL::asset('build/js/umg-faculty-derecho.js') }}?v={{ filemtime(public_path('build/js/umg-faculty-derecho.js')) }}"></script>
+@endif
+<script src="{{ URL::asset('build/js/umg-floating-assistant.js') }}?v={{ filemtime(public_path('build/js/umg-floating-assistant.js')) }}"></script>
 <script>
 (function(){
   const header   = document.getElementById('umgHeader');

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 // CustomAuthController no existe en el proyecto; rutas de auth deshabilitadas.
@@ -15,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
  return view('JOSHUA.index-3');
 })->name('index-3');
+
+Route::post('/contacto', [ContactController::class, 'store'])->name('contacto.store');
 
 
 //----------------routas para grupo 75---------------------------

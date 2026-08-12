@@ -39,21 +39,32 @@ Orden de la página:
 
 1. **Hero parallax** - `<x-umg-parallax-hero />` (foto campus, overlay navy, 3 CTAs: Admisión / Pago / Tour)
 2. **Facultades** - `<x-umg-faculties />` (6 cards: Derecho, Administración, Criminología, Sistemas, Trabajo Social, Auditoría)
-3. **Coordinador** - `<x-umg-coordinator />` (foto + tarjeta blanca superpuesta sobre fondo navy; compactada en altura)
-4. **Pendiente de rediseño (aún template LMS):** egresados, eventos/congresos, por qué UMG, frases, noticias
-5. **Pre-footer CTA** - `<x-umg-prefooter-cta />` (mismo estilo que el hero, centrado vertical)
-6. **Footer UMG** - `layout/partials/footer.blade.php` (navy, logo en recuadro blanco, columnas Contacto / Facultades / Universidad)
+3. **Landing Sistemas** - `<x-umg-sistemas-landing />` (migrada desde `ideas/umgguastatoyagt`: hero + countdown, valor, futuro, evento, contacto + form)
+4. **Por qué UMG** - bloque `share-knowledge` (aún template LMS; pendiente de rediseño)
+5. **Footer UMG** - `layout/partials/footer.blade.php` (navy, logo en recuadro blanco, columnas Contacto / Facultades / Universidad)
 
-Se eliminó el bloque de métricas `.student-course` (counters rotos).
+Se quitaron del home: coordinador, egresados, eventos, frases, noticias y métricas `.student-course`.
+
+### Landing Sistemas (referencia)
+
+- Contrato / copy: `ideas/umgguastatoyagt (1)/umgguastatoyagt/README.md`
+- Componente: `resources/views/components/umg-sistemas-landing.blade.php`
+- CSS scoped: `public/build/css/umg-sistemas-landing.css`
+- Countdown: `public/build/js/umg-sistemas-countdown.js` (48 h o `COUNTDOWN_DEADLINE` en `.env`)
+- Assets: `public/images/logo-umg.png`, `hero-umg.png`, `umg-seal.svg`
+- Form: `POST /contacto` → `ContactController@store` → tabla `leads`
 
 ### Archivos clave
 
 - `resources/views/JOSHUA/index-3.blade.php` - Home
 - `resources/views/layout/mainlayout.blade.php` - Layout; `body.umg-home` en `/`; `lang="es"`
 - `resources/views/layout/partials/header.blade.php` - Nav; en home es fijo y transparente hasta scroll
-- `resources/views/components/umg-*.blade.php` - Hero, facultades, coordinador, pre-footer
+- `resources/views/components/umg-*.blade.php` - Hero, facultades, sistemas landing, pre-footer, asistente flotante
+- `resources/views/components/umg-floating-assistant.blade.php` - Widget robot fijo (contacto + CTA admisiones); mascota: `public/images/mascota-digital.png`
 - `public/build/js/umg-home.js` - Parallax del hero (`prefers-reduced-motion`)
+- `public/build/js/umg-floating-assistant.js` - Abrir/cerrar panel y tip del asistente
 - `public/build/css/umg-theme.css` - Estilos UMG (incluye overrides de header genérico)
+- `public/build/css/umg-floating-assistant.css` - Estilos del asistente flotante
 
 Cuidado: el CSS del tema pinta todos los `<header>`. En facultades se usa `<div class="umg-faculties__header">` para no heredar el nav azul.
 

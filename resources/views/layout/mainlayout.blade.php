@@ -24,6 +24,16 @@
 {{-- Tema UMG: al final y una sola vez --}}
 <link rel="stylesheet"
       href="{{ asset('build/css/umg-theme.css') }}?v={{ filemtime(public_path('build/css/umg-theme.css')) }}">
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-floating-assistant.css') }}?v={{ filemtime(public_path('build/css/umg-floating-assistant.css')) }}">
+
+@if (Route::is(['index-3']))
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-sistemas-landing.css') }}?v={{ filemtime(public_path('build/css/umg-sistemas-landing.css')) }}">
+@endif
 
 </head>
 
@@ -32,6 +42,8 @@
   $bodyClass = '';
   if (Route::is(['index-3'])) {
       $bodyClass = 'umg-home';
+  } elseif (Route::is(['derecho'])) {
+      $bodyClass = 'umg-faculty-page';
   } elseif (Route::is(['index-5','index-6'])) {
       $bodyClass = 'home-five';
   } elseif (Route::is(['error-404','error-500','under-construction'])) {
@@ -86,6 +98,7 @@
         @unless($hideLayoutChrome)
           <x-umg-prefooter-cta />
           @include('layout.partials.footer')
+          <x-umg-floating-assistant />
         @endunless
 
         @if ($isHome3)

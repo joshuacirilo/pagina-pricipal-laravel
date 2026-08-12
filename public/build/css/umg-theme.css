@@ -1443,3 +1443,599 @@ section.umg-coordinator,
   }
 }
 
+
+
+/* =========================================================
+   UMG FACULTY — Derecho (editorial landing)
+   ========================================================= */
+.umg-faculty-page .breadcrumb-bar,
+.umg-faculty-page .breadcrumb {
+  display: none !important;
+}
+
+.umg-faculty {
+  --umg-faculty-radius: 12px;
+  --umg-faculty-shadow: 0 10px 40px rgba(11, 42, 82, 0.08);
+  --umg-faculty-pad: clamp(80px, 10vw, 150px);
+  color: var(--umg-text-900);
+}
+
+.umg-faculty-wrap {
+  width: min(90%, 1400px);
+  margin-inline: auto;
+}
+
+.umg-faculty-eyebrow {
+  margin: 0 0 0.85rem;
+  font-family: var(--umg-font-sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--umg-red-700) !important;
+}
+
+.umg-faculty h1,
+.umg-faculty h2,
+.umg-faculty h3 {
+  font-family: var(--umg-font-display);
+  color: var(--umg-blue-900);
+  letter-spacing: -0.02em;
+}
+
+.umg-faculty h1 {
+  font-size: clamp(2.75rem, 5.5vw, 4.75rem);
+  line-height: 0.98;
+  margin: 0 0 1.25rem;
+}
+
+.umg-faculty h2 {
+  font-size: clamp(2rem, 3.5vw, 3.25rem);
+  line-height: 1.05;
+  margin: 0 0 1rem;
+}
+
+.umg-faculty h3 {
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  line-height: 1.2;
+  margin: 0 0 0.75rem;
+}
+
+.umg-faculty p {
+  font-size: clamp(1rem, 1.15vw, 1.125rem);
+  line-height: 1.65;
+  color: var(--umg-text-700);
+}
+
+.umg-faculty-section-head {
+  max-width: 46rem;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.umg-faculty-section-head p:last-child {
+  margin-bottom: 0;
+}
+
+.umg-faculty-media {
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--umg-faculty-radius);
+  background: var(--umg-blue-100);
+}
+
+.umg-faculty-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  max-width: none;
+}
+
+.umg-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.umg-reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---- Hero ---- */
+.umg-faculty-hero {
+  padding: calc(var(--header-h, 72px) + 2.5rem) 0 clamp(4rem, 8vw, 6rem);
+  background: #fff !important;
+}
+
+.umg-faculty-hero__grid {
+  display: grid;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+}
+
+.umg-faculty-hero__lead {
+  max-width: 34rem;
+  margin: 0 0 1.75rem;
+  font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+}
+
+.umg-faculty-hero__meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 32rem;
+}
+
+.umg-faculty-hero__meta-label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-family: var(--umg-font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--umg-gold-500);
+}
+
+.umg-faculty-hero__meta p {
+  margin: 0;
+  font-weight: 600;
+  color: var(--umg-blue-900);
+  font-size: 0.98rem;
+  line-height: 1.4;
+}
+
+.umg-faculty-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  align-items: center;
+}
+
+.umg-faculty-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  border: 1.5px solid rgba(11, 42, 82, 0.28);
+  color: var(--umg-blue-900) !important;
+  font-family: var(--umg-font-sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.25s ease, color 0.25s ease;
+}
+
+.umg-faculty-btn-ghost:hover {
+  background: var(--umg-blue-100);
+  border-color: var(--umg-blue-700);
+  transform: translateY(-2px);
+  text-decoration: none !important;
+}
+
+.umg-faculty-hero__media {
+  overflow: hidden;
+  border-radius: var(--umg-faculty-radius);
+  min-height: min(68vh, 640px);
+  box-shadow: var(--umg-faculty-shadow);
+}
+
+.umg-faculty-hero__media img {
+  width: 100%;
+  height: 100%;
+  min-height: min(68vh, 640px);
+  object-fit: cover;
+  max-width: none;
+  transition: transform 0.6s ease;
+}
+
+.umg-faculty-hero__media:hover img {
+  transform: scale(1.04);
+}
+
+/* ---- Intro sticky ---- */
+.umg-faculty-intro {
+  padding-block: var(--umg-faculty-pad);
+  background: #f7f9fc !important;
+}
+
+.umg-faculty-intro__grid {
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+
+.umg-faculty-intro__copy p {
+  max-width: 38rem;
+}
+
+.umg-faculty-quote {
+  margin-top: 2rem !important;
+  padding-top: 1.25rem;
+  border-top: 2px solid var(--umg-gold-500);
+  font-family: var(--umg-font-display);
+  font-style: italic;
+  font-size: clamp(1.15rem, 1.8vw, 1.45rem) !important;
+  color: var(--umg-blue-900) !important;
+  max-width: 28rem;
+}
+
+.umg-faculty-intro__sticky {
+  position: relative;
+}
+
+.umg-faculty-intro__sticky .umg-faculty-media {
+  min-height: min(70vh, 720px);
+}
+
+.umg-faculty-intro__sticky img {
+  min-height: min(70vh, 720px);
+}
+
+/* ---- Features ---- */
+.umg-faculty-features {
+  padding-block: var(--umg-faculty-pad);
+  background: #fff !important;
+}
+
+.umg-faculty-features__grid {
+  display: grid;
+  gap: clamp(2rem, 4vw, 3.5rem);
+}
+
+.umg-faculty-feature {
+  padding-top: 0.25rem;
+  border-top: 1px solid rgba(11, 42, 82, 0.12);
+}
+
+.umg-faculty-feature__num {
+  display: block;
+  margin: 1.1rem 0 0.85rem;
+  font-family: var(--umg-font-sans);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  color: var(--umg-gold-500);
+}
+
+.umg-faculty-feature p {
+  margin: 0;
+  max-width: 36rem;
+}
+
+/* ---- Topics / image cards ---- */
+.umg-faculty-topics {
+  padding-block: var(--umg-faculty-pad);
+  background: #f7f9fc !important;
+}
+
+.umg-faculty-topics__grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.umg-faculty-image-card {
+  position: relative;
+  isolation: isolate;
+  min-height: 320px;
+  overflow: hidden;
+  border-radius: var(--umg-faculty-radius);
+  background: var(--umg-blue-900);
+  cursor: default;
+}
+
+.umg-faculty-image-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: none;
+  transition: transform 0.6s ease;
+}
+
+.umg-faculty-image-card:hover img {
+  transform: scale(1.04);
+}
+
+.umg-faculty-image-card__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(11, 42, 82, 0.08),
+    rgba(8, 20, 40, 0.82)
+  );
+  pointer-events: none;
+}
+
+.umg-faculty-image-card__content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 1.5rem 1.35rem 1.4rem;
+}
+
+.umg-faculty-image-card__content h3 {
+  color: #fff !important;
+  margin-bottom: 0.45rem;
+  font-family: var(--umg-font-sans);
+  font-size: clamp(1.15rem, 1.8vw, 1.45rem);
+  font-weight: 700;
+}
+
+.umg-faculty-image-card__content p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  max-width: 34rem;
+}
+
+/* ---- Instructors ---- */
+.umg-faculty-instructors {
+  padding-block: var(--umg-faculty-pad);
+  background: #fff !important;
+}
+
+.umg-faculty-instructors__grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.umg-faculty-instructor-card {
+  display: block;
+  color: inherit;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.umg-faculty-instructor-card:hover {
+  transform: translateY(-3px);
+  text-decoration: none !important;
+}
+
+.umg-faculty-instructor-card__media {
+  overflow: hidden;
+  border-radius: var(--umg-faculty-radius);
+  aspect-ratio: 4 / 5;
+  background: var(--umg-blue-100);
+}
+
+.umg-faculty-instructor-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: none;
+  transition: transform 0.6s ease;
+}
+
+.umg-faculty-instructor-card:hover .umg-faculty-instructor-card__media img {
+  transform: scale(1.04);
+}
+
+.umg-faculty-instructor-card__body {
+  padding: 1.1rem 0.15rem 0;
+}
+
+.umg-faculty-instructor-card__body h3 {
+  font-family: var(--umg-font-sans);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.umg-faculty-instructor-card__body p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--umg-text-700);
+}
+
+.umg-faculty-instructor-card--muted {
+  opacity: 0.72;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* ---- Stats ---- */
+.umg-faculty-stats {
+  padding-block: clamp(4rem, 8vw, 6.5rem);
+  background: var(--umg-blue-900) !important;
+  color: #fff;
+}
+
+.umg-faculty-stats__grid {
+  display: grid;
+  gap: 2rem;
+  text-align: center;
+}
+
+.umg-faculty-stat__value {
+  margin: 0 0 0.4rem !important;
+  font-family: var(--umg-font-sans);
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1;
+  color: #fff !important;
+  letter-spacing: -0.02em;
+}
+
+.umg-faculty-stat__label {
+  margin: 0 !important;
+  font-family: var(--umg-font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.78) !important;
+}
+
+/* ---- FAQ ---- */
+.umg-faculty-faq {
+  padding-block: var(--umg-faculty-pad);
+  background: #fff !important;
+}
+
+.umg-faculty-faq__grid {
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+
+.umg-faculty-faq__media .umg-faculty-media,
+.umg-faculty-faq__media img {
+  min-height: min(62vh, 640px);
+}
+
+.umg-faculty-faq__lead {
+  margin: 0 0 1.75rem;
+}
+
+.umg-faculty-accordion.accordion {
+  --bs-accordion-border-color: rgba(11, 42, 82, 0.12);
+  --bs-accordion-btn-padding-x: 0;
+  --bs-accordion-btn-padding-y: 1.15rem;
+  --bs-accordion-body-padding-x: 0;
+  --bs-accordion-body-padding-y: 0 0 1.2rem;
+  --bs-accordion-active-bg: transparent;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.umg-faculty-accordion .accordion-item {
+  background: transparent;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0 !important;
+}
+
+.umg-faculty-accordion .accordion-button {
+  font-family: var(--umg-font-sans);
+  font-weight: 700;
+  font-size: 1.02rem;
+  color: var(--umg-blue-900);
+  background: transparent !important;
+  box-shadow: none !important;
+  cursor: pointer;
+}
+
+.umg-faculty-accordion .accordion-button:not(.collapsed) {
+  color: var(--umg-red-700);
+}
+
+.umg-faculty-accordion .accordion-button::after {
+  background-size: 1rem;
+}
+
+.umg-faculty-accordion .accordion-body {
+  color: var(--umg-text-700);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.umg-faculty-list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.umg-faculty-list li + li {
+  margin-top: 0.35rem;
+}
+
+/* ---- Breakpoints ---- */
+@media (min-width: 768px) {
+  .umg-faculty-topics__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .umg-faculty-instructors__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .umg-faculty-stats__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .umg-faculty-features__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+  }
+
+  .umg-faculty-image-card {
+    min-height: 380px;
+  }
+}
+
+@media (min-width: 992px) {
+  .umg-faculty-hero__grid {
+    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  }
+
+  .umg-faculty-intro__grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .umg-faculty-intro__sticky {
+    position: sticky;
+    top: calc(var(--header-h, 72px) + 1.5rem);
+  }
+
+  .umg-faculty-faq__grid {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .umg-faculty-hero__media,
+  .umg-faculty-hero__media img {
+    min-height: min(74vh, 720px);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .umg-faculty-hero__meta {
+    grid-template-columns: 1fr;
+  }
+
+  .umg-faculty-hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .umg-faculty-hero__actions .umg-hero-btn,
+  .umg-faculty-hero__actions .umg-faculty-btn-ghost {
+    width: 100%;
+  }
+
+  .umg-faculty-intro__sticky {
+    position: static;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .umg-reveal,
+  .umg-faculty-hero__media img,
+  .umg-faculty-image-card img,
+  .umg-faculty-instructor-card,
+  .umg-faculty-instructor-card__media img,
+  .umg-faculty-btn-ghost,
+  .umg-faculty .umg-hero-btn {
+    transition: none !important;
+    transform: none !important;
+  }
+
+  .umg-reveal {
+    opacity: 1;
+  }
+}

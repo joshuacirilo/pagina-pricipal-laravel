@@ -1,0 +1,424 @@
+/* UMG Floating Assistant — scoped widget styles */
+.umg-assistant {
+  --umg-assistant-cyan: #00e5ff;
+  --umg-assistant-cyan-soft: rgba(0, 229, 255, 0.32);
+  --umg-assistant-navy: var(--umg-blue-900, #0b2a52);
+  --umg-assistant-navy-700: var(--umg-blue-700, #1a3f73);
+  --umg-assistant-text: var(--umg-text-900, #1a1d21);
+  --umg-assistant-muted: var(--umg-text-700, #2f343b);
+  --umg-assistant-surface: #ffffff;
+  --umg-assistant-border: #d7e4f2;
+  --umg-assistant-shadow: 0 16px 40px rgba(11, 42, 82, 0.18);
+  --umg-assistant-radius: 20px;
+  --umg-assistant-fab-size: 76px;
+  --umg-assistant-gap: 14px;
+  --umg-assistant-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  z-index: 1100;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--umg-assistant-gap);
+  width: min(20.5rem, calc(100vw - 2rem));
+  pointer-events: none;
+  font-family: var(--umg-font-sans, "Montserrat", system-ui, sans-serif);
+}
+
+.umg-assistant * {
+  box-sizing: border-box;
+}
+
+.umg-assistant__tip,
+.umg-assistant__panel,
+.umg-assistant__fab {
+  pointer-events: auto;
+}
+
+/* Tip bubble */
+.umg-assistant__tip {
+  position: relative;
+  max-width: 16.5rem;
+  margin-right: 0.35rem;
+  padding: 0.75rem 2rem 0.75rem 0.9rem;
+  border-radius: 14px;
+  background: var(--umg-assistant-surface);
+  border: 1px solid var(--umg-assistant-border);
+  box-shadow: var(--umg-assistant-shadow);
+  color: var(--umg-assistant-text);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  transform-origin: bottom right;
+  animation: umg-assistant-tip-in 280ms var(--umg-assistant-ease) both;
+}
+
+.umg-assistant__tip[hidden],
+.umg-assistant__panel[hidden] {
+  display: none !important;
+}
+
+.umg-assistant__tip p {
+  margin: 0;
+}
+
+.umg-assistant__tip-dismiss {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.35rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--umg-assistant-muted);
+  cursor: pointer;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.umg-assistant__tip-dismiss:hover {
+  background: #eef4fb;
+  color: var(--umg-assistant-navy);
+}
+
+.umg-assistant__tip-dismiss:focus-visible {
+  outline: 3px solid var(--umg-gold-500, #c6a256);
+  outline-offset: 2px;
+}
+
+/* Panel */
+.umg-assistant__panel {
+  width: 100%;
+  border-radius: var(--umg-assistant-radius);
+  background: var(--umg-assistant-surface);
+  border: 1px solid var(--umg-assistant-border);
+  box-shadow: var(--umg-assistant-shadow);
+  overflow: hidden;
+  transform-origin: bottom right;
+  animation: umg-assistant-panel-in 260ms var(--umg-assistant-ease) both;
+}
+
+.umg-assistant__panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.7rem 0.85rem;
+  background: linear-gradient(90deg, var(--umg-assistant-cyan) 0%, #67e8f9 100%);
+  color: #042f3a;
+}
+
+.umg-assistant__panel-brand {
+  margin: 0;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.umg-assistant__close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  min-width: 44px;
+  min-height: 44px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.35);
+  color: #042f3a;
+  cursor: pointer;
+  transition: background-color 200ms ease, transform 200ms ease;
+}
+
+.umg-assistant__close:hover {
+  background: rgba(255, 255, 255, 0.6);
+  transform: scale(1.04);
+}
+
+.umg-assistant__close:focus-visible {
+  outline: 3px solid var(--umg-gold-500, #c6a256);
+  outline-offset: 2px;
+}
+
+.umg-assistant__panel-body {
+  padding: 1rem 1.1rem 1.15rem;
+}
+
+.umg-assistant__mascot-preview {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 0.55rem;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 999px;
+  background: radial-gradient(circle at 50% 40%, #1a2433 0%, #05070c 72%);
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px rgba(0, 229, 255, 0.22);
+}
+
+.umg-assistant__mascot-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center 42%;
+  display: block;
+  transform: scale(1.08);
+}
+
+.umg-assistant__title {
+  margin: 0 0 0.4rem;
+  color: var(--umg-assistant-navy);
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.umg-assistant__intro {
+  margin: 0 0 0.9rem;
+  color: var(--umg-assistant-muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.umg-assistant__contacts {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.umg-assistant__contacts li {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr;
+  gap: 0.55rem;
+  align-items: start;
+  color: var(--umg-assistant-text);
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.umg-assistant__icon {
+  display: inline-flex;
+  color: var(--umg-assistant-cyan);
+  margin-top: 0.1rem;
+}
+
+.umg-assistant__contacts a {
+  color: var(--umg-assistant-navy-700);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 200ms ease;
+}
+
+.umg-assistant__contacts a:hover {
+  color: var(--umg-assistant-navy);
+  text-decoration: underline;
+}
+
+.umg-assistant__contacts a:focus-visible {
+  outline: 3px solid var(--umg-gold-500, #c6a256);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.umg-assistant__cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+  width: 100%;
+  min-height: 48px;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  background: var(--umg-assistant-navy);
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 10px 22px rgba(11, 42, 82, 0.22);
+  transition: background-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+}
+
+.umg-assistant__cta:hover {
+  background: var(--umg-assistant-navy-700);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 26px rgba(11, 42, 82, 0.28);
+  color: #fff;
+  text-decoration: none;
+}
+
+.umg-assistant__cta:focus-visible {
+  outline: 3px solid var(--umg-gold-500, #c6a256);
+  outline-offset: 3px;
+}
+
+.umg-assistant__cta-label {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.umg-assistant__cta-sub {
+  font-size: 0.7rem;
+  font-weight: 500;
+  opacity: 0.88;
+}
+
+/* FAB */
+.umg-assistant__fab {
+  position: relative;
+  width: var(--umg-assistant-fab-size);
+  height: var(--umg-assistant-fab-size);
+  min-width: 44px;
+  min-height: 44px;
+  border: 2px solid var(--umg-assistant-cyan);
+  border-radius: 999px;
+  background: radial-gradient(circle at 50% 38%, #1a2433 0%, #070a10 70%);
+  box-shadow:
+    0 0 0 4px var(--umg-assistant-cyan-soft),
+    0 12px 28px rgba(11, 42, 82, 0.28);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  padding: 0;
+  transition: transform 220ms var(--umg-assistant-ease), box-shadow 220ms ease;
+  animation: umg-assistant-idle 3.6s ease-in-out infinite;
+}
+
+.umg-assistant__fab:hover {
+  transform: scale(1.06);
+  box-shadow: 0 16px 34px rgba(11, 42, 82, 0.28);
+}
+
+.umg-assistant__fab:focus-visible {
+  outline: 3px solid var(--umg-gold-500, #c6a256);
+  outline-offset: 3px;
+}
+
+.umg-assistant__fab[aria-expanded="true"] {
+  animation: none;
+  box-shadow: 0 0 0 4px var(--umg-assistant-cyan-soft), 0 14px 30px rgba(11, 42, 82, 0.24);
+}
+
+.umg-assistant__fab-glow {
+  position: absolute;
+  inset: -6px;
+  border-radius: inherit;
+  background: radial-gradient(circle, var(--umg-assistant-cyan-soft) 0%, transparent 70%);
+  opacity: 0.85;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.umg-assistant__fab-face {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+.umg-assistant__fab-face .umg-assistant__mascot-img {
+  width: 118%;
+  height: 118%;
+  object-fit: contain;
+  object-position: center 40%;
+}
+
+.umg-assistant__fab-face img,
+.umg-assistant__mascot-preview img {
+  display: block;
+}
+
+.umg-assistant__status {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: #22c55e;
+  border: 2px solid #fff;
+  z-index: 2;
+}
+
+.is-umg-assistant-open .umg-assistant__tip {
+  display: none !important;
+}
+
+@keyframes umg-assistant-idle {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes umg-assistant-tip-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes umg-assistant-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 374.98px) {
+  .umg-assistant {
+    width: calc(100vw - 1.25rem);
+    right: 0.625rem;
+    bottom: 0.625rem;
+  }
+
+  .umg-assistant__fab {
+    --umg-assistant-fab-size: 68px;
+  }
+
+  .umg-assistant__mascot-preview {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .umg-assistant__fab,
+  .umg-assistant__tip,
+  .umg-assistant__panel,
+  .umg-assistant__cta,
+  .umg-assistant__close {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .umg-assistant__fab:hover,
+  .umg-assistant__cta:hover {
+    transform: none;
+  }
+}

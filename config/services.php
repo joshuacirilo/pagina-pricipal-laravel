@@ -35,4 +35,11 @@ return [
         ],
     ],
 
+    /*
+    | Deadline ISO-8601 for the Sistemas landing countdown.
+    | Example: 2026-08-13T23:59:59-06:00
+    | If empty, the frontend falls back to 48 hours from page load.
+    */
+    'countdown_deadline' => env('COUNTDOWN_DEADLINE'),
+
 ];

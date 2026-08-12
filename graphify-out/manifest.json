@@ -85,9 +85,9 @@
     "semantic_hash": "58dd5a3687713125f190f2d9df37bc73"
   },
   "config/services.php": {
-    "mtime": 1786408795.0894628,
-    "ast_hash": "30ae8642b7c0b52736530702aa9f1343",
-    "semantic_hash": "30ae8642b7c0b52736530702aa9f1343"
+    "mtime": 1786512152.2550783,
+    "ast_hash": "7a2a433174ea4eb68dad13d3e0cbd71c",
+    "semantic_hash": ""
   },
   "config/session.php": {
     "mtime": 1786408795.0904627,
@@ -130,7 +130,7 @@
     "semantic_hash": "d8eda274115af5fd2aaa8230af329ef7"
   },
   "resources/js/bootstrap-datetimepicker.min.js": {
-    "mtime": 1786408797.9473734,
+    "mtime": 1786511188.4301717,
     "ast_hash": "85347a7856297a3a7588ee75e170bc28",
     "semantic_hash": "85347a7856297a3a7588ee75e170bc28"
   },
@@ -145,27 +145,27 @@
     "semantic_hash": "5cc1b73e70520fa84b1846afe0ec8fb6"
   },
   "resources/js/bootstrap.js": {
-    "mtime": 1786408797.9557288,
+    "mtime": 1786511188.4322608,
     "ast_hash": "1173bac349081a296565d883a522cdad",
     "semantic_hash": "1173bac349081a296565d883a522cdad"
   },
   "resources/js/bootstrap.min.js": {
-    "mtime": 1786408797.9567268,
+    "mtime": 1786511188.4367168,
     "ast_hash": "a92b3364fb0a7349f2a1c31a7ad5ed5e",
     "semantic_hash": "a92b3364fb0a7349f2a1c31a7ad5ed5e"
   },
   "resources/js/circle-progress.min.js": {
-    "mtime": 1786408797.959237,
+    "mtime": 1786511188.4387312,
     "ast_hash": "c96bb8beaa6eb6a1a13771fadf8169e9",
     "semantic_hash": "c96bb8beaa6eb6a1a13771fadf8169e9"
   },
   "resources/js/ckeditor.js": {
-    "mtime": 1786408797.964396,
+    "mtime": 1786511188.4456685,
     "ast_hash": "a07cfe2b56e2263c5f2fe6581c04a954",
     "semantic_hash": "a07cfe2b56e2263c5f2fe6581c04a954"
   },
   "resources/js/counter.js": {
-    "mtime": 1786408797.9663923,
+    "mtime": 1786511188.446676,
     "ast_hash": "0613bce702acf9b869ec40c745a9f6a3",
     "semantic_hash": "0613bce702acf9b869ec40c745a9f6a3"
   },
@@ -180,12 +180,12 @@
     "semantic_hash": "0eb6a31e6d15efbf0cceb88ea1dd2605"
   },
   "resources/js/jquery.meanmenu.min.js": {
-    "mtime": 1786408797.9713953,
+    "mtime": 1786511188.4476726,
     "ast_hash": "12d298c5a56909023ddfabcc4ca215aa",
     "semantic_hash": "12d298c5a56909023ddfabcc4ca215aa"
   },
   "resources/js/jquery.slimscroll.min.js": {
-    "mtime": 1786408797.9728808,
+    "mtime": 1786511188.4490879,
     "ast_hash": "f1dbc7920f93bd2b1dcfede95b473e4e",
     "semantic_hash": "f1dbc7920f93bd2b1dcfede95b473e4e"
   },
@@ -195,7 +195,7 @@
     "semantic_hash": "3641a40b9aefc0c03e34bdc3ad584812"
   },
   "resources/js/moment.min.js": {
-    "mtime": 1786408797.973952,
+    "mtime": 1786511188.4505987,
     "ast_hash": "d65dc6d2e619406d105656424573214e",
     "semantic_hash": "d65dc6d2e619406d105656424573214e"
   },
@@ -205,7 +205,7 @@
     "semantic_hash": "7d0977959683473fcaf707b31f208216"
   },
   "resources/js/respond.min.js": {
-    "mtime": 1786408797.9773893,
+    "mtime": 1786511188.45419,
     "ast_hash": "afc1984a3d17110449dc90cf22de0c27",
     "semantic_hash": "afc1984a3d17110449dc90cf22de0c27"
   },
@@ -215,12 +215,12 @@
     "semantic_hash": "8454fea64696660fe9aff710b80b3172"
   },
   "resources/js/select2.js": {
-    "mtime": 1786408797.9798348,
+    "mtime": 1786511188.455269,
     "ast_hash": "e09b36006d5038f420a7830937fc2348",
     "semantic_hash": "e09b36006d5038f420a7830937fc2348"
   },
   "resources/js/select2.min.js": {
-    "mtime": 1786408797.981887,
+    "mtime": 1786511188.4572666,
     "ast_hash": "5bc50163aa56a4cae16cf2b5d551c18d",
     "semantic_hash": "5bc50163aa56a4cae16cf2b5d551c18d"
   },
@@ -230,7 +230,7 @@
     "semantic_hash": "659359f8e6f4573377d180b65d2d0d92"
   },
   "resources/js/validation.js": {
-    "mtime": 1786408797.982892,
+    "mtime": 1786511188.4586184,
     "ast_hash": "41dfd0b4f2c31ca88114d4d0681e85dd",
     "semantic_hash": "41dfd0b4f2c31ca88114d4d0681e85dd"
   },
@@ -240,47 +240,47 @@
     "semantic_hash": "d3718e34eeb0355be8e3179a2e2bccb7"
   },
   "resources/plugins/apexchart/apexcharts.min.js": {
-    "mtime": 1786408797.9882905,
+    "mtime": 1786511188.4634051,
     "ast_hash": "fc70d36670b028a4dcb57c90b20b7fc9",
     "semantic_hash": "fc70d36670b028a4dcb57c90b20b7fc9"
   },
   "resources/plugins/apexchart/chart-data.js": {
-    "mtime": 1786408797.9893067,
+    "mtime": 1786511188.4644113,
     "ast_hash": "e299e4bf35ae869e77fe0212dfa46696",
     "semantic_hash": "e299e4bf35ae869e77fe0212dfa46696"
   },
   "resources/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js": {
-    "mtime": 1786408797.991557,
+    "mtime": 1786511188.4679217,
     "ast_hash": "762e212e474887426c95f101d575024d",
     "semantic_hash": "762e212e474887426c95f101d575024d"
   },
   "resources/plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js": {
-    "mtime": 1786408797.992553,
+    "mtime": 1786511188.4689245,
     "ast_hash": "fb50ff7201fe32287fc3239df2d6c93f",
     "semantic_hash": "fb50ff7201fe32287fc3239df2d6c93f"
   },
   "resources/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.js": {
-    "mtime": 1786408797.9938724,
+    "mtime": 1786511188.474641,
     "ast_hash": "28e8da13f76cd99a2065a9e4abf59236",
     "semantic_hash": "28e8da13f76cd99a2065a9e4abf59236"
   },
   "resources/plugins/daterangepicker/daterangepicker.js": {
-    "mtime": 1786408798.0180335,
+    "mtime": 1786511188.504721,
     "ast_hash": "ec2ab86750540c3bf36421a2a9099372",
     "semantic_hash": "ec2ab86750540c3bf36421a2a9099372"
   },
   "resources/plugins/dropzone/dropzone.min.js": {
-    "mtime": 1786408798.021338,
+    "mtime": 1786511188.5083222,
     "ast_hash": "33148c7d5e055ea747149d025cc9c0cf",
     "semantic_hash": "33148c7d5e055ea747149d025cc9c0cf"
   },
   "resources/plugins/fancybox/jquery.fancybox.js": {
-    "mtime": 1786408798.023347,
+    "mtime": 1786511188.5126011,
     "ast_hash": "887fa4849fa6e72d12cacb0236c5e366",
     "semantic_hash": "887fa4849fa6e72d12cacb0236c5e366"
   },
   "resources/plugins/fancybox/jquery.fancybox.min.js": {
-    "mtime": 1786408798.0253503,
+    "mtime": 1786511188.515257,
     "ast_hash": "7383e8d69525bbe095b639dcf96b41e0",
     "semantic_hash": "7383e8d69525bbe095b639dcf96b41e0"
   },
@@ -360,37 +360,37 @@
     "semantic_hash": "23f6e651ee2569c22a83be257ef97582"
   },
   "resources/plugins/ion-rangeslider/js/custom-rangeslider.js": {
-    "mtime": 1786408798.1129553,
+    "mtime": 1786511188.522246,
     "ast_hash": "300ceac9016a28ba720b618ea4dd54d6",
     "semantic_hash": "300ceac9016a28ba720b618ea4dd54d6"
   },
   "resources/plugins/ion-rangeslider/js/ion.rangeSlider.js": {
-    "mtime": 1786408798.1129553,
+    "mtime": 1786511188.523412,
     "ast_hash": "31ce13889740a86319d2ce7e19c7dd2e",
     "semantic_hash": "31ce13889740a86319d2ce7e19c7dd2e"
   },
   "resources/plugins/ion-rangeslider/js/ion.rangeSlider.min.js": {
-    "mtime": 1786408798.1143975,
+    "mtime": 1786511188.5244083,
     "ast_hash": "b5c1f83e8e2c9fad4a9c7a7e8c34b2fa",
     "semantic_hash": "b5c1f83e8e2c9fad4a9c7a7e8c34b2fa"
   },
   "resources/plugins/isotope-layout/isotope.pkgd.js": {
-    "mtime": 1786408798.115399,
+    "mtime": 1786511188.526777,
     "ast_hash": "8896e082b3fa1738e2e2f558a7fc1fa4",
     "semantic_hash": "8896e082b3fa1738e2e2f558a7fc1fa4"
   },
   "resources/plugins/isotope-layout/isotope.pkgd.min.js": {
-    "mtime": 1786408798.1163988,
+    "mtime": 1786511188.5277758,
     "ast_hash": "2afcff647ed260006faa71c8e779e8d4",
     "semantic_hash": "2afcff647ed260006faa71c8e779e8d4"
   },
   "resources/plugins/jquery-ui/jquery-ui.js": {
-    "mtime": 1786408798.1269908,
+    "mtime": 1786511188.5421865,
     "ast_hash": "0c983553a5edeaffb408e27b4bc526ad",
     "semantic_hash": "0c983553a5edeaffb408e27b4bc526ad"
   },
   "resources/plugins/jquery-ui/jquery-ui.min.js": {
-    "mtime": 1786408798.1302621,
+    "mtime": 1786511188.5487244,
     "ast_hash": "12c28b31a1369383b3549abf958b01fe",
     "semantic_hash": "12c28b31a1369383b3549abf958b01fe"
   },
@@ -430,497 +430,497 @@
     "semantic_hash": "d5a61c749e44e47159af8a6579dda121"
   },
   "resources/plugins/slimscroll/jquery.slimscroll.js": {
-    "mtime": 1786408798.1470263,
+    "mtime": 1786511188.5522559,
     "ast_hash": "6ee5ab5d89857be6eaf08b63eb3246b0",
     "semantic_hash": "6ee5ab5d89857be6eaf08b63eb3246b0"
   },
   "resources/plugins/slimscroll/jquery.slimscroll.min.js": {
-    "mtime": 1786408798.1470263,
+    "mtime": 1786511188.5538034,
     "ast_hash": "f1dbc7920f93bd2b1dcfede95b473e4e",
     "semantic_hash": "f1dbc7920f93bd2b1dcfede95b473e4e"
   },
   "resources/plugins/summernote/lang/summernote-ar-AR.js": {
-    "mtime": 1786408798.1520743,
+    "mtime": 1786511188.5637312,
     "ast_hash": "4e32c57e6629f594f4158fd454a5f368",
     "semantic_hash": "4e32c57e6629f594f4158fd454a5f368"
   },
   "resources/plugins/summernote/lang/summernote-ar-AR.min.js": {
-    "mtime": 1786408798.1530824,
+    "mtime": 1786511188.5637312,
     "ast_hash": "6c4763061d9b71ee9e6a444695620fb1",
     "semantic_hash": "6c4763061d9b71ee9e6a444695620fb1"
   },
   "resources/plugins/summernote/lang/summernote-az-AZ.js": {
-    "mtime": 1786408798.1550875,
+    "mtime": 1786511188.567179,
     "ast_hash": "8d94465e1146219853b43f22979c0d2a",
     "semantic_hash": "8d94465e1146219853b43f22979c0d2a"
   },
   "resources/plugins/summernote/lang/summernote-az-AZ.min.js": {
-    "mtime": 1786408798.1550875,
+    "mtime": 1786511188.5691707,
     "ast_hash": "3b18eaa9cc527f30b64d00e46b6feaeb",
     "semantic_hash": "3b18eaa9cc527f30b64d00e46b6feaeb"
   },
   "resources/plugins/summernote/lang/summernote-bg-BG.js": {
-    "mtime": 1786408798.1565347,
+    "mtime": 1786511188.5716174,
     "ast_hash": "2a5f7a42b98cdfad4640faa69c6babf6",
     "semantic_hash": "2a5f7a42b98cdfad4640faa69c6babf6"
   },
   "resources/plugins/summernote/lang/summernote-bg-BG.min.js": {
-    "mtime": 1786408798.1575422,
+    "mtime": 1786511188.572634,
     "ast_hash": "2f7cdcc93e11af8d6d8291414da8dce9",
     "semantic_hash": "2f7cdcc93e11af8d6d8291414da8dce9"
   },
   "resources/plugins/summernote/lang/summernote-ca-ES.js": {
-    "mtime": 1786408798.158538,
+    "mtime": 1786511188.5752125,
     "ast_hash": "a6900fba4b5823f0a554f66d6be9c431",
     "semantic_hash": "a6900fba4b5823f0a554f66d6be9c431"
   },
   "resources/plugins/summernote/lang/summernote-ca-ES.min.js": {
-    "mtime": 1786408798.159979,
+    "mtime": 1786511188.5762134,
     "ast_hash": "dae43b925ed79d50814decd8679954c7",
     "semantic_hash": "dae43b925ed79d50814decd8679954c7"
   },
   "resources/plugins/summernote/lang/summernote-cs-CZ.js": {
-    "mtime": 1786408798.1613746,
+    "mtime": 1786511188.57821,
     "ast_hash": "a6e0e4b8552e2a552b1e682c728560cd",
     "semantic_hash": "a6e0e4b8552e2a552b1e682c728560cd"
   },
   "resources/plugins/summernote/lang/summernote-cs-CZ.min.js": {
-    "mtime": 1786408798.1613746,
+    "mtime": 1786511188.5802178,
     "ast_hash": "f5197cc91a51102cfe8c310f2f59de4a",
     "semantic_hash": "f5197cc91a51102cfe8c310f2f59de4a"
   },
   "resources/plugins/summernote/lang/summernote-da-DK.js": {
-    "mtime": 1786408798.163394,
+    "mtime": 1786511188.5826101,
     "ast_hash": "afe875094bf4a027ce565433e241e063",
     "semantic_hash": "afe875094bf4a027ce565433e241e063"
   },
   "resources/plugins/summernote/lang/summernote-da-DK.min.js": {
-    "mtime": 1786408798.1647944,
+    "mtime": 1786511188.584603,
     "ast_hash": "2ccc91c954532fb913136db09895ceb1",
     "semantic_hash": "2ccc91c954532fb913136db09895ceb1"
   },
   "resources/plugins/summernote/lang/summernote-de-DE.js": {
-    "mtime": 1786408798.165811,
+    "mtime": 1786511188.5865986,
     "ast_hash": "51f7023a89032c1e9f373f2b95cb4b45",
     "semantic_hash": "51f7023a89032c1e9f373f2b95cb4b45"
   },
   "resources/plugins/summernote/lang/summernote-de-DE.min.js": {
-    "mtime": 1786408798.1669886,
+    "mtime": 1786511188.5876136,
     "ast_hash": "b3b142676ce4b32f743720a5e3d2da97",
     "semantic_hash": "b3b142676ce4b32f743720a5e3d2da97"
   },
   "resources/plugins/summernote/lang/summernote-el-GR.js": {
-    "mtime": 1786408798.1684287,
+    "mtime": 1786511188.5886316,
     "ast_hash": "5b1fe902bc3ce31fd82119ccf74907cc",
     "semantic_hash": "5b1fe902bc3ce31fd82119ccf74907cc"
   },
   "resources/plugins/summernote/lang/summernote-el-GR.min.js": {
-    "mtime": 1786408798.1694312,
+    "mtime": 1786511188.5901444,
     "ast_hash": "d78c79c9680d8cee8c4a9239cea781ba",
     "semantic_hash": "d78c79c9680d8cee8c4a9239cea781ba"
   },
   "resources/plugins/summernote/lang/summernote-es-ES.js": {
-    "mtime": 1786408798.1704395,
+    "mtime": 1786511188.5919087,
     "ast_hash": "d562065b14033e4d3937e76e4c4ac29f",
     "semantic_hash": "d562065b14033e4d3937e76e4c4ac29f"
   },
   "resources/plugins/summernote/lang/summernote-es-ES.min.js": {
-    "mtime": 1786408798.1704395,
+    "mtime": 1786511188.5935304,
     "ast_hash": "b9e98e13d1ec6ac7b0cd5266da62254b",
     "semantic_hash": "b9e98e13d1ec6ac7b0cd5266da62254b"
   },
   "resources/plugins/summernote/lang/summernote-es-EU.js": {
-    "mtime": 1786408798.1725678,
+    "mtime": 1786511188.594988,
     "ast_hash": "5c9569f45676c04222a85aa5a206fa09",
     "semantic_hash": "5c9569f45676c04222a85aa5a206fa09"
   },
   "resources/plugins/summernote/lang/summernote-es-EU.min.js": {
-    "mtime": 1786408798.1725678,
+    "mtime": 1786511188.5959837,
     "ast_hash": "c1edea69ec5f348232a8f135c416dab9",
     "semantic_hash": "c1edea69ec5f348232a8f135c416dab9"
   },
   "resources/plugins/summernote/lang/summernote-fa-IR.js": {
-    "mtime": 1786408798.1749475,
+    "mtime": 1786511188.5979826,
     "ast_hash": "8385b30039ef317bd0dc732b549c0dac",
     "semantic_hash": "8385b30039ef317bd0dc732b549c0dac"
   },
   "resources/plugins/summernote/lang/summernote-fa-IR.min.js": {
-    "mtime": 1786408798.17595,
+    "mtime": 1786511188.598989,
     "ast_hash": "5d5e055c695a47dd9760324e0213f923",
     "semantic_hash": "5d5e055c695a47dd9760324e0213f923"
   },
   "resources/plugins/summernote/lang/summernote-fi-FI.js": {
-    "mtime": 1786408798.1769478,
+    "mtime": 1786511188.6030824,
     "ast_hash": "77195ae7a082164dd1b84edfa5095d1f",
     "semantic_hash": "77195ae7a082164dd1b84edfa5095d1f"
   },
   "resources/plugins/summernote/lang/summernote-fi-FI.min.js": {
-    "mtime": 1786408798.1779475,
+    "mtime": 1786511188.6045609,
     "ast_hash": "c7fecc12dc169f11df2c020f94c9c63f",
     "semantic_hash": "c7fecc12dc169f11df2c020f94c9c63f"
   },
   "resources/plugins/summernote/lang/summernote-fr-FR.js": {
-    "mtime": 1786408798.1789405,
+    "mtime": 1786511188.6069753,
     "ast_hash": "796982345ccbc9b26733df65e32f9465",
     "semantic_hash": "796982345ccbc9b26733df65e32f9465"
   },
   "resources/plugins/summernote/lang/summernote-fr-FR.min.js": {
-    "mtime": 1786408798.179957,
+    "mtime": 1786511188.6079757,
     "ast_hash": "2dda568d9376749ea2bb1faa23851893",
     "semantic_hash": "2dda568d9376749ea2bb1faa23851893"
   },
   "resources/plugins/summernote/lang/summernote-gl-ES.js": {
-    "mtime": 1786408798.1819537,
+    "mtime": 1786511188.611047,
     "ast_hash": "2925583544f3527a121841b5475f687e",
     "semantic_hash": "2925583544f3527a121841b5475f687e"
   },
   "resources/plugins/summernote/lang/summernote-gl-ES.min.js": {
-    "mtime": 1786408798.1829412,
+    "mtime": 1786511188.613381,
     "ast_hash": "89cf87a30fc350c80a1d63a3cab4b336",
     "semantic_hash": "89cf87a30fc350c80a1d63a3cab4b336"
   },
   "resources/plugins/summernote/lang/summernote-he-IL.js": {
-    "mtime": 1786408798.183944,
+    "mtime": 1786511188.617174,
     "ast_hash": "561dcad298b2281e672442af4d65cf19",
     "semantic_hash": "561dcad298b2281e672442af4d65cf19"
   },
   "resources/plugins/summernote/lang/summernote-he-IL.min.js": {
-    "mtime": 1786408798.1849482,
+    "mtime": 1786511188.618725,
     "ast_hash": "ce884a03a6c5bb5363e00f22ddb5305a",
     "semantic_hash": "ce884a03a6c5bb5363e00f22ddb5305a"
   },
   "resources/plugins/summernote/lang/summernote-hr-HR.js": {
-    "mtime": 1786408798.1859522,
+    "mtime": 1786511188.6228144,
     "ast_hash": "c0401501d82b95d9cdc2a454352aadf0",
     "semantic_hash": "c0401501d82b95d9cdc2a454352aadf0"
   },
   "resources/plugins/summernote/lang/summernote-hr-HR.min.js": {
-    "mtime": 1786408798.1869502,
+    "mtime": 1786511188.6248167,
     "ast_hash": "f5ec2b3aaf1beb0714bb3587db89fe4f",
     "semantic_hash": "f5ec2b3aaf1beb0714bb3587db89fe4f"
   },
   "resources/plugins/summernote/lang/summernote-hu-HU.js": {
-    "mtime": 1786408798.188942,
+    "mtime": 1786511188.6291203,
     "ast_hash": "edf5e8c3e956531c7474ff570fa04c23",
     "semantic_hash": "edf5e8c3e956531c7474ff570fa04c23"
   },
   "resources/plugins/summernote/lang/summernote-hu-HU.min.js": {
-    "mtime": 1786408798.1899412,
+    "mtime": 1786511188.630633,
     "ast_hash": "19dec1282fa2b04ca9fa0c78c1a42d6c",
     "semantic_hash": "19dec1282fa2b04ca9fa0c78c1a42d6c"
   },
   "resources/plugins/summernote/lang/summernote-id-ID.js": {
-    "mtime": 1786408798.1910026,
+    "mtime": 1786511188.6341746,
     "ast_hash": "6f501750ffbb1d636120e1e66bbd69c8",
     "semantic_hash": "6f501750ffbb1d636120e1e66bbd69c8"
   },
   "resources/plugins/summernote/lang/summernote-id-ID.min.js": {
-    "mtime": 1786408798.1924837,
+    "mtime": 1786511188.6361701,
     "ast_hash": "9da2709372b19b9709a8c7a1c4005560",
     "semantic_hash": "9da2709372b19b9709a8c7a1c4005560"
   },
   "resources/plugins/summernote/lang/summernote-it-IT.js": {
-    "mtime": 1786408798.1938286,
+    "mtime": 1786511188.6392155,
     "ast_hash": "f9f4e228d9d197284a4d3bbe291ac315",
     "semantic_hash": "f9f4e228d9d197284a4d3bbe291ac315"
   },
   "resources/plugins/summernote/lang/summernote-it-IT.min.js": {
-    "mtime": 1786408798.1948326,
+    "mtime": 1786511188.640725,
     "ast_hash": "f5167876412702dd80d427626efb67a5",
     "semantic_hash": "f5167876412702dd80d427626efb67a5"
   },
   "resources/plugins/summernote/lang/summernote-ja-JP.js": {
-    "mtime": 1786408798.1969812,
+    "mtime": 1786511188.6420484,
     "ast_hash": "352e608e15c3c675553c62b3949ae289",
     "semantic_hash": "352e608e15c3c675553c62b3949ae289"
   },
   "resources/plugins/summernote/lang/summernote-ja-JP.min.js": {
-    "mtime": 1786408798.197985,
+    "mtime": 1786511188.6434448,
     "ast_hash": "7a2f349c8118cbbcc066c22c862a5f75",
     "semantic_hash": "7a2f349c8118cbbcc066c22c862a5f75"
   },
   "resources/plugins/summernote/lang/summernote-ko-KR.js": {
-    "mtime": 1786408798.1992435,
+    "mtime": 1786511188.6472778,
     "ast_hash": "39fb6aecece7c9f2903ff34625388ef7",
     "semantic_hash": "39fb6aecece7c9f2903ff34625388ef7"
   },
   "resources/plugins/summernote/lang/summernote-ko-KR.min.js": {
-    "mtime": 1786408798.1992435,
+    "mtime": 1786511188.6482797,
     "ast_hash": "b6451685ed1be7b83c3a537c64d479c2",
     "semantic_hash": "b6451685ed1be7b83c3a537c64d479c2"
   },
   "resources/plugins/summernote/lang/summernote-lt-LT.js": {
-    "mtime": 1786408798.2015567,
+    "mtime": 1786511188.6523316,
     "ast_hash": "1654dc327a9e29a289f831f9a896577e",
     "semantic_hash": "1654dc327a9e29a289f831f9a896577e"
   },
   "resources/plugins/summernote/lang/summernote-lt-LT.min.js": {
-    "mtime": 1786408798.2015567,
+    "mtime": 1786511188.6543462,
     "ast_hash": "6bff6f8b1a29249973307abf85243758",
     "semantic_hash": "6bff6f8b1a29249973307abf85243758"
   },
   "resources/plugins/summernote/lang/summernote-lt-LV.js": {
-    "mtime": 1786408798.2035584,
+    "mtime": 1786511188.657733,
     "ast_hash": "cc0d9d04061899d746fb2a5f43f51440",
     "semantic_hash": "cc0d9d04061899d746fb2a5f43f51440"
   },
   "resources/plugins/summernote/lang/summernote-lt-LV.min.js": {
-    "mtime": 1786408798.2045562,
+    "mtime": 1786511188.6587164,
     "ast_hash": "b4cf7e704f0d4076ebe4b4790b155922",
     "semantic_hash": "b4cf7e704f0d4076ebe4b4790b155922"
   },
   "resources/plugins/summernote/lang/summernote-mn-MN.js": {
-    "mtime": 1786408798.2055752,
+    "mtime": 1786511188.6637142,
     "ast_hash": "079c0a115fca874f4c2bb6a982e3e334",
     "semantic_hash": "079c0a115fca874f4c2bb6a982e3e334"
   },
   "resources/plugins/summernote/lang/summernote-mn-MN.min.js": {
-    "mtime": 1786408798.2070646,
+    "mtime": 1786511188.665189,
     "ast_hash": "03cfee81c207865169b8e07566d2dae0",
     "semantic_hash": "03cfee81c207865169b8e07566d2dae0"
   },
   "resources/plugins/summernote/lang/summernote-nb-NO.js": {
-    "mtime": 1786408798.2085512,
+    "mtime": 1786511188.668782,
     "ast_hash": "a715dfc28ab8f3c19f72b263f0a8f2d5",
     "semantic_hash": "a715dfc28ab8f3c19f72b263f0a8f2d5"
   },
   "resources/plugins/summernote/lang/summernote-nb-NO.min.js": {
-    "mtime": 1786408798.2085512,
+    "mtime": 1786511188.670291,
     "ast_hash": "d52cf178db9c6c69e0ae737b1d9976fd",
     "semantic_hash": "d52cf178db9c6c69e0ae737b1d9976fd"
   },
   "resources/plugins/summernote/lang/summernote-nl-NL.js": {
-    "mtime": 1786408798.2106147,
+    "mtime": 1786511188.6725032,
     "ast_hash": "be63831572ad9a75ababc7089cb008d7",
     "semantic_hash": "be63831572ad9a75ababc7089cb008d7"
   },
   "resources/plugins/summernote/lang/summernote-nl-NL.min.js": {
-    "mtime": 1786408798.2116156,
+    "mtime": 1786511188.6737783,
     "ast_hash": "6d35c74e41edf5e4a7f5ccb2301b20f2",
     "semantic_hash": "6d35c74e41edf5e4a7f5ccb2301b20f2"
   },
   "resources/plugins/summernote/lang/summernote-pl-PL.js": {
-    "mtime": 1786408798.2126157,
+    "mtime": 1786511188.676718,
     "ast_hash": "97f3c9cb387fcaeca8290f397a445150",
     "semantic_hash": "97f3c9cb387fcaeca8290f397a445150"
   },
   "resources/plugins/summernote/lang/summernote-pl-PL.min.js": {
-    "mtime": 1786408798.2140222,
+    "mtime": 1786511188.679211,
     "ast_hash": "edb46426f0b6e11ca416df983812badc",
     "semantic_hash": "edb46426f0b6e11ca416df983812badc"
   },
   "resources/plugins/summernote/lang/summernote-pt-BR.js": {
-    "mtime": 1786408798.2160203,
+    "mtime": 1786511188.682302,
     "ast_hash": "da266395be108b5ca3bc70d0349d539f",
     "semantic_hash": "da266395be108b5ca3bc70d0349d539f"
   },
   "resources/plugins/summernote/lang/summernote-pt-BR.min.js": {
-    "mtime": 1786408798.2160203,
+    "mtime": 1786511188.6845489,
     "ast_hash": "7fc3fe8b9de48ddd3787d4993d797f6e",
     "semantic_hash": "7fc3fe8b9de48ddd3787d4993d797f6e"
   },
   "resources/plugins/summernote/lang/summernote-pt-PT.js": {
-    "mtime": 1786408798.2180216,
+    "mtime": 1786511188.688104,
     "ast_hash": "0bfe86e372b43f92febe6a6e6b6422e0",
     "semantic_hash": "0bfe86e372b43f92febe6a6e6b6422e0"
   },
   "resources/plugins/summernote/lang/summernote-pt-PT.min.js": {
-    "mtime": 1786408798.2180216,
+    "mtime": 1786511188.6901026,
     "ast_hash": "4fbb4ce6a1bde4f356d075bbd7c8255d",
     "semantic_hash": "4fbb4ce6a1bde4f356d075bbd7c8255d"
   },
   "resources/plugins/summernote/lang/summernote-ro-RO.js": {
-    "mtime": 1786408798.22002,
+    "mtime": 1786511188.6936142,
     "ast_hash": "d3e4faefde48cf7baae73fb07973ccc2",
     "semantic_hash": "d3e4faefde48cf7baae73fb07973ccc2"
   },
   "resources/plugins/summernote/lang/summernote-ro-RO.min.js": {
-    "mtime": 1786408798.2210207,
+    "mtime": 1786511188.6959684,
     "ast_hash": "69a560840a9740d8a172849825f8d35e",
     "semantic_hash": "69a560840a9740d8a172849825f8d35e"
   },
   "resources/plugins/summernote/lang/summernote-ru-RU.js": {
-    "mtime": 1786408798.2224078,
+    "mtime": 1786511188.6982994,
     "ast_hash": "ffb282adfb1b916b69f5887e08cc6d0e",
     "semantic_hash": "ffb282adfb1b916b69f5887e08cc6d0e"
   },
   "resources/plugins/summernote/lang/summernote-ru-RU.min.js": {
-    "mtime": 1786408798.223425,
+    "mtime": 1786511188.6995614,
     "ast_hash": "3600c51a6b7ee202828cc22337d80a57",
     "semantic_hash": "3600c51a6b7ee202828cc22337d80a57"
   },
   "resources/plugins/summernote/lang/summernote-sk-SK.js": {
-    "mtime": 1786408798.2248428,
+    "mtime": 1786511188.7033913,
     "ast_hash": "d629087607a8b72a05e7862894534744",
     "semantic_hash": "d629087607a8b72a05e7862894534744"
   },
   "resources/plugins/summernote/lang/summernote-sk-SK.min.js": {
-    "mtime": 1786408798.2248428,
+    "mtime": 1786511188.7058227,
     "ast_hash": "ffdbd592d623d1e522322636ae04cdb5",
     "semantic_hash": "ffdbd592d623d1e522322636ae04cdb5"
   },
   "resources/plugins/summernote/lang/summernote-sl-SI.js": {
-    "mtime": 1786408798.2275524,
+    "mtime": 1786511188.709125,
     "ast_hash": "3ef78fc1686761952a8f06c28bed8592",
     "semantic_hash": "3ef78fc1686761952a8f06c28bed8592"
   },
   "resources/plugins/summernote/lang/summernote-sl-SI.min.js": {
-    "mtime": 1786408798.2275524,
+    "mtime": 1786511188.7112646,
     "ast_hash": "c46ce64e93b8f58653513f7049aadaf6",
     "semantic_hash": "c46ce64e93b8f58653513f7049aadaf6"
   },
   "resources/plugins/summernote/lang/summernote-sr-RS-Latin.js": {
-    "mtime": 1786408798.2295613,
+    "mtime": 1786511188.7135007,
     "ast_hash": "df0e34febfdd701286e29b942ea8a047",
     "semantic_hash": "df0e34febfdd701286e29b942ea8a047"
   },
   "resources/plugins/summernote/lang/summernote-sr-RS-Latin.min.js": {
-    "mtime": 1786408798.2305555,
+    "mtime": 1786511188.7159185,
     "ast_hash": "6fe6ba069348add8f95b79076ca8ce86",
     "semantic_hash": "6fe6ba069348add8f95b79076ca8ce86"
   },
   "resources/plugins/summernote/lang/summernote-sr-RS.js": {
-    "mtime": 1786408798.231559,
+    "mtime": 1786511188.7203183,
     "ast_hash": "244213d361ab3f54bd1ff52b20ecf9ad",
     "semantic_hash": "244213d361ab3f54bd1ff52b20ecf9ad"
   },
   "resources/plugins/summernote/lang/summernote-sr-RS.min.js": {
-    "mtime": 1786408798.232561,
+    "mtime": 1786511188.72136,
     "ast_hash": "284f7287a4f134d8cf47b46d737d4869",
     "semantic_hash": "284f7287a4f134d8cf47b46d737d4869"
   },
   "resources/plugins/summernote/lang/summernote-sv-SE.js": {
-    "mtime": 1786408798.2335625,
+    "mtime": 1786511188.723822,
     "ast_hash": "5858b7eb2cf59232834a4599c0dfe1ec",
     "semantic_hash": "5858b7eb2cf59232834a4599c0dfe1ec"
   },
   "resources/plugins/summernote/lang/summernote-sv-SE.min.js": {
-    "mtime": 1786408798.2345614,
+    "mtime": 1786511188.72582,
     "ast_hash": "f929d4017ffe83c4a8f1545ac1b34622",
     "semantic_hash": "f929d4017ffe83c4a8f1545ac1b34622"
   },
   "resources/plugins/summernote/lang/summernote-ta-IN.js": {
-    "mtime": 1786408798.23656,
+    "mtime": 1786511188.7291563,
     "ast_hash": "66541169f0aa99025828766613348c32",
     "semantic_hash": "66541169f0aa99025828766613348c32"
   },
   "resources/plugins/summernote/lang/summernote-ta-IN.min.js": {
-    "mtime": 1786408798.2375636,
+    "mtime": 1786511188.7306798,
     "ast_hash": "56c06834a465d47b3225c020cacd0a8a",
     "semantic_hash": "56c06834a465d47b3225c020cacd0a8a"
   },
   "resources/plugins/summernote/lang/summernote-th-TH.js": {
-    "mtime": 1786408798.2385595,
+    "mtime": 1786511188.733283,
     "ast_hash": "00dd7c421486e51ccee66ca3e6915820",
     "semantic_hash": "00dd7c421486e51ccee66ca3e6915820"
   },
   "resources/plugins/summernote/lang/summernote-th-TH.min.js": {
-    "mtime": 1786408798.2395675,
+    "mtime": 1786511188.735659,
     "ast_hash": "d88ec08b7f6ef24a3ed1a1d3c92883ab",
     "semantic_hash": "d88ec08b7f6ef24a3ed1a1d3c92883ab"
   },
   "resources/plugins/summernote/lang/summernote-tr-TR.js": {
-    "mtime": 1786408798.2415607,
+    "mtime": 1786511188.7389128,
     "ast_hash": "4ead53dc08c7ec561e982def9daf6bbf",
     "semantic_hash": "4ead53dc08c7ec561e982def9daf6bbf"
   },
   "resources/plugins/summernote/lang/summernote-tr-TR.min.js": {
-    "mtime": 1786408798.2425542,
+    "mtime": 1786511188.7409818,
     "ast_hash": "3db0590e9af8c7ea9681a5b96aec0666",
     "semantic_hash": "3db0590e9af8c7ea9681a5b96aec0666"
   },
   "resources/plugins/summernote/lang/summernote-uk-UA.js": {
-    "mtime": 1786408798.2435572,
+    "mtime": 1786511188.7434895,
     "ast_hash": "8108fdf3be3dfe512262b021f11cf06e",
     "semantic_hash": "8108fdf3be3dfe512262b021f11cf06e"
   },
   "resources/plugins/summernote/lang/summernote-uk-UA.min.js": {
-    "mtime": 1786408798.2435572,
+    "mtime": 1786511188.7461803,
     "ast_hash": "95f92006f9b8000fdf39c957c8013c5c",
     "semantic_hash": "95f92006f9b8000fdf39c957c8013c5c"
   },
   "resources/plugins/summernote/lang/summernote-uz-UZ.js": {
-    "mtime": 1786408798.244578,
+    "mtime": 1786511188.7473698,
     "ast_hash": "6906e59230eb3ca9c15c082c8a67eab7",
     "semantic_hash": "6906e59230eb3ca9c15c082c8a67eab7"
   },
   "resources/plugins/summernote/lang/summernote-uz-UZ.min.js": {
-    "mtime": 1786408798.2460153,
+    "mtime": 1786511188.7502031,
     "ast_hash": "2b66d355948f212f003800726892fb76",
     "semantic_hash": "2b66d355948f212f003800726892fb76"
   },
   "resources/plugins/summernote/lang/summernote-vi-VN.js": {
-    "mtime": 1786408798.2470872,
+    "mtime": 1786511188.7540605,
     "ast_hash": "211f3e188580f694ae8210a1fad1420b",
     "semantic_hash": "211f3e188580f694ae8210a1fad1420b"
   },
   "resources/plugins/summernote/lang/summernote-vi-VN.min.js": {
-    "mtime": 1786408798.2480867,
+    "mtime": 1786511188.7560632,
     "ast_hash": "fe9d0b29b36a8e162617a0c8779ec10d",
     "semantic_hash": "fe9d0b29b36a8e162617a0c8779ec10d"
   },
   "resources/plugins/summernote/lang/summernote-zh-CN.js": {
-    "mtime": 1786408798.25009,
+    "mtime": 1786511188.7592838,
     "ast_hash": "e6549c219460f836b3287f70c0506a50",
     "semantic_hash": "e6549c219460f836b3287f70c0506a50"
   },
   "resources/plugins/summernote/lang/summernote-zh-CN.min.js": {
-    "mtime": 1786408798.25009,
+    "mtime": 1786511188.761307,
     "ast_hash": "30a3b41dc3e6454108dcf91b62ecde94",
     "semantic_hash": "30a3b41dc3e6454108dcf91b62ecde94"
   },
   "resources/plugins/summernote/lang/summernote-zh-TW.js": {
-    "mtime": 1786408798.2520802,
+    "mtime": 1786511188.7633288,
     "ast_hash": "1dcbf86412a8945e801890fe334e37bf",
     "semantic_hash": "1dcbf86412a8945e801890fe334e37bf"
   },
   "resources/plugins/summernote/lang/summernote-zh-TW.min.js": {
-    "mtime": 1786408798.2520802,
+    "mtime": 1786511188.7655125,
     "ast_hash": "b98f5d82c3abd9ba23aa8736b4085dac",
     "semantic_hash": "b98f5d82c3abd9ba23aa8736b4085dac"
   },
   "resources/plugins/summernote/plugin/databasic/summernote-ext-databasic.js": {
-    "mtime": 1786408798.256081,
+    "mtime": 1786511188.773053,
     "ast_hash": "003103453f2ec0c3872def40bf6f2482",
     "semantic_hash": "003103453f2ec0c3872def40bf6f2482"
   },
   "resources/plugins/summernote/plugin/hello/summernote-ext-hello.js": {
-    "mtime": 1786408798.2570815,
+    "mtime": 1786511188.7750528,
     "ast_hash": "0cd943e2a2ce9e846d7a57d534812a69",
     "semantic_hash": "0cd943e2a2ce9e846d7a57d534812a69"
   },
   "resources/plugins/summernote/plugin/specialchars/summernote-ext-specialchars.js": {
-    "mtime": 1786408798.258418,
+    "mtime": 1786511188.778048,
     "ast_hash": "2974b56156a6fd690186a3cf4fc486ee",
     "semantic_hash": "2974b56156a6fd690186a3cf4fc486ee"
   },
   "resources/plugins/summernote/summernote-bs4.min.js": {
-    "mtime": 1786408798.2614312,
+    "mtime": 1786511188.783117,
     "ast_hash": "195c5acf28fdc87031704b438e9349df",
     "semantic_hash": "195c5acf28fdc87031704b438e9349df"
   },
   "resources/plugins/summernote/summernote-lite.min.js": {
-    "mtime": 1786408798.2634275,
+    "mtime": 1786511188.786133,
     "ast_hash": "91dda6e41116fc7347e90bddf2db4386",
     "semantic_hash": "91dda6e41116fc7347e90bddf2db4386"
   },
   "resources/plugins/summernote/summernote.min.js": {
-    "mtime": 1786408798.265427,
+    "mtime": 1786511188.789042,
     "ast_hash": "ce9908a7f942ebf288737f1afe685bf9",
     "semantic_hash": "ce9908a7f942ebf288737f1afe685bf9"
   },
   "resources/plugins/swiper/js/swiper-bundle.min.js": {
-    "mtime": 1786408798.2714255,
+    "mtime": 1786511188.7950158,
     "ast_hash": "1aba3b60641d8dc579dca329a28d74d8",
     "semantic_hash": "1aba3b60641d8dc579dca329a28d74d8"
   },
   "resources/plugins/swiper/js/swiper.min.js": {
-    "mtime": 1786408798.273426,
+    "mtime": 1786511188.798483,
     "ast_hash": "fe3b9bce8d930e0d5fb01aadacd1c01c",
     "semantic_hash": "fe3b9bce8d930e0d5fb01aadacd1c01c"
   },
   "resources/plugins/swiper/swiper.min.js": {
-    "mtime": 1786408798.2754366,
+    "mtime": 1786511188.8040888,
     "ast_hash": "e5bb26def607ac0e0e114a502ac65e38",
     "semantic_hash": "e5bb26def607ac0e0e114a502ac65e38"
   },
@@ -945,507 +945,507 @@
     "semantic_hash": "69a423fcaf8f22778a2e059b2c554a17"
   },
   "resources/views/JOSHUA/about-us.blade.php": {
-    "mtime": 1786408798.4156468,
+    "mtime": 1786511188.8080938,
     "ast_hash": "a1466687c85034a1bb6815bcae772a5f",
     "semantic_hash": "a1466687c85034a1bb6815bcae772a5f"
   },
   "resources/views/JOSHUA/index-3.blade.php": {
-    "mtime": 1786499226.4311483,
-    "ast_hash": "0082f8abe1773d99ee3dfee6cbbd55c9",
+    "mtime": 1786512157.2519865,
+    "ast_hash": "c2fa8d0abbd7c6428553d9e34fbbb107",
     "semantic_hash": ""
   },
   "resources/views/JOSHUA/instructor-details.blade.php": {
-    "mtime": 1786408798.4186463,
+    "mtime": 1786511188.8090887,
     "ast_hash": "861ba2f6f7a3e450244025f8c4676fec",
     "semantic_hash": "861ba2f6f7a3e450244025f8c4676fec"
   },
   "resources/views/JOSHUA/login.blade.php": {
-    "mtime": 1786408798.4196482,
+    "mtime": 1786511188.8106031,
     "ast_hash": "f84926571e5840ffab2385c0514fbd4c",
     "semantic_hash": "f84926571e5840ffab2385c0514fbd4c"
   },
   "resources/views/Paginas-no-usadas/about-us.blade.php": {
-    "mtime": 1786408798.4206483,
+    "mtime": 1786511188.8121338,
     "ast_hash": "26d9ab377f990901082a75b4af9e3298",
     "semantic_hash": "26d9ab377f990901082a75b4af9e3298"
   },
   "resources/views/Paginas-no-usadas/add-course.blade.php": {
-    "mtime": 1786408798.4216485,
+    "mtime": 1786511188.8131502,
     "ast_hash": "0a072898860d0974dff469287b525015",
     "semantic_hash": "0a072898860d0974dff469287b525015"
   },
   "resources/views/Paginas-no-usadas/become-an-instructor.blade.php": {
-    "mtime": 1786408798.4236467,
+    "mtime": 1786511188.8151467,
     "ast_hash": "4688d41f70813ddb8f0ce86a79d57ca7",
     "semantic_hash": "4688d41f70813ddb8f0ce86a79d57ca7"
   },
   "resources/views/Paginas-no-usadas/blog-2-grid.blade.php": {
-    "mtime": 1786408798.4236467,
+    "mtime": 1786511188.8171415,
     "ast_hash": "0788757062b4fe6a365b7c95d7bd1146",
     "semantic_hash": "0788757062b4fe6a365b7c95d7bd1146"
   },
   "resources/views/Paginas-no-usadas/blog-3-grid.blade.php": {
-    "mtime": 1786408798.4246497,
+    "mtime": 1786511188.8181448,
     "ast_hash": "5b302b62ba134d1705e9e3b5222b166c",
     "semantic_hash": "5b302b62ba134d1705e9e3b5222b166c"
   },
   "resources/views/Paginas-no-usadas/blog-carousal.blade.php": {
-    "mtime": 1786408798.4256477,
+    "mtime": 1786511188.820144,
     "ast_hash": "70656543015a9ed7d8e8453b105c4f90",
     "semantic_hash": "70656543015a9ed7d8e8453b105c4f90"
   },
   "resources/views/Paginas-no-usadas/blog-details-left-sidebar.blade.php": {
-    "mtime": 1786408798.426649,
+    "mtime": 1786511188.8214383,
     "ast_hash": "3c41bed690312cf5f5f2d9c99647aa3f",
     "semantic_hash": "3c41bed690312cf5f5f2d9c99647aa3f"
   },
   "resources/views/Paginas-no-usadas/blog-details-right-sidebar.blade.php": {
-    "mtime": 1786408798.426649,
+    "mtime": 1786511188.8225696,
     "ast_hash": "b9b0dbd5169c64f4861c0a86b280f10a",
     "semantic_hash": "b9b0dbd5169c64f4861c0a86b280f10a"
   },
   "resources/views/Paginas-no-usadas/blog-details.blade.php": {
-    "mtime": 1786408798.42765,
+    "mtime": 1786511188.8237348,
     "ast_hash": "11f14d9b4d12f0db13aa6ae20309f813",
     "semantic_hash": "11f14d9b4d12f0db13aa6ae20309f813"
   },
   "resources/views/Paginas-no-usadas/blog-grid.blade.php": {
-    "mtime": 1786408798.4286475,
+    "mtime": 1786511188.8258178,
     "ast_hash": "09b7b942e84adcf3611b87769f5c9f3b",
     "semantic_hash": "09b7b942e84adcf3611b87769f5c9f3b"
   },
   "resources/views/Paginas-no-usadas/blog-left-sidebar.blade.php": {
-    "mtime": 1786408798.429662,
+    "mtime": 1786511188.8268156,
     "ast_hash": "cdda23a3f3884c6c3d49713aab84ae00",
     "semantic_hash": "cdda23a3f3884c6c3d49713aab84ae00"
   },
   "resources/views/Paginas-no-usadas/blog-masonry.blade.php": {
-    "mtime": 1786408798.429662,
+    "mtime": 1786511188.8268156,
     "ast_hash": "8bdfe0e1208625eb56eda2f7cd35c046",
     "semantic_hash": "8bdfe0e1208625eb56eda2f7cd35c046"
   },
   "resources/views/Paginas-no-usadas/blog-right-sidebar.blade.php": {
-    "mtime": 1786408798.430667,
+    "mtime": 1786511188.8282523,
     "ast_hash": "5c12012d86fb06f2e700e3d6c2a4bc42",
     "semantic_hash": "5c12012d86fb06f2e700e3d6c2a4bc42"
   },
   "resources/views/Paginas-no-usadas/cart.blade.php": {
-    "mtime": 1786408798.431895,
+    "mtime": 1786511188.8295467,
     "ast_hash": "1f93f5f88c7e785325de4c9eabf08086",
     "semantic_hash": "1f93f5f88c7e785325de4c9eabf08086"
   },
   "resources/views/Paginas-no-usadas/checkout.blade.php": {
-    "mtime": 1786408798.432894,
+    "mtime": 1786511188.8320346,
     "ast_hash": "5288cca12ed96bca09d094adc3f42991",
     "semantic_hash": "5288cca12ed96bca09d094adc3f42991"
   },
   "resources/views/Paginas-no-usadas/coming-soon.blade.php": {
-    "mtime": 1786408798.4338953,
+    "mtime": 1786511188.8334188,
     "ast_hash": "f846de62d19c4e5ced94899d9706aef3",
     "semantic_hash": "f846de62d19c4e5ced94899d9706aef3"
   },
   "resources/views/Paginas-no-usadas/contact-us.blade.php": {
-    "mtime": 1786408798.4348981,
+    "mtime": 1786511188.8354163,
     "ast_hash": "bbf1b744f87cdb74659431a60cfdc6ad",
     "semantic_hash": "bbf1b744f87cdb74659431a60cfdc6ad"
   },
   "resources/views/Paginas-no-usadas/course-category-2.blade.php": {
-    "mtime": 1786408798.4368942,
+    "mtime": 1786511188.8376756,
     "ast_hash": "ac4f249bc5295f17dd4b204ce48a8a21",
     "semantic_hash": "ac4f249bc5295f17dd4b204ce48a8a21"
   },
   "resources/views/Paginas-no-usadas/course-category-3.blade.php": {
-    "mtime": 1786408798.4368942,
+    "mtime": 1786511188.8386743,
     "ast_hash": "5134ac356a91543359c4a8dadab29ef5",
     "semantic_hash": "5134ac356a91543359c4a8dadab29ef5"
   },
   "resources/views/Paginas-no-usadas/course-category.blade.php": {
-    "mtime": 1786408798.437894,
+    "mtime": 1786511188.8401835,
     "ast_hash": "482bca65fe450930ee085bdf5a3212c3",
     "semantic_hash": "482bca65fe450930ee085bdf5a3212c3"
   },
   "resources/views/Paginas-no-usadas/course-details-2.blade.php": {
-    "mtime": 1786408798.4388943,
+    "mtime": 1786511188.8417082,
     "ast_hash": "25161106a12daebc91cacfda5340f4d6",
     "semantic_hash": "25161106a12daebc91cacfda5340f4d6"
   },
   "resources/views/Paginas-no-usadas/course-details.blade.php": {
-    "mtime": 1786408798.4399157,
+    "mtime": 1786511188.8438075,
     "ast_hash": "885b98ee19dc3fe56f7c170d2fe0f9a6",
     "semantic_hash": "885b98ee19dc3fe56f7c170d2fe0f9a6"
   },
   "resources/views/Paginas-no-usadas/course-grid.blade.php": {
-    "mtime": 1786408798.4399157,
+    "mtime": 1786511188.8453035,
     "ast_hash": "b2f38abc052399efc7b013545ed1871d",
     "semantic_hash": "b2f38abc052399efc7b013545ed1871d"
   },
   "resources/views/Paginas-no-usadas/course-list.blade.php": {
-    "mtime": 1786408798.441366,
+    "mtime": 1786511188.8453035,
     "ast_hash": "5acdd7ee655d4d965e0e064d91a4f928",
     "semantic_hash": "5acdd7ee655d4d965e0e064d91a4f928"
   },
   "resources/views/Paginas-no-usadas/course-resume.blade.php": {
-    "mtime": 1786408798.4423633,
+    "mtime": 1786511188.8480618,
     "ast_hash": "e7f051c655a81bb9a5f30fc9672f5b90",
     "semantic_hash": "e7f051c655a81bb9a5f30fc9672f5b90"
   },
   "resources/views/Paginas-no-usadas/course-watch.blade.php": {
-    "mtime": 1786408798.4438634,
+    "mtime": 1786511188.849079,
     "ast_hash": "86e0bb6452925b5add9751735f346b34",
     "semantic_hash": "86e0bb6452925b5add9751735f346b34"
   },
   "resources/views/Paginas-no-usadas/error-404.blade.php": {
-    "mtime": 1786408798.4438634,
+    "mtime": 1786511188.850078,
     "ast_hash": "8c5e7a80180344c9c6ec31c473c22bdb",
     "semantic_hash": "8c5e7a80180344c9c6ec31c473c22bdb"
   },
   "resources/views/Paginas-no-usadas/error-500.blade.php": {
-    "mtime": 1786408798.4448626,
+    "mtime": 1786511188.851097,
     "ast_hash": "d405becd2ac8ae5e2c21b7e043e26154",
     "semantic_hash": "d405becd2ac8ae5e2c21b7e043e26154"
   },
   "resources/views/Paginas-no-usadas/faq.blade.php": {
-    "mtime": 1786408798.445863,
+    "mtime": 1786511188.8519807,
     "ast_hash": "a20bd625e494c695a66690fbd7e7204c",
     "semantic_hash": "a20bd625e494c695a66690fbd7e7204c"
   },
   "resources/views/Paginas-no-usadas/forgot-password.blade.php": {
-    "mtime": 1786408798.445863,
+    "mtime": 1786511188.8546302,
     "ast_hash": "38c39d66aa04e84bdfe637c43a94642a",
     "semantic_hash": "38c39d66aa04e84bdfe637c43a94642a"
   },
   "resources/views/Paginas-no-usadas/index-2.blade.php": {
-    "mtime": 1786408798.4472291,
+    "mtime": 1786511188.8556423,
     "ast_hash": "0393cebb8670ea34657acc7995af7cfb",
     "semantic_hash": "0393cebb8670ea34657acc7995af7cfb"
   },
   "resources/views/Paginas-no-usadas/index-3.blade.php": {
-    "mtime": 1786408798.4482298,
+    "mtime": 1786511188.856927,
     "ast_hash": "a8343c74c3e8be69b4a982db98be0449",
     "semantic_hash": "a8343c74c3e8be69b4a982db98be0449"
   },
   "resources/views/Paginas-no-usadas/index-4.blade.php": {
-    "mtime": 1786408798.4492245,
+    "mtime": 1786511188.8579242,
     "ast_hash": "6ed23f39538900bd2055ad4d57d3d70f",
     "semantic_hash": "6ed23f39538900bd2055ad4d57d3d70f"
   },
   "resources/views/Paginas-no-usadas/index-5.blade.php": {
-    "mtime": 1786408798.450372,
+    "mtime": 1786511188.8604321,
     "ast_hash": "3789b1c319856ff752720f87c8eb6c11",
     "semantic_hash": "3789b1c319856ff752720f87c8eb6c11"
   },
   "resources/views/Paginas-no-usadas/index-6.blade.php": {
-    "mtime": 1786408798.4513707,
+    "mtime": 1786511188.860964,
     "ast_hash": "d7f51c22984798b5eeaa7b46e322ddbb",
     "semantic_hash": "d7f51c22984798b5eeaa7b46e322ddbb"
   },
   "resources/views/Paginas-no-usadas/index-rtl.blade.php": {
-    "mtime": 1786408798.4523687,
+    "mtime": 1786511188.8624547,
     "ast_hash": "edd91b1d7e0db8f6832490be6d2f722b",
     "semantic_hash": "edd91b1d7e0db8f6832490be6d2f722b"
   },
   "resources/views/Paginas-no-usadas/index.blade.php": {
-    "mtime": 1786408798.4542208,
+    "mtime": 1786511188.863739,
     "ast_hash": "0c64375d5c5262bfaab3d489bd80c022",
     "semantic_hash": "0c64375d5c5262bfaab3d489bd80c022"
   },
   "resources/views/Paginas-no-usadas/instructor-announcements.blade.php": {
-    "mtime": 1786408798.4552305,
+    "mtime": 1786511188.8647544,
     "ast_hash": "06c2a1788a5baf1a8440d901a8e6a320",
     "semantic_hash": "06c2a1788a5baf1a8440d901a8e6a320"
   },
   "resources/views/Paginas-no-usadas/instructor-assignment.blade.php": {
-    "mtime": 1786408798.4552305,
+    "mtime": 1786511188.866763,
     "ast_hash": "9694965dce732b9b4f27a2d403379b23",
     "semantic_hash": "9694965dce732b9b4f27a2d403379b23"
   },
   "resources/views/Paginas-no-usadas/instructor-certificate.blade.php": {
-    "mtime": 1786408798.4562416,
+    "mtime": 1786511188.867758,
     "ast_hash": "a8dac68c076cfa0d4d2da0cc97e53f02",
     "semantic_hash": "a8dac68c076cfa0d4d2da0cc97e53f02"
   },
   "resources/views/Paginas-no-usadas/instructor-change-password.blade.php": {
-    "mtime": 1786408798.4572423,
+    "mtime": 1786511188.8687563,
     "ast_hash": "d26181b927bbf875dbb44d80acacba9c",
     "semantic_hash": "d26181b927bbf875dbb44d80acacba9c"
   },
   "resources/views/Paginas-no-usadas/instructor-course-grid.blade.php": {
-    "mtime": 1786408798.4582436,
+    "mtime": 1786511188.8702636,
     "ast_hash": "8847952b58484621d678220689fac97a",
     "semantic_hash": "8847952b58484621d678220689fac97a"
   },
   "resources/views/Paginas-no-usadas/instructor-course.blade.php": {
-    "mtime": 1786408798.4582436,
+    "mtime": 1786511188.871271,
     "ast_hash": "702d4b09eca6d7514e3f4f03914b7a3e",
     "semantic_hash": "702d4b09eca6d7514e3f4f03914b7a3e"
   },
   "resources/views/Paginas-no-usadas/instructor-dashboard.blade.php": {
-    "mtime": 1786408798.459685,
+    "mtime": 1786511188.8725507,
     "ast_hash": "456cd2fd9217f9d0b47fbe9e4f00b87a",
     "semantic_hash": "456cd2fd9217f9d0b47fbe9e4f00b87a"
   },
   "resources/views/Paginas-no-usadas/instructor-details.blade.php": {
-    "mtime": 1786408798.459685,
+    "mtime": 1786511188.873561,
     "ast_hash": "26801ed9b39f29e07f94050e969cf040",
     "semantic_hash": "26801ed9b39f29e07f94050e969cf040"
   },
   "resources/views/Paginas-no-usadas/instructor-earnings.blade.php": {
-    "mtime": 1786408798.4611166,
+    "mtime": 1786511188.873561,
     "ast_hash": "2832338754e12811097976aea75aa00d",
     "semantic_hash": "2832338754e12811097976aea75aa00d"
   },
   "resources/views/Paginas-no-usadas/instructor-grid.blade.php": {
-    "mtime": 1786408798.4621208,
+    "mtime": 1786511188.875067,
     "ast_hash": "dc9a804685cd63919a5b19147a0e0d93",
     "semantic_hash": "dc9a804685cd63919a5b19147a0e0d93"
   },
   "resources/views/Paginas-no-usadas/instructor-integrations.blade.php": {
-    "mtime": 1786408798.4631195,
+    "mtime": 1786511188.8760705,
     "ast_hash": "df110f1c9b1e784e82010d729d41dcdf",
     "semantic_hash": "df110f1c9b1e784e82010d729d41dcdf"
   },
   "resources/views/Paginas-no-usadas/instructor-linked-accounts.blade.php": {
-    "mtime": 1786408798.4645052,
+    "mtime": 1786511188.877422,
     "ast_hash": "4b1126d3759a8e81cb9290b517cfb23e",
     "semantic_hash": "4b1126d3759a8e81cb9290b517cfb23e"
   },
   "resources/views/Paginas-no-usadas/instructor-list.blade.php": {
-    "mtime": 1786408798.4645052,
+    "mtime": 1786511188.8784382,
     "ast_hash": "a72332126afcdface54e05f846290f80",
     "semantic_hash": "a72332126afcdface54e05f846290f80"
   },
   "resources/views/Paginas-no-usadas/instructor-message.blade.php": {
-    "mtime": 1786408798.4659598,
+    "mtime": 1786511188.880275,
     "ast_hash": "3e6c101255e6c5e822d27b58adf15de9",
     "semantic_hash": "3e6c101255e6c5e822d27b58adf15de9"
   },
   "resources/views/Paginas-no-usadas/instructor-notifications.blade.php": {
-    "mtime": 1786408798.4659598,
+    "mtime": 1786511188.8812852,
     "ast_hash": "e2f3f4d583389fa457b161e5bd8c2b85",
     "semantic_hash": "e2f3f4d583389fa457b161e5bd8c2b85"
   },
   "resources/views/Paginas-no-usadas/instructor-payout.blade.php": {
-    "mtime": 1786408798.46707,
+    "mtime": 1786511188.8817923,
     "ast_hash": "97cedc90c8f477656be66debf4c1f8f9",
     "semantic_hash": "97cedc90c8f477656be66debf4c1f8f9"
   },
   "resources/views/Paginas-no-usadas/instructor-plans.blade.php": {
-    "mtime": 1786408798.4680665,
+    "mtime": 1786511188.8828065,
     "ast_hash": "eacd0bb07be8125887d82545e96e8240",
     "semantic_hash": "eacd0bb07be8125887d82545e96e8240"
   },
   "resources/views/Paginas-no-usadas/instructor-profile.blade.php": {
-    "mtime": 1786408798.469421,
+    "mtime": 1786511188.8848145,
     "ast_hash": "4df004b2dc0464c4bece2bbf0fe43d0e",
     "semantic_hash": "4df004b2dc0464c4bece2bbf0fe43d0e"
   },
   "resources/views/Paginas-no-usadas/instructor-quiz-questions.blade.php": {
-    "mtime": 1786408798.469421,
+    "mtime": 1786511188.8858075,
     "ast_hash": "94a82c8d57a7976cc8cd8ea245fdaca4",
     "semantic_hash": "94a82c8d57a7976cc8cd8ea245fdaca4"
   },
   "resources/views/Paginas-no-usadas/instructor-quiz-results.blade.php": {
-    "mtime": 1786408798.4704149,
+    "mtime": 1786511188.8878086,
     "ast_hash": "b79cc381b7d303130e092980db4c6bed",
     "semantic_hash": "b79cc381b7d303130e092980db4c6bed"
   },
   "resources/views/Paginas-no-usadas/instructor-quiz.blade.php": {
-    "mtime": 1786408798.471785,
+    "mtime": 1786511188.8888142,
     "ast_hash": "452b185f5635cf6c4ca755f16719a8d2",
     "semantic_hash": "452b185f5635cf6c4ca755f16719a8d2"
   },
   "resources/views/Paginas-no-usadas/instructor-settings.blade.php": {
-    "mtime": 1786408798.471785,
+    "mtime": 1786511188.8903322,
     "ast_hash": "d79b85bf34154b604f71bcdc0b654e3b",
     "semantic_hash": "d79b85bf34154b604f71bcdc0b654e3b"
   },
   "resources/views/Paginas-no-usadas/instructor-social-profiles.blade.php": {
-    "mtime": 1786408798.4727829,
+    "mtime": 1786511188.8903322,
     "ast_hash": "2ed33386ab0d072d42aa6b4e1f7b6d40",
     "semantic_hash": "2ed33386ab0d072d42aa6b4e1f7b6d40"
   },
   "resources/views/Paginas-no-usadas/instructor-statements.blade.php": {
-    "mtime": 1786408798.4737835,
+    "mtime": 1786511188.8918636,
     "ast_hash": "a2da95f298ba24d35e92bab3f2857b43",
     "semantic_hash": "a2da95f298ba24d35e92bab3f2857b43"
   },
   "resources/views/Paginas-no-usadas/instructor-tickets.blade.php": {
-    "mtime": 1786408798.4747827,
+    "mtime": 1786511188.8928795,
     "ast_hash": "4e45db2a78af991718fa7714b5ac2385",
     "semantic_hash": "4e45db2a78af991718fa7714b5ac2385"
   },
   "resources/views/Paginas-no-usadas/instructor-withdraw.blade.php": {
-    "mtime": 1786408798.4747827,
+    "mtime": 1786511188.893878,
     "ast_hash": "d3d78b541c1983be888542159f068b42",
     "semantic_hash": "d3d78b541c1983be888542159f068b42"
   },
   "resources/views/Paginas-no-usadas/lock-screen.blade.php": {
-    "mtime": 1786408798.4757845,
+    "mtime": 1786511188.8952386,
     "ast_hash": "7ffe281fa9d23ef7bf26ce41b397a92a",
     "semantic_hash": "7ffe281fa9d23ef7bf26ce41b397a92a"
   },
   "resources/views/Paginas-no-usadas/login.blade.php": {
-    "mtime": 1786408798.4767842,
+    "mtime": 1786511188.8962412,
     "ast_hash": "f84926571e5840ffab2385c0514fbd4c",
     "semantic_hash": "f84926571e5840ffab2385c0514fbd4c"
   },
   "resources/views/Paginas-no-usadas/notifications.blade.php": {
-    "mtime": 1786408798.4767842,
+    "mtime": 1786511188.897614,
     "ast_hash": "9fcbd19b726774e52b10dddbe1e7a64e",
     "semantic_hash": "9fcbd19b726774e52b10dddbe1e7a64e"
   },
   "resources/views/Paginas-no-usadas/otp.blade.php": {
-    "mtime": 1786408798.4780188,
+    "mtime": 1786511188.8987715,
     "ast_hash": "ed6891063ff314f1f72283ae3e9b6e26",
     "semantic_hash": "ed6891063ff314f1f72283ae3e9b6e26"
   },
   "resources/views/Paginas-no-usadas/pricing-plan.blade.php": {
-    "mtime": 1786408798.4780188,
+    "mtime": 1786511188.9002774,
     "ast_hash": "6621ebc0cc9b1461114b531eceda5e73",
     "semantic_hash": "6621ebc0cc9b1461114b531eceda5e73"
   },
   "resources/views/Paginas-no-usadas/privacy-policy.blade.php": {
-    "mtime": 1786408798.4794838,
+    "mtime": 1786511188.9018078,
     "ast_hash": "a1934cb332c838adc20c2c402bbab64c",
     "semantic_hash": "a1934cb332c838adc20c2c402bbab64c"
   },
   "resources/views/Paginas-no-usadas/register.blade.php": {
-    "mtime": 1786408798.4804885,
+    "mtime": 1786511188.902817,
     "ast_hash": "eeb1e4ecdeb43087874d13198ee461d8",
     "semantic_hash": "eeb1e4ecdeb43087874d13198ee461d8"
   },
   "resources/views/Paginas-no-usadas/reset-password.blade.php": {
-    "mtime": 1786408798.4814909,
+    "mtime": 1786511188.9048264,
     "ast_hash": "19546e770b2130a204f149fd0675ef0c",
     "semantic_hash": "19546e770b2130a204f149fd0675ef0c"
   },
   "resources/views/Paginas-no-usadas/set-password.blade.php": {
-    "mtime": 1786408798.4824903,
+    "mtime": 1786511188.90583,
     "ast_hash": "e33323f37c3bc7c23bd7a464e56ba2c8",
     "semantic_hash": "e33323f37c3bc7c23bd7a464e56ba2c8"
   },
   "resources/views/Paginas-no-usadas/student-billing-address.blade.php": {
-    "mtime": 1786408798.4824903,
+    "mtime": 1786511188.907202,
     "ast_hash": "493fb069e6b10b732cbbae75704426f6",
     "semantic_hash": "493fb069e6b10b732cbbae75704426f6"
   },
   "resources/views/Paginas-no-usadas/student-certificates.blade.php": {
-    "mtime": 1786408798.4834874,
+    "mtime": 1786511188.9086442,
     "ast_hash": "c839e60bf0a82c2e84641aef77c666cd",
     "semantic_hash": "c839e60bf0a82c2e84641aef77c666cd"
   },
   "resources/views/Paginas-no-usadas/student-change-password.blade.php": {
-    "mtime": 1786408798.4844837,
+    "mtime": 1786511188.9086442,
     "ast_hash": "aaf131f63c9f8d51b8f25e180dd97ba7",
     "semantic_hash": "aaf131f63c9f8d51b8f25e180dd97ba7"
   },
   "resources/views/Paginas-no-usadas/student-courses.blade.php": {
-    "mtime": 1786408798.4856808,
+    "mtime": 1786511188.911165,
     "ast_hash": "614aa4aaba2f4f022eb8a0541109e933",
     "semantic_hash": "614aa4aaba2f4f022eb8a0541109e933"
   },
   "resources/views/Paginas-no-usadas/student-dashboard.blade.php": {
-    "mtime": 1786408798.4856808,
+    "mtime": 1786511188.9139278,
     "ast_hash": "8c1bf57a400832b0d5f311d26f6673b7",
     "semantic_hash": "8c1bf57a400832b0d5f311d26f6673b7"
   },
   "resources/views/Paginas-no-usadas/student-details.blade.php": {
-    "mtime": 1786408798.4871356,
+    "mtime": 1786511188.9149504,
     "ast_hash": "8eb57258b1784cfda59b89ca182fc928",
     "semantic_hash": "8eb57258b1784cfda59b89ca182fc928"
   },
   "resources/views/Paginas-no-usadas/student-linked-accounts.blade.php": {
-    "mtime": 1786408798.4881365,
+    "mtime": 1786511188.9171941,
     "ast_hash": "fc820edc8a5fab942e59189b63f55552",
     "semantic_hash": "fc820edc8a5fab942e59189b63f55552"
   },
   "resources/views/Paginas-no-usadas/student-list.blade.php": {
-    "mtime": 1786408798.4891388,
+    "mtime": 1786511188.9201915,
     "ast_hash": "c6f31f300b83f8c8fae55b1f73a25a01",
     "semantic_hash": "c6f31f300b83f8c8fae55b1f73a25a01"
   },
   "resources/views/Paginas-no-usadas/student-messages.blade.php": {
-    "mtime": 1786408798.4902997,
+    "mtime": 1786511188.9223287,
     "ast_hash": "87c96fc4c4dffb7df2c38b52752cdff9",
     "semantic_hash": "87c96fc4c4dffb7df2c38b52752cdff9"
   },
   "resources/views/Paginas-no-usadas/student-notifications.blade.php": {
-    "mtime": 1786408798.4913318,
+    "mtime": 1786511188.9234097,
     "ast_hash": "db9111cb00a56b2ad5c3508e057db7af",
     "semantic_hash": "db9111cb00a56b2ad5c3508e057db7af"
   },
   "resources/views/Paginas-no-usadas/student-order-history.blade.php": {
-    "mtime": 1786408798.4913318,
+    "mtime": 1786511188.9258935,
     "ast_hash": "a27233879ed785ae78c0ab32c02bff63",
     "semantic_hash": "a27233879ed785ae78c0ab32c02bff63"
   },
   "resources/views/Paginas-no-usadas/student-profile.blade.php": {
-    "mtime": 1786408798.4923341,
+    "mtime": 1786511188.9268885,
     "ast_hash": "1cfa6f08104d6e4647ddc9168c1bf043",
     "semantic_hash": "1cfa6f08104d6e4647ddc9168c1bf043"
   },
   "resources/views/Paginas-no-usadas/student-quiz-questions.blade.php": {
-    "mtime": 1786408798.4935966,
+    "mtime": 1786511188.9302652,
     "ast_hash": "0029c57be6ad99d34af2a0ede53d4ca1",
     "semantic_hash": "0029c57be6ad99d34af2a0ede53d4ca1"
   },
   "resources/views/Paginas-no-usadas/student-quiz.blade.php": {
-    "mtime": 1786408798.4935966,
+    "mtime": 1786511188.9312751,
     "ast_hash": "7ac7226cbd3506bf2e6313b069ea570a",
     "semantic_hash": "7ac7226cbd3506bf2e6313b069ea570a"
   },
   "resources/views/Paginas-no-usadas/student-referral.blade.php": {
-    "mtime": 1786408798.494604,
+    "mtime": 1786511188.932679,
     "ast_hash": "18caac2c48311b82f0be3c91c7305c78",
     "semantic_hash": "18caac2c48311b82f0be3c91c7305c78"
   },
   "resources/views/Paginas-no-usadas/student-reviews.blade.php": {
-    "mtime": 1786408798.494604,
+    "mtime": 1786511188.9336782,
     "ast_hash": "9782eefde74163c79be68f763947209c",
     "semantic_hash": "9782eefde74163c79be68f763947209c"
   },
   "resources/views/Paginas-no-usadas/student-settings.blade.php": {
-    "mtime": 1786408798.49587,
+    "mtime": 1786511188.9356768,
     "ast_hash": "f8b785803257bc3838c4a4ec0580be94",
     "semantic_hash": "f8b785803257bc3838c4a4ec0580be94"
   },
   "resources/views/Paginas-no-usadas/student-social-profile.blade.php": {
-    "mtime": 1786408798.497091,
+    "mtime": 1786511188.9366784,
     "ast_hash": "4837bcb8ee52db081b5d4f956c1e05c1",
     "semantic_hash": "4837bcb8ee52db081b5d4f956c1e05c1"
   },
   "resources/views/Paginas-no-usadas/student-tickets.blade.php": {
-    "mtime": 1786408798.4980874,
+    "mtime": 1786511188.9376743,
     "ast_hash": "1cc88feea84cd6e03e4348ba752e10a2",
     "semantic_hash": "1cc88feea84cd6e03e4348ba752e10a2"
   },
   "resources/views/Paginas-no-usadas/student-wishlist.blade.php": {
-    "mtime": 1786408798.4980874,
+    "mtime": 1786511188.938674,
     "ast_hash": "5f3a222c666d448744773f515decbdc8",
     "semantic_hash": "5f3a222c666d448744773f515decbdc8"
   },
   "resources/views/Paginas-no-usadas/students.blade.php": {
-    "mtime": 1786408798.499343,
+    "mtime": 1786511188.938674,
     "ast_hash": "f600b174fcbc24afede44a5a75c06d88",
     "semantic_hash": "f600b174fcbc24afede44a5a75c06d88"
   },
   "resources/views/Paginas-no-usadas/terms-and-conditions.blade.php": {
-    "mtime": 1786408798.499343,
+    "mtime": 1786511188.9417167,
     "ast_hash": "e8c2d8b89f85ede3277745e9e7949679",
     "semantic_hash": "e8c2d8b89f85ede3277745e9e7949679"
   },
   "resources/views/Paginas-no-usadas/testimonials.blade.php": {
-    "mtime": 1786408798.5003445,
+    "mtime": 1786511188.9436417,
     "ast_hash": "0bea1554c83e78d629fd54854a7a4429",
     "semantic_hash": "0bea1554c83e78d629fd54854a7a4429"
   },
   "resources/views/Paginas-no-usadas/under-construction.blade.php": {
-    "mtime": 1786408798.5013452,
+    "mtime": 1786511188.9446814,
     "ast_hash": "f5d14e83e836890cf7ab56b30ec7e9b5",
     "semantic_hash": "f5d14e83e836890cf7ab56b30ec7e9b5"
   },
   "resources/views/components/blogsidebar.blade.php": {
-    "mtime": 1786408798.502343,
+    "mtime": 1786511188.9456813,
     "ast_hash": "70b218852a14a03fba9264a0e7fe222d",
     "semantic_hash": "70b218852a14a03fba9264a0e7fe222d"
   },
@@ -1455,12 +1455,12 @@
     "semantic_hash": "14379a6de0f384483983ec3d675f2d68"
   },
   "resources/views/components/filter.blade.php": {
-    "mtime": 1786408798.5055635,
+    "mtime": 1786511188.9466708,
     "ast_hash": "79b6af063887abbf5bde2268d3bab778",
     "semantic_hash": "79b6af063887abbf5bde2268d3bab778"
   },
   "resources/views/components/loginbanner.blade.php": {
-    "mtime": 1786408798.50656,
+    "mtime": 1786511188.9486709,
     "ast_hash": "78cf84198802cf70cb8d77ef6ab1f550",
     "semantic_hash": "78cf84198802cf70cb8d77ef6ab1f550"
   },
@@ -1470,17 +1470,17 @@
     "semantic_hash": "d3ad65fb70e2c7b25d44a0b79e988d46"
   },
   "resources/views/components/pagebanner.blade.php": {
-    "mtime": 1786408798.5085545,
+    "mtime": 1786511188.9501812,
     "ast_hash": "69625a21a81cbb9f5a8dda6fdd1f0b2a",
     "semantic_hash": "69625a21a81cbb9f5a8dda6fdd1f0b2a"
   },
   "resources/views/components/pagination.blade.php": {
-    "mtime": 1786408798.5085545,
+    "mtime": 1786511188.951207,
     "ast_hash": "820f9ad1e8e316cc18d6fe88db809c0a",
     "semantic_hash": "820f9ad1e8e316cc18d6fe88db809c0a"
   },
   "resources/views/components/sidebar.blade.php": {
-    "mtime": 1786408798.5098639,
+    "mtime": 1786511188.9538455,
     "ast_hash": "437ee09514d9671c69b69ce13e74bccb",
     "semantic_hash": "437ee09514d9671c69b69ce13e74bccb"
   },
@@ -1520,9 +1520,9 @@
     "semantic_hash": "9c305bec5b6ef492ec818f9a238462b7"
   },
   "resources/views/grupo74/derecho.blade.php": {
-    "mtime": 1786408798.5195737,
-    "ast_hash": "2c0c7c61396da00ac800a4e2b17979c2",
-    "semantic_hash": "2c0c7c61396da00ac800a4e2b17979c2"
+    "mtime": 1786512160.270728,
+    "ast_hash": "a8f245cf163900c63747e699f0d919d2",
+    "semantic_hash": ""
   },
   "resources/views/grupo74/detalles-instructor-administracion1.blade.php": {
     "mtime": 1786408798.521033,
@@ -1545,7 +1545,7 @@
     "semantic_hash": "153efb52d82916112521045e36fc5bd0"
   },
   "resources/views/grupo74/detalles-instructor-criminologia2.blade.php": {
-    "mtime": 1786408798.524029,
+    "mtime": 1786511188.9560606,
     "ast_hash": "8b8d4cce046fc675a2aaea0ca2ff56fd",
     "semantic_hash": "8b8d4cce046fc675a2aaea0ca2ff56fd"
   },
@@ -1630,7 +1630,7 @@
     "semantic_hash": "9b00df54d777ff4e167dd9d3e5bf5899"
   },
   "resources/views/grupo75/detalles-instructor-auditoria4.blade.php": {
-    "mtime": 1786408798.5379703,
+    "mtime": 1786511188.9574716,
     "ast_hash": "67f4e93c761a05491161857bc721bcb2",
     "semantic_hash": "67f4e93c761a05491161857bc721bcb2"
   },
@@ -1690,27 +1690,27 @@
     "semantic_hash": "f56dbfc41f1c1f35256cbf1d5c709f1d"
   },
   "resources/views/layout/mainlayout.blade.php": {
-    "mtime": 1786498595.4689572,
-    "ast_hash": "d04b0eff8b485c6f95557b241bc7cdef",
+    "mtime": 1786512232.5475504,
+    "ast_hash": "d2b33b9aee07e7b71f031a2b65661db4",
     "semantic_hash": ""
   },
   "resources/views/layout/partials/footer-scripts.blade.php": {
-    "mtime": 1786496939.8270698,
-    "ast_hash": "0927a527e90311f8d74f04a4edf9eaac",
+    "mtime": 1786512237.491068,
+    "ast_hash": "8fba8e4bdc0f9804d91e5718c3a8c989",
     "semantic_hash": ""
   },
   "resources/views/layout/partials/footer.blade.php": {
-    "mtime": 1786498595.35944,
+    "mtime": 1786501256.0174077,
     "ast_hash": "edea29eb96602846ad8fcb86b8d511e0",
     "semantic_hash": ""
   },
   "resources/views/layout/partials/head.blade.php": {
-    "mtime": 1786408798.5527802,
+    "mtime": 1786511059.7467692,
     "ast_hash": "dcc7e22f0d3bbc16656c4c1f21926f7d",
     "semantic_hash": "dcc7e22f0d3bbc16656c4c1f21926f7d"
   },
   "resources/views/layout/partials/header.blade.php": {
-    "mtime": 1786496941.0752213,
+    "mtime": 1786511060.5448277,
     "ast_hash": "3a186ec911fe0f872126ab4ca90522c5",
     "semantic_hash": ""
   },
@@ -1730,8 +1730,8 @@
     "semantic_hash": "a664b71aef87aae16824032531008eba"
   },
   "routes/web.php": {
-    "mtime": 1786494841.587589,
-    "ast_hash": "199445d5c08435c721b7e15e59068115",
+    "mtime": 1786512154.011058,
+    "ast_hash": "d189005dbed006776dcd318c9234fabb",
     "semantic_hash": ""
   },
   "tests/Feature/ExampleTest.php": {
@@ -1754,484 +1754,14 @@
     "ast_hash": "ce0d1bce38906f7d45d9ae7bdfc6b0d2",
     "semantic_hash": "ce0d1bce38906f7d45d9ae7bdfc6b0d2"
   },
-  ".cursor/skills/brand/scripts/extract-colors.cjs": {
-    "mtime": 1786495876.7143314,
-    "ast_hash": "267ef00a878b8c0cec252443796c6122",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/brand/scripts/inject-brand-context.cjs": {
-    "mtime": 1786495876.728185,
-    "ast_hash": "72ab4372fcdb90d68b5cb09b912e34f4",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/brand/scripts/sync-brand-to-tokens.cjs": {
-    "mtime": 1786495876.735099,
-    "ast_hash": "0bd6e8f1cb486753d11da715a548650a",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/brand/scripts/tests/test_sync_brand_to_tokens.py": {
-    "mtime": 1786495877.639669,
-    "ast_hash": "1cc075890cd68fa5c5f7463b9e1a4618",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/brand/scripts/validate-asset.cjs": {
-    "mtime": 1786495876.74113,
-    "ast_hash": "8217a1364af59e1acfb95d71fd41df1e",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design-system/scripts/embed-tokens.cjs": {
-    "mtime": 1786495876.7059855,
-    "ast_hash": "d50aed608ed2c44c64c006b1fd915663",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design-system/scripts/fetch-background.py": {
-    "mtime": 1786495877.5353198,
-    "ast_hash": "3269f2ebc8024e55b65008108910f3d4",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design-system/scripts/generate-slide.py": {
-    "mtime": 1786495877.5413423,
-    "ast_hash": "622d80cd7d9696f269e2da6b063754f7",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design-system/scripts/generate-tokens.cjs": {
-    "mtime": 1786495876.7211547,
-    "ast_hash": "a9a15066eeca1f70bd2edb90c645c9eb",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design-system/scripts/html-token-validator.py": {
-    "mtime": 1786495877.566267,
-    "ast_hash": "1d18dae9d3d916137c50df5ec7e65039",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design-system/scripts/search-slides.py": {
-    "mtime": 1786495877.57859,
-    "ast_hash": "bc70c45549014b579fb2a27f3acf3d2e",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design-system/scripts/slide-token-validator.py": {
-    "mtime": 1786495877.6089807,
-    "ast_hash": "ee5d76c06903f98a460a8661e150c5d3",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design-system/scripts/slide_search_core.py": {
-    "mtime": 1786495877.6044652,
-    "ast_hash": "994ab50455710fce437399e86df23286",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design-system/scripts/tests/test_validate_tokens.py": {
-    "mtime": 1786495877.6547112,
-    "ast_hash": "32a9d34bbfa0041852963c189ea0ee5c",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design-system/scripts/validate-tokens.cjs": {
-    "mtime": 1786495876.747286,
-    "ast_hash": "ebb5e5897d942f59ecd76bf710d06dff",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design-system/templates/design-tokens-starter.json": {
-    "mtime": 1786495877.172448,
-    "ast_hash": "a5771c378d6fea057242eeebe83a7747",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/scripts/cip/core.py": {
-    "mtime": 1786495877.5169227,
-    "ast_hash": "9fcf192c150e285ab6176a9bbacd475b",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/scripts/cip/generate.py": {
-    "mtime": 1786495877.549234,
-    "ast_hash": "5662ddd34b366544e6541686ec9c8d22",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/scripts/cip/render-html.py": {
-    "mtime": 1786495877.5735557,
-    "ast_hash": "6fe3ce567110811670f05f40d386b48f",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/scripts/cip/search.py": {
-    "mtime": 1786495877.5872872,
-    "ast_hash": "21a63380316bd899c49302e1b9a59191",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/scripts/icon/generate.py": {
-    "mtime": 1786495877.5569127,
-    "ast_hash": "b142cc490fdf8a45bcf95bfe972284df",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/scripts/logo/core.py": {
-    "mtime": 1786495877.5232182,
-    "ast_hash": "b8ea226dde31603e5a5e790641334055",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/scripts/logo/generate.py": {
-    "mtime": 1786495877.5615158,
-    "ast_hash": "6f973ff8ea948cb774340703c8b51b54",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/scripts/logo/search.py": {
-    "mtime": 1786495877.5932143,
-    "ast_hash": "56aa8e1e15479f304a7e4709a767c98b",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-styling/scripts/shadcn_add.py": {
-    "mtime": 1786495877.5980732,
-    "ast_hash": "4eb5eb020e3b45a8f73f4a371abbdbe1",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-styling/scripts/tailwind_config_gen.py": {
-    "mtime": 1786495877.614977,
-    "ast_hash": "cafc602e66323d217188d319c9a0412e",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-styling/scripts/tests/test_shadcn_add.py": {
-    "mtime": 1786495877.6304543,
-    "ast_hash": "51024123de02865d0c6dee29df6a887a",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-styling/scripts/tests/test_tailwind_config_gen.py": {
-    "mtime": 1786495877.6461837,
-    "ast_hash": "f5d99288827b293f4b6fdb86b8b56229",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-ux-pro-max/scripts/core.py": {
-    "mtime": 1786495877.5108337,
-    "ast_hash": "41d488b60b5bfb818c4b17413f7477c3",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-ux-pro-max/scripts/design_system.py": {
-    "mtime": 1786495877.5289836,
-    "ast_hash": "f261c292ddae64226b2c8b264f797898",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-ux-pro-max/scripts/search.py": {
-    "mtime": 1786495877.5809655,
-    "ast_hash": "10012353bb7d92c645ea7ab245e461e6",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-ux-pro-max/scripts/tests/test_core.py": {
-    "mtime": 1786495877.621092,
-    "ast_hash": "136d8ec87735cf5b77d70ad0adea59c0",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-ux-pro-max/scripts/tests/test_design_system_mode.py": {
-    "mtime": 1786495877.625219,
-    "ast_hash": "267b7b2d413c3822139be0f684a5db18",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-ux-pro-max/scripts/validate_data.py": {
-    "mtime": 1786495877.657368,
-    "ast_hash": "9ea4300a8385a7377457dd6d1ee99224",
-    "semantic_hash": ""
-  },
   "resources/views/components/umg-parallax-hero.blade.php": {
-    "mtime": 1786496923.1012259,
-    "ast_hash": "3eb515da659acf9239c41b528569a0e4",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/banner-design/SKILL.md": {
-    "mtime": 1786495877.397298,
-    "ast_hash": "aaf11854e0f8233bb53282699334164e",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/banner-design/references/banner-sizes-and-styles.md": {
-    "mtime": 1786495877.231929,
-    "ast_hash": "2581cbdf098909b898471bea6adabff6",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/brand/SKILL.md": {
-    "mtime": 1786495877.4022927,
-    "ast_hash": "7d771c480a628d8abdd2749d1893c7ab",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/brand/references/approval-checklist.md": {
-    "mtime": 1786495877.2218788,
-    "ast_hash": "8cedb5a9d3ddff0d5f7d98affd1fadfc",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/brand/references/asset-organization.md": {
-    "mtime": 1786495877.2268474,
-    "ast_hash": "8c359aaccb0d5f5a9c0daed9128fd9e9",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/brand/references/brand-guideline-template.md": {
-    "mtime": 1786495877.2420778,
-    "ast_hash": "40aadbb3eb6b82efb9c933951cdfe632",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/brand/references/color-palette-management.md": {
-    "mtime": 1786495877.2783422,
-    "ast_hash": "b7e3dc308cfc2e65bd94ecf85fb580e7",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/brand/references/consistency-checklist.md": {
-    "mtime": 1786495877.2934659,
-    "ast_hash": "e0be65fe750959b397a96d72ee939ebc",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/brand/references/logo-usage-rules.md": {
-    "mtime": 1786495877.3482819,
-    "ast_hash": "03cb4cb2d302a9e827fceeff93b4186a",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/brand/references/messaging-framework.md": {
-    "mtime": 1786495877.3532426,
-    "ast_hash": "9390c33e1c7ddb04a39528aa5872f85f",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/brand/references/typography-specifications.md": {
-    "mtime": 1786495877.4912906,
-    "ast_hash": "bc5d6e2d497b8aa2d3110de1d8463276",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/brand/references/update.md": {
-    "mtime": 1786495877.496183,
-    "ast_hash": "14b943f767980c2675e19008209d9eac",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/brand/references/visual-identity.md": {
-    "mtime": 1786495877.4997122,
-    "ast_hash": "0ada28b9a2e03da7fe50b95f3318f4de",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/brand/references/voice-framework.md": {
-    "mtime": 1786495877.5052502,
-    "ast_hash": "05b79e16c373850ea5e94e0977856dbc",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/brand/templates/brand-guidelines-starter.md": {
-    "mtime": 1786495877.2480671,
-    "ast_hash": "f7a5da16b17f9792a93270626d97a978",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design-system/SKILL.md": {
-    "mtime": 1786495877.4064286,
-    "ast_hash": "399b2e5ffbeac0bc777882e340245be9",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design-system/references/component-specs.md": {
-    "mtime": 1786495877.2828147,
-    "ast_hash": "4b96207671408be2dac5b13c9e31f5bd",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design-system/references/component-tokens.md": {
-    "mtime": 1786495877.2884698,
-    "ast_hash": "c66d6ccb3240d4eba923891a2fdb3b58",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design-system/references/primitive-tokens.md": {
-    "mtime": 1786495877.3576753,
-    "ast_hash": "7ebd68b0dfab8c9df2f22d85a3022e09",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design-system/references/semantic-tokens.md": {
-    "mtime": 1786495877.3746405,
-    "ast_hash": "c7078e566f78cb07696a158fa6746f54",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design-system/references/states-and-variants.md": {
-    "mtime": 1786495877.4607048,
-    "ast_hash": "ff0c751bff96625c6780ae076ed4558d",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design-system/references/tailwind-integration.md": {
-    "mtime": 1786495877.4714892,
-    "ast_hash": "d111e6c9b42fc6c83e353be65f1e7380",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design-system/references/token-architecture.md": {
-    "mtime": 1786495877.487259,
-    "ast_hash": "b63bc63526a343c95a7401aa17ec24fb",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/SKILL.md": {
-    "mtime": 1786495877.4106555,
-    "ast_hash": "d61b2326528cef1f0a8802c473840aa7",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/references/banner-sizes-and-styles.md": {
-    "mtime": 1786495877.2380795,
-    "ast_hash": "2581cbdf098909b898471bea6adabff6",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/references/cip-deliverable-guide.md": {
-    "mtime": 1786495877.2594795,
-    "ast_hash": "529d95a6ced350448cff5c2c994adaf6",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/references/cip-design.md": {
-    "mtime": 1786495877.264469,
-    "ast_hash": "0c7a987fa779a7058a26b92aba5c1e8c",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/references/cip-prompt-engineering.md": {
-    "mtime": 1786495877.2693093,
-    "ast_hash": "71a93064bf55486c3d3bbbfa512db516",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/references/cip-style-guide.md": {
-    "mtime": 1786495877.274308,
-    "ast_hash": "45ddddcc2633526b10d3936407a37fdb",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/references/design-routing.md": {
-    "mtime": 1786495877.3092334,
-    "ast_hash": "fb2836b233f4a1a538fcf515d7746d6d",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/references/icon-design.md": {
-    "mtime": 1786495877.3201034,
-    "ast_hash": "629ff5002717b909f53363f5cb1cfd28",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/references/logo-color-psychology.md": {
-    "mtime": 1786495877.32826,
-    "ast_hash": "c16a5c2f71bca6dffe5be145fb8e1cb4",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/references/logo-design.md": {
-    "mtime": 1786495877.33426,
-    "ast_hash": "ddf37c8f5fb996f86e11052bbe55e2c5",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/references/logo-prompt-engineering.md": {
-    "mtime": 1786495877.3396964,
-    "ast_hash": "f2efe3315b1b88e32e3a46f76f00e975",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/references/logo-style-guide.md": {
-    "mtime": 1786495877.3430967,
-    "ast_hash": "87c13758b7b6ee686d46dd1ad444a3d0",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/references/slides-copywriting-formulas.md": {
-    "mtime": 1786495877.427634,
-    "ast_hash": "cc6e52e1363e4df1bb56365444dc0f64",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/references/slides-create.md": {
-    "mtime": 1786495877.4306326,
-    "ast_hash": "0c134b4ddc19a2be22f8e378e954cf29",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/references/slides-html-template.md": {
-    "mtime": 1786495877.4354174,
-    "ast_hash": "8240be541e1fa33ed5a1e6f3a6f56525",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/references/slides-layout-patterns.md": {
-    "mtime": 1786495877.4396768,
-    "ast_hash": "1fc25584d384bb44ca077016a7481109",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/references/slides-strategies.md": {
-    "mtime": 1786495877.4446733,
-    "ast_hash": "1fb116496c22dc3e9ca8a44f86b219bb",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/references/slides.md": {
-    "mtime": 1786495877.4502602,
-    "ast_hash": "6c72659c3af2cdb7df76827cdfff8c2c",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/design/references/social-photos-design.md": {
-    "mtime": 1786495877.4551756,
-    "ast_hash": "e4df69abcf5c9d57a219b0e264b699be",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/slides/SKILL.md": {
-    "mtime": 1786495877.414666,
-    "ast_hash": "1d017fa64446b147cb7c84f05562520f",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/slides/references/copywriting-formulas.md": {
-    "mtime": 1786495877.2990482,
-    "ast_hash": "cc6e52e1363e4df1bb56365444dc0f64",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/slides/references/create.md": {
-    "mtime": 1786495877.3043723,
-    "ast_hash": "0c134b4ddc19a2be22f8e378e954cf29",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/slides/references/html-template.md": {
-    "mtime": 1786495877.3152547,
-    "ast_hash": "8240be541e1fa33ed5a1e6f3a6f56525",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/slides/references/layout-patterns.md": {
-    "mtime": 1786495877.3246453,
-    "ast_hash": "1fc25584d384bb44ca077016a7481109",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/slides/references/slide-strategies.md": {
-    "mtime": 1786495877.422505,
-    "ast_hash": "1fb116496c22dc3e9ca8a44f86b219bb",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-styling/LICENSE.txt": {
-    "mtime": 1786495877.6618342,
-    "ast_hash": "175792518e4ac015ab6696d16c4f607e",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-styling/SKILL.md": {
-    "mtime": 1786495877.419505,
-    "ast_hash": "28a3c5ed8e63a04595cc398a355a3b63",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-styling/references/canvas-design-system.md": {
-    "mtime": 1786495877.255047,
-    "ast_hash": "af9125f586c5909737dab10874f0c1e2",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-styling/references/shadcn-accessibility.md": {
-    "mtime": 1786495877.379186,
-    "ast_hash": "942f36327bb6ada5ce9a7f3d0e1877ce",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-styling/references/shadcn-components.md": {
-    "mtime": 1786495877.3821874,
-    "ast_hash": "e6c281ca23ac2a97aefae71f6190f915",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-styling/references/shadcn-theming.md": {
-    "mtime": 1786495877.3892505,
-    "ast_hash": "1c3f2a49a346f7e22e364f94c3b1d99c",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-styling/references/tailwind-customization.md": {
-    "mtime": 1786495877.4663393,
-    "ast_hash": "214b07281279c73713262edc92cba5c4",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-styling/references/tailwind-responsive.md": {
-    "mtime": 1786495877.4772937,
-    "ast_hash": "0404b2ca094826682d24226231ff2fef",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-styling/references/tailwind-utilities.md": {
-    "mtime": 1786495877.4816666,
-    "ast_hash": "cc42c158e59165c86fc826c83862c97e",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-styling/scripts/requirements.txt": {
-    "mtime": 1786495877.6686933,
-    "ast_hash": "56d0657c2d53f4edf30689d0c217efbb",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-styling/scripts/tests/requirements.txt": {
-    "mtime": 1786495877.6729062,
-    "ast_hash": "d7fb3d2ea85706944ec8609949c3a851",
-    "semantic_hash": ""
-  },
-  ".cursor/skills/ui-ux-pro-max/SKILL.md": {
-    "mtime": 1786495878.1111414,
-    "ast_hash": "3966b1cffe01f57fbb2d6a0641d5320e",
+    "mtime": 1786501256.0203946,
+    "ast_hash": "b9d3ccf59108db1fc34b2626095086d9",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1786408795.0700169,
-    "ast_hash": "a92469909339e392845dae534f4f2346",
+    "mtime": 1786512244.1873562,
+    "ast_hash": "fc85fa4c6b9650a8e84959d990df776f",
     "semantic_hash": ""
   },
   "public/robots.txt": {
@@ -2240,222 +1770,222 @@
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-ar-AR.min.js.LICENSE.txt": {
-    "mtime": 1786408798.1540897,
+    "mtime": 1786511188.5661752,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-az-AZ.min.js.LICENSE.txt": {
-    "mtime": 1786408798.1565347,
+    "mtime": 1786511188.5701785,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-bg-BG.min.js.LICENSE.txt": {
-    "mtime": 1786408798.158538,
+    "mtime": 1786511188.5742126,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-ca-ES.min.js.LICENSE.txt": {
-    "mtime": 1786408798.159979,
+    "mtime": 1786511188.57821,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-cs-CZ.min.js.LICENSE.txt": {
-    "mtime": 1786408798.162401,
+    "mtime": 1786511188.5812335,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-da-DK.min.js.LICENSE.txt": {
-    "mtime": 1786408798.1647944,
+    "mtime": 1786511188.5856004,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-de-DE.min.js.LICENSE.txt": {
-    "mtime": 1786408798.1669886,
+    "mtime": 1786511188.5886316,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-el-GR.min.js.LICENSE.txt": {
-    "mtime": 1786408798.1694312,
+    "mtime": 1786511188.5919087,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-es-ES.min.js.LICENSE.txt": {
-    "mtime": 1786408798.1714761,
+    "mtime": 1786511188.5935304,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-es-EU.min.js.LICENSE.txt": {
-    "mtime": 1786408798.173947,
+    "mtime": 1786511188.5969832,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-fa-IR.min.js.LICENSE.txt": {
-    "mtime": 1786408798.17595,
+    "mtime": 1786511188.6020665,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-fi-FI.min.js.LICENSE.txt": {
-    "mtime": 1786408798.1789405,
+    "mtime": 1786511188.6059732,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-fr-FR.min.js.LICENSE.txt": {
-    "mtime": 1786408798.1809425,
+    "mtime": 1786511188.6089866,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-gl-ES.min.js.LICENSE.txt": {
-    "mtime": 1786408798.1829412,
+    "mtime": 1786511188.6147816,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-he-IL.min.js.LICENSE.txt": {
-    "mtime": 1786408798.1859522,
+    "mtime": 1786511188.6212754,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-hr-HR.min.js.LICENSE.txt": {
-    "mtime": 1786408798.188942,
+    "mtime": 1786511188.6268108,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-hu-HU.min.js.LICENSE.txt": {
-    "mtime": 1786408798.1910026,
+    "mtime": 1786511188.633174,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-id-ID.min.js.LICENSE.txt": {
-    "mtime": 1786408798.1924837,
+    "mtime": 1786511188.6372113,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-it-IT.min.js.LICENSE.txt": {
-    "mtime": 1786408798.195978,
+    "mtime": 1786511188.6420484,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-ja-JP.min.js.LICENSE.txt": {
-    "mtime": 1786408798.197985,
+    "mtime": 1786511188.646277,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-ko-KR.min.js.LICENSE.txt": {
-    "mtime": 1786408798.2002437,
+    "mtime": 1786511188.6502845,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-lt-LT.min.js.LICENSE.txt": {
-    "mtime": 1786408798.202559,
+    "mtime": 1786511188.656551,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-lt-LV.min.js.LICENSE.txt": {
-    "mtime": 1786408798.2045562,
+    "mtime": 1786511188.6613767,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-mn-MN.min.js.LICENSE.txt": {
-    "mtime": 1786408798.2070646,
+    "mtime": 1786511188.6661994,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-nb-NO.min.js.LICENSE.txt": {
-    "mtime": 1786408798.2095432,
+    "mtime": 1786511188.6713357,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-nl-NL.min.js.LICENSE.txt": {
-    "mtime": 1786408798.2116156,
+    "mtime": 1786511188.6752336,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-pl-PL.min.js.LICENSE.txt": {
-    "mtime": 1786408798.2150228,
+    "mtime": 1786511188.6802099,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-pt-BR.min.js.LICENSE.txt": {
-    "mtime": 1786408798.217019,
+    "mtime": 1786511188.686023,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-pt-PT.min.js.LICENSE.txt": {
-    "mtime": 1786408798.219021,
+    "mtime": 1786511188.6921384,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-ro-RO.min.js.LICENSE.txt": {
-    "mtime": 1786408798.2210207,
+    "mtime": 1786511188.696965,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-ru-RU.min.js.LICENSE.txt": {
-    "mtime": 1786408798.223425,
+    "mtime": 1786511188.701077,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-sk-SK.min.js.LICENSE.txt": {
-    "mtime": 1786408798.2263265,
+    "mtime": 1786511188.707793,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-sl-SI.min.js.LICENSE.txt": {
-    "mtime": 1786408798.2285526,
+    "mtime": 1786511188.7122617,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-sr-RS-Latin.min.js.LICENSE.txt": {
-    "mtime": 1786408798.2305555,
+    "mtime": 1786511188.7183185,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-sr-RS.min.js.LICENSE.txt": {
-    "mtime": 1786408798.232561,
+    "mtime": 1786511188.7223723,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-sv-SE.min.js.LICENSE.txt": {
-    "mtime": 1786408798.2355556,
+    "mtime": 1786511188.7270567,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-ta-IN.min.js.LICENSE.txt": {
-    "mtime": 1786408798.2375636,
+    "mtime": 1786511188.7311893,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-th-TH.min.js.LICENSE.txt": {
-    "mtime": 1786408798.2405674,
+    "mtime": 1786511188.7376564,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-tr-TR.min.js.LICENSE.txt": {
-    "mtime": 1786408798.2425542,
+    "mtime": 1786511188.7434895,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-uk-UA.min.js.LICENSE.txt": {
-    "mtime": 1786408798.244578,
+    "mtime": 1786511188.7473698,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-uz-UZ.min.js.LICENSE.txt": {
-    "mtime": 1786408798.2470872,
+    "mtime": 1786511188.7525988,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-vi-VN.min.js.LICENSE.txt": {
-    "mtime": 1786408798.2490878,
+    "mtime": 1786511188.758282,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-zh-CN.min.js.LICENSE.txt": {
-    "mtime": 1786408798.2510948,
+    "mtime": 1786511188.7622566,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
   "resources/plugins/summernote/lang/summernote-zh-TW.min.js.LICENSE.txt": {
-    "mtime": 1786408798.253094,
+    "mtime": 1786511188.7667012,
     "ast_hash": "32c5cae695bd16d4c4d4061a3025b798",
     "semantic_hash": ""
   },
@@ -7305,7 +6835,7 @@
     "semantic_hash": ""
   },
   "resources/plugins/boxicons/fonts/boxicons.svg": {
-    "mtime": 1786408798.0060585,
+    "mtime": 1786511188.4913352,
     "ast_hash": "b0bb967778275b356010f01219188eb0",
     "semantic_hash": ""
   },
@@ -7330,32 +6860,32 @@
     "semantic_hash": ""
   },
   "resources/plugins/jquery-ui/images/ui-icons_444444_256x240.png": {
-    "mtime": 1786408798.119418,
+    "mtime": 1786511188.5311484,
     "ast_hash": "d10bc07005bb2d604f4905183690ac04",
     "semantic_hash": ""
   },
   "resources/plugins/jquery-ui/images/ui-icons_555555_256x240.png": {
-    "mtime": 1786408798.120399,
+    "mtime": 1786511188.532085,
     "ast_hash": "00dd0ec0a16a1085e714c7906ff8fb06",
     "semantic_hash": ""
   },
   "resources/plugins/jquery-ui/images/ui-icons_777620_256x240.png": {
-    "mtime": 1786408798.1214452,
+    "mtime": 1786511188.5337038,
     "ast_hash": "4e7e3e142f3939883cd0a7e00cabdaef",
     "semantic_hash": ""
   },
   "resources/plugins/jquery-ui/images/ui-icons_777777_256x240.png": {
-    "mtime": 1786408798.1214452,
+    "mtime": 1786511188.5351217,
     "ast_hash": "40bf25799e4fec8079c7775083de09df",
     "semantic_hash": ""
   },
   "resources/plugins/jquery-ui/images/ui-icons_cc0000_256x240.png": {
-    "mtime": 1786408798.1225374,
+    "mtime": 1786511188.536131,
     "ast_hash": "093a819138276b446611d1d2a45b98a2",
     "semantic_hash": ""
   },
   "resources/plugins/jquery-ui/images/ui-icons_ffffff_256x240.png": {
-    "mtime": 1786408798.1225374,
+    "mtime": 1786511188.537122,
     "ast_hash": "ea4ebe072be75fbbea002631916836de",
     "semantic_hash": ""
   },
@@ -7365,68 +6895,133 @@
     "semantic_hash": ""
   },
   "resources/views/components/umg-faculties.blade.php": {
-    "mtime": 1786497902.3693316,
-    "ast_hash": "ebe6e5ea116d83f0a9ae915cf8542f84",
+    "mtime": 1786501256.0209155,
+    "ast_hash": "7e19cb43e5fad43457a4ac291a54eb2d",
     "semantic_hash": ""
   },
   "resources/views/components/umg-faculty-card.blade.php": {
-    "mtime": 1786497331.5718098,
-    "ast_hash": "40dc50d427f80e566374f2028f358a23",
-    "semantic_hash": ""
-  },
-  "ideas/umgguastatoyagt (1)/umgguastatoyagt/astro.config.mjs": {
-    "mtime": 1786496226.033116,
-    "ast_hash": "8da33dc27346179b758c482f471eaf07",
-    "semantic_hash": ""
-  },
-  "ideas/umgguastatoyagt (1)/umgguastatoyagt/package.json": {
-    "mtime": 1786496226.0935874,
-    "ast_hash": "8a8e844a0eebccece9c7d51bf63e9b6a",
-    "semantic_hash": ""
-  },
-  "ideas/umgguastatoyagt (1)/umgguastatoyagt/src/layouts/BaseLayout.astro": {
-    "mtime": 1786496410.0908694,
-    "ast_hash": "58c3ab7523d81a261a69a4b29c840b08",
-    "semantic_hash": ""
-  },
-  "ideas/umgguastatoyagt (1)/umgguastatoyagt/src/pages/index.astro": {
-    "mtime": 1786496410.1215298,
-    "ast_hash": "16e3b4022a8b5f2fea1d7defbbbb73e6",
-    "semantic_hash": ""
-  },
-  "ideas/umgguastatoyagt (1)/umgguastatoyagt/tsconfig.json": {
-    "mtime": 1786496226.1112022,
-    "ast_hash": "2468ad4201072028f1f60c1591299ac9",
+    "mtime": 1786501256.021426,
+    "ast_hash": "cc32e51868c33f6bb635ef1da566c0ec",
     "semantic_hash": ""
   },
   "resources/views/components/umg-prefooter-cta.blade.php": {
-    "mtime": 1786499019.502784,
-    "ast_hash": "5bb4064868e8b44e5c14e8734a0176b8",
+    "mtime": 1786501256.0254197,
+    "ast_hash": "7b5190508cf7f102de2b1ebb9e6b20ae",
     "semantic_hash": ""
   },
-  "ideas/umgguastatoyagt (1)/umgguastatoyagt/README.md": {
-    "mtime": 1786497602.3044972,
-    "ast_hash": "de45a6fa58f935a0a75ef5e8a0d49497",
+  "resources/views/components/umg-coordinator.blade.php": {
+    "mtime": 1786501256.0164,
+    "ast_hash": "37a90bf2da48d6d9a30ab29b27485322",
     "semantic_hash": ""
   },
-  "ideas/umgguastatoyagt (1)/umgguastatoyagt/public/hero-umg.png": {
+  "resources/views/grupo75/auditoria.blade.php": {
+    "mtime": 1786408798.534926,
+    "ast_hash": "9cb136abbd8c9dec02788e5593458da0",
+    "semantic_hash": ""
+  },
+  "app/Http/Controllers/ContactController.php": {
+    "mtime": 1786512142.9381874,
+    "ast_hash": "33f44ef6fee3cd6ee12e74368250f8ab",
+    "semantic_hash": ""
+  },
+  "app/Http/Requests/StoreLeadRequest.php": {
+    "mtime": 1786512238.4667883,
+    "ast_hash": "818b53f0de03cc0adfae8d66f4767ffe",
+    "semantic_hash": ""
+  },
+  "app/Models/Lead.php": {
+    "mtime": 1786512138.073984,
+    "ast_hash": "6455905ab6592024ad090efd2881428d",
+    "semantic_hash": ""
+  },
+  "database/migrations/2026_08_12_052021_create_leads_table.php": {
+    "mtime": 1786512140.1472347,
+    "ast_hash": "44fd9c681459d526bfc8594b43dcd4d8",
+    "semantic_hash": ""
+  },
+  "resources/views/components/partials/umg-assistant-robot-svg.blade.php": {
+    "mtime": 1786512153.483847,
+    "ast_hash": "4f5373001a1631be5966d3216999d13c",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-derecho-faq.blade.php": {
+    "mtime": 1786512150.1020381,
+    "ast_hash": "7f0acb74549317bb50628014faa3b356",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-derecho-features.blade.php": {
+    "mtime": 1786512120.8310137,
+    "ast_hash": "3014d5260be09a824830ca7355e6a1b0",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-derecho-hero.blade.php": {
+    "mtime": 1786512104.3810253,
+    "ast_hash": "340607a4a79f62789f3e2de42c13c3d5",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-derecho-instructors.blade.php": {
+    "mtime": 1786512133.3102112,
+    "ast_hash": "44f6ce43e68e0679c7af041d04b437e8",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-derecho-intro.blade.php": {
+    "mtime": 1786512112.9144359,
+    "ast_hash": "608a8d908f9d4032385636a0ff2f1287",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-derecho-stats.blade.php": {
+    "mtime": 1786512150.0449598,
+    "ast_hash": "ee844cda46b7a2e71ce20946247c5419",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-derecho-topics.blade.php": {
+    "mtime": 1786512128.3781245,
+    "ast_hash": "b4a39c2e872a6b3bcfee78c471e084b6",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-floating-assistant.blade.php": {
+    "mtime": 1786512540.950276,
+    "ast_hash": "09587eb9b1e3896fd6e7b00bdf251564",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-sistemas-landing.blade.php": {
+    "mtime": 1786512126.4567623,
+    "ast_hash": "2b1add990ec83bf8037f567580d56410",
+    "semantic_hash": ""
+  },
+  "design-system/umg-derecho/MASTER.md": {
+    "mtime": 1786512058.9634233,
+    "ast_hash": "20a76d9e37a93f99d1ef0a25e29d10b2",
+    "semantic_hash": ""
+  },
+  "design-system/umg-derecho/pages/derecho.md": {
+    "mtime": 1786512088.6104655,
+    "ast_hash": "16cc4f465f03edb5f4a1a0b37844b66c",
+    "semantic_hash": ""
+  },
+  "public/images/hero-umg.png": {
     "mtime": 1786496410.052773,
     "ast_hash": "20fd4438aa0d121105f55832e1d9bc4f",
     "semantic_hash": ""
   },
-  "ideas/umgguastatoyagt (1)/umgguastatoyagt/public/logo-umg.png": {
+  "public/images/logo-umg.png": {
     "mtime": 1786496409.9927697,
     "ast_hash": "102c32e6038086c8ff2361e85af32fa7",
     "semantic_hash": ""
   },
-  "ideas/umgguastatoyagt (1)/umgguastatoyagt/public/umg-seal.svg": {
+  "public/images/umg-seal.svg": {
     "mtime": 1786496409.9674516,
     "ast_hash": "26bf8ea3ef2d40620bbb43fdbcc59524",
     "semantic_hash": ""
   },
-  "resources/views/components/umg-coordinator.blade.php": {
-    "mtime": 1786499219.1494722,
-    "ast_hash": "47dad97bc193a7bc11056360d217741c",
+  "public/images/mascota digital.png": {
+    "mtime": 1786512437.2048142,
+    "ast_hash": "e991a9159c6eafcb7621613af3778727",
+    "semantic_hash": ""
+  },
+  "public/images/mascota-digital.png": {
+    "mtime": 1786512437.2048142,
+    "ast_hash": "e991a9159c6eafcb7621613af3778727",
     "semantic_hash": ""
   }
 }

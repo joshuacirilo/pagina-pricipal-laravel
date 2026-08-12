@@ -1,0 +1,19 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="120" cy="120" r="116" fill="#C53A34" stroke="#B68A34" stroke-width="8"/>
+  <circle cx="120" cy="120" r="78" fill="#1E6EA4" stroke="#B68A34" stroke-width="6"/>
+  <circle cx="120" cy="120" r="48" fill="#F8F7F3"/>
+  <path d="M120 83C108 83 98 93 98 105C98 121 108 133 120 144C132 133 142 121 142 105C142 93 132 83 120 83Z" fill="#F8F7F3" stroke="#1C2940" stroke-width="3"/>
+  <path d="M92 105C99 100 108 97 120 97C132 97 141 100 148 105" stroke="#1C2940" stroke-width="3" stroke-linecap="round"/>
+  <path d="M100 151C108 157 114 160 120 160C126 160 132 157 140 151" stroke="#1C2940" stroke-width="3" stroke-linecap="round"/>
+  <defs>
+    <path id="topArc" d="M34 120A86 86 0 0 1 206 120"/>
+    <path id="bottomArc" d="M206 120A86 86 0 0 1 34 120"/>
+  </defs>
+  <text fill="#FDF7EA" font-family="Georgia, serif" font-size="14" font-weight="700" letter-spacing="1.1">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">UNIVERSIDAD MARIANO GÁLVEZ</textPath>
+  </text>
+  <text fill="#FDF7EA" font-family="Georgia, serif" font-size="14" font-weight="700" letter-spacing="1.1">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">GUATEMALA</textPath>
+  </text>
+  <text x="120" y="64" text-anchor="middle" fill="#111827" font-family="Inter, sans-serif" font-size="12" font-weight="800">1966</text>
+</svg>
