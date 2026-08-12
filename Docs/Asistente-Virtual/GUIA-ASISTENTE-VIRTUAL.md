@@ -35,6 +35,7 @@ Desde PowerShell, en la raíz del proyecto, inicia la base de datos con:
 ```powershell
 docker compose up -d postgres
 docker compose ps
+docker compose exec -T postgres psql -U postgres -d laravel -c "SELECT extversion FROM pg_extension WHERE extname = 'vector';"
 ```
 
 La configuración incluida expone Postgres en `127.0.0.1:5433`, con base `laravel` y usuario `postgres`. Se usa el puerto 5433 para no interferir con una instalación local de PostgreSQL que normalmente usa 5432.
@@ -102,7 +103,7 @@ No se requiere un paquete adicional: el proyecto guarda y consulta el tipo `vect
 DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
 DB_PORT=5433
-DB_DATABASE=universidad
+DB_DATABASE=laravel
 DB_USERNAME=postgres
 DB_PASSWORD=postgres
 
@@ -111,7 +112,7 @@ OLLAMA_EMBEDDING_MODEL=nomic-embed-text:latest
 OLLAMA_CHAT_MODEL=qwen2.5:3b
 ```
 
-### 3.3 Copiar los archivos de este scaffold a tu proyecto
+### 3.3 Archivos ya implementados en este proyecto
 
 - `database/migrations/2026_08_11_000000_create_knowledge_chunks_table.php`
 - `app/Models/KnowledgeChunk.php`
@@ -120,7 +121,7 @@ OLLAMA_CHAT_MODEL=qwen2.5:3b
 - `app/Http/Controllers/ChatController.php`
 - `app/Console/Commands/IngestKnowledge.php`
 
-Y agregar los snippets:
+Ya están registrados los siguientes elementos:
 
 - El contenido de `config/services-snippet.php` dentro de tu `config/services.php`
 - La ruta API ya está registrada en `routes/api.php` y habilitada desde `bootstrap/app.php` (Laravel 12 no la crea por defecto).
@@ -137,12 +138,12 @@ Esto crea la extensión `vector`, la tabla `knowledge_chunks` y el índice HNSW 
 
 ## 4. Cargar el contenido de la universidad (ingesta)
 
-1. Crea una carpeta con archivos `.md` o `.txt`, uno por tema (admisiones, becas, carreras, reglamento, calendario académico, etc.). Te dejé un ejemplo en `knowledge-base-ejemplo/admisiones.md` — copia ese formato: párrafos separados por línea en blanco, cada párrafo se convierte en un fragmento independiente.
+1. Crea o actualiza archivos `.md` o `.txt` en `database/knowledge-base`, uno por tema (admisiones, becas, carreras, reglamento, calendario académico, etc.). El ejemplo `database/knowledge-base/admisiones.md` usa el formato esperado: párrafos separados por línea en blanco, cada párrafo se convierte en un fragmento independiente. No uses esta carpeta de documentación como fuente de ingesta, porque contiene archivos técnicos del scaffold.
 
 2. Corre el comando de ingesta:
 
 ```powershell
-php artisan knowledge:ingest "Docs\Asistente-Virtual" --category=admisiones --replace
+php artisan knowledge:ingest "database\knowledge-base" --category=admisiones --replace
 ```
 
 Esto:
@@ -185,7 +186,7 @@ No es necesario nada especial: un componente simple en Blade/Alpine.js o Vue que
 - Postgres con la extensión pgvector instalada (o correr Postgres vía la imagen Docker `pgvector/pgvector`).
 - Ollama instalado y corriendo como servicio (`systemctl enable ollama`), con los modelos ya descargados (`ollama pull` consume varios GB, mejor hacerlo una vez desde consola, no en cada deploy).
 - RAM recomendada: 4-6 GB libres para `qwen2.5:3b`, aparte de lo que consuma PHP/Postgres.
-- El `OLLAMA_URL` en producción normalmente sigue siendo `http://localhost:11434` si Ollama corre en el mismo servidor que Laravel.
+- El `OLLAMA_URL` en producción normalmente sigue siendo `http://127.0.0.1:11434` si Ollama corre en el mismo servidor que Laravel. No expongas el puerto de Ollama a Internet.
 - Considerar correr `knowledge:ingest` como parte del proceso de deploy o como comando manual cada vez que actualicen contenido institucional (no necesita correr en cada request).
 
 ---
