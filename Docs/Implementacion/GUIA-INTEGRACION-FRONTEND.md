@@ -6,50 +6,42 @@ Tu proyecto usa **Vite + Sass puro** (sin Vue/React/Alpine), así que el widget 
 
 ---
 
-## 1. Copiar los archivos a tu proyecto
+## 1. Estado de esta implementación
+
+El widget ya está integrado en este proyecto. Sus archivos fuente son:
 
 | Archivo de este scaffold | Destino en tu repo |
 |---|---|
-| `resources/views/components/chat-widget.blade.php` | `resources/views/components/chat-widget.blade.php` |
-| `resources/js/chat-widget.js` | `resources/js/chat-widget.js` |
-| `resources/scss/_chat-widget.scss` | `resources/scss/_chat-widget.scss` |
+| Componente Blade | `resources/views/components/chat-widget.blade.php` |
+| Lógica JavaScript | `resources/js/chat-widget.js` |
+| Estilos Sass | `resources/scss/components/_chat-widget.scss` |
+| Asset CSS publicado | `public/build/css/chat-widget.css` |
+| Asset JS publicado | `public/build/js/chat-widget.js` |
 
-> Blade detecta automáticamente los componentes en `resources/views/components/`, así que no necesitas registrar nada — `<x-chat-widget />` va a funcionar apenas copies el archivo.
+El layout `resources/views/layout/mainlayout.blade.php` incluye `<x-chat-widget />` en las páginas públicas y carga sus dos assets. Las pantallas de acceso, errores y mantenimiento no muestran el widget.
 
 ---
 
-## 2. Importar los estilos
+## 2. Estilos
 
-En tu `resources/scss/main.scss` (el archivo que ya compilas con `npm run sass`), agrega al inicio o donde tengas tus demás imports:
+El módulo ya está importado desde `resources/scss/main.scss`:
 
 ```scss
-@import 'chat-widget';
+@use "components/chat-widget";
 ```
 
-Ajusta la variable `$chat-primary` dentro de `_chat-widget.scss` al color institucional de la universidad.
+Ajusta `$chat-primary` dentro de `resources/scss/components/_chat-widget.scss` al color institucional. Para regenerar el asset aislado:
+
+```powershell
+npm run sass:no-map
+npx sass resources/scss/components/_chat-widget.scss:public/build/css/chat-widget.css --style=compressed --no-source-map
+```
 
 ---
 
-## 3. Cargar el JS con Vite
+## 3. JavaScript
 
-Abre tu `vite.config.js` y agrega `resources/js/chat-widget.js` al arreglo de entradas de `laravel-vite-plugin`:
-
-```js
-laravel({
-    input: [
-        'resources/css/style.css', // lo que ya tengas
-        'resources/js/app.js',     // lo que ya tengas
-        'resources/js/chat-widget.js', // <- agregar esta línea
-    ],
-    refresh: true,
-}),
-```
-
-Y en el layout donde lo vayas a usar, agrega el `@vite` correspondiente (si ya tienes un `@vite([...])` con varias entradas, solo añade la ruta del archivo ahí mismo):
-
-```blade
-@vite(['resources/css/style.css', 'resources/js/app.js', 'resources/js/chat-widget.js'])
-```
+El layout carga `public/build/js/chat-widget.js`. El widget usa `fetch` nativo y no requiere dependencias externas ni una entrada Vite adicional.
 
 ---
 
@@ -67,23 +59,16 @@ Si en cambio solo quieres el asistente en ciertas páginas (ej. solo en el porta
 
 ---
 
-## 5. Verificar el token CSRF
+## 5. CSRF
 
-El JS del widget envía el header `X-CSRF-TOKEN` porque asumimos que `/api/chat` corre dentro del middleware `web` (con sesión). Para que funcione, tu layout necesita el meta tag de CSRF en el `<head>` (Laravel lo incluye por defecto en el layout base, pero confírmalo):
-
-```blade
-<meta name="csrf-token" content="{{ csrf_token() }}">
-```
-
-**Si en cambio pusiste la ruta en `routes/api.php`** (como en la guía anterior, sin sesión de por medio), el CSRF no aplica y puedes eliminar esa línea del `chat-widget.js` sin problema — el endpoint ya queda fuera del middleware `web`.
+La ruta `POST /api/chat` está en `routes/api.php`; no usa sesión ni CSRF. El JavaScript no envía un token CSRF.
 
 ---
 
 ## 6. Probar
 
-```bash
-npm run dev    # o npm run build para producción
-npm run sass   # compila los estilos
+```powershell
+npm run sass:no-map
 php artisan serve
 ```
 
