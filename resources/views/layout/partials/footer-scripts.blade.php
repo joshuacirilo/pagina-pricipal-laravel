@@ -109,6 +109,7 @@
 @if (Route::is(['index-3']))
 <script src="{{ URL::asset('build/js/umg-home.js') }}?v={{ filemtime(public_path('build/js/umg-home.js')) }}"></script>
 <script src="{{ URL::asset('build/js/umg-sistemas-countdown.js') }}?v={{ filemtime(public_path('build/js/umg-sistemas-countdown.js')) }}"></script>
+<script src="{{ URL::asset('build/js/umg-sistemas-contact.js') }}?v={{ filemtime(public_path('build/js/umg-sistemas-contact.js')) }}"></script>
 @endif
 @if (Route::is(['derecho']))
 <script src="{{ URL::asset('build/js/umg-faculty-derecho.js') }}?v={{ filemtime(public_path('build/js/umg-faculty-derecho.js')) }}"></script>

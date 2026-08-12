@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 @if(Route::is(['index-rtl']))
 <html lang="en" dir="rtl">
+@elseif(Route::is(['index-3']))
+<html lang="es" class="umg-home-scroll">
 @else
 <html lang="es">
 @endif
@@ -96,7 +98,9 @@
         @yield('content')
 
         @unless($hideLayoutChrome)
-          <x-umg-prefooter-cta />
+          @unless(Route::is(['index-3']))
+            <x-umg-prefooter-cta />
+          @endunless
           @include('layout.partials.footer')
           <x-umg-floating-assistant />
         @endunless

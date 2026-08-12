@@ -35,7 +35,7 @@
     "semantic_hash": "d18593472c5e35d8ab5add4240fc95f6"
   },
   "composer.json": {
-    "mtime": 1786408795.081027,
+    "mtime": 1786553547.6770303,
     "ast_hash": "900525a38a58da2a32a148bb971884ff",
     "semantic_hash": "900525a38a58da2a32a148bb971884ff"
   },
@@ -120,7 +120,7 @@
     "semantic_hash": "721f6e50bf099e6ca2cc0bce6655aec5"
   },
   "package.json": {
-    "mtime": 1786408795.0964355,
+    "mtime": 1786553547.724671,
     "ast_hash": "97d24062abb681e80671cbeaf39249eb",
     "semantic_hash": "97d24062abb681e80671cbeaf39249eb"
   },
@@ -1505,22 +1505,22 @@
     "semantic_hash": "3aefeb8c9a88b017463794550b9f50bd"
   },
   "resources/views/grupo73/sistemas.blade.php": {
-    "mtime": 1786408798.5155303,
+    "mtime": 1786553548.0222454,
     "ast_hash": "71be5683cd8beff4bd825918be72e415",
     "semantic_hash": "71be5683cd8beff4bd825918be72e415"
   },
   "resources/views/grupo74/administracion.blade.php": {
-    "mtime": 1786408798.516529,
+    "mtime": 1786553548.0242481,
     "ast_hash": "7ad48b7ba91d3bb58b5046a314ea539a",
     "semantic_hash": "7ad48b7ba91d3bb58b5046a314ea539a"
   },
   "resources/views/grupo74/criminologia.blade.php": {
-    "mtime": 1786408798.5185413,
+    "mtime": 1786553548.0252445,
     "ast_hash": "9c305bec5b6ef492ec818f9a238462b7",
     "semantic_hash": "9c305bec5b6ef492ec818f9a238462b7"
   },
   "resources/views/grupo74/derecho.blade.php": {
-    "mtime": 1786512160.270728,
+    "mtime": 1786553548.0279026,
     "ast_hash": "a8f245cf163900c63747e699f0d919d2",
     "semantic_hash": ""
   },
@@ -1610,7 +1610,7 @@
     "semantic_hash": "861ba2f6f7a3e450244025f8c4676fec"
   },
   "resources/views/grupo75/Auditoria.blade.php": {
-    "mtime": 1786408798.534926,
+    "mtime": 1786553548.0297382,
     "ast_hash": "9cb136abbd8c9dec02788e5593458da0",
     "semantic_hash": "9cb136abbd8c9dec02788e5593458da0"
   },
@@ -1680,23 +1680,23 @@
     "semantic_hash": "66dde931bbd2d5341e602ea7b14f241d"
   },
   "resources/views/grupo75/sistemas-redes-sociales.blade.php": {
-    "mtime": 1786408798.5478702,
+    "mtime": 1786553548.0332415,
     "ast_hash": "c14836394d30bb0d3322190ff95b7630",
     "semantic_hash": "c14836394d30bb0d3322190ff95b7630"
   },
   "resources/views/grupo75/trabajo-social.blade.php": {
-    "mtime": 1786408798.5478702,
+    "mtime": 1786553548.0352526,
     "ast_hash": "f56dbfc41f1c1f35256cbf1d5c709f1d",
     "semantic_hash": "f56dbfc41f1c1f35256cbf1d5c709f1d"
   },
   "resources/views/layout/mainlayout.blade.php": {
-    "mtime": 1786512232.5475504,
-    "ast_hash": "d2b33b9aee07e7b71f031a2b65661db4",
+    "mtime": 1786554362.5389035,
+    "ast_hash": "8b5dd0569428fd9c5c9b6666128a43e8",
     "semantic_hash": ""
   },
   "resources/views/layout/partials/footer-scripts.blade.php": {
-    "mtime": 1786512237.491068,
-    "ast_hash": "8fba8e4bdc0f9804d91e5718c3a8c989",
+    "mtime": 1786554680.364045,
+    "ast_hash": "a2a16282a558d3ee0141da999c8f3b95",
     "semantic_hash": ""
   },
   "resources/views/layout/partials/footer.blade.php": {
@@ -1750,7 +1750,7 @@
     "semantic_hash": "3f679e9508c834f0ad95943455fcd836"
   },
   "vite.config.js": {
-    "mtime": 1786408798.572592,
+    "mtime": 1786553548.040121,
     "ast_hash": "ce0d1bce38906f7d45d9ae7bdfc6b0d2",
     "semantic_hash": "ce0d1bce38906f7d45d9ae7bdfc6b0d2"
   },
@@ -1760,8 +1760,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1786515465.521291,
-    "ast_hash": "c2f4f749b73d97d274201f104d6dcbba",
+    "mtime": 1786554698.0763285,
+    "ast_hash": "e8d5ca07a9b620f3f4113137c331ba33",
     "semantic_hash": ""
   },
   "public/robots.txt": {
@@ -6945,37 +6945,37 @@
     "semantic_hash": ""
   },
   "resources/views/components/umg-derecho-faq.blade.php": {
-    "mtime": 1786512150.1020381,
+    "mtime": 1786553548.0114517,
     "ast_hash": "7f0acb74549317bb50628014faa3b356",
     "semantic_hash": ""
   },
   "resources/views/components/umg-derecho-features.blade.php": {
-    "mtime": 1786512120.8310137,
+    "mtime": 1786553548.012497,
     "ast_hash": "3014d5260be09a824830ca7355e6a1b0",
     "semantic_hash": ""
   },
   "resources/views/components/umg-derecho-hero.blade.php": {
-    "mtime": 1786512104.3810253,
+    "mtime": 1786553548.014488,
     "ast_hash": "340607a4a79f62789f3e2de42c13c3d5",
     "semantic_hash": ""
   },
   "resources/views/components/umg-derecho-instructors.blade.php": {
-    "mtime": 1786512133.3102112,
+    "mtime": 1786553548.0160093,
     "ast_hash": "44f6ce43e68e0679c7af041d04b437e8",
     "semantic_hash": ""
   },
   "resources/views/components/umg-derecho-intro.blade.php": {
-    "mtime": 1786512112.9144359,
+    "mtime": 1786553548.0180259,
     "ast_hash": "608a8d908f9d4032385636a0ff2f1287",
     "semantic_hash": ""
   },
   "resources/views/components/umg-derecho-stats.blade.php": {
-    "mtime": 1786512150.0449598,
+    "mtime": 1786553548.0180259,
     "ast_hash": "ee844cda46b7a2e71ce20946247c5419",
     "semantic_hash": ""
   },
   "resources/views/components/umg-derecho-topics.blade.php": {
-    "mtime": 1786512128.3781245,
+    "mtime": 1786553548.0202155,
     "ast_hash": "b4a39c2e872a6b3bcfee78c471e084b6",
     "semantic_hash": ""
   },
@@ -6985,8 +6985,8 @@
     "semantic_hash": ""
   },
   "resources/views/components/umg-sistemas-landing.blade.php": {
-    "mtime": 1786515622.0867124,
-    "ast_hash": "8dd5f3395a0986162b4cd0f1f3a8c322",
+    "mtime": 1786554651.8237455,
+    "ast_hash": "be16d91b3513f6f22cb781fab73083c0",
     "semantic_hash": ""
   },
   "design-system/umg-derecho/MASTER.md": {
@@ -6995,8 +6995,8 @@
     "semantic_hash": ""
   },
   "design-system/umg-derecho/pages/derecho.md": {
-    "mtime": 1786512088.6104655,
-    "ast_hash": "16cc4f465f03edb5f4a1a0b37844b66c",
+    "mtime": 1786553547.682721,
+    "ast_hash": "cecdff378ded14e86934e087dca728f4",
     "semantic_hash": ""
   },
   "public/images/hero-umg.png": {
@@ -7025,7 +7025,7 @@
     "semantic_hash": ""
   },
   "config/umg-faculties.php": {
-    "mtime": 1786515480.8417952,
+    "mtime": 1786553547.6793454,
     "ast_hash": "6ec3d7eb3b3bc60132729477056ac022",
     "semantic_hash": ""
   }

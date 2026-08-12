@@ -172,77 +172,133 @@
         </section>
 
         <section id="contacto" class="section section-light contact-section">
-            <div class="section-copy center">
-                <span class="eyebrow dark">Inscripción e información</span>
-                <h2>Pedí información o iniciá tu inscripción hoy.</h2>
-            </div>
+            @php
+                $contactoOld = old('contacto', '');
+                $contactoCanal = str_contains($contactoOld, '@') ? 'email' : (strlen($contactoOld) > 0 ? 'whatsapp' : 'email');
+            @endphp
 
-            @if (session('status'))
-                <p class="contact-status" role="status">{{ session('status') }}</p>
-            @endif
-
-            <form class="contact-form" method="POST" action="{{ route('contacto.store') }}" novalidate>
-                @csrf
-
-                <div class="honeypot" aria-hidden="true">
-                    <label>
-                        <span>Website</span>
-                        <input type="text" name="website" tabindex="-1" autocomplete="off" />
-                    </label>
+            <div class="contact-section__inner">
+                <div class="section-copy center">
+                    <h2>Pedí información o iniciá tu inscripción hoy.</h2>
                 </div>
 
-                <label>
-                    <span>Nombre completo</span>
-                    <input
-                        type="text"
-                        name="nombre"
-                        value="{{ old('nombre') }}"
-                        placeholder="Tu nombre"
-                        required
-                        maxlength="120"
-                        aria-invalid="{{ $errors->has('nombre') ? 'true' : 'false' }}"
-                    />
-                    @error('nombre')
-                        <p class="field-error">{{ $message }}</p>
-                    @enderror
-                </label>
+                @if (session('status'))
+                    <p class="contact-status" role="status">{{ session('status') }}</p>
+                @endif
 
-                <label>
-                    <span>Correo o WhatsApp</span>
-                    <input
-                        type="text"
-                        name="contacto"
-                        value="{{ old('contacto') }}"
-                        placeholder="Cómo te contactamos"
-                        required
-                        maxlength="160"
-                        aria-invalid="{{ $errors->has('contacto') ? 'true' : 'false' }}"
-                    />
+                <form class="contact-form contact-form--linear" method="POST" action="{{ route('contacto.store') }}" novalidate data-contact-form>
+                    @csrf
+
+                    <div class="honeypot" aria-hidden="true">
+                        <label>
+                            <span>Website</span>
+                            <input type="text" name="website" tabindex="-1" autocomplete="off" />
+                        </label>
+                    </div>
+
+                    <label class="contact-form__field">
+                        <span>Nombre completo</span>
+                        <input
+                            type="text"
+                            name="nombre"
+                            value="{{ old('nombre') }}"
+                            placeholder="Tu nombre y apellido"
+                            required
+                            maxlength="120"
+                            aria-invalid="{{ $errors->has('nombre') ? 'true' : 'false' }}"
+                        />
+                        @error('nombre')
+                            <p class="field-error">{{ $message }}</p>
+                        @enderror
+                    </label>
+
+                    <fieldset class="contact-channel">
+                        <legend>¿Cómo te contactamos?</legend>
+                        <div class="contact-channel__toggle" role="radiogroup" aria-label="Canal de contacto">
+                            <label class="contact-channel__option">
+                                <input
+                                    type="radio"
+                                    name="contacto_tipo"
+                                    value="email"
+                                    @checked($contactoCanal === 'email')
+                                />
+                                <span class="contact-channel__label">
+                                    <svg class="contact-channel__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m4 7 8 6 8-6"/></svg>
+                                    Correo
+                                </span>
+                            </label>
+                            <label class="contact-channel__option">
+                                <input
+                                    type="radio"
+                                    name="contacto_tipo"
+                                    value="whatsapp"
+                                    @checked($contactoCanal === 'whatsapp')
+                                />
+                                <span class="contact-channel__label">
+                                    <svg class="contact-channel__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                                    WhatsApp
+                                </span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <label class="contact-form__field contact-channel__field" data-channel-field="email" @if($contactoCanal !== 'email') hidden @endif>
+                        <span>Correo electrónico</span>
+                        <input
+                            type="email"
+                            name="contacto"
+                            value="{{ $contactoCanal === 'email' ? $contactoOld : '' }}"
+                            placeholder="tu@correo.com"
+                            maxlength="160"
+                            autocomplete="email"
+                            @if($contactoCanal === 'email') required @endif
+                            aria-invalid="{{ $errors->has('contacto') ? 'true' : 'false' }}"
+                        />
+                    </label>
+
+                    <label class="contact-form__field contact-channel__field" data-channel-field="whatsapp" @if($contactoCanal !== 'whatsapp') hidden @endif>
+                        <span>Número de WhatsApp</span>
+                        <input
+                            type="tel"
+                            data-contacto-alt
+                            value="{{ $contactoCanal === 'whatsapp' ? $contactoOld : '' }}"
+                            placeholder="+502 0000 0000"
+                            maxlength="160"
+                            autocomplete="tel"
+                            inputmode="tel"
+                            @if($contactoCanal === 'whatsapp') name="contacto" required @endif
+                            aria-invalid="{{ $errors->has('contacto') ? 'true' : 'false' }}"
+                        />
+                    </label>
+
                     @error('contacto')
-                        <p class="field-error">{{ $message }}</p>
+                        <p class="field-error contact-form__field-error">{{ $message }}</p>
                     @enderror
-                </label>
 
-                <label>
-                    <span>Interés principal</span>
-                    <select name="interes" required aria-invalid="{{ $errors->has('interes') ? 'true' : 'false' }}">
-                        <option value="inscripcion" @selected(old('interes', 'inscripcion') === 'inscripcion')>
-                            Inscribirme en la UMG Guastatoya
-                        </option>
-                        <option value="informacion" @selected(old('interes') === 'informacion')>
-                            Solicitar información
-                        </option>
-                        <option value="evento" @selected(old('interes') === 'evento')>
-                            Quiero que me contacten sobre admisión
-                        </option>
-                    </select>
-                    @error('interes')
-                        <p class="field-error">{{ $message }}</p>
-                    @enderror
-                </label>
+                    <label class="contact-form__field">
+                        <span>Interés principal</span>
+                        <select name="interes" required aria-invalid="{{ $errors->has('interes') ? 'true' : 'false' }}">
+                            <option value="inscripcion" @selected(old('interes', 'inscripcion') === 'inscripcion')>
+                                Inscribirme en la UMG Guastatoya
+                            </option>
+                            <option value="informacion" @selected(old('interes') === 'informacion')>
+                                Solicitar información
+                            </option>
+                            <option value="evento" @selected(old('interes') === 'evento')>
+                                Quiero que me contacten sobre admisión
+                            </option>
+                        </select>
+                        @error('interes')
+                            <p class="field-error">{{ $message }}</p>
+                        @enderror
+                    </label>
 
-                <button type="submit" class="cta primary">Quiero que me contacten</button>
-            </form>
+                    <button type="submit" class="cta primary contact-form__submit">
+                        <span>Quiero que me contacten</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </button>
+                </form>
+            </div>
         </section>
     </main>
 </div>

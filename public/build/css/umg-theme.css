@@ -751,6 +751,179 @@ body.umg-home #umgHeader.is-sticky {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
+/* =========================================================
+   HOME – Scroll por pantalla (una sección = una vista)
+   ========================================================= */
+html.umg-home-scroll {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-h, 80px);
+}
+
+body.umg-home .umg-parallax-hero,
+body.umg-home .umg-faculties,
+.umg-sistemas-landing .hero-stage,
+.umg-sistemas-landing .section:not(#contacto) {
+  min-height: 100dvh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  scroll-margin-top: var(--header-h, 80px);
+  box-sizing: border-box;
+}
+
+body.umg-home .umg-faculties {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: calc(var(--header-h, 80px) + 1.25rem);
+  padding-bottom: clamp(1.5rem, 4vh, 2.5rem);
+}
+
+body.umg-home .umg-faculties > .container {
+  width: 100%;
+}
+
+/* Última pantalla: contacto 60% + footer 40% */
+body.umg-home .umg-sistemas-landing #contacto.contact-section {
+  min-height: 60dvh;
+  height: 60dvh;
+  max-height: 60dvh;
+  overflow-y: auto;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  scroll-margin-top: var(--header-h, 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1.25rem, 3vh, 2rem) 1.25rem;
+  box-sizing: border-box;
+}
+
+body.umg-home .umg-sistemas-landing #contacto .section-copy h2 {
+  font-size: clamp(1.5rem, 4vw, 2.35rem) !important;
+}
+
+body.umg-home .umg-sistemas-landing #contacto .contact-form {
+  margin-top: clamp(0.75rem, 2vh, 1.25rem);
+}
+
+body.umg-home #umgFooter.umg-footer {
+  min-height: 40dvh;
+  height: 40dvh;
+  max-height: 40dvh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+body.umg-home #umgFooter .umg-footer__main {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  padding: clamp(0.75rem, 2vh, 1.25rem) 0 clamp(0.5rem, 1.5vh, 0.85rem);
+  overflow-y: auto;
+}
+
+body.umg-home #umgFooter .umg-footer__main > .container {
+  width: 100%;
+}
+
+body.umg-home #umgFooter .umg-footer__grid {
+  gap: clamp(0.85rem, 2vh, 1.25rem) 1.25rem;
+}
+
+body.umg-home #umgFooter .umg-footer__logo {
+  width: clamp(72px, 12vh, 100px);
+  height: clamp(72px, 12vh, 100px);
+  padding: 0.5rem;
+}
+
+body.umg-home #umgFooter .umg-footer__tagline {
+  margin: 0.45rem 0 0.5rem;
+  font-size: 0.82rem;
+}
+
+body.umg-home #umgFooter .umg-footer__heading {
+  margin-bottom: 0.35rem;
+  font-size: 0.72rem;
+}
+
+body.umg-home #umgFooter .umg-footer__col,
+body.umg-home #umgFooter .umg-footer__col address,
+body.umg-home #umgFooter .umg-footer__col a {
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+body.umg-home #umgFooter .umg-footer__bottom {
+  flex-shrink: 0;
+  padding: 0.45rem 0;
+}
+
+body.umg-home #umgFooter .umg-footer__bottom p {
+  font-size: 0.72rem;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  body.umg-home #umgFooter .umg-footer__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  body.umg-home .umg-faculties {
+    padding-top: calc(var(--header-h, 80px) + 0.75rem);
+    padding-bottom: 1.25rem;
+  }
+
+  body.umg-home .umg-faculties__header {
+    margin-bottom: 1.25rem;
+  }
+
+  body.umg-home .umg-faculties__grid {
+    gap: 0.85rem;
+  }
+
+  body.umg-home .umg-faculty-card__body {
+    padding: 0.85rem 1rem 1rem;
+  }
+
+  body.umg-home .umg-faculty-card__media {
+    aspect-ratio: 16 / 9;
+  }
+
+  body.umg-home .umg-faculty-card__text {
+    margin-bottom: 0.75rem;
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+
+  body.umg-home .umg-sistemas-landing #contacto.contact-section {
+    padding: 1rem;
+  }
+
+  body.umg-home .umg-sistemas-landing #contacto .section-copy h2 {
+    font-size: 1.35rem !important;
+  }
+
+  body.umg-home #umgFooter .umg-footer__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body.umg-home #umgFooter .umg-footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.umg-home-scroll {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+}
+
 .umg-parallax-hero {
   position: relative;
   isolation: isolate;
