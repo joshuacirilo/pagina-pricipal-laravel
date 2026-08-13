@@ -20,7 +20,7 @@
 
 - Container: `width: min(90%, 1400px); margin-inline: auto`
 - Section padding: `padding-block: clamp(80px, 10vw, 150px)`
-- Rhythm: hero → intro sticky → features numbered → overlay cards → instructors → stats navy → FAQ → (global prefooter)
+- Rhythm: **story sticky stack (6 escenas)** → features cortos → topics cortos → instructors → stats navy → FAQ → (global prefooter)
 
 ## Typography (page-scoped)
 
@@ -28,16 +28,21 @@
 - H2: `clamp(2rem, 3.5vw, 3.25rem)` / line-height ~1.05
 - H3: `clamp(1.25rem, 2vw, 1.75rem)`
 - Body: `clamp(1rem, 1.15vw, 1.125rem)` / 1.65
+- Story titles: Merriweather, large clamp, title-mask reveal
 
 ## Motion
 
-- Reveal: opacity + translateY(20px), 500–700ms
-- Image hover: scale 1.04 / 600ms
+- Story stack (desktop ≥992px): `position: sticky` + GSAP ScrollTrigger `scrub: true`
+- Covered card: scale 1→0.94, opacity 1→0.65, brightness 1→0.75
+- Image parallax: scale 1.12→1, slight translateY
+- Text: translateY(40px)→0 + opacity (title-mask), not fade-only
+- Below story: `.umg-reveal` 500–700ms
 - Buttons: translateY(-2px) 250ms
-- Sticky: one section only (intro), disabled &lt; 992px
-- Respect `prefers-reduced-motion`
+- Respect `prefers-reduced-motion` (no parallax/scale scrub; content fully visible)
 
 ## Avoid
 
-- Card soup, purple gradients, emoji icons, GSAP for fades
-- Replacing UMG fonts/colors with skill defaults (Satoshi, Soft UI, etc.)
+- Card soup, purple gradients, emoji icons, GSAP for standalone fades
+- Startup / gaming / neon looks; Soft UI / Satoshi from Master
+- Replacing UMG fonts/colors with skill defaults
+- Home scroll-snap on this page

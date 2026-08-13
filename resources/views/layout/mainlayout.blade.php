@@ -37,6 +37,11 @@
       href="{{ asset('build/css/umg-sistemas-landing.css') }}?v={{ filemtime(public_path('build/css/umg-sistemas-landing.css')) }}">
 @endif
 
+@if (Route::is(['derecho']))
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-derecho-story.css') }}?v={{ filemtime(public_path('build/css/umg-derecho-story.css')) }}">
+@endif
+
 </head>
 
 @php

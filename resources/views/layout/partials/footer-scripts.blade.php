@@ -113,6 +113,9 @@
 <script src="{{ URL::asset('build/js/umg-sistemas-contact.js') }}?v={{ filemtime(public_path('build/js/umg-sistemas-contact.js')) }}"></script>
 @endif
 @if (Route::is(['derecho']))
+<script src="{{ URL::asset('build/js/vendor/gsap.min.js') }}?v={{ filemtime(public_path('build/js/vendor/gsap.min.js')) }}"></script>
+<script src="{{ URL::asset('build/js/vendor/ScrollTrigger.min.js') }}?v={{ filemtime(public_path('build/js/vendor/ScrollTrigger.min.js')) }}"></script>
+<script src="{{ URL::asset('build/js/umg-derecho-story.js') }}?v={{ filemtime(public_path('build/js/umg-derecho-story.js')) }}"></script>
 <script src="{{ URL::asset('build/js/umg-faculty-derecho.js') }}?v={{ filemtime(public_path('build/js/umg-faculty-derecho.js')) }}"></script>
 @endif
 <script src="{{ URL::asset('build/js/umg-floating-assistant.js') }}?v={{ filemtime(public_path('build/js/umg-floating-assistant.js')) }}"></script>

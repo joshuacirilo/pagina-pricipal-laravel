@@ -120,9 +120,9 @@
     "semantic_hash": "721f6e50bf099e6ca2cc0bce6655aec5"
   },
   "package.json": {
-    "mtime": 1786553547.724671,
-    "ast_hash": "97d24062abb681e80671cbeaf39249eb",
-    "semantic_hash": "97d24062abb681e80671cbeaf39249eb"
+    "mtime": 1786556959.8186946,
+    "ast_hash": "3a2d7048a4aa40b4943f95e16996bf48",
+    "semantic_hash": ""
   },
   "public/index.php": {
     "mtime": 1786408797.0237048,
@@ -1520,8 +1520,8 @@
     "semantic_hash": "9c305bec5b6ef492ec818f9a238462b7"
   },
   "resources/views/grupo74/derecho.blade.php": {
-    "mtime": 1786553548.0279026,
-    "ast_hash": "a8f245cf163900c63747e699f0d919d2",
+    "mtime": 1786557098.1381667,
+    "ast_hash": "bd37d6eecb6cef5c6c5fe768ea5dd530",
     "semantic_hash": ""
   },
   "resources/views/grupo74/detalles-instructor-administracion1.blade.php": {
@@ -1690,13 +1690,13 @@
     "semantic_hash": "f56dbfc41f1c1f35256cbf1d5c709f1d"
   },
   "resources/views/layout/mainlayout.blade.php": {
-    "mtime": 1786554362.5389035,
-    "ast_hash": "8b5dd0569428fd9c5c9b6666128a43e8",
+    "mtime": 1786557112.206823,
+    "ast_hash": "b72cfa714650cbe3a08f303738d2b8d7",
     "semantic_hash": ""
   },
   "resources/views/layout/partials/footer-scripts.blade.php": {
-    "mtime": 1786555415.7743216,
-    "ast_hash": "c5b752557728d199bea82699240cd0cb",
+    "mtime": 1786557112.2990284,
+    "ast_hash": "57a5d58a4ebae0957341d5a5bf4c49fc",
     "semantic_hash": ""
   },
   "resources/views/layout/partials/footer.blade.php": {
@@ -1760,8 +1760,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1786556233.3970852,
-    "ast_hash": "2d53a9a05704608352f375a42975a58d",
+    "mtime": 1786557235.1371863,
+    "ast_hash": "561770f4de760de3c8cd0a918a1823da",
     "semantic_hash": ""
   },
   "public/robots.txt": {
@@ -6950,8 +6950,8 @@
     "semantic_hash": ""
   },
   "resources/views/components/umg-derecho-features.blade.php": {
-    "mtime": 1786553548.012497,
-    "ast_hash": "3014d5260be09a824830ca7355e6a1b0",
+    "mtime": 1786557104.7059205,
+    "ast_hash": "8e42ea98f17b677d263354e58dfab3c3",
     "semantic_hash": ""
   },
   "resources/views/components/umg-derecho-hero.blade.php": {
@@ -6975,8 +6975,8 @@
     "semantic_hash": ""
   },
   "resources/views/components/umg-derecho-topics.blade.php": {
-    "mtime": 1786553548.0202155,
-    "ast_hash": "b4a39c2e872a6b3bcfee78c471e084b6",
+    "mtime": 1786557109.027617,
+    "ast_hash": "cc48d2cfb42a19623bc01c7fb1ca0489",
     "semantic_hash": ""
   },
   "resources/views/components/umg-floating-assistant.blade.php": {
@@ -6995,8 +6995,8 @@
     "semantic_hash": ""
   },
   "design-system/umg-derecho/pages/derecho.md": {
-    "mtime": 1786553547.682721,
-    "ast_hash": "cecdff378ded14e86934e087dca728f4",
+    "mtime": 1786556940.9366748,
+    "ast_hash": "d05ae5b895756b0099564e3abf4d720c",
     "semantic_hash": ""
   },
   "public/images/hero-umg.png": {
@@ -7027,6 +7027,26 @@
   "config/umg-faculties.php": {
     "mtime": 1786553547.6793454,
     "ast_hash": "6ec3d7eb3b3bc60132729477056ac022",
+    "semantic_hash": ""
+  },
+  "config/umg-derecho-story.php": {
+    "mtime": 1786557552.4568193,
+    "ast_hash": "3b6a20da1a412b8761621d748d70482a",
+    "semantic_hash": ""
+  },
+  "resources/js/animations/umg-derecho-story.js": {
+    "mtime": 1786557571.3565738,
+    "ast_hash": "5411f6d7af3a9d3761afdd8ddea25fda",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-derecho-story-card.blade.php": {
+    "mtime": 1786557346.7115514,
+    "ast_hash": "824be1e0cba9b7e26678f11ce100cee2",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-derecho-story.blade.php": {
+    "mtime": 1786556998.6290452,
+    "ast_hash": "e1bfe3ceb7bd85e99c40f3e1c6d9f81b",
     "semantic_hash": ""
   }
 }

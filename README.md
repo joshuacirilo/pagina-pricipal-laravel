@@ -18,6 +18,13 @@ Este README es la fuente de contexto para que un agente de IA continúe el traba
 - No commitear ni pushear salvo pedido explícito.
 - Antes de explorar código: `graphify query "..."` (grafo en `graphify-out/`). Tras editar: `graphify update .`.
 
+### Derecho — sticky scroll story (hecho)
+
+1. Hero + intro de Derecho **reemplazados** por `<x-umg-derecho-story />` (6 escenas sticky + GSAP scrub).
+2. Features y topics **acortados**.
+3. GSAP local en `public/build/js/vendor/` (npm `gsap`, sin CDN).
+4. Ver sección «Derecho — scroll story» más abajo.
+
 ### Qué se hizo en esta línea de trabajo (home / admisión)
 
 1. Se quitaron del home bloques LMS: coordinador, egresados, eventos, frases, noticias, métricas rotas y el bloque `share-knowledge` («¿Por qué estudiar…?»).
@@ -216,7 +223,17 @@ Footer interno de la landing Astro **eliminado** (evita doble footer).
 
 Vistas en `resources/views/grupo73|74|75/*.blade.php`. Derecho tiene design system y componentes legacy (`umg-derecho-*`, `umg-faculty-derecho.js` con su propio `.umg-reveal`).
 
-No reintroducir sin pedido: experimentos del agente fallido (`umg-faculty-landing`, `umg-law-story`, `umg-derecho-story.*` genéricos no pedidos).
+### Derecho — scroll story (2026-08-12)
+
+- Ruta: `/grupo74/derecho` (`derecho`).
+- Apertura: `<x-umg-derecho-story />` (6 escenas sticky) **reemplaza** hero + intro.
+- Datos: `config/umg-derecho-story.php`.
+- CSS: `public/build/css/umg-derecho-story.css` (solo ruta `derecho`).
+- JS: GSAP vendor `public/build/js/vendor/{gsap,ScrollTrigger}.min.js` + `umg-derecho-story.js` (scrub). Fuente espejo: `resources/js/animations/umg-derecho-story.js`.
+- Dependencia npm: `gsap` (copiar dist a vendor si se actualiza).
+- Features/topics: acortados debajo del story.
+- Design system: `design-system/umg-derecho/pages/derecho.md` (tokens UMG; no purple Soft UI).
+- No reintroducir sin pedido: `umg-faculty-landing`, `umg-law-story` genéricos fallidos.
 
 ---
 
@@ -236,13 +253,14 @@ No reintroducir sin pedido: experimentos del agente fallido (`umg-faculty-landin
 3. UI: skill UI UX Pro Max + `--stack laravel`; tokens UMG; no React.
 4. **No romper** scroll-snap del home ni el split 60/40 contacto/footer sin pedirlo.
 5. **No reintroducir** secciones LMS quitadas ni el pre-footer en home.
-6. **No instalar** paquetes/CDN de animaciones de terceros salvo pedido explícito; el motion del home ya es propio.
+6. **No instalar** paquetes/CDN de animaciones de terceros en el **home** salvo pedido; el home usa motion propio. Derecho usa GSAP local (vendor) para el story.
 7. Trabajo pendiente típico (confirmar con el usuario):
    - Backend del formulario: tipar email vs WhatsApp, validación, notificaciones.
    - Pulir tipografía/espaciado móvil del scroll (facultades 6 cards pueden desbordar 100dvh).
-   - Rediseñar landings de otras facultades (Derecho ya tiene design system).
+   - Afinar scrub / copy / fotos del story de Derecho; no reescribir desde cero.
+   - Rediseñar landings de otras facultades.
    - Opcional: renombrar mentalmente/componentes `umg-sistemas-*` a `umg-admision-*` (hoy el nombre es legado).
-   - Si pide más motion: afinar delays en `body.umg-home` / `umg-home-motion.js`, no reescribir desde cero.
+   - Si pide más motion en home: afinar delays en `body.umg-home` / `umg-home-motion.js`.
 8. Tras editar: `graphify update .`
 9. No commit/push salvo pedido.
 10. Si la página “desaparece”: primero autoload + `git status` de imágenes; si falta contenido del home, mirar `.umg-reveal` sin `.is-visible` / JS motion; no reescribir la home desde cero.
