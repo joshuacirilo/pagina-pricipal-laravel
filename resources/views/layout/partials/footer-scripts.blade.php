@@ -119,6 +119,27 @@
 <script src="{{ URL::asset('build/js/umg-derecho-pensum.js') }}?v={{ filemtime(public_path('build/js/umg-derecho-pensum.js')) }}"></script>
 <script src="{{ URL::asset('build/js/umg-faculty-derecho.js') }}?v={{ filemtime(public_path('build/js/umg-faculty-derecho.js')) }}"></script>
 @endif
+@if (Route::is(['administracion']))
+<script src="{{ URL::asset('build/js/vendor/gsap.min.js') }}?v={{ filemtime(public_path('build/js/vendor/gsap.min.js')) }}"></script>
+<script src="{{ URL::asset('build/js/vendor/ScrollTrigger.min.js') }}?v={{ filemtime(public_path('build/js/vendor/ScrollTrigger.min.js')) }}"></script>
+<script src="{{ URL::asset('build/js/umg-administracion-story.js') }}?v={{ filemtime(public_path('build/js/umg-administracion-story.js')) }}"></script>
+<script src="{{ URL::asset('build/js/umg-administracion-pensum.js') }}?v={{ filemtime(public_path('build/js/umg-administracion-pensum.js')) }}"></script>
+<script src="{{ URL::asset('build/js/umg-faculty-administracion.js') }}?v={{ filemtime(public_path('build/js/umg-faculty-administracion.js')) }}"></script>
+@endif
+@if (Route::is(['auditoria']))
+<script src="{{ URL::asset('build/js/vendor/gsap.min.js') }}?v={{ filemtime(public_path('build/js/vendor/gsap.min.js')) }}"></script>
+<script src="{{ URL::asset('build/js/vendor/ScrollTrigger.min.js') }}?v={{ filemtime(public_path('build/js/vendor/ScrollTrigger.min.js')) }}"></script>
+<script src="{{ URL::asset('build/js/umg-auditoria-story.js') }}?v={{ filemtime(public_path('build/js/umg-auditoria-story.js')) }}"></script>
+<script src="{{ URL::asset('build/js/umg-auditoria-pensum.js') }}?v={{ filemtime(public_path('build/js/umg-auditoria-pensum.js')) }}"></script>
+<script src="{{ URL::asset('build/js/umg-faculty-auditoria.js') }}?v={{ filemtime(public_path('build/js/umg-faculty-auditoria.js')) }}"></script>
+@endif
+@if (Route::is(['criminologia']))
+<script src="{{ URL::asset('build/js/vendor/gsap.min.js') }}?v={{ filemtime(public_path('build/js/vendor/gsap.min.js')) }}"></script>
+<script src="{{ URL::asset('build/js/vendor/ScrollTrigger.min.js') }}?v={{ filemtime(public_path('build/js/vendor/ScrollTrigger.min.js')) }}"></script>
+<script src="{{ URL::asset('build/js/umg-criminologia-story.js') }}?v={{ filemtime(public_path('build/js/umg-criminologia-story.js')) }}"></script>
+<script src="{{ URL::asset('build/js/umg-criminologia-pensum.js') }}?v={{ filemtime(public_path('build/js/umg-criminologia-pensum.js')) }}"></script>
+<script src="{{ URL::asset('build/js/umg-faculty-criminologia.js') }}?v={{ filemtime(public_path('build/js/umg-faculty-criminologia.js')) }}"></script>
+@endif
 <script src="{{ URL::asset('build/js/umg-floating-assistant.js') }}?v={{ filemtime(public_path('build/js/umg-floating-assistant.js')) }}"></script>
 <script>
 (function(){

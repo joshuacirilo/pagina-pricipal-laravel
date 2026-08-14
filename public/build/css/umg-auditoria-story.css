@@ -1,0 +1,447 @@
+/* UMG Administración â€” Sticky scroll story (scoped).
+   Opaque sticky cards cover previous scenes (no text stacking).
+   Color overrides beat .umg-faculty headings and paragraphs. */
+
+.umg-auditoria-story {
+  --story-navy: #0b2a52;
+  --story-navy-deep: #071a33;
+  --story-navy-mid: #1a3f73;
+  --story-gold: #c6a256;
+  --story-gold-bright: #e2c57a;
+  --story-red: #aa1e23;
+  --story-title: #ffffff;
+  --story-body: #eef3f9;
+  --story-muted: #c5d0de;
+  --story-radius: 12px;
+  position: relative;
+  background: #0b2a52 !important;
+  color: #eef3f9;
+  isolation: isolate;
+}
+
+.umg-auditoria-story__stack {
+  position: relative;
+  background: #0b2a52;
+}
+
+.umg-auditoria-story__card {
+  position: relative;
+  z-index: var(--story-z, 1);
+  height: 100vh;
+  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
+  /* Solid fill required: sticky cards must fully cover the previous scene */
+  background: #0b2a52 !important;
+  box-shadow: 0 -1px 0 #0b2a52;
+  isolation: isolate;
+}
+
+@media (min-width: 992px) {
+  .umg-auditoria-story__card {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+}
+
+.umg-auditoria-story__card-inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(38vh, 46vh) minmax(0, 1fr);
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  background: #0b2a52 !important;
+  transform: none;
+}
+
+@media (min-width: 992px) {
+  .umg-auditoria-story__card-inner {
+    grid-template-columns: minmax(0, 1.35fr) minmax(22rem, 0.95fr);
+    grid-template-rows: 1fr;
+  }
+}
+
+@media (min-width: 1440px) {
+  .umg-auditoria-story__card-inner {
+    grid-template-columns: minmax(0, 1.4fr) minmax(24rem, 0.9fr);
+  }
+}
+
+/* ---- Media ---- */
+.umg-auditoria-story__media {
+  position: relative;
+  min-height: 38vh;
+  overflow: hidden;
+  background: var(--story-navy-deep);
+}
+
+@media (min-width: 992px) {
+  .umg-auditoria-story__media {
+    min-height: 100%;
+    height: 100%;
+  }
+}
+
+.umg-auditoria-story__img {
+  position: absolute !important;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: cover !important;
+  object-position: var(--story-object-pos, center center) !important;
+  display: block;
+  transform: scale(1.06);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.umg-auditoria-story__scrim {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background: linear-gradient(90deg, transparent 78%, rgba(11, 42, 82, 0.55) 100%);
+}
+
+.umg-auditoria-story__dim {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: rgba(7, 26, 51, 0);
+  transition: none;
+}
+
+@media (max-width: 991.98px) {
+  .umg-auditoria-story__scrim {
+    background: linear-gradient(180deg, transparent 55%, rgba(11, 42, 82, 0.72) 100%);
+  }
+}
+
+/* ---- Panel editorial (contraste forzado vs .umg-faculty) ---- */
+.umg-auditoria-story__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  gap: 0.85rem;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: clamp(1.5rem, 4vw, 3rem) clamp(1.25rem, 3.8vw, 3.25rem);
+  background: linear-gradient(165deg, #12345f 0%, #0b2a52 42%, #081f3d 100%) !important;
+  color: #eef3f9 !important;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+@media (min-width: 992px) {
+  .umg-auditoria-story__content {
+    padding: clamp(2.25rem, 4.5vw, 4.25rem) clamp(1.85rem, 3.4vw, 3.5rem);
+    border-left: 1px solid rgba(198, 162, 86, 0.38);
+  }
+}
+
+.umg-auditoria-story .umg-auditoria-story__eyebrow,
+.umg-faculty .umg-auditoria-story .umg-auditoria-story__eyebrow {
+  margin: 0 0 0.15rem;
+  font-family: var(--umg-font-sans, Montserrat, sans-serif) !important;
+  font-size: 0.68rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+  line-height: 1.35 !important;
+  color: var(--story-gold-bright) !important;
+}
+
+.umg-auditoria-story__head {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem 1rem;
+}
+
+.umg-auditoria-story .umg-auditoria-story__num {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.65rem;
+  height: 2.65rem;
+  margin-top: 0.15rem;
+  border: 1.5px solid var(--story-gold);
+  border-radius: 3px;
+  color: var(--story-gold-bright) !important;
+  background: rgba(198, 162, 86, 0.08);
+  font-family: var(--umg-font-sans, Montserrat, sans-serif) !important;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.06em;
+  line-height: 1;
+}
+
+.umg-auditoria-story__title-mask {
+  overflow: hidden;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+/* Specificity > .umg-faculty h1/h2 */
+.umg-faculty .umg-auditoria-story h1.umg-auditoria-story__title,
+.umg-faculty .umg-auditoria-story h2.umg-auditoria-story__title,
+.umg-auditoria-story .umg-auditoria-story__title {
+  margin: 0 !important;
+  font-family: var(--umg-font-display, Merriweather, Georgia, serif) !important;
+  font-size: clamp(1.45rem, 2.4vw, 2.35rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.18 !important;
+  letter-spacing: -0.015em !important;
+  text-transform: none !important;
+  color: #ffffff !important;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  opacity: 1 !important;
+}
+
+.umg-auditoria-story__desc-mask {
+  overflow: hidden;
+}
+
+.umg-faculty .umg-auditoria-story p.umg-auditoria-story__desc,
+.umg-auditoria-story .umg-auditoria-story__desc {
+  margin: 0 !important;
+  max-width: 34rem;
+  font-family: var(--umg-font-sans, Montserrat, sans-serif) !important;
+  font-size: clamp(0.95rem, 1.05vw, 1.08rem) !important;
+  font-weight: 500 !important;
+  line-height: 1.65 !important;
+  color: #eef3f9 !important;
+  list-style: none;
+  margin: 0.15rem 0 0;
+  padding: 0 0 0 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  border-left: 2px solid rgba(198, 162, 86, 0.55);
+}
+
+.umg-auditoria-story .umg-auditoria-story__word {
+  font-family: var(--umg-font-sans, Montserrat, sans-serif) !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--story-gold-bright) !important;
+  opacity: 1;
+  transform: none;
+}
+
+.umg-auditoria-story__points {
+  list-style: none;
+  margin: 0.35rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  max-width: 34rem;
+}
+
+.umg-auditoria-story__point {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  font-family: var(--umg-font-sans, Montserrat, sans-serif) !important;
+  font-size: clamp(0.9rem, 1vw, 1rem) !important;
+  font-weight: 500 !important;
+  line-height: 1.45 !important;
+  color: #ffffff !important;
+}
+
+.umg-auditoria-story__point-mark {
+  flex: 0 0 auto;
+  width: 0.55rem;
+  height: 0.55rem;
+  margin-top: 0.4rem;
+  border-radius: 1px;
+  background: var(--story-gold);
+  box-shadow: 0 0 0 3px rgba(198, 162, 86, 0.18);
+}
+
+.umg-auditoria-story__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.55rem;
+}
+
+.umg-auditoria-story__cta {
+  cursor: pointer;
+}
+
+.umg-auditoria-story__ctas .umg-faculty-btn-ghost {
+  border-color: rgba(226, 197, 122, 0.75) !important;
+  color: #fff !important;
+  background: transparent;
+}
+
+.umg-auditoria-story__ctas .umg-faculty-btn-ghost:hover,
+.umg-auditoria-story__ctas .umg-faculty-btn-ghost:focus-visible {
+  background: rgba(198, 162, 86, 0.16);
+  border-color: var(--story-gold-bright) !important;
+  color: var(--story-gold-bright) !important;
+}
+
+.umg-auditoria-story__ctas .umg-hero-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Progress rail */
+.umg-auditoria-story__progress {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .umg-auditoria-story__progress {
+    position: fixed;
+    top: 50%;
+    left: clamp(0.5rem, 1.5vw, 1.15rem);
+    z-index: 40;
+    transform: translateY(-50%);
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .umg-auditoria-story.is-inview .umg-auditoria-story__progress {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .umg-auditoria-story__progress-list {
+    list-style: none;
+    margin: 0;
+    padding: 0.65rem 0.55rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    background: rgba(11, 42, 82, 0.88);
+    border: 1px solid rgba(198, 162, 86, 0.32);
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+  }
+
+  .umg-auditoria-story__progress-btn {
+    display: grid;
+    grid-template-columns: auto 22px auto;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.2rem 0;
+    border: 0;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: var(--umg-font-sans, Montserrat, sans-serif);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.25s ease;
+  }
+
+  .umg-auditoria-story__progress-btn:hover,
+  .umg-auditoria-story__progress-btn:focus-visible {
+    color: #fff;
+    outline: none;
+  }
+
+  .umg-auditoria-story__progress-btn:focus-visible .umg-auditoria-story__progress-bar {
+    box-shadow: 0 0 0 2px rgba(198, 162, 86, 0.8);
+  }
+
+  .umg-auditoria-story__progress-bar {
+    display: block;
+    height: 2px;
+    width: 22px;
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 2px;
+    transition: background-color 0.25s ease, width 0.25s ease;
+  }
+
+  .umg-auditoria-story__progress-btn.is-active {
+    color: var(--story-gold-bright);
+  }
+
+  .umg-auditoria-story__progress-btn.is-active .umg-auditoria-story__progress-bar {
+    width: 34px;
+    background: var(--story-gold);
+  }
+
+  .umg-auditoria-story__progress-label {
+    max-width: 6.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .umg-auditoria-story__img {
+    transform: none !important;
+  }
+
+  .umg-auditoria-story__card-inner {
+    transform: none !important;
+    opacity: 1 !important;
+    filter: none !important;
+  }
+
+  .umg-auditoria-story__cta,
+  .umg-auditoria-story__ctas .umg-hero-btn:hover,
+  .umg-auditoria-story__progress-btn {
+    transition: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .umg-auditoria-story__card {
+    height: auto;
+    min-height: auto;
+  }
+
+  .umg-auditoria-story__card-inner {
+    height: auto;
+    min-height: min(94vh, 900px);
+    grid-template-rows: minmax(36vh, 46vh) auto;
+  }
+
+  .umg-auditoria-story__img {
+    transform: scale(1.03);
+  }
+
+  .umg-faculty .umg-auditoria-story h1.umg-auditoria-story__title,
+  .umg-faculty .umg-auditoria-story h2.umg-auditoria-story__title,
+  .umg-auditoria-story .umg-auditoria-story__title {
+    font-size: clamp(1.35rem, 5.5vw, 1.85rem) !important;
+  }
+}
+
+@media (max-width: 374.98px) {
+  .umg-auditoria-story__content {
+    padding: 1.25rem 1.05rem 1.5rem;
+    gap: 0.7rem;
+  }
+
+  .umg-auditoria-story .umg-auditoria-story__num {
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+}

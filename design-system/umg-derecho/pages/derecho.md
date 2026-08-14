@@ -19,11 +19,11 @@
 ## Layout
 
 - Container: `width: min(90%, 1400px); margin-inline: auto`
-- Section padding: `padding-block: clamp(80px, 10vw, 150px)` (story); post-story usa pantallas `calc(100dvh - header)` centradas vía `umg-derecho-page.css` (sin scroll-snap del home)
-- Rhythm: **story sticky stack (5 escenas)** → banda pensum 90% + stats 10% (1 viewport) → FAQ (1 viewport) → (global prefooter)
-- Pensum: mock de 5 ciclos en abanico (desktop) / lista (móvil). Tokens UMG. Instructors component/routes se conservan pero no se renderizan en la página.
-- Story layout: foto ~55–58% | panel navy ~42–45%. Número oro + título blanco Merriweather. Body y bullets claros (≥4.5:1). Sin sections features/topics.
-- Contraste: overrides `.umg-faculty h1/h2/p` con selectores más específicos + `!important` en colores del story.
+- Section padding: story full-bleed; post-story vía `umg-derecho-page.css` (banda 90/10 + FAQ viewport; sin scroll-snap)
+- Rhythm: **story sticky stack (5 escenas)** → banda pensum 90% + stats 10% → FAQ → (global prefooter)
+- Pensum: mock 5 ciclos × 2 semestres, abanico interactivo. Instructors conservados en disco, no en página.
+- Story: sticky `top: 0` / `100dvh` (full-bleed bajo header). Foto | panel navy. Contraste con overrides `!important`.
+- FAQ: acordeones numerados + imagen centrada verticalmente + CTA admisiones.
 
 ## Typography (page-scoped)
 
@@ -36,8 +36,9 @@
 
 ## Motion
 
-- Story stack (desktop ≥992px): `position: sticky` + GSAP ScrollTrigger `scrub: true`
+- Story stack (desktop ≥992px): `position: sticky; top: 0; height: 100dvh` + GSAP ScrollTrigger `scrub: true` (full-bleed bajo header fijo)
 - Cover entre escenas: **solo** velo en `[data-story-dim]` sobre la foto. Prohibido `scale`/`opacity`/`filter` en `.umg-derecho-story__card-inner`
+- No scroll-snap de página (rompe scrub)
 - Image parallax: scale suave en la foto, slight translateY
 - Text: translateY suave, siempre `opacity: 1` (legible)
 - Below story: `.umg-reveal` 500–700ms

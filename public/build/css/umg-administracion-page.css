@@ -1,0 +1,176 @@
+/* UMG Administraci�n — pantallas post-story (patrón home 100dvh, sin scroll-snap) */
+
+/* Banda: pensum 90% + stats 10% en una sola pantalla */
+body.umg-faculty-page .umg-administracion-band {
+  min-height: calc(100vh - var(--header-h, 72px));
+  min-height: calc(100dvh - var(--header-h, 72px));
+  height: calc(100vh - var(--header-h, 72px));
+  height: calc(100dvh - var(--header-h, 72px));
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  scroll-margin-top: var(--header-h, 72px);
+  overflow: hidden;
+}
+
+body.umg-faculty-page .umg-administracion-band .umg-administracion-pensum {
+  flex: 0 0 90%;
+  height: 90%;
+  max-height: 90%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-block: clamp(0.75rem, 2vh, 1.75rem);
+  overflow: hidden;
+}
+
+body.umg-faculty-page .umg-administracion-band .umg-faculty-stats {
+  flex: 0 0 10%;
+  height: 10%;
+  max-height: 10%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-block: 0.35rem !important;
+  overflow: hidden;
+}
+
+body.umg-faculty-page .umg-administracion-band .umg-administracion-pensum > .umg-faculty-wrap,
+body.umg-faculty-page .umg-administracion-band .umg-faculty-stats > .umg-faculty-wrap {
+  width: 100%;
+  max-height: 100%;
+}
+
+body.umg-faculty-page .umg-administracion-band .umg-faculty-stats__grid {
+  width: 100%;
+  align-items: center;
+  gap: 0.35rem 1rem;
+}
+
+body.umg-faculty-page .umg-administracion-band .umg-faculty-stat__value {
+  font-size: clamp(1.15rem, 2.8vh, 1.75rem) !important;
+  margin-bottom: 0.15rem !important;
+}
+
+body.umg-faculty-page .umg-administracion-band .umg-faculty-stat__label {
+  font-size: clamp(0.58rem, 1.2vh, 0.72rem) !important;
+  letter-spacing: 0.06em;
+}
+
+/* FAQ sigue siendo una pantalla completa */
+body.umg-faculty-page .umg-administracion-faq {
+  min-height: calc(100vh - var(--header-h, 72px));
+  min-height: calc(100dvh - var(--header-h, 72px));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  scroll-margin-top: var(--header-h, 72px);
+  padding-block: clamp(1.25rem, 4vh, 3.5rem);
+}
+
+body.umg-faculty-page .umg-administracion-faq > .umg-faculty-wrap,
+body.umg-faculty-page .umg-administracion-faq > .umg-administracion-faq__grid {
+  width: 100%;
+}
+
+/* Densificar pensum dentro del 90% */
+body.umg-faculty-page .umg-administracion-band .umg-administracion-pensum .umg-faculty-section-head {
+  margin-bottom: clamp(0.5rem, 1.5vh, 1.25rem);
+}
+
+body.umg-faculty-page .umg-administracion-band .umg-administracion-pensum__lead {
+  margin-top: 0.45rem;
+  font-size: clamp(0.92rem, 1.4vh, 1.05rem);
+}
+
+body.umg-faculty-page .umg-administracion-band .umg-administracion-pensum__stage {
+  margin-top: clamp(0.75rem, 2vh, 1.5rem);
+  gap: clamp(0.75rem, 2vh, 1.5rem);
+}
+
+@media (min-width: 992px) {
+  body.umg-faculty-page .umg-administracion-band .umg-administracion-pensum__fan {
+    height: clamp(14rem, 38vh, 24rem);
+  }
+
+  body.umg-faculty-page .umg-administracion-band .umg-administracion-pensum__card {
+    min-height: clamp(8.5rem, 22vh, 11rem);
+  }
+}
+
+@media (max-width: 991.98px) {
+  body.umg-faculty-page .umg-administracion-band {
+    height: auto;
+    min-height: calc(100dvh - var(--header-h, 72px));
+    overflow: visible;
+  }
+
+  body.umg-faculty-page .umg-administracion-band .umg-administracion-pensum {
+    flex: 1 1 auto;
+    height: auto;
+    max-height: none;
+    min-height: 75dvh;
+    overflow: visible;
+    padding-block: clamp(1.25rem, 3vh, 2rem);
+  }
+
+  body.umg-faculty-page .umg-administracion-band .umg-faculty-stats {
+    flex: 0 0 auto;
+    height: auto;
+    max-height: none;
+    min-height: 12dvh;
+    padding-block: 0.75rem !important;
+  }
+
+  body.umg-faculty-page .umg-administracion-faq {
+    justify-content: flex-start;
+    padding-block: clamp(1.5rem, 4vh, 2.5rem);
+  }
+}
+
+@media (max-height: 820px) and (min-width: 992px) {
+  body.umg-faculty-page .umg-administracion-band .umg-administracion-pensum__stage {
+    margin-top: 0.65rem;
+    gap: 1rem;
+  }
+
+  body.umg-faculty-page .umg-administracion-band .umg-administracion-pensum__fan {
+    height: clamp(12rem, 34vh, 18rem);
+  }
+
+  body.umg-faculty-page .umg-administracion-band .umg-administracion-pensum__card {
+    min-height: 8rem;
+    width: min(12.5rem, 38%);
+    padding: 0.85rem 0.9rem;
+  }
+
+  body.umg-faculty-page .umg-administracion-faq__figure img {
+    height: min(58vh, 520px);
+  }
+
+  body.umg-faculty-page .umg-administracion-faq__btn.accordion-button {
+    padding: 0.85rem 1rem !important;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-height: 700px) {
+  body.umg-faculty-page .umg-administracion-band,
+  body.umg-faculty-page .umg-administracion-faq {
+    height: auto;
+    min-height: auto;
+    overflow: visible;
+  }
+
+  body.umg-faculty-page .umg-administracion-band .umg-administracion-pensum,
+  body.umg-faculty-page .umg-administracion-band .umg-faculty-stats {
+    height: auto;
+    max-height: none;
+    flex: 0 0 auto;
+  }
+}

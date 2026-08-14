@@ -48,6 +48,39 @@
       href="{{ asset('build/css/umg-derecho-page.css') }}?v={{ filemtime(public_path('build/css/umg-derecho-page.css')) }}">
 @endif
 
+@if (Route::is(['administracion']))
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-administracion-story.css') }}?v={{ filemtime(public_path('build/css/umg-administracion-story.css')) }}">
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-administracion-pensum.css') }}?v={{ filemtime(public_path('build/css/umg-administracion-pensum.css')) }}">
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-administracion-faq.css') }}?v={{ filemtime(public_path('build/css/umg-administracion-faq.css')) }}">
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-administracion-page.css') }}?v={{ filemtime(public_path('build/css/umg-administracion-page.css')) }}">
+@endif
+
+@if (Route::is(['auditoria']))
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-auditoria-story.css') }}?v={{ filemtime(public_path('build/css/umg-auditoria-story.css')) }}">
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-auditoria-pensum.css') }}?v={{ filemtime(public_path('build/css/umg-auditoria-pensum.css')) }}">
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-auditoria-faq.css') }}?v={{ filemtime(public_path('build/css/umg-auditoria-faq.css')) }}">
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-auditoria-page.css') }}?v={{ filemtime(public_path('build/css/umg-auditoria-page.css')) }}">
+@endif
+
+@if (Route::is(['criminologia']))
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-criminologia-story.css') }}?v={{ filemtime(public_path('build/css/umg-criminologia-story.css')) }}">
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-criminologia-pensum.css') }}?v={{ filemtime(public_path('build/css/umg-criminologia-pensum.css')) }}">
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-criminologia-faq.css') }}?v={{ filemtime(public_path('build/css/umg-criminologia-faq.css')) }}">
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-criminologia-page.css') }}?v={{ filemtime(public_path('build/css/umg-criminologia-page.css')) }}">
+@endif
+
 </head>
 
 @php
@@ -55,7 +88,7 @@
   $bodyClass = '';
   if (Route::is(['index-3'])) {
       $bodyClass = 'umg-home';
-  } elseif (Route::is(['derecho'])) {
+  } elseif (Route::is(['derecho', 'administracion', 'auditoria', 'criminologia'])) {
       $bodyClass = 'umg-faculty-page';
   } elseif (Route::is(['index-5','index-6'])) {
       $bodyClass = 'home-five';

@@ -17,6 +17,7 @@ class StoreLeadRequest extends FormRequest
     {
         return [
             'nombre' => ['required', 'string', 'max:120'],
+            'contacto_tipo' => ['nullable', 'in:email,whatsapp,celular'],
             'contacto' => ['required', 'string', 'max:160'],
             'interes' => ['required', 'in:inscripcion,informacion,evento'],
             'website' => ['nullable', 'max:0'],
@@ -27,7 +28,7 @@ class StoreLeadRequest extends FormRequest
     {
         return [
             'nombre.required' => 'Indicá tu nombre completo.',
-            'contacto.required' => 'Indicá un correo o WhatsApp.',
+            'contacto.required' => 'Indicá un correo, WhatsApp o celular.',
             'interes.required' => 'Seleccioná un interés.',
             'interes.in' => 'El interés seleccionado no es válido.',
             'website.max' => 'No se pudo enviar el formulario.',

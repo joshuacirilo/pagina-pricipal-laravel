@@ -1,5 +1,6 @@
 @php
     $countdownDeadline = config('services.countdown_deadline');
+    $web3formsKey = config('services.web3forms.key');
 @endphp
 
 <div class="umg-sistemas-landing" id="sistemas-landing">
@@ -174,7 +175,11 @@
         <section id="contacto" class="section section-light contact-section">
             @php
                 $contactoOld = old('contacto', '');
-                $contactoCanal = str_contains($contactoOld, '@') ? 'email' : (strlen($contactoOld) > 0 ? 'whatsapp' : 'email');
+                $contactoTipoOld = old('contacto_tipo');
+                $contactoCanales = ['email', 'whatsapp', 'celular'];
+                $contactoCanal = in_array($contactoTipoOld, $contactoCanales, true)
+                    ? $contactoTipoOld
+                    : (str_contains($contactoOld, '@') ? 'email' : (strlen($contactoOld) > 0 ? 'whatsapp' : 'email'));
             @endphp
 
             <div class="contact-section__inner">
@@ -182,11 +187,23 @@
                     <h2>Pedí información o iniciá tu inscripción hoy.</h2>
                 </div>
 
-                @if (session('status'))
-                    <p class="contact-status" role="status">{{ session('status') }}</p>
-                @endif
+                <p
+                    class="contact-status{{ session('status') ? '' : ' is-hidden' }}"
+                    data-contact-status
+                    role="status"
+                    @if (! session('status')) hidden @endif
+                >{{ session('status') }}</p>
 
-                <form class="contact-form contact-form--linear umg-reveal" method="POST" action="{{ route('contacto.store') }}" novalidate data-contact-form>
+                <form
+                    class="contact-form contact-form--linear umg-reveal"
+                    method="POST"
+                    action="{{ route('contacto.store') }}"
+                    novalidate
+                    data-contact-form
+                    @if ($web3formsKey !== '')
+                        data-web3forms-key="{{ $web3formsKey }}"
+                    @endif
+                >
                     @csrf
 
                     <div class="honeypot" aria-hidden="true">
@@ -213,8 +230,8 @@
                     </label>
 
                     <fieldset class="contact-channel">
-                        <legend>¿Cómo te contactamos?</legend>
-                        <div class="contact-channel__toggle" role="radiogroup" aria-label="Canal de contacto">
+                        <legend>Medio de comunicación</legend>
+                        <div class="contact-channel__toggle" role="radiogroup" aria-label="Medio de comunicación">
                             <label class="contact-channel__option">
                                 <input
                                     type="radio"
@@ -239,6 +256,18 @@
                                     WhatsApp
                                 </span>
                             </label>
+                            <label class="contact-channel__option">
+                                <input
+                                    type="radio"
+                                    name="contacto_tipo"
+                                    value="celular"
+                                    @checked($contactoCanal === 'celular')
+                                />
+                                <span class="contact-channel__label">
+                                    <svg class="contact-channel__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+                                    Celular
+                                </span>
+                            </label>
                         </div>
                     </fieldset>
 
@@ -246,12 +275,11 @@
                         <span>Correo electrónico</span>
                         <input
                             type="email"
-                            name="contacto"
                             value="{{ $contactoCanal === 'email' ? $contactoOld : '' }}"
                             placeholder="tu@correo.com"
                             maxlength="160"
                             autocomplete="email"
-                            @if($contactoCanal === 'email') required @endif
+                            @if($contactoCanal === 'email') name="contacto" required @endif
                             aria-invalid="{{ $errors->has('contacto') ? 'true' : 'false' }}"
                         />
                     </label>
@@ -260,13 +288,26 @@
                         <span>Número de WhatsApp</span>
                         <input
                             type="tel"
-                            data-contacto-alt
                             value="{{ $contactoCanal === 'whatsapp' ? $contactoOld : '' }}"
                             placeholder="+502 0000 0000"
                             maxlength="160"
                             autocomplete="tel"
                             inputmode="tel"
                             @if($contactoCanal === 'whatsapp') name="contacto" required @endif
+                            aria-invalid="{{ $errors->has('contacto') ? 'true' : 'false' }}"
+                        />
+                    </label>
+
+                    <label class="contact-form__field contact-channel__field" data-channel-field="celular" @if($contactoCanal !== 'celular') hidden @endif>
+                        <span>Número de celular</span>
+                        <input
+                            type="tel"
+                            value="{{ $contactoCanal === 'celular' ? $contactoOld : '' }}"
+                            placeholder="+502 0000 0000"
+                            maxlength="160"
+                            autocomplete="tel"
+                            inputmode="tel"
+                            @if($contactoCanal === 'celular') name="contacto" required @endif
                             aria-invalid="{{ $errors->has('contacto') ? 'true' : 'false' }}"
                         />
                     </label>

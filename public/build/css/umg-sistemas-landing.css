@@ -652,9 +652,11 @@
 }
 
 .umg-sistemas-landing .contact-channel {
+  display: block !important;
   margin: 0;
   padding: 0;
   border: 0;
+  min-width: 0;
 }
 
 .umg-sistemas-landing .contact-channel legend {
@@ -670,7 +672,7 @@
 
 .umg-sistemas-landing .contact-channel__toggle {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.65rem;
 }
 
@@ -778,6 +780,22 @@
   font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.umg-sistemas-landing .contact-status.is-hidden,
+.umg-sistemas-landing .contact-status[hidden] {
+  display: none;
+}
+
+.umg-sistemas-landing .contact-status--error {
+  border-color: rgba(185, 28, 28, 0.35);
+  background: rgba(185, 28, 28, 0.08);
+  color: #7f1d1d;
+}
+
+.umg-sistemas-landing .contact-form__submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .umg-sistemas-landing .honeypot {

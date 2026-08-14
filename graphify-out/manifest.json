@@ -85,8 +85,8 @@
     "semantic_hash": "58dd5a3687713125f190f2d9df37bc73"
   },
   "config/services.php": {
-    "mtime": 1786512152.2550783,
-    "ast_hash": "7a2a433174ea4eb68dad13d3e0cbd71c",
+    "mtime": 1786671348.2217665,
+    "ast_hash": "82af99386a5d98a50063cf5c333ed2e9",
     "semantic_hash": ""
   },
   "config/session.php": {
@@ -1510,14 +1510,14 @@
     "semantic_hash": "71be5683cd8beff4bd825918be72e415"
   },
   "resources/views/grupo74/administracion.blade.php": {
-    "mtime": 1786587821.442733,
-    "ast_hash": "7ad48b7ba91d3bb58b5046a314ea539a",
-    "semantic_hash": "7ad48b7ba91d3bb58b5046a314ea539a"
+    "mtime": 1786669219.5078945,
+    "ast_hash": "0e73dc56d34a09246d2f62715e74fa90",
+    "semantic_hash": ""
   },
   "resources/views/grupo74/criminologia.blade.php": {
-    "mtime": 1786587821.474473,
-    "ast_hash": "9c305bec5b6ef492ec818f9a238462b7",
-    "semantic_hash": "9c305bec5b6ef492ec818f9a238462b7"
+    "mtime": 1786671869.721222,
+    "ast_hash": "350163569aab32d1c2ca4ab5546ddf29",
+    "semantic_hash": ""
   },
   "resources/views/grupo74/derecho.blade.php": {
     "mtime": 1786665327.059347,
@@ -1610,9 +1610,9 @@
     "semantic_hash": "861ba2f6f7a3e450244025f8c4676fec"
   },
   "resources/views/grupo75/Auditoria.blade.php": {
-    "mtime": 1786587821.4400687,
-    "ast_hash": "9cb136abbd8c9dec02788e5593458da0",
-    "semantic_hash": "9cb136abbd8c9dec02788e5593458da0"
+    "mtime": 1786671112.519542,
+    "ast_hash": "3455413bd2ae341af8378f214048fdc2",
+    "semantic_hash": ""
   },
   "resources/views/grupo75/detalles-instructor-auditoria1.blade.php": {
     "mtime": 1786408798.5359242,
@@ -1690,13 +1690,13 @@
     "semantic_hash": "f56dbfc41f1c1f35256cbf1d5c709f1d"
   },
   "resources/views/layout/mainlayout.blade.php": {
-    "mtime": 1786665123.2504857,
-    "ast_hash": "5e1541c26a20ea5cbfedad96936397c8",
+    "mtime": 1786671898.5397112,
+    "ast_hash": "29967bbd09f0bb2ec9955b4a32bdfcde",
     "semantic_hash": ""
   },
   "resources/views/layout/partials/footer-scripts.blade.php": {
-    "mtime": 1786664015.231505,
-    "ast_hash": "ca9f06ea7a48b0c0b3e606a8097c106c",
+    "mtime": 1786671899.7724905,
+    "ast_hash": "f6811da417b372a6592702d5b9d41559",
     "semantic_hash": ""
   },
   "resources/views/layout/partials/footer.blade.php": {
@@ -1760,8 +1760,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1786665332.353332,
-    "ast_hash": "a4468b699abbd3521c877ba05a8be321",
+    "mtime": 1786671903.5605173,
+    "ast_hash": "580279215531786df805cb80ac63c11f",
     "semantic_hash": ""
   },
   "public/robots.txt": {
@@ -6925,8 +6925,8 @@
     "semantic_hash": ""
   },
   "app/Http/Requests/StoreLeadRequest.php": {
-    "mtime": 1786512238.4667883,
-    "ast_hash": "818b53f0de03cc0adfae8d66f4767ffe",
+    "mtime": 1786671882.0746708,
+    "ast_hash": "f308ad5e2a31af12e64e51caf9f0f3e2",
     "semantic_hash": ""
   },
   "app/Models/Lead.php": {
@@ -6985,8 +6985,8 @@
     "semantic_hash": ""
   },
   "resources/views/components/umg-sistemas-landing.blade.php": {
-    "mtime": 1786646920.8480067,
-    "ast_hash": "5e725bf97f475d1675658c31b2c79214",
+    "mtime": 1786671878.3936574,
+    "ast_hash": "25b7b647e2a5d9cf3d7ee9f1435dd09f",
     "semantic_hash": ""
   },
   "design-system/umg-derecho/MASTER.md": {
@@ -6995,8 +6995,8 @@
     "semantic_hash": ""
   },
   "design-system/umg-derecho/pages/derecho.md": {
-    "mtime": 1786665332.277815,
-    "ast_hash": "6b01a985bb391e83e3c1ac38acf3427a",
+    "mtime": 1786666178.4019346,
+    "ast_hash": "d3ab8e09a959872e1e0d495b16e1dd7d",
     "semantic_hash": ""
   },
   "public/images/hero-umg.png": {
@@ -7035,8 +7035,8 @@
     "semantic_hash": ""
   },
   "resources/js/animations/umg-derecho-story.js": {
-    "mtime": 1786587851.7936225,
-    "ast_hash": "6a07ce7f4ac45ebe77b60f2bc71fee08",
+    "mtime": 1786665909.7060354,
+    "ast_hash": "8b132d1b43b7cd1511d9d082d61b108a",
     "semantic_hash": ""
   },
   "resources/views/components/umg-derecho-story-card.blade.php": {
@@ -7072,31 +7072,6 @@
   "public/images/derecho/dae92492-c3b6-40b3-b0db-fef76501688c.png": {
     "mtime": 1786647806.7230413,
     "ast_hash": "25b3ed60463fd0ce1528648cc98c19cf",
-    "semantic_hash": ""
-  },
-  "public/images/administraccion/0301dac5-e4ca-4e7b-abb2-a9900cf98c12.png": {
-    "mtime": 1786648877.557114,
-    "ast_hash": "45060941a688370980cb249082d009a5",
-    "semantic_hash": ""
-  },
-  "public/images/administraccion/a7790aec-ac37-467f-ac56-f0fe0045e2dd.png": {
-    "mtime": 1786648867.6713533,
-    "ast_hash": "88b9556a2a454a26a205cafbb3ac5124",
-    "semantic_hash": ""
-  },
-  "public/images/administraccion/e9b2710a-e49d-4502-8d69-a531a56f9d90.png": {
-    "mtime": 1786648882.0068293,
-    "ast_hash": "00c226ed20a0e3361c5a79e047c6e2ed",
-    "semantic_hash": ""
-  },
-  "public/images/administraccion/f8853cef-74d2-424f-9465-56a812b6c4d7.png": {
-    "mtime": 1786648872.8196332,
-    "ast_hash": "b2d3dc239fcac2afe9e3808b8f4fb276",
-    "semantic_hash": ""
-  },
-  "public/images/administraccion/fb7a73b4-8292-4539-aff7-b9200dbada1b.png": {
-    "mtime": 1786648862.7218091,
-    "ast_hash": "5bc999270661c35710f47cdda0282557",
     "semantic_hash": ""
   },
   "config/umg-derecho-pensum.php": {
@@ -7172,6 +7147,206 @@
   "public/images/trabajo social/e033ddbb-a7af-434f-9b5e-c5a789a8480a.png": {
     "mtime": 1786664897.182459,
     "ast_hash": "8083c3e2efa76256c43712d5cd600446",
+    "semantic_hash": ""
+  },
+  "config/umg-administracion-pensum.php": {
+    "mtime": 1786669214.2412865,
+    "ast_hash": "75d593b31bff938c02789735982d90e8",
+    "semantic_hash": ""
+  },
+  "config/umg-administracion-story.php": {
+    "mtime": 1786671506.9264655,
+    "ast_hash": "f7df945c09b41786e8dfa282413e2625",
+    "semantic_hash": ""
+  },
+  "resources/js/animations/umg-administracion-story.js": {
+    "mtime": 1786669392.1440845,
+    "ast_hash": "f8f0e585d0bf4017ae6c6291fb931f79",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-administracion-faq.blade.php": {
+    "mtime": 1786671507.6702387,
+    "ast_hash": "1974065a363b55620980e2dde9d0b334",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-administracion-pensum.blade.php": {
+    "mtime": 1786669325.6606777,
+    "ast_hash": "2c14aeb3c3308bc5583822f67e1fd002",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-administracion-stats.blade.php": {
+    "mtime": 1786669325.6637197,
+    "ast_hash": "53025e9672f466456987330ba14ab5c7",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-administracion-story-card.blade.php": {
+    "mtime": 1786669325.6566744,
+    "ast_hash": "5108dd83ce91f414c5ee0c7ed59656e9",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-administracion-story.blade.php": {
+    "mtime": 1786669325.6482842,
+    "ast_hash": "c60d0519dc0bc92ab503d92e906c0b08",
+    "semantic_hash": ""
+  },
+  "design-system/umg-administracion/MASTER.md": {
+    "mtime": 1786668125.0457747,
+    "ast_hash": "8d9d755c80bae156f7201f9c97d0e032",
+    "semantic_hash": ""
+  },
+  "design-system/umg-administracion/pages/administracion.md": {
+    "mtime": 1786671508.2328625,
+    "ast_hash": "87330654bef7c6cadfa35100b11a3012",
+    "semantic_hash": ""
+  },
+  "public/images/Auditoria/0f3e518f-9f09-4791-8e81-2ad66cdfd3f6.png": {
+    "mtime": 1786665337.2240455,
+    "ast_hash": "be523b8450f0fde91aef184ea404f8b4",
+    "semantic_hash": ""
+  },
+  "public/images/Auditoria/52fb461f-4dd3-4912-abe6-42f9cb39108d.png": {
+    "mtime": 1786665341.7989962,
+    "ast_hash": "6080be517b7f67b54d9a7b6411f27981",
+    "semantic_hash": ""
+  },
+  "public/images/Auditoria/c61132ca-a3a6-4d14-afe4-d5b2969e971f.png": {
+    "mtime": 1786665332.565339,
+    "ast_hash": "ff483564922ce9622189a602e309be0b",
+    "semantic_hash": ""
+  },
+  "public/images/Auditoria/d84542fa-6be8-457b-a58a-4f4ac7b09a8c.png": {
+    "mtime": 1786665354.6987436,
+    "ast_hash": "826a4e20695e2ee58df0381fe9f125bb",
+    "semantic_hash": ""
+  },
+  "public/images/Auditoria/f9b81e2c-a42c-4e4d-9726-69b5f92aaee2.png": {
+    "mtime": 1786665348.2364254,
+    "ast_hash": "45253b0a864858504f86814a6a06cd01",
+    "semantic_hash": ""
+  },
+  "config/umg-auditoria-pensum.php": {
+    "mtime": 1786671106.6819267,
+    "ast_hash": "59913cdc2001856dd27d541d8420551a",
+    "semantic_hash": ""
+  },
+  "config/umg-auditoria-story.php": {
+    "mtime": 1786671105.1359627,
+    "ast_hash": "78dc61997e9d50e4b717026adb81f680",
+    "semantic_hash": ""
+  },
+  "resources/js/animations/umg-auditoria-story.js": {
+    "mtime": 1786671110.5792108,
+    "ast_hash": "e09c9959f363317c2b602a68ec3363cd",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-auditoria-faq.blade.php": {
+    "mtime": 1786671133.3009293,
+    "ast_hash": "77e3bc533e58119423b745bf2bddafd3",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-auditoria-pensum.blade.php": {
+    "mtime": 1786671110.6113474,
+    "ast_hash": "07f3e7d725f66ac53809529d361dfc2d",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-auditoria-stats.blade.php": {
+    "mtime": 1786671139.3552966,
+    "ast_hash": "e394d9e6774fb573a13eb3e690b8846b",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-auditoria-story-card.blade.php": {
+    "mtime": 1786671110.5932467,
+    "ast_hash": "e64140467c44edcffad83e7716659e1b",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-auditoria-story.blade.php": {
+    "mtime": 1786671110.586364,
+    "ast_hash": "7f2d317ca4080a5376e3291df5d3f707",
+    "semantic_hash": ""
+  },
+  "design-system/umg-auditoria/MASTER.md": {
+    "mtime": 1786671036.4795074,
+    "ast_hash": "befa935557ad602fa9d49fb6414836ef",
+    "semantic_hash": ""
+  },
+  "design-system/umg-auditoria/pages/auditoria.md": {
+    "mtime": 1786671112.563785,
+    "ast_hash": "b0ad9f47bd04fe651f3c1f7c4f058f71",
+    "semantic_hash": ""
+  },
+  "config/umg-criminologia-pensum.php": {
+    "mtime": 1786671865.9433162,
+    "ast_hash": "26f0b18b5c52b7ce3128439f622794d9",
+    "semantic_hash": ""
+  },
+  "config/umg-criminologia-story.php": {
+    "mtime": 1786671864.9305909,
+    "ast_hash": "ddcd68b3a5780c54ae517fbb62d005f0",
+    "semantic_hash": ""
+  },
+  "resources/js/animations/umg-criminologia-story.js": {
+    "mtime": 1786671835.1203985,
+    "ast_hash": "00bcceb89847810ddc0a3cae515e2a5d",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-criminologia-faq.blade.php": {
+    "mtime": 1786671883.7155466,
+    "ast_hash": "381bc49156e119c0783ab057cc6315f5",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-criminologia-pensum.blade.php": {
+    "mtime": 1786671835.1464424,
+    "ast_hash": "6e94bae5b7e7beaae9dec34b2fd72eb5",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-criminologia-stats.blade.php": {
+    "mtime": 1786671889.8328977,
+    "ast_hash": "a28fc6d27a206ec3f7e8f6d96fa1b80f",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-criminologia-story-card.blade.php": {
+    "mtime": 1786671835.1368883,
+    "ast_hash": "c2792d127a7a4836d2122e711e841a0d",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-criminologia-story.blade.php": {
+    "mtime": 1786671835.125811,
+    "ast_hash": "00356e4ff1e7ad492b0394e1925c0f69",
+    "semantic_hash": ""
+  },
+  "design-system/umg-criminologia/MASTER.md": {
+    "mtime": 1786671733.450489,
+    "ast_hash": "1a4344dcf14f3b3b3cf46436ae26986d",
+    "semantic_hash": ""
+  },
+  "design-system/umg-criminologia/pages/criminologia.md": {
+    "mtime": 1786671869.7756283,
+    "ast_hash": "cf36113cff7210b9582b8ddfe92559f8",
+    "semantic_hash": ""
+  },
+  "public/images/administracion/0301dac5-e4ca-4e7b-abb2-a9900cf98c12.png": {
+    "mtime": 1786648877.557114,
+    "ast_hash": "45060941a688370980cb249082d009a5",
+    "semantic_hash": ""
+  },
+  "public/images/administracion/a7790aec-ac37-467f-ac56-f0fe0045e2dd.png": {
+    "mtime": 1786648867.6713533,
+    "ast_hash": "88b9556a2a454a26a205cafbb3ac5124",
+    "semantic_hash": ""
+  },
+  "public/images/administracion/e9b2710a-e49d-4502-8d69-a531a56f9d90.png": {
+    "mtime": 1786648882.0068293,
+    "ast_hash": "00c226ed20a0e3361c5a79e047c6e2ed",
+    "semantic_hash": ""
+  },
+  "public/images/administracion/f8853cef-74d2-424f-9465-56a812b6c4d7.png": {
+    "mtime": 1786648872.8196332,
+    "ast_hash": "b2d3dc239fcac2afe9e3808b8f4fb276",
+    "semantic_hash": ""
+  },
+  "public/images/administracion/fb7a73b4-8292-4539-aff7-b9200dbada1b.png": {
+    "mtime": 1786648862.7218091,
+    "ast_hash": "5bc999270661c35710f47cdda0282557",
     "semantic_hash": ""
   }
 }

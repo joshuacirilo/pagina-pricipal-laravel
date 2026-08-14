@@ -42,4 +42,12 @@ return [
     */
     'countdown_deadline' => env('COUNTDOWN_DEADLINE'),
 
+    /*
+    | Web3Forms access key for the home contact form (#contacto).
+    | Env var name kept as api_key_form (project convention).
+    */
+    'web3forms' => [
+        'key' => trim((string) env('api_key_form', '')),
+    ],
+
 ];

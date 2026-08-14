@@ -15,88 +15,170 @@ Este README es la fuente de contexto para que un agente de IA continúe el traba
 - Workflow UI: `python .cursor/skills/ui-ux-pro-max/scripts/search.py "<query>" --design-system -p "Nombre" --stack laravel` (Windows: `python`, no `python3`).
 - Complementar con `--domain` (style, color, typography, ux, landing, icons) y `--stack laravel`.
 - Stack real: Laravel Blade + CSS/JS existentes. **No asumir React/Next** salvo pedido.
+- Tokens UMG **siempre ganan** sobre el output del skill (navy/oro/rojo, Merriweather + Montserrat; no purple Soft UI / Satoshi).
 - No commitear ni pushear salvo pedido explícito.
 - Antes de explorar código: `graphify query "..."` (grafo en `graphify-out/`). Tras editar: `graphify update .`.
 
-### Foco actual: Facultad de Derecho (scroll story)
+### Foco actual: Facultad de Criminología (+ Derecho como referencia)
 
-La conversación activa está en **Derecho**, no en el home. Objetivo del usuario: **atrapar** e **informar** con storytelling por scroll (sticky stacked cards + GSAP scrub).
+También activa: **Criminología** (`/grupo74/criminologia`). Mismo patrón: story + pensum + FAQ.
+
+**Orden de página Criminología** — `resources/views/grupo74/criminologia.blade.php`:
+
+```
+Story (5 escenas, full-bleed bajo header)
+  → Banda umg-criminologia-band: Pensum 90% + Stats 10% (1 viewport)
+  → FAQ rediseñado (1 viewport)
+  → (prefooter global)
+```
+
+Fotos story: `public/images/criminologia/`.
+Design system: `design-system/umg-criminologia/pages/criminologia.md` (tokens UMG ganan).
+Instructors: rutas/vistas conservadas, **no** en la página.
+
+### Foco actual: Facultad de Auditoría (+ Derecho / Administración como referencia)
+
+También activa: **Auditoría** (`/grupo75/auditoria`). Mismo patrón: story + pensum + FAQ.
+
+**Orden de página Auditoría** — `resources/views/grupo75/Auditoria.blade.php`:
+
+```
+Story (5 escenas, full-bleed bajo header)
+  → Banda umg-auditoria-band: Pensum 90% + Stats 10% (1 viewport)
+  → FAQ rediseñado (1 viewport)
+  → (prefooter global)
+```
+
+Fotos story: `public/images/Auditoria/`.
+Design system: `design-system/umg-auditoria/pages/auditoria.md` (tokens UMG ganan).
+Instructors: rutas/vistas conservadas, **no** en la página.
+
+### Foco actual: Facultad de Administración (+ Derecho como referencia)
+
+La conversación activa puede estar en **Administración** (`/grupo74/administracion`) o **Derecho** (`/grupo74/derecho`). Mismo patrón de página: story + pensum + FAQ.
+
+**Orden de página Administración** — `resources/views/grupo74/administracion.blade.php`:
+
+```
+Story (5 escenas, full-bleed bajo header)
+  → Banda umg-administracion-band: Pensum 90% + Stats 10% (1 viewport)
+  → FAQ rediseñado (1 viewport)
+  → (prefooter global)
+```
+
+Fotos story: `public/images/administracion/`.
+Design system: `design-system/umg-administracion/pages/administracion.md` (tokens UMG ganan).
+Instructors: rutas/vistas conservadas, **no** en la página.
+
+### Foco Derecho (referencia estable)
+
+La conversación activa está en **Derecho** (`/grupo74/derecho`), no en el home. Objetivo: **atrapar** e **informar** (story + pensum + FAQ útil).
+
+**Orden de página actual (real)** — `resources/views/grupo74/derecho.blade.php`:
+
+```
+Story (5 escenas, full-bleed bajo header)
+  → Banda umg-derecho-band: Pensum 90% + Stats 10% (1 viewport)
+  → FAQ rediseñado (1 viewport)
+  → (prefooter global)
+```
 
 **Decisiones cerradas con el usuario**
 
-1. El story **reemplaza hero + intro** (no solo el hero).
-2. Features (“La carrera en síntesis”) y Topics (“Facultad… / Derecho con propósito”) se **eliminaron** de la página; su información se redistribuyó en las **5 slides** del story.
-3. Exactamente **5 slides** (no 6). Fotos de referencia en `public/images/derecho/` (5 PNGs).
-4. GSAP sí, vía scripts en `public/build` + vendor local (no entry Vite que vacíe `public/build`; no CDN).
-5. Solo ruta `derecho` — no tocar otras facultades ni el home salvo pedido.
-6. Tokens UMG ganan sobre el output del skill (evitar purple Soft UI / Satoshi del Master).
-7. Referencia visual de panel: número en caja oro + panel navy + foto grande (mockup del usuario). Contraste legible es obligatorio.
+1. Story reemplaza hero + intro; features/topics fuera de la página (info en las 5 slides).
+2. Exactamente **5 slides**; fotos en `public/images/derecho/`.
+3. GSAP local en `public/build` (no Vite build a ciegas; no CDN).
+4. Solo ruta `derecho` — no tocar otras facultades ni home salvo pedido.
+5. **Instructors fuera de la página** (sección “Cuerpo académico” quitada). Blade `umg-derecho-instructors` + rutas `detalles-instructor-derecho*` **se conservan** para uso futuro.
+6. En su lugar: **pensum mock en estilo abanico** (`<x-umg-derecho-pensum />`).
+7. CTA slide 05: “Ver pensum” → `#umg-derecho-pensum` (ya no “Ver catedráticos”).
+8. Cada ciclo del pensum muestra **dos tarjetas**: Semestre 1 y Semestre 2 (datos mock en config).
+9. Click en abanico: rota slots; click en activa → siguiente ciclo; pista “Haz click en las tarjetas” (se oculta al interactuar).
+10. Stats **unidos** al pensum en una sola pantalla: **90% pensum / 10% stats** (wrapper `.umg-derecho-band`).
+11. FAQ visualmente reforzado (eyebrow píldora, acordeones numerados, badge en foto, CTA admisiones).
+12. Post-story a pantallas tipo home (`min-height` viewport) pero **sin** `scroll-snap` (rompe el scrub del story).
+13. Story sticky: `top: 0` + `height: 100dvh` (full-bleed bajo header fijo). **No** volver a `top: var(--header-h)` — dejaba hueco navy entre header y primera slide.
+14. `body.umg-faculty-page`: padding/main-wrapper en 0; header fijo (patrón home).
 
-**Orden de página actual (real)**
-
-```
-Story (5 escenas) → Banda Pensum 90% + Stats 10% → FAQ (1 pantalla) → (prefooter global)
-```
-
-Post-story: banda `umg-derecho-band` = pensum 90% + stats 10% en un viewport (como home 60/40). FAQ a pantalla completa. **Sin** `scroll-snap`. CSS: `public/build/css/umg-derecho-page.css`.
-
-Archivo: `resources/views/grupo74/derecho.blade.php` — ya **no** incluye instructors, features ni topics. El componente `<x-umg-derecho-instructors />` y las rutas `detalles-instructor-derecho*` se **conservan** en disco para uso futuro.
-
-**Escenas actuales** (`config/umg-derecho-story.php`)
+**Escenas del story** (`config/umg-derecho-story.php`)
 
 | ID | Nº | Rol | Contenido |
 |----|----|-----|-----------|
 | `hook` | 01 | Atrapar | ¿Por qué estudiar Derecho? + points |
-| `aprender` | 02 | Formación | ¿Qué aprenderás? + words COMPRENDER/ARGUMENTAR/DEFENDER + points |
+| `aprender` | 02 | Formación | ¿Qué aprenderás? + words + points |
 | `ingreso` | 03 | Ingreso | Perfil de ingreso + points |
 | `egreso` | 04 | Egreso | Perfil de egreso + points |
 | `comienza` | 05 | CTA | Admisión; CTAs → `#umg-derecho-pensum` + admisiones UMG |
 
-Fotos: `public/images/derecho/*.png` (paths en config como `images/derecho/...`).
+**Pensum abanico**
 
-**Pensum abanico (reemplaza cuerpo académico en página)**
+| Pieza | Archivo |
+|-------|---------|
+| Datos (5 ciclos × 2 semestres mock) | `config/umg-derecho-pensum.php` |
+| Blade | `resources/views/components/umg-derecho-pensum.blade.php` |
+| CSS | `public/build/css/umg-derecho-pensum.css` |
+| JS (tabs + rotación slots) | `public/build/js/umg-derecho-pensum.js` |
+| Stats | `resources/views/components/umg-derecho-stats.blade.php` (`id="umg-derecho-stats"`) |
+| Layout 90/10 | wrapper `.umg-derecho-band` en `derecho.blade.php` + reglas en `umg-derecho-page.css` |
 
-- Componente: `resources/views/components/umg-derecho-pensum.blade.php`
-- Datos mock: `config/umg-derecho-pensum.php` (5 ciclos)
-- CSS/JS: `public/build/css/umg-derecho-pensum.css`, `public/build/js/umg-derecho-pensum.js`
-- Desktop ≥992px: cartas en abanico (rotate); click/teclado activa ciclo y muestra cursos
-- Móvil: lista vertical; `prefers-reduced-motion`: grid plano
-- Instructors Blade + páginas detalle: **no borrados**, solo fuera de la página Derecho
+- Desktop ≥992px: cartas en abanico (`--pensum-slot`); panel derecho = 2 semestres lado a lado.
+- Móvil: lista; banda puede crecer (pensum ~75dvh + stats auto).
+- Disclaimer mock: **eliminado** a pedido del usuario.
+- Encabezado pensum: centrado horizontalmente.
 
-**Look del panel (estado actual)**
+**FAQ “Información útil”**
 
-- Desktop ≥992px: grid imagen (~55%) \| panel navy (~45%).
-- Eyebrow oro claro; número en caja oro; título **blanco Merriweather**; body `#EEF3F9`; bullets blancos con marcador oro.
-- Overrides fuertes contra `.umg-faculty h1/h2/p` (ese tema pinta navy/oscuro y rompe contraste).
-- Fondos de card/card-inner en hex opaco `#0b2a52 !important` (sticky debe tapar la escena anterior).
-- Cover entre escenas: **solo** `[data-story-dim]` sobre la foto. Prohibido `scale`/`opacity`/`filter` en `.umg-derecho-story__card-inner`.
+| Pieza | Archivo |
+|-------|---------|
+| Blade | `resources/views/components/umg-derecho-faq.blade.php` |
+| CSS scoped | `public/build/css/umg-derecho-faq.css` |
 
-**Bugs de esta sesión (ya resueltos — no reintroducir)**
+- Grid con imagen centrada verticalmente (`align-items: center`).
+- Acordeones tipo tarjeta + números oro + icono +/− SVG.
+- CTA navy “Ir a admisiones” al final.
 
-1. Texto ilegible (navy sobre navy) → causa: `.umg-faculty h1/h2/p` ganaba por especificidad. Fix: selectores `.umg-faculty .umg-derecho-story h1...` + colores hex `!important`.
-2. Texto de todas las slides **acumulado / apilado** sobre fondo blanco → causa: comentario CSS con `h*/p` cerraba el comentario antes de tiempo, invalidaba el bloque de variables `--story-*`, las cards sticky quedaban transparentes y el texto se veía uno encima de otro. Fix: comentario limpio + fondos opacos en hex.
-3. Flash negro entre escenas (sesión previa) → no volver a animar el card-inner entero.
+**Pantallas / CSS de página**
 
-**Componentes Blade del story**
+| Pieza | Archivo |
+|-------|---------|
+| Viewport band + FAQ screen | `public/build/css/umg-derecho-page.css` |
+| Links CSS Derecho | `mainlayout.blade.php` si `Route::is(['derecho'])`: story → pensum → faq → **page** |
+| Scripts | `footer-scripts`: GSAP → story → **pensum** → faculty-derecho |
 
-- Card acepta: `number`, `eyebrow`, `title`, `description`, `image`, `imagePosition`, `words`, `points`, `ctas` (ya no usa `paths` ni panel light).
-- CTA slide 05 apunta a `#umg-derecho-pensum` (“Ver pensum”).
+**Look del story (estado actual)**
 
-**Feedback del usuario en esta conversación**
+- Desktop ≥992px: sticky stack full-bleed (`top: 0`, `100dvh`); grid imagen \| panel navy.
+- Eyebrow oro claro; número oro; título blanco Merriweather; body `#EEF3F9`.
+- Fondos card opacos `#0b2a52 !important`.
+- Cover: **solo** `[data-story-dim]` sobre la foto. Prohibido `scale`/`opacity`/`filter` en `.umg-derecho-story__card-inner`.
+- ScrollTrigger active/cover: `start/end: "top top"` (alineado al sticky full-bleed).
 
-- No le gustaba el look visual de las slides → rediseño + 5 fotos nuevas.
-- Quería quitar “carrera en síntesis” y “facultad de ciencias jurídicas” y meter esa info en el hero.
-- Información no se leía (contraste) → fix tipografía/colores.
-- “Todo el texto se va acumulando” → fix del comentario CSS / sticky transparente.
+**Bugs resueltos — no reintroducir**
+
+1. Texto ilegible (navy sobre navy) → overrides `.umg-faculty .umg-derecho-story h*` + hex `!important`.
+2. Texto acumulado / sticky transparente → comentario CSS con `*/` embebido; fondos opacos.
+3. Flash negro entre escenas → no animar card-inner entero.
+4. Hueco navy entre header y 1ª slide → era `top: header-h` + header fijo; fix full-bleed `top: 0` / `100dvh` + padding faculty-page 0.
+
+**Feedback reciente del usuario (esta conversación)**
+
+- Quitar cuerpo académico → poner pensum abanico.
+- Abanico con click que cambia tarjetas + pista “haz click”.
+- Centrar título del pensum; quitar disclaimer mock.
+- Panel derecho: Semestre 1 **y** Semestre 2 por ciclo.
+- FAQ más llamativo visualmente.
+- Secciones a pantalla completa (ref. home); luego juntar stats al pensum 90/10.
+- Centrar imagen del FAQ verticalmente.
+- Quitar espacio entre header y primera slide.
 
 **Pendiente / siguiente paso típico (confirmar con el usuario)**
 
-- Verificar en desktop real (hard refresh) que: contraste OK, una sola escena visible a la vez, sin flash negro.
-- Pulir copy por escena (más corto / más persuasivo) si lo pide.
-- Afinar `object-position` de fotos.
-- Afinar scrub / parallax **sin** reintroducir filter en el shell.
-- Si pide el mismo patrón en otras facultades: necesita set de 5 fotos por carrera; hoy solo Derecho tiene story.
-- Hero/intro Blade antiguos (`umg-derecho-hero`, `umg-derecho-intro`) y components features/topics **siguen en disco** pero **ya no se usan** en la página Derecho.
+- Hard refresh y validar en desktop/móvil: story sin hueco, abanico usable, banda 90/10 legible (stats muy compactos en 10%), FAQ OK.
+- Si stats en 10% se ven apretados: subir a ~12–15% o tipografía aún más densa.
+- Copy/escenas o pensum oficial real (hoy es mock).
+- Afinar `object-position` de fotos del story.
+- Mismo patrón en otras facultades solo si pide + set de 5 fotos.
+- Components legacy en disco sin uso en página: hero, intro, features, topics, instructors.
 
 ### Qué se hizo antes (home / admisión) — contexto, no reabrir sin pedir
 
@@ -110,7 +192,7 @@ Fotos: `public/images/derecho/*.png` (paths en config como `images/derecho/...`)
 
 - **Atrapar**: deliberado / cinematográfico, no micro-transiciones de 300 ms.
 - Home: reveals al **llegar** a cada pantalla (scroll-snap).
-- Derecho: scroll-driven con `scrub: true` (el usuario controla); sin flash negro; sin texto acumulado entre escenas.
+- Derecho: scroll-driven con `scrub: true`; sin flash negro; sin texto acumulado; **sin** scroll-snap de página.
 - Respetar `prefers-reduced-motion`.
 
 ### Incidente previo (recuperación)
@@ -129,6 +211,9 @@ php artisan serve
 |--------|-----|-----------|
 | Home | `http://127.0.0.1:8000/` | `index-3` |
 | Derecho | `http://127.0.0.1:8000/grupo74/derecho` | `derecho` |
+| Administración | `http://127.0.0.1:8000/grupo74/administracion` | `administracion` |
+| Auditoría | `http://127.0.0.1:8000/grupo75/auditoria` | `auditoria` |
+| Criminología | `http://127.0.0.1:8000/grupo74/criminologia` | `criminologia` |
 
 Tras editar CSS/JS en `public/build`: **hard refresh** (`Ctrl+F5`).
 
@@ -168,14 +253,14 @@ Reglas UI: iconos SVG (nunca emoji), hover 150–300 ms, contraste ≥ 4.5:1, `p
 ### Design systems en repo
 
 - `design-system/umg-derecho/MASTER.md` (defaults skill; **no pisan** marca UMG)
-- `design-system/umg-derecho/pages/derecho.md` (**pisa** el Master; ritmo = story 5 escenas → pensum abanico → stats → FAQ)
-- `config/umg-faculties.php` (datos largos de carrera; features/topics ya no se renderizan en Derecho)
-- `config/umg-derecho-story.php` (fuente de verdad de las 5 escenas del story)
-- `config/umg-derecho-pensum.php` (mock de 5 ciclos del pensum abanico)
+- `design-system/umg-derecho/pages/derecho.md` (**pisa** el Master; ritmo = story → banda pensum 90% + stats 10% → FAQ)
+- `config/umg-faculties.php` (datos largos de carrera; features/topics/instructors ya no se renderizan en Derecho)
+- `config/umg-derecho-story.php` (5 escenas del story)
+- `config/umg-derecho-pensum.php` (mock: 5 ciclos × 2 semestres)
 
 ---
 
-## Derecho — scroll story (detalle técnico)
+## Derecho — detalle técnico
 
 Ruta: `/grupo74/derecho` · vista: `grupo74.derecho` · `body.umg-faculty-page`
 
@@ -184,40 +269,47 @@ Ruta: `/grupo74/derecho` · vista: `grupo74.derecho` · `body.umg-faculty-page`
 | Pieza | Archivo |
 |-------|---------|
 | Página | `resources/views/grupo74/derecho.blade.php` |
-| Wrapper | `resources/views/components/umg-derecho-story.blade.php` |
-| Card | `resources/views/components/umg-derecho-story-card.blade.php` |
+| Story wrapper | `resources/views/components/umg-derecho-story.blade.php` |
+| Story card | `resources/views/components/umg-derecho-story-card.blade.php` |
 | Datos escenas | `config/umg-derecho-story.php` |
-| CSS scoped | `public/build/css/umg-derecho-story.css` |
-| JS runtime | `public/build/js/umg-derecho-story.js` |
-| JS espejo | `resources/js/animations/umg-derecho-story.js` (mantener sync al editar) |
-| Fotos | `public/images/derecho/` |
+| CSS story | `public/build/css/umg-derecho-story.css` |
+| JS story runtime | `public/build/js/umg-derecho-story.js` |
+| JS story espejo | `resources/js/animations/umg-derecho-story.js` (mantener sync) |
+| Pensum | Blade + `config/umg-derecho-pensum.php` + `umg-derecho-pensum.css/js` |
+| Stats | `umg-derecho-stats.blade.php` (dentro de `.umg-derecho-band`) |
+| FAQ | `umg-derecho-faq.blade.php` + `umg-derecho-faq.css` |
+| Layout pantallas | `public/build/css/umg-derecho-page.css` |
+| Fotos story | `public/images/derecho/` |
 | GSAP vendor | `public/build/js/vendor/gsap.min.js` + `ScrollTrigger.min.js` |
-| Reveals resto página | `public/build/js/umg-faculty-derecho.js` (`.umg-reveal` fuera del story) |
-| CSS link | `mainlayout.blade.php` solo si `Route::is(['derecho'])` |
-| Scripts | `footer-scripts.blade.php`: vendor GSAP → story JS → faculty-derecho JS |
+| Reveals post-story | `public/build/js/umg-faculty-derecho.js` (`.umg-reveal`; no dentro del story) |
+| CSS links | `mainlayout`: story → pensum → faq → page (solo `derecho`) |
+| Scripts | `footer-scripts`: GSAP → story → pensum → faculty-derecho |
 
-### Layout visual por escena
+### Layout visual
 
-- Desktop ≥992px: sticky stack; grid imagen \| panel navy.
-- Móvil `<992px`: imagen arriba + panel abajo; sticky off; motion lite.
-- Imagen: `object-fit: cover` + `object-position` por escena (`image_position` en config) + overrides `!important` contra `img { height: auto }` del tema.
-- Scrim suave hacia el panel; no tapar la foto.
-- Cover: `.umg-derecho-story__dim` solo sobre media.
+- Story desktop ≥992px: sticky `top: 0`, `100dvh` (full-bleed bajo header fijo); grid imagen \| panel navy.
+- Story móvil `<992px`: imagen arriba + panel abajo; sticky off.
+- Banda pensum+stats: desktop 90%/10% de `calc(100dvh - header)`; móvil apilado flexible.
+- FAQ: 1 viewport; imagen centrada verticalmente con el bloque de preguntas.
+- Cover story: `.umg-derecho-story__dim` solo sobre media.
 
-### Trampas del story (no repetir)
+### Trampas (no repetir)
 
-1. **Flash negro al cambiar escena:** no aplicar `scale` + `opacity` + `filter` al `.umg-derecho-story__card-inner`. Usar solo dim en la foto.
-2. **Texto invisible:** `.umg-faculty h1/h2/p` pinta navy/oscuro; override con mayor especificidad + hex `!important`.
-3. **Texto acumulado (sticky transparente):** nunca poner `*/` dentro de un comentario CSS (ej. escribir `h*/p`). Rompe el parseo, invalida variables y las cards sticky quedan sin fondo. Fondos de card siempre en hex opaco (`#0b2a52 !important`).
-4. **Imagen “rota” / no llena:** combatir `img { height: auto }` del tema con reglas scoped `!important` en `.umg-derecho-story__img`.
-5. **`npm run build` / Vite:** no usarlo para este feature; vacía `public/build/`. Actualizar GSAP copiando desde `node_modules/gsap/dist/` a `public/build/js/vendor/`.
-6. **Doble animación:** no poner `.umg-reveal` dentro del story; el faculty JS es para secciones de abajo.
-7. **Hard refresh** tras tocar CSS/JS (`filemtime` en query string).
-8. **No re-añadir** features/topics a la página salvo pedido explícito.
+1. **Flash negro:** no `scale`/`opacity`/`filter` en `.umg-derecho-story__card-inner`.
+2. **Texto invisible:** overrides vs `.umg-faculty h1/h2/p`.
+3. **Texto acumulado:** no `*/` dentro de comentarios CSS; fondos sticky opacos `#0b2a52 !important`.
+4. **Hueco header ↔ 1ª slide:** no volver a sticky `top: header-h` en story; mantener full-bleed + `padding-top: 0` en faculty-page.
+5. **Imagen rota:** `!important` en `.umg-derecho-story__img` contra `img { height: auto }`.
+6. **`npm run build`:** no; vacía `public/build/`.
+7. **Doble animación:** no `.umg-reveal` dentro del story.
+8. **Hard refresh** tras CSS/JS.
+9. **No** re-añadir features/topics/instructors a la página salvo pedido.
+10. **No** scroll-snap tipo home en Derecho (rompe scrub).
+11. Editar pensum: `config/umg-derecho-pensum.php` + `php artisan config:clear` si hace falta.
 
-### Design system Derecho (motion)
+### Design system Derecho
 
-Ver `design-system/umg-derecho/pages/derecho.md`: sticky stack + GSAP scrub permitido; GSAP no para fades sueltos; marca navy/oro/rojo/Merriweather+Montserrat; 5 escenas informativas.
+Ver `design-system/umg-derecho/pages/derecho.md`.
 
 ---
 
@@ -258,7 +350,7 @@ Hero parallax → Facultades → Landing admisión → Footer
 
 ## Otras facultades
 
-Vistas en `resources/views/grupo73|74|75/*.blade.php`. Solo Derecho tiene story sticky + design system de página.
+Vistas en `resources/views/grupo73|74|75/*.blade.php`. **Derecho**, **Administración**, **Auditoría** y **Criminología** tienen story sticky + design system de página.
 
 No reintroducir sin pedido: `umg-faculty-landing`, `umg-law-story` genéricos fallidos de agentes previos.
 
@@ -270,24 +362,27 @@ No reintroducir sin pedido: `umg-faculty-landing`, `umg-law-story` genéricos fa
 - `.gitignore` incluye `/graphify-out/` y `/.cursor/`.
 - Antes de cambios grandes: `git status`. Si hay borrados masivos en `public/build/img` → **parar** y `git restore -- public/build/img`.
 - Autoload: no añadir `app/helpers.php` sin versionar el archivo.
-- Estado típico de esta rama de trabajo: cambios en story Derecho (config, Blade, CSS, design-system, README) + imágenes en `public/images/derecho/` (pueden estar untracked).
+- Estado típico de esta rama: Derecho (story + pensum + FAQ + page CSS, config, Blade, design-system, README) + imágenes `public/images/derecho/` (pueden estar untracked).
 
 ---
 
 ## Para el agente (siguiente sesión)
 
-1. Leer este README completo; el **foco actual es Derecho story**, no reabrir home sin pedido.
+1. Leer este README completo; foco = **Derecho** (story + pensum/stats + FAQ), no reabrir home sin pedido.
 2. `graphify query "..."` antes de explorar.
 3. UI: skill UI UX Pro Max + `--stack laravel`; tokens UMG de `design-system/umg-derecho/pages/derecho.md`.
-4. Editar runtime en `public/build/css|js/umg-derecho-story.*` y sincronizar el espejo JS en `resources/js/animations/`.
-5. Copy/escenas: editar `config/umg-derecho-story.php` (luego `php artisan config:clear` si hace falta).
-6. **No** reintroducir cover con `filter`/`opacity`/`scale` en el card-inner.
-7. **No** comentarios CSS con `*/` embebido; **no** fondos transparentes en cards sticky.
-8. **No** `npm run build` para este feature; **no** CDN GSAP.
-9. **No** romper home scroll-snap / 60-40 / pre-footer.
-10. **No** volver a montar features/topics en Derecho salvo pedido.
-11. Tras editar: `graphify update .`
-12. No commit/push salvo pedido.
-13. Si Derecho “se pone negro” al scrollear: revisar cover del story y hard refresh.
-14. Si el texto se acumula / fondo blanco: revisar parseo del CSS del story y fondos opacos de `.umg-derecho-story__card`.
-15. Si el texto no se lee: revisar overrides vs `.umg-faculty h1/h2/p`.
+4. Story: editar `public/build/css|js/umg-derecho-story.*` y sincronizar espejo en `resources/js/animations/`.
+5. Copy/escenas: `config/umg-derecho-story.php`. Pensum: `config/umg-derecho-pensum.php` (+ `config:clear`).
+6. **No** `filter`/`opacity`/`scale` en card-inner del story.
+7. **No** sticky story con `top: header-h` (vuelve el hueco bajo el header).
+8. **No** comentarios CSS con `*/` embebido; **no** fondos transparentes en sticky.
+9. **No** `npm run build`; **no** CDN GSAP; **no** scroll-snap en Derecho.
+10. **No** romper home scroll-snap / 60-40 / pre-footer.
+11. **No** remount features/topics/instructors en la página salvo pedido (archivos en disco OK).
+12. Mantener banda `.umg-derecho-band` (pensum 90% + stats 10%) salvo que el usuario pida otro split.
+13. Tras editar: `graphify update .`
+14. No commit/push salvo pedido.
+15. Si “se pone negro” al scrollear: cover del story + hard refresh.
+16. Si texto acumulado / fondo blanco: parseo CSS story + fondos opacos.
+17. Si texto no se lee: overrides vs `.umg-faculty h1/h2/p`.
+18. Si hay hueco bajo el header: revisar `umg-derecho-story.css` (`top: 0`) y `body.umg-faculty-page` padding 0.
