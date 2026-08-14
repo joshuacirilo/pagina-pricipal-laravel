@@ -35,16 +35,17 @@
         @foreach ($scenes as $index => $scene)
             <x-umg-derecho-story-card
                 :number="$scene['number']"
-                :eyebrow="$scene['eyebrow']"
+                :eyebrow="$scene['eyebrow'] ?? ''"
                 :title="$scene['title']"
                 :description="$scene['description'] ?? null"
                 :image="$scene['image']"
                 :image-alt="$scene['image_alt'] ?? ''"
+                :image-position="$scene['image_position'] ?? 'center center'"
                 :variant="$scene['variant']"
                 :scene-id="$scene['id']"
                 :index="$index"
                 :words="$scene['words'] ?? []"
-                :paths="$scene['paths'] ?? []"
+                :points="$scene['points'] ?? []"
                 :ctas="$scene['ctas'] ?? []"
                 :priority="$index === 0"
             />

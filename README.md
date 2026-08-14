@@ -6,7 +6,7 @@ Este README es la fuente de contexto para que un agente de IA continúe el traba
 
 ---
 
-## Continuidad (sesión actual — 2026-08-12)
+## Continuidad (sesión actual — 2026-08-13)
 
 ### Rol acordado
 
@@ -18,35 +18,104 @@ Este README es la fuente de contexto para que un agente de IA continúe el traba
 - No commitear ni pushear salvo pedido explícito.
 - Antes de explorar código: `graphify query "..."` (grafo en `graphify-out/`). Tras editar: `graphify update .`.
 
-### Derecho — sticky scroll story (hecho)
+### Foco actual: Facultad de Derecho (scroll story)
 
-1. Hero + intro de Derecho **reemplazados** por `<x-umg-derecho-story />` (6 escenas sticky + GSAP scrub).
-2. Features y topics **acortados**.
-3. GSAP local en `public/build/js/vendor/` (npm `gsap`, sin CDN).
-4. Ver sección «Derecho — scroll story» más abajo.
+La conversación activa está en **Derecho**, no en el home. Objetivo del usuario: **atrapar** e **informar** con storytelling por scroll (sticky stacked cards + GSAP scrub).
 
-### Qué se hizo en esta línea de trabajo (home / admisión)
+**Decisiones cerradas con el usuario**
 
-1. Se quitaron del home bloques LMS: coordinador, egresados, eventos, frases, noticias, métricas rotas y el bloque `share-knowledge` («¿Por qué estudiar…?»).
-2. Se emigró la landing Astro de `ideas/umgguastatoyagt (1)/umgguastatoyagt/` a Blade como `<x-umg-sistemas-landing />` (nombre histórico; el copy ya es **universidad / admisión**, no solo Ingeniería en Sistemas).
-3. Hero de admisión reescrito con foco en **ventana crítica** (countdown + CTA).
-4. Secciones `#valor`, `#futuro`, `#evento` reescritas con copy UMG general (tomado del antiguo «¿Por qué estudiar…?»).
-5. **Scroll por pantalla completa** en home (`html.umg-home-scroll` + CSS `scroll-snap`).
-6. Pre-footer «¿Listo para lo que sigue?» **oculto solo en home**; otras páginas lo conservan.
-7. Última pantalla del home: **contacto 60dvh + footer 40dvh**.
-8. Formulario `#contacto` rediseñado (solo frontend): layout lineal, toggle **Correo | WhatsApp**, CTA rojo destacado. Backend `POST /contacto` ya existe; el toggle UI mueve `name="contacto"` al input activo.
-9. **Motion propio en el home** (sin paquetes externos). Ver sección «Animaciones del home» abajo.
-10. Se evaluó y **rechazó** el paquete `bertux77/laravel-inview-animations` (supply chain / CDN / poca adopción). No instalarlo.
+1. El story **reemplaza hero + intro** (no solo el hero).
+2. Features (“La carrera en síntesis”) y Topics (“Facultad… / Derecho con propósito”) se **eliminaron** de la página; su información se redistribuyó en las **5 slides** del story.
+3. Exactamente **5 slides** (no 6). Fotos de referencia en `public/images/derecho/` (5 PNGs).
+4. GSAP sí, vía scripts en `public/build` + vendor local (no entry Vite que vacíe `public/build`; no CDN).
+5. Solo ruta `derecho` — no tocar otras facultades ni el home salvo pedido.
+6. Tokens UMG ganan sobre el output del skill (evitar purple Soft UI / Satoshi del Master).
+7. Referencia visual de panel: número en caja oro + panel navy + foto grande (mockup del usuario). Contraste legible es obligatorio.
 
-### Decisiones de producto (esta conversación)
+**Orden de página actual (real)**
 
-- El usuario quiere motion que **atrape** (lento, legible), no micro-transiciones rápidas.
-- Las animaciones deben arrancar **al llegar a la pantalla** (scroll-snap), no mientras aún estás en la anterior.
-- Feedback del usuario: el timing/trigger quedó bien tras el fix de facultades; **no reabrir** el tema de paquetes de animación de terceros salvo pedido.
+```
+Story (5 escenas) → Banda Pensum 90% + Stats 10% → FAQ (1 pantalla) → (prefooter global)
+```
+
+Post-story: banda `umg-derecho-band` = pensum 90% + stats 10% en un viewport (como home 60/40). FAQ a pantalla completa. **Sin** `scroll-snap`. CSS: `public/build/css/umg-derecho-page.css`.
+
+Archivo: `resources/views/grupo74/derecho.blade.php` — ya **no** incluye instructors, features ni topics. El componente `<x-umg-derecho-instructors />` y las rutas `detalles-instructor-derecho*` se **conservan** en disco para uso futuro.
+
+**Escenas actuales** (`config/umg-derecho-story.php`)
+
+| ID | Nº | Rol | Contenido |
+|----|----|-----|-----------|
+| `hook` | 01 | Atrapar | ¿Por qué estudiar Derecho? + points |
+| `aprender` | 02 | Formación | ¿Qué aprenderás? + words COMPRENDER/ARGUMENTAR/DEFENDER + points |
+| `ingreso` | 03 | Ingreso | Perfil de ingreso + points |
+| `egreso` | 04 | Egreso | Perfil de egreso + points |
+| `comienza` | 05 | CTA | Admisión; CTAs → `#umg-derecho-pensum` + admisiones UMG |
+
+Fotos: `public/images/derecho/*.png` (paths en config como `images/derecho/...`).
+
+**Pensum abanico (reemplaza cuerpo académico en página)**
+
+- Componente: `resources/views/components/umg-derecho-pensum.blade.php`
+- Datos mock: `config/umg-derecho-pensum.php` (5 ciclos)
+- CSS/JS: `public/build/css/umg-derecho-pensum.css`, `public/build/js/umg-derecho-pensum.js`
+- Desktop ≥992px: cartas en abanico (rotate); click/teclado activa ciclo y muestra cursos
+- Móvil: lista vertical; `prefers-reduced-motion`: grid plano
+- Instructors Blade + páginas detalle: **no borrados**, solo fuera de la página Derecho
+
+**Look del panel (estado actual)**
+
+- Desktop ≥992px: grid imagen (~55%) \| panel navy (~45%).
+- Eyebrow oro claro; número en caja oro; título **blanco Merriweather**; body `#EEF3F9`; bullets blancos con marcador oro.
+- Overrides fuertes contra `.umg-faculty h1/h2/p` (ese tema pinta navy/oscuro y rompe contraste).
+- Fondos de card/card-inner en hex opaco `#0b2a52 !important` (sticky debe tapar la escena anterior).
+- Cover entre escenas: **solo** `[data-story-dim]` sobre la foto. Prohibido `scale`/`opacity`/`filter` en `.umg-derecho-story__card-inner`.
+
+**Bugs de esta sesión (ya resueltos — no reintroducir)**
+
+1. Texto ilegible (navy sobre navy) → causa: `.umg-faculty h1/h2/p` ganaba por especificidad. Fix: selectores `.umg-faculty .umg-derecho-story h1...` + colores hex `!important`.
+2. Texto de todas las slides **acumulado / apilado** sobre fondo blanco → causa: comentario CSS con `h*/p` cerraba el comentario antes de tiempo, invalidaba el bloque de variables `--story-*`, las cards sticky quedaban transparentes y el texto se veía uno encima de otro. Fix: comentario limpio + fondos opacos en hex.
+3. Flash negro entre escenas (sesión previa) → no volver a animar el card-inner entero.
+
+**Componentes Blade del story**
+
+- Card acepta: `number`, `eyebrow`, `title`, `description`, `image`, `imagePosition`, `words`, `points`, `ctas` (ya no usa `paths` ni panel light).
+- CTA slide 05 apunta a `#umg-derecho-pensum` (“Ver pensum”).
+
+**Feedback del usuario en esta conversación**
+
+- No le gustaba el look visual de las slides → rediseño + 5 fotos nuevas.
+- Quería quitar “carrera en síntesis” y “facultad de ciencias jurídicas” y meter esa info en el hero.
+- Información no se leía (contraste) → fix tipografía/colores.
+- “Todo el texto se va acumulando” → fix del comentario CSS / sticky transparente.
+
+**Pendiente / siguiente paso típico (confirmar con el usuario)**
+
+- Verificar en desktop real (hard refresh) que: contraste OK, una sola escena visible a la vez, sin flash negro.
+- Pulir copy por escena (más corto / más persuasivo) si lo pide.
+- Afinar `object-position` de fotos.
+- Afinar scrub / parallax **sin** reintroducir filter en el shell.
+- Si pide el mismo patrón en otras facultades: necesita set de 5 fotos por carrera; hoy solo Derecho tiene story.
+- Hero/intro Blade antiguos (`umg-derecho-hero`, `umg-derecho-intro`) y components features/topics **siguen en disco** pero **ya no se usan** en la página Derecho.
+
+### Qué se hizo antes (home / admisión) — contexto, no reabrir sin pedir
+
+1. Se quitaron del home bloques LMS: coordinador, egresados, eventos, frases, noticias, métricas rotas y el bloque `share-knowledge`.
+2. Landing Astro emigrada a `<x-umg-sistemas-landing />` (copy universidad / admisión).
+3. Scroll por pantalla (`html.umg-home-scroll` + snap); contacto 60dvh + footer 40dvh; pre-footer oculto solo en home.
+4. Formulario `#contacto` frontend (toggle Correo|WhatsApp); backend `POST /contacto` existe.
+5. Motion propio del home (`umg-home-motion.js`); **no** instalar `bertux77/laravel-inview-animations`.
+
+### Preferencias de motion del usuario
+
+- **Atrapar**: deliberado / cinematográfico, no micro-transiciones de 300 ms.
+- Home: reveals al **llegar** a cada pantalla (scroll-snap).
+- Derecho: scroll-driven con `scrub: true` (el usuario controla); sin flash negro; sin texto acumulado entre escenas.
+- Respetar `prefers-reduced-motion`.
 
 ### Incidente previo (recuperación)
 
-Un agente anterior rompió el tree (imágenes, landings). Baseline bueno conocido: commit **`6566b04`**. Si Laravel no arranca por `helpers.php` fantasma en autoload, ver sección Git / autoload más abajo. **No borrar** `public/build/img` «para limpiar».
+Un agente anterior rompió el tree (imágenes, landings). Baseline bueno conocido: commit **`6566b04`**. Si Laravel no arranca por `helpers.php` fantasma en autoload, ver sección Git / autoload. **No borrar** `public/build/img` «para limpiar».
 
 ---
 
@@ -56,15 +125,18 @@ Un agente anterior rompió el tree (imágenes, landings). Baseline bueno conocid
 php artisan serve
 ```
 
-Home: `http://127.0.0.1:8000/` → vista `JOSHUA.index-3`, ruta `index-3`.
+| Página | URL | Ruta name |
+|--------|-----|-----------|
+| Home | `http://127.0.0.1:8000/` | `index-3` |
+| Derecho | `http://127.0.0.1:8000/grupo74/derecho` | `derecho` |
 
-Opcional en `.env`:
+Tras editar CSS/JS en `public/build`: **hard refresh** (`Ctrl+F5`).
+
+Opcional en `.env` (solo home countdown):
 
 ```env
 # COUNTDOWN_DEADLINE=2026-08-13T23:59:59-06:00
 ```
-
-Si está vacío, el countdown usa 48 h desde la carga de la página.
 
 ---
 
@@ -73,9 +145,9 @@ Si está vacío, el countdown usa 48 h desde la carga de la página.
 - Laravel Blade (`resources/views/`)
 - CSS/JS del template (Bootstrap, jQuery, Owl, AOS) + overrides UMG
 - Tema UMG: `public/build/css/umg-theme.css` (**fuente de verdad**; no `resources/css/umg-theme.css`)
-- Landing admisión: `public/build/css/umg-sistemas-landing.css` (scoped bajo `.umg-sistemas-landing`)
-- Fuentes landing: Inter + Space Grotesk + JetBrains Mono (Google Fonts, solo en `index-3`)
-- AOS está en el template global, pero el **home UMG no depende de AOS** para sus reveals; usa `umg-home-motion.js` + `.umg-reveal`
+- Assets UMG se editan en `public/build/` y se cargan con `<script>` / `<link>` condicionales (no asumir `@vite` para features UMG)
+- **No** correr `npm run build` a ciegas: el `outDir` es `public/build/` y puede vaciar imágenes/CSS del tema
+- Dependencia npm añadida: `gsap` (copiada a `public/build/js/vendor/`)
 
 ---
 
@@ -87,23 +159,69 @@ Tokens en `:root` de `umg-theme.css`:
 |-------|--------|
 | Navy | `#0B2A52` / `#1A3F73` |
 | Rojo CTA | `#AA1E23` / `#C62828` |
-| Oro | `#C6A256` |
+| Oro | `#C6A256` (story también usa oro claro `#E2C57A` para labels) |
 | Texto | `#1A1D21` |
 | Fuentes globales | Montserrat (UI) + Merriweather (titulares) |
 
-Landing admisión usa su propia paleta scoped (`--sis-navy`, `--sis-red`, etc.) sin pisar el tema global.
-
-Reglas UI: iconos SVG (nunca emoji), hover 150–300 ms, contraste ≥ 4.5:1, `prefers-reduced-motion`, breakpoints 375 / 768 / 1024 / 1440. Evitar purple/pink AI y patrones AVOID del design system.
+Reglas UI: iconos SVG (nunca emoji), hover 150–300 ms, contraste ≥ 4.5:1, `prefers-reduced-motion`, breakpoints 375 / 768 / 1024 / 1440. Evitar purple/pink AI.
 
 ### Design systems en repo
 
-- `design-system/umg-derecho/MASTER.md`
-- `design-system/umg-derecho/pages/derecho.md` (pisa el Master)
-- `config/umg-faculties.php`
+- `design-system/umg-derecho/MASTER.md` (defaults skill; **no pisan** marca UMG)
+- `design-system/umg-derecho/pages/derecho.md` (**pisa** el Master; ritmo = story 5 escenas → pensum abanico → stats → FAQ)
+- `config/umg-faculties.php` (datos largos de carrera; features/topics ya no se renderizan en Derecho)
+- `config/umg-derecho-story.php` (fuente de verdad de las 5 escenas del story)
+- `config/umg-derecho-pensum.php` (mock de 5 ciclos del pensum abanico)
 
 ---
 
-## Home — estado actual
+## Derecho — scroll story (detalle técnico)
+
+Ruta: `/grupo74/derecho` · vista: `grupo74.derecho` · `body.umg-faculty-page`
+
+### Arquitectura
+
+| Pieza | Archivo |
+|-------|---------|
+| Página | `resources/views/grupo74/derecho.blade.php` |
+| Wrapper | `resources/views/components/umg-derecho-story.blade.php` |
+| Card | `resources/views/components/umg-derecho-story-card.blade.php` |
+| Datos escenas | `config/umg-derecho-story.php` |
+| CSS scoped | `public/build/css/umg-derecho-story.css` |
+| JS runtime | `public/build/js/umg-derecho-story.js` |
+| JS espejo | `resources/js/animations/umg-derecho-story.js` (mantener sync al editar) |
+| Fotos | `public/images/derecho/` |
+| GSAP vendor | `public/build/js/vendor/gsap.min.js` + `ScrollTrigger.min.js` |
+| Reveals resto página | `public/build/js/umg-faculty-derecho.js` (`.umg-reveal` fuera del story) |
+| CSS link | `mainlayout.blade.php` solo si `Route::is(['derecho'])` |
+| Scripts | `footer-scripts.blade.php`: vendor GSAP → story JS → faculty-derecho JS |
+
+### Layout visual por escena
+
+- Desktop ≥992px: sticky stack; grid imagen \| panel navy.
+- Móvil `<992px`: imagen arriba + panel abajo; sticky off; motion lite.
+- Imagen: `object-fit: cover` + `object-position` por escena (`image_position` en config) + overrides `!important` contra `img { height: auto }` del tema.
+- Scrim suave hacia el panel; no tapar la foto.
+- Cover: `.umg-derecho-story__dim` solo sobre media.
+
+### Trampas del story (no repetir)
+
+1. **Flash negro al cambiar escena:** no aplicar `scale` + `opacity` + `filter` al `.umg-derecho-story__card-inner`. Usar solo dim en la foto.
+2. **Texto invisible:** `.umg-faculty h1/h2/p` pinta navy/oscuro; override con mayor especificidad + hex `!important`.
+3. **Texto acumulado (sticky transparente):** nunca poner `*/` dentro de un comentario CSS (ej. escribir `h*/p`). Rompe el parseo, invalida variables y las cards sticky quedan sin fondo. Fondos de card siempre en hex opaco (`#0b2a52 !important`).
+4. **Imagen “rota” / no llena:** combatir `img { height: auto }` del tema con reglas scoped `!important` en `.umg-derecho-story__img`.
+5. **`npm run build` / Vite:** no usarlo para este feature; vacía `public/build/`. Actualizar GSAP copiando desde `node_modules/gsap/dist/` a `public/build/js/vendor/`.
+6. **Doble animación:** no poner `.umg-reveal` dentro del story; el faculty JS es para secciones de abajo.
+7. **Hard refresh** tras tocar CSS/JS (`filemtime` en query string).
+8. **No re-añadir** features/topics a la página salvo pedido explícito.
+
+### Design system Derecho (motion)
+
+Ver `design-system/umg-derecho/pages/derecho.md`: sticky stack + GSAP scrub permitido; GSAP no para fades sueltos; marca navy/oro/rojo/Merriweather+Montserrat; 5 escenas informativas.
+
+---
+
+## Home — estado actual (referencia)
 
 Archivo: `resources/views/JOSHUA/index-3.blade.php`
 
@@ -113,154 +231,63 @@ Hero parallax → Facultades → Landing admisión → Footer
 
 | Orden | Bloque | Notas |
 |------:|--------|--------|
-| 1 | `<x-umg-parallax-hero />` | Campus, overlay navy, CTAs Admisión / Pago / Tour. `100dvh` + snap + reveal |
-| 2 | `<x-umg-faculties />` | 6 cards con `.umg-reveal`. `100dvh` + snap (puede **desbordar** en móvil) |
-| 3 | `<x-umg-sistemas-landing />` | Ver tabla de secciones abajo |
-| 4 | Footer `#umgFooter` | En home: **40dvh** (última pantalla junto a contacto) |
+| 1 | `<x-umg-parallax-hero />` | `100dvh` + snap + reveal |
+| 2 | `<x-umg-faculties />` | 6 cards; puede desbordar en móvil |
+| 3 | `<x-umg-sistemas-landing />` | Admisión / countdown / contacto |
+| 4 | Footer `#umgFooter` | En home: **40dvh** con contacto 60dvh |
 
-**No** se muestra en home: `<x-umg-prefooter-cta />` (condicional en `mainlayout`).
-
-### Scroll por pantalla (`html.umg-home-scroll`)
-
-- Clase en `<html>` solo en `index-3` (`mainlayout.blade.php`).
-- Reglas en `umg-theme.css` + alturas en `umg-sistemas-landing.css`.
-- Snap: `scroll-snap-type: y mandatory` + `scroll-snap-stop: always`.
-- Secciones full: `100dvh` (excepto última pantalla).
-- Última pantalla: `#contacto` **60dvh** + footer **40dvh**.
-- `prefers-reduced-motion`: desactiva snap y smooth scroll.
-- Anclas respetan `--header-h` vía `scroll-padding-top` / `scroll-margin-top`.
+**No** mostrar pre-footer en home. **No** romper scroll-snap ni split 60/40.
 
 ### Animaciones del home (motion propio)
 
-**Objetivo:** atrapar la mirada; reveals lentos y legibles al llegar a cada pantalla.
+| Pieza | Archivo |
+|-------|---------|
+| Reveals por pantalla | `public/build/js/umg-home-motion.js` |
+| CSS `.umg-reveal` lento | `umg-theme.css` scoped `body.umg-home` (~1.15s) |
+| Parallax hero | `public/build/js/umg-home.js` |
 
-| Pieza | Archivo | Rol |
-|-------|---------|-----|
-| JS motion | `public/build/js/umg-home-motion.js` | Observa **secciones** (no cada card); añade `.is-visible` a `.umg-reveal` internos |
-| CSS reveal | `public/build/css/umg-theme.css` (bloque `.umg-reveal` + overrides `body.umg-home`) | Timing home ~**1.15s**; stagger cards ~**0.2s** entre ítems |
-| Parallax + zoom hero | `public/build/js/umg-home.js` | Parallax media + clase `.is-ready` para zoom suave de imagen |
-| Countdown pulse | `umg-sistemas-countdown.js` + CSS landing | Clase `.is-ticking` → pulso en `.alert-box` (respeta reduced-motion) |
-| Cableado | `resources/views/layout/partials/footer-scripts.blade.php` | Solo en ruta `index-3`, tras `umg-home.js` |
+- Observar secciones, no cada card; no usar `intersectionRatio >= 0.55` en facultades.
+- Sin paquetes/CDN de animación de terceros en el home.
 
-**Markup:** elementos con clase `.umg-reveal` (variantes `--left`, `--right`, `--scale`). Grids con `.umg-reveal-stagger` para cascada. El sistema `.umg-reveal` también lo usa Derecho (`umg-faculty-derecho.js`); los timings **lentos** están scoped a `body.umg-home`.
+### Formulario contacto home
 
-**Cómo decide el JS cuándo animar**
-
-- Observa: `.umg-parallax-hero`, `.umg-faculties`, `.umg-sistemas-landing .hero-panel`, `.umg-sistemas-landing .section`.
-- **No** uses `intersectionRatio >= 0.55` sobre secciones altas: facultades (6 cards) puede medir >100vh y **nunca** alcanza ese ratio → cards quedan en `opacity: 0`.
-- Criterio actual: pantalla activa por posición (`boundingClientRect`: top cerca del viewport + suficiente área visible). Ver `isActiveScreen()` en `umg-home-motion.js`.
-- Una vez revelada, `data-umg-revealed="1"` + `unobserve` (no repite).
-
-**Preferencias del usuario (no revertir sin pedir)**
-
-- Velocidad: deliberada / cinematográfica (no 300–450 ms).
-- No instalar `bertux77/laravel-inview-animations` ni CDN de terceros para animar.
-- No romper scroll-snap ni el split 60/40.
-
-### Landing admisión (`umg-sistemas-landing`) — secciones internas
-
-| ID | Rol | Copy / comportamiento |
-|----|-----|------------------------|
-| Header interno `.topbar` | Sticky local | Brand «Admisión abierta · Sede Guastatoya»; nav a `#valor` `#futuro` `#evento` `#contacto` |
-| `#hero` | Urgencia | «Tu lugar en la UMG se define en estas horas.» + countdown «Ventana crítica» + metas Calidad/Docentes/Valores |
-| `#valor` | Por qué UMG | 4 cards: Calidad, Docentes, Infraestructura, Valores |
-| `#futuro` | Formación | Split + stats Oportunidades / Comunidad / Admisión |
-| `#evento` | Callout admisión | Ya **no** es Evento Tecnológico de Sistemas; CTA a `#contacto` |
-| `#contacto` | Lead form | Título: «Pedí información…» (**sin** eyebrow «Inscripción e información»). Form lineal + toggle Correo/WhatsApp |
-
-Footer interno de la landing Astro **eliminado** (evita doble footer).
-
-### Formulario de contacto (frontend)
-
-- Markup: `resources/views/components/umg-sistemas-landing.blade.php` (`#contacto`)
-- Estilos: `.contact-form--linear`, `.contact-channel__*` en `umg-sistemas-landing.css`
-- JS: `public/build/js/umg-sistemas-contact.js` (toggle mueve `name="contacto"` / `required` al input visible)
-- Backend ya cableado: `POST /contacto` → `ContactController@store` → modelo `Lead` / tabla `leads`
-- Validación: `StoreLeadRequest` (`nombre`, `contacto`, `interes` in: inscripcion|informacion|evento)
-- **Pendiente backend (si el usuario lo pide):** persistir `contacto_tipo` (email/whatsapp), validar formato según canal, email opcional al admin
-
-### Assets landing
-
-- `public/images/logo-umg.png`
-- `public/images/hero-umg.png`
-- `public/images/umg-seal.svg` (no usado en UI actual)
-- Referencia original: `ideas/umgguastatoyagt (1)/umgguastatoyagt/README.md` + `src/pages/index.astro`
-
-### Archivos clave home
-
-| Archivo | Uso |
-|---------|-----|
-| `resources/views/JOSHUA/index-3.blade.php` | Home |
-| `resources/views/layout/mainlayout.blade.php` | Layout; `umg-home-scroll`; pre-footer omitido en home |
-| `resources/views/layout/partials/header.blade.php` | Nav; transparente hasta scroll en home |
-| `resources/views/layout/partials/footer.blade.php` | Footer UMG |
-| `resources/views/layout/partials/footer-scripts.blade.php` | Scripts home (incl. `umg-home-motion.js`) |
-| `resources/views/components/umg-parallax-hero.blade.php` | Hero campus + `.umg-reveal` |
-| `resources/views/components/umg-faculties.blade.php` | Grid facultades + stagger |
-| `resources/views/components/umg-faculty-card.blade.php` | Card; acepta `class` vía `$attributes` |
-| `resources/views/components/umg-sistemas-landing.blade.php` | Landing admisión + reveals |
-| `resources/views/components/umg-prefooter-cta.blade.php` | Solo fuera de home |
-| `resources/views/components/umg-floating-assistant.blade.php` | Asistente flotante |
-| `public/build/css/umg-theme.css` | Tema + scroll-snap + `.umg-reveal` + motion home |
-| `public/build/css/umg-sistemas-landing.css` | Estilos landing (scoped) + pulse countdown |
-| `public/build/js/umg-home.js` | Parallax hero + `.is-ready` |
-| `public/build/js/umg-home-motion.js` | Reveals por pantalla (IntersectionObserver) |
-| `public/build/js/umg-sistemas-countdown.js` | Countdown + `.is-ticking` |
-| `public/build/js/umg-sistemas-contact.js` | Toggle Correo/WhatsApp |
-
-**Trampas CSS / motion conocidas**
-
-- El tema pinta todos los `<header>`: en facultades usar `<div class="umg-faculties__header">`.
-- `section { background: transparent !important }` en el tema: secciones de color necesitan `background: ... !important`.
-- Si `umg-sistemas-landing.css` o los JS de landing faltan en disco (p. ej. tras un reset), restaurar desde git: `git show HEAD:public/build/css/umg-sistemas-landing.css`.
-- `.umg-reveal` sin `.is-visible` = `opacity: 0`. Si el observer no dispara, el contenido **desaparece**. Al tocar motion, verificar hero + facultades + landing.
-- No volver a umbrales altos de `intersectionRatio` sobre `.umg-faculties` (sección alta).
-- Tras cambiar CSS/JS en `public/build`, el usuario suele necesitar **hard refresh** (`Ctrl+F5`) por `filemtime` / caché.
+- `POST /contacto` → `ContactController@store` / `Lead`
+- Pendiente (si se pide): tipar email vs WhatsApp, validación por canal, notificación admin
 
 ---
 
-## Facultades (páginas por grupo)
+## Otras facultades
 
-Vistas en `resources/views/grupo73|74|75/*.blade.php`. Derecho tiene design system y componentes legacy (`umg-derecho-*`, `umg-faculty-derecho.js` con su propio `.umg-reveal`).
+Vistas en `resources/views/grupo73|74|75/*.blade.php`. Solo Derecho tiene story sticky + design system de página.
 
-### Derecho — scroll story (2026-08-12)
-
-- Ruta: `/grupo74/derecho` (`derecho`).
-- Apertura: `<x-umg-derecho-story />` (6 escenas sticky) **reemplaza** hero + intro.
-- Datos: `config/umg-derecho-story.php`.
-- CSS: `public/build/css/umg-derecho-story.css` (solo ruta `derecho`).
-- JS: GSAP vendor `public/build/js/vendor/{gsap,ScrollTrigger}.min.js` + `umg-derecho-story.js` (scrub). Fuente espejo: `resources/js/animations/umg-derecho-story.js`.
-- Dependencia npm: `gsap` (copiar dist a vendor si se actualiza).
-- Features/topics: acortados debajo del story.
-- Design system: `design-system/umg-derecho/pages/derecho.md` (tokens UMG; no purple Soft UI).
-- No reintroducir sin pedido: `umg-faculty-landing`, `umg-law-story` genéricos fallidos.
+No reintroducir sin pedido: `umg-faculty-landing`, `umg-law-story` genéricos fallidos de agentes previos.
 
 ---
 
 ## Git
 
 - Baseline bueno conocido: **`6566b04`**.
-- `.gitignore` incluye `/graphify-out/` y `/.cursor/` (pueden seguir trackeados: `git rm -r --cached graphify-out .cursor` si inflan pushes).
+- `.gitignore` incluye `/graphify-out/` y `/.cursor/`.
 - Antes de cambios grandes: `git status`. Si hay borrados masivos en `public/build/img` → **parar** y `git restore -- public/build/img`.
-- Autoload: no añadir `app/helpers.php` sin versionar el archivo. Si Laravel exige un helpers fantasma, limpiar `vendor/composer/autoload_files.php` / `autoload_static.php` o `composer dump-autoload`.
+- Autoload: no añadir `app/helpers.php` sin versionar el archivo.
+- Estado típico de esta rama de trabajo: cambios en story Derecho (config, Blade, CSS, design-system, README) + imágenes en `public/images/derecho/` (pueden estar untracked).
 
 ---
 
 ## Para el agente (siguiente sesión)
 
-1. Leer este README completo (sobre todo **Animaciones del home** y trampas).
+1. Leer este README completo; el **foco actual es Derecho story**, no reabrir home sin pedido.
 2. `graphify query "..."` antes de explorar.
-3. UI: skill UI UX Pro Max + `--stack laravel`; tokens UMG; no React.
-4. **No romper** scroll-snap del home ni el split 60/40 contacto/footer sin pedirlo.
-5. **No reintroducir** secciones LMS quitadas ni el pre-footer en home.
-6. **No instalar** paquetes/CDN de animaciones de terceros en el **home** salvo pedido; el home usa motion propio. Derecho usa GSAP local (vendor) para el story.
-7. Trabajo pendiente típico (confirmar con el usuario):
-   - Backend del formulario: tipar email vs WhatsApp, validación, notificaciones.
-   - Pulir tipografía/espaciado móvil del scroll (facultades 6 cards pueden desbordar 100dvh).
-   - Afinar scrub / copy / fotos del story de Derecho; no reescribir desde cero.
-   - Rediseñar landings de otras facultades.
-   - Opcional: renombrar mentalmente/componentes `umg-sistemas-*` a `umg-admision-*` (hoy el nombre es legado).
-   - Si pide más motion en home: afinar delays en `body.umg-home` / `umg-home-motion.js`.
-8. Tras editar: `graphify update .`
-9. No commit/push salvo pedido.
-10. Si la página “desaparece”: primero autoload + `git status` de imágenes; si falta contenido del home, mirar `.umg-reveal` sin `.is-visible` / JS motion; no reescribir la home desde cero.
+3. UI: skill UI UX Pro Max + `--stack laravel`; tokens UMG de `design-system/umg-derecho/pages/derecho.md`.
+4. Editar runtime en `public/build/css|js/umg-derecho-story.*` y sincronizar el espejo JS en `resources/js/animations/`.
+5. Copy/escenas: editar `config/umg-derecho-story.php` (luego `php artisan config:clear` si hace falta).
+6. **No** reintroducir cover con `filter`/`opacity`/`scale` en el card-inner.
+7. **No** comentarios CSS con `*/` embebido; **no** fondos transparentes en cards sticky.
+8. **No** `npm run build` para este feature; **no** CDN GSAP.
+9. **No** romper home scroll-snap / 60-40 / pre-footer.
+10. **No** volver a montar features/topics en Derecho salvo pedido.
+11. Tras editar: `graphify update .`
+12. No commit/push salvo pedido.
+13. Si Derecho “se pone negro” al scrollear: revisar cover del story y hard refresh.
+14. Si el texto se acumula / fondo blanco: revisar parseo del CSS del story y fondos opacos de `.umg-derecho-story__card`.
+15. Si el texto no se lee: revisar overrides vs `.umg-faculty h1/h2/p`.

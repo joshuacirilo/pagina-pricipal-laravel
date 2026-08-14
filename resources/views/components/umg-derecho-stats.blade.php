@@ -1,4 +1,4 @@
-<section class="umg-faculty-stats" aria-labelledby="umg-derecho-stats-title">
+<section class="umg-faculty-stats" id="umg-derecho-stats" aria-labelledby="umg-derecho-stats-title">
     <div class="umg-faculty-wrap">
         <h2 id="umg-derecho-stats-title" class="visually-hidden">Indicadores de la facultad</h2>
         <div class="umg-faculty-stats__grid">

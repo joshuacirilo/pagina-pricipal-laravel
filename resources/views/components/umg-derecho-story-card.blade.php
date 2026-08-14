@@ -5,24 +5,20 @@
     'description' => null,
     'image' => '',
     'imageAlt' => '',
+    'imagePosition' => 'center center',
     'variant' => 'default',
     'sceneId' => '',
     'index' => 0,
     'words' => [],
-    'paths' => [],
+    'points' => [],
     'ctas' => [],
     'priority' => false,
 ])
-
-@php
-    $isLight = $variant === 'comienza';
-@endphp
 
 <article
     {{ $attributes->class([
         'umg-derecho-story__card',
         'umg-derecho-story__card--' . $variant,
-        'umg-derecho-story__card--light' => $isLight,
     ]) }}
     data-scene="{{ $sceneId }}"
     data-scene-index="{{ $index }}"
@@ -36,6 +32,7 @@
                 alt=""
                 width="1600"
                 height="1000"
+                style="--story-object-pos: {{ $imagePosition }};"
                 @if ($priority) fetchpriority="high" @else loading="lazy" @endif
             >
             <div class="umg-derecho-story__scrim"></div>
@@ -43,21 +40,23 @@
         </div>
 
         <div class="umg-derecho-story__content">
-            <p class="umg-derecho-story__eyebrow">
-                <span class="umg-derecho-story__num" aria-hidden="true">{{ $number }}</span>
-                {{ $eyebrow }}
-            </p>
+            @if ($eyebrow !== '')
+                <p class="umg-derecho-story__eyebrow">{{ $eyebrow }}</p>
+            @endif
 
-            <div class="umg-derecho-story__title-mask">
-                @if ($index === 0)
-                    <h1 class="umg-derecho-story__title" id="umg-derecho-story-title">
-                        {{ $title }}
-                    </h1>
-                @else
-                    <h2 class="umg-derecho-story__title">
-                        {{ $title }}
-                    </h2>
-                @endif
+            <div class="umg-derecho-story__head">
+                <span class="umg-derecho-story__num" aria-hidden="true">{{ $number }}</span>
+                <div class="umg-derecho-story__title-mask">
+                    @if ($index === 0)
+                        <h1 class="umg-derecho-story__title" id="umg-derecho-story-title">
+                            {{ $title }}
+                        </h1>
+                    @else
+                        <h2 class="umg-derecho-story__title">
+                            {{ $title }}
+                        </h2>
+                    @endif
+                </div>
             </div>
 
             @if ($description)
@@ -74,10 +73,13 @@
                 </ul>
             @endif
 
-            @if (! empty($paths))
-                <ul class="umg-derecho-story__paths" aria-label="Caminos profesionales">
-                    @foreach ($paths as $path)
-                        <li class="umg-derecho-story__path">{{ $path }}</li>
+            @if (! empty($points))
+                <ul class="umg-derecho-story__points" aria-label="Puntos clave">
+                    @foreach ($points as $point)
+                        <li class="umg-derecho-story__point">
+                            <span class="umg-derecho-story__point-mark" aria-hidden="true"></span>
+                            <span>{{ $point }}</span>
+                        </li>
                     @endforeach
                 </ul>
             @endif

@@ -35,7 +35,7 @@
     "semantic_hash": "d18593472c5e35d8ab5add4240fc95f6"
   },
   "composer.json": {
-    "mtime": 1786553547.6770303,
+    "mtime": 1786587821.442733,
     "ast_hash": "900525a38a58da2a32a148bb971884ff",
     "semantic_hash": "900525a38a58da2a32a148bb971884ff"
   },
@@ -1505,23 +1505,23 @@
     "semantic_hash": "3aefeb8c9a88b017463794550b9f50bd"
   },
   "resources/views/grupo73/sistemas.blade.php": {
-    "mtime": 1786553548.0222454,
+    "mtime": 1786587821.4986885,
     "ast_hash": "71be5683cd8beff4bd825918be72e415",
     "semantic_hash": "71be5683cd8beff4bd825918be72e415"
   },
   "resources/views/grupo74/administracion.blade.php": {
-    "mtime": 1786553548.0242481,
+    "mtime": 1786587821.442733,
     "ast_hash": "7ad48b7ba91d3bb58b5046a314ea539a",
     "semantic_hash": "7ad48b7ba91d3bb58b5046a314ea539a"
   },
   "resources/views/grupo74/criminologia.blade.php": {
-    "mtime": 1786553548.0252445,
+    "mtime": 1786587821.474473,
     "ast_hash": "9c305bec5b6ef492ec818f9a238462b7",
     "semantic_hash": "9c305bec5b6ef492ec818f9a238462b7"
   },
   "resources/views/grupo74/derecho.blade.php": {
-    "mtime": 1786557098.1381667,
-    "ast_hash": "bd37d6eecb6cef5c6c5fe768ea5dd530",
+    "mtime": 1786665327.059347,
+    "ast_hash": "08e6433431e17bb8f819481a482697e7",
     "semantic_hash": ""
   },
   "resources/views/grupo74/detalles-instructor-administracion1.blade.php": {
@@ -1610,7 +1610,7 @@
     "semantic_hash": "861ba2f6f7a3e450244025f8c4676fec"
   },
   "resources/views/grupo75/Auditoria.blade.php": {
-    "mtime": 1786553548.0297382,
+    "mtime": 1786587821.4400687,
     "ast_hash": "9cb136abbd8c9dec02788e5593458da0",
     "semantic_hash": "9cb136abbd8c9dec02788e5593458da0"
   },
@@ -1680,23 +1680,23 @@
     "semantic_hash": "66dde931bbd2d5341e602ea7b14f241d"
   },
   "resources/views/grupo75/sistemas-redes-sociales.blade.php": {
-    "mtime": 1786553548.0332415,
+    "mtime": 1786587821.497688,
     "ast_hash": "c14836394d30bb0d3322190ff95b7630",
     "semantic_hash": "c14836394d30bb0d3322190ff95b7630"
   },
   "resources/views/grupo75/trabajo-social.blade.php": {
-    "mtime": 1786553548.0352526,
+    "mtime": 1786587821.489079,
     "ast_hash": "f56dbfc41f1c1f35256cbf1d5c709f1d",
     "semantic_hash": "f56dbfc41f1c1f35256cbf1d5c709f1d"
   },
   "resources/views/layout/mainlayout.blade.php": {
-    "mtime": 1786557112.206823,
-    "ast_hash": "b72cfa714650cbe3a08f303738d2b8d7",
+    "mtime": 1786665123.2504857,
+    "ast_hash": "5e1541c26a20ea5cbfedad96936397c8",
     "semantic_hash": ""
   },
   "resources/views/layout/partials/footer-scripts.blade.php": {
-    "mtime": 1786557112.2990284,
-    "ast_hash": "57a5d58a4ebae0957341d5a5bf4c49fc",
+    "mtime": 1786664015.231505,
+    "ast_hash": "ca9f06ea7a48b0c0b3e606a8097c106c",
     "semantic_hash": ""
   },
   "resources/views/layout/partials/footer.blade.php": {
@@ -1750,7 +1750,7 @@
     "semantic_hash": "3f679e9508c834f0ad95943455fcd836"
   },
   "vite.config.js": {
-    "mtime": 1786553548.040121,
+    "mtime": 1786587821.442733,
     "ast_hash": "ce0d1bce38906f7d45d9ae7bdfc6b0d2",
     "semantic_hash": "ce0d1bce38906f7d45d9ae7bdfc6b0d2"
   },
@@ -1760,8 +1760,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1786557235.1371863,
-    "ast_hash": "561770f4de760de3c8cd0a918a1823da",
+    "mtime": 1786665332.353332,
+    "ast_hash": "a4468b699abbd3521c877ba05a8be321",
     "semantic_hash": ""
   },
   "public/robots.txt": {
@@ -6945,12 +6945,12 @@
     "semantic_hash": ""
   },
   "resources/views/components/umg-derecho-faq.blade.php": {
-    "mtime": 1786553548.0114517,
-    "ast_hash": "7f0acb74549317bb50628014faa3b356",
+    "mtime": 1786664763.2272153,
+    "ast_hash": "8a4a4c22a026be7525b2923b449199c0",
     "semantic_hash": ""
   },
   "resources/views/components/umg-derecho-features.blade.php": {
-    "mtime": 1786557104.7059205,
+    "mtime": 1786587851.7951374,
     "ast_hash": "8e42ea98f17b677d263354e58dfab3c3",
     "semantic_hash": ""
   },
@@ -6960,8 +6960,8 @@
     "semantic_hash": ""
   },
   "resources/views/components/umg-derecho-instructors.blade.php": {
-    "mtime": 1786553548.0160093,
-    "ast_hash": "44f6ce43e68e0679c7af041d04b437e8",
+    "mtime": 1786648988.0026882,
+    "ast_hash": "f155d78e6148b903a1145b5f9552ea87",
     "semantic_hash": ""
   },
   "resources/views/components/umg-derecho-intro.blade.php": {
@@ -6970,12 +6970,12 @@
     "semantic_hash": ""
   },
   "resources/views/components/umg-derecho-stats.blade.php": {
-    "mtime": 1786553548.0180259,
-    "ast_hash": "ee844cda46b7a2e71ce20946247c5419",
+    "mtime": 1786665124.4810846,
+    "ast_hash": "c903569a20151b4a777707e442aa23e1",
     "semantic_hash": ""
   },
   "resources/views/components/umg-derecho-topics.blade.php": {
-    "mtime": 1786557109.027617,
+    "mtime": 1786587851.8135345,
     "ast_hash": "cc48d2cfb42a19623bc01c7fb1ca0489",
     "semantic_hash": ""
   },
@@ -6985,7 +6985,7 @@
     "semantic_hash": ""
   },
   "resources/views/components/umg-sistemas-landing.blade.php": {
-    "mtime": 1786555415.339106,
+    "mtime": 1786646920.8480067,
     "ast_hash": "5e725bf97f475d1675658c31b2c79214",
     "semantic_hash": ""
   },
@@ -6995,8 +6995,8 @@
     "semantic_hash": ""
   },
   "design-system/umg-derecho/pages/derecho.md": {
-    "mtime": 1786556940.9366748,
-    "ast_hash": "d05ae5b895756b0099564e3abf4d720c",
+    "mtime": 1786665332.277815,
+    "ast_hash": "6b01a985bb391e83e3c1ac38acf3427a",
     "semantic_hash": ""
   },
   "public/images/hero-umg.png": {
@@ -7025,28 +7025,153 @@
     "semantic_hash": ""
   },
   "config/umg-faculties.php": {
-    "mtime": 1786553547.6793454,
+    "mtime": 1786587821.474473,
     "ast_hash": "6ec3d7eb3b3bc60132729477056ac022",
     "semantic_hash": ""
   },
   "config/umg-derecho-story.php": {
-    "mtime": 1786557552.4568193,
-    "ast_hash": "3b6a20da1a412b8761621d748d70482a",
+    "mtime": 1786664011.8731406,
+    "ast_hash": "66d60e76dddb971e612afc7abc6eff18",
     "semantic_hash": ""
   },
   "resources/js/animations/umg-derecho-story.js": {
-    "mtime": 1786557571.3565738,
-    "ast_hash": "5411f6d7af3a9d3761afdd8ddea25fda",
+    "mtime": 1786587851.7936225,
+    "ast_hash": "6a07ce7f4ac45ebe77b60f2bc71fee08",
     "semantic_hash": ""
   },
   "resources/views/components/umg-derecho-story-card.blade.php": {
-    "mtime": 1786557346.7115514,
-    "ast_hash": "824be1e0cba9b7e26678f11ce100cee2",
+    "mtime": 1786648937.4161937,
+    "ast_hash": "6a3a7ae736eeb96f31000406f4fd7422",
     "semantic_hash": ""
   },
   "resources/views/components/umg-derecho-story.blade.php": {
-    "mtime": 1786556998.6290452,
-    "ast_hash": "e1bfe3ceb7bd85e99c40f3e1c6d9f81b",
+    "mtime": 1786648939.358036,
+    "ast_hash": "ecd92fc09b66437e08884d87206aa958",
+    "semantic_hash": ""
+  },
+  "public/images/derecho/13114088-8b42-464f-bffc-23800f858e14.png": {
+    "mtime": 1786647812.1175792,
+    "ast_hash": "66ffe9354234051de0633b764fc9b5d0",
+    "semantic_hash": ""
+  },
+  "public/images/derecho/202e91d8-e0b5-4ce4-8e69-132cbd907ea8.png": {
+    "mtime": 1786647822.7210486,
+    "ast_hash": "f0551b1b2026a84bbe15e9c3f8544f4a",
+    "semantic_hash": ""
+  },
+  "public/images/derecho/286a5444-fe87-4309-9c91-2dcc0a87f7c3.png": {
+    "mtime": 1786647817.186368,
+    "ast_hash": "74f3640fdeef7e5500830d6f42e58908",
+    "semantic_hash": ""
+  },
+  "public/images/derecho/c54973a6-28e3-4cb2-9ed0-1198dc5ef71a.png": {
+    "mtime": 1786647799.7209628,
+    "ast_hash": "7c9fd088edaa6efe6426695c8baca7f6",
+    "semantic_hash": ""
+  },
+  "public/images/derecho/dae92492-c3b6-40b3-b0db-fef76501688c.png": {
+    "mtime": 1786647806.7230413,
+    "ast_hash": "25b3ed60463fd0ce1528648cc98c19cf",
+    "semantic_hash": ""
+  },
+  "public/images/administraccion/0301dac5-e4ca-4e7b-abb2-a9900cf98c12.png": {
+    "mtime": 1786648877.557114,
+    "ast_hash": "45060941a688370980cb249082d009a5",
+    "semantic_hash": ""
+  },
+  "public/images/administraccion/a7790aec-ac37-467f-ac56-f0fe0045e2dd.png": {
+    "mtime": 1786648867.6713533,
+    "ast_hash": "88b9556a2a454a26a205cafbb3ac5124",
+    "semantic_hash": ""
+  },
+  "public/images/administraccion/e9b2710a-e49d-4502-8d69-a531a56f9d90.png": {
+    "mtime": 1786648882.0068293,
+    "ast_hash": "00c226ed20a0e3361c5a79e047c6e2ed",
+    "semantic_hash": ""
+  },
+  "public/images/administraccion/f8853cef-74d2-424f-9465-56a812b6c4d7.png": {
+    "mtime": 1786648872.8196332,
+    "ast_hash": "b2d3dc239fcac2afe9e3808b8f4fb276",
+    "semantic_hash": ""
+  },
+  "public/images/administraccion/fb7a73b4-8292-4539-aff7-b9200dbada1b.png": {
+    "mtime": 1786648862.7218091,
+    "ast_hash": "5bc999270661c35710f47cdda0282557",
+    "semantic_hash": ""
+  },
+  "config/umg-derecho-pensum.php": {
+    "mtime": 1786664506.820263,
+    "ast_hash": "16fa1e5188d4496737a9e793d94239d9",
+    "semantic_hash": ""
+  },
+  "resources/views/components/umg-derecho-pensum.blade.php": {
+    "mtime": 1786664513.9250567,
+    "ast_hash": "993484fbb93671f4a38517a233beb3d9",
+    "semantic_hash": ""
+  },
+  "public/images/criminologia/12423ea1-ce43-48ca-9cc6-ae42c184bb65.png": {
+    "mtime": 1786664207.7149644,
+    "ast_hash": "50a56d45e47fed13af575cb101c4293e",
+    "semantic_hash": ""
+  },
+  "public/images/criminologia/330d0b41-7291-40e9-a726-545c32ae3b68.png": {
+    "mtime": 1786664223.8230517,
+    "ast_hash": "6221a37822e79c25aa0e80034df7114c",
+    "semantic_hash": ""
+  },
+  "public/images/criminologia/628403d8-a6e7-4f4f-97d0-2fa24030336f.png": {
+    "mtime": 1786664202.7069454,
+    "ast_hash": "be48caed82cdb657ec072d5856b87afc",
+    "semantic_hash": ""
+  },
+  "public/images/criminologia/86e65f4f-48b9-4eee-beb6-a789569cb799.png": {
+    "mtime": 1786664218.2689254,
+    "ast_hash": "34a28080bf381f1502ca8dff4296d1c6",
+    "semantic_hash": ""
+  },
+  "public/images/criminologia/9bce3a38-cc9c-472f-97a1-500a2abc54b8.png": {
+    "mtime": 1786664212.5938318,
+    "ast_hash": "1873ed3363f78b80697751a7ff35eed0",
+    "semantic_hash": ""
+  },
+  "public/images/sistemas/5d9ba46e-80dd-4ce9-b15f-98650ccd1e16.png": {
+    "mtime": 1786664673.7626333,
+    "ast_hash": "7ccd8d39b45457e555855442b408f970",
+    "semantic_hash": ""
+  },
+  "public/images/sistemas/7a38f1d4-d60a-4cfd-8a28-b60116dd8736.png": {
+    "mtime": 1786664684.0907865,
+    "ast_hash": "6d937827b9715dbdfe7a2364406443f3",
+    "semantic_hash": ""
+  },
+  "public/images/sistemas/c069011d-fb93-44ca-b3ce-ba8a72e4c16e.png": {
+    "mtime": 1786664666.609293,
+    "ast_hash": "289f7348077162b2d12a0bcf871ef44a",
+    "semantic_hash": ""
+  },
+  "public/images/sistemas/e46e809b-4460-4c58-a907-c2d710742705.png": {
+    "mtime": 1786664679.1512678,
+    "ast_hash": "524efd3ea222a0a6b24c8b31317ec1e2",
+    "semantic_hash": ""
+  },
+  "public/images/trabajo social/8773c2bf-70cf-4999-a83f-12eff7428958.png": {
+    "mtime": 1786664903.9702308,
+    "ast_hash": "03adff8dc0cc27ccc78a954ac21f6301",
+    "semantic_hash": ""
+  },
+  "public/images/trabajo social/9e726ef6-37cb-435a-852c-ebb3ed380d4b.png": {
+    "mtime": 1786664882.1864135,
+    "ast_hash": "66ecd863574e2eb3a03aae69da371042",
+    "semantic_hash": ""
+  },
+  "public/images/trabajo social/d0cadf79-4f87-4077-bd01-6e1333eb7c6d.png": {
+    "mtime": 1786664908.465312,
+    "ast_hash": "6bfcb06c96cbc15c10d2e9b7a27ec6ef",
+    "semantic_hash": ""
+  },
+  "public/images/trabajo social/e033ddbb-a7af-434f-9b5e-c5a789a8480a.png": {
+    "mtime": 1786664897.182459,
+    "ast_hash": "8083c3e2efa76256c43712d5cd600446",
     "semantic_hash": ""
   }
 }

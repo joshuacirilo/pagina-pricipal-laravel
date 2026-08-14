@@ -40,6 +40,12 @@
 @if (Route::is(['derecho']))
 <link rel="stylesheet"
       href="{{ asset('build/css/umg-derecho-story.css') }}?v={{ filemtime(public_path('build/css/umg-derecho-story.css')) }}">
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-derecho-pensum.css') }}?v={{ filemtime(public_path('build/css/umg-derecho-pensum.css')) }}">
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-derecho-faq.css') }}?v={{ filemtime(public_path('build/css/umg-derecho-faq.css')) }}">
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-derecho-page.css') }}?v={{ filemtime(public_path('build/css/umg-derecho-page.css')) }}">
 @endif
 
 </head>

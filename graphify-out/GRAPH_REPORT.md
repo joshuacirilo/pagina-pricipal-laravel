@@ -1,32 +1,32 @@
-# Graph Report - pagina-pricipal-laravel  (2026-08-12)
+# Graph Report - pagina-pricipal-laravel  (2026-08-13)
 
 ## Corpus Check
-- 378 files · ~2,584,460 words
+- 380 files · ~4,319,301 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 6894 nodes · 17154 edges · 594 communities (472 shown, 122 thin omitted)
+- 6896 nodes · 17154 edges · 594 communities (475 shown, 119 thin omitted)
 - Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 680 edges (avg confidence: 0.6)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f0e36b4a`
+- Built from commit: `377c6a9c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- GE
-- ob
-- .is
-- Ho
+- .extendTemplate
+- .fire
+- .remove
+- .createRange
 - $_
 - swiper-bundle.min.js
-- id
+- Button
 - bootstrap.bundle.js
 - .getAttribute
 - all.min.js
 - Slick
-- .extendTemplate
+- kc
 - moment.min.js
 - bootstrap.bundle.min.js
 - summernote-lite.min.js
@@ -36,7 +36,7 @@
 - .hide
 - ms
 - select2.full.js
-- .isEqual
+- .clone
 - .setTemplate
 - dh
 - jquery-3.7.1.min.js
@@ -47,25 +47,25 @@
 - conflict-detection.js
 - jquery-ui.js
 - Fi
-- zc
-- .setSelection
+- ks
+- id
 - SelectAdapter
 - hu
-- vs
+- zc
 - ea
-- .getChild
-- wp
+- ob
+- jquery-ui.min.js
 - .hide
 - Context
 - .stopListening
-- .fire
+- yi
 - BaseComponent
 - remove
 - .hide
-- n
+- .getSelectedElement
 - dx
 - select2.full.min.js
-- gf
+- .get
 - all.js
 - fontawesome.js
 - St
@@ -83,41 +83,41 @@
 - fl
 - vh
 - nl
-- ks
+- .isEqual
 - Results
 - remove
 - Carousel
 - vu
 - ._isShown
-- Ze
-- Collapse
-- .getFirstPosition
+- contains
+- Modal
+- j
 - Results
 - Results
-- ig
+- apexcharts.min.js
 - ma
 - ws
 - Tc
 - resources/js/select2.js
 - select2/js/select2.js
 - ScrollSpy
-- hd
-- jquery-ui.min.js
+- gd
+- remove
 - ScrollSpy
-- apexcharts.min.js
+- Ze
 - .trigger
 - SelectAdapter
 - vk
 - isotope.pkgd.js
 - SelectAdapter
 - Ln
-- .on
-- remove
+- .is
+- GE
 - qc
-- j
+- wD
 - jh
 - Tab
-- Modal
+- sd
 - Zs
 - Cf
 - pr
@@ -126,7 +126,7 @@
 - umg-derecho-story.js
 - .on
 - .append
-- _unpinTooltip
+- .removeAttribute
 - Tooltip
 - Qi
 - Dropdown
@@ -142,19 +142,19 @@
 - .on
 - .bind
 - Dropdown
-- ._setupConversion
+- wp
 - hs
 - Design System Master File
 - If
 - Backdrop
 - Eo
-- .append
+- MultipleSelection
 - .trigger
 - scripts
-- contains
+- Me
 - Gc
 - bd
-- Aa
+- dr
 - gs
 - brands.js
 - regular.js
@@ -162,13 +162,13 @@
 - Ss
 - ts
 - lt
-- en
+- _unpinTooltip
 - Backdrop
-- nr
-- CA
+- BaseAdapter
+- en
 - resources/js/select2.min.js
 - remove
-- pf
+- CA
 - _slicedToArray
 - v4-shims.js
 - ot
@@ -183,19 +183,19 @@
 - _objectSpread2
 - scripts
 - rr
-- zf
+- gf
 - getCanonicalIcon
 - xp
 - zo
 - getCanonicalIcon
 - composer.json
 - require-dev
-- sd
+- nr
 - Zi
 - Offcanvas
 - Ce
 - ScrollBarHelper
-- Ya
+- pf
 - MaximumSelectionLength
 - script.js
 - findIcon
@@ -205,15 +205,15 @@
 - replaceForPosition
 - User
 - an
-- Me
+- Aa
 - InfiniteScroll
-- Alert
-- x
+- ig
+- .has
 - a
 - Ie
 - xw
 - Derecho Page Overrides
-- fI
+- zf
 - aos.js
 - bootstrap-tagsinput/bootstrap-tagsinput.js
 - js/bootstrap-tagsinput.js
@@ -224,17 +224,17 @@
 - config
 - wt
 - Nd
-- qs
-- AllowClear
+- Ya
+- .push
 - Vg
 - parseMeta
 - dropzone.min.js
 - brands.min.js
 - Mc
-- preventOverflow
-- kc
+- x
+- fI
 - Cs
-- Ek
+- Popover
 - bootstrap-tagsinput.min.js
 - feather.min.js
 - components.partials.umg-assistant-robot-svg
@@ -244,7 +244,7 @@
 - UserFactory
 - TestCase
 - js/jquery.slimscroll.min.js
-- Ro
+- ph
 - slimscroll/jquery.slimscroll.min.js
 - attachResizeEvent
 - AppServiceProvider
@@ -255,23 +255,24 @@
 - dev
 - .apply
 - jquery.fancybox.min.js
-- ev
-- rA
+- qs
+- AllowClear
 - _wrapRegExp
 - require
 - ExampleTest
-- ph
+- Ek
 - MaximumSelectionLength
-- .listenTo
+- Ho
 - Swipe
 - MaximumSelectionLength
 - extra
 - keywords
-- ys
-- gd
-- ru
 - U
+- Ro
+- ev
+- rA
 - owl.carousel.min.js
+- SelectOnClose
 - datepicker_bindHover
 - StoreLeadRequest
 - ion.rangeSlider.js
@@ -281,10 +282,7 @@
 - complete
 - getDimensions
 - summernote-ext-databasic.js
-- .get
-- dr
-- wD
-- BaseAdapter
+- t
 - UMG Guastatoya - Portal Laravel
 
 ## God Nodes (most connected - your core abstractions)
@@ -314,43 +312,47 @@
 ## Import Cycles
 - None detected.
 
-## Communities (594 total, 122 thin omitted)
+## Communities (594 total, 119 thin omitted)
 
-### Community 2 - ".is"
-Cohesion: 0.04
-Nodes (18): a(), au(), dd(), ed, iu(), JE(), ld(), lr (+10 more)
+### Community 0 - ".extendTemplate"
+Cohesion: 0.09
+Nodes (8): bp, gg, ip, jp(), mg(), qg, xg, zp()
 
-### Community 3 - "Ho"
-Cohesion: 0.08
-Nodes (17): Fo(), _getDialogRect(), _getViewportRect(), _getVisibleDomRootRect(), Go(), Ho, ii, moveBy() (+9 more)
+### Community 1 - ".fire"
+Cohesion: 0.05
+Nodes (8): cb, Cc, cu(), Gw, ib, lu(), MI, _onDrag()
+
+### Community 2 - ".remove"
+Cohesion: 0.05
+Nodes (14): dd(), HE, JE(), lE(), lr, oa(), QE(), su() (+6 more)
+
+### Community 3 - ".createRange"
+Cohesion: 0.07
+Nodes (14): Ab(), bb, ch(), _enableTransformationWatchers(), Fy(), gx, jy(), lb (+6 more)
 
 ### Community 4 - "$_"
 Cohesion: 0.02
-Nodes (53): $_, ai(), _attachDragListeners(), _attachListeners(), attachTo(), _colorFillPaths(), constructor(), cy() (+45 more)
+Nodes (70): $_, _addBasicStylesAutoformats(), _addBlockQuoteAutoformats(), _addElementCallback(), _addHeadingAutoformats(), _addHorizontalLineAutoformats(), _addListAutoformats(), afterInit() (+62 more)
 
 ### Community 5 - "swiper-bundle.min.js"
 Cohesion: 0.06
 Nodes (66): a(), addEventListener(), ae(), b(), blur(), c(), cancelAnimationFrame(), ce() (+58 more)
 
-### Community 6 - "id"
-Cohesion: 0.03
-Nodes (22): aw(), bl(), _enableTransformationWatchers(), Fb(), Gb(), hb, hy, id (+14 more)
-
 ### Community 7 - "bootstrap.bundle.js"
-Cohesion: 0.05
-Nodes (85): addHandler(), applyStyles(), areValidElements(), bootstrapDelegationHandler(), bootstrapHandler(), debounce(), detectOverflow(), effect() (+77 more)
+Cohesion: 0.04
+Nodes (108): addHandler(), applyStyles(), areValidElements(), arrow(), bootstrapDelegationHandler(), bootstrapHandler(), computeAutoPlacement(), computeOffsets() (+100 more)
 
 ### Community 8 - ".getAttribute"
-Cohesion: 0.07
-Nodes (7): eI(), jd(), kd(), od, pd(), Xd, Xi()
+Cohesion: 0.04
+Nodes (13): du(), eI(), Gb(), hx(), jd(), kd(), od, pd() (+5 more)
 
 ### Community 9 - "all.min.js"
 Cohesion: 0.07
 Nodes (67): $1(), _2(), a(), A1(), a2(), b(), c(), c2() (+59 more)
 
-### Community 11 - ".extendTemplate"
-Cohesion: 0.08
-Nodes (9): af, bf, bp, gg, ip, jp(), qg, xg (+1 more)
+### Community 11 - "kc"
+Cohesion: 0.13
+Nodes (3): da(), kc, la()
 
 ### Community 12 - "moment.min.js"
 Cohesion: 0.08
@@ -372,13 +374,21 @@ Nodes (33): a(), at(), b(), ct(), d(), dt(), E(), et() (+25 more)
 Cohesion: 0.06
 Nodes (33): a(), at(), b(), ct(), d(), dt(), E(), et() (+25 more)
 
+### Community 18 - ".hide"
+Cohesion: 0.08
+Nodes (3): Alert, Offcanvas, Toast
+
 ### Community 20 - "select2.full.js"
 Cohesion: 0.09
 Nodes (15): callDep(), ContainerCSS(), countResults(), DropdownCSS(), handler(), hasProp(), makeNormalize(), makeRelParts() (+7 more)
 
+### Community 21 - ".clone"
+Cohesion: 0.05
+Nodes (3): Es, hd(), zd()
+
 ### Community 22 - ".setTemplate"
 Cohesion: 0.04
-Nodes (14): Ap, Cp, dg, em, Fg, im, kp, Lf (+6 more)
+Nodes (15): af, Ap, bf, Cp, dg, em, Fg, im (+7 more)
 
 ### Community 23 - "dh"
 Cohesion: 0.10
@@ -404,29 +414,29 @@ Nodes (38): _arrayLikeToArray(), _arrayWithoutHoles(), binl2rstr(), binlMD5(), b
 Cohesion: 0.04
 Nodes (23): TODO: determine which cases actually cause this to happen, TODO: Unwrap at same DOM position, TODO: make renderAxis a prototype function, TODO: Seems like a bug to cache this.outerDimensions, TODO: remove after 1.12, TODO: Remove hack when datepicker implements, TODO: switch return back to widget declaration at top of file when this is…, TODO: Remove in 1.14 along with call to it below (+15 more)
 
-### Community 32 - "zc"
+### Community 32 - "ks"
 Cohesion: 0.05
-Nodes (5): et(), gh(), lh(), Uc, zc
+Nodes (7): ks, Ls, na(), nt(), Pc, ue(), Zh
 
-### Community 33 - ".setSelection"
-Cohesion: 0.06
-Nodes (10): BI, dw(), ew(), hw(), kw, ol(), ri(), ti() (+2 more)
+### Community 33 - "id"
+Cohesion: 0.05
+Nodes (19): au(), aw(), bl(), Fb(), hb, id, iu(), jb (+11 more)
 
 ### Community 34 - "SelectAdapter"
 Cohesion: 0.14
 Nodes (5): ArrayAdapter(), InputData(), SelectAdapter(), Tags(), Tokenizer()
 
-### Community 36 - "vs"
-Cohesion: 0.07
-Nodes (6): Fc(), jc(), Lc(), Oc, Rc(), vs
+### Community 36 - "zc"
+Cohesion: 0.05
+Nodes (8): et(), Fc(), jc(), Lc(), Oc, Rc(), vs, zc
 
 ### Community 37 - "ea"
 Cohesion: 0.10
 Nodes (3): ea(), Tk, Xo()
 
-### Community 38 - ".getChild"
-Cohesion: 0.07
-Nodes (12): bb, gA(), Gw, Ia(), MI, _pinTooltip(), qA(), Qi() (+4 more)
+### Community 39 - "jquery-ui.min.js"
+Cohesion: 0.15
+Nodes (15): T(), Y(), a(), at(), h(), i(), m(), n() (+7 more)
 
 ### Community 40 - ".hide"
 Cohesion: 0.09
@@ -440,25 +450,25 @@ Nodes (4): byTriggerPoint(), Context(), Group(), Waypoint()
 Cohesion: 0.08
 Nodes (10): ar, _detachDragListeners(), hide(), Ji, mr, _onDragEnd(), pin(), _stopPinning() (+2 more)
 
-### Community 43 - ".fire"
-Cohesion: 0.03
-Nodes (24): bs(), cb, Cc, cu(), Fx(), ib, iw(), Ju() (+16 more)
+### Community 43 - "yi"
+Cohesion: 0.04
+Nodes (18): Fx(), iw(), Ju(), jx(), Ki(), kx, Lx(), Mx() (+10 more)
 
 ### Community 45 - "remove"
 Cohesion: 0.08
 Nodes (4): B, es, remove(), W
 
-### Community 47 - "n"
-Cohesion: 0.03
-Nodes (19): bm, c(), _createObserver(), dy, e(), f(), fr, Hc() (+11 more)
+### Community 47 - ".getSelectedElement"
+Cohesion: 0.07
+Nodes (9): dw(), ew(), hw(), iv, kw, Mv, nv, ov (+1 more)
 
 ### Community 49 - "select2.full.min.js"
 Cohesion: 0.11
 Nodes (24): A(), b(), c(), D(), e(), i(), l(), n() (+16 more)
 
-### Community 50 - "gf"
-Cohesion: 0.13
-Nodes (3): gf, tf(), Zm
+### Community 50 - ".get"
+Cohesion: 0.03
+Nodes (31): _addCodeBlockAutoformats(), ai(), ay(), B(), bE(), BI, ci(), cr() (+23 more)
 
 ### Community 51 - "all.js"
 Cohesion: 0.09
@@ -485,8 +495,8 @@ Cohesion: 0.17
 Nodes (4): AjaxAdapter(), Defaults(), Options(), Tokenizer()
 
 ### Community 58 - ".apply"
-Cohesion: 0.10
-Nodes (8): AjaxAdapter(), Defaults(), HidePlaceholder(), MaximumInputLength(), MinimumInputLength(), Options(), Placeholder(), Tokenizer()
+Cohesion: 0.11
+Nodes (7): AjaxAdapter(), Defaults(), HidePlaceholder(), MaximumInputLength(), MinimumInputLength(), Options(), Tokenizer()
 
 ### Community 59 - "bootstrap.min.js"
 Cohesion: 0.12
@@ -500,9 +510,9 @@ Nodes (6): ah(), ih(), oh(), rh, sh(), xc
 Cohesion: 0.06
 Nodes (6): bu, dl(), hl(), Ic, ll(), ou()
 
-### Community 68 - "ks"
-Cohesion: 0.05
-Nodes (7): ks, Ls, na(), nt(), Pc, ue(), Zh
+### Community 68 - ".isEqual"
+Cohesion: 0.04
+Nodes (5): gh(), lh(), ru(), Uc, ys
 
 ### Community 70 - "remove"
 Cohesion: 0.07
@@ -512,17 +522,17 @@ Nodes (5): BaseComponent, Config, remove(), sanitizeHtml(), TemplateFactory
 Cohesion: 0.12
 Nodes (8): Gu(), ng(), sg(), To(), vu, wu(), Xu(), Yu()
 
-### Community 74 - "Ze"
-Cohesion: 0.16
-Nodes (3): Ue(), Ze, Ye()
+### Community 74 - "contains"
+Cohesion: 0.14
+Nodes (3): contains(), effect$1(), Modal
 
-### Community 76 - ".getFirstPosition"
-Cohesion: 0.09
-Nodes (12): Ab(), B(), ch(), Eb(), Fy(), gx, jy(), kE() (+4 more)
+### Community 76 - "j"
+Cohesion: 0.22
+Nodes (3): j(), No, Po()
 
-### Community 79 - "ig"
-Cohesion: 0.11
-Nodes (5): fu(), ig(), og(), qu, rg()
+### Community 79 - "apexcharts.min.js"
+Cohesion: 0.36
+Nodes (18): a(), c(), d(), e(), f(), g(), h(), i() (+10 more)
 
 ### Community 82 - "Tc"
 Cohesion: 0.04
@@ -536,17 +546,17 @@ Nodes (20): BaseAdapter(), callDep(), CloseOnSelect(), countResults(), Decorated
 Cohesion: 0.09
 Nodes (12): callDep(), countResults(), DecoratedClass(), Dropdown(), hasProp(), makeNormalize(), makeRelParts(), makeRequire() (+4 more)
 
-### Community 86 - "hd"
+### Community 86 - "gd"
 Cohesion: 0.03
-Nodes (7): hd(), qd, Qh, ud(), Vd, Yd, zd()
+Nodes (6): gd(), qd, Qh, ud(), Vd, Yd
 
-### Community 87 - "jquery-ui.min.js"
-Cohesion: 0.15
-Nodes (15): T(), Y(), a(), at(), h(), i(), m(), n() (+7 more)
+### Community 87 - "remove"
+Cohesion: 0.18
+Nodes (3): remove(), sanitizeHtml(), TemplateFactory
 
-### Community 89 - "apexcharts.min.js"
-Cohesion: 0.36
-Nodes (18): a(), c(), d(), e(), f(), g(), h(), i() (+10 more)
+### Community 89 - "Ze"
+Cohesion: 0.16
+Nodes (3): Ue(), Ze, Ye()
 
 ### Community 91 - "SelectAdapter"
 Cohesion: 0.21
@@ -568,17 +578,9 @@ Nodes (3): ArrayAdapter(), SelectAdapter(), Tags()
 Cohesion: 0.12
 Nodes (5): Ln, gn(), pn(), wn(), yn()
 
-### Community 96 - ".on"
-Cohesion: 0.03
-Nodes (49): ad(), al(), Av(), ay(), bE(), bv, cd(), Ce() (+41 more)
-
-### Community 97 - "remove"
-Cohesion: 0.18
-Nodes (3): remove(), sanitizeHtml(), TemplateFactory
-
-### Community 99 - "j"
-Cohesion: 0.22
-Nodes (3): j(), No, Po()
+### Community 96 - ".is"
+Cohesion: 0.04
+Nodes (47): ad(), al(), Av(), bs(), bv, Ce(), cl(), cv() (+39 more)
 
 ### Community 100 - "jh"
 Cohesion: 0.04
@@ -604,9 +606,9 @@ Nodes (3): AttachBody(), CloseOnSelect(), EventRelay()
 Cohesion: 0.08
 Nodes (6): AttachContainer(), HidePlaceholder(), InfiniteScroll(), MultipleSelection(), Placeholder(), SingleSelection()
 
-### Community 112 - "_unpinTooltip"
-Cohesion: 0.28
-Nodes (8): Fm(), getPositioningFunctions(), jm(), _onEnterOrFocus(), _onLeaveOrBlur(), _onScroll(), _unpinTooltip(), _updateTooltipPosition()
+### Community 112 - ".removeAttribute"
+Cohesion: 0.06
+Nodes (8): hy, ny, _pinTooltip(), qA(), Qi(), ua(), wc, yc
 
 ### Community 113 - "Tooltip"
 Cohesion: 0.06
@@ -624,10 +626,6 @@ Nodes (11): getItem(), getItemState(), _getWatchdog(), Ik, kf, Os, P(), remove()
 Cohesion: 0.22
 Nodes (3): AttachBody(), CloseOnSelect(), EventRelay()
 
-### Community 128 - "._setupConversion"
-Cohesion: 0.06
-Nodes (17): aE(), bx(), dE(), fE, HE, iE(), jx(), lE() (+9 more)
-
 ### Community 129 - "hs"
 Cohesion: 0.14
 Nodes (3): DC(), Ec, hs
@@ -640,17 +638,13 @@ Nodes (17): Additional Forbidden Patterns, Anti-Patterns (Do NOT Use), Buttons, 
 Cohesion: 0.31
 Nodes (3): Do(), Eo, Io()
 
-### Community 135 - ".append"
-Cohesion: 0.13
-Nodes (3): InfiniteScroll(), MultipleSelection(), SingleSelection()
+### Community 135 - "MultipleSelection"
+Cohesion: 0.16
+Nodes (3): MultipleSelection(), Placeholder(), SingleSelection()
 
 ### Community 137 - "scripts"
 Cohesion: 0.11
 Nodes (18): gsap, laravel-vite-plugin, dependencies, gsap, devDependencies, laravel-vite-plugin, vite, vite-plugin-static-copy (+10 more)
-
-### Community 138 - "contains"
-Cohesion: 0.14
-Nodes (3): contains(), effect$1(), Modal
 
 ### Community 143 - "brands.js"
 Cohesion: 0.23
@@ -664,11 +658,11 @@ Nodes (13): _arrayLikeToArray(), _arrayWithoutHoles(), defineIcons(), _definePro
 Cohesion: 0.23
 Nodes (13): _arrayLikeToArray(), _arrayWithoutHoles(), defineIcons(), _defineProperty(), _iterableToArray(), _nonIterableSpread(), normalizeIcons(), _objectSpread2() (+5 more)
 
-### Community 148 - "lt"
-Cohesion: 0.21
-Nodes (3): lt, tt(), st()
+### Community 149 - "_unpinTooltip"
+Cohesion: 0.28
+Nodes (8): Fm(), getPositioningFunctions(), jm(), _onEnterOrFocus(), _onLeaveOrBlur(), _onScroll(), _unpinTooltip(), _updateTooltipPosition()
 
-### Community 149 - "en"
+### Community 152 - "en"
 Cohesion: 0.28
 Nodes (9): b(), De(), en(), H(), L(), Me(), Qe(), R() (+1 more)
 
@@ -707,6 +701,10 @@ Nodes (13): asIcon(), asSymbol(), defineIcons(), isLabeled(), joinStyles(), make
 ### Community 168 - "scripts"
 Cohesion: 0.17
 Nodes (12): scripts, post-autoload-dump, post-create-project-cmd, post-root-package-install, post-update-cmd, Illuminate\\Foundation\\ComposerScripts::postAutoloadDump, @php artisan key:generate --ansi, @php artisan migrate --graceful --ansi (+4 more)
+
+### Community 170 - "gf"
+Cohesion: 0.13
+Nodes (3): gf, tf(), Zm
 
 ### Community 171 - "getCanonicalIcon"
 Cohesion: 0.29
@@ -756,6 +754,14 @@ Nodes (6): User, DatabaseSeeder, Illuminate\Database\Eloquent\Factories\HasFacto
 Cohesion: 0.27
 Nodes (3): an, nn(), tn()
 
+### Community 195 - "ig"
+Cohesion: 0.11
+Nodes (5): fu(), ig(), og(), qu, rg()
+
+### Community 196 - ".has"
+Cohesion: 0.08
+Nodes (13): aE(), bw(), bx(), dE(), fE, Hr(), iE(), il() (+5 more)
+
 ### Community 197 - "a"
 Cohesion: 0.33
 Nodes (7): n(), o(), s(), a(), e(), n(), o()
@@ -792,6 +798,10 @@ Nodes (8): dealerdirect/phpcodesniffer-composer-installer, pestphp/pest-plugin, 
 Cohesion: 0.28
 Nodes (3): ag(), pg, wt()
 
+### Community 214 - ".push"
+Cohesion: 0.10
+Nodes (7): cd(), ed, eg(), pl(), ql(), tg(), ul
+
 ### Community 216 - "parseMeta"
 Cohesion: 0.20
 Nodes (12): attributesParser(), callProvided(), chainHooks(), generateMutation(), getKnownPrefixes(), getMutator(), onNode(), onTree() (+4 more)
@@ -803,14 +813,6 @@ Nodes (5): a(), b(), _classCallCheck(), __guard__(), _possibleConstructorReturn(
 ### Community 218 - "brands.min.js"
 Cohesion: 0.39
 Nodes (6): a(), e(), h(), M(), s(), y()
-
-### Community 220 - "preventOverflow"
-Cohesion: 0.14
-Nodes (23): arrow(), computeAutoPlacement(), computeOffsets(), computeStyles(), distanceAndSkiddingToXY(), flip(), getAltAxis(), getBasePlacement() (+15 more)
-
-### Community 221 - "kc"
-Cohesion: 0.13
-Nodes (3): da(), kc, la()
 
 ### Community 230 - "v4-shims.min.js"
 Cohesion: 0.43
@@ -835,10 +837,6 @@ Nodes (3): Illuminate\Foundation\Testing\TestCase, ExampleTest, TestCase
 ### Community 236 - "js/jquery.slimscroll.min.js"
 Cohesion: 0.60
 Nodes (5): n(), p(), v(), w(), x()
-
-### Community 237 - "Ro"
-Cohesion: 0.13
-Nodes (5): ba(), ka(), Ro(), So(), wa()
 
 ### Community 241 - "slimscroll/jquery.slimscroll.min.js"
 Cohesion: 0.60
@@ -884,9 +882,9 @@ Nodes (3): _inherits(), _setPrototypeOf(), _wrapRegExp()
 Cohesion: 0.50
 Nodes (4): require, laravel/framework, laravel/tinker, php
 
-### Community 264 - ".listenTo"
-Cohesion: 0.04
-Nodes (14): ak, Bo(), bw(), cr(), g(), k(), kb, Qw() (+6 more)
+### Community 264 - "Ho"
+Cohesion: 0.08
+Nodes (17): Fo(), _getDialogRect(), _getViewportRect(), _getVisibleDomRootRect(), Go(), Ho, ii, moveBy() (+9 more)
 
 ### Community 270 - "extra"
 Cohesion: 0.67
@@ -896,6 +894,10 @@ Nodes (3): extra, laravel, dont-discover
 Cohesion: 0.67
 Nodes (3): keywords, framework, laravel
 
+### Community 277 - "Ro"
+Cohesion: 0.13
+Nodes (5): ba(), ka(), Ro(), So(), wa()
+
 ### Community 284 - "datepicker_bindHover"
 Cohesion: 0.67
 Nodes (3): Datepicker(), datepicker_bindHover(), datepicker_handleMouseover()
@@ -904,33 +906,33 @@ Nodes (3): Datepicker(), datepicker_bindHover(), datepicker_handleMouseover()
 Cohesion: 0.15
 Nodes (8): ContactController, Controller, StoreLeadRequest, Lead, Illuminate\Contracts\Validation\Validator, Illuminate\Database\Eloquent\Model, Illuminate\Foundation\Http\FormRequest, Illuminate\Http\RedirectResponse
 
-### Community 636 - ".get"
-Cohesion: 0.04
-Nodes (26): _addBasicStylesAutoformats(), _addBlockQuoteAutoformats(), _addCodeBlockAutoformats(), _addElementCallback(), _addHeadingAutoformats(), _addHorizontalLineAutoformats(), _addListAutoformats(), afterInit() (+18 more)
+### Community 636 - "t"
+Cohesion: 0.03
+Nodes (12): a(), ak, c(), dk, Q(), r(), t(), tr() (+4 more)
 
 ### Community 698 - "UMG Guastatoya - Portal Laravel"
 Cohesion: 0.09
-Nodes (22): Animaciones del home (motion propio), Archivos clave home, Assets landing, Continuidad (sesión actual — 2026-08-12), Cómo correrlo, Decisiones de producto (esta conversación), Derecho — scroll story (2026-08-12), Derecho — sticky scroll story (hecho) (+14 more)
+Nodes (22): Animaciones del home (motion propio), Arquitectura, Continuidad (sesión actual — 2026-08-13), Cómo correrlo, Derecho — scroll story (detalle técnico), Design system Derecho (motion), Design systems en repo, Foco actual: Facultad de Derecho (scroll story) (+14 more)
 
 ## Knowledge Gaps
 - **92 isolated node(s):** `$schema`, `name`, `type`, `description`, `laravel` (+87 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **122 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **119 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `$_` connect `$_` to `GE`, `ob`, `.is`, `Ho`, `id`, `.getAttribute`, `.extendTemplate`, `bootstrap.bundle.min.js`, `ms`, `.isEqual`, `.setTemplate`, `dh`, `zc`, `.setSelection`, `hu`, `vs`, `ea`, `.getChild`, `wp`, `.hide`, `.stopListening`, `.fire`, `n`, `dx`, `gf`, `kl`, `ih`, `._createAt`, `Ds`, `fl`, `vh`, `nl`, `ks`, `vu`, `.getFirstPosition`, `ig`, `ma`, `ws`, `Tc`, `hd`, `vk`, `.on`, `qc`, `j`, `jh`, `Zs`, `Cf`, `pr`, `Nc`, `_unpinTooltip`, `.destroy`, `bc`, `rb`, `us`, `.get`, `._setupConversion`, `hs`, `dr`, `If`, `Eo`, `Gc`, `bd`, `Aa`, `gs`, `wD`, `Ss`, `lt`, `nr`, `CA`, `pf`, `tp`, `rr`, `zf`, `xp`, `zo`, `sd`, `Ya`, `xw`, `fI`, `Ac`, `wt`, `Nd`, `qs`, `Vg`, `Mc`, `kc`, `Cs`, `Ek`, `Ro`, `ev`, `rA`, `ph`, `.listenTo`, `ys`, `gd`, `ru`?**
-  _High betweenness centrality (0.496) - this node is a cross-community bridge._
-- **Why does `ws` connect `ws` to `.setSelection`, `.is`, `$_`, `ks`, `.trigger`, `._fireChange`, `Cs`, `._removeCustomProperty`?**
-  _High betweenness centrality (0.110) - this node is a cross-community bridge._
-- **Why does `gi()` connect `$_` to `.on`, `.is`, `.hide`, `Ro`, `bootstrap.bundle.min.js`, `n`?**
-  _High betweenness centrality (0.078) - this node is a cross-community bridge._
+- **Why does `$_` connect `$_` to `.extendTemplate`, `.fire`, `.remove`, `.createRange`, `.getAttribute`, `kc`, `bootstrap.bundle.min.js`, `ms`, `.clone`, `.setTemplate`, `dh`, `ks`, `id`, `hu`, `zc`, `ea`, `ob`, `.hide`, `.stopListening`, `yi`, `.getSelectedElement`, `dx`, `.get`, `kl`, `ih`, `._createAt`, `Ds`, `fl`, `vh`, `nl`, `.isEqual`, `vu`, `j`, `ma`, `ws`, `Tc`, `gd`, `vk`, `.is`, `GE`, `qc`, `wD`, `jh`, `sd`, `Zs`, `Cf`, `pr`, `Nc`, `.removeAttribute`, `.destroy`, `bc`, `rb`, `us`, `t`, `wp`, `hs`, `If`, `Eo`, `Gc`, `bd`, `dr`, `gs`, `Ss`, `_unpinTooltip`, `CA`, `ot`, `tp`, `rr`, `gf`, `xp`, `zo`, `nr`, `pf`, `Aa`, `ig`, `.has`, `xw`, `zf`, `Ac`, `wt`, `Nd`, `Ya`, `.push`, `Vg`, `Mc`, `fI`, `Cs`, `ph`, `qs`, `Ek`, `Ho`, `Ro`, `ev`, `rA`?**
+  _High betweenness centrality (0.521) - this node is a cross-community bridge._
+- **Why does `ws` connect `ws` to `.is`, `ks`, `$_`, `.trigger`, `.getAttribute`, `._fireChange`, `Cs`, `._removeCustomProperty`?**
+  _High betweenness centrality (0.106) - this node is a cross-community bridge._
+- **Why does `gi()` connect `$_` to `.is`, `.hide`, `bootstrap.bundle.min.js`, `.get`, `Ro`, `t`?**
+  _High betweenness centrality (0.075) - this node is a cross-community bridge._
 - **Are the 79 inferred relationships involving `n()` (e.g. with `.attributeToAttribute()` and `.attributeToElement()`) actually correct?**
   _`n()` has 79 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `$schema`, `name`, `type` to the rest of the system?**
   _92 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `.is` be split into smaller, more focused modules?**
-  _Cohesion score 0.03632310516653554 - nodes in this community are weakly interconnected._
-- **Should `Ho` be split into smaller, more focused modules?**
-  _Cohesion score 0.08108108108108109 - nodes in this community are weakly interconnected._
+- **Should `.extendTemplate` be split into smaller, more focused modules?**
+  _Cohesion score 0.08669354838709678 - nodes in this community are weakly interconnected._
+- **Should `.fire` be split into smaller, more focused modules?**
+  _Cohesion score 0.05203619909502263 - nodes in this community are weakly interconnected._

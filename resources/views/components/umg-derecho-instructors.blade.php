@@ -1,4 +1,4 @@
-<section class="umg-faculty-instructors" aria-labelledby="umg-derecho-instructors-title">
+<section class="umg-faculty-instructors" id="umg-derecho-instructors" aria-labelledby="umg-derecho-instructors-title">
     <div class="umg-faculty-wrap">
         <div class="umg-faculty-section-head umg-reveal">
             <p class="umg-faculty-eyebrow">Cuerpo académico</p>
