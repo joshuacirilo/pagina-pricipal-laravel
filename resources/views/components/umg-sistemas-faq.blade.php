@@ -32,15 +32,15 @@
                     $items = [
                         [
                             'q' => '¿Por qué elegirnos para tu educación?',
-                            'a' => 'Porque ofrecemos una formación integral en Criminología, combinando teoría y práctica para comprender, prevenir y analizar el fenómeno delictivo desde un enfoque científico y humano.',
+                            'a' => 'En UMG te formamos como un profesional competitivo en tecnología, con un plan de estudios estructurado y con enfoque práctico que te prepara para destacar en el sector tecnológico nacional e internacional.',
                         ],
                         [
                             'q' => '¿Qué cursos contiene la carrera?',
-                            'a' => 'Incluye materias como Criminología, Criminalística, Derecho Penal, Psicología Criminal y Victimología. Consulta el pensum en esta página, el Centro de Informaciones o la oficina del Centro UMG Guastatoya.',
+                            'a' => 'Integra matemáticas y electrónica con programación, bases de datos, redes, inteligencia artificial, seguridad informática, gestión tecnológica y proyectos de grado. Consulta el pensum en esta página o el Centro de Informaciones UMG Guastatoya.',
                         ],
                         [
-                            'q' => '¿En qué podrás desempeñarte como Licenciado en Criminología?',
-                            'a' => 'Podrás trabajar en instituciones de justicia, seguridad pública, centros de investigación, docencia o asesoría en prevención del delito.',
+                            'q' => '¿En qué podrás desempeñarte como Ing. en Sistemas?',
+                            'a' => 'Podrás trabajar en desarrollo de software, auditoría de sistemas, administración de infraestructura tecnológica, gestión de redes, dirección de TI, gestión de proyectos tecnológicos y seguridad informática, en sector público o privado.',
                         ],
                         [
                             'q' => '¿Qué documentos necesito para inscribirme? (recién graduado)',
