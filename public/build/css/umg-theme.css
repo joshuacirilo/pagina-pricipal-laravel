@@ -1632,6 +1632,29 @@ section.umg-coordinator,
   display: none !important;
 }
 
+/* Derecho: sin hueco bajo header fijo (mismo patrón que home) */
+body.umg-faculty-page {
+  padding-top: 0 !important;
+}
+
+body.umg-faculty-page .main-wrapper {
+  padding-top: 0 !important;
+}
+
+body.umg-faculty-page #umgHeader {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+body.umg-faculty-page .umg-derecho-story {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 .umg-faculty {
   --umg-faculty-radius: 12px;
   --umg-faculty-shadow: 0 10px 40px rgba(11, 42, 82, 0.08);

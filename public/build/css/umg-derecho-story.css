@@ -40,11 +40,11 @@
 @media (min-width: 992px) {
   .umg-derecho-story__card {
     position: sticky;
-    top: var(--header-h, 72px);
-    height: calc(100vh - var(--header-h, 72px));
-    height: calc(100dvh - var(--header-h, 72px));
-    min-height: calc(100vh - var(--header-h, 72px));
-    min-height: calc(100dvh - var(--header-h, 72px));
+    top: 0;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 100vh;
+    min-height: 100dvh;
   }
 }
 

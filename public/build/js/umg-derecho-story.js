@@ -174,8 +174,8 @@
 
       var activeTrigger = ScrollTrigger.create({
         trigger: card,
-        start: "top " + (headerOffset() + 8) + "px",
-        end: next ? "top " + (headerOffset() + 8) + "px" : "bottom bottom",
+        start: "top top",
+        end: next ? "top top" : "bottom bottom",
         endTrigger: next || card,
         onEnter: function () {
           setActiveNav(sceneId);
@@ -193,7 +193,7 @@
           scrollTrigger: {
             trigger: next,
             start: "top 90%",
-            end: "top " + (headerOffset() + 4) + "px",
+            end: "top top",
             scrub: true,
           },
         });
