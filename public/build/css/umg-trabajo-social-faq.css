@@ -1,0 +1,349 @@
+/* UMG Administraci�n — FAQ “Información útil” (scoped) */
+
+.umg-trabajo-social-faq {
+  --faq-navy: #0b2a52;
+  --faq-navy-mid: #1a3f73;
+  --faq-gold: #c6a256;
+  --faq-gold-light: #e2c57a;
+  --faq-red: #aa1e23;
+  --faq-text: #1a1d21;
+  --faq-muted: #2f343b;
+  --faq-bg: #f0f4f9;
+  --faq-card: #ffffff;
+  --faq-radius: 12px;
+  --faq-shadow: 0 10px 40px rgba(11, 42, 82, 0.08);
+  position: relative;
+  padding-block: clamp(80px, 10vw, 150px);
+  background:
+    radial-gradient(ellipse 70% 50% at 0% 0%, rgba(198, 162, 86, 0.12), transparent 55%),
+    radial-gradient(ellipse 55% 45% at 100% 100%, rgba(11, 42, 82, 0.08), transparent 50%),
+    var(--faq-bg) !important;
+  overflow: hidden;
+}
+
+/* Altura/padding de pantalla completa: umg-trabajo-social-page.css */
+body.umg-faculty-page .umg-trabajo-social-faq {
+  padding-block: clamp(1.25rem, 4vh, 3.5rem);
+  overflow: visible;
+}
+
+.umg-trabajo-social-faq::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--faq-gold), var(--faq-navy));
+  pointer-events: none;
+}
+
+.umg-trabajo-social-faq__grid {
+  display: grid;
+  gap: clamp(2rem, 5vw, 3.5rem);
+  align-items: center;
+}
+
+.umg-trabajo-social-faq__figure {
+  position: relative;
+  margin: 0;
+  border-radius: var(--faq-radius);
+  overflow: hidden;
+  box-shadow: var(--faq-shadow);
+  isolation: isolate;
+}
+
+.umg-trabajo-social-faq__figure::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 45%, rgba(11, 42, 82, 0.55) 100%);
+  pointer-events: none;
+}
+
+.umg-trabajo-social-faq__figure img {
+  display: block;
+  width: 100%;
+  height: min(62vh, 640px);
+  object-fit: cover;
+  max-width: none;
+}
+
+.umg-trabajo-social-faq__badge {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(11, 42, 82, 0.88);
+  color: #fff;
+  font-family: var(--umg-font-sans, "Montserrat", sans-serif);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.umg-trabajo-social-faq__badge-mark {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 2px;
+  background: var(--faq-gold);
+}
+
+.umg-trabajo-social-faq__eyebrow {
+  display: inline-flex;
+  margin: 0 0 0.85rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(198, 162, 86, 0.45);
+  background: rgba(198, 162, 86, 0.12);
+  color: var(--faq-navy);
+  font-family: var(--umg-font-sans, "Montserrat", sans-serif);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.umg-faculty .umg-trabajo-social-faq__eyebrow {
+  color: var(--faq-navy) !important;
+}
+
+.umg-trabajo-social-faq__title {
+  margin: 0 0 0.75rem;
+  font-family: var(--umg-font-serif, "Merriweather", serif);
+  font-size: clamp(1.85rem, 3.2vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--faq-navy);
+}
+
+.umg-faculty .umg-trabajo-social-faq__title {
+  color: var(--faq-navy) !important;
+}
+
+.umg-trabajo-social-faq__lead {
+  margin: 0 0 1.75rem;
+  max-width: 34rem;
+  font-family: var(--umg-font-sans, "Montserrat", sans-serif);
+  font-size: clamp(1rem, 1.15vw, 1.125rem);
+  font-weight: 500;
+  line-height: 1.65;
+  color: var(--faq-muted);
+}
+
+.umg-faculty .umg-trabajo-social-faq__lead {
+  color: var(--faq-muted) !important;
+}
+
+.umg-trabajo-social-faq__accordion.accordion {
+  --bs-accordion-border-color: transparent;
+  --bs-accordion-btn-padding-x: 0;
+  --bs-accordion-btn-padding-y: 0;
+  --bs-accordion-body-padding-x: 0;
+  --bs-accordion-body-padding-y: 0;
+  --bs-accordion-active-bg: transparent;
+  --bs-accordion-btn-focus-box-shadow: none;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.umg-trabajo-social-faq__item.accordion-item {
+  background: var(--faq-card);
+  border: 1px solid rgba(11, 42, 82, 0.1) !important;
+  border-radius: var(--faq-radius) !important;
+  box-shadow: 0 6px 20px rgba(11, 42, 82, 0.05);
+  overflow: hidden;
+  transition:
+    border-color 220ms ease,
+    box-shadow 220ms ease,
+    transform 220ms ease;
+}
+
+.umg-trabajo-social-faq__item:hover {
+  border-color: rgba(198, 162, 86, 0.5) !important;
+  box-shadow: var(--faq-shadow);
+  transform: translateY(-2px);
+}
+
+.umg-trabajo-social-faq__item:has(.accordion-button:not(.collapsed)) {
+  border-color: rgba(11, 42, 82, 0.22) !important;
+  box-shadow: 0 14px 36px rgba(11, 42, 82, 0.12);
+}
+
+.umg-trabajo-social-faq__btn.accordion-button {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.85rem;
+  width: 100%;
+  padding: 1rem 1.1rem !important;
+  font-family: var(--umg-font-sans, "Montserrat", sans-serif);
+  font-weight: 700;
+  font-size: 1.02rem;
+  line-height: 1.35;
+  color: var(--faq-navy) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  cursor: pointer;
+  text-align: left;
+}
+
+.umg-trabajo-social-faq__btn.accordion-button::after {
+  display: none;
+}
+
+.umg-trabajo-social-faq__btn.accordion-button:focus-visible {
+  outline: 3px solid var(--faq-gold);
+  outline-offset: 2px;
+}
+
+.umg-trabajo-social-faq__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.35rem;
+  height: 2.35rem;
+  padding: 0 0.4rem;
+  border-radius: 8px;
+  background: var(--faq-gold);
+  color: var(--faq-navy);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.umg-trabajo-social-faq__q {
+  color: inherit;
+}
+
+.umg-trabajo-social-faq__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: rgba(11, 42, 82, 0.06);
+  color: var(--faq-navy);
+  transition: background-color 220ms ease, color 220ms ease, transform 220ms ease;
+}
+
+.umg-trabajo-social-faq__icon-v {
+  transform-origin: center;
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.umg-trabajo-social-faq__btn.accordion-button:not(.collapsed) .umg-trabajo-social-faq__icon {
+  background: var(--faq-navy);
+  color: #fff;
+}
+
+.umg-trabajo-social-faq__btn.accordion-button:not(.collapsed) .umg-trabajo-social-faq__icon-v {
+  opacity: 0;
+  transform: scaleY(0);
+}
+
+.umg-trabajo-social-faq__btn.accordion-button:not(.collapsed) .umg-trabajo-social-faq__q {
+  color: var(--faq-navy);
+}
+
+.umg-trabajo-social-faq__body {
+  padding: 0 1.1rem 1.15rem 1.1rem !important;
+  color: var(--faq-muted);
+  font-family: var(--umg-font-sans, "Montserrat", sans-serif);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.umg-faculty .umg-trabajo-social-faq__body,
+.umg-faculty .umg-trabajo-social-faq__body p {
+  color: var(--faq-muted) !important;
+  margin: 0;
+}
+
+.umg-trabajo-social-faq__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.umg-trabajo-social-faq__list li {
+  position: relative;
+  padding-left: 1.1rem;
+}
+
+.umg-trabajo-social-faq__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 2px;
+  background: var(--faq-gold);
+}
+
+.umg-trabajo-social-faq__cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding: 1.15rem 1.25rem;
+  border-radius: var(--faq-radius);
+  background: var(--faq-navy);
+  box-shadow: var(--faq-shadow);
+}
+
+.umg-trabajo-social-faq__cta-text {
+  margin: 0;
+  max-width: 28rem;
+  font-family: var(--umg-font-sans, "Montserrat", sans-serif);
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: #eef3f9;
+}
+
+.umg-faculty .umg-trabajo-social-faq__cta-text {
+  color: #eef3f9 !important;
+}
+
+.umg-trabajo-social-faq__cta-btn {
+  flex: 0 0 auto;
+}
+
+@media (min-width: 992px) {
+  .umg-trabajo-social-faq__grid {
+    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+    gap: clamp(2.5rem, 4vw, 4rem);
+  }
+
+  .umg-trabajo-social-faq__figure {
+    position: relative;
+    top: auto;
+  }
+
+  .umg-trabajo-social-faq__figure img {
+    height: min(calc(100dvh - var(--header-h, 72px) - 4rem), 640px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .umg-trabajo-social-faq__item,
+  .umg-trabajo-social-faq__icon,
+  .umg-trabajo-social-faq__icon-v {
+    transition: none;
+  }
+
+  .umg-trabajo-social-faq__item:hover {
+    transform: none;
+  }
+}

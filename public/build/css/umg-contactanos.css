@@ -1,0 +1,530 @@
+/* UMG Contáctanos — hot window bajo header fijo (sin scroll de página / sin footer) */
+html:has(body.umg-contactanos-page),
+body.umg-contactanos-page {
+  height: 100%;
+  overflow: hidden;
+}
+
+body.umg-contactanos-page {
+  padding-top: 0 !important;
+}
+
+body.umg-contactanos-page .main-wrapper {
+  min-height: 100dvh;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+body.umg-contactanos-page #umgHeader {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1030;
+  background-image: linear-gradient(90deg, #0b2a52 0%, #1a3f73 100%) !important;
+  background-color: #0b2a52 !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.umg-contactanos {
+  --uc-navy: #0b2a52;
+  --uc-navy-soft: #1a3f73;
+  --uc-gold: #c6a256;
+  --uc-gold-light: #e2c57a;
+  --uc-red: #aa1e23;
+  --uc-red-hover: #c62828;
+  --uc-ink: #1a1d21;
+  --uc-muted: #536173;
+  --uc-panel: #f4f7fb;
+  --uc-white: #ffffff;
+  --uc-body-on-navy: #eef3f9;
+  --uc-radius: 12px;
+  --uc-font-display: "Merriweather", Georgia, serif;
+  --uc-font-ui: "Montserrat", system-ui, sans-serif;
+  --uc-header-h: var(--header-h, 72px);
+  box-sizing: border-box;
+  height: 100dvh;
+  max-height: 100dvh;
+  padding-top: var(--uc-header-h);
+  overflow: hidden;
+  color: var(--uc-ink);
+  background: var(--uc-navy);
+}
+
+.umg-contactanos__stage {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  height: 100%;
+  max-height: calc(100dvh - var(--uc-header-h));
+}
+
+.umg-contactanos__pitch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  overflow: hidden;
+  color: var(--uc-white);
+}
+
+.umg-contactanos__pitch-media,
+.umg-contactanos__pitch-veil {
+  position: absolute;
+  inset: 0;
+}
+
+.umg-contactanos__pitch-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 28%;
+}
+
+.umg-contactanos__pitch-veil {
+  background:
+    linear-gradient(180deg, rgba(11, 42, 82, 0.42) 0%, rgba(11, 42, 82, 0.78) 48%, rgba(11, 42, 82, 0.94) 100%);
+}
+
+.umg-contactanos__pitch-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: min(92%, 560px);
+  margin: 0 auto;
+  padding: clamp(1.25rem, 3vh, 2rem) 0;
+  text-align: left;
+}
+
+.umg-contactanos__home {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: clamp(1rem, 2.5vh, 1.5rem);
+  color: var(--uc-gold-light) !important;
+  font-family: var(--uc-font-ui);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.umg-contactanos__home img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 0.2rem;
+}
+
+.umg-contactanos__home:hover {
+  color: var(--uc-white) !important;
+}
+
+.umg-contactanos__home:focus-visible {
+  outline: 3px solid var(--uc-gold);
+  outline-offset: 3px;
+}
+
+.umg-contactanos__brand {
+  margin: 0;
+  font-family: var(--uc-font-display);
+  font-size: clamp(1.7rem, 3.2vw, 2.65rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.umg-contactanos__brand-sub {
+  margin: 0.35rem 0 1rem;
+  font-family: var(--uc-font-ui);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--uc-gold-light);
+}
+
+.umg-contactanos__pitch h1 {
+  margin: 0 0 0.75rem;
+  max-width: 16ch;
+  font-family: var(--uc-font-display);
+  font-size: clamp(1.65rem, 3vw, 2.45rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--uc-white) !important;
+}
+
+.umg-contactanos__lead {
+  margin: 0 0 1.25rem;
+  max-width: 36ch;
+  font-family: var(--uc-font-ui);
+  font-size: clamp(1.05rem, 1.45vw, 1.2rem);
+  font-weight: 500;
+  line-height: 1.55;
+  color: var(--uc-body-on-navy);
+}
+
+.umg-contactanos__facts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.umg-contactanos__facts li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.75rem;
+  align-items: baseline;
+}
+
+.umg-contactanos__facts strong {
+  font-family: var(--uc-font-ui);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--uc-gold-light);
+}
+
+.umg-contactanos__facts a {
+  font-family: var(--uc-font-ui);
+  font-size: 1.05rem;
+  color: var(--uc-white) !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.umg-contactanos__facts a:hover {
+  color: var(--uc-gold-light) !important;
+}
+
+.umg-contactanos__facts a:focus-visible {
+  outline: 3px solid var(--uc-gold);
+  outline-offset: 2px;
+}
+
+.umg-contactanos__panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  background: var(--uc-panel);
+  overflow: hidden;
+}
+
+.umg-contactanos__panel-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: min(100%, 560px);
+  max-height: 100%;
+  margin: 0 auto;
+  padding: clamp(1.25rem, 3.2vh, 2.25rem) clamp(1.15rem, 3.2vw, 2rem);
+  overflow: hidden;
+}
+
+.umg-contactanos__eyebrow {
+  margin: 0 0 0.4rem;
+  font-family: var(--uc-font-ui);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--uc-gold);
+}
+
+.umg-contactanos__panel h2 {
+  margin: 0 0 1rem;
+  font-family: var(--uc-font-display);
+  font-size: clamp(1.55rem, 2.6vw, 2.1rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--uc-navy) !important;
+}
+
+.umg-contactanos__status {
+  margin: 0 0 0.85rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  background: rgba(16, 185, 129, 0.08);
+  color: #0f5132;
+  font-family: var(--uc-font-ui);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.umg-contactanos__status.is-hidden,
+.umg-contactanos__status[hidden] {
+  display: none;
+}
+
+.umg-contactanos__status--error {
+  border-color: rgba(185, 28, 28, 0.35);
+  background: rgba(185, 28, 28, 0.08);
+  color: #7f1d1d;
+}
+
+.umg-contactanos__form {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.7rem, 1.6vh, 1rem);
+  min-height: 0;
+}
+
+.umg-contactanos__honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.umg-contactanos__field {
+  display: grid;
+  gap: 0.4rem;
+  margin: 0;
+}
+
+.umg-contactanos__field > span,
+.umg-contactanos__channel-legend {
+  font-family: var(--uc-font-ui);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--uc-muted);
+}
+
+.umg-contactanos__channel-legend {
+  margin: 0 0 0.4rem;
+}
+
+.umg-contactanos__field input,
+.umg-contactanos__field select,
+.umg-contactanos__field textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 0.75rem 0.95rem;
+  border: 1px solid rgba(16, 23, 34, 0.14);
+  border-radius: 4px;
+  background: var(--uc-white);
+  font-family: var(--uc-font-ui);
+  font-size: 1.05rem;
+  color: var(--uc-ink);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.umg-contactanos__field textarea {
+  min-height: 72px;
+  resize: none;
+}
+
+.umg-contactanos__field input:focus,
+.umg-contactanos__field select:focus,
+.umg-contactanos__field textarea:focus {
+  outline: none;
+  border-color: rgba(198, 162, 86, 0.65);
+  box-shadow: 0 0 0 3px rgba(198, 162, 86, 0.16);
+}
+
+.umg-contactanos__channel-toggle {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+
+.umg-contactanos__channel-option {
+  position: relative;
+  cursor: pointer;
+}
+
+.umg-contactanos__channel-option input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.umg-contactanos__channel-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.45rem 0.4rem;
+  border: 1px solid rgba(16, 23, 34, 0.14);
+  border-radius: 4px;
+  background: #eef2f7;
+  color: #3d4d61;
+  font-family: var(--uc-font-ui);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.umg-contactanos__channel-option:hover .umg-contactanos__channel-label {
+  border-color: rgba(26, 63, 115, 0.35);
+  background: #e4ecf7;
+}
+
+.umg-contactanos__channel-option input:checked + .umg-contactanos__channel-label {
+  background: linear-gradient(135deg, var(--uc-navy-soft) 0%, var(--uc-navy) 100%);
+  border-color: var(--uc-navy);
+  color: var(--uc-white);
+}
+
+.umg-contactanos__channel-option input:focus-visible + .umg-contactanos__channel-label {
+  outline: 3px solid var(--uc-gold);
+  outline-offset: 2px;
+}
+
+.umg-contactanos__submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  width: 100%;
+  min-height: 54px;
+  margin-top: 0.35rem;
+  border: 0;
+  border-radius: 4px;
+  background: var(--uc-red);
+  color: var(--uc-white);
+  font-family: var(--uc-font-ui);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.22s ease, transform 0.22s ease, opacity 0.2s ease;
+}
+
+.umg-contactanos__submit:hover {
+  background: var(--uc-red-hover);
+  transform: translateY(-2px);
+}
+
+.umg-contactanos__submit:focus-visible {
+  outline: 3px solid var(--uc-gold);
+  outline-offset: 3px;
+}
+
+.umg-contactanos__submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.umg-contactanos--ready .umg-contactanos__pitch-inner,
+.umg-contactanos--ready .umg-contactanos__panel-inner {
+  animation: umg-contactanos-rise 0.55s ease both;
+}
+
+.umg-contactanos--ready .umg-contactanos__panel-inner {
+  animation-delay: 0.08s;
+}
+
+@keyframes umg-contactanos-rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 991px) {
+  .umg-contactanos__stage {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(0, 0.32fr) minmax(0, 0.68fr);
+  }
+
+  .umg-contactanos__pitch-inner {
+    width: min(94%, 640px);
+    padding: 0.75rem 0;
+  }
+
+  .umg-contactanos__brand {
+    font-size: clamp(1.35rem, 5vw, 1.75rem);
+  }
+
+  .umg-contactanos__pitch h1 {
+    max-width: none;
+    font-size: clamp(1.35rem, 4.8vw, 1.7rem);
+  }
+
+  .umg-contactanos__lead,
+  .umg-contactanos__facts {
+    display: none;
+  }
+
+  .umg-contactanos__home span {
+    display: none;
+  }
+
+  .umg-contactanos__panel-inner {
+    width: 100%;
+    padding: 1rem 1.1rem 1.15rem;
+  }
+
+  .umg-contactanos__field--message {
+    display: none;
+  }
+
+  .umg-contactanos__field input,
+  .umg-contactanos__field select,
+  .umg-contactanos__field textarea {
+    font-size: 1rem;
+  }
+}
+
+@media (max-height: 760px) {
+  .umg-contactanos__field--message {
+    display: none;
+  }
+
+  .umg-contactanos__lead {
+    display: none;
+  }
+
+  .umg-contactanos__field input,
+  .umg-contactanos__field select {
+    min-height: 44px;
+  }
+
+  .umg-contactanos__channel-label {
+    min-height: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .umg-contactanos__submit,
+  .umg-contactanos__channel-label,
+  .umg-contactanos__home,
+  .umg-contactanos__facts a {
+    transition: none;
+  }
+
+  .umg-contactanos__submit:hover {
+    transform: none;
+  }
+
+  .umg-contactanos--ready .umg-contactanos__pitch-inner,
+  .umg-contactanos--ready .umg-contactanos__panel-inner {
+    animation: none;
+  }
+}

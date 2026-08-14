@@ -19,6 +19,41 @@ Este README es la fuente de contexto para que un agente de IA continúe el traba
 - No commitear ni pushear salvo pedido explícito.
 - Antes de explorar código: `graphify query "..."` (grafo en `graphify-out/`). Tras editar: `graphify update .`.
 
+### Foco actual: Facultad de Trabajo Social (+ Derecho como referencia)
+
+También activa: **Trabajo Social** (`/grupo75/trabajo-social`). Mismo patrón: story + pensum + FAQ.
+
+**Orden de página Trabajo Social** — `resources/views/grupo75/trabajo-social.blade.php`:
+
+```
+Story (5 escenas, full-bleed bajo header)
+  → Banda umg-trabajo-social-band: Pensum 90% + Stats 10% (1 viewport)
+  → FAQ rediseñado (1 viewport)
+  → (prefooter global)
+```
+
+Fotos story: `public/images/trabajo-social/` (renombrada desde `trabajo social`; 4 archivos; escena 05 reutiliza hook).
+Design system: `design-system/umg-trabajo-social/pages/trabajo-social.md`.
+Instructors: rutas/vistas conservadas, **no** en la página.
+
+### Foco actual: Facultad de Sistemas (+ Derecho como referencia)
+
+También activa: **Sistemas** (`/grupo73/sistemas`). Mismo patrón: story + pensum + FAQ.
+
+**Orden de página Sistemas** — `resources/views/grupo73/sistemas.blade.php`:
+
+```
+Story (5 escenas, full-bleed bajo header)
+  → Banda umg-sistemas-band: Pensum 90% + Stats 10% (1 viewport)
+  → FAQ rediseñado (1 viewport)
+  → (prefooter global)
+```
+
+Fotos story: `public/images/sistemas/` (4 archivos; escena 05 reutiliza la de formación).
+Design system: `design-system/umg-sistemas/pages/sistemas.md` (tokens UMG ganan).
+Instructors: rutas/vistas conservadas, **no** en la página.
+**No tocar** landing de admisión del home (`umg-sistemas-landing`).
+
 ### Foco actual: Facultad de Criminología (+ Derecho como referencia)
 
 También activa: **Criminología** (`/grupo74/criminologia`). Mismo patrón: story + pensum + FAQ.
@@ -214,6 +249,8 @@ php artisan serve
 | Administración | `http://127.0.0.1:8000/grupo74/administracion` | `administracion` |
 | Auditoría | `http://127.0.0.1:8000/grupo75/auditoria` | `auditoria` |
 | Criminología | `http://127.0.0.1:8000/grupo74/criminologia` | `criminologia` |
+| Sistemas | `http://127.0.0.1:8000/grupo73/sistemas` | `sistemas` |
+| Trabajo Social | `http://127.0.0.1:8000/grupo75/trabajo-social` | `trabajo-social` |
 
 Tras editar CSS/JS en `public/build`: **hard refresh** (`Ctrl+F5`).
 
@@ -350,7 +387,7 @@ Hero parallax → Facultades → Landing admisión → Footer
 
 ## Otras facultades
 
-Vistas en `resources/views/grupo73|74|75/*.blade.php`. **Derecho**, **Administración**, **Auditoría** y **Criminología** tienen story sticky + design system de página.
+Vistas en `resources/views/grupo73|74|75/*.blade.php`. Facultades con story sticky: **Derecho**, **Administración**, **Auditoría**, **Criminología**, **Sistemas** y **Trabajo Social**.
 
 No reintroducir sin pedido: `umg-faculty-landing`, `umg-law-story` genéricos fallidos de agentes previos.
 

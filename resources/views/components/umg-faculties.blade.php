@@ -33,7 +33,7 @@
             <x-umg-faculty-card
                 class="umg-reveal umg-reveal--scale"
                 title="Ingeniería en Sistemas"
-                href="{{ route('sistemas-redes-sociales') }}"
+                href="{{ route('sistemas') }}"
                 image="build/img/about/aboutIngSistemas/encendido-computadora-portatil-gris.jpeg"
                 alt="Estudiantes de Ingeniería en Sistemas"
                 description="Desarrollo de software, redes y ciberseguridad para resolver desafíos tecnológicos del presente."

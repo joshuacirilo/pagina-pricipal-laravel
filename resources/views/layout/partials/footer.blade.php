@@ -39,7 +39,7 @@
                     <a href="{{ route('derecho') }}">Derecho</a>
                     <a href="{{ route('administracion') }}">Administración</a>
                     <a href="{{ route('criminologia') }}">Criminología</a>
-                    <a href="{{ route('sistemas-redes-sociales') }}">Ingeniería en Sistemas</a>
+                    <a href="{{ route('sistemas') }}">Ingeniería en Sistemas</a>
                     <a href="{{ route('trabajo-social') }}">Trabajo Social</a>
                     <a href="{{ route('auditoria') }}">Auditoría</a>
                 </div>

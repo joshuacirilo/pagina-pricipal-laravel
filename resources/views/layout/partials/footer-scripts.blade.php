@@ -112,6 +112,9 @@
 <script src="{{ URL::asset('build/js/umg-sistemas-countdown.js') }}?v={{ filemtime(public_path('build/js/umg-sistemas-countdown.js')) }}"></script>
 <script src="{{ URL::asset('build/js/umg-sistemas-contact.js') }}?v={{ filemtime(public_path('build/js/umg-sistemas-contact.js')) }}"></script>
 @endif
+@if (Route::is(['contactanos']))
+<script src="{{ URL::asset('build/js/umg-contactanos.js') }}?v={{ filemtime(public_path('build/js/umg-contactanos.js')) }}"></script>
+@endif
 @if (Route::is(['derecho']))
 <script src="{{ URL::asset('build/js/vendor/gsap.min.js') }}?v={{ filemtime(public_path('build/js/vendor/gsap.min.js')) }}"></script>
 <script src="{{ URL::asset('build/js/vendor/ScrollTrigger.min.js') }}?v={{ filemtime(public_path('build/js/vendor/ScrollTrigger.min.js')) }}"></script>
@@ -139,6 +142,20 @@
 <script src="{{ URL::asset('build/js/umg-criminologia-story.js') }}?v={{ filemtime(public_path('build/js/umg-criminologia-story.js')) }}"></script>
 <script src="{{ URL::asset('build/js/umg-criminologia-pensum.js') }}?v={{ filemtime(public_path('build/js/umg-criminologia-pensum.js')) }}"></script>
 <script src="{{ URL::asset('build/js/umg-faculty-criminologia.js') }}?v={{ filemtime(public_path('build/js/umg-faculty-criminologia.js')) }}"></script>
+@endif
+@if (Route::is(['sistemas']))
+<script src="{{ URL::asset('build/js/vendor/gsap.min.js') }}?v={{ filemtime(public_path('build/js/vendor/gsap.min.js')) }}"></script>
+<script src="{{ URL::asset('build/js/vendor/ScrollTrigger.min.js') }}?v={{ filemtime(public_path('build/js/vendor/ScrollTrigger.min.js')) }}"></script>
+<script src="{{ URL::asset('build/js/umg-sistemas-story.js') }}?v={{ filemtime(public_path('build/js/umg-sistemas-story.js')) }}"></script>
+<script src="{{ URL::asset('build/js/umg-sistemas-pensum.js') }}?v={{ filemtime(public_path('build/js/umg-sistemas-pensum.js')) }}"></script>
+<script src="{{ URL::asset('build/js/umg-faculty-sistemas.js') }}?v={{ filemtime(public_path('build/js/umg-faculty-sistemas.js')) }}"></script>
+@endif
+@if (Route::is(['trabajo-social']))
+<script src="{{ URL::asset('build/js/vendor/gsap.min.js') }}?v={{ filemtime(public_path('build/js/vendor/gsap.min.js')) }}"></script>
+<script src="{{ URL::asset('build/js/vendor/ScrollTrigger.min.js') }}?v={{ filemtime(public_path('build/js/vendor/ScrollTrigger.min.js')) }}"></script>
+<script src="{{ URL::asset('build/js/umg-trabajo-social-story.js') }}?v={{ filemtime(public_path('build/js/umg-trabajo-social-story.js')) }}"></script>
+<script src="{{ URL::asset('build/js/umg-trabajo-social-pensum.js') }}?v={{ filemtime(public_path('build/js/umg-trabajo-social-pensum.js')) }}"></script>
+<script src="{{ URL::asset('build/js/umg-faculty-trabajo-social.js') }}?v={{ filemtime(public_path('build/js/umg-faculty-trabajo-social.js')) }}"></script>
 @endif
 <script src="{{ URL::asset('build/js/umg-floating-assistant.js') }}?v={{ filemtime(public_path('build/js/umg-floating-assistant.js')) }}"></script>
 <script>

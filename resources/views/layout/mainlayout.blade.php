@@ -37,6 +37,14 @@
       href="{{ asset('build/css/umg-sistemas-landing.css') }}?v={{ filemtime(public_path('build/css/umg-sistemas-landing.css')) }}">
 @endif
 
+@if (Route::is(['contactanos']))
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-contactanos.css') }}?v={{ filemtime(public_path('build/css/umg-contactanos.css')) }}">
+@endif
+
 @if (Route::is(['derecho']))
 <link rel="stylesheet"
       href="{{ asset('build/css/umg-derecho-story.css') }}?v={{ filemtime(public_path('build/css/umg-derecho-story.css')) }}">
@@ -81,6 +89,28 @@
       href="{{ asset('build/css/umg-criminologia-page.css') }}?v={{ filemtime(public_path('build/css/umg-criminologia-page.css')) }}">
 @endif
 
+@if (Route::is(['sistemas']))
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-sistemas-story.css') }}?v={{ filemtime(public_path('build/css/umg-sistemas-story.css')) }}">
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-sistemas-pensum.css') }}?v={{ filemtime(public_path('build/css/umg-sistemas-pensum.css')) }}">
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-sistemas-faq.css') }}?v={{ filemtime(public_path('build/css/umg-sistemas-faq.css')) }}">
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-sistemas-page.css') }}?v={{ filemtime(public_path('build/css/umg-sistemas-page.css')) }}">
+@endif
+
+@if (Route::is(['trabajo-social']))
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-trabajo-social-story.css') }}?v={{ filemtime(public_path('build/css/umg-trabajo-social-story.css')) }}">
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-trabajo-social-pensum.css') }}?v={{ filemtime(public_path('build/css/umg-trabajo-social-pensum.css')) }}">
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-trabajo-social-faq.css') }}?v={{ filemtime(public_path('build/css/umg-trabajo-social-faq.css')) }}">
+<link rel="stylesheet"
+      href="{{ asset('build/css/umg-trabajo-social-page.css') }}?v={{ filemtime(public_path('build/css/umg-trabajo-social-page.css')) }}">
+@endif
+
 </head>
 
 @php
@@ -88,7 +118,9 @@
   $bodyClass = '';
   if (Route::is(['index-3'])) {
       $bodyClass = 'umg-home';
-  } elseif (Route::is(['derecho', 'administracion', 'auditoria', 'criminologia'])) {
+  } elseif (Route::is(['contactanos'])) {
+      $bodyClass = 'umg-contactanos-page';
+  } elseif (Route::is(['derecho', 'administracion', 'auditoria', 'criminologia', 'sistemas', 'trabajo-social'])) {
       $bodyClass = 'umg-faculty-page';
   } elseif (Route::is(['index-5','index-6'])) {
       $bodyClass = 'home-five';
@@ -117,6 +149,9 @@
     'verification-code','view-invoice','lock-screen','otp','reset-password','set-password',
   ]);
 
+  // Contáctanos: header sí, footer/prefooter/asistente no (ventana única)
+  $hideFooterChrome = $hideLayoutChrome || Route::is(['contactanos']);
+
   // Chat wrapper
   $useChatWrapper = Route::is(['student-messages','instructor-chat']);
 @endphp
@@ -141,7 +176,7 @@
 
         @yield('content')
 
-        @unless($hideLayoutChrome)
+        @unless($hideFooterChrome)
           @unless(Route::is(['index-3']))
             <x-umg-prefooter-cta />
           @endunless

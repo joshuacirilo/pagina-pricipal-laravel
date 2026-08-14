@@ -48,7 +48,7 @@
               <li><a href="{{ route('derecho') }}">Derecho</a></li>
               <li><a href="{{ route('administracion') }}">Administración</a></li>
               <li><a href="{{ route('criminologia') }}">Criminología</a></li>
-              <li><a href="{{ route('sistemas-redes-sociales') }}">Sistemas</a></li>
+              <li><a href="{{ route('sistemas') }}">Sistemas</a></li>
               <li><a href="{{ route('trabajo-social') }}">Trabajo Social</a></li>
               <li><a href="{{ route('auditoria') }}">Auditoría</a></li>
             </ul>
@@ -56,7 +56,7 @@
           <li><a href="https://umg.edu.gt/admisiones" target="_blank">Admisiones</a></li>
           <li><a href="https://umg.edu.gt/info" target="_blank">Centro de Informaciones</a></li>
           <li><a href="{{ route('conts') }}" target="_blank">Blog</a></li>
-          <li><a href="{{ route('conts') }}" target="_blank">Contactanos</a></li>
+          <li><a href="{{ route('contactanos') }}">Contactanos</a></li>
         </ul>
 
         {{-- --- DROPDOWNS Y LOGIN MOBILE --- --}}

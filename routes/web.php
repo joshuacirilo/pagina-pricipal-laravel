@@ -252,6 +252,10 @@ Route::get('/prox/conts', function () {
     return view('prox.conts');
 })->name('conts');
 
+Route::get('/contactanos', function () {
+    return view('contactanos');
+})->name('contactanos');
+
 
 //proximamente
 Route::get('/prox/contact-us', function () {
