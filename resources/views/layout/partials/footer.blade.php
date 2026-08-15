@@ -3,9 +3,6 @@
         <div class="container">
             <div class="umg-footer__grid">
                 <div class="umg-footer__brand">
-                    <a class="umg-footer__logo" href="{{ route('index-3') }}">
-                        <img src="{{ URL::asset('build/img/logo.svg') }}" alt="Universidad Mariano Gálvez de Guatemala">
-                    </a>
                     <p class="umg-footer__tagline">Sede Guastatoya · El Progreso</p>
                     <div class="umg-footer__social">
                         <a href="https://www.facebook.com/u.marianogalvez" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
